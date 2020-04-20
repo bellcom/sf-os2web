@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8fca6d1526eac69c5b4b86f6f95dfdb",
+    "content-hash": "bc96f071e5bafe5d822b79c51b923dde",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -124,16 +124,16 @@
         },
         {
             "name": "bellcom/fds_base_theme",
-            "version": "dev-master",
+            "version": "dev-stable/drupal-8.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "9e26d1bbb2f2ee1b2347bc31357b218354008a1b"
+                "reference": "059fb309ebc5d50c5c1429249f028068cd2f7c66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/9e26d1bbb2f2ee1b2347bc31357b218354008a1b",
-                "reference": "9e26d1bbb2f2ee1b2347bc31357b218354008a1b",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/059fb309ebc5d50c5c1429249f028068cd2f7c66",
+                "reference": "059fb309ebc5d50c5c1429249f028068cd2f7c66",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -142,10 +142,10 @@
             ],
             "description": "FDS base theme for Drupal CMS",
             "support": {
-                "source": "https://github.com/bellcom/fds_base_theme/tree/master",
+                "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2019-12-20T07:37:40+00:00"
+            "time": "2020-04-20T11:03:58+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -6486,7 +6486,7 @@
                 "EUPL-1.2"
             ],
             "description": "Contact entity",
-            "time": "2020-04-03T12:35:08+00:00"
+            "time": "2020-04-20T11:17:34+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",

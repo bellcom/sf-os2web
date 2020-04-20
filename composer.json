@@ -11,11 +11,24 @@
         {
             "type": "vcs",
             "url": "https://github.com/bellcom/fds_base_theme"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "harvesthq/chosen",
+                "version": "1.8.7",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/harvesthq/chosen-package.git",
+                    "type": "git",
+                    "reference": "v1.8.7"
+                }
+            }
         }
     ],
     "require": {
         "php": ">=7.0.8",
-        "bellcom/fds_base_theme": "dev-master",
+        "bellcom/fds_base_theme": "dev-stable/drupal-8.x",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/console": "^1.0.2",
