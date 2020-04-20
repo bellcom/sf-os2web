@@ -65,7 +65,7 @@ $font-weight-bold:            700 !default;
 $font-style-normal:           normal !default;
 $font-style-italic:           italic !default;
 
-$font-family:                Roboto, 'IBMPlexSans', 'system';
+$font-family:                'Verdana', Roboto, 'IBMPlexSans', 'system';
 
 ///////////////////////////////////////////////////////////////////
 // Spacing helpers
@@ -127,8 +127,8 @@ $color-gray-055:              #DCDCDC !default;
 $color-gray-006:              #F5F5F5 !default;
 
 //Greeen
-$color-green-001:             #568331 !default;
-$color-green-002:             #3C5C22 !default;
+$color-green-001:             #006632;
+$color-green-002:             #C0D6CB;
 $color-green-021:             #233614 !default;
 $color-green-003:             #358000 !default;
 $color-green-004:             #eeffe2  !default;
@@ -138,15 +138,15 @@ $color-green-005:             #358000 !default;
 //$color-orange-001:          #b4630c !default;
 //$color-orange-002:          #d8770e !default;
 //$color-orange-003:          #f08b1e !default;
-$color-orange-004:            #febb30 !default;
-$color-orange-005:            #ffeecc !default;
+$color-orange-004:            #D9620D;
+$color-orange-005:            #EAE3C0;
 
 //red
 $color-red-001:               #b63433 !default;
 $color-red-002:               #ffe0e0 !default;
 
 //blue
-$color-blue-001:              #004D99 !default;
+$color-blue-001:              #0A487E;
 $color-blue-002:              #004080 !default;
 $color-blue-003:              #000040 !default;
 $color-blue-004:              #e2f2fb !default;
@@ -209,24 +209,24 @@ $color-gray-pale:             #e4e4e4;
 $color-focus:                 $color-gray-medium-dark !default;
 
 // Text color
-$color-text:                  $color-black !default;
+$color-text:                  #231F20;
 $color-text-secondary:        $color-gray-003 !default;
 $color-text-bright:           $color-gray-006 !default;
 
 //Links color
-$color-link:                  $color-blue-001 !default;
-$color-link-hover:            $color-blue-003 !default;
-$color-link-focus:            $color-blue-001 !default;
-$color-link-visited:          $color-purple-001 !default;
+$color-link:                  $color-orange-004;
+$color-link-hover:            $color-link;
+$color-link-focus:            $color-link;
+$color-link-visited:          $color-link;
 
 // Default neutral color-scheme (the neutral one that is neither virk.dk nor borger.dk)
-$color-neutral:               $color-gray-002 !default;
+$color-neutral:               #EAE3C0;
 $color-neutral-darker:        $color-base-002 !default;
 $color-neutral-darkest:       $color-base-002 !default;
 $color-neutral-lightest:      $color-gray-004 !default; //TODO, need base color for lightest
 
 // Functional theme colors
-$color-primary:               $color-gray-003 !default;
+$color-primary:               $color-green-001;
 $color-primary-medium:        $color-gray-002 !default;
 $color-primary-dark:          $color-gray-001 !default;
 
