@@ -6405,12 +6405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "903966981184de62794d0f57e2346b54fa3a9dba"
+                "reference": "07e28d75bc9f7152e6b541cca8e8c21223bb004a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/903966981184de62794d0f57e2346b54fa3a9dba",
-                "reference": "903966981184de62794d0f57e2346b54fa3a9dba",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/07e28d75bc9f7152e6b541cca8e8c21223bb004a",
+                "reference": "07e28d75bc9f7152e6b541cca8e8c21223bb004a",
                 "shasum": ""
             },
             "require": {
