@@ -6467,12 +6467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "0a88dcc78013a070ba1cc63874f670471e9f2cca"
+                "reference": "595f57793e529c089435be5df116b1258823174e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/0a88dcc78013a070ba1cc63874f670471e9f2cca",
-                "reference": "0a88dcc78013a070ba1cc63874f670471e9f2cca",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/595f57793e529c089435be5df116b1258823174e",
+                "reference": "595f57793e529c089435be5df116b1258823174e",
                 "shasum": ""
             },
             "require": {

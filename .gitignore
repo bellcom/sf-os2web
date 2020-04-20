@@ -14,6 +14,10 @@
 # Ignore Drupal's file directory
 /web/sites/*/files/
 
+# Ignore config files. Accordingly to bussines requirements we should not store
+# configuration files in git.
+/config/
+
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
 
@@ -24,3 +28,8 @@
 /.env
 /.editorconfig
 /.gitattributes
+
+.DS_Store
+*.log
+*.sql
+*.sql.gz
