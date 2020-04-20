@@ -1,0 +1,25 @@
+// Increased specificity to win over base theme.
+body .container-fluid {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+// Accessibility overrides.
+body a {
+
+  &:focus {
+    outline-width: 2px;
+  }
+}
+
+.paragraph a,
+.region-content a,
+.breadcrumb a {
+
+  &:focus {
+    outline-width: 2px;
+    outline-offset: 0;
+    color: $color-white;
+    background-color: $color-primary;
+  }
+}
