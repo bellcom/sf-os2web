@@ -6534,12 +6534,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "2ca45efb96ae0500e4b0d59a2b2288021eeee99b"
+                "reference": "c2acd52f19bac53d2b6f66c91ed74b199d56802f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/2ca45efb96ae0500e4b0d59a2b2288021eeee99b",
-                "reference": "2ca45efb96ae0500e4b0d59a2b2288021eeee99b",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/c2acd52f19bac53d2b6f66c91ed74b199d56802f",
+                "reference": "c2acd52f19bac53d2b6f66c91ed74b199d56802f",
                 "shasum": ""
             },
             "require": {
