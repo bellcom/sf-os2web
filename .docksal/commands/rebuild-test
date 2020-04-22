@@ -19,6 +19,16 @@ echo-green () { echo -e "${green}$1${NC}"; }
 echo-green-bg () { echo -e "${green_bg}$1${NC}"; }
 echo-yellow () { echo -e "${yellow}$1${NC}"; }
 
-echo "Reinstalling drupal from scratch based in os2web profile."
+echo-yellow "Reinstalling drupal from scratch based in os2web profile."
+## With Danish translation. NORE this operation take much longer time.
+# fin drush si os2web --account-pass=admin --locale=da -y -vvv
 
-fin drush si os2web --account-pass=admin --locale=da -y -vvv
+## Without translations.
+fin drush si os2web --account-pass=admin -y -vvv
+
+fin exec chmod 755 web/sites/default
+
+echo-yellow "Enable theme and modules"
+fin drush theme:enable fds_custom_theme
+fin drush config-set system.theme default fds_custom_theme -y
+fin drush en -y os2web_pagebuilder os2web_spotbox
