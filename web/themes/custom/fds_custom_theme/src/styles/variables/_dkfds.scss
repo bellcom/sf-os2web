@@ -382,8 +382,8 @@ $background-modal: rgba(0, 0, 0, 0.75);
 $grid-xs:                     0 !default;
 $grid-sm:                     576px !default;
 $grid-md:                     768px !default;
-$grid-lg:                     960px;
-$grid-xl:                     960px;
+$grid-lg:                     992px !default;
+$grid-xl:                     1200px !default;
 
 // Grid breakpoints..
 $grid-breakpoints: (
@@ -399,7 +399,7 @@ $container-max-widths: (
   sm: 100%,
   md: 100%,
   lg: 100%,
-  xl: 960px
+  xl: 1200px
 ) !default;
 
 $grid-columns:                  12 !default;

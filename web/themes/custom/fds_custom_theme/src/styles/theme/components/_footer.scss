@@ -51,7 +51,7 @@ footer {
   }
 
   section {
-    max-width: 400px;
+    max-width: 480px;
   }
 
   .menu {
@@ -104,6 +104,13 @@ footer {
 
     + .footer-col {
       border-left: 1px solid #fff;
+    }
+
+    &:nth-child(1) {
+
+      section {
+        padding-left: 70px;
+      }
     }
 
     &:nth-child(2) {
