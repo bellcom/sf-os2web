@@ -6716,12 +6716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "60ea060ab30cb6e46599c0904dd983325edb4764"
+                "reference": "a74657edf55e2fa3156dfe546e612fc0abca7238"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/60ea060ab30cb6e46599c0904dd983325edb4764",
-                "reference": "60ea060ab30cb6e46599c0904dd983325edb4764",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/a74657edf55e2fa3156dfe546e612fc0abca7238",
+                "reference": "a74657edf55e2fa3156dfe546e612fc0abca7238",
                 "shasum": ""
             },
             "require": {
