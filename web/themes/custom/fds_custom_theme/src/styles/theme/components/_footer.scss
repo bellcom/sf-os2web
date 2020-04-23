@@ -45,8 +45,32 @@ footer {
     }
 
     .social-icon {
-      font-size: $large-font-size;
+      font-size: 2rem;
     }
+  }
+
+  section {
+    max-width: 400px;
+  }
+
+  .menu {
+    margin: 0;
+
+    li {
+      padding-left: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .menu-item {
+      padding-top: .8em;
+    }
+  }
+
+  .social-icon-list {
+    margin-top: 35px;
   }
 }
 
@@ -74,9 +98,19 @@ footer {
 @include media-breakpoint-up(md) {
 
   .footer-col {
+    padding-top: 10px;
+    padding-bottom: 15px;
 
     + .footer-col {
       border-left: 1px solid #fff;
+    }
+
+    &:nth-child(2) {
+
+      section {
+        padding-top: 60px;
+        padding-left: 70px;
+      }
     }
   }
 }
