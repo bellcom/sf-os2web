@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "a2569754f92b74b0c563eb713d14bb6bfae6f662"
+                "reference": "5ae966a762cf9426783cf12591f6e3aa0a138421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/a2569754f92b74b0c563eb713d14bb6bfae6f662",
-                "reference": "a2569754f92b74b0c563eb713d14bb6bfae6f662",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/5ae966a762cf9426783cf12591f6e3aa0a138421",
+                "reference": "5ae966a762cf9426783cf12591f6e3aa0a138421",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-04-20T11:03:58+00:00"
+            "time": "2020-04-23T07:52:28+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -6168,19 +6168,52 @@
         },
         {
             "name": "harvesthq/chosen",
-            "version": "1.8.7",
+            "version": "v1.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/harvesthq/chosen-package.git",
-                "reference": "origin/master"
+                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harvesthq/chosen-package/zipball/origin/master",
-                "reference": "origin/master",
+                "url": "https://api.github.com/repos/harvesthq/chosen-package/zipball/ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
+                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
                 "shasum": ""
             },
-            "type": "drupal-library"
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Koen Punt",
+                    "homepage": "https://github.com/koenpunt"
+                },
+                {
+                    "name": "Patrick Filler",
+                    "homepage": "https://github.com/pfiller"
+                },
+                {
+                    "name": "Christophe Coevoet",
+                    "homepage": "https://github.com/stof"
+                },
+                {
+                    "name": "Ken Earley",
+                    "homepage": "https://github.com/kenearley"
+                }
+            ],
+            "description": "Chosen is a JavaScript plugin that makes select boxes user-friendly. It is currently available in both jQuery and Prototype flavors.",
+            "homepage": "https://harvesthq.github.io/chosen/",
+            "keywords": [
+                "dropdown",
+                "form",
+                "input",
+                "multiselect",
+                "select",
+                "ui"
+            ],
+            "time": "2018-06-28T20:32:51+00:00"
         },
         {
             "name": "league/container",
@@ -6426,7 +6459,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
-            "time": "2020-04-20T14:15:30+00:00"
+            "time": "2020-04-21T13:32:47+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -6557,7 +6590,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-04-03T12:36:00+00:00"
+            "time": "2020-04-22T08:38:30+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -6632,7 +6665,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-02-11T15:40:46+00:00"
+            "time": "2020-04-22T13:43:03+00:00"
         },
         {
             "name": "paragonie/random_compat",
