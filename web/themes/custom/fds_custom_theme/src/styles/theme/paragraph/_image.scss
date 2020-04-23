@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Footer
+// | Image
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .footer
+// | - .paragraph--type--os2web-image-paragraph
 // |
 
 // --------------------------------------------------
@@ -14,61 +14,18 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin footer-mixin() {}
+@mixin paragraph--type--os2web-image-paragraph-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-footer {
-  background-color: $color-footer-background;
+.paragraph--type--os2web-image-paragraph {
+  box-shadow: $box-shadow;
+}
 
-  .footer {
-    padding-top: calc(#{map-get($spacers, 905)} - 1px);
-    padding-bottom: calc(#{map-get($spacers, 905)} - 1px);
-
-    border-top: 0;
-
-    h1, h2, h3, h4, h5, h6,
-    a, a:hover, a:visited, a:focus,
-    .is-active > a,
-    &, p {
-      color: #fff;
-    }
-
-    a {
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .social-icon {
-      font-size: 2rem;
-    }
-  }
-
-  section {
-    max-width: 430px;
-  }
-
-  .menu {
-    margin: 0;
-
-    li {
-      padding-left: 0;
-
-      &:before {
-        display: none;
-      }
-    }
-
-    .menu-item {
-      padding-top: .8em;
-    }
-  }
-
-  .social-icon-list {
-    margin-top: 35px;
-  }
+.field--name-field-os2web-image-description {
+  padding: 20px 30px;
 }
 
 // --------------------------------------------------
@@ -92,32 +49,7 @@ footer {
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {
-
-  .footer-col {
-    padding-top: 10px;
-    padding-bottom: 15px;
-
-    + .footer-col {
-      border-left: 1px solid #fff;
-    }
-
-    &:nth-child(1) {
-
-      section {
-        padding-left: 70px;
-      }
-    }
-
-    &:nth-child(2) {
-
-      section {
-        padding-top: 60px;
-        padding-left: 70px;
-      }
-    }
-  }
-}
+@include media-breakpoint-up(md) {}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}
@@ -132,12 +64,7 @@ footer {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {
-
-  footer .footer {
-    border: none;
-  }
-}
+@media print {}
 
 // Touch
 .touchevents {}
