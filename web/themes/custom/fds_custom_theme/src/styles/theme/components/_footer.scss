@@ -10,11 +10,6 @@
 // Variables
 // --------------------------------------------------
 
-// Color for specific regions should be unique
-// That will allow theme adjust this colors with color module.
-$color-footer-text: #999998;
-$color-footer-link: #fffffe;
-
 // --------------------------------------------------
 // Mixins
 // --------------------------------------------------
@@ -26,6 +21,7 @@ $color-footer-link: #fffffe;
 // --------------------------------------------------
 
 footer {
+  background-color: $color-footer-background;
 
   .footer {
     padding-top: calc(#{map-get($spacers, 9)} - 1px);
@@ -33,21 +29,23 @@ footer {
 
     border-top: 0;
 
+    h1, h2, h3, h4, h5, h6,
+    a,
     &, p {
-      color: $color-footer-text;
+      color: #fff;
+    }
+
+    &, p, a {
+      font-size: $small-font-size;
     }
 
     a {
+      font-weight: bold;
       text-decoration: none;
-
-      color: $color-footer-link;
     }
-  }
 
-  p {
-
-    + p {
-      margin-top: 15px;
+    .social-icon {
+      font-size: $large-font-size;
     }
   }
 }
@@ -73,7 +71,15 @@ footer {
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+
+  .footer-col {
+
+    + .footer-col {
+      border-left: 1px solid #fff;
+    }
+  }
+}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}

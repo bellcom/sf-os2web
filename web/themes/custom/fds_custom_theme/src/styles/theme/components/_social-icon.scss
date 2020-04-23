@@ -20,24 +20,39 @@
 // Styling
 // --------------------------------------------------
 
-footer {
+.social-icon-list {
+  display: flex;
 
-  .footer {
-    padding-top: calc(#{map-get($spacers, 9)} - 1px);
-    padding-bottom: calc(#{map-get($spacers, 9)} - 1px);
+  > * {
+    margin-right: 12px;
+  }
+}
 
-    border-top: 0;
+.social-icon {
+  display: flex;
 
-    &, p {
-      color: #fff;
-    }
+  justify-content: center;
+  align-items: center;
 
-    a {
-      font-weight: bold;
-      text-decoration: none;
+  height: 30px;
+  width: 30px;
 
-      color: #fff;
-    }
+  font-size: 1.4rem;
+
+  background-color: #fff;
+  border-radius: 100%;
+
+  &, &:hover {
+    text-decoration: none;
+  }
+
+  .icon {
+    display: inline-block;
+
+    height: auto;
+    width: auto;
+
+    color: $color-footer-background;
   }
 }
 
@@ -56,7 +71,15 @@ footer {
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .social-icon {
+    height: 40px;
+    width: 40px;
+
+    font-size: 2rem;
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
@@ -77,12 +100,7 @@ footer {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {
-
-  footer .footer {
-    border: none;
-  }
-}
+@media print {}
 
 // Touch
 .touchevents {}
