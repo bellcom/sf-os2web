@@ -24,13 +24,14 @@ footer {
   background-color: $color-footer-background;
 
   .footer {
-    padding-top: calc(#{map-get($spacers, 9)} - 1px);
-    padding-bottom: calc(#{map-get($spacers, 9)} - 1px);
+    padding-top: calc(#{map-get($spacers, 905)} - 1px);
+    padding-bottom: calc(#{map-get($spacers, 905)} - 1px);
 
     border-top: 0;
 
     h1, h2, h3, h4, h5, h6,
-    a,
+    a, a:hover, a:visited, a:focus,
+    .is-active > a,
     &, p {
       color: #fff;
     }
