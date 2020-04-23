@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc96f071e5bafe5d822b79c51b923dde",
+    "content-hash": "41521c23c8db8644ecbee3d531244315",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "5ae966a762cf9426783cf12591f6e3aa0a138421"
+                "reference": "a2569754f92b74b0c563eb713d14bb6bfae6f662"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/5ae966a762cf9426783cf12591f6e3aa0a138421",
-                "reference": "5ae966a762cf9426783cf12591f6e3aa0a138421",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/a2569754f92b74b0c563eb713d14bb6bfae6f662",
+                "reference": "a2569754f92b74b0c563eb713d14bb6bfae6f662",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-04-23T07:52:28+00:00"
+            "time": "2020-04-22T13:05:57+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -4877,6 +4877,136 @@
             }
         },
         {
+            "name": "drupal/migrate_plus",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/migrate_plus.git",
+                "reference": "8.x-4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-4.2.zip",
+                "reference": "8.x-4.2",
+                "shasum": "5736a43e39cc5c091d54ceef2849ea35ba979af3"
+            },
+            "require": {
+                "drupal/core": "^8.3"
+            },
+            "require-dev": {
+                "drupal/entity": "*",
+                "drupal/migrate_example_advanced_setup": "*",
+                "drupal/migrate_example_setup": "*",
+                "drupal/migrate_tools": "*",
+                "drupal/profile": "*"
+            },
+            "suggest": {
+                "ext-soap": "*",
+                "sainsburys/guzzle-oauth2-plugin": "3.0 required for the OAuth2 authentication plugin"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-4.2",
+                    "datestamp": "1555683487",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Ryan",
+                    "homepage": "https://www.drupal.org/u/mikeryan",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Enhancements to core migration support.",
+            "homepage": "https://www.drupal.org/project/migrate_plus",
+            "support": {
+                "source": "https://cgit.drupalcode.org/migrate_plus",
+                "issues": "https://www.drupal.org/project/issues/migrate_plus",
+                "irc": "irc://irc.freenode.org/drupal-migrate"
+            }
+        },
+        {
+            "name": "drupal/migrate_tools",
+            "version": "4.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/migrate_tools.git",
+                "reference": "8.x-4.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-4.5.zip",
+                "reference": "8.x-4.5",
+                "shasum": "06390b359bf53c50a30f2d6dc4c7542bfb1fe7ca"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/migrate_plus": "^4 || ^5"
+            },
+            "require-dev": {
+                "drupal/migrate_plus": "4.x-dev",
+                "drupal/migrate_source_csv": "^2.2",
+                "drush/drush": "^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.5",
+                    "datestamp": "1574693285",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                }
+            ],
+            "description": "Tools to assist in developing and running migrations.",
+            "homepage": "http://drupal.org/project/migrate_tools",
+            "support": {
+                "source": "http://cgit.drupalcode.org/migrate_tools",
+                "issues": "http://drupal.org/project/migrate_tools",
+                "irc": "irc://irc.freenode.org/drupal-migrate"
+            }
+        },
+        {
             "name": "drupal/module_filter",
             "version": "3.1.0",
             "source": {
@@ -6168,52 +6298,19 @@
         },
         {
             "name": "harvesthq/chosen",
-            "version": "v1.8.7",
+            "version": "1.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/harvesthq/chosen-package.git",
-                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d"
+                "reference": "origin/master"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/harvesthq/chosen-package/zipball/ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
-                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
+                "url": "https://api.github.com/repos/harvesthq/chosen-package/zipball/origin/master",
+                "reference": "origin/master",
                 "shasum": ""
             },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Koen Punt",
-                    "homepage": "https://github.com/koenpunt"
-                },
-                {
-                    "name": "Patrick Filler",
-                    "homepage": "https://github.com/pfiller"
-                },
-                {
-                    "name": "Christophe Coevoet",
-                    "homepage": "https://github.com/stof"
-                },
-                {
-                    "name": "Ken Earley",
-                    "homepage": "https://github.com/kenearley"
-                }
-            ],
-            "description": "Chosen is a JavaScript plugin that makes select boxes user-friendly. It is currently available in both jQuery and Prototype flavors.",
-            "homepage": "https://harvesthq.github.io/chosen/",
-            "keywords": [
-                "dropdown",
-                "form",
-                "input",
-                "multiselect",
-                "select",
-                "ui"
-            ],
-            "time": "2018-06-28T20:32:51+00:00"
+            "type": "drupal-library"
         },
         {
             "name": "league/container",
@@ -6538,6 +6635,58 @@
             ],
             "description": "Main module that brings hjemmeside general configuration.",
             "time": "2020-04-20T09:57:57+00:00"
+        },
+        {
+            "name": "os2web/os2web_meetings",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_meetings.git",
+                "reference": "ecb08a7e86f455cc7ccad8d226ad22e354ce0a72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/ecb08a7e86f455cc7ccad8d226ad22e354ce0a72",
+                "reference": "ecb08a7e86f455cc7ccad8d226ad22e354ce0a72",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/migrate_plus": "^4.2",
+                "drupal/migrate_tools": "^4.5"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Import meetings from ESDH systems",
+            "time": "2020-04-22T13:56:47+00:00"
+        },
+        {
+            "name": "os2web/os2web_meetings_sbsys",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_meetings_sbsys.git",
+                "reference": "c80fadd4d6bad99ebe32397c6b9e859945244622"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_sbsys/zipball/c80fadd4d6bad99ebe32397c6b9e859945244622",
+                "reference": "c80fadd4d6bad99ebe32397c6b9e859945244622",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/migrate_plus": "^4.2",
+                "drupal/migrate_tools": "^4.5"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Import meetings from SBSYS ESDH system",
+            "time": "2020-04-23T07:38:02+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
@@ -14173,6 +14322,8 @@
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
         "os2web/os2web_hjemmeside": 20,
+        "os2web/os2web_meetings": 20,
+        "os2web/os2web_meetings_sbsys": 20,
         "os2web/os2web_pagebuilder": 20,
         "os2web/os2web_spotbox": 20
     },
