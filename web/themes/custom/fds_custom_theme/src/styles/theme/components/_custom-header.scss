@@ -68,7 +68,11 @@
 }
 
 .path-frontpage {
-  padding-top: 0;
+  padding-top: 0 !important;
+
+  &.toolbar-tray-open {
+    padding-top: 79px !important;
+  }
 }
 body {
   padding-top: 125px !important; // Height of .custom-header--fixed (recalculated by JS)
@@ -98,6 +102,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
+
+  z-index: 1000;
 
   .toolbar-tray-open & {
     top: 79px; // Height of toolbar tray.
