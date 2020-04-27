@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Footer
+// | Action buttons
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .footer
+// | - .action-buttons
 // |
 
 // --------------------------------------------------
@@ -14,58 +14,41 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin footer-mixin() {}
+@mixin action-buttons-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.social-icon-list {
-  display: flex;
+.action-buttons {
 
-  > * {
-    margin-right: 12px;
+  .flexy-list {
+
+    > * {
+      padding: 0 20px 0 0;
+    }
   }
 }
 
-.social-icon {
+.action-button {
   display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-  height: 33px;
-  width: 33px;
-
-  font-size: 1.7rem;
-
-  background-color: #fff;
-  border-radius: 100%;
-
-  &, &:hover {
-    text-decoration: none;
-  }
-
-  .icon {
-    display: inline-block;
-
-    height: auto;
-    width: auto;
-
-    color: $color-footer-background;
-  }
 }
-.social-icon--image {
-  background-color: initial;
 
-  img {
-    width: 100%;
-  }
+.action-button__icon {
+  display: none;
+
+  margin-right: 5px;
 }
 
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+.action-button__icon--orange {
+
+  /* Show orange variant as default. */
+  display: inline-block;
+}
 
 // --------------------------------------------------
 // Responsive

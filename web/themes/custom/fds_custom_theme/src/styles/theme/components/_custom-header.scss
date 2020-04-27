@@ -1,0 +1,161 @@
+// |--------------------------------------------------------------------------
+// | Custom header
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .custom-header
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin custom-header-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.custom-header {
+  background-position: center center;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .action-buttons {
+
+    a {
+      color: #fff;
+
+      text-decoration: none;
+      font-weight: $font-weight-bold;
+    }
+
+    .action-button__icon--orange {
+      display: none;
+    }
+    .action-button__icon--white {
+      display: inline-block;
+    }
+  }
+}
+
+.custom-header__logo {
+
+  + .action-buttons {
+    margin-left: 50px;
+  }
+}
+
+.custom-header__inner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background: rgb(0,102,50);
+  background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 30%, rgba(0,102,50,0) 100%);
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+.custom-header--static {
+  display: none;
+
+  background-position: 0 -265px;
+
+  .path-frontpage & {
+    display: block;
+  }
+}
+
+.custom-header--fixed {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .path-frontpage & {
+    display: none;
+  }
+}
+
+.custom-header__button {
+  padding: 10px; // For fat thumbs.
+
+  background-color: transparent;
+
+  border: 0;
+
+  + .custom-header__button {
+    margin-left: 15px;
+  }
+
+  .icon {
+    height: auto;
+    width: auto;
+
+    font-size: 3rem;
+
+    color: $color-orange-004;
+  }
+}
+
+.custom-header__button--toggle-megamenu {}
+
+.custom-header__button--toggle-search {
+  padding: 8px;
+
+  border-radius: 100%;
+  background-color: $color-orange-004;
+
+  .icon {
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {}
+
+// Mobile - only
+@include media-breakpoint-only(xs, $grid-breakpoints) {}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {}
+
+// Tablet - only
+@include media-breakpoint-only(sm, $grid-breakpoints) {}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {}
+
+// Desktop - only
+@include media-breakpoint-only(md, $grid-breakpoints) {}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {}
+
+// Large desktop - only
+@include media-breakpoint-only(lg, $grid-breakpoints) {}
+
+// Extra large desktop - and up
+@include media-breakpoint-up(xl) {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
