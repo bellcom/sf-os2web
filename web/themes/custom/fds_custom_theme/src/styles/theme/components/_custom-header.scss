@@ -67,6 +67,13 @@
   background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 30%, rgba(0,102,50,0) 100%);
 }
 
+.path-frontpage {
+  padding-top: 0;
+}
+body {
+  padding-top: 125px; // Height of .custom-header--fixed (recalculated by JS)
+}
+
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
