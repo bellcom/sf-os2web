@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-04-22T13:05:57+00:00"
+            "time": "2020-04-23T07:52:28+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -6642,12 +6642,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "ecb08a7e86f455cc7ccad8d226ad22e354ce0a72"
+                "reference": "7ec71f1e991ac1604fbb655ddf5afa169a63e5c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/ecb08a7e86f455cc7ccad8d226ad22e354ce0a72",
-                "reference": "ecb08a7e86f455cc7ccad8d226ad22e354ce0a72",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/7ec71f1e991ac1604fbb655ddf5afa169a63e5c4",
+                "reference": "7ec71f1e991ac1604fbb655ddf5afa169a63e5c4",
                 "shasum": ""
             },
             "require": {
@@ -6660,7 +6660,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-04-22T13:56:47+00:00"
+            "time": "2020-04-23T13:55:24+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
@@ -6739,7 +6739,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-04-22T08:38:30+00:00"
+            "time": "2020-04-23T09:42:03+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
