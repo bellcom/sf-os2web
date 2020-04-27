@@ -71,10 +71,10 @@
   padding-top: 0;
 }
 body {
-  padding-top: 125px; // Height of .custom-header--fixed (recalculated by JS)
+  padding-top: 125px !important; // Height of .custom-header--fixed (recalculated by JS)
 
   &.toolbar-tray-open {
-    padding-top: 125px + 79px;
+    padding-top: 125px + 79px !important;
   }
 }
 
