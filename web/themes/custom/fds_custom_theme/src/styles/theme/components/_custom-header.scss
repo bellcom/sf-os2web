@@ -26,6 +26,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  button,
+  a {
+
+    &:focus {
+      outline-color: $color-orange-004;
+    }
+  }
+
   .action-buttons {
 
     a {
