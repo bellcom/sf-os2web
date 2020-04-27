@@ -6668,12 +6668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_sbsys.git",
-                "reference": "c80fadd4d6bad99ebe32397c6b9e859945244622"
+                "reference": "d2406180dceebaee7762283b43f99dd01c2f6363"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_sbsys/zipball/c80fadd4d6bad99ebe32397c6b9e859945244622",
-                "reference": "c80fadd4d6bad99ebe32397c6b9e859945244622",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_sbsys/zipball/d2406180dceebaee7762283b43f99dd01c2f6363",
+                "reference": "d2406180dceebaee7762283b43f99dd01c2f6363",
                 "shasum": ""
             },
             "require": {
@@ -6686,7 +6686,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS ESDH system",
-            "time": "2020-04-23T07:38:02+00:00"
+            "time": "2020-04-23T13:39:43+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
