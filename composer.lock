@@ -6612,12 +6612,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "73cc6da67681ea294d5a3d0a2e792bb4e1c7b333"
+                "reference": "587a1363f46c989f5ae87403d49cd8fd33c574da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/73cc6da67681ea294d5a3d0a2e792bb4e1c7b333",
-                "reference": "73cc6da67681ea294d5a3d0a2e792bb4e1c7b333",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/587a1363f46c989f5ae87403d49cd8fd33c574da",
+                "reference": "587a1363f46c989f5ae87403d49cd8fd33c574da",
                 "shasum": ""
             },
             "require": {
