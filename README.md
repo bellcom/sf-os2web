@@ -5,7 +5,7 @@
 * Clone the repository
 
 ```
-git clone git@github.com:OS2web/os2web_hjemmeside8.git
+git clone git@github.com:OS2web/os2web8.git
 ```
 * Rename your installation if needed
 
