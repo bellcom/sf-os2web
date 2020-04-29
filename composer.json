@@ -35,6 +35,7 @@
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
         "drush/drush": "^9.7.1 | ^10.0.0",
+        "os2web/os2web": "develop-dev",
         "os2web/os2web_hjemmeside": "dev-master",
         "os2web/os2web_meetings": "dev-develop",
         "os2web/os2web_meetings_sbsys": "dev-master",
