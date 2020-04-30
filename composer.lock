@@ -6629,7 +6629,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
-            "time": "2020-04-28T14:01:08+00:00"
+            "time": "2020-04-28T14:51:36+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -6689,12 +6689,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "f1c16743cc3b7da5583f40adaa40ea8542136a9c"
+                "reference": "c13656a6496a25949056e877f49094414f290cc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/f1c16743cc3b7da5583f40adaa40ea8542136a9c",
-                "reference": "f1c16743cc3b7da5583f40adaa40ea8542136a9c",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/c13656a6496a25949056e877f49094414f290cc9",
+                "reference": "c13656a6496a25949056e877f49094414f290cc9",
                 "shasum": ""
             },
             "require": {
@@ -6706,7 +6706,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-04-28T14:20:33+00:00"
+            "time": "2020-04-30T10:37:24+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
