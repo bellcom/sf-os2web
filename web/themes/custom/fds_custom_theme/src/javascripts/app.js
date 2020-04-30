@@ -6,7 +6,7 @@ jQuery(function ($) {
     items: 1,
     autoplay: true,
     autoplayHoverPause: true,
-    gutter: 16,
+    gutter: 32,
     responsive: {
       576: {
         items: 2,
