@@ -19,6 +19,9 @@ echo-green () { echo -e "${green}$1${NC}"; }
 echo-green-bg () { echo -e "${green_bg}$1${NC}"; }
 echo-yellow () { echo -e "${yellow}$1${NC}"; }
 
+echo-yellow "Fetching composer dependencies"
+fin composer install
+
 echo-yellow "Reinstalling drupal from scratch based in os2web profile."
 ## With Danish translation. NORE this operation take much longer time.
 # fin drush si os2web --db-url=mysql://root:root@db/default --account-pass=admin --locale=da -y -vvv
