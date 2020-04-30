@@ -20,13 +20,6 @@
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-slideshow {
-
-  button[data-action="stop"] {
-    display: none;
-  }
-}
-
 .tns-outer {
   position: relative;
 
@@ -41,8 +34,6 @@
   right: 0;
 
   margin-bottom: -70px;
-
-  text-align: center;
 
   button {
     width: 20px;
