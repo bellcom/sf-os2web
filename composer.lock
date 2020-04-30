@@ -6549,12 +6549,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "0ba9b9a2f83364e99443f78da6bf7d4e5fda9429"
+                "reference": "d9d7f84655f1e953942729dabf3b9db98a964f79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/0ba9b9a2f83364e99443f78da6bf7d4e5fda9429",
-                "reference": "0ba9b9a2f83364e99443f78da6bf7d4e5fda9429",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/d9d7f84655f1e953942729dabf3b9db98a964f79",
+                "reference": "d9d7f84655f1e953942729dabf3b9db98a964f79",
                 "shasum": ""
             },
             "require": {
@@ -6604,7 +6604,7 @@
                 "EUPL-1.2"
             ],
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
-            "time": "2020-04-28T14:06:29+00:00"
+            "time": "2020-04-29T11:55:29+00:00"
         },
         {
             "name": "os2web/os2web",
@@ -6637,12 +6637,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "595f57793e529c089435be5df116b1258823174e"
+                "reference": "371d2b7eed4ddbbe9e3a1314bd68fea6fe9e7a08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/595f57793e529c089435be5df116b1258823174e",
-                "reference": "595f57793e529c089435be5df116b1258823174e",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/371d2b7eed4ddbbe9e3a1314bd68fea6fe9e7a08",
+                "reference": "371d2b7eed4ddbbe9e3a1314bd68fea6fe9e7a08",
                 "shasum": ""
             },
             "require": {
@@ -6656,7 +6656,7 @@
                 "EUPL-1.2"
             ],
             "description": "Contact entity",
-            "time": "2020-04-20T11:17:34+00:00"
+            "time": "2020-04-30T08:06:13+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -6788,12 +6788,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "2b4d6190c56789c3a5c426fd4883622f6daf3e08"
+                "reference": "ac7b64e44567d8e9256394855cd257a8879fed87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/2b4d6190c56789c3a5c426fd4883622f6daf3e08",
-                "reference": "2b4d6190c56789c3a5c426fd4883622f6daf3e08",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/ac7b64e44567d8e9256394855cd257a8879fed87",
+                "reference": "ac7b64e44567d8e9256394855cd257a8879fed87",
                 "shasum": ""
             },
             "require": {
@@ -6811,7 +6811,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-04-23T09:42:03+00:00"
+            "time": "2020-04-24T14:00:54+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -6869,16 +6869,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "475946f726b688f72b57f9ccfee2997984b63821"
+                "reference": "d11a297b5dc619fc92972047259be198e51aafd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/475946f726b688f72b57f9ccfee2997984b63821",
-                "reference": "475946f726b688f72b57f9ccfee2997984b63821",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/d11a297b5dc619fc92972047259be198e51aafd5",
+                "reference": "d11a297b5dc619fc92972047259be198e51aafd5",
                 "shasum": ""
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "*",
+                "drupal/crop": "*",
+                "drupal/image_widget_crop": "*",
+                "drupal/inline_entity_form": "^1.0@RC",
+                "drupal/paragraphs": "*"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -6886,7 +6890,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-04-22T13:43:03+00:00"
+            "time": "2020-04-30T13:18:41+00:00"
         },
         {
             "name": "paragonie/random_compat",
