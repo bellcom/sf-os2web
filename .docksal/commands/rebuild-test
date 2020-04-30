@@ -21,10 +21,10 @@ echo-yellow () { echo -e "${yellow}$1${NC}"; }
 
 echo-yellow "Reinstalling drupal from scratch based in os2web profile."
 ## With Danish translation. NORE this operation take much longer time.
-# fin drush si os2web --account-pass=admin --locale=da -y -vvv
+# fin drush si os2web --db-url=mysql://root:root@db/default --account-pass=admin --locale=da -y -vvv
 
 ## Without translations.
-fin drush si os2web --account-pass=admin -y -vvv
+fin drush si os2web --db-url=mysql://root:root@db/default --account-pass=admin -y -vvv
 
 fin exec chmod 755 web/sites/default
 
