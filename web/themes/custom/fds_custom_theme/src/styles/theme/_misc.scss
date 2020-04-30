@@ -4,6 +4,10 @@ body .container-fluid {
   padding-right: $grid-gutter-width;
 }
 
+body {
+  line-height: 1.8;
+}
+
 // Accessibility overrides.
 body a {
 
