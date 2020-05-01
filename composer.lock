@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd8cda11ab03427cbf502d51e9b16512",
+    "content-hash": "b81d58d1e56b275d9318263860cef1a7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4858,6 +4858,79 @@
             }
         },
         {
+            "name": "drupal/menu_item_extras",
+            "version": "2.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_item_extras.git",
+                "reference": "8.x-2.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_item_extras-8.x-2.11.zip",
+                "reference": "8.x-2.11",
+                "shasum": "d6f0f1e2535f63907b418faa573f6f963c85b1fb"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.11",
+                    "datestamp": "1585397140",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Andriy Khomych",
+                    "homepage": "https://www.drupal.org/u/andriy-khomych",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Bogdan Hepting",
+                    "homepage": "https://www.drupal.org/u/bogdan-hepting",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Oleh Vehera",
+                    "homepage": "https://www.drupal.org/u/voleger",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Mykhailo Gurei",
+                    "homepage": "https://www.drupal.org/u/ozin",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provide an additional custom fields which can be used on Menu link",
+            "homepage": "https://www.drupal.org/project/menu_item_extras",
+            "keywords": [
+                "Drupal",
+                "Mega Menu"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_item_extras",
+                "issues": "https://www.drupal.org/project/issues/menu_item_extras"
+            }
+        },
+        {
             "name": "drupal/metatag",
             "version": "1.12.0",
             "source": {
@@ -6612,12 +6685,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "587a1363f46c989f5ae87403d49cd8fd33c574da"
+                "reference": "42b5edacbc635d61629dbae1614ac22dba9e0ba3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/587a1363f46c989f5ae87403d49cd8fd33c574da",
-                "reference": "587a1363f46c989f5ae87403d49cd8fd33c574da",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/42b5edacbc635d61629dbae1614ac22dba9e0ba3",
+                "reference": "42b5edacbc635d61629dbae1614ac22dba9e0ba3",
                 "shasum": ""
             },
             "require": {
@@ -6811,7 +6884,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-04-24T14:00:54+00:00"
+            "time": "2020-05-01T10:51:35+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -6890,7 +6963,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-04-30T13:18:41+00:00"
+            "time": "2020-04-30T16:03:27+00:00"
         },
         {
             "name": "paragonie/random_compat",
