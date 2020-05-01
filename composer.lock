@@ -6942,12 +6942,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "51e10b9ed2b920fe272bca621ec1b65153e61a29"
+                "reference": "4a1d234f38623e64c7cf6088250a761280102dce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/51e10b9ed2b920fe272bca621ec1b65153e61a29",
-                "reference": "51e10b9ed2b920fe272bca621ec1b65153e61a29",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/4a1d234f38623e64c7cf6088250a761280102dce",
+                "reference": "4a1d234f38623e64c7cf6088250a761280102dce",
                 "shasum": ""
             },
             "require": {
