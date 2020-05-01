@@ -6788,12 +6788,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "554ec5118bc6fbad5500eed6cbff0378c7e6e5c9"
+                "reference": "095d587aec1cb67a4e0070fccbba66f25a862dba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/554ec5118bc6fbad5500eed6cbff0378c7e6e5c9",
-                "reference": "554ec5118bc6fbad5500eed6cbff0378c7e6e5c9",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/095d587aec1cb67a4e0070fccbba66f25a862dba",
+                "reference": "095d587aec1cb67a4e0070fccbba66f25a862dba",
                 "shasum": ""
             },
             "require": {
