@@ -1,3 +1,50 @@
+<!-- Begin - megamenu -->
+<div class="custom-megamenu">
+  <div class="container-fluid">
+
+    <!-- Begin - top row -->
+    <div class="custom-megamenu__row custom-megamenu__row--top">
+      <div class="row">
+
+        <!-- Begin - language selector -->
+        <div class="col-12 col-sm-3">
+          {{ page.megamenu__language_selector }}
+        </div>
+        <!-- End - language selector -->
+
+        <!-- Begin - search -->
+        <div class="col-12 col-sm-6">
+          <div class="text-align-center">
+            {{ page.megamenu__search }}
+          </div>
+        </div>
+        <!-- End - search -->
+
+        <!-- Begin - toggle megamenu -->
+        <div class="col-12 col-sm-3">
+          <div class="text-align-right">
+            <button
+              class="custom-megamenu__button custom-megamenu__button--toggle-megamenu js-toggle-megamenu">
+              <span class="icon fa fa-times"></span>
+            </button>
+          </div>
+        </div>
+        <!-- End - toggle megamenu -->
+
+      </div>
+    </div>
+    <!-- End - top row -->
+
+    <!-- Begin - navigation -->
+    <div class="custom-megamenu__row custom-megamenu__row--navigation">
+      {{ page.megamenu__navigation }}
+    </div>
+    <!-- End - navigation -->
+
+  </div>
+</div>
+<!-- End - megamenu -->
+
 <header>
   <div class="custom-header custom-header--static">
     <div class="custom-header__inner">

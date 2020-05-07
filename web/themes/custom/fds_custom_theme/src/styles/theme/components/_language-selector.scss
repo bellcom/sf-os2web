@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Social icon
+// | Language selector
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .social-icon
+// | - .block-language
 // |
 
 // --------------------------------------------------
@@ -14,58 +14,39 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin footer-mixin() {}
+@mixin block-language-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.social-icon-list {
-  display: flex;
+.block-language {
 
-  > * {
-    margin-right: 12px;
+  ul {
+    margin: 0;
+
+    li {
+      display: inline-block;
+
+      margin: 0;
+      padding: 0;
+
+      + li {
+        margin-left: 15px;
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    font-weight: $font-weight-bold;
+    text-decoration: underline;
+    text-transform: uppercase;
   }
 }
-
-.social-icon {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-  height: 33px;
-  width: 33px;
-
-  font-size: 1.7rem;
-
-  background-color: #fff;
-  border-radius: 100%;
-
-  &, &:hover {
-    text-decoration: none;
-  }
-
-  .icon {
-    display: inline-block;
-
-    height: auto;
-    width: auto;
-
-    color: $color-footer-background;
-  }
-}
-.social-icon--image {
-  background-color: initial;
-
-  img {
-    width: 100%;
-  }
-}
-
-// --------------------------------------------------
-// Variants
-// --------------------------------------------------
 
 // --------------------------------------------------
 // Responsive
