@@ -21,8 +21,17 @@
 // --------------------------------------------------
 
 .custom-megamenu {
-  height: 100vh;
-  width: 100vw;
+  display: none;
+  position: fixed;
+
+  overflow: scroll;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 1500;
 
   padding-top: 20px;
   padding-bottom: 20px;
@@ -48,6 +57,15 @@
     }
   }
 }
+.custom-megamenu--visible {
+  overflow: hidden;
+
+  height: 100vh;
+
+  .custom-megamenu {
+    display: block;
+  }
+}
 
 .custom-megamenu__button {
   padding: 10px; // For fat thumbs.
@@ -70,10 +88,16 @@
   }
 }
 
+.custom-megamenu__row {
+
+  + .custom-megamenu__row {
+    margin-top: 20px;
+  }
+}
+
 .custom-megamenu__button--toggle-megamenu {}
 
 .custom-megamenu__row--navigation {
-  margin-top: 15px;
 
   .menu-level-0 {
     display: flex;

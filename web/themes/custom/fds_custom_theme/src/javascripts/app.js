@@ -43,3 +43,20 @@ jQuery(function ($) {
     });
   }
 })();
+
+// Megamenu.
+(function() {
+  function handleToggle(e) {
+    var body = document.querySelector('body');
+
+    body.classList.toggle('custom-megamenu--visible');
+  }
+
+  var toggles = document.querySelectorAll('.js-toggle-megamenu');
+
+  for (var i = 0; i < toggles.length; i++) {
+    var toggle = toggles[i];
+
+    toggle.addEventListener('click', handleToggle);
+  }
+})();
