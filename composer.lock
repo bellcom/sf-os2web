@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b81d58d1e56b275d9318263860cef1a7",
+    "content-hash": "fdf6945e5737164a1ad6827f7697757f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2720,6 +2720,64 @@
             }
         },
         {
+            "name": "drupal/ckeditor_iframe",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_iframe.git",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_iframe-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "58f800ed3b0b09605811955cc923ce4effc68833"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/fakeobjects": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1577659387",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Brian Osborne (bkosborne)",
+                    "homepage": "https://www.drupal.org/u/bkosborne",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the iFrame dialog plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/ckeditor_iframe",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_iframe",
+                "issues": "https://drupal.org/project/issues/ckeditor_iframe"
+            }
+        },
+        {
             "name": "drupal/config_filter",
             "version": "1.5.0",
             "source": {
@@ -4401,6 +4459,58 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/extlink",
                 "issues": "https://www.drupal.org/project/issues/extlink"
+            }
+        },
+        {
+            "name": "drupal/fakeobjects",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fakeobjects.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fakeobjects-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "b1ebbd4ad2026f99c0204ad513cea74fb2692ff8"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1474470239",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the FakeObjects plugin to CKEditor. This plugin is a utility plugin that is required by certain user-facing CKEditor plugins.",
+            "homepage": "http://drupal.org/project/fakeobjects",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/fakeobjects",
+                "issues": "http://drupal.org/project/issues/fakeobjects"
             }
         },
         {
@@ -6685,15 +6795,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "42b5edacbc635d61629dbae1614ac22dba9e0ba3"
+                "reference": "4235dc82ff1da048577b0847b4bc6ef86df8d450"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/42b5edacbc635d61629dbae1614ac22dba9e0ba3",
-                "reference": "42b5edacbc635d61629dbae1614ac22dba9e0ba3",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/4235dc82ff1da048577b0847b4bc6ef86df8d450",
+                "reference": "4235dc82ff1da048577b0847b4bc6ef86df8d450",
                 "shasum": ""
             },
             "require": {
+                "drupal/ckeditor_iframe": "^2.0",
+                "drupal/menu_item_extras": "^2.11",
                 "os2core/os2core": "dev-master"
             },
             "type": "drupal-profile",
@@ -6702,7 +6814,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
-            "time": "2020-04-28T14:51:36+00:00"
+            "time": "2020-05-07T10:29:21+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -6762,12 +6874,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "9f2dc5f452d396266cd5e280240936827891b39f"
+                "reference": "36143291123ef9f0e49d3879d8d4623d86f3a6b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/9f2dc5f452d396266cd5e280240936827891b39f",
-                "reference": "9f2dc5f452d396266cd5e280240936827891b39f",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/36143291123ef9f0e49d3879d8d4623d86f3a6b4",
+                "reference": "36143291123ef9f0e49d3879d8d4623d86f3a6b4",
                 "shasum": ""
             },
             "require": {
@@ -6779,7 +6891,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-04-30T10:37:24+00:00"
+            "time": "2020-05-04T13:15:35+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
@@ -6861,12 +6973,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "b2004a949249d873beba98f7ddefd324a001fc6e"
+                "reference": "08210a38171feb25c5f479677448ad0dbbeeb626"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/b2004a949249d873beba98f7ddefd324a001fc6e",
-                "reference": "b2004a949249d873beba98f7ddefd324a001fc6e",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/08210a38171feb25c5f479677448ad0dbbeeb626",
+                "reference": "08210a38171feb25c5f479677448ad0dbbeeb626",
                 "shasum": ""
             },
             "require": {
@@ -6884,7 +6996,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-05-01T10:51:35+00:00"
+            "time": "2020-05-04T14:08:10+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -6963,7 +7075,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-04-30T16:03:27+00:00"
+            "time": "2020-05-04T14:00:33+00:00"
         },
         {
             "name": "paragonie/random_compat",
