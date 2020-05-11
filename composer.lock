@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fdf6945e5737164a1ad6827f7697757f",
+    "content-hash": "8cb294adf4d6d851ccbed52468b97f2c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5802,6 +5802,60 @@
             }
         },
         {
+            "name": "drupal/svg_image",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/svg_image.git",
+                "reference": "8.x-1.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_image-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "3b60ab47802bfaa046da54d7179e47889b41a845"
+            },
+            "require": {
+                "drupal/core": "*",
+                "enshrined/svg-sanitize": ">=0.9 <1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.13",
+                    "datestamp": "1585379082",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Yaroslav Lushnikov",
+                    "homepage": "https://www.drupal.org/user/2870933",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/2887125/committers"
+                }
+            ],
+            "description": "Overrides the standard image formatter and widget to support SVG files.",
+            "homepage": "http://drupal.org/project/svg_image",
+            "support": {
+                "source": "http://cgit.drupalcode.org/svg_image",
+                "issues": "http://drupal.org/project/svg_image"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.6.0",
             "source": {
@@ -6118,6 +6172,47 @@
                 "validator"
             ],
             "time": "2020-02-13T22:36:52+00:00"
+        },
+        {
+            "name": "enshrined/svg-sanitize",
+            "version": "0.13.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+                "reference": "bc66593f255b7d2613d8f22041180036979b6403"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/bc66593f255b7d2613d8f22041180036979b6403",
+                "reference": "bc66593f255b7d2613d8f22041180036979b6403",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "^0.1.2",
+                "phpunit/phpunit": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "enshrined\\svgSanitize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daryll Doyle",
+                    "email": "daryll@enshrined.co.uk"
+                }
+            ],
+            "description": "An SVG sanitizer for PHP",
+            "time": "2020-01-20T01:34:17+00:00"
         },
         {
             "name": "gettext/gettext",
@@ -6891,7 +6986,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-05-04T13:15:35+00:00"
+            "time": "2020-05-07T15:27:03+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
@@ -6996,7 +7091,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-05-04T14:08:10+00:00"
+            "time": "2020-05-07T14:46:44+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -7054,12 +7149,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "14a65a8a0dbf7f51e9ae1d205ccf38e3a49cc878"
+                "reference": "a2c32810f5aa43d721f927c395588e02e14d706a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/14a65a8a0dbf7f51e9ae1d205ccf38e3a49cc878",
-                "reference": "14a65a8a0dbf7f51e9ae1d205ccf38e3a49cc878",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/a2c32810f5aa43d721f927c395588e02e14d706a",
+                "reference": "a2c32810f5aa43d721f927c395588e02e14d706a",
                 "shasum": ""
             },
             "require": {
@@ -14583,7 +14678,6 @@
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
         "os2web/os2web": 20,
-        "os2web/os2web_hjemmeside": 20,
         "os2web/os2web_meetings": 20,
         "os2web/os2web_meetings_sbsys": 20,
         "os2web/os2web_pagebuilder": 20,
