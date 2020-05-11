@@ -44,7 +44,7 @@ jQuery(function ($) {
   }
 })();
 
-// Megamenu.
+// Megamenu toggle.
 (function() {
   function handleToggle(e) {
     var body = document.querySelector('body');
@@ -59,4 +59,16 @@ jQuery(function ($) {
 
     toggle.addEventListener('click', handleToggle);
   }
+})();
+
+// Reposition selfservice region in megamenu.
+(function() {
+  var region = document.querySelector('.region-megamenu__selfservice');
+  var listItem = document.querySelector('.region-megamenu__navigation .menu-level-0 > li:last-child');
+
+  if (region === null || listItem === null) {
+    return;
+  }
+
+  listItem.appendChild(region);
 })();

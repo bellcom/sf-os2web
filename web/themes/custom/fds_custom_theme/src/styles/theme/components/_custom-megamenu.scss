@@ -36,6 +36,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
+  color: #fff;
   background-color: $color-primary;
 
   button,
@@ -54,6 +55,45 @@
 
     a {
       font-size: $small-font-size;
+    }
+  }
+
+  .region-megamenu__selfservice {
+    padding-top: 60px;
+  }
+
+  .field--name-field-rebild-selfservice-heading {
+
+    + .field--name-field-rebild-selfservice-body {
+      margin-top: 10px;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+
+  .field--name-field-rebild-selfservice-body {
+    font-size: $large-font-size;
+
+    color: #fff;
+
+    + .field--name-field-rebild-selfservice-link {
+      margin-top: 15px;
+    }
+  }
+
+  .field--name-field-rebild-selfservice-link {
+
+    a {
+
+      &, &:hover, &:focus, &:visited {
+        color: #fff;
+      }
+
+      &:after {
+        color: #fff;
+      }
     }
   }
 }
@@ -98,6 +138,7 @@
 .custom-megamenu__button--toggle-megamenu {}
 
 .custom-megamenu__row--navigation {
+  position: relative;
 
   .menu-level-0 {
     display: flex;
