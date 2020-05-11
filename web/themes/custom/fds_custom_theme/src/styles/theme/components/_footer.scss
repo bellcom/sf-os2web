@@ -21,13 +21,13 @@
 // --------------------------------------------------
 
 footer {
-  background-color: $color-footer-background;
 
   .footer {
     padding-top: calc(#{map-get($spacers, 905)} - 1px);
     padding-bottom: calc(#{map-get($spacers, 905)} - 1px);
 
     border-top: 0;
+    background-color: $color-footer-background;
 
     h1, h2, h3, h4, h5, h6,
     a, a:hover, a:visited, a:focus,
