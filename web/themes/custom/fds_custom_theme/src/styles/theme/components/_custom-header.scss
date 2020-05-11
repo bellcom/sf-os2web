@@ -200,6 +200,14 @@ body {
         &:hover {
           color: #fff;
           background-color: $color-primary;
+
+          svg {
+
+            &,
+            path {
+              fill: #fff;
+            }
+          }
         }
       }
     }
