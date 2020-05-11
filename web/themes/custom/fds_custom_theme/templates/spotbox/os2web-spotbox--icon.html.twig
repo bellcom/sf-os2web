@@ -24,10 +24,10 @@
   {{ title_prefix }}
   {{ title_suffix }}
   {# Begin - icon #}
-    <img src="{{ icon_url }}" />
+  {{ content.field_os2web_spotbox_icon }}
   {# End - icon #}
 
   {% if content %}
-    {{- content -}}
+    {{- content | without('field_os2web_spotbox_icon') -}}
   {% endif %}
 </div>
