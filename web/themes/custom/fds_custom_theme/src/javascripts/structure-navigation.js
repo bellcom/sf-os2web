@@ -17,6 +17,18 @@
 
 // Toggle subnavigation.
 (function() {
+  function reposition() {
+    var header = document.querySelector('.custom-header--static');
+
+    var menuLevel0 = document.querySelector('.region-header__below .menu-level-0');
+    var menuLevel0Height = menuLevel0 !== null ? menuLevel0.offsetHeight : 0;
+
+    var menuLevel1 = document.querySelector('.region-header__below .menu-level-0 > li.show-subnavigation .menu-level-1');
+    var menuLevel1Height = menuLevel1 !== null ? menuLevel1.offsetHeight : 0;
+
+    header.style.marginBottom = ((menuLevel0Height / 2) + menuLevel1Height) + 'px';
+  }
+
   function handleToggle(event) {
     event.preventDefault();
 
@@ -35,6 +47,9 @@
 
     // Add "show submenu" to current list item.
     currentListItem.classList.toggle('show-subnavigation');
+
+    // Reposition.
+    reposition();
   }
 
   var links = document.querySelectorAll('.region-header__below .menu-level-0 > li > a');
