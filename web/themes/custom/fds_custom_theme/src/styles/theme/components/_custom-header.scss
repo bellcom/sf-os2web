@@ -89,6 +89,8 @@ body {
 .custom-header--static {
   display: none;
 
+  margin-bottom: (150px / 2); // Half the height of the box.
+
   background-position: 0 -265px;
 
   .path-frontpage & {
@@ -151,11 +153,12 @@ body {
 }
 
 .region-header__below {
+  margin-bottom: 0 - ((150px / 2) + 40px);
 
   .menu {
     display: flex;
 
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 
     max-width: none !important;
 
@@ -163,7 +166,7 @@ body {
     padding: 0;
 
     li {
-      width: 25%;
+      flex-basis: 25%;
 
       padding: 0 10px;
 
@@ -177,7 +180,7 @@ body {
     a {
       display: block;
 
-      padding: 50px 5px;
+      padding: 40px 5px;
 
       font-size: $h5-font-size;
       text-align: center;
@@ -187,27 +190,75 @@ body {
 
       text-decoration: none;
     }
+
+    li,
+    .contextual-region {
+      position: initial;
+    }
+
+    .field--name-field-os2web-icon {
+      min-height: 45px;
+    }
   }
 
   .menu-level-0 {
+    position: relative;
 
     > li {
 
       > a {
+        position: relative;
+
         color: $color-text;
         background-color: #fff;
 
-        &:hover {
-          color: #fff;
-          background-color: $color-primary;
+        svg {
 
-          svg {
-
-            &,
-            path {
-              fill: #fff;
-            }
+          &,
+          path {
+            fill: $color-orange-004;
           }
+        }
+      }
+
+      &.show-subnavigation > a,
+      > a:hover,
+      > a:focus {
+        color: #fff;
+        background-color: $color-primary;
+
+        svg {
+
+          &,
+          path {
+            fill: #fff;
+          }
+        }
+      }
+
+      &.show-subnavigation {
+
+        > a {
+          position: relative;
+
+          &:after {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba($color-primary, 0);
+            border-top-color: $color-primary;
+            border-width: 15px;
+            margin-left: -15px;
+          }
+        }
+
+        .menu-level-1 {
+          display: flex;
         }
       }
     }
@@ -215,11 +266,33 @@ body {
 
   .menu-level-1 {
     display: none;
+    position: absolute;
+
+    top: 100%;
+    left: 10px;
+    right: 10px;
+
+    z-index: 500;
+
+    margin-top: 30px;
 
     > li {
+      padding-top: 10px;
+      padding-bottom: 10px;
 
       > a {
-        background-color: #fff;
+        padding: 50px 20px 30px 20px;
+
+        color: $color-text;
+        background-color: $color-green-002;
+
+        svg {
+
+          &,
+          path {
+            fill: $color-text;
+          }
+        }
       }
     }
   }
