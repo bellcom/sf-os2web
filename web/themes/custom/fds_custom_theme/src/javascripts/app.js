@@ -1,6 +1,5 @@
 jQuery(function ($) {
   'use strict';
-
 });
 
 // Language selector.
@@ -71,4 +70,21 @@ jQuery(function ($) {
   }
 
   listItem.appendChild(region);
+})();
+
+// Reposition icon inside menu.
+(function() {
+  var menuItems = document.querySelectorAll('.region-header__below .menu-item');
+
+  for(var i = 0; i < menuItems.length; i++) {
+    var menuItem = menuItems[i];
+    var link = menuItem.querySelector('a:first-child');
+    var iconImg = menuItem.querySelector('.field--name-field-os2web-icon');
+
+    if (link === null || iconImg === null) {
+      return;
+    }
+
+    link.insertAdjacentElement('afterbegin', iconImg);
+  }
 })();
