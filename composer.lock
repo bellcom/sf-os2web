@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8cb294adf4d6d851ccbed52468b97f2c",
+    "content-hash": "fdf6945e5737164a1ad6827f7697757f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "4ca3c529821d5879a52788679bc76f85f4ed0ec0"
+                "reference": "64a7f909f3713f954c76335d6390e6dad25f7b07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/4ca3c529821d5879a52788679bc76f85f4ed0ec0",
-                "reference": "4ca3c529821d5879a52788679bc76f85f4ed0ec0",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/64a7f909f3713f954c76335d6390e6dad25f7b07",
+                "reference": "64a7f909f3713f954c76335d6390e6dad25f7b07",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-05-08T06:55:29+00:00"
+            "time": "2020-05-12T07:16:31+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",

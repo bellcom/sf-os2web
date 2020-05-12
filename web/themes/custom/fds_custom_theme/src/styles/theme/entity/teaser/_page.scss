@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Footer
+// | Page
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .footer
+// | - .entity-teaser--os2web-page
 // |
 
 // --------------------------------------------------
@@ -14,64 +14,32 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin footer-mixin() {}
+@mixin entity-teaser--os2web-page-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-footer {
+.entity-teaser--os2web-page {
 
-  .footer {
-    padding-top: calc(#{map-get($spacers, 905)} - 1px);
-    padding-bottom: calc(#{map-get($spacers, 905)} - 1px);
+  .field--name-field-os2web-page-heading {
 
-    border-top: 0;
-    background-color: $color-footer-background;
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
 
-    h1, h2, h3, h4, h5, h6,
-    a, a:hover, a:visited, a:focus,
-    .is-active > a,
-    &, p {
-      color: #fff;
-    }
-
-    a {
-      font-weight: bold;
-      text-decoration: none;
-
-      &:focus {
-        outline-color: $color-orange-004;
-      }
-    }
-
-    .social-icon {
-      font-size: 2rem;
+      color: $color-text;
     }
   }
 
-  section {
-    max-width: 430px;
-  }
+  .field {
 
-  .menu {
-    margin: 0;
-
-    li {
-      padding-left: 0;
-
-      &:before {
-        display: none;
-      }
+    + .field {
+      margin-top: 10px;
     }
 
-    .menu-item {
-      padding-top: .8em;
+    + .field--type-link {
+      margin-top: 15px;
     }
-  }
-
-  .social-icon-list {
-    margin-top: 35px;
   }
 }
 
@@ -90,38 +58,21 @@ footer {
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .entity-teaser--os2web-page {
+
+    .row {
+      align-items: center;
+    }
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {
-
-  .footer-col {
-    padding-top: 10px;
-    padding-bottom: 15px;
-
-    + .footer-col {
-      border-left: 1px solid #fff;
-    }
-
-    &:nth-child(1) {
-
-      section {
-        padding-left: 70px;
-      }
-    }
-
-    &:nth-child(2) {
-
-      section {
-        padding-top: 60px;
-        padding-left: 70px;
-      }
-    }
-  }
-}
+@include media-breakpoint-up(md) {}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}
@@ -136,12 +87,7 @@ footer {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {
-
-  footer .footer {
-    border: none;
-  }
-}
+@media print {}
 
 // Touch
 .touchevents {}

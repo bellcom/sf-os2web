@@ -89,6 +89,8 @@ body {
 .custom-header--static {
   display: none;
 
+  margin-bottom: (150px / 2); // Half the height of the box.
+
   background-position: 0 -265px;
 
   .path-frontpage & {
@@ -147,6 +149,152 @@ body {
   .icon {
     font-size: 2rem;
     color: #fff;
+  }
+}
+
+.region-header__below {
+  margin-bottom: 0 - ((150px / 2) + 40px);
+
+  .menu {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    max-width: none !important;
+
+    margin: 0 -10px;
+    padding: 0;
+
+    li {
+      flex-basis: 25%;
+
+      padding: 0 10px;
+
+      list-style: none;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    a {
+      display: block;
+
+      padding: 40px 5px;
+
+      font-size: $h5-font-size;
+      text-align: center;
+      font-weight: $font-weight-bold;
+
+      box-shadow: $box-shadow;
+
+      text-decoration: none;
+    }
+
+    li,
+    .contextual-region {
+      position: initial;
+    }
+
+    .field--name-field-os2web-icon {
+      min-height: 45px;
+    }
+  }
+
+  .menu-level-0 {
+    position: relative;
+
+    > li {
+
+      > a {
+        position: relative;
+
+        color: $color-text;
+        background-color: #fff;
+
+        svg {
+
+          &,
+          path {
+            fill: $color-orange-004;
+          }
+        }
+      }
+
+      &.show-subnavigation > a,
+      > a:hover,
+      > a:focus {
+        color: #fff;
+        background-color: $color-primary;
+
+        svg {
+
+          &,
+          path {
+            fill: #fff;
+          }
+        }
+      }
+
+      &.show-subnavigation {
+
+        > a {
+          position: relative;
+
+          &:after {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba($color-primary, 0);
+            border-top-color: $color-primary;
+            border-width: 15px;
+            margin-left: -15px;
+          }
+        }
+
+        .menu-level-1 {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .menu-level-1 {
+    display: none;
+    position: absolute;
+
+    top: 100%;
+    left: 10px;
+    right: 10px;
+
+    z-index: 500;
+
+    margin-top: 30px;
+
+    > li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      > a {
+        padding: 50px 20px 30px 20px;
+
+        color: $color-text;
+        background-color: $color-green-002;
+
+        svg {
+
+          &,
+          path {
+            fill: $color-text;
+          }
+        }
+      }
+    }
   }
 }
 
