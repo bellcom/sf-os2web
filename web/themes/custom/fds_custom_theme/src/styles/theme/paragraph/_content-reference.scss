@@ -1,0 +1,106 @@
+// |--------------------------------------------------------------------------
+// | Content reference
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .paragraph--type--os2web-content-reference
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin paragraph--type--os2web-content-reference-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.paragraph--type--os2web-content-reference {
+
+  .field--name-field-os2web-content-reference-h {
+    text-align: center;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0 auto;
+
+      color: $color-text;
+    }
+  }
+  .field--name-field-os2web-content-ref-subhead {
+    text-align: center;
+
+    p {
+      margin: auto;
+    }
+  }
+  .field--name-field-os2web-content-reference {}
+
+  .field {
+
+    + .field--name-field-os2web-content-reference-h,
+    + .field--name-field-os2web-content-ref-subhead {
+      margin-top: 10px;
+    }
+
+    + .field--name-field-os2web-content-reference {
+      margin-top: 40px;
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {}
+
+// Mobile - only
+@include media-breakpoint-only(xs, $grid-breakpoints) {}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {
+
+  .paragraph--type--os2web-content-reference {
+
+    .row {
+      align-items: center;
+    }
+  }
+}
+
+// Tablet - only
+@include media-breakpoint-only(sm, $grid-breakpoints) {}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {}
+
+// Desktop - only
+@include media-breakpoint-only(md, $grid-breakpoints) {}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {}
+
+// Large desktop - only
+@include media-breakpoint-only(lg, $grid-breakpoints) {}
+
+// Extra large desktop - and up
+@include media-breakpoint-up(xl) {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
