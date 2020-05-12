@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Content reference
+// | Page
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .paragraph--type--os2web-content-reference
+// | - .entity-teaser--os2web-page
 // |
 
 // --------------------------------------------------
@@ -14,58 +14,31 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin paragraph--type--os2web-content-reference-mixin() {}
+@mixin entity-teaser--os2web-page-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-content-reference {
+.entity-teaser--os2web-page {
 
-  .field--name-field-os2web-content-reference-h {
-    text-align: center;
+  .field--name-field-os2web-page-heading {
 
     h1, h2, h3, h4, h5, h6 {
-      margin: 0 auto;
+      margin: 0;
 
       color: $color-text;
-    }
-  }
-  .field--name-field-os2web-content-ref-subhead {
-    text-align: center;
-
-    p {
-      margin: auto;
-    }
-  }
-  .field--name-field-os2web-content-reference {
-
-    [class*="col-"] {
-      display: flex;
-
-      flex-direction: column;
-
-      > * {
-        display: flex;
-
-        flex-grow: 1;
-      }
-    }
-
-    .entity-teaser {
-
     }
   }
 
   .field {
 
-    + .field--name-field-os2web-content-reference-h,
-    + .field--name-field-os2web-content-ref-subhead {
+    + .field {
       margin-top: 10px;
     }
 
-    + .field--name-field-os2web-content-reference {
-      margin-top: 40px;
+    + .field--type-link {
+      margin-top: 15px;
     }
   }
 }
@@ -85,7 +58,15 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .entity-teaser--os2web-page {
+
+    .row {
+      align-items: center;
+    }
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}

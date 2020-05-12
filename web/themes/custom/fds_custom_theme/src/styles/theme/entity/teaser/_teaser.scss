@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Content reference
+// | Page
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .paragraph--type--os2web-content-reference
+// | - .entity-teaser
 // |
 
 // --------------------------------------------------
@@ -14,59 +14,37 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin paragraph--type--os2web-content-reference-mixin() {}
+@mixin entity-teaser-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-content-reference {
+.entity-teaser {
+  display: flex;
 
-  .field--name-field-os2web-content-reference-h {
-    text-align: center;
+  flex-direction: column;
 
-    h1, h2, h3, h4, h5, h6 {
-      margin: 0 auto;
+  box-shadow: $box-shadow;
+}
 
-      color: $color-text;
-    }
+.entity-teaser__image {
+
+  img {
+    width: 100%;
   }
-  .field--name-field-os2web-content-ref-subhead {
-    text-align: center;
+}
 
-    p {
-      margin: auto;
-    }
-  }
-  .field--name-field-os2web-content-reference {
+.entity-teaser__body {
+  display: flex;
 
-    [class*="col-"] {
-      display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 
-      flex-direction: column;
+  padding: ($grid-gutter-width / 2) $grid-gutter-width;
 
-      > * {
-        display: flex;
-
-        flex-grow: 1;
-      }
-    }
-
-    .entity-teaser {
-
-    }
-  }
-
-  .field {
-
-    + .field--name-field-os2web-content-reference-h,
-    + .field--name-field-os2web-content-ref-subhead {
-      margin-top: 10px;
-    }
-
-    + .field--name-field-os2web-content-reference {
-      margin-top: 40px;
-    }
+  .field--type-body {
+    flex-grow: 1;
   }
 }
 
