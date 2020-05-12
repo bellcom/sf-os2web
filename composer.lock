@@ -7068,12 +7068,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "08210a38171feb25c5f479677448ad0dbbeeb626"
+                "reference": "282fbb4d7f2b6e5258f6c7aec88f7d938f219120"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/08210a38171feb25c5f479677448ad0dbbeeb626",
-                "reference": "08210a38171feb25c5f479677448ad0dbbeeb626",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/282fbb4d7f2b6e5258f6c7aec88f7d938f219120",
+                "reference": "282fbb4d7f2b6e5258f6c7aec88f7d938f219120",
                 "shasum": ""
             },
             "require": {
