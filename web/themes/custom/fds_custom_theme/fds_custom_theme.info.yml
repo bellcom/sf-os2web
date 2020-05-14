@@ -11,6 +11,7 @@ regions:
   megamenu__search: 'Megamenu - search'
   megamenu__language_selector: 'Megamenu - language selector'
   megamenu__selfservice: 'Megamenu - self service'
+  header__search: 'Header - search'
   header__below: 'Header - below'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
