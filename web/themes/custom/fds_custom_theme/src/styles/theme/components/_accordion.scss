@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Page
+// | Accordion
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .entity-teaser
+// | - .accordion
 // |
 
 // --------------------------------------------------
@@ -14,41 +14,60 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin entity-teaser-mixin() {}
+@mixin accordion-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.entity-teaser {
-  display: flex;
+.accordion {
 
-  flex-direction: column;
+  > li {
+    box-shadow: $box-shadow;
+  }
 }
+.accordion-button {
+  position: relative;
 
-.entity-teaser__image {
+  padding: 1.6rem 2.4rem;
 
-  img {
-    width: 100%;
+  font-weight: $font-weight-bold;
+
+  background-image: none !important;
+
+  &, &:hover, &:focus {
+    background-color: #fff;
+  }
+
+  &:after {
+    position: absolute;
+
+    top: 1.6rem;
+    right: 2.4rem;
+
+    font-size: 4rem;
+    font-family: FontAwesome;
+
+    content: $fa-var-angle-down;
+
+    color: $color-orange-004;
+  }
+
+  &[aria-expanded="true"] {
+
+    &, &:hover, &:focus {
+      background-color: #fff;
+    }
+
+    &:after {
+      content: $fa-var-angle-up;
+    }
   }
 }
 
-.entity-teaser__body {
-  display: flex;
-
-  flex-direction: column;
-  flex-grow: 1;
-
-  padding: ($grid-gutter-width / 2) $grid-gutter-width;
-
-  .field--type-body {
-    flex-grow: 1;
-  }
+.accordion-content {
+  padding: 0 2.4rem 1.6rem 2.4rem;
 }
-
-// --------------------------------------------------
-// Variants
-// --------------------------------------------------
 
 // --------------------------------------------------
 // Responsive
