@@ -1,0 +1,25 @@
+{% set uniqueId = 'bp-accordion-' ~ random() %}
+{%
+  set classes = [
+  node.bundle|clean_class,
+  node.isPromoted() ? 'is-promoted',
+  node.isSticky() ? 'is-sticky',
+  not node.isPublished() ? 'is-unpublished',
+  view_mode ? view_mode|clean_class,
+  'accordion-content',
+]
+%}
+
+<button class="accordion-button" aria-expanded="false" aria-controls="{{ uniqueId }}">
+  Lorem ipsum dolor sit amet
+</button>
+
+<div id="{{ uniqueId }}" aria-hidden="true" {{ attributes.addClass(classes) }}>
+  {{ content.body }}
+  {{ content.field_os2web_m_bp_enclosures }}
+  {{ content.field_os2web_m_bp_bpas }}
+
+  <button class="accordion-close-button js-accordion-close-current" aria-controls="{{ uniqueId }}">
+    <span class="icon fa fa-angle-up"></span>
+  </button>
+</div>
