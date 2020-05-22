@@ -6453,6 +6453,54 @@
             "time": "2020-02-13T22:36:52+00:00"
         },
         {
+            "name": "ffwagency/borgerdk-php",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ffwagency/borgerdk-php.git",
+                "reference": "1782776a47286a1511c5a04be5ab259d0e8ae993"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ffwagency/borgerdk-php/zipball/1782776a47286a1511c5a04be5ab259d0e8ae993",
+                "reference": "1782776a47286a1511c5a04be5ab259d0e8ae993",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0",
+                "symfony/css-selector": "2.8.* || 3.4.* || 4.4.*",
+                "symfony/dom-crawler": "2.8.* || 3.4.* || 4.4.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.5 || ~7 || ~8.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BorgerDk\\ArticleService\\": "src/BorgerDk/ArticleService"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Beltofte",
+                    "email": "jens.beltofte@ffwagency.com"
+                }
+            ],
+            "description": "Borger.dk Article Export Service PHP SDK (unofficially)",
+            "homepage": "https://github.com/ffwagency/borgerdk-php",
+            "keywords": [
+                "borger.dk",
+                "borgerdk",
+                "ffwagency",
+                "php"
+            ],
+            "time": "2020-02-20T09:43:27+00:00"
+        },
+        {
             "name": "gettext/gettext",
             "version": "v4.8.2",
             "source": {
@@ -7255,6 +7303,34 @@
             ],
             "description": "Drupal 8 OS2Web installation profile",
             "time": "2020-05-07T10:29:21+00:00"
+        },
+        {
+            "name": "os2web/os2web_borgerdk",
+            "version": "8.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_borgerdk.git",
+                "reference": "9bdc2be6874ff4e2ae089c174cf6db88250c1b9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/9bdc2be6874ff4e2ae089c174cf6db88250c1b9c",
+                "reference": "9bdc2be6874ff4e2ae089c174cf6db88250c1b9c",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/migrate_plus": "^4.2",
+                "drupal/migrate_tools": "^4.5",
+                "drupal/paragraphs": "^1.11",
+                "ffwagency/borgerdk-php": "dev-develop"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Imports content from Borger.dk.",
+            "time": "2020-03-20T08:35:12+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -15507,6 +15583,7 @@
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
         "os2web/os2web": 20,
+        "os2web/os2web_borgerdk": 20,
         "os2web/os2web_meetings": 20,
         "os2web/os2web_meetings_sbsys": 20,
         "os2web/os2web_pagebuilder": 20,
