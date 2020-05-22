@@ -58,6 +58,19 @@
     }
   }
 
+  .region-megamenu__search {
+    max-width: 570px;
+
+    margin: auto;
+
+    input {
+
+      &:focus {
+        outline-color: $color-orange-004;
+      }
+    }
+  }
+
   .region-megamenu__selfservice {
     padding-top: 60px;
   }
