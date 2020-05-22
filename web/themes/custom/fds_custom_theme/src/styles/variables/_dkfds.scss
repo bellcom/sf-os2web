@@ -46,10 +46,10 @@ $display-1-heading-line-height: 5.6rem !default;
 $display-2-heading-size:        3.2rem !default;
 $display-2-heading-line-height: 4.0rem !default;
 
-$body-text:                   1.6rem !default;
+$body-text:                   1.2rem;
 $body-text-line-height:       2.4rem !default;
 
-$form-label:                  1.6rem !default;
+$form-label:                  $base-font-size;
 $form-label-line-height:      2.4rem !default;
 
 $small-text:                  1.2rem;
@@ -332,10 +332,10 @@ $color-shadow:                rgba(#000, 0.3) !default;
 $color-transparent:           rgba(#000, 0) !default;
 
 //input
-$input-border-radius: 4px;
-$input-border-width: 1px;
+$input-border-radius: 20px;
+$input-border-width: 0;
 $input-top-bottom-padding: calc(8px - #{$input-border-width}); //7px
-$input-left-right-padding: calc(16px - #{$input-border-width}); //15px
+$input-left-right-padding: calc(24px - #{$input-border-width}); //15px
 $input-font-size: $body-text;
 $input-line-height: $body-text-line-height;
 $input-standard-height: 4.0rem;
