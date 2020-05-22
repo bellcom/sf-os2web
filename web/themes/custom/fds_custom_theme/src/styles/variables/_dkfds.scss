@@ -339,7 +339,7 @@ $input-left-right-padding: calc(24px - #{$input-border-width}); //15px
 $input-font-size: $body-text;
 $input-line-height: $body-text-line-height;
 $input-standard-height: 4.0rem;
-$input-top-margin: map-get($spacers, 3);
+$input-top-margin: 5px;
 
 $input-border-width-feedback: 2px;
 $input-top-bottom-padding-feedback: calc(8px - #{$input-border-width-feedback});
