@@ -24,9 +24,12 @@
     wrapper.style.fontSize = parseFloat(storedFontSize) + 'px';
   }
 
-  function decreaseFontSize(event) {
+  function handleDecreaseFontSize(event) {
     event.preventDefault();
 
+    decreaseFontSize();
+  }
+  function decreaseFontSize() {
     var wrapper = document.getElementById('font-resize-wrapper');
     var styles = getComputedStyle(wrapper);
     var currentFontSize = parseFloat(styles.fontSize, 10);
@@ -36,9 +39,12 @@
     wrapper.style.fontSize = newFontSize + 'px';
   }
 
-  function increaseFontSize(event) {
+  function handleIncreaseFontSize(event) {
     event.preventDefault();
 
+    increaseFontSize();
+  }
+  function increaseFontSize() {
     var wrapper = document.getElementById('font-resize-wrapper');
     var styles = getComputedStyle(wrapper);
     var currentFontSize = parseFloat(styles.fontSize, 10);
@@ -53,14 +59,14 @@
   for (var i = 0; i < decreaseButtons.length; i++) {
     var decreaseButton = decreaseButtons[i];
 
-    decreaseButton.addEventListener('click', decreaseFontSize);
+    decreaseButton.addEventListener('click', handleDecreaseFontSize);
   }
 
   var increaseButtons = document.querySelectorAll('.js-increase-font-size');
   for (var i = 0; i < increaseButtons.length; i++) {
     var increaseButton = increaseButtons[i];
 
-    increaseButton.addEventListener('click', increaseFontSize);
+    increaseButton.addEventListener('click', handleIncreaseFontSize);
   }
 
   initialBoot();
