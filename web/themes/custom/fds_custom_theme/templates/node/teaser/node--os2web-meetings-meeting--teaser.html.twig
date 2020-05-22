@@ -1,0 +1,29 @@
+{%
+  set classes = [
+  node.bundle|clean_class,
+  node.isPromoted() ? 'is-promoted',
+  node.isSticky() ? 'is-sticky',
+  not node.isPublished() ? 'is-unpublished',
+  view_mode ? view_mode|clean_class,
+]
+%}
+<div {{ attributes.addClass(classes) }}>
+  <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date">
+    <div>
+      {{ 'Frist' | trans }}
+    </div>
+
+    {{ content.field_os2web_m_start_date }}
+  </div>
+
+  <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__content">
+    {{ content.field_os2web_m_type }}
+    {{ content.body }}
+  </div>
+
+  <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__actions">
+    <a href="{{ url }}">
+      <span class="icon fa fa-long-arrow-right"></span>
+    </a>
+  </div>
+</div>
