@@ -99,15 +99,7 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {
-
-  .entity-teaser--os2web-meetings-meeting {
-
-    .row {
-      align-items: center;
-    }
-  }
-}
+@include media-breakpoint-up(sm) {}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
