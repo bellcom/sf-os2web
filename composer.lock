@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2acd404b3cbb01ac53f0613d64839201",
+    "content-hash": "39e507f229aaeee0078d5261f8613f88",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5042,37 +5042,33 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/metatag.git",
-                "reference": "8.x-1.12"
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "88e2b29e0fa6835753b30587f9c556c360183629"
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "c471d9982a6540fd7baccc94572947923634fb6b"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
                 "drupal/token": "^1.0"
             },
             "require-dev": {
-                "drupal/devel": "^2.0",
                 "drupal/metatag_dc": "*",
                 "drupal/metatag_open_graph": "*",
-                "drupal/page_manager": "^4.0",
-                "drupal/redirect": "^1.0",
-                "drupal/restui": "^1.0",
-                "drupal/schema_metatag": "^1.0",
-                "drupal/schema_web_page": "*"
+                "drupal/page_manager": "4.x-dev",
+                "drupal/redirect": "1.x-dev"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1586025529",
+                    "version": "8.x-1.13",
+                    "datestamp": "1587478404",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7283,12 +7279,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "4235dc82ff1da048577b0847b4bc6ef86df8d450"
+                "reference": "c35faa5e94c13a3568d53e9f00dcd6e75911cc3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/4235dc82ff1da048577b0847b4bc6ef86df8d450",
-                "reference": "4235dc82ff1da048577b0847b4bc6ef86df8d450",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/c35faa5e94c13a3568d53e9f00dcd6e75911cc3a",
+                "reference": "c35faa5e94c13a3568d53e9f00dcd6e75911cc3a",
                 "shasum": ""
             },
             "require": {
@@ -7390,12 +7386,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "36143291123ef9f0e49d3879d8d4623d86f3a6b4"
+                "reference": "7b2ed9b9f462eb6ba3d4e03cfc8d8f1d803fecc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/36143291123ef9f0e49d3879d8d4623d86f3a6b4",
-                "reference": "36143291123ef9f0e49d3879d8d4623d86f3a6b4",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/7b2ed9b9f462eb6ba3d4e03cfc8d8f1d803fecc9",
+                "reference": "7b2ed9b9f462eb6ba3d4e03cfc8d8f1d803fecc9",
                 "shasum": ""
             },
             "require": {
