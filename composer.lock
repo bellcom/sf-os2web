@@ -3441,9 +3441,6 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
-                },
-                "patches_applied": {
-                    "3011962 - Form translation error - Element::children() must be of the type array, null given": "https://www.drupal.org/files/issues/2018-11-13/3011962-Translation_form_bugfix-9.patch"
                 }
             },
             "autoload": {
@@ -7590,12 +7587,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "a236ebf76c79602ff1f8f5db96edf6430ecac157"
+                "reference": "bbac37f6c57c43dd4b686048bf026fdcacd259e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/a236ebf76c79602ff1f8f5db96edf6430ecac157",
-                "reference": "a236ebf76c79602ff1f8f5db96edf6430ecac157",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/bbac37f6c57c43dd4b686048bf026fdcacd259e9",
+                "reference": "bbac37f6c57c43dd4b686048bf026fdcacd259e9",
                 "shasum": ""
             },
             "require": {
@@ -7613,7 +7610,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-05-12T12:13:43+00:00"
+            "time": "2020-05-28T10:51:00+00:00"
         },
         {
             "name": "os2web/os2web_search",
