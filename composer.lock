@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "67d820686a48046fe0c1434d935e443dea171bde"
+                "reference": "6e78ba6dae604ca92bbb512cac4bed6aea038b17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/67d820686a48046fe0c1434d935e443dea171bde",
-                "reference": "67d820686a48046fe0c1434d935e443dea171bde",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/6e78ba6dae604ca92bbb512cac4bed6aea038b17",
+                "reference": "6e78ba6dae604ca92bbb512cac4bed6aea038b17",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-05-27T13:04:32+00:00"
+            "time": "2020-06-02T10:52:42+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
