@@ -47,40 +47,47 @@
 <header>
 
   {% if is_front %}
-  <div class="custom-header custom-header--static">
-    <div class="custom-header__inner">
-      <div class="container-fluid">
+    <div class="custom-header custom-header--static">
+      <div class="custom-header__inner">
+        <div class="container-fluid">
 
-        <!-- Begin - top -->
-        <div class="flexy-row">
+          <!-- Begin - top -->
+          <div class="flexy-row">
 
-          <!-- Begin - logo -->
-          <a href="{{ url('<front>') }}" class="custom-header__logo">
-            <img src="{{ base_path ~ directory }}/dist/images/logo.svg" alt="Logo" />
-          </a>
-          <!-- End - logo -->
+            <!-- Begin - logo -->
+            <a href="{{ url('<front>') }}" class="custom-header__logo">
+              <img src="{{ base_path ~ directory }}/dist/images/logo.svg" alt="Logo" />
+            </a>
+            <!-- End - logo -->
 
-          {% include '@fds_custom_theme/includes/action-buttons.html.twig' %}
+            {% include '@fds_custom_theme/includes/action-buttons.html.twig' %}
 
-          <div class="flexy-spacer"></div>
+            <div class="flexy-spacer"></div>
 
-          <!-- Begin - toggle -->
-          <button
-            class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu">
-            <span class="icon fa fa-bars"></span>
-          </button>
-          <!-- End - toggle -->
+            <!-- Begin - toggle -->
+            <button
+              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu">
+              <span class="icon fa fa-bars"></span>
+            </button>
+            <!-- End - toggle -->
+
+          </div>
+          <!-- End - top -->
+
+          <!-- Begin - meta -->
+          <div class="custom-header__meta">
+            <h1 class="h1">Velkommen til Rebild</h1>
+            <h2 class="h4">Et aktivt liv - sammen</h2>
+          </div>
+          <!-- End - meta -->
+
+          <!-- Begin - below -->
+          {{ page.header__below }}
+          <!-- End - below -->
 
         </div>
-        <!-- End - top -->
-
-        <!-- Begin - below -->
-        {{ page.header__below }}
-        <!-- End - below -->
-
       </div>
     </div>
-  </div>
   {% endif %}
 
   {% if not is_front %}
