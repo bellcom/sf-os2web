@@ -55,6 +55,13 @@
     padding-left: 1px;
     padding-bottom: 1rem;
   }
+
+  input {
+
+    &:focus {
+      outline-color: $color-orange-004;
+    }
+  }
 }
 
 .custom-header__logo {
