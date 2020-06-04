@@ -74,12 +74,15 @@
           </div>
           <!-- End - top -->
 
-          <!-- Begin - meta -->
-          <div class="custom-header__meta">
-            <h1 class="h1">Velkommen til Rebild</h1>
-            <h2 class="h4">Et aktivt liv - sammen</h2>
-          </div>
-          <!-- End - meta -->
+          {% if theme_settings.texts.frontpage_banner_heading or theme_settings.texts.frontpage_banner_subheading %}
+            <!-- Begin - meta -->
+            <div class="custom-header__meta">
+              <h1 class="h1">{{ theme_settings.texts.frontpage_banner_heading }}</h1>
+              <h2 class="h4">{{ theme_settings.texts.frontpage_banner_subheading }}</h2>
+            </div>
+            <!-- End - meta -->
+          {% endif %}
+
 
           <!-- Begin - below -->
           {{ page.header__below }}

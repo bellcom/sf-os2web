@@ -7,14 +7,15 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function fds_custom_theme_preprocess_page(array &$variables) {
   $variables['theme_settings'] = _fds_base_theme_collect_theme_settings();
-  $variables['theme_settings']['show_footer_logo'] = theme_get_setting('show_footer_logo');
+  $variables['theme_settings']['texts']['frontpage_banner_heading'] = theme_get_setting('frontpage_banner_heading');
+  $variables['theme_settings']['texts']['frontpage_banner_subheading'] = theme_get_setting('frontpage_banner_subheading');
 }
 
 /**
  * Implements hook_form_search_block_form_alter().
  */
 function fds_custom_theme_form_search_block_form_alter(&$form, FormStateInterface $form_state) {
-  $form['keys']['#attributes']['placeholder'] = t('Indtast dine søgeord her...');
+  $form['keys']['#attributes']['placeholder'] = t('Find hvad du leder efter');
 }
 
 /**
