@@ -35,7 +35,7 @@ body a {
 .return-to-home-link {
   display: block;
 
-  padding: 10px $sidenav-list-spacing-left;
+  padding: 14px $sidenav-list-spacing-left;
 
   font-size: $large-font-size;
   font-weight: $font-weight-bold;
@@ -61,5 +61,5 @@ body a {
 }
 
 body .page-container {
-  padding-top: 0;
+  padding-top: 1rem;
 }
