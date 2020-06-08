@@ -55,7 +55,11 @@ body a {
 
 .col--align-center {
   display: flex;
- 
+
   flex-direction: column;
   justify-content: center;
+}
+
+body .page-container {
+  padding-top: 0;
 }
