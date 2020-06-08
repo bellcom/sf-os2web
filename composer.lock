@@ -7587,12 +7587,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "4d9695fd1905a0c7575a40e577f0a13c46f19551"
+                "reference": "d5c2988644e3c3bdf8165caa4885d94018aea0c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/4d9695fd1905a0c7575a40e577f0a13c46f19551",
-                "reference": "4d9695fd1905a0c7575a40e577f0a13c46f19551",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/d5c2988644e3c3bdf8165caa4885d94018aea0c2",
+                "reference": "d5c2988644e3c3bdf8165caa4885d94018aea0c2",
                 "shasum": ""
             },
             "require": {
