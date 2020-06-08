@@ -28,6 +28,11 @@
       padding: 0 20px 0 0;
     }
   }
+
+  a {
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+  }
 }
 
 .action-button {

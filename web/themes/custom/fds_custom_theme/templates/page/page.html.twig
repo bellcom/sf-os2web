@@ -131,11 +131,25 @@
 {{ page.featured_top }}
 
 <div class="container page-container" id="font-resize-wrapper">
+  {% if not is_front %}
   <div class="row">
-    <div class="col-12">
-      {{ page.breadcrumb }}
+    <div class="col-12 col-md-3">
+      <a href="{{ url('<front>') }}" class="return-to-home-link">
+        <span class="fa fa-arrow-left icon"></span>
+        {{ 'Hjem' | trans }}
+      </a>
+    </div>
+    <div class="col-12 col-md-9 col--align-center">
+      <div class="flexy-row">
+        {{ page.breadcrumb }}
+
+        <div class="flexy-spacer"></div>
+
+        {% include '@fds_custom_theme/includes/action-buttons.html.twig' %}
+      </div>
     </div>
   </div>
+  {% endif %}
   <div class="row">
     {#  Wayaround for determining visibility for regions with lazybuilder.
     @See https://www.drupal.org/project/drupal/issues/953034 for more info. #}
@@ -144,24 +158,17 @@
     {% if has_sidebar_first %}
       {% set sidebar_first_classes = [
         has_sidebar_first and has_sidebar_second ? 'col-12 col-md-3',
-        has_sidebar_first and has_sidebar_second is empty ? 'col-12 col-md-4',
+        has_sidebar_first and has_sidebar_second is empty ? 'col-12 col-md-3',
       ] %}
       <aside {{ attributes.addClass(sidebar_first_classes) }}>
-        {% if not is_front %}
-          <a href="{{ url('<front>') }}" class="return-to-home-link">
-            <span class="fa fa-arrow-left icon"></span>
-            {{ 'Hjem' | trans }}
-          </a>
-        {% endif %}
-
         {{ page.sidebar_first }}
       </aside>
     {% endif %}
 
     {% set content_classes = [
       has_sidebar_first and has_sidebar_second ? 'col-12 col-md-6',
-      has_sidebar_first and has_sidebar_second is empty ? 'col-12 col-md-8',
-      has_sidebar_second and has_sidebar_first is empty ? 'col-12 col-md-8',
+      has_sidebar_first and has_sidebar_second is empty ? 'col-12 col-md-6',
+      has_sidebar_second and has_sidebar_first is empty ? 'col-12 col-md-6',
       has_sidebar_first is empty and has_sidebar_second is empty ? 'col-12 col-md-12'
     ] %}
     <main {{ content_attributes.addClass(content_classes) }}>
@@ -171,7 +178,7 @@
     {% if has_sidebar_second %}
       {% set sidebar_second_classes = [
         has_sidebar_first and has_sidebar_second ? 'col-12 col-md-3',
-        has_sidebar_first is empty and has_sidebar_second ? 'col-12 col-md-4',
+        has_sidebar_first is empty and has_sidebar_second ? 'col-12 col-md-3',
       ] %}
       <aside {{ attributes.addClass(sidebar_second_classes) }}>
         {{ page.sidebar_second }}

@@ -52,3 +52,10 @@ body a {
     color: $color-orange-004;
   }
 }
+
+.col--align-center {
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: center;
+}
