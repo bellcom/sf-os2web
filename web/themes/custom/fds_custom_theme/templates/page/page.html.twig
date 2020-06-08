@@ -147,6 +147,13 @@
         has_sidebar_first and has_sidebar_second is empty ? 'col-12 col-md-4',
       ] %}
       <aside {{ attributes.addClass(sidebar_first_classes) }}>
+        {% if not is_front %}
+          <a href="{{ url('<front>') }}" class="return-to-home-link">
+            <span class="fa fa-arrow-left icon"></span>
+            {{ 'Hjem' | trans }}
+          </a>
+        {% endif %}
+
         {{ page.sidebar_first }}
       </aside>
     {% endif %}

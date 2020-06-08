@@ -31,3 +31,22 @@ body a {
 .ext {
   display: none;
 }
+
+.return-to-home-link {
+  display: block;
+
+  padding: 10px $sidenav-list-spacing-left;
+
+  font-size: $large-font-size;
+  font-weight: $font-weight-bold;
+
+  &, &:active, &:focus, &:visited {
+    text-decoration: none;
+
+    color: $color-text;
+  }
+
+  .icon {
+    color: $color-orange-004;
+  }
+}
