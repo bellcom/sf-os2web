@@ -65,3 +65,20 @@ jQuery(function ($) {
     button.addEventListener('click', handleClose);
   }
 })();
+
+document.addEventListener('DOMContentLoaded', function() {
+  function toggle(event) {
+    var element = this;
+    var parent = element.closest('.searchy');
+
+    parent.classList.toggle('searchy--visible-form');
+  }
+
+  var buttons = document.querySelectorAll('.js-toggle-searchy');
+
+  for (var i = 0; i < buttons.length; i++) {
+    var button = buttons[i];
+
+    button.addEventListener('click', toggle);
+  }
+});

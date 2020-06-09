@@ -151,6 +151,7 @@ body {
 
   border: 0;
 
+  + .searchy,
   + .custom-header__button {
     margin-left: 15px;
   }
@@ -162,6 +163,12 @@ body {
     font-size: 3rem;
 
     color: $color-orange-004;
+  }
+}
+.searchy {
+
+  + .custom-header__button {
+    margin-left: 15px;
   }
 }
 
