@@ -22,6 +22,10 @@
 
 html {
   font-family: $font-family;
+  line-height: $body-text-line-height;
+}
+html body {
+  line-height: $body-text-line-height;
 }
 
 h1, .h1,

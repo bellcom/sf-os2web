@@ -11,7 +11,7 @@ $global-font-size:  100% !default;
 // value from Bourbon.
 $em-base:           62.5%; //-> 10px for standard browsers, now 'Font size' from the browser setting works correctly if the uses specifies a bigger standard font-size.
 
-$base-font-size:    1.2rem;
+$base-font-size:    1.6rem;
 $base-line-height:  2.4rem !default;
 
 // Paths
@@ -22,14 +22,14 @@ $icons-folder-path:             "../images/svg-icons" !default;
 // Typography
 // Typography font-size and line-height
 
-$h1-font-size:                4.0rem !default;
-$h1-line-height:              4.8rem !default;
+$h1-font-size:                3.6rem !default;
+$h1-line-height:              4.2rem !default;
 
-$h2-font-size:                3.0rem !default;
-$h2-line-height:              4.0rem !default;
+$h2-font-size:                2.4rem !default;
+$h2-line-height:              3.0rem !default;
 
-$h3-font-size:                2.4rem !default;
-$h3-line-height:              3.2rem !default;
+$h3-font-size:                1.8rem !default;
+$h3-line-height:              2.4rem !default;
 
 $h4-font-size:                2.0rem !default;
 $h4-line-height:              3.2rem !default;
@@ -46,13 +46,13 @@ $display-1-heading-line-height: 5.6rem !default;
 $display-2-heading-size:        3.2rem !default;
 $display-2-heading-line-height: 4.0rem !default;
 
-$body-text:                   1.2rem;
-$body-text-line-height:       2.4rem !default;
+$body-text:                   1.6rem;
+$body-text-line-height:       2.2rem;
 
 $form-label:                  $base-font-size;
 $form-label-line-height:      2.4rem !default;
 
-$small-text:                  1.2rem;
+$small-text:                  1.4rem;
 $small-text-line-height:      2.0rem;
 
 $lead-font-size:              2.0rem !default;
@@ -65,7 +65,7 @@ $font-weight-bold:            700 !default;
 $font-style-normal:           normal !default;
 $font-style-italic:           italic !default;
 
-$font-family:                 'Candara', 'Verdana', Roboto, 'IBMPlexSans', 'system';
+$font-family:                 'Candara', 'Arial', Roboto, 'IBMPlexSans', 'system';
 
 ///////////////////////////////////////////////////////////////////
 // Spacing helpers

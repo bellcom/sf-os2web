@@ -217,7 +217,7 @@ body {
 
       padding: 40px 5px;
 
-      font-size: $h5-font-size;
+      font-size: $large-font-size;
       text-align: center;
       font-weight: $font-weight-bold;
 
@@ -366,6 +366,18 @@ body {
 
   .custom-header__meta {
     padding: 5rem 0 5rem 3rem;
+
+    h1.h1 {
+      font-size: 5rem;
+
+      + h2 {
+        margin-top: 25px;
+      }
+    }
+
+    h2.h4 {
+      font-size: 3.2rem;
+    }
   }
 }
 

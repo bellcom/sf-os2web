@@ -54,7 +54,7 @@
   .block-language {
 
     a {
-      font-size: $small-font-size;
+      font-size: $small-text;
     }
   }
 
@@ -87,8 +87,6 @@
   }
 
   .field--name-field-rebild-selfservice-body {
-    font-size: $large-font-size;
-
     color: #fff;
 
     + .field--name-field-rebild-selfservice-link {
@@ -172,8 +170,8 @@
       }
 
       > a {
+        font-size: $large-font-size;
         font-weight: $font-weight-bold;
-        font-size: $h4-font-size;
 
         &, &.is-active {
           text-decoration: none;
@@ -196,15 +194,12 @@
       }
 
       &:before {
+        top: 3px;
         left: 0;
 
         font-size: 22px;
 
         color: $color-orange-004;
-      }
-
-      > a {
-        font-size: $large-font-size;
       }
     }
   }
