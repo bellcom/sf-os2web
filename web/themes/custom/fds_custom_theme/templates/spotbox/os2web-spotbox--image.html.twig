@@ -9,6 +9,10 @@
  * Available variables:
  * - content: A list of content items. Use 'content' to print all content, or
  * - attributes: HTML attributes for the container element.
+ * - spotbox_type: spotbox type value.
+ * - background_color: background color type primary, secondary etc.
+ * - spotbox_url: link field URL value.
+ * - spotbox_heading: link field title value
  *
  * @see template_preprocess_os2web_spotbox()
  *
@@ -30,12 +34,11 @@
 
     <div class="col-12 col-sm-8 col-md-7 col--align-center">
       <div class="spotbox__content">
-        {{ content.field_os2web_spotbox_heading }}
         {{ content.field_os2web_spotbox_body }}
 
         <!-- Begin - REMOVE THIS -->
         <div class="field--name-field-os2web-spotbox-heading">
-          <h3 class="h4">Overskrift</h3>
+          <h3 class="h4">{{ spotbox_heading }}</h3>
         </div>
 
         <div class="field--name-field-os2web-spotbox-body">
