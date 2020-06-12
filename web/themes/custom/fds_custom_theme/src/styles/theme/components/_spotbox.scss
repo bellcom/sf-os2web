@@ -24,6 +24,8 @@
   display: block;
   position: relative;
 
+  box-shadow: $box-shadow;
+
   &, &:hover, &:focus, &:visited {
     color: $color-text !important;
     background-color: #fff !important;
@@ -69,6 +71,13 @@ a.spotbox {
 .spotbox__content {
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-right: ($grid-gutter-width / 2);
+}
+
+.spotbox--background-color-primary,
+.spotbox--background-color-secondary,
+.spotbox--background-color-tertiary {
+  box-shadow: none;
 }
 
 .spotbox--background-color-primary,
@@ -155,6 +164,58 @@ a.spotbox {
 
     img {
       height: 100%;
+    }
+  }
+}
+
+.paragraph--grid_1 {
+
+  .spotbox {
+
+    [class*="col-"] {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    .spotbox__image,
+    .spotbox__content {
+      padding-left: $grid-gutter-width;
+    }
+    .spotbox__image {
+      padding-top: 5rem;
+      padding-right: $grid-gutter-width;
+      justify-content: left;
+    }
+    .spotbox__content {
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+      padding-right: 4.5rem;
+    }
+
+    .field--name-field-os2web-spotbox-icon {
+      text-align: left;
+    }
+  }
+}
+
+.paragraph--grid_3 {
+
+  .spotbox {
+
+    [class*="col-"] {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    .spotbox__image {
+      padding: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+    .spotbox__content {
+      padding: 3rem;
     }
   }
 }
