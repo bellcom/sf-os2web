@@ -7878,12 +7878,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "7b2ed9b9f462eb6ba3d4e03cfc8d8f1d803fecc9"
+                "reference": "4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/7b2ed9b9f462eb6ba3d4e03cfc8d8f1d803fecc9",
-                "reference": "7b2ed9b9f462eb6ba3d4e03cfc8d8f1d803fecc9",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e",
+                "reference": "4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e",
                 "shasum": ""
             },
             "require": {
