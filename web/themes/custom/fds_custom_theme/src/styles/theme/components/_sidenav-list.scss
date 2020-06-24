@@ -99,7 +99,7 @@ $sidenav-list-dot-spacing: 22px;
       }
 
       &:before {
-        top: 1px;
+        top: 4px;
         left: $sidenav-list-spacing-left;
 
         content: "\2022" !important;
@@ -129,6 +129,16 @@ $sidenav-list-dot-spacing: 22px;
         color: $color-text;
       }
     }
+
+    .sidenav-sub_list {
+
+      li {
+
+        &:before {
+          content: "\FE63" !important;
+        }
+      }
+    }
   }
 
   .sidenav-list {
@@ -138,184 +148,17 @@ $sidenav-list-dot-spacing: 22px;
     }
 
     > li > .sidenav-sub_list > li > .sidenav-sub_list {
-      padding-left: 10px;
+      padding-left: 13px;
     }
 
     > li > .sidenav-sub_list > li > .sidenav-sub_list > li > .sidenav-sub_list {
-      padding-left: 20px;
+      padding-left: 26px;
     }
 
     > li > .sidenav-sub_list > li > .sidenav-sub_list > li > .sidenav-sub_list > li > .sidenav-sub_list {
-      padding-left: 30px;
+      padding-left: 39px;
     }
   }
-
-  //.sidenav-list {
-  //  border-top: 0;
-  //  border-bottom: 0;
-  //
-  //  > li {
-  //    border-color: $color-border;
-  //
-  //    > a {
-  //      padding: 20px 30px 20px 20px;
-  //
-  //      font-weight: bold;
-  //
-  //      &:focus {
-  //        color: $color-neutral;
-  //      }
-  //
-  //      &:hover {
-  //        text-decoration: underline;
-  //      }
-  //
-  //      &:after {
-  //        position: absolute;
-  //
-  //        right: 10px;
-  //        top: 20px;
-  //
-  //        font-size: 2rem;
-  //        font-family: FontAwesome;
-  //
-  //        content: $fa-var-angle-right;
-  //
-  //        color: #474748;
-  //      }
-  //    }
-  //
-  //    li {
-  //      border-top: 0;
-  //    }
-  //
-  //    &.current {
-  //      border-left: 0;
-  //
-  //      &.has-submenu {
-  //        padding-bottom: 10px;
-  //
-  //        > a {
-  //
-  //          &:after {
-  //            content: $fa-var-angle-down;
-  //          }
-  //        }
-  //      }
-  //    }
-  //
-  //    &.active {
-  //      background-color: $color-gray-pale;
-  //
-  //      .sidenav-sub_list {
-  //
-  //        a {
-  //
-  //          &, &:focus {
-  //            color: $color-neutral;
-  //          }
-  //        }
-  //      }
-  //    }
-  //
-  //    &:not(.current) {
-  //
-  //      &:hover {
-  //        background-color: transparent;
-  //      }
-  //    }
-  //
-  //    > .sidenav-sub_list {
-  //      width: auto;
-  //
-  //      margin-left: 0;
-  //    }
-  //  }
-  //}
-  //
-  //.sidenav-list {
-  //
-  //  > li > .sidenav-sub_list {
-  //    padding-left: 30px;
-  //  }
-  //
-  //  > li > .sidenav-sub_list > li > .sidenav-sub_list {
-  //    padding-left: 30px;
-  //  }
-  //
-  //  > li > .sidenav-sub_list > li > .sidenav-sub_list > li > .sidenav-sub_list {
-  //    padding-left: 40px;
-  //  }
-  //
-  //  > li > .sidenav-sub_list > li > .sidenav-sub_list > li > .sidenav-sub_list > li > .sidenav-sub_list {
-  //    padding-left: 50px;
-  //  }
-  //}
-  //
-  //.sidenav-list,
-  //.sidenav-sub_list {
-  //
-  //  a {
-  //
-  //    &:hover {
-  //      text-decoration: underline;
-  //    }
-  //
-  //    &:focus {
-  //      color: $color-neutral;
-  //    }
-  //  }
-  //
-  //  > li {
-  //
-  //    &.active {
-  //
-  //      > a {
-  //
-  //        &, &:focus {
-  //          color: $color-link;
-  //        }
-  //      }
-  //    }
-  //  }
-  //}
-  //
-  //.sidenav-sub_list {
-  //
-  //  a {
-  //    padding: 0;
-  //
-  //    font-size: 1.4rem;
-  //    line-height: 1.6rem;
-  //  }
-  //
-  //  > li {
-  //    padding-top: 6px;
-  //    padding-bottom: 6px;
-  //
-  //    &:first-child {
-  //      padding-top: 0;
-  //    }
-  //
-  //    &:last-child {
-  //      padding-bottom: 0;
-  //    }
-  //
-  //    &.current {
-  //
-  //      a {
-  //        font-weight: normal;
-  //      }
-  //    }
-  //  }
-  //
-  //  .sidenav-sub_list {
-  //
-  //    > li {
-  //      list-style-type: circle;
-  //    }
-  //  }
-  //}
 }
 
 // --------------------------------------------------
