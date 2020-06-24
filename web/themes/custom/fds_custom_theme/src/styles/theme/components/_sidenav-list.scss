@@ -99,7 +99,7 @@ $sidenav-list-dot-spacing: 22px;
       }
 
       &:before {
-        top: 1px;
+        top: 4px;
         left: $sidenav-list-spacing-left;
 
         content: "\2022" !important;
@@ -129,6 +129,16 @@ $sidenav-list-dot-spacing: 22px;
         color: $color-text;
       }
     }
+
+    .sidenav-sub_list {
+
+      li {
+
+        &:before {
+          content: "\FE63" !important;
+        }
+      }
+    }
   }
 
   .sidenav-list {
@@ -138,15 +148,15 @@ $sidenav-list-dot-spacing: 22px;
     }
 
     > li > .sidenav-sub_list > li > .sidenav-sub_list {
-      padding-left: 10px;
+      padding-left: 13px;
     }
 
     > li > .sidenav-sub_list > li > .sidenav-sub_list > li > .sidenav-sub_list {
-      padding-left: 20px;
+      padding-left: 26px;
     }
 
     > li > .sidenav-sub_list > li > .sidenav-sub_list > li > .sidenav-sub_list > li > .sidenav-sub_list {
-      padding-left: 30px;
+      padding-left: 39px;
     }
   }
 }
