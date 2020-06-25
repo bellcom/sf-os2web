@@ -7872,12 +7872,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "2eaca8c2e9fa37ebaf325a724adf858f87a71a0e"
+                "reference": "4e103f9977482d0cc4039a8b95933ff7b62d47b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/2eaca8c2e9fa37ebaf325a724adf858f87a71a0e",
-                "reference": "2eaca8c2e9fa37ebaf325a724adf858f87a71a0e",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/4e103f9977482d0cc4039a8b95933ff7b62d47b4",
+                "reference": "4e103f9977482d0cc4039a8b95933ff7b62d47b4",
                 "shasum": ""
             },
             "require": {
@@ -7892,7 +7892,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2020-05-25T13:25:04+00:00"
+            "time": "2020-06-25T12:11:17+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -8004,12 +8004,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "8c11fc57fa5f20f2e3b5c13157c0161b89163d5f"
+                "reference": "6cf8b693d57d334aded7d12c88929bbe3e77db7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/8c11fc57fa5f20f2e3b5c13157c0161b89163d5f",
-                "reference": "8c11fc57fa5f20f2e3b5c13157c0161b89163d5f",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/6cf8b693d57d334aded7d12c88929bbe3e77db7b",
+                "reference": "6cf8b693d57d334aded7d12c88929bbe3e77db7b",
                 "shasum": ""
             },
             "require": {
@@ -8022,7 +8022,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-06-04T11:41:55+00:00"
+            "time": "2020-06-25T12:13:05+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
