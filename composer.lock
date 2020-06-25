@@ -7781,12 +7781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "b6e3ae739db5d6c10f8c7c0fc3ed4eefa5782661"
+                "reference": "b4e4be05a877f0272dd0483720312210ad683c43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/b6e3ae739db5d6c10f8c7c0fc3ed4eefa5782661",
-                "reference": "b6e3ae739db5d6c10f8c7c0fc3ed4eefa5782661",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/b4e4be05a877f0272dd0483720312210ad683c43",
+                "reference": "b4e4be05a877f0272dd0483720312210ad683c43",
                 "shasum": ""
             },
             "require": {
@@ -7837,7 +7837,7 @@
                 "EUPL-1.2"
             ],
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
-            "time": "2020-06-12T12:48:02+00:00"
+            "time": "2020-06-25T11:46:29+00:00"
         },
         {
             "name": "os2web/os2web",
