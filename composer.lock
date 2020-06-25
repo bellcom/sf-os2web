@@ -3441,6 +3441,9 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
+                },
+                "patches_applied": {
+                    "3011962 - Form translation error - Element::children() must be of the type array, null given": "https://www.drupal.org/files/issues/2018-11-13/3011962-Translation_form_bugfix-9.patch"
                 }
             },
             "autoload": {
@@ -3661,6 +3664,76 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/drush_language",
+            "version": "1.0.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/drush_language.git",
+                "reference": "8.x-1.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/drush_language-8.x-1.0-rc3.zip",
+                "reference": "8.x-1.0-rc3",
+                "shasum": "6d72a0505fac3153d663de3744271129b048762b"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9",
+                "webmozart/path-util": "^2.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc3",
+                    "datestamp": "1588522983",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "gurvan",
+                    "homepage": "https://www.drupal.org/user/852194"
+                },
+                {
+                    "name": "ndf",
+                    "homepage": "https://www.drupal.org/user/599438"
+                },
+                {
+                    "name": "the greenman",
+                    "homepage": "https://www.drupal.org/user/19836"
+                },
+                {
+                    "name": "xatoo",
+                    "homepage": "https://www.drupal.org/user/103227"
+                }
+            ],
+            "description": "Provides Drush commands for language manipulation",
+            "homepage": "https://www.drupal.org/project/drush_language",
+            "support": {
+                "source": "https://git.drupalcode.org/project/drush_language"
             }
         },
         {
@@ -7708,12 +7781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "d9d7f84655f1e953942729dabf3b9db98a964f79"
+                "reference": "b6e3ae739db5d6c10f8c7c0fc3ed4eefa5782661"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/d9d7f84655f1e953942729dabf3b9db98a964f79",
-                "reference": "d9d7f84655f1e953942729dabf3b9db98a964f79",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/b6e3ae739db5d6c10f8c7c0fc3ed4eefa5782661",
+                "reference": "b6e3ae739db5d6c10f8c7c0fc3ed4eefa5782661",
                 "shasum": ""
             },
             "require": {
@@ -7728,6 +7801,7 @@
                 "drupal/core": "^8",
                 "drupal/crop": "^2.0.0-rc1",
                 "drupal/ctools": "^3.2",
+                "drupal/drush_language": "^1.0@RC",
                 "drupal/easy_breadcrumb": "^1.12",
                 "drupal/editor_advanced_link": "^1.4",
                 "drupal/embed": "^1.0",
@@ -7763,7 +7837,7 @@
                 "EUPL-1.2"
             ],
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
-            "time": "2020-04-29T11:55:29+00:00"
+            "time": "2020-06-12T12:48:02+00:00"
         },
         {
             "name": "os2web/os2web",
@@ -7895,7 +7969,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-05-25T13:21:32+00:00"
+            "time": "2020-06-22T10:47:42+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -8028,7 +8102,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-06-22T07:16:24+00:00"
+            "time": "2020-06-24T09:58:37+00:00"
         },
         {
             "name": "os2web/os2web_search",
