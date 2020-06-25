@@ -7,18 +7,23 @@
   view_mode ? view_mode|clean_class,
 ]
 %}
+{% set timestamp = node.field_os2web_m_start_date.value|date('U') %}
+
 <div {{ attributes.addClass(classes) }}>
   <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date">
-    <div>
-      {{ 'Frist' | trans }}
-    </div>
-
     {{ content.field_os2web_m_start_date }}
   </div>
 
   <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__content">
-    {{ content.field_os2web_m_type }}
-    {{ content.body }}
+    <div class="row">
+      <div class="col col-sm-6 col--align-center">
+        {{ content.field_os2web_m_type }}
+      </div>
+      <div class="col col-sm-6 col--align-center">
+        {{ timestamp | format_date('long') }}
+        {{ content.field_os2web_m_committee }}
+      </div>
+    </div>
   </div>
 
   <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__actions">
