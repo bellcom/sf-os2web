@@ -8004,12 +8004,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "bc1d7b44c64bbb0f2db59e4d16fe600352c5028b"
+                "reference": "89a690bd15fe70bbd67591756272a5f200e52d28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/bc1d7b44c64bbb0f2db59e4d16fe600352c5028b",
-                "reference": "bc1d7b44c64bbb0f2db59e4d16fe600352c5028b",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/89a690bd15fe70bbd67591756272a5f200e52d28",
+                "reference": "89a690bd15fe70bbd67591756272a5f200e52d28",
                 "shasum": ""
             },
             "require": {
