@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c24986cdbd7f872508efb5d321539d74",
+    "content-hash": "a12860b62ce30702aeb0e617dcde80f2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3441,9 +3441,6 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
-                },
-                "patches_applied": {
-                    "3011962 - Form translation error - Element::children() must be of the type array, null given": "https://www.drupal.org/files/issues/2018-11-13/3011962-Translation_form_bugfix-9.patch"
                 }
             },
             "autoload": {
@@ -7945,6 +7942,31 @@
             ],
             "description": "Provides integration with Danish data lookup services such as Service platformen or Datafordeler.",
             "time": "2019-12-18T10:35:16+00:00"
+        },
+        {
+            "name": "os2web/os2web_hearings",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_hearings.git",
+                "reference": "16d03a3efab0dd71c82537c1b2e000d7f9afd7eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/16d03a3efab0dd71c82537c1b2e000d7f9afd7eb",
+                "reference": "16d03a3efab0dd71c82537c1b2e000d7f9afd7eb",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Adds Hearing related content types and Hearings search view",
+            "time": "2020-07-02T08:43:37+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
@@ -16169,6 +16191,7 @@
         "bellcom/fds_base_theme": 20,
         "os2web/os2web": 20,
         "os2web/os2web_borgerdk": 20,
+        "os2web/os2web_hearings": 20,
         "os2web/os2web_meetings": 20,
         "os2web/os2web_meetings_sbsys": 20,
         "os2web/os2web_pagebuilder": 20,
