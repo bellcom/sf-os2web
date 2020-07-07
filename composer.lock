@@ -5962,6 +5962,63 @@
             }
         },
         {
+            "name": "drupal/scheduler_content_moderation_integration",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/scheduler_content_moderation_integration.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/scheduler_content_moderation_integration-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "27df8713893f6418c99e5d99f2fa9b5dd66fc048"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9",
+                "drupal/scheduler": "^1.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1591179040",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
+                },
+                {
+                    "name": "daniel.bosen",
+                    "homepage": "https://www.drupal.org/user/404865"
+                },
+                {
+                    "name": "thunderbot",
+                    "homepage": "https://www.drupal.org/user/3511180"
+                },
+                {
+                    "name": "volkerk",
+                    "homepage": "https://www.drupal.org/user/57527"
+                }
+            ],
+            "description": "Scheduler Content Moderation Integration",
+            "homepage": "https://www.drupal.org/project/scheduler_content_moderation_integration",
+            "support": {
+                "source": "https://git.drupalcode.org/project/scheduler_content_moderation_integration"
+            }
+        },
+        {
             "name": "drupal/search_api",
             "version": "1.16.0",
             "source": {
@@ -7842,17 +7899,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "c35faa5e94c13a3568d53e9f00dcd6e75911cc3a"
+                "reference": "6c6e1872131314245025c13608efb0a6bc7d3de0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/c35faa5e94c13a3568d53e9f00dcd6e75911cc3a",
-                "reference": "c35faa5e94c13a3568d53e9f00dcd6e75911cc3a",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/6c6e1872131314245025c13608efb0a6bc7d3de0",
+                "reference": "6c6e1872131314245025c13608efb0a6bc7d3de0",
                 "shasum": ""
             },
             "require": {
                 "drupal/ckeditor_iframe": "^2.0",
                 "drupal/menu_item_extras": "^2.11",
+                "drupal/metatag": "^1.13",
+                "drupal/scheduler_content_moderation_integration": "^1.3",
                 "os2core/os2core": "dev-master"
             },
             "type": "drupal-profile",
@@ -7861,7 +7920,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
-            "time": "2020-05-25T13:15:27+00:00"
+            "time": "2020-07-07T15:06:11+00:00"
         },
         {
             "name": "os2web/os2web_borgerdk",
