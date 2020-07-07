@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c24986cdbd7f872508efb5d321539d74",
+    "content-hash": "a12860b62ce30702aeb0e617dcde80f2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3661,6 +3661,76 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/drush_language",
+            "version": "1.0.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/drush_language.git",
+                "reference": "8.x-1.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/drush_language-8.x-1.0-rc3.zip",
+                "reference": "8.x-1.0-rc3",
+                "shasum": "6d72a0505fac3153d663de3744271129b048762b"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9",
+                "webmozart/path-util": "^2.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc3",
+                    "datestamp": "1588522983",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "gurvan",
+                    "homepage": "https://www.drupal.org/user/852194"
+                },
+                {
+                    "name": "ndf",
+                    "homepage": "https://www.drupal.org/user/599438"
+                },
+                {
+                    "name": "the greenman",
+                    "homepage": "https://www.drupal.org/user/19836"
+                },
+                {
+                    "name": "xatoo",
+                    "homepage": "https://www.drupal.org/user/103227"
+                }
+            ],
+            "description": "Provides Drush commands for language manipulation",
+            "homepage": "https://www.drupal.org/project/drush_language",
+            "support": {
+                "source": "https://git.drupalcode.org/project/drush_language"
             }
         },
         {
@@ -7708,12 +7778,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "d9d7f84655f1e953942729dabf3b9db98a964f79"
+                "reference": "b4e4be05a877f0272dd0483720312210ad683c43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/d9d7f84655f1e953942729dabf3b9db98a964f79",
-                "reference": "d9d7f84655f1e953942729dabf3b9db98a964f79",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/b4e4be05a877f0272dd0483720312210ad683c43",
+                "reference": "b4e4be05a877f0272dd0483720312210ad683c43",
                 "shasum": ""
             },
             "require": {
@@ -7728,6 +7798,7 @@
                 "drupal/core": "^8",
                 "drupal/crop": "^2.0.0-rc1",
                 "drupal/ctools": "^3.2",
+                "drupal/drush_language": "^1.0@RC",
                 "drupal/easy_breadcrumb": "^1.12",
                 "drupal/editor_advanced_link": "^1.4",
                 "drupal/embed": "^1.0",
@@ -7763,7 +7834,7 @@
                 "EUPL-1.2"
             ],
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
-            "time": "2020-04-29T11:55:29+00:00"
+            "time": "2020-06-25T11:46:29+00:00"
         },
         {
             "name": "os2web/os2web",
@@ -7798,12 +7869,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "2eaca8c2e9fa37ebaf325a724adf858f87a71a0e"
+                "reference": "4e103f9977482d0cc4039a8b95933ff7b62d47b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/2eaca8c2e9fa37ebaf325a724adf858f87a71a0e",
-                "reference": "2eaca8c2e9fa37ebaf325a724adf858f87a71a0e",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/4e103f9977482d0cc4039a8b95933ff7b62d47b4",
+                "reference": "4e103f9977482d0cc4039a8b95933ff7b62d47b4",
                 "shasum": ""
             },
             "require": {
@@ -7818,7 +7889,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2020-05-25T13:25:04+00:00"
+            "time": "2020-06-25T12:11:17+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -7873,6 +7944,31 @@
             "time": "2019-12-18T10:35:16+00:00"
         },
         {
+            "name": "os2web/os2web_hearings",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_hearings.git",
+                "reference": "16d03a3efab0dd71c82537c1b2e000d7f9afd7eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/16d03a3efab0dd71c82537c1b2e000d7f9afd7eb",
+                "reference": "16d03a3efab0dd71c82537c1b2e000d7f9afd7eb",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Adds Hearing related content types and Hearings search view",
+            "time": "2020-07-02T08:43:37+00:00"
+        },
+        {
             "name": "os2web/os2web_hjemmeside",
             "version": "dev-master",
             "source": {
@@ -7895,7 +7991,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-05-25T13:21:32+00:00"
+            "time": "2020-06-22T10:47:42+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -7930,12 +8026,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "8c11fc57fa5f20f2e3b5c13157c0161b89163d5f"
+                "reference": "6cf8b693d57d334aded7d12c88929bbe3e77db7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/8c11fc57fa5f20f2e3b5c13157c0161b89163d5f",
-                "reference": "8c11fc57fa5f20f2e3b5c13157c0161b89163d5f",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/6cf8b693d57d334aded7d12c88929bbe3e77db7b",
+                "reference": "6cf8b693d57d334aded7d12c88929bbe3e77db7b",
                 "shasum": ""
             },
             "require": {
@@ -7948,7 +8044,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-06-04T11:41:55+00:00"
+            "time": "2020-06-25T12:13:05+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
@@ -8028,7 +8124,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-06-22T07:16:24+00:00"
+            "time": "2020-06-24T09:58:37+00:00"
         },
         {
             "name": "os2web/os2web_search",
@@ -16095,6 +16191,7 @@
         "bellcom/fds_base_theme": 20,
         "os2web/os2web": 20,
         "os2web/os2web_borgerdk": 20,
+        "os2web/os2web_hearings": 20,
         "os2web/os2web_meetings": 20,
         "os2web/os2web_meetings_sbsys": 20,
         "os2web/os2web_pagebuilder": 20,
