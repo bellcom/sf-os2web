@@ -7778,12 +7778,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "b4e4be05a877f0272dd0483720312210ad683c43"
+                "reference": "cff80f5f98ff4b580b30dfbd05c47c6018c92380"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/b4e4be05a877f0272dd0483720312210ad683c43",
-                "reference": "b4e4be05a877f0272dd0483720312210ad683c43",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/cff80f5f98ff4b580b30dfbd05c47c6018c92380",
+                "reference": "cff80f5f98ff4b580b30dfbd05c47c6018c92380",
                 "shasum": ""
             },
             "require": {
@@ -7834,7 +7834,7 @@
                 "EUPL-1.2"
             ],
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
-            "time": "2020-06-25T11:46:29+00:00"
+            "time": "2020-07-07T13:41:30+00:00"
         },
         {
             "name": "os2web/os2web",
@@ -8100,12 +8100,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "89a690bd15fe70bbd67591756272a5f200e52d28"
+                "reference": "e6d178a8125f280845f55cd8e0ca1aa0b2919fe9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/89a690bd15fe70bbd67591756272a5f200e52d28",
-                "reference": "89a690bd15fe70bbd67591756272a5f200e52d28",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/e6d178a8125f280845f55cd8e0ca1aa0b2919fe9",
+                "reference": "e6d178a8125f280845f55cd8e0ca1aa0b2919fe9",
                 "shasum": ""
             },
             "require": {
@@ -8124,7 +8124,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-06-24T09:58:37+00:00"
+            "time": "2020-07-07T13:36:06+00:00"
         },
         {
             "name": "os2web/os2web_search",
