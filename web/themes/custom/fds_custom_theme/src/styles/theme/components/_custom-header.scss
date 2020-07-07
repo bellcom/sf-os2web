@@ -394,7 +394,24 @@ body {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+
+  .path-frontpage {
+    padding-top: 0 !important;
+
+    &.toolbar-tray-open {
+      padding-top: 0 !important;
+    }
+  }
+
+  body {
+    padding-top: 0 !important;
+
+    &.toolbar-tray-open {
+      padding-top: 0 !important;
+    }
+  }
+}
 
 // Touch
 .touchevents {}

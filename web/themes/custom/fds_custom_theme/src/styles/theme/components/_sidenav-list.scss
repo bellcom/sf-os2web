@@ -193,7 +193,16 @@ $sidenav-list-dot-spacing: 22px;
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+
+  .region-sidebar-first,
+  .region-sidebar-second {
+
+    .sidenav-list {
+      display: none !important;
+    }
+  }
+}
 
 // Touch
 .touchevents {}
