@@ -12,6 +12,7 @@
   "fonts": [
     "node_modules/font-awesome/fonts/*",
     "node_modules/dkfds/src/fonts/**/*",
+    "node_modules/material-design-icons/iconfont/MaterialIcons-Regular.*",
     "src/fonts/**/*"
   ]
 }
