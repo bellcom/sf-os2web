@@ -8,7 +8,7 @@
     var iconImg = menuItem.querySelector('.field--name-field-os2web-icon');
 
     if (link === null || iconImg === null) {
-      return;
+      continue;
     }
 
     link.insertAdjacentElement('afterbegin', iconImg);
