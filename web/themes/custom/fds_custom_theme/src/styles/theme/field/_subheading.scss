@@ -1,88 +1,29 @@
 // |--------------------------------------------------------------------------
-// | File
+// | Subheading
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .file
+// | - .subheading
 // |
 
 // --------------------------------------------------
 // Variables
 // --------------------------------------------------
 
-%grid-column {
-  position: relative;
-  width: 100%;
-  min-height: 1px; // Prevent columns from collapsing when empty
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
-}
-
 // --------------------------------------------------
 // Mixins
 // --------------------------------------------------
 
-@mixin file-mixin() {}
+@mixin subheading-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.file {
-  display: block;
+.field--name-field-os2web-simple-text-subhead {
 
-  margin-bottom: 15px;
-  padding-left: 0 !important; // Reset.
-  background-image: none !important;
-
-  box-shadow: $box-shadow;
-
-  a {
-    position: relative;
-    display: flex;
-
-    align-items: center;
-
-    padding: 20px (30px + 30px + 5px) 20px 30px; // Width of icon + left/right spacing + gutter.
-
-    min-height: 88px;
-    max-width: 100%; // Reset.
-
-    font-weight: bold;
-
-    &, &:hover, &:focus, &:visited {
-      color: $color-text;
-      text-decoration: none;
-    }
-
-    &:after {
-      display: inline-block;
-
-      position: absolute;
-
-      content: "";
-
-      top: 50%;
-      right: 30px;
-
-      margin-top: -15px; // Half the height.
-
-      width: 30px;
-      height: 30px;
-
-      background-image: url("../images/download.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
-}
-
-.field--type-file {
-  @include grid-row();
-
-  > .field__item {
-    @extend %grid-column;
-    @include grid-col(12, 12);
+  + .field {
+    margin-top: 2.8rem;
   }
 }
 
@@ -101,15 +42,7 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {
-
-  .field--type-file {
-
-    > .field__item {
-      @include grid-col(6, 12);
-    }
-  }
-}
+@include media-breakpoint-up(sm) {}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
