@@ -7974,12 +7974,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e"
+                "reference": "e6dcf67565cd0ec554300020d561adf97ee777b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e",
-                "reference": "4760879dfea4a0cd3711e6fb1ea1e3bb4224a54e",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/e6dcf67565cd0ec554300020d561adf97ee777b5",
+                "reference": "e6dcf67565cd0ec554300020d561adf97ee777b5",
                 "shasum": ""
             },
             "require": {
