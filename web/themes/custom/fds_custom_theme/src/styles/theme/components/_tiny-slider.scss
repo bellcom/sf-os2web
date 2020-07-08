@@ -23,7 +23,7 @@
 .tns-outer {
   position: relative;
 
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .tns-nav {
@@ -33,16 +33,21 @@
   left: 0;
   right: 0;
 
-  margin-bottom: -70px;
+  margin-bottom: -40px;
 
   button {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
 
+    border-width: 1px;
     border-color: $color-orange-004;
 
     &.tns-nav-active {
       background-color: $color-orange-004;
+    }
+
+    + button {
+      margin-left: 8px;
     }
   }
 }
@@ -56,12 +61,13 @@
     z-index: 100;
 
     top: 50%;
-    margin-top: -28px;
+    margin-top: -20px;
     padding: 0;
 
-    height: 56px;
-    width: 56px;
+    height: 40px;
+    width: 40px;
 
+    align-items: center;
     justify-content: center;
 
     font-size: 0;
@@ -75,11 +81,11 @@
       display: inline-block;
 
       font-family: FontAwesome;
-      font-size: 3rem;
+      font-size: 2.6rem;
     }
 
     &[data-controls="prev"] {
-      left: -28px;
+      left: -20px;
 
       &:before {
         content: "\f104";
@@ -87,7 +93,7 @@
     }
 
     &[data-controls="next"] {
-      right: -28px;
+      right: -20px;
 
       &:before {
         content: "\f105";
