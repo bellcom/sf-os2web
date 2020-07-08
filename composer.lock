@@ -7928,12 +7928,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "9d4881ae349e6daf100fa6a7cfc2b74845829a76"
+                "reference": "554a2e22d3bd996b7205ca869eb73971fcb33479"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/9d4881ae349e6daf100fa6a7cfc2b74845829a76",
-                "reference": "9d4881ae349e6daf100fa6a7cfc2b74845829a76",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/554a2e22d3bd996b7205ca869eb73971fcb33479",
+                "reference": "554a2e22d3bd996b7205ca869eb73971fcb33479",
                 "shasum": ""
             },
             "require": {
@@ -7948,7 +7948,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2020-07-07T11:06:38+00:00"
+            "time": "2020-07-08T11:09:43+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -8050,7 +8050,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-07-07T09:45:15+00:00"
+            "time": "2020-07-08T07:57:03+00:00"
         },
         {
             "name": "os2web/os2web_kle",
