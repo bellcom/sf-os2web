@@ -8270,12 +8270,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "a27e2df072f9dab7a4e44084bea8ad190053364d"
+                "reference": "4b888bf1ae781595cc25011f1ee04cb166a6f75a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/a27e2df072f9dab7a4e44084bea8ad190053364d",
-                "reference": "a27e2df072f9dab7a4e44084bea8ad190053364d",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/4b888bf1ae781595cc25011f1ee04cb166a6f75a",
+                "reference": "4b888bf1ae781595cc25011f1ee04cb166a6f75a",
                 "shasum": ""
             },
             "require": {
