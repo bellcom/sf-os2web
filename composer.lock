@@ -8033,12 +8033,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "e6dcf67565cd0ec554300020d561adf97ee777b5"
+                "reference": "ab0dbb3842a51ddaf9abcbab8ed76558165a2730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/e6dcf67565cd0ec554300020d561adf97ee777b5",
-                "reference": "e6dcf67565cd0ec554300020d561adf97ee777b5",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/ab0dbb3842a51ddaf9abcbab8ed76558165a2730",
+                "reference": "ab0dbb3842a51ddaf9abcbab8ed76558165a2730",
                 "shasum": ""
             },
             "require": {
