@@ -21,28 +21,6 @@ jQuery(function ($) {
   }
 })();
 
-// Tiny Slider slideshow img.
-(function() {
-  var selector = '.field--name-field-os2web-slideshow-image';
-
-  if (document.querySelector(selector) !== null) {
-
-    // Run tiny slider.
-    tns({
-      container: selector,
-      items: 1,
-      autoplay: true,
-      autoplayHoverPause: true,
-      gutter: 32,
-      responsive: {
-        576: {
-          items: 2,
-        },
-      },
-    });
-  }
-})();
-
 // Accordion.
 (function () {
   function handleClose(event) {
@@ -66,6 +44,7 @@ jQuery(function ($) {
   }
 })();
 
+// Search.
 document.addEventListener('DOMContentLoaded', function() {
   function toggle(event) {
     var element = this;
