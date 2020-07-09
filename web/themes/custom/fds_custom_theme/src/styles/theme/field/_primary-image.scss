@@ -43,11 +43,14 @@
 // Desktop - and up
 @include media-breakpoint-up(md) {
 
-  .field--name-field-os2web-page-primaryimage {
-    margin-right: 0 - $grid-gutter-width;
+  .node__content {
 
-    img {
-      width: 100%;
+    > .field--name-field-os2web-page-primaryimage {
+      margin-right: 0 - $grid-gutter-width;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
