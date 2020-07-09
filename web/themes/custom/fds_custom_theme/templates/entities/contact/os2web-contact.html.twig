@@ -4,24 +4,14 @@
   <div class="box__body">
     {{ content.field_os2web_contact_heading }}
 
-    <div class="row">
-      <div class="col col-sm-6">
-        {{ content.field_os2web_contact_body }}
-      </div>
+    {{ content.field_os2web_contact_body }}
+    {{ content.field_os2web_contact_more }}
 
-      <div class="col col-sm-6">
-        {% if contact.field_os2web_contact_more.value %}
-          {{ content.field_os2web_contact_more }}
-          <br>
-        {% endif %}
-
-        {% if contact.field_os2web_contact_modal.value and  contact.field_os2web_contact_modal_butt.value%}
-          <button data-micromodal-trigger="{{ modalId }}" class="button button-primary">
-            {{ content.field_os2web_contact_modal_butt }}
-          </button>
-        {% endif %}
-      </div>
-    </div>
+    {% if contact.field_os2web_contact_modal.value and  contact.field_os2web_contact_modal_butt.value%}
+      <button data-micromodal-trigger="{{ modalId }}" class="button button-primary">
+        {{ content.field_os2web_contact_modal_butt }}
+      </button>
+    {% endif %}
   </div>
 </div>
 

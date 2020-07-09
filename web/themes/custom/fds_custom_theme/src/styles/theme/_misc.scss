@@ -54,3 +54,22 @@ body a {
 body .page-container {
   padding-top: 1rem;
 }
+
+.region-sidebar-second {
+
+  .box {
+    min-height: 205px;
+
+    margin-left: 0 - $grid-gutter-width;
+  }
+
+  .os2web_contact {
+
+    .field {
+
+      + .field {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
