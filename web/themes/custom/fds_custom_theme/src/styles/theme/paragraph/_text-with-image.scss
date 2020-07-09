@@ -34,6 +34,13 @@
   .field--name-field-os2web-twi-body {}
   .field--name-field-os2web-twi-link {}
 
+  .field--name-field-os2web-twi-image {
+
+    img {
+      max-width: 200px;
+    }
+  }
+
   .field {
 
     + .field--name-field-os2web-twi-heading,
@@ -44,6 +51,29 @@
 
     + .field--name-field-os2web-twi-link {
       margin-top: 20px;
+    }
+  }
+}
+
+.paragraph--type--os2web-twi-paragraph {
+
+  &.paragraph--image-position--left {
+
+    .field--name-field-os2web-twi-image {
+      float: left;
+
+      margin-right: $grid-gutter-width / 2;
+      margin-bottom: $grid-gutter-width / 2;
+    }
+  }
+
+  &.paragraph--image-position--right {
+
+    .field--name-field-os2web-twi-image {
+      float: right;
+
+      margin-left: $grid-gutter-width / 2;
+      margin-bottom: $grid-gutter-width / 2;
     }
   }
 }
