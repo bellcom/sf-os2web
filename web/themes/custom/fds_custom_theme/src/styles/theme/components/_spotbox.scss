@@ -157,7 +157,22 @@ a.spotbox {
     margin-right: 0 - $grid-gutter-width;
   }
   .spotbox__content {
+    padding-top: 35px;
+    padding-bottom: 35px;
     padding-right: 80px;
+  }
+
+  &.spotbox--centered-icon {
+
+    &:after {
+      top: 50%;
+      right: 30px;
+      bottom: auto;
+
+      height: 3rem;
+
+      margin-top: -1.5rem;
+    }
   }
 
   &:after {
