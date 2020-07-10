@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Header
+// | Selfservice link
 // |--------------------------------------------------------------------------
 // |
-// | This file contains override styles of dkfds package for the following:
-// | - .header
+// | This file contains styles for the following:
+// | - .field--name-field-os2web-bdk-selfser-ref
 // |
 
 // --------------------------------------------------
@@ -11,19 +11,27 @@
 // --------------------------------------------------
 
 // --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin field--name-field-os2web-bdk-selfser-ref-mixin() {}
+
+// --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.header {
+.field--name-field-os2web-bdk-selfser-ref {
 
-  .portal-info-mobile {
-    text-align: left;
+  > .field__items {
+
+    > .field__item {
+
+      + .field__item {
+        margin-top: 1rem;
+      }
+    }
   }
 }
-
-// --------------------------------------------------
-// Variants
-// --------------------------------------------------
 
 // --------------------------------------------------
 // Responsive
