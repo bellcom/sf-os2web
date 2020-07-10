@@ -30,7 +30,24 @@
   align-items: stretch;
 
   box-shadow: $box-shadow;
+
+  .icon {
+    transform: rotate(180deg);
+  }
 }
+a.entity-teaser--os2web-meetings-meeting {
+
+  &, &:hover, &:focus, &:active, &:visited {
+    text-decoration: none;
+
+    color: $color-text;
+  }
+
+  &:focus {
+    outline-color: $color-orange-004;
+  }
+}
+
 .entity-teaser--os2web-meetings-meeting__date {
   display: flex;
 
@@ -40,17 +57,21 @@
   flex-direction: column;
   justify-content: center;
 
+  font-weight: $font-weight-bold;
+  font-size: $large-font-size;
   line-height: 1.8rem;
-  font-size: $small-text;
   text-align: center;
 
   color: #fff;
   background-color: $color-blue-001;
+}
+.entity-teaser--os2web-meetings-meeting__date__month {
+  display: block;
 
-  .field--type-datetime {
-    font-weight: $font-weight-bold;
-    font-size: $large-font-size;
-  }
+  text-transform: uppercase;
+}
+.entity-teaser--os2web-meetings-meeting__date__date {
+  display: block;
 }
 
 .entity-teaser--os2web-meetings-meeting__content {
@@ -74,13 +95,15 @@
 .entity-teaser--os2web-meetings-meeting__actions {
   display: flex;
 
-  padding: 1.5rem 0;
+  padding: 0 ($grid-gutter-width / 2);
 
   align-items: center;
   text-align: center;
 
   .icon {
     font-size: 2.5rem;
+
+    color: $color-orange-004;
   }
 
   a {

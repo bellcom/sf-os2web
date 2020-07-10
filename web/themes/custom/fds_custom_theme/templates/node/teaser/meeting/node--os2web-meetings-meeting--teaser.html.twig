@@ -9,17 +9,22 @@
 %}
 {% set timestamp = node.field_os2web_m_start_date.value|date('U') %}
 
-<div {{ attributes.addClass(classes) }}>
+<a href="{{ url }}" {{ attributes.addClass(classes) }}>
   <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date">
-    {{ content.field_os2web_m_start_date }}
+    <span class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date__month">
+      {{ timestamp | date('M') }}
+    </span>
+    <span class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date__date">
+      {{ timestamp | date('d') }}
+    </span>
   </div>
 
   <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__content">
     <div class="row">
-      <div class="col col-sm-6 col--align-center">
+      <div class="col col-sm-5 col--align-center">
         {{ content.field_os2web_m_type }}
       </div>
-      <div class="col col-sm-6 col--align-center">
+      <div class="col col-sm-7 col--align-center">
         {{ timestamp | format_date('long') }}
         {{ content.field_os2web_m_committee }}
       </div>
@@ -27,8 +32,8 @@
   </div>
 
   <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__actions">
-    <a href="{{ url }}">
-      <span class="icon fa fa-long-arrow-right"></span>
-    </a>
+    <span class="material-icons icon">
+      keyboard_backspace
+    </span>
   </div>
-</div>
+</a>
