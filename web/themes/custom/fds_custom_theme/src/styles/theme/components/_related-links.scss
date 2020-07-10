@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Selfservice link
+// | Related links
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .field--name-field-os2web-bdk-selfser-ref
+// | - .related-links
 // |
 
 // --------------------------------------------------
@@ -14,60 +14,38 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin field--name-field-os2web-bdk-selfser-ref-mixin() {}
+@mixin related-links-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.field--name-field-os2web-bdk-selfser-ref {
+ul.related-links {
 
-  .field__item {
+  li {
+    padding-left: 35px;
 
-    + .field__item {
-      margin-top: 1rem;
+    &:before {
+      top: -1px;
+      left: 0;
+
+      font-size: 2.4rem;
+      font-family: "Material Icons";
+      content: "keyboard_backspace";
+
+      color: $color-orange-004;
+
+      transform: rotate(180deg);
     }
   }
 
   a {
-    position: relative;
-    display: block;
-
-    padding: 3rem 5rem;
-
-    max-width: none;
-
-    font-weight: $font-weight-bold;
-    font-size: $h5-font-size;
     text-decoration: none;
 
     color: $color-text;
-    background-color: $color-green-002;
 
-    &:focus {
-      outline-color: $color-orange-004;
-
-      &:after {
-        color: #fff;
-      }
-    }
-
-    &:after {
-      position: absolute;
-      display: flex;
-
-      top: 0;
-      bottom: 0;
-      right: 5rem;
-
-      align-items: center;
-
-      font-size: 2.5rem;
-      font-family: FontAwesome;
-
-      content: $fa-var-arrow-right;
-
-      color: $color-orange-004;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

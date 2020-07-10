@@ -27,21 +27,27 @@
   box-shadow: $box-shadow;
 
   &, &:hover, &:focus, &:visited {
-    color: $color-text !important;
-    background-color: #fff !important;
+    color: $color-text;
+    background-color: #fff;
     outline-color: $color-orange-004;
   }
 
+  .field--name-title,
   .field--name-field-os2web-spotbox-heading {
 
     h1, h2, h3, h4, h5, h6 {
       margin: 0;
 
       color: $color-text;
+
+      &, p {
+        font-weight: $font-weight-bold;
+      }
     }
   }
 
-  .field--name-field-os2web-spotbox-icon {
+  .field--name-field-os2web-spotbox-icon,
+  .field--name-field-os2web-bdk-ss-cat-icon {
     text-align: center;
 
     svg {
@@ -69,9 +75,8 @@ a.spotbox {
 
 .spotbox__image {}
 .spotbox__content {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: ($grid-gutter-width / 2);
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .spotbox--background-color-primary,
@@ -102,7 +107,7 @@ a.spotbox {
     }
   }
 
-  .icon {
+  &:after {
     color: #fff;
   }
 
@@ -118,42 +123,83 @@ a.spotbox {
   }
 }
 
-.spotbox--background-color-primary {
+.spotbox {
 
-  &, &:hover, &:focus, &:visited {
-    background-color: $color-green-001 !important;
+  &.spotbox--background-color-primary {
+
+    &, &:hover, &:focus, &:visited {
+      background-color: $color-green-001;
+    }
+
+    &:after {
+      color: #fff;
+    }
   }
-}
 
-.spotbox--background-color-secondary {
+  &.spotbox--background-color-secondary {
 
-  &, &:hover, &:focus, &:visited {
-    background-color: $color-orange-005 !important;
+    &, &:hover, &:focus, &:visited {
+      background-color: $color-orange-005;
+    }
   }
-}
 
-.spotbox--background-color-tertiary {
+  &.spotbox--background-color-tertiary {
 
-  &, &:hover, &:focus, &:visited {
-    background-color: $color-blue-001 !important;
+    &, &:hover, &:focus, &:visited {
+      background-color: $color-blue-001;
+    }
+
+    &:after {
+      color: #fff;
+    }
   }
 }
 
 .spotbox--icon {
+  background-image: url("../images/arrow-right.svg");
 
-  .icon {
+  .spotbox__image {
+    margin-right: 0 - $grid-gutter-width;
+  }
+  .spotbox__content {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 80px;
+  }
+
+  &.spotbox--centered-icon {
+
+    &:after {
+      top: 50%;
+      right: 30px;
+      bottom: auto;
+
+      height: 3rem;
+
+      margin-top: -1.5rem;
+    }
+  }
+
+  &:after {
+    display: flex;
     position: absolute;
 
-    right: 15px;
-    bottom: 15px;
+    right: 20px;
+    bottom: 20px;
 
-    font-size: 2rem;
+    align-items: center;
+
+    font-size: 3rem;
+    font-family: "Material Icons";
+    content: "keyboard_backspace";
+    transform: rotate(180deg);
 
     color: $color-orange-004;
   }
 }
 
 .spotbox--image {
+  background-image: url("../images/arrow-right.svg");
 
   .spotbox__image {
     display: flex;
@@ -163,10 +209,33 @@ a.spotbox {
 
     overflow: hidden;
   }
+
+  .spotbox__content {
+    padding-right: 80px;
+  }
+
+  &:after {
+    display: flex;
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    align-items: center;
+
+    font-size: 3rem;
+    font-family: "Material Icons";
+    content: "keyboard_backspace";
+    transform: rotate(180deg);
+
+    color: $color-orange-004;
+  }
 }
 
 .spotbox--button {
   border: 0;
+
+  background-image: url("../images/arrow-right.svg");
 
   &.spotbox {
     box-shadow: none;
@@ -194,24 +263,31 @@ a.spotbox {
     }
   }
 
-  .icon {
+  .spotbox__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 80px;
+    padding-left: 30px;
+  }
+
+  &:after {
+    display: flex;
     position: absolute;
 
     top: 50%;
     right: 30px;
 
     height: 3rem;
-    font-size: 3rem;
     margin-top: -1.5rem;
 
-    color: $color-orange-004;
-  }
+    align-items: center;
 
-  .spotbox__content {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 80px;
-    padding-left: 30px;
+    font-size: 3rem;
+    font-family: "Material Icons";
+    content: "keyboard_backspace";
+    transform: rotate(180deg);
+
+    color: $color-orange-004;
   }
 }
 

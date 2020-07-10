@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Subheading
+// | Selfservice link
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .subheading
+// | - .field--name-field-os2web-bdk-selfser-ref
 // |
 
 // --------------------------------------------------
@@ -14,31 +14,31 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin subheading-mixin() {}
+@mixin field--name-field-os2web-bdk-selfser-ref-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.field--name-field-os2web-accordion-subheadin,
-.field--name-field-os2web-banner-subheading,
-.field--name-field-os2web-contact-form-subh,
-.field--name-field-os2web-content-ref-subhead,
-.field--name-field-os2web-gis-map-subheading,
-.field--name-field-os2web-iframe-subheading,
-.field--name-field-os2web-spotbox-ref-subhead,
-.field--name-field-os2web-twi-subheading,
-.field--name-field-os2web-bdk-selfser-ref-sh,
-.field--name-field-os2web-simple-text-subhead {
+.field--name-field-os2web-bdk-selfser-ref {
 
-  + .field {
-    margin-top: 2.8rem;
+  > .field__items {
+
+    > .field__item {
+
+      + .field__item {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  > .field__item {
+
+    + .field__item {
+      margin-top: 1rem;
+    }
   }
 }
-
-// --------------------------------------------------
-// Variants
-// --------------------------------------------------
 
 // --------------------------------------------------
 // Responsive
