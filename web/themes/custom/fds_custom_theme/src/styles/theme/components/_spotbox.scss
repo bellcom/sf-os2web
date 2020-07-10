@@ -41,7 +41,8 @@
     }
   }
 
-  .field--name-field-os2web-spotbox-icon {
+  .field--name-field-os2web-spotbox-icon,
+  .field--name-field-os2web-bdk-ss-cat-icon {
     text-align: center;
 
     svg {
@@ -69,9 +70,8 @@ a.spotbox {
 
 .spotbox__image {}
 .spotbox__content {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: ($grid-gutter-width / 2);
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .spotbox--background-color-primary,
