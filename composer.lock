@@ -8449,12 +8449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "bcd946c4101ee36b4103b0ad9cbf601a89f25f48"
+                "reference": "f43d8c125fb60bb2eee4b97d378b9006532e48c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/bcd946c4101ee36b4103b0ad9cbf601a89f25f48",
-                "reference": "bcd946c4101ee36b4103b0ad9cbf601a89f25f48",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/f43d8c125fb60bb2eee4b97d378b9006532e48c7",
+                "reference": "f43d8c125fb60bb2eee4b97d378b9006532e48c7",
                 "shasum": ""
             },
             "require": {
@@ -8469,7 +8469,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2020-07-09T10:10:54+00:00"
+            "time": "2020-07-10T08:18:52+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -8546,7 +8546,7 @@
                 "EUPL-1.2"
             ],
             "description": "Adds Hearing related content types and Hearings search view",
-            "time": "2020-07-02T08:43:37+00:00"
+            "time": "2020-07-09T15:00:12+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
@@ -8704,7 +8704,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-07-09T12:49:51+00:00"
+            "time": "2020-07-09T14:51:28+00:00"
         },
         {
             "name": "os2web/os2web_search",
