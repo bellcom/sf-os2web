@@ -8680,12 +8680,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "019ab432c37c02f43d0e5b71ab8c7043c4e7489c"
+                "reference": "2844de43b5d6d46c6f00dce511fd7442fdc7a858"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/019ab432c37c02f43d0e5b71ab8c7043c4e7489c",
-                "reference": "019ab432c37c02f43d0e5b71ab8c7043c4e7489c",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/2844de43b5d6d46c6f00dce511fd7442fdc7a858",
+                "reference": "2844de43b5d6d46c6f00dce511fd7442fdc7a858",
                 "shasum": ""
             },
             "require": {
