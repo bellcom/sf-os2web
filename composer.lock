@@ -8676,16 +8676,16 @@
         },
         {
             "name": "os2web/os2web_pagebuilder",
-            "version": "dev-master",
+            "version": "dev-test",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "2844de43b5d6d46c6f00dce511fd7442fdc7a858"
+                "reference": "4d27777bedef83e02b4cd001002aefe5c0551565"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/2844de43b5d6d46c6f00dce511fd7442fdc7a858",
-                "reference": "2844de43b5d6d46c6f00dce511fd7442fdc7a858",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/4d27777bedef83e02b4cd001002aefe5c0551565",
+                "reference": "4d27777bedef83e02b4cd001002aefe5c0551565",
                 "shasum": ""
             },
             "require": {
