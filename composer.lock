@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b61797d182d9ef5c1b6470855e377c83",
+    "content-hash": "b3544de5b6a37d55e6785fd7c60f63b1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8579,12 +8579,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_kle.git",
-                "reference": "4d67ccb071abca182ee92bd145023d6b82af4508"
+                "reference": "872bf03a89e4abaa95742ea9aa4a94a3b4995e3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_kle/zipball/4d67ccb071abca182ee92bd145023d6b82af4508",
-                "reference": "4d67ccb071abca182ee92bd145023d6b82af4508",
+                "url": "https://api.github.com/repos/OS2web/os2web_kle/zipball/872bf03a89e4abaa95742ea9aa4a94a3b4995e3c",
+                "reference": "872bf03a89e4abaa95742ea9aa4a94a3b4995e3c",
                 "shasum": ""
             },
             "require": {
@@ -8598,7 +8598,7 @@
                 "EUPL-1.2"
             ],
             "description": "KLE terms import functionality",
-            "time": "2020-06-22T10:12:28+00:00"
+            "time": "2020-07-13T09:31:38+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
@@ -8676,7 +8676,7 @@
         },
         {
             "name": "os2web/os2web_pagebuilder",
-            "version": "dev-test",
+            "version": "dev-tests",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
@@ -8704,7 +8704,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-07-09T14:51:28+00:00"
+            "time": "2020-07-13T08:51:19+00:00"
         },
         {
             "name": "os2web/os2web_search",
