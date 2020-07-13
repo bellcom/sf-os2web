@@ -8449,12 +8449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "f43d8c125fb60bb2eee4b97d378b9006532e48c7"
+                "reference": "cf626d176e933f86711b673e3a8c58b6500fe12a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/f43d8c125fb60bb2eee4b97d378b9006532e48c7",
-                "reference": "f43d8c125fb60bb2eee4b97d378b9006532e48c7",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/cf626d176e933f86711b673e3a8c58b6500fe12a",
+                "reference": "cf626d176e933f86711b673e3a8c58b6500fe12a",
                 "shasum": ""
             },
             "require": {
@@ -8469,7 +8469,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2020-07-10T08:18:52+00:00"
+            "time": "2020-07-13T06:49:54+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -8812,7 +8812,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-07-08T12:21:57+00:00"
+            "time": "2020-07-10T10:47:44+00:00"
         },
         {
             "name": "paragonie/random_compat",
