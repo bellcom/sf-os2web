@@ -87,7 +87,20 @@ footer {
 @include media-breakpoint-up(xs) {}
 
 // Mobile - only
-@include media-breakpoint-only(xs, $grid-breakpoints) {}
+@include media-breakpoint-only(xs, $grid-breakpoints) {
+
+  footer {
+
+    .footer {
+
+      .menu {
+        padding-top: 10px;
+
+        border-top: 1px solid rgba(255, 255, 255, .5);
+      }
+    }
+  }
+}
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {}
