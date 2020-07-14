@@ -21,10 +21,17 @@
 // --------------------------------------------------
 
 .box {
+  margin-bottom: $grid-gutter-width / 2;
+
   background-color: $color-orange-005;
 }
 .box__body {
   padding: 30px;
+}
+
+// Variants.
+.box--primary {
+  background-color: $color-green-002;
 }
 
 // --------------------------------------------------
