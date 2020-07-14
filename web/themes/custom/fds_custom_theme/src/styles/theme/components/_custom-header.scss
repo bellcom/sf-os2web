@@ -21,7 +21,7 @@
 // --------------------------------------------------
 
 .custom-header {
-  background-position: center center;
+  background-position: top center;
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,6 +35,7 @@
   }
 
   .action-buttons {
+    display: none;
 
     a {
       color: #fff;
@@ -66,6 +67,10 @@
 
 .custom-header__logo {
 
+  img {
+    height: 32px;
+  }
+
   + .action-buttons {
     margin-left: 50px;
   }
@@ -76,7 +81,7 @@
   padding-bottom: 40px;
 
   background: rgb(0,102,50);
-  background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 30%, rgba(0,102,50,0) 100%);
+  background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 50%, rgba(0,102,50,0) 100%);
 }
 
 .path-frontpage {
@@ -95,7 +100,8 @@ body {
 }
 
 .custom-header__meta {
-  padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -119,7 +125,7 @@ body {
 
   margin-bottom: (150px / 2); // Half the height of the box.
 
-  background-position: 0 -265px;
+  background-position: top center;
 
   .path-frontpage & {
     display: block;
@@ -162,7 +168,7 @@ body {
 
     font-size: 3rem;
 
-    color: $color-orange-004;
+    color: #fff;
   }
 }
 .searchy {
@@ -175,15 +181,11 @@ body {
 .custom-header__button--toggle-megamenu {}
 
 .custom-header__button--toggle-search {
-  width: 40px;
-  height: 40px;
-
-  border-radius: 100%;
-  background-color: $color-orange-004;
 
   .icon {
     font-size: 2rem;
-    color: #fff;
+
+    color: $color-orange-004;
   }
 }
 
@@ -335,6 +337,10 @@ body {
       }
     }
   }
+
+  .views-exposed-form {
+    display: none;
+  }
 }
 
 // --------------------------------------------------
@@ -348,7 +354,62 @@ body {
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .custom-header {
+    background-position: center center;
+
+    .action-buttons {
+      display: block;
+    }
+  }
+
+  .custom-header--static {
+    background-position: 0 -265px;
+  }
+
+  .custom-header__inner {
+    background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 30%, rgba(0,102,50,0) 100%);
+  }
+
+  .custom-header__meta {
+    padding: 1rem;
+  }
+
+  .custom-header__button {
+
+    .icon {
+      color: $color-orange-004;
+    }
+  }
+
+  .custom-header__button--toggle-search {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 100%;
+    background-color: $color-orange-004;
+
+    .icon {
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+
+  .custom-header__logo {
+
+    img {
+      height: 43px;
+    }
+  }
+
+  .region-header__below {
+
+    .views-exposed-form {
+      display: block;
+    }
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
