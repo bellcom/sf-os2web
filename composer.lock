@@ -8356,12 +8356,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "cff80f5f98ff4b580b30dfbd05c47c6018c92380"
+                "reference": "f41895b30156faaa793e51ff9f0138e4dcf73044"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/cff80f5f98ff4b580b30dfbd05c47c6018c92380",
-                "reference": "cff80f5f98ff4b580b30dfbd05c47c6018c92380",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/f41895b30156faaa793e51ff9f0138e4dcf73044",
+                "reference": "f41895b30156faaa793e51ff9f0138e4dcf73044",
                 "shasum": ""
             },
             "require": {
@@ -8412,7 +8412,7 @@
                 "EUPL-1.2"
             ],
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
-            "time": "2020-07-07T13:41:30+00:00"
+            "time": "2020-07-14T11:55:56+00:00"
         },
         {
             "name": "os2web/os2web",
@@ -8420,12 +8420,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "6c6e1872131314245025c13608efb0a6bc7d3de0"
+                "reference": "a8dcb4a11508b552e8d396962ed5f4dab598a31c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/6c6e1872131314245025c13608efb0a6bc7d3de0",
-                "reference": "6c6e1872131314245025c13608efb0a6bc7d3de0",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/a8dcb4a11508b552e8d396962ed5f4dab598a31c",
+                "reference": "a8dcb4a11508b552e8d396962ed5f4dab598a31c",
                 "shasum": ""
             },
             "require": {
@@ -8441,7 +8441,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
-            "time": "2020-07-07T15:06:11+00:00"
+            "time": "2020-07-14T11:56:50+00:00"
         },
         {
             "name": "os2web/os2web_borgerdk",
@@ -8606,12 +8606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "6cf8b693d57d334aded7d12c88929bbe3e77db7b"
+                "reference": "04b86b5e015c1f7d0e495b0f8de80350dafbc0ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/6cf8b693d57d334aded7d12c88929bbe3e77db7b",
-                "reference": "6cf8b693d57d334aded7d12c88929bbe3e77db7b",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/04b86b5e015c1f7d0e495b0f8de80350dafbc0ec",
+                "reference": "04b86b5e015c1f7d0e495b0f8de80350dafbc0ec",
                 "shasum": ""
             },
             "require": {
@@ -8624,7 +8624,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-06-25T12:13:05+00:00"
+            "time": "2020-07-14T11:53:10+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
