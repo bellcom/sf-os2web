@@ -233,6 +233,10 @@ body {
 
     .field--name-field-os2web-icon {
       min-height: 45px;
+
+      svg {
+        max-height: 35px;
+      }
     }
   }
 
