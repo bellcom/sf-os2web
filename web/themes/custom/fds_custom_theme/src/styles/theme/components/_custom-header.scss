@@ -190,7 +190,7 @@ body {
 }
 
 .region-header__below {
-  margin-bottom: 0 - ((150px / 2) + 40px);
+  margin-bottom: 0 - ((150px / 2) + 30px);
 
   .menu {
     display: flex;
@@ -203,8 +203,6 @@ body {
     padding: 0;
 
     li {
-      flex-basis: 25%;
-
       padding: 0 10px;
 
       list-style: none;
@@ -217,9 +215,6 @@ body {
     a {
       display: block;
 
-      padding: 40px 5px;
-
-      font-size: $large-font-size;
       text-align: center;
       font-weight: $font-weight-bold;
 
@@ -246,9 +241,13 @@ body {
     position: relative;
 
     > li {
+      flex-basis: 50%;
 
       > a {
         position: relative;
+
+        margin: 8px 0;
+        padding: 30px 5px;
 
         color: $color-text;
         background-color: #fff;
@@ -407,6 +406,32 @@ body {
 
     .views-exposed-form {
       display: block;
+    }
+  }
+
+  .region-header__below {
+    margin-bottom: 0 - ((150px / 2) + 40px);
+
+    .menu {
+
+      li {
+        flex-basis: 25%;
+      }
+
+      a {
+      }
+    }
+
+    .menu-level-0 {
+
+      > li {
+
+        > a {
+          padding: 40px 5px;
+
+          font-size: $large-font-size;
+        }
+      }
     }
   }
 }
