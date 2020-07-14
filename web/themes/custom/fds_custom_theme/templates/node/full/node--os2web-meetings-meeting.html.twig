@@ -1,0 +1,27 @@
+{%
+  set classes = [
+  node.bundle|clean_class,
+  node.isPromoted() ? 'is-promoted',
+  node.isSticky() ? 'is-sticky',
+  not node.isPublished() ? 'is-unpublished',
+  view_mode ? view_mode|clean_class,
+]
+%}
+{% set timestamp = node.field_os2web_m_start_date.value|date('U') %}
+<div {{ attributes.addClass(classes) }}>
+  <div class="fields-inline">
+    {{ content.field_os2web_m_type }}
+    <div class="field">
+      <h4>{{ timestamp | format_date('pretty_medium') }}</h4>
+    </div>
+  </div>
+
+  {{ content.field_os2web_m_committee }}
+  {{ content.field_os2web_m_location }}
+
+  {{ content.body }}
+
+  <br>
+
+  {{ content.field_os2web_m_bps }}
+</div>
