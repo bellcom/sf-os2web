@@ -21,6 +21,9 @@
 // --------------------------------------------------
 
 .entity-teaser--os2web-page {
+  margin-top: $grid-gutter-width / 2;
+  margin-bottom: $grid-gutter-width / 2;
+
   box-shadow: $box-shadow;
 
   .field--name-field-os2web-page-heading {

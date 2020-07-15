@@ -64,20 +64,35 @@
       margin-top: 10px;
     }
 
-    + .field--name-field-os2web-content-reference {
+    + .desktop-only,
+    + .mobile-only {
       margin-top: 40px;
     }
   }
 
   .mobile-only {
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
+    margin-left: $grid-gutter-width;
+    margin-right: $grid-gutter-width;
+
+    box-shadow: $box-shadow;
+
+    .entity-teaser--os2web-page {
+      margin: 0;
+
+      box-shadow: none;
+    }
   }
-  .desktop-only {}
+  .desktop-only {
+  
+    + .mobile-only {
+      margin-top: 40px;
+    }
+  }
 
   // Tiny slider.
-  .tns-controls {
-    display: none;
+  button[data-action="start"],
+  button[data-action="stop"] {
+    display: none !important;
   }
 }
 
