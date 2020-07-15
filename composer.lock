@@ -8449,12 +8449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "cf626d176e933f86711b673e3a8c58b6500fe12a"
+                "reference": "9e251f7bf0ed2486f6c980588b9b7e2887238615"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/cf626d176e933f86711b673e3a8c58b6500fe12a",
-                "reference": "cf626d176e933f86711b673e3a8c58b6500fe12a",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/9e251f7bf0ed2486f6c980588b9b7e2887238615",
+                "reference": "9e251f7bf0ed2486f6c980588b9b7e2887238615",
                 "shasum": ""
             },
             "require": {
@@ -8469,7 +8469,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2020-07-13T06:49:54+00:00"
+            "time": "2020-07-15T07:02:18+00:00"
         },
         {
             "name": "os2web/os2web_contact",
