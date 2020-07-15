@@ -77,8 +77,8 @@
 }
 
 .custom-header__inner {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   background: rgb(0,102,50);
   background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 50%, rgba(0,102,50,0) 100%);
@@ -190,7 +190,7 @@ body {
 }
 
 .region-header__below {
-  margin-bottom: 0 - ((150px / 2) + 30px);
+  margin-bottom: 0 - ((150px / 2) + 10px);
 
   .menu {
     display: flex;
@@ -368,6 +368,9 @@ body {
   }
 
   .custom-header__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 30%, rgba(0,102,50,0) 100%);
   }
 

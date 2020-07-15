@@ -8,6 +8,12 @@
 
         <!-- Begin - language selector -->
         <div class="col-12 col-sm-3">
+          <button
+            class="custom-megamenu__button custom-megamenu__button--toggle-megamenu js-toggle-megamenu d-sm-none">
+
+            <span class="material-icons icon">close</span>
+          </button>
+
           {{ page.megamenu__language_selector }}
         </div>
         <!-- End - language selector -->
@@ -22,8 +28,9 @@
         <div class="col-12 col-sm-3">
           <div class="text-align-right">
             <button
-              class="custom-megamenu__button custom-megamenu__button--toggle-megamenu js-toggle-megamenu">
-              <span class="icon fa fa-times"></span>
+              class="custom-megamenu__button custom-megamenu__button--toggle-megamenu js-toggle-megamenu d-none d-sm-inline-block">
+
+              <span class="material-icons icon">close</span>
             </button>
           </div>
         </div>
@@ -119,6 +126,15 @@
         <div class="container">
           <div class="flexy-row">
 
+            <!-- Begin - toggle -->
+            <button
+              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-sm-none">
+              <span class="icon fa fa-bars"></span>
+            </button>
+            <!-- End - toggle -->
+
+            <div class="flexy-spacer d-sm-none"></div>
+
             <!-- Begin - logo -->
             <a href="{{ url('<front>') }}" class="custom-header__logo">
               <img src="{{ base_path ~ directory }}/dist/images/logo.svg" alt="Logo" />
@@ -140,7 +156,7 @@
 
             <!-- Begin - toggle -->
             <button
-              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu">
+              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-none d-sm-block">
               <span class="icon fa fa-bars"></span>
             </button>
             <!-- End - toggle -->
@@ -157,7 +173,7 @@
 <div class="container page-container" id="font-resize-wrapper">
   {% if not is_front %}
   <div class="row d-print-none">
-    <div class="col-12 col-md-3">
+    <div class="col-12 col-md-3 d-none d-sm-block">
       <a href="{{ url('<front>') }}" class="return-to-home-link">
         <span class="material-icons icon">
           keyboard_backspace
