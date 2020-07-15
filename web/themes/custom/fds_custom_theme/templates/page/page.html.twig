@@ -173,7 +173,7 @@
 <div class="container page-container" id="font-resize-wrapper">
   {% if not is_front %}
   <div class="row d-print-none">
-    <div class="col-12 col-md-3 d-none d-sm-block">
+    <div class="col-12 col-md-3 d-none d-md-block">
       <a href="{{ url('<front>') }}" class="return-to-home-link">
         <span class="material-icons icon">
           keyboard_backspace
@@ -193,17 +193,17 @@
   </div>
   {% endif %}
   <div class="row">
-    <aside {{ attributes.addClass("col-12 col-md-3") }}>
+    <aside class="col-12 col-md-3 order-md-3">
+      {{ page.sidebar_second }}
+    </aside>
+
+    <aside class="col-12 col-md-3 order-md-1">
       {{ page.sidebar_first }}
     </aside>
 
-    <main {{ content_attributes.addClass('col-12 col-md-6') }}>
+    <main {{ content_attributes.addClass('col-12 col-md-6 order-md-2') }}>
       {{ page.content }}
     </main>
-
-    <aside {{ attributes.addClass("col-12 col-md-3") }}>
-      {{ page.sidebar_second }}
-    </aside>
   </div>
 </div>
 

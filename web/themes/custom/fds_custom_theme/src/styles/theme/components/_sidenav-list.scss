@@ -27,7 +27,7 @@ $sidenav-list-dot-spacing: 22px;
 .region-sidebar-second {
 
   .sidenav-list {
-    display: flex;
+    display: none;
 
     flex-direction: column;
 
@@ -178,7 +178,16 @@ $sidenav-list-dot-spacing: 22px;
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+
+  .region-sidebar-first,
+  .region-sidebar-second {
+
+    .sidenav-list {
+      display: flex;
+    }
+  }
+}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}
