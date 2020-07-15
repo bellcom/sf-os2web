@@ -68,6 +68,17 @@
       margin-top: 40px;
     }
   }
+
+  .mobile-only {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+  }
+  .desktop-only {}
+
+  // Tiny slider.
+  .tns-controls {
+    display: none;
+  }
 }
 
 // --------------------------------------------------

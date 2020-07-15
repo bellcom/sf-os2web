@@ -72,3 +72,21 @@ document.addEventListener('DOMContentLoaded', function() {
     link.setAttribute('target', '_blank');
   }
 })();
+
+// Content reference mobile display.
+(function() {
+  var selector = '.paragraph--type--os2web-content-reference .mobile-only .field--name-field-os2web-content-reference';
+
+  if (document.querySelector(selector) !== null) {
+
+    // Run tiny slider.
+    tns({
+      container: selector,
+      items: 1,
+      autoplay: true,
+      autoplayHoverPause: true,
+      gutter: 32,
+      rewind: true,
+    });
+  }
+})();
