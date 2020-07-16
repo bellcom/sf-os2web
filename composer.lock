@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b61797d182d9ef5c1b6470855e377c83",
+    "content-hash": "231b2b7a222484a78dd4d9f1232e773e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "0b52ea38b3f603004eaca323920e63d1e676d6fc"
+                "reference": "91fa1d5f3629bb3eed40c4d443b20d6e830aa978"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/0b52ea38b3f603004eaca323920e63d1e676d6fc",
-                "reference": "0b52ea38b3f603004eaca323920e63d1e676d6fc",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/91fa1d5f3629bb3eed40c4d443b20d6e830aa978",
+                "reference": "91fa1d5f3629bb3eed40c4d443b20d6e830aa978",
                 "shasum": ""
             },
             "type": "drupal-theme",
