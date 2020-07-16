@@ -87,15 +87,23 @@
 .path-frontpage {
   padding-top: 0 !important;
 
-  &.toolbar-tray-open {
-    padding-top: 79px !important;
+  &.toolbar-horizontal {
+    padding-top: 39px !important;
+
+    &.toolbar-tray-open {
+      padding-top: 79px !important;
+    }
   }
 }
 body {
   padding-top: 132px !important; // Height of .custom-header--fixed (recalculated by JS)
 
-  &.toolbar-tray-open {
-    padding-top: 132px + 79px !important;
+  &.toolbar-horizontal {
+    padding-top: 132px + 39px !important;
+
+    &.toolbar-tray-open {
+      padding-top: 132px + 79px !important;
+    }
   }
 }
 
@@ -141,7 +149,11 @@ body {
 
   z-index: 300;
 
-  .toolbar-tray-open & {
+  .toolbar-horizontal & {
+    top: 39px;
+  }
+
+  .toolbar-horizontal.toolbar-tray-open & {
     top: 79px; // Height of toolbar tray.
   }
 
