@@ -80,8 +80,13 @@
 }
 
 .field--type-file {
-  @include grid-row();
 
+  > .field__items,
+  &.field__items {
+    @include grid-row();
+  }
+
+  > .field__items > .field__item,
   > .field__item {
     @extend %grid-column;
     @include grid-col(12, 12);
@@ -107,6 +112,7 @@
 
   .field--type-file {
 
+    > .field__items > .field__item,
     > .field__item {
       @include grid-col(6, 12);
     }
