@@ -8606,12 +8606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "04b86b5e015c1f7d0e495b0f8de80350dafbc0ec"
+                "reference": "8102698efe143aba6119dc57eb5401149970c90c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/04b86b5e015c1f7d0e495b0f8de80350dafbc0ec",
-                "reference": "04b86b5e015c1f7d0e495b0f8de80350dafbc0ec",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/8102698efe143aba6119dc57eb5401149970c90c",
+                "reference": "8102698efe143aba6119dc57eb5401149970c90c",
                 "shasum": ""
             },
             "require": {
@@ -8624,7 +8624,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-07-14T11:53:10+00:00"
+            "time": "2020-07-20T12:50:39+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
