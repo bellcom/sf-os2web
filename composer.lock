@@ -8449,12 +8449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "3414aadfc05647d4105cefd54594cb7a193070c8"
+                "reference": "3cd1f0d28fa3223d48ae6fab94f4293327798658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/3414aadfc05647d4105cefd54594cb7a193070c8",
-                "reference": "3414aadfc05647d4105cefd54594cb7a193070c8",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/3cd1f0d28fa3223d48ae6fab94f4293327798658",
+                "reference": "3cd1f0d28fa3223d48ae6fab94f4293327798658",
                 "shasum": ""
             },
             "require": {
@@ -8469,7 +8469,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2020-07-17T07:31:07+00:00"
+            "time": "2020-07-20T08:52:16+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -8680,12 +8680,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "019ab432c37c02f43d0e5b71ab8c7043c4e7489c"
+                "reference": "fc3870f95ad9382f0451bfdac7a833fccd06d1dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/019ab432c37c02f43d0e5b71ab8c7043c4e7489c",
-                "reference": "019ab432c37c02f43d0e5b71ab8c7043c4e7489c",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/fc3870f95ad9382f0451bfdac7a833fccd06d1dd",
+                "reference": "fc3870f95ad9382f0451bfdac7a833fccd06d1dd",
                 "shasum": ""
             },
             "require": {
@@ -8704,7 +8704,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-07-09T14:51:28+00:00"
+            "time": "2020-07-20T11:02:56+00:00"
         },
         {
             "name": "os2web/os2web_search",
