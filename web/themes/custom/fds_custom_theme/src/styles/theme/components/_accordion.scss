@@ -20,13 +20,13 @@
 // Styling
 // --------------------------------------------------
 
-.page-container .accordion {
+.accordion {
 
   > li {
     box-shadow: $box-shadow;
   }
 }
-.page-container .accordion-button {
+.accordion-button {
   position: relative;
 
   padding: 1.6rem 2.4rem;
@@ -68,11 +68,11 @@
   }
 }
 
-.page-container .accordion-content {
+.accordion-content {
   padding: 0.5rem 2.4rem 2rem 2.4rem;
 }
 
-.page-container .accordion-close-button {
+.accordion-close-button {
   display: block;
 
   margin-left: -2.4rem;
@@ -93,7 +93,7 @@
   }
 }
 
-.page-container .accordion {
+.accordion {
 
   .box__body {
 
