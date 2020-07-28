@@ -8680,12 +8680,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "fc3870f95ad9382f0451bfdac7a833fccd06d1dd"
+                "reference": "f097fb2ca0b2edc6d6711faccae79bf2db163aac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/fc3870f95ad9382f0451bfdac7a833fccd06d1dd",
-                "reference": "fc3870f95ad9382f0451bfdac7a833fccd06d1dd",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/f097fb2ca0b2edc6d6711faccae79bf2db163aac",
+                "reference": "f097fb2ca0b2edc6d6711faccae79bf2db163aac",
                 "shasum": ""
             },
             "require": {
@@ -8704,7 +8704,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-07-20T11:02:56+00:00"
+            "time": "2020-07-28T11:00:04+00:00"
         },
         {
             "name": "os2web/os2web_search",
