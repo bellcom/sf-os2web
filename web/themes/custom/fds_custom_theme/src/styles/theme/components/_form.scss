@@ -45,6 +45,10 @@ $custom-input-left-right-padding: 20px;
 
 .form-input {}
 
+.js input.form-autocomplete{
+  background-image: none;
+}
+
 // Search form.
 form#views-exposed-form-os2web-search-os2web-search-page {
   position: relative;
@@ -58,19 +62,20 @@ form#views-exposed-form-os2web-search-os2web-search-page {
 
     margin: 0;
 
+    &::before {
+      content: '\f002';
+      font-family: FontAwesome;
+      display: inline-block;
+      position: relative;
+      left: 25px;
+      top: -2px;
+    }
+
     .form-submit {
+      position:relative;
       border: 0;
       border-radius: 100%;
-
       background-color: transparent;
-
-      &:before {
-        font-family: FontAwesome;
-        content: "\f095";
-        display: inline-block;
-        padding-right: 3px;
-        vertical-align: middle;
-      }
     }
   }
 
