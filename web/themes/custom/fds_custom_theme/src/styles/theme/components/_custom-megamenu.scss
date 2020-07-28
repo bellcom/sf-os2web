@@ -45,6 +45,10 @@
     &:focus {
       outline-color: $color-orange-004;
     }
+    &:hover{
+      outline: 2px solid $color-orange-004;
+      outline-offset: 1px;
+    }
   }
 
   &, a, p {
