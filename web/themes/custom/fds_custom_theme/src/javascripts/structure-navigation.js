@@ -57,6 +57,6 @@
   for (var i = 0; i < links.length; i++) {
     var link = links[i];
 
-    link.addEventListener('mouseover', handleToggle);
+    link.addEventListener('mouseenter', handleToggle);
   }
 })();
