@@ -57,6 +57,6 @@
   for (var i = 0; i < links.length; i++) {
     var link = links[i];
 
-    link.addEventListener('mouseenter', handleToggle);
+    link.addEventListener('click', handleToggle);
   }
 })();
