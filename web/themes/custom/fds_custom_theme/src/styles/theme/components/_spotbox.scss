@@ -339,7 +339,52 @@ a.spotbox {
       }
     }
     .spotbox__content {
-      padding: 3rem;
+      padding: 1.5rem 5rem 1.5rem 1.5rem;
+    }
+  }
+
+  .field--name-field-os2web-spotbox-reference {
+
+    > .field__item {
+
+      &:nth-child(1) {
+
+        .spotbox {
+
+          .spotbox__content {
+            padding: 1.5rem 3rem 5rem 3rem;
+          }
+
+          &:after {
+            top: auto;
+            right: auto;
+            left: 3rem;
+            bottom: 1.5rem;
+          }
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+
+        .spotbox {
+
+          .field--name-field-os2web-spotbox-heading {
+
+            h1, h2, h3, h4, h5, h6 {
+
+              &, p {
+                font-size: $h5-font-size;
+              }
+            }
+          }
+
+          &:after {
+            right: 1.5rem;
+            bottom: 2.5rem;
+          }
+        }
+      }
     }
   }
 }
