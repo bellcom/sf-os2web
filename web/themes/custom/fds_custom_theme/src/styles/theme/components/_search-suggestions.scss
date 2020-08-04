@@ -21,8 +21,14 @@
 // --------------------------------------------------
 
 .search-api-autocomplete-search {
+  top: 3px;
+
+  border: 0;
+
+  box-shadow: $box-shadow;
 
   .ui-menu-item {
+    padding-left: 0;
 
     &:before {
       display: none;
@@ -32,7 +38,7 @@
   .ui-menu-item-wrapper {
 
     .search-api-autocomplete-suggestion {
-      padding: 1rem 3rem;
+      padding: 1rem 2rem;
 
       font-family: $font-family;
       font-size: $base-font-size;
