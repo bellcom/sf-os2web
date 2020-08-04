@@ -50,7 +50,6 @@
     }
   }
 
-  .field--name-field-os2web-spotbox-icon,
   .field--name-field-os2web-bdk-ss-cat-icon {
     text-align: center;
 
@@ -117,17 +116,6 @@ a.spotbox {
 
   &:after {
     color: #fff;
-  }
-
-  .field--name-field-os2web-spotbox-icon {
-
-    svg {
-
-      &,
-      path {
-        fill: #fff;
-      }
-    }
   }
 }
 
