@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | EU cookie compliance
+// | Search suggestions
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .eu-cookie-compliance-banner
+// | - .search-suggestions
 // |
 
 // --------------------------------------------------
@@ -14,89 +14,42 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin eu-cookie-compliance-banner-mixin() {}
+@mixin search-suggestions-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.eu-cookie-compliance-banner {
-  position: fixed;
+.search-api-autocomplete-search {
 
-  left: 0;
-  right: 0;
-  bottom: 0;
+  .ui-menu-item {
 
-  padding: 40px 0;
-
-  color: #fff;
-  background-color: rgba($color-base-002, .95);
-
-  p, h1, h2, h3, h4, h5, h6 {
-    color: inherit;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-  }
-
-  &,
-  p {
-    font-size: $base-font-size;
-  }
-
-  .field--type-link a,
-  a {
-
-    &, &:hover, &:focus, &:visited {
-      color: #fff;
-    }
-
-    &:after {
-      color: #fff;
+    &:before {
+      display: none;
     }
   }
 
-  .button {
-    padding-left: 30px;
-    padding-right: 30px;
+  .ui-menu-item-wrapper {
 
-    border-radius: 30px;
-
-    outline-color: #fff;
-    outline-width: 2px;
-
-    &, &:hover, &:focus {
-      font-weight: $font-weight-bold;
-
-      box-shadow: none;
+    .search-api-autocomplete-suggestion {
+      padding: 1rem 3rem;
 
       font-family: $font-family;
       font-size: $base-font-size;
-      text-shadow: none;
 
-      color: #fff;
-      background-color: $color-orange-004;
-      background-image: none;
-      border: 0;
+      color: $color-text;
     }
-  }
 
-  .inline-list {
+    &.ui-state-active {
 
-    li + li {
-      margin-left: 10px;
+      .search-api-autocomplete-suggestion {
+        color: $color-text;
+
+        background-color: $color-orange-005;
+      }
     }
-  }
-
-  .field--type-link {
-    margin-top: 2rem;
   }
 }
-
-// --------------------------------------------------
-// Variants
-// --------------------------------------------------
 
 // --------------------------------------------------
 // Responsive
@@ -115,23 +68,7 @@
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {
-
-  .eu-cookie-compliance-banner {
-
-    [class*="col-"] {
-      display: flex;
-
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .field--type-link {
-      margin-left: -1.5rem;
-    }
-  }
-}
+@include media-breakpoint-up(md) {}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}

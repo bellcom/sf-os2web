@@ -60,28 +60,55 @@ form#views-exposed-form-os2web-search-os2web-search-page {
     right: 0;
     z-index: 500;
 
+    width: 50px;
+
     margin: 0;
 
-    &::before {
-      content: '\f002';
-      font-family: FontAwesome;
-      display: inline-block;
-      position: relative;
-      left: 25px;
-      top: -2px;
-    }
-
     .form-submit {
-      position:relative;
+      position: absolute;
+
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      z-index: 500;
+
+      padding: 23px 20px;
+
+      width: 100%;
+
       border: 0;
       border-radius: 100%;
+
       background-color: transparent;
+    }
+
+    &:after {
+      position: absolute;
+      display: inline-block;
+
+      top: 10px;
+      right: 20px;
+
+      z-index: 100;
+
+      font-size: $large-font-size;
+      font-family: FontAwesome;
+
+      content: "\f002";
+
+      color: $color-orange-004;
     }
   }
 
   .form-input {
-    max-width: unset;
     margin: 0;
+    padding: 12px 60px 12px 20px;
+
+    max-width: unset;
+
+    border-radius: 25px;
   }
 
   // Remove float from inline form elements.
@@ -95,7 +122,7 @@ form#views-exposed-form-os2web-search-os2web-search-page {
   }
 
   input.form-autocomplete {
-    background-position: right 1rem center;
+    background-image: none;
   }
 }
 .form-type-search-api-autocomplete {}

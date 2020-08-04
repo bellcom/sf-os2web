@@ -61,11 +61,11 @@
     z-index: 100;
 
     top: 50%;
-    margin-top: -20px;
+    margin-top: -15px;
     padding: 0;
 
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 
     align-items: center;
     justify-content: center;
@@ -81,11 +81,11 @@
       display: inline-block;
 
       font-family: FontAwesome;
-      font-size: 2.6rem;
+      font-size: 2.2rem;
     }
 
     &[data-controls="prev"] {
-      left: -20px;
+      left: -15px;
 
       &:before {
         content: "\f104";
@@ -93,7 +93,7 @@
     }
 
     &[data-controls="next"] {
-      right: -20px;
+      right: -15px;
 
       &:before {
         content: "\f105";
@@ -117,7 +117,30 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .tns-controls {
+
+    button {
+      margin-top: -20px;
+
+      height: 40px;
+      width: 40px;
+
+      &:before {
+        font-size: 2.6rem;
+      }
+
+      &[data-controls="prev"] {
+        left: -20px;
+      }
+
+      &[data-controls="next"] {
+        right: -20px;
+      }
+    }
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
