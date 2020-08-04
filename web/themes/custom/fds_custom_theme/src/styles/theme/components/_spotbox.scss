@@ -24,6 +24,10 @@
   display: block;
   position: relative;
 
+  max-width: 100%;
+
+  overflow: hidden;
+
   box-shadow: $box-shadow;
 
   &, &:hover, &:focus, &:visited {
@@ -79,8 +83,8 @@ a.spotbox {
 
 .spotbox__image {}
 .spotbox__content {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .spotbox--background-color-primary,
@@ -162,6 +166,13 @@ a.spotbox {
 .spotbox--icon {
 
   .spotbox__image {
+    display: flex;
+
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
     margin-right: 0 - $grid-gutter-width;
   }
   .spotbox__content {
@@ -210,10 +221,18 @@ a.spotbox {
     align-items: center;
 
     overflow: hidden;
+
+    img {
+      display: flex;
+
+      width: auto;
+      height: 150px;
+      max-width: initial;
+    }
   }
 
   .spotbox__content {
-    padding-right: 80px;
+    padding-right: 3rem;
   }
 
   &:after {
@@ -291,7 +310,30 @@ a.spotbox {
   }
 }
 
-// Grid.
+// --- Grid.
+.field--name-field-os2web-spotbox-reference {
+
+  > .field__item {
+    margin-bottom: $grid-gutter-width / 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.paragraph--grid_1,
+.paragraph--grid_2,
+.paragraph--grid_3 {
+
+  .field--name-field-os2web-spotbox-reference {
+
+    > .field__item {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .paragraph--grid_1 {
 
   .spotbox {
@@ -322,6 +364,27 @@ a.spotbox {
   }
 }
 
+.paragraph--grid_2 {
+
+  .spotbox {
+    min-height: 170px;
+
+    .spotbox__image {
+      min-height: 170px;
+    }
+  }
+
+  .spotbox--image {
+
+    .spotbox__image {
+
+      img {
+        height: 170px;
+      }
+    }
+  }
+}
+
 .paragraph--grid_3 {
 
   .spotbox {
@@ -333,10 +396,6 @@ a.spotbox {
 
     .spotbox__image {
       padding: 0;
-
-      img {
-        width: 100%;
-      }
     }
     .spotbox__content {
       padding: 1.5rem 5rem 1.5rem 1.5rem;
@@ -360,6 +419,17 @@ a.spotbox {
             right: auto;
             left: 3rem;
             bottom: 1.5rem;
+          }
+        }
+
+        .spotbox--image {
+
+          .spotbox__image {
+            min-height: 240px;
+
+            img {
+              height: 240px;
+            }
           }
         }
       }
