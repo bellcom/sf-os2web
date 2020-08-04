@@ -23,6 +23,8 @@
 .search-api-autocomplete-search {
   top: 3px;
 
+  z-index: 500;
+
   border: 0 !important;
 
   box-shadow: $box-shadow;
