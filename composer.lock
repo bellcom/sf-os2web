@@ -8554,12 +8554,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "ab0dbb3842a51ddaf9abcbab8ed76558165a2730"
+                "reference": "4c1d81f06addaec68d80ce0f0c523d2d78893bc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/ab0dbb3842a51ddaf9abcbab8ed76558165a2730",
-                "reference": "ab0dbb3842a51ddaf9abcbab8ed76558165a2730",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/4c1d81f06addaec68d80ce0f0c523d2d78893bc5",
+                "reference": "4c1d81f06addaec68d80ce0f0c523d2d78893bc5",
                 "shasum": ""
             },
             "require": {
