@@ -8579,12 +8579,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_kle.git",
-                "reference": "4d67ccb071abca182ee92bd145023d6b82af4508"
+                "reference": "27fe808e0807109e8862f56647fb24653b6f143c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_kle/zipball/4d67ccb071abca182ee92bd145023d6b82af4508",
-                "reference": "4d67ccb071abca182ee92bd145023d6b82af4508",
+                "url": "https://api.github.com/repos/OS2web/os2web_kle/zipball/27fe808e0807109e8862f56647fb24653b6f143c",
+                "reference": "27fe808e0807109e8862f56647fb24653b6f143c",
                 "shasum": ""
             },
             "require": {
@@ -8598,7 +8598,7 @@
                 "EUPL-1.2"
             ],
             "description": "KLE terms import functionality",
-            "time": "2020-06-22T10:12:28+00:00"
+            "time": "2020-08-04T06:57:55+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
@@ -16794,5 +16794,6 @@
     "platform": {
         "php": ">=7.0.8"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
