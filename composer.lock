@@ -8571,7 +8571,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-07-08T07:57:03+00:00"
+            "time": "2020-08-04T11:04:31+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -8712,12 +8712,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_search.git",
-                "reference": "719fb056f1b74c5e86ceffc159aad0643e24f46a"
+                "reference": "91876f7f4e138e22d2341e24c0b6ab5a618da0ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/719fb056f1b74c5e86ceffc159aad0643e24f46a",
-                "reference": "719fb056f1b74c5e86ceffc159aad0643e24f46a",
+                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/91876f7f4e138e22d2341e24c0b6ab5a618da0ae",
+                "reference": "91876f7f4e138e22d2341e24c0b6ab5a618da0ae",
                 "shasum": ""
             },
             "require": {
@@ -8733,7 +8733,7 @@
                 "EUPL-1.2"
             ],
             "description": "Search functionality powered by SOLR",
-            "time": "2020-05-20T11:25:37+00:00"
+            "time": "2020-06-04T13:27:35+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
