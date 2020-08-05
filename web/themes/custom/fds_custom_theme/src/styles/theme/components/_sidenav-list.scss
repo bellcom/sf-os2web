@@ -46,6 +46,19 @@ $sidenav-list-dot-spacing: 22px;
         padding-bottom: 12px;
       }
 
+      &.current {
+
+        > ul {
+
+          > li {
+
+            > a {
+              padding-left: $sidenav-list-spacing-left + $sidenav-list-dot-spacing;
+            }
+          }
+        }
+      }
+
       > a {
         padding-top: 10px;
         padding-bottom: 10px;
