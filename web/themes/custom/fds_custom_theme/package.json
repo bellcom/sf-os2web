@@ -8,12 +8,12 @@
     "production": "cross-env NODE_ENV=production"
   },
   "dependencies": {
-    "dkfds": "^6.0.1",
+    "dkfds": "^6.1.1",
     "font-awesome": "^4.7.0",
     "material-design-icons": "^3.0.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.23.5",
+    "browser-sync": "^2.26.12",
     "cross-env": "^5.2.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",

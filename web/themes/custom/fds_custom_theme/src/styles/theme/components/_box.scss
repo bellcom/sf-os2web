@@ -24,6 +24,20 @@
   margin-bottom: $grid-gutter-width / 2;
 
   background-color: $color-orange-005;
+
+  table {
+    width: 100%;
+  }
+
+  a {
+    position: initial;
+
+    padding-right: initial;
+
+    &:after {
+      display: none;
+    }
+  }
 }
 .box__body {
   padding: 30px;
