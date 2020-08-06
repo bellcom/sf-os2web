@@ -14,8 +14,8 @@
   position: relative;
   width: 100%;
   min-height: 1px; // Prevent columns from collapsing when empty
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 4);
+  padding-left: ($grid-gutter-width / 4);
 }
 
 // --------------------------------------------------
@@ -84,6 +84,9 @@
   > .field__items,
   &.field__items {
     @include grid-row();
+
+    margin-right: ($grid-gutter-width / -4);
+    margin-left: ($grid-gutter-width / -4);
   }
 
   > .field__items > .field__item,

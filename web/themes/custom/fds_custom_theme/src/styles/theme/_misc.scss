@@ -148,21 +148,7 @@ body .page-container {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {
-
-  html,
-  body {
-    height: auto;
-    min-height: initial;
-  }
-
-  .field--name-field-os2web-page-paragraph-narr {
-
-    > * {
-      page-break-inside: avoid;
-    }
-  }
-}
+@media print {}
 
 // Touch
 .touchevents {}
