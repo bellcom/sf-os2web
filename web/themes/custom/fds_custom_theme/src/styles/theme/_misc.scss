@@ -148,7 +148,13 @@ body .page-container {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+
+  body .page-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 
 // Touch
 .touchevents {}
