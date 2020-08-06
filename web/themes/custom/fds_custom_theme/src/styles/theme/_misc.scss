@@ -91,8 +91,6 @@ body .page-container {
   }
 }
 
-
-
 .button--primary {
 
   &, &:hover, &:focus {
@@ -150,7 +148,21 @@ body .page-container {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+
+  html,
+  body {
+    height: auto;
+    min-height: initial;
+  }
+
+  .field--name-field-os2web-page-paragraph-narr {
+
+    > * {
+      page-break-inside: avoid;
+    }
+  }
+}
 
 // Touch
 .touchevents {}
