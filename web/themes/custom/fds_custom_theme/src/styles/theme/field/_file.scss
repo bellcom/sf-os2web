@@ -138,7 +138,16 @@
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+
+  .field--type-file {
+
+    > .field__items > .field__item,
+    > .field__item {
+      @include grid-col(6, 12);
+    }
+  }
+}
 
 // Touch
 .touchevents {}
