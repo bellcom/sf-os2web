@@ -220,6 +220,8 @@ body {
     padding: 0;
 
     li {
+      flex-basis: 50%;
+
       padding: 0 10px;
 
       list-style: none;
@@ -231,6 +233,11 @@ body {
 
     a {
       display: block;
+
+      min-height: 130px;
+
+      margin: 8px 0;
+      padding: 30px 5px;
 
       text-align: center;
       font-weight: $font-weight-bold;
@@ -258,13 +265,9 @@ body {
     position: relative;
 
     > li {
-      flex-basis: 50%;
 
       > a {
         position: relative;
-
-        margin: 8px 0;
-        padding: 30px 5px;
 
         color: $color-text;
         background-color: #fff;
@@ -334,12 +337,8 @@ body {
     margin-top: 30px;
 
     > li {
-      padding-top: 10px;
-      padding-bottom: 10px;
 
       > a {
-        padding: 50px 20px 30px 20px;
-
         color: $color-text;
         background-color: $color-green-002;
 
@@ -432,17 +431,10 @@ body {
 
       li {
         flex-basis: 25%;
-      }
-
-      a {
-      }
-    }
-
-    .menu-level-0 {
-
-      > li {
 
         > a {
+          min-height: 147px;
+
           padding: 40px 5px;
 
           font-size: $large-font-size;
