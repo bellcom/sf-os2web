@@ -20,28 +20,8 @@
 // Styling
 // --------------------------------------------------
 
-.limited-height {
-  height: 200px;
-  overflow: hidden;
-}
-ul.limited-height {
-  height: auto;
-  overflow: initial;
-
-  > li:nth-child(n+3) {
-    display: none;
-  }
-}
-.limited-height--overridden {}
-ul.limited-height--overridden {
-
-  > li:nth-child(n+3) {
-    display: block;
-  }
-}
-
 .limited-height__toggle {
-  display: block !important;
+  display: none;
 
   button {
     display: block;
@@ -66,9 +46,10 @@ ul.limited-height--overridden {
       color: $color-orange-004;
     }
   }
-}
-.limited-height__toggle--hidden {
-  display: none !important;
+
+  &.limited-height__toggle--hidden {
+    display: none !important;
+  }
 }
 
 // --------------------------------------------------
@@ -79,7 +60,32 @@ ul.limited-height--overridden {
 @include media-breakpoint-up(xs) {}
 
 // Mobile - only
-@include media-breakpoint-only(xs, $grid-breakpoints) {}
+@include media-breakpoint-only(xs, $grid-breakpoints) {
+
+  .limited-height {
+    height: 200px;
+    overflow: hidden;
+  }
+  ul.limited-height {
+    height: auto;
+    overflow: initial;
+
+    > li:nth-child(n+3) {
+      display: none;
+    }
+  }
+  .limited-height--overridden {}
+  ul.limited-height--overridden {
+
+    > li:nth-child(n+3) {
+      display: block;
+    }
+  }
+
+  .limited-height__toggle {
+    display: block !important;
+  }
+}
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {}
