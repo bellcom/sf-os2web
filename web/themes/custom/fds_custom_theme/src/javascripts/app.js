@@ -120,3 +120,42 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', handleToggle);
   }
 })();
+
+// Max height on sidenav lists.
+(function() {
+  function handleToggle(event) {
+    var button = event.target;
+    var list = button.closest('.sidenav-list');
+    var listItem = button.parentNode;
+
+    listItem.classList.add('limited-height__toggle--hidden');
+
+    list.classList.add('limited-height--overridden');
+  }
+
+  function addToggleToList(list) {
+
+    // Create a button.
+    var textNode = document.createTextNode('Se flere');
+    var buttonNode = document.createElement('BUTTON');
+    buttonNode.appendChild(textNode);
+    buttonNode.addEventListener('click', handleToggle);
+
+    // Create a list item.
+    var listItemNode = document.createElement('LI');
+    listItemNode.classList.add('limited-height__toggle');
+    listItemNode.appendChild(buttonNode);
+
+    // Inject into list.
+    list.appendChild(listItemNode);
+  }
+
+  var sidenavLists = document.querySelectorAll('.sidenav-list');
+
+  for (var i = 0; i < sidenavLists.length; i++) {
+    var list = sidenavLists[i];
+
+    list.classList.add('limited-height');
+    addToggleToList(list);
+  }
+})();
