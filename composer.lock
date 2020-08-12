@@ -8707,12 +8707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "a8dcb4a11508b552e8d396962ed5f4dab598a31c"
+                "reference": "b24bed490185f1c956787662fd63544eedae15b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/a8dcb4a11508b552e8d396962ed5f4dab598a31c",
-                "reference": "a8dcb4a11508b552e8d396962ed5f4dab598a31c",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/b24bed490185f1c956787662fd63544eedae15b6",
+                "reference": "b24bed490185f1c956787662fd63544eedae15b6",
                 "shasum": ""
             },
             "require": {
@@ -8728,7 +8728,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
-            "time": "2020-07-14T11:56:50+00:00"
+            "time": "2020-08-12T13:00:56+00:00"
         },
         {
             "name": "os2web/os2web_borgerdk",
@@ -8841,12 +8841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "4c1d81f06addaec68d80ce0f0c523d2d78893bc5"
+                "reference": "458d4e05e864f4b5a5bd8c5e030b18fe68c774bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/4c1d81f06addaec68d80ce0f0c523d2d78893bc5",
-                "reference": "4c1d81f06addaec68d80ce0f0c523d2d78893bc5",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/458d4e05e864f4b5a5bd8c5e030b18fe68c774bf",
+                "reference": "458d4e05e864f4b5a5bd8c5e030b18fe68c774bf",
                 "shasum": ""
             },
             "require": {
@@ -15344,6 +15344,50 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/svg_image",
                 "issues": "http://drupal.org/project/svg_image"
+            }
+        },
+        {
+            "name": "drupal/textfield_counter",
+            "version": "1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/textfield_counter.git",
+                "reference": "8.x-1.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/textfield_counter-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "0910add3bd6e1f22c57e09b12ce51fba6e5bebd0"
+            },
+            "require": {
+                "drupal/core": "^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.11",
+                    "datestamp": "1584598064",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jaypan",
+                    "homepage": "https://www.drupal.org/user/324696"
+                }
+            ],
+            "description": "Creates field formatters with character counts for text fields and text areas.",
+            "homepage": "https://www.drupal.org/project/textfield_counter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/textfield_counter"
             }
         },
         {
