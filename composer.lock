@@ -8961,7 +8961,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-08-12T13:19:53+00:00"
+            "time": "2020-08-13T07:51:18+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -8996,12 +8996,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "03be8befb1b3f00fc74cf419e07fc24cc6650734"
+                "reference": "aedfa816f8eb644589e426656b9285920557d1b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/03be8befb1b3f00fc74cf419e07fc24cc6650734",
-                "reference": "03be8befb1b3f00fc74cf419e07fc24cc6650734",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/aedfa816f8eb644589e426656b9285920557d1b4",
+                "reference": "aedfa816f8eb644589e426656b9285920557d1b4",
                 "shasum": ""
             },
             "require": {
