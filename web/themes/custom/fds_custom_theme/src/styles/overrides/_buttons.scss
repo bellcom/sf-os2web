@@ -15,20 +15,24 @@
 // --------------------------------------------------
 
 .button {
-  @extend .button;
-
-  min-width: 90px;
-  min-height: auto;
-  padding: 13px 15px;
-
   border: 0;
-  border-radius: 30px;
 
-  &, &:hover, &:focus {
-    font-weight: $font-weight-bold;
+  &[type=submit],
+  &.form-submit,
+  &.button--primary {
+    min-width: 90px;
+    min-height: auto;
+    padding: 13px 15px;
 
-    color: #fff;
-    background-color: $color-orange-004;
+    border: 0;
+    border-radius: 30px;
+
+    &, &:hover, &:focus {
+      font-weight: $font-weight-bold;
+
+      color: #fff;
+      background-color: $color-orange-004;
+    }
   }
 }
 
