@@ -36,6 +36,50 @@ $custom-input-left-right-padding: 20px;
   background-color: #fff;
 }
 
+.form-checkbox,
+.form-radio {
+
+  + label {
+
+    &:before {
+      border-color: $color-orange-004;
+    }
+  }
+
+  &:checked {
+
+    + label {
+
+      &:before {
+        background-color: $color-orange-004;
+      }
+    }
+  }
+}
+
+// Remove max width.
+body {
+
+  .form-input,
+  .form-email,
+  .form-select,
+  .form-hint {
+    max-width: none;
+  }
+}
+
+.form-hint {
+  color: $color-text;
+}
+
+.form-item {
+
+  .form-hint,
+  .form-hint.description {
+    font-size: $base-font-size;
+  }
+}
+
 .form-select {
   min-width: 250px;
 
