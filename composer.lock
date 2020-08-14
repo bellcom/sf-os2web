@@ -8944,12 +8944,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "bfe5ad4a8bbec20a1907ff6da73e8ab154fcaf97"
+                "reference": "b1b1f3ea284cfa03a22ef1f8f17f9043bed08c4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/bfe5ad4a8bbec20a1907ff6da73e8ab154fcaf97",
-                "reference": "bfe5ad4a8bbec20a1907ff6da73e8ab154fcaf97",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/b1b1f3ea284cfa03a22ef1f8f17f9043bed08c4f",
+                "reference": "b1b1f3ea284cfa03a22ef1f8f17f9043bed08c4f",
                 "shasum": ""
             },
             "require": {
