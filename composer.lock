@@ -8919,12 +8919,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "b112f317797d1cd5ad1b117cb904cdef0496e624"
+                "reference": "7b3fa7799f6d3b12a2ed233f064fc774fd50de65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/b112f317797d1cd5ad1b117cb904cdef0496e624",
-                "reference": "b112f317797d1cd5ad1b117cb904cdef0496e624",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/7b3fa7799f6d3b12a2ed233f064fc774fd50de65",
+                "reference": "7b3fa7799f6d3b12a2ed233f064fc774fd50de65",
                 "shasum": ""
             },
             "require": {
