@@ -9096,12 +9096,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "8aa58402ccb59e8fddf2f5c009ce2a32cf8a110e"
+                "reference": "e8bb5cdfcbf4f9cbdfec1b2d492bf731c1bda4b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/8aa58402ccb59e8fddf2f5c009ce2a32cf8a110e",
-                "reference": "8aa58402ccb59e8fddf2f5c009ce2a32cf8a110e",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/e8bb5cdfcbf4f9cbdfec1b2d492bf731c1bda4b4",
+                "reference": "e8bb5cdfcbf4f9cbdfec1b2d492bf731c1bda4b4",
                 "shasum": ""
             },
             "require": {
