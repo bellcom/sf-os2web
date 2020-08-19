@@ -8867,12 +8867,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "371d2b7eed4ddbbe9e3a1314bd68fea6fe9e7a08"
+                "reference": "e6bad1420fa837cdfe80e1c87f5b49dd1274419a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/371d2b7eed4ddbbe9e3a1314bd68fea6fe9e7a08",
-                "reference": "371d2b7eed4ddbbe9e3a1314bd68fea6fe9e7a08",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/e6bad1420fa837cdfe80e1c87f5b49dd1274419a",
+                "reference": "e6bad1420fa837cdfe80e1c87f5b49dd1274419a",
                 "shasum": ""
             },
             "require": {
