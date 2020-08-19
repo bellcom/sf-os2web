@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "1762750f1f2b36a4c1b164e539bd912c4f581b6a"
+                "reference": "c7fc1b2dcfe8d313560ebb290de2204f72018503"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/1762750f1f2b36a4c1b164e539bd912c4f581b6a",
-                "reference": "1762750f1f2b36a4c1b164e539bd912c4f581b6a",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/c7fc1b2dcfe8d313560ebb290de2204f72018503",
+                "reference": "c7fc1b2dcfe8d313560ebb290de2204f72018503",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -9096,12 +9096,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "794911854a659ffc4adb8e1c26ee29d1df934bc7"
+                "reference": "8aa58402ccb59e8fddf2f5c009ce2a32cf8a110e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/794911854a659ffc4adb8e1c26ee29d1df934bc7",
-                "reference": "794911854a659ffc4adb8e1c26ee29d1df934bc7",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/8aa58402ccb59e8fddf2f5c009ce2a32cf8a110e",
+                "reference": "8aa58402ccb59e8fddf2f5c009ce2a32cf8a110e",
                 "shasum": ""
             },
             "require": {
