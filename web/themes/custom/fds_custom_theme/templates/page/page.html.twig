@@ -171,6 +171,8 @@
 {{ page.featured_top }}
 
 <div class="container page-container" id="font-resize-wrapper">
+  {{ page.highlighted }}
+
   {% if not is_front %}
   <div class="row d-print-none">
     <div class="col-12 col-md-3 d-none d-md-block">
@@ -183,7 +185,6 @@
     </div>
     <div class="col-12 col-md-9 col--align-center">
       <div class="flexy-row">
-        {{ page.highlighted }}
         {{ page.breadcrumb }}
 
         <div class="flexy-spacer"></div>
