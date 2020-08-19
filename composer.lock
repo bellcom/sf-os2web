@@ -8746,12 +8746,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "5bf9d0b7d444c0790e8ab635df4fb41765a8c107"
+                "reference": "3561dd16cfa056fad92f15e6140f4e2a6f4d7e71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/5bf9d0b7d444c0790e8ab635df4fb41765a8c107",
-                "reference": "5bf9d0b7d444c0790e8ab635df4fb41765a8c107",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/3561dd16cfa056fad92f15e6140f4e2a6f4d7e71",
+                "reference": "3561dd16cfa056fad92f15e6140f4e2a6f4d7e71",
                 "shasum": ""
             },
             "require": {
@@ -8810,12 +8810,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "b24bed490185f1c956787662fd63544eedae15b6"
+                "reference": "85b9f7d7a7d732880b8a9b3c0600355526ced64c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/b24bed490185f1c956787662fd63544eedae15b6",
-                "reference": "b24bed490185f1c956787662fd63544eedae15b6",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/85b9f7d7a7d732880b8a9b3c0600355526ced64c",
+                "reference": "85b9f7d7a7d732880b8a9b3c0600355526ced64c",
                 "shasum": ""
             },
             "require": {
