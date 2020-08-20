@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Searchy
+// | Hearing reply
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .searchy
+// | - .comment-os2web-hearings-hearing-reply-form
 // |
 
 // --------------------------------------------------
@@ -14,40 +14,54 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin searchy-mixin() {}
+@mixin comment-os2web-hearings-hearing-reply-form-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.searchy {
-  position: relative;
+.comment-os2web-hearings-hearing-reply-form {
 
-  .region {
+  // Hide "Gennemse" button.
+  #edit-preview {
     display: none;
-    position: absolute;
-
-    top: 0;
-    right: 100%;
-
-    z-index: 100;
-
-    padding-right: 10px;
-
-    min-width: 400px;
   }
 
-  &.searchy--visible-form {
+  // Checkbox (accept terms)
+  .field--name-field-os2web-hearings-reply-arg {
+    position: relative;
 
-    .region {
-      display: block;
+    .form-label {
+      font-weight: $font-weight-bold;
+
+      // Resets.
+      &.form-required {
+
+        &:after {
+          margin: 0;
+
+          background-image: none;
+        }
+      }
+    }
+
+    .form-label,
+    .form-hint {
+      margin-left: 0;
+    }
+
+    .form-hint {
+
+      &.align-text-right {
+        text-align: left !important;
+      }
     }
   }
-}
 
-// --------------------------------------------------
-// Variants
-// --------------------------------------------------
+  .form-actions {
+    text-align: right;
+  }
+}
 
 // --------------------------------------------------
 // Responsive

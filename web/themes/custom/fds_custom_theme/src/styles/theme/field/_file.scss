@@ -14,8 +14,8 @@
   position: relative;
   width: 100%;
   min-height: 1px; // Prevent columns from collapsing when empty
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
+  padding-right: ($grid-gutter-width / 4);
+  padding-left: ($grid-gutter-width / 4);
 }
 
 // --------------------------------------------------
@@ -43,9 +43,11 @@
 
     align-items: center;
 
-    padding: 20px (30px + 30px + 5px) 20px 30px; // Width of icon + left/right spacing + gutter.
+    word-break: break-word;
 
-    min-height: 88px;
+    padding: 0 (30px + 30px + 5px) 0 30px; // Width of icon + left/right spacing + gutter.
+
+    height: 88px;
     max-width: 100%; // Reset.
 
     font-weight: bold;
@@ -78,8 +80,16 @@
 }
 
 .field--type-file {
-  @include grid-row();
 
+  > .field__items,
+  &.field__items {
+    @include grid-row();
+
+    margin-right: ($grid-gutter-width / -4);
+    margin-left: ($grid-gutter-width / -4);
+  }
+
+  > .field__items > .field__item,
   > .field__item {
     @extend %grid-column;
     @include grid-col(12, 12);
@@ -105,6 +115,7 @@
 
   .field--type-file {
 
+    > .field__items > .field__item,
     > .field__item {
       @include grid-col(6, 12);
     }
@@ -130,7 +141,22 @@
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {}
+@media print {
+
+  .file {
+    box-shadow: none;
+
+    border: 1px solid #000;
+  }
+
+  .field--type-file {
+
+    > .field__items > .field__item,
+    > .field__item {
+      @include grid-col(6, 12);
+    }
+  }
+}
 
 // Touch
 .touchevents {}

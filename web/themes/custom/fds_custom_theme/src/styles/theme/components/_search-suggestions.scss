@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Searchy
+// | Search suggestions
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .searchy
+// | - .search-suggestions
 // |
 
 // --------------------------------------------------
@@ -14,40 +14,50 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin searchy-mixin() {}
+@mixin search-suggestions-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.searchy {
-  position: relative;
+.search-api-autocomplete-search {
+  top: 3px;
 
-  .region {
-    display: none;
-    position: absolute;
+  z-index: 500;
 
-    top: 0;
-    right: 100%;
+  border: 0 !important;
 
-    z-index: 100;
+  box-shadow: $box-shadow;
 
-    padding-right: 10px;
+  .ui-menu-item {
+    padding-left: 0;
 
-    min-width: 400px;
+    &:before {
+      display: none;
+    }
   }
 
-  &.searchy--visible-form {
+  .ui-menu-item-wrapper {
 
-    .region {
-      display: block;
+    .search-api-autocomplete-suggestion {
+      padding: 1rem 2rem;
+
+      font-family: $font-family;
+      font-size: $base-font-size;
+
+      color: $color-text;
+    }
+
+    &.ui-state-active {
+
+      .search-api-autocomplete-suggestion {
+        color: $color-text;
+
+        background-color: $color-orange-005;
+      }
     }
   }
 }
-
-// --------------------------------------------------
-// Variants
-// --------------------------------------------------
 
 // --------------------------------------------------
 // Responsive

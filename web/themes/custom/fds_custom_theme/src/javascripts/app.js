@@ -72,3 +72,90 @@ document.addEventListener('DOMContentLoaded', function() {
     link.setAttribute('target', '_blank');
   }
 })();
+
+// Content reference mobile display.
+(function() {
+  var selector = '.paragraph--type--os2web-content-reference .mobile-only .field--name-field-os2web-content-reference';
+
+  if (document.querySelector(selector) !== null) {
+
+    // Run tiny slider.
+    tns({
+      container: selector,
+      items: 1,
+      autoplay: true,
+      autoplayHoverPause: true,
+      gutter: 32,
+      rewind: true,
+    });
+  }
+})();
+
+// Mobile menu links toggle.
+(function () {
+  function handleToggle(event) {
+    event.stopPropagation();
+    event.preventDefault();
+
+    let button = this;
+    let isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+    button.setAttribute('aria-expanded', !isExpanded);
+    const id = button.getAttribute('aria-controls');
+    const controls = document.getElementById(id);
+    if (!controls) {
+      throw new Error(
+        'No toggle target found with id: "' + id + '"'
+      );
+    }
+
+    controls.setAttribute('aria-hidden', isExpanded);
+  }
+
+  var buttons = document.querySelectorAll('.menu-toggle .menu-toggle-button');
+
+  for (var i = 0; i < buttons.length; i++) {
+    var button = buttons[i];
+
+    button.addEventListener('click', handleToggle);
+  }
+})();
+
+// Max height on sidenav lists.
+(function() {
+  function handleToggle(event) {
+    var button = event.target;
+    var list = button.closest('.sidenav-list');
+    var listItem = button.parentNode;
+
+    listItem.classList.add('limited-height__toggle--hidden');
+
+    list.classList.add('limited-height--overridden');
+  }
+
+  function addToggleToList(list) {
+
+    // Create a button.
+    var textNode = document.createTextNode('Se flere');
+    var buttonNode = document.createElement('BUTTON');
+    buttonNode.appendChild(textNode);
+    buttonNode.addEventListener('click', handleToggle);
+
+    // Create a list item.
+    var listItemNode = document.createElement('LI');
+    listItemNode.classList.add('limited-height__toggle');
+    listItemNode.appendChild(buttonNode);
+
+    // Inject into list.
+    list.appendChild(listItemNode);
+  }
+
+  var sidenavLists = document.querySelectorAll('.sidenav-list');
+
+  for (var i = 0; i < sidenavLists.length; i++) {
+    var list = sidenavLists[i];
+
+    list.classList.add('limited-height');
+    addToggleToList(list);
+  }
+})();

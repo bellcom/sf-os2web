@@ -64,9 +64,35 @@
       margin-top: 10px;
     }
 
-    + .field--name-field-os2web-content-reference {
+    + .desktop-only,
+    + .mobile-only {
       margin-top: 40px;
     }
+  }
+
+  .mobile-only {
+    margin-left: $grid-gutter-width / 2;
+    margin-right: $grid-gutter-width / 2;
+
+    box-shadow: $box-shadow;
+
+    .entity-teaser--os2web-page {
+      margin: 0;
+
+      box-shadow: none;
+    }
+  }
+  .desktop-only {
+
+    + .mobile-only {
+      margin-top: 40px;
+    }
+  }
+
+  // Tiny slider.
+  button[data-action="start"],
+  button[data-action="stop"] {
+    display: none !important;
   }
 }
 

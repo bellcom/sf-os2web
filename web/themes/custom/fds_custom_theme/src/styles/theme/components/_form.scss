@@ -36,6 +36,50 @@ $custom-input-left-right-padding: 20px;
   background-color: #fff;
 }
 
+.form-checkbox,
+.form-radio {
+
+  + label {
+
+    &:before {
+      border-color: $color-orange-004;
+    }
+  }
+
+  &:checked {
+
+    + label {
+
+      &:before {
+        background-color: $color-orange-004;
+      }
+    }
+  }
+}
+
+// Remove max width.
+body {
+
+  .form-input,
+  .form-email,
+  .form-select,
+  .form-hint {
+    max-width: none;
+  }
+}
+
+.form-hint {
+  color: $color-text;
+}
+
+.form-item {
+
+  .form-hint,
+  .form-hint.description {
+    font-size: $base-font-size;
+  }
+}
+
 .form-select {
   min-width: 250px;
 
@@ -44,6 +88,10 @@ $custom-input-left-right-padding: 20px;
 }
 
 .form-input {}
+
+.js input.form-autocomplete{
+  background-image: none;
+}
 
 // Search form.
 form#views-exposed-form-os2web-search-os2web-search-page {
@@ -56,27 +104,55 @@ form#views-exposed-form-os2web-search-os2web-search-page {
     right: 0;
     z-index: 500;
 
+    width: 50px;
+
     margin: 0;
 
     .form-submit {
+      position: absolute;
+
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      z-index: 500;
+
+      padding: 23px 20px;
+
+      width: 100%;
+
       border: 0;
       border-radius: 100%;
 
       background-color: transparent;
+    }
 
-      &:before {
-        font-family: FontAwesome;
-        content: "\f095";
-        display: inline-block;
-        padding-right: 3px;
-        vertical-align: middle;
-      }
+    &:after {
+      position: absolute;
+      display: inline-block;
+
+      top: 10px;
+      right: 20px;
+
+      z-index: 100;
+
+      font-size: $large-font-size;
+      font-family: FontAwesome;
+
+      content: "\f002";
+
+      color: $color-orange-004;
     }
   }
 
   .form-input {
-    max-width: unset;
     margin: 0;
+    padding: 12px 60px 12px 20px;
+
+    max-width: unset;
+
+    border-radius: 25px;
   }
 
   // Remove float from inline form elements.
@@ -90,7 +166,7 @@ form#views-exposed-form-os2web-search-os2web-search-page {
   }
 
   input.form-autocomplete {
-    background-position: right 1rem center;
+    background-image: none;
   }
 }
 .form-type-search-api-autocomplete {}

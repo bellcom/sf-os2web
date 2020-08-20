@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Searchy
+// | Hearings search.
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .searchy
+// | - .paragraph--type--os2web-hearings-search
 // |
 
 // --------------------------------------------------
@@ -14,35 +14,14 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin searchy-mixin() {}
+@mixin paragraph--type--os2web-hearings-search-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.searchy {
-  position: relative;
+.paragraph--type--os2web-hearings-search {
 
-  .region {
-    display: none;
-    position: absolute;
-
-    top: 0;
-    right: 100%;
-
-    z-index: 100;
-
-    padding-right: 10px;
-
-    min-width: 400px;
-  }
-
-  &.searchy--visible-form {
-
-    .region {
-      display: block;
-    }
-  }
 }
 
 // --------------------------------------------------
@@ -60,7 +39,20 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+  .paragraph--type--os2web-hearings-search {
+    .form-composite {
+      width: 100%;
+
+      .form-radios {
+        .form-type-radio {
+          width: 50%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}

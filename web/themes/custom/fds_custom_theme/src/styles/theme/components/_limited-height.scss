@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Searchy
+// | Limited height
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .searchy
+// | - .limited-height
 // |
 
 // --------------------------------------------------
@@ -14,40 +14,43 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin searchy-mixin() {}
+@mixin limited-height-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.searchy {
-  position: relative;
+.limited-height__toggle {
+  display: none;
 
-  .region {
-    display: none;
-    position: absolute;
+  button {
+    display: block;
 
-    top: 0;
-    right: 100%;
+    padding: 2rem 0 .7rem 0;
 
-    z-index: 100;
+    width: 100%;
 
-    padding-right: 10px;
+    font-weight: $font-weight-bold;
 
-    min-width: 400px;
-  }
+    background-color: transparent;
+    border: 0;
 
-  &.searchy--visible-form {
-
-    .region {
+    &:after {
       display: block;
+
+      margin-top: -7px;
+
+      font-family: "Material Icons";
+
+      content: "keyboard_arrow_down";
+      color: $color-orange-004;
     }
   }
-}
 
-// --------------------------------------------------
-// Variants
-// --------------------------------------------------
+  &.limited-height__toggle--hidden {
+    display: none !important;
+  }
+}
 
 // --------------------------------------------------
 // Responsive
@@ -57,7 +60,32 @@
 @include media-breakpoint-up(xs) {}
 
 // Mobile - only
-@include media-breakpoint-only(xs, $grid-breakpoints) {}
+@include media-breakpoint-only(xs, $grid-breakpoints) {
+
+  .limited-height {
+    height: 200px;
+    overflow: hidden;
+  }
+  ul.limited-height {
+    height: auto;
+    overflow: initial;
+
+    > li:nth-child(n+3) {
+      display: none;
+    }
+  }
+  .limited-height--overridden {}
+  ul.limited-height--overridden {
+
+    > li:nth-child(n+3) {
+      display: block;
+    }
+  }
+
+  .limited-height__toggle {
+    display: block !important;
+  }
+}
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {}

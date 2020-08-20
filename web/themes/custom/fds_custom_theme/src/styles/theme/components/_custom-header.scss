@@ -21,7 +21,7 @@
 // --------------------------------------------------
 
 .custom-header {
-  background-position: center center;
+  background-position: top center;
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,12 +29,18 @@
   button,
   a {
 
-    &:focus {
+    &:focus{
       outline-color: $color-orange-004;
+    }
+
+    &:hover{
+      outline: 2px solid $color-orange-004;
+      outline-offset: 1px;
     }
   }
 
   .action-buttons {
+    display: none;
 
     a {
       color: #fff;
@@ -66,36 +72,49 @@
 
 .custom-header__logo {
 
+  img {
+    height: 32px;
+  }
+
   + .action-buttons {
     margin-left: 50px;
   }
 }
 
 .custom-header__inner {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   background: rgb(0,102,50);
-  background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 30%, rgba(0,102,50,0) 100%);
+  background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 50%, rgba(0,102,50,0) 100%);
 }
 
 .path-frontpage {
   padding-top: 0 !important;
 
-  &.toolbar-tray-open {
-    padding-top: 79px !important;
+  &.toolbar-horizontal {
+    padding-top: 39px !important;
+
+    &.toolbar-tray-open {
+      padding-top: 79px !important;
+    }
   }
 }
 body {
   padding-top: 132px !important; // Height of .custom-header--fixed (recalculated by JS)
 
-  &.toolbar-tray-open {
-    padding-top: 132px + 79px !important;
+  &.toolbar-horizontal {
+    padding-top: 132px + 39px !important;
+
+    &.toolbar-tray-open {
+      padding-top: 132px + 79px !important;
+    }
   }
 }
 
 .custom-header__meta {
-  padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -119,7 +138,7 @@ body {
 
   margin-bottom: (150px / 2); // Half the height of the box.
 
-  background-position: 0 -265px;
+  background-position: top center;
 
   .path-frontpage & {
     display: block;
@@ -135,7 +154,11 @@ body {
 
   z-index: 300;
 
-  .toolbar-tray-open & {
+  .toolbar-horizontal & {
+    top: 39px;
+  }
+
+  .toolbar-horizontal.toolbar-tray-open & {
     top: 79px; // Height of toolbar tray.
   }
 
@@ -162,7 +185,7 @@ body {
 
     font-size: 3rem;
 
-    color: $color-orange-004;
+    color: #fff;
   }
 }
 .searchy {
@@ -175,20 +198,16 @@ body {
 .custom-header__button--toggle-megamenu {}
 
 .custom-header__button--toggle-search {
-  width: 40px;
-  height: 40px;
-
-  border-radius: 100%;
-  background-color: $color-orange-004;
 
   .icon {
     font-size: 2rem;
-    color: #fff;
+
+    color: $color-orange-004;
   }
 }
 
 .region-header__below {
-  margin-bottom: 0 - ((150px / 2) + 40px);
+  margin-bottom: 0 - ((150px / 2) + 10px);
 
   .menu {
     display: flex;
@@ -201,7 +220,7 @@ body {
     padding: 0;
 
     li {
-      flex-basis: 25%;
+      flex-basis: 50%;
 
       padding: 0 10px;
 
@@ -215,9 +234,11 @@ body {
     a {
       display: block;
 
-      padding: 40px 5px;
+      min-height: 130px;
 
-      font-size: $large-font-size;
+      margin: 8px 0;
+      padding: 30px 5px;
+
       text-align: center;
       font-weight: $font-weight-bold;
 
@@ -233,6 +254,10 @@ body {
 
     .field--name-field-os2web-icon {
       min-height: 45px;
+
+      svg {
+        max-height: 35px;
+      }
     }
   }
 
@@ -312,12 +337,8 @@ body {
     margin-top: 30px;
 
     > li {
-      padding-top: 10px;
-      padding-bottom: 10px;
 
       > a {
-        padding: 50px 20px 30px 20px;
-
         color: $color-text;
         background-color: $color-green-002;
 
@@ -330,6 +351,10 @@ body {
         }
       }
     }
+  }
+
+  .views-exposed-form {
+    display: none;
   }
 }
 
@@ -344,7 +369,80 @@ body {
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .custom-header {
+    background-position: center center;
+
+    .action-buttons {
+      display: block;
+    }
+  }
+
+  .custom-header__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 30%, rgba(0,102,50,0) 100%);
+  }
+
+  .custom-header__meta {
+    padding: 1rem;
+  }
+
+  .custom-header__button {
+
+    .icon {
+      color: $color-orange-004;
+    }
+  }
+
+  .custom-header__button--toggle-search {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 100%;
+    background-color: $color-orange-004;
+
+    .icon {
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+
+  .custom-header__logo {
+
+    img {
+      height: 43px;
+    }
+  }
+
+  .region-header__below {
+
+    .views-exposed-form {
+      display: block;
+    }
+  }
+
+  .region-header__below {
+    margin-bottom: 0 - ((150px / 2) + 40px);
+
+    .menu {
+
+      li {
+        flex-basis: 25%;
+
+        > a {
+          min-height: 147px;
+
+          padding: 40px 5px;
+
+          font-size: $large-font-size;
+        }
+      }
+    }
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}

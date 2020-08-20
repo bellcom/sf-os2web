@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Searchy
+// | Node
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .searchy
+// | - .entity-full
 // |
 
 // --------------------------------------------------
@@ -14,33 +14,39 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin searchy-mixin() {}
+@mixin entity-teaser-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.searchy {
-  position: relative;
+.node__links {
 
-  .region {
-    display: none;
-    position: absolute;
+  ul {
+    padding: 0;
 
-    top: 0;
-    right: 100%;
+    li {
+      padding: 0;
 
-    z-index: 100;
-
-    padding-right: 10px;
-
-    min-width: 400px;
+      &:before {
+        display: none;
+      }
+    }
   }
 
-  &.searchy--visible-form {
+  a {
+    @extend .button;
 
-    .region {
-      display: block;
+    min-height: auto;
+    padding: 13px 15px;
+
+    border-radius: 30px;
+
+    &, &:hover, &:focus {
+      font-weight: $font-weight-bold;
+
+      color: #fff;
+      background-color: $color-orange-004;
     }
   }
 }

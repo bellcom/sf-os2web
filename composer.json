@@ -40,6 +40,7 @@
         "os2web/os2web": "develop-dev",
         "os2web/os2web_borgerdk": "8.x-dev",
         "os2web/os2web_hearings": "dev-master",
+        "os2web/os2web_logging": "dev-master",
         "os2web/os2web_meetings": "dev-develop",
         "os2web/os2web_meetings_sbsys": "dev-master",
         "os2web/os2web_pagebuilder": "dev-tests",
@@ -97,6 +98,12 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "enable-patching": true,
+        "patches": {
+            "drupal/textfield_counter" : {
+                "Fix scrolltop prevent" :  "./patches/textfield_counter-scrolltop-fix.patch"
+            }
         }
     }
 }

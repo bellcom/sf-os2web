@@ -42,7 +42,7 @@
 
   &,
   p {
-    font-size: $large-font-size;
+    font-size: $base-font-size;
   }
 
   .field--type-link a,
@@ -63,11 +63,22 @@
 
     border-radius: 30px;
 
+    outline-color: #fff;
+    outline-width: 2px;
+
     &, &:hover, &:focus {
       font-weight: $font-weight-bold;
 
+      box-shadow: none;
+
+      font-family: $font-family;
+      font-size: $base-font-size;
+      text-shadow: none;
+
       color: #fff;
       background-color: $color-orange-004;
+      background-image: none;
+      border: 0;
     }
   }
 
@@ -76,6 +87,10 @@
     li + li {
       margin-left: 10px;
     }
+  }
+
+  .field--type-link {
+    margin-top: 2rem;
   }
 }
 
@@ -110,6 +125,10 @@
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
+    }
+
+    .field--type-link {
+      margin-left: -1.5rem;
     }
   }
 }
