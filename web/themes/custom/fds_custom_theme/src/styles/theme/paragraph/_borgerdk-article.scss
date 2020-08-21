@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Image
+// | BorgerDK article
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .paragraph--type--os2web-image-paragraph
+// | - .paragraph--type--os2web-borgerdk-article
 // |
 
 // --------------------------------------------------
@@ -14,24 +14,17 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin paragraph--type--os2web-image-paragraph-mixin() {}
+@mixin paragraph--type--os2web-borgerdk-article-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-image-paragraph {
-  box-shadow: $box-shadow;
-}
+.paragraph--type--os2web-borgerdk-article {
 
-.field--name-field-os2web-image-image {
-
-  img {
-    display: block;
+  .field--name-byline {
+    margin-bottom: $grid-gutter-width / 2;
   }
-}
-.field--name-field-os2web-image-description {
-  padding: 20px 30px;
 }
 
 // --------------------------------------------------
