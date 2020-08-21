@@ -46,9 +46,11 @@
   .node__content {
 
     > .field--name-field-os2web-page-primaryimage {
-      margin-right: 0 - ( $grid-gutter-width / 2);
+      margin-right: 0 - $grid-gutter-width;
 
       img {
+        display: block;
+
         width: 100%;
       }
     }

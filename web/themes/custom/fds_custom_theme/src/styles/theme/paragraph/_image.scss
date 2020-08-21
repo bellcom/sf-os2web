@@ -25,7 +25,10 @@
 }
 
 .field--name-field-os2web-image-image {
-  text-align: center;
+
+  img {
+    display: block;
+  }
 }
 .field--name-field-os2web-image-description {
   padding: 20px 30px;
