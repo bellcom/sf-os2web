@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2da0a9aeaa9bab5647797f15b8f7dd57",
+    "content-hash": "43cf560e29a11072aae23615b49ca562",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6748,6 +6748,78 @@
             }
         },
         {
+            "name": "drupal/stage_file_proxy",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/stage_file_proxy.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/stage_file_proxy-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "f101a07e0096f476c91cf23137469a5c5c18e2df"
+            },
+            "require": {
+                "drupal/core": ">=8.7.7"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1580492032",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "BarisW",
+                    "homepage": "https://www.drupal.org/user/107229"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "markdorison",
+                    "homepage": "https://www.drupal.org/user/346106"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                },
+                {
+                    "name": "msonnabaum",
+                    "homepage": "https://www.drupal.org/user/75278"
+                },
+                {
+                    "name": "netaustin",
+                    "homepage": "https://www.drupal.org/user/199298"
+                },
+                {
+                    "name": "robwilmshurst",
+                    "homepage": "https://www.drupal.org/user/144488"
+                }
+            ],
+            "description": "Provides stage_file_proxy module.",
+            "homepage": "https://www.drupal.org/project/stage_file_proxy",
+            "support": {
+                "source": "https://git.drupalcode.org/project/stage_file_proxy"
+            }
+        },
+        {
             "name": "drupal/tamper",
             "version": "1.0.0-alpha2",
             "source": {
@@ -8802,7 +8874,7 @@
                 "EUPL-1.2"
             ],
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
-            "time": "2020-08-11T07:29:35+00:00"
+            "time": "2020-08-19T08:29:32+00:00"
         },
         {
             "name": "os2web/os2web",
@@ -8831,7 +8903,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
-            "time": "2020-08-12T13:00:56+00:00"
+            "time": "2020-08-19T08:30:02+00:00"
         },
         {
             "name": "os2web/os2web_borgerdk",
@@ -8886,7 +8958,7 @@
                 "EUPL-1.2"
             ],
             "description": "Contact entity",
-            "time": "2020-04-30T08:06:13+00:00"
+            "time": "2020-08-19T07:59:15+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -8936,7 +9008,7 @@
                 "EUPL-1.2"
             ],
             "description": "Adds Hearing related content types and Hearings search view",
-            "time": "2020-07-28T10:09:23+00:00"
+            "time": "2020-08-19T08:56:13+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
@@ -8961,7 +9033,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-08-13T07:51:18+00:00"
+            "time": "2020-08-14T09:27:09+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -9014,7 +9086,7 @@
                 "EUPL-1.2"
             ],
             "description": "Logs node access for selected content type access",
-            "time": "2020-08-13T07:21:43+00:00"
+            "time": "2020-08-13T08:52:39+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
@@ -9120,7 +9192,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-08-05T08:56:38+00:00"
+            "time": "2020-08-19T17:02:12+00:00"
         },
         {
             "name": "os2web/os2web_search",
@@ -15183,6 +15255,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Fix scrolltop prevent": "./patches/textfield_counter-scrolltop-fix.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -17187,5 +17262,6 @@
     "platform": {
         "php": ">=7.0.8"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

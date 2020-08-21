@@ -45,4 +45,5 @@ echo-yellow "Removing db dump"
 fin exec "rm ${DB_NAME}.sql.gz"
 
 fin exec "${DRUSH} upwd admin admin"
+fin exec "${DRUSH} en stage_file_proxy"
 fin exec "${DRUSH} cr"
