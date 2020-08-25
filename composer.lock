@@ -9315,12 +9315,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "c8268f4c2147e94517ea9f17a7b74ad4bb039f34"
+                "reference": "9d82ee0defd620d8e3a0fcf44dd721b0d6c920ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/c8268f4c2147e94517ea9f17a7b74ad4bb039f34",
-                "reference": "c8268f4c2147e94517ea9f17a7b74ad4bb039f34",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/9d82ee0defd620d8e3a0fcf44dd721b0d6c920ab",
+                "reference": "9d82ee0defd620d8e3a0fcf44dd721b0d6c920ab",
                 "shasum": ""
             },
             "require": {
