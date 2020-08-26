@@ -9068,12 +9068,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "aedfa816f8eb644589e426656b9285920557d1b4"
+                "reference": "c67b5578bc243c59766b3348f48958fe18f91af1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/aedfa816f8eb644589e426656b9285920557d1b4",
-                "reference": "aedfa816f8eb644589e426656b9285920557d1b4",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/c67b5578bc243c59766b3348f48958fe18f91af1",
+                "reference": "c67b5578bc243c59766b3348f48958fe18f91af1",
                 "shasum": ""
             },
             "require": {
@@ -9086,7 +9086,7 @@
                 "EUPL-1.2"
             ],
             "description": "Logs node access for selected content type access",
-            "time": "2020-08-13T08:52:39+00:00"
+            "time": "2020-08-26T12:53:30+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
