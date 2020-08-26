@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "1acedc446261e1af818db834f3724804de38d5a1"
+                "reference": "3c248de8680f110bdc3f2637c9024ddac3b8200c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/1acedc446261e1af818db834f3724804de38d5a1",
-                "reference": "1acedc446261e1af818db834f3724804de38d5a1",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/3c248de8680f110bdc3f2637c9024ddac3b8200c",
+                "reference": "3c248de8680f110bdc3f2637c9024ddac3b8200c",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-08-25T09:18:43+00:00"
+            "time": "2020-08-26T13:34:05+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -8991,12 +8991,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "48650c9412bfd9de2509ce8ca7586a1d74dfbd6e"
+                "reference": "7a72738ff8a5290318d584c78166f17d4453edc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/48650c9412bfd9de2509ce8ca7586a1d74dfbd6e",
-                "reference": "48650c9412bfd9de2509ce8ca7586a1d74dfbd6e",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/7a72738ff8a5290318d584c78166f17d4453edc0",
+                "reference": "7a72738ff8a5290318d584c78166f17d4453edc0",
                 "shasum": ""
             },
             "require": {
