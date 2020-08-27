@@ -30,6 +30,20 @@
   }
 }
 
+.view-os2web-borgerdk-selfservices {
+
+  &.view-display-id-os2web_borgerdk_selfservices_embed_category_ss {
+    margin-top: $grid-gutter-width / 3;
+
+    .views-row {
+
+      + .views-row {
+        margin-top: $grid-gutter-width / 3;
+      }
+    }
+  }
+}
+
 // --------------------------------------------------
 // Responsive
 // --------------------------------------------------
