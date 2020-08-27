@@ -433,9 +433,9 @@ body {
         flex-basis: 25%;
 
         > a {
-          min-height: 147px;
+          height: 147px;
 
-          padding: 40px 5px;
+          padding: 40px 5px 10px 5px;
 
           font-size: $large-font-size;
         }

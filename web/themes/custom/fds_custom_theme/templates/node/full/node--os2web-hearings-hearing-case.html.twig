@@ -12,24 +12,26 @@
   <h1>{{ label }}</h1>
   {{ content.body }}
 
+  {{ content.field_os2web_hearings_attac_doc }}
+
+  {{ content.field_os2web_hearings_reply }}
+
   <h2>{{ 'Skriv dit høringssvar' | trans }}</h2>
   <div class="box">
     <div class="box__body">
       <div class="row">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-auto">
           {{ content.field_os2web_hearings_end_date }}
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-auto">
           {{ content.field_os2web_hearings_published }}
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-auto">
           {{ content.links }}
         </div>
       </div>
     </div>
   </div>
-
-  {{ content.field_os2web_hearings_reply }}
 
   <br />
 

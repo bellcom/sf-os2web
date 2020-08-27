@@ -20,6 +20,7 @@
 // Styling
 // --------------------------------------------------
 
+.accordion-content,
 .field--type-text-long {
 
   &:not(.field--widget-text-textarea) {
@@ -31,7 +32,6 @@
 
       li {
         position: static;
-
 
         &:before {
           position: static;
