@@ -29,6 +29,12 @@
     header.style.marginBottom = ((menuLevel0Height / 2) + menuLevel1Height) + 'px';
   }
 
+  function scroll() {
+    var menuLevel0 = document.querySelector('.region-header__below .menu-level-0');
+
+    menuLevel0.scrollIntoView({ behavior: 'smooth' });
+  }
+
   function handleToggle(event) {
     event.preventDefault();
 
@@ -50,6 +56,9 @@
 
     // Reposition.
     reposition();
+
+    // Scroll to menu level 0.
+    scroll();
   }
 
   var links = document.querySelectorAll('.region-header__below .menu-level-0 > li > a');
