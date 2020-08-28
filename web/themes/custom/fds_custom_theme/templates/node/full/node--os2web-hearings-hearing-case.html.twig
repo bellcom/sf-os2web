@@ -27,7 +27,9 @@
           {{ content.field_os2web_hearings_published }}
         </div>
         <div class="col-12 col-md-auto">
-          {{ content.links }}
+          {% if not content['#closed'] %}
+            {{ content.links }}
+          {% endif %}
         </div>
       </div>
     </div>
