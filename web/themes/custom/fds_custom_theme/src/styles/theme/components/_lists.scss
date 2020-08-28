@@ -32,7 +32,7 @@
       line-height: $body-text-line-height;
 
       li {
-        margin-top:map-get($spacers, 3);
+        margin-top: map-get($spacers, 3);
         list-style-type: none;
         position: relative;
         padding-left: 40px !important;
@@ -48,28 +48,31 @@
         }
       }
     }
+  }
+}
 
-    a {
-      position: relative;
+.field--type-text-long {
 
-      padding-right: 40px;
+  a {
+    position: relative;
 
-      font-weight: $font-weight-bold;
-      color: $color-blue-001;
-      text-decoration: underline;
+    padding-right: 40px;
 
-      &:after {
-        position: absolute;
+    font-weight: $font-weight-bold;
+    color: $color-blue-001;
+    text-decoration: underline;
 
-        right: 5px;
+    &:after {
+      position: absolute;
 
-        font-size: 2.2rem;
-        font-family: "Material Icons";
+      right: 5px;
 
-        color: $color-orange-004;
-        content: "keyboard_backspace";
-        transform: rotate(180deg);
-      }
+      font-size: 2.2rem;
+      font-family: "Material Icons";
+
+      color: $color-orange-004;
+      content: "keyboard_backspace";
+      transform: rotate(180deg);
     }
   }
 }
