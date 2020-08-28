@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43cf560e29a11072aae23615b49ca562",
+    "content-hash": "44b8e7cf0a5e7fbc8404b85ee7d89ca3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5036,6 +5036,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2019-10-04/field_group-HTML5_validation_prevents_submission_in_tabs-2969051-9.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -8991,12 +8994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "205d4c84ea97c7aa95f9ee28f4273a1cc62f66c6"
+                "reference": "a6a61adf75e011555156fb5449813e44bdac6b12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/205d4c84ea97c7aa95f9ee28f4273a1cc62f66c6",
-                "reference": "205d4c84ea97c7aa95f9ee28f4273a1cc62f66c6",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/a6a61adf75e011555156fb5449813e44bdac6b12",
+                "reference": "a6a61adf75e011555156fb5449813e44bdac6b12",
                 "shasum": ""
             },
             "require": {
@@ -9008,7 +9011,7 @@
                 "EUPL-1.2"
             ],
             "description": "Adds Hearing related content types and Hearings search view",
-            "time": "2020-08-27T14:41:47+00:00"
+            "time": "2020-08-28T09:26:49+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
