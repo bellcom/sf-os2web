@@ -1,8 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Misc
+// | Return to home link
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
+// | - .return-to-home-link
 // |
 
 // --------------------------------------------------
@@ -10,76 +11,47 @@
 // --------------------------------------------------
 
 // --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin return-to-home-link-mixin() {}
+
+// --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-// Increased specificity to win over base theme.
-body .container-fluid {
-  padding-left: $grid-gutter-width;
-  padding-right: $grid-gutter-width;
-}
+.return-to-home-link {
+  position: relative;
+  display: block;
 
-// Accessibility overrides.
-button,
-body a {
+  padding: 14px 0 14px ($sidenav-list-spacing-left + 35px);
 
-  &:focus {
-    outline-width: 2px;
+  font-size: $large-font-size;
+  font-weight: $font-weight-bold;
+  line-height: 1.1;
+
+  background-image: url("../images/arrow-back.svg");
+  background-repeat: no-repeat;
+  background-position: $sidenav-list-spacing-left center;
+
+  &, &:hover, &:active, &:focus, &:visited {
+    text-decoration: none;
+
+    color: $color-text;
   }
-}
-
-//.paragraph a,
-//.region-content a,
-//.breadcrumb a {
-//
-//  &:focus {
-//    outline-width: 2px;
-//  }
-//}
-
-.fields-inline {
-
-  > .field {
-    display: inline-block;
-  }
-}
-
-.ext {
-  display: none;
-}
-
-body .page-container {
-  padding-top: 1rem;
-}
-
-.region-sidebar-second {
-
-  .os2web_contact {
-
-    .field {
-
-      + .field {
-        margin-top: 2.8rem; // Same distance as between <p> <p>
-      }
-    }
-  }
-}
-
-.button--primary {
-
-  &, &:hover, &:focus {
-    font-weight: $font-weight-bold;
-
-    color: #fff;
-    background-color: $color-orange-004;
-  }
-}
-
-.button--rounded {
-  padding-left: 30px;
-  padding-right: 30px;
-
-  border-radius: 30px;
+  //
+  //&:before {
+  //  position: absolute;
+  //
+  //  left: $sidenav-list-spacing-left;
+  //
+  //  font-family: "Material Icons";
+  //  font-size: 30px;
+  //
+  //  content: "keyboard_backspace";
+  //
+  //  color: $color-orange-004;
+  //}
 }
 
 // --------------------------------------------------
@@ -99,15 +71,7 @@ body .page-container {
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {
-
-  .region-sidebar-second {
-
-    .box {
-      min-height: 217px; // Same height as primary image.
-    }
-  }
-}
+@include media-breakpoint-up(md) {}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}
@@ -122,13 +86,7 @@ body .page-container {
 @include media-breakpoint-up(xl) {}
 
 // Print
-@media print {
-
-  body .page-container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
+@media print {}
 
 // Touch
 .touchevents {}
