@@ -26,53 +26,28 @@
   &:not(.field--widget-text-textarea) {
 
     ul {
-      list-style: none; /* Remove list bullets */
-      padding: 0;
-      margin: 0;
+      padding-left: 0;
+      list-style-type: none;
+      color: $color-text;
+      line-height: $body-text-line-height;
 
       li {
-        position: static;
+        margin-top:map-get($spacers, 3);
+        list-style-type: none;
+        position: relative;
+        padding-left: 40px !important;
+        line-height: $body-text-line-height;
 
-        &:before {
-          position: static;
-
-          left: initial;
-          top: initial;
-
-          padding-right: 20px;
-
-          font-size: 20px;
-
-          color: $color-blue-001;;
+        &::before {
           content: "■";
+          position: absolute;
+          left: 5px;
+          top: -1px;
+          font-size: 20px;
+          color: $color-blue-001;
         }
       }
     }
-
-
-    //ul {
-    //  padding-left: 0;
-    //  list-style-type: none;
-    //  color: $color-text;
-    //  line-height: $body-text-line-height;
-    //
-    //  li {
-    //    margin-top:map-get($spacers, 3);
-    //    list-style-type: none;
-    //    position: relative;
-    //    padding-left: 40px !important;
-    //    line-height: $body-text-line-height;
-    //
-    //    &::before {
-    //      content: "■";
-    //      position: absolute;
-    //      left: 5px;
-    //      top: -1px;
-    //      font-size: 20px;
-    //      color: $color-blue-001;
-    //    }
-    //  }
-    //}
 
     a {
       position: relative;
