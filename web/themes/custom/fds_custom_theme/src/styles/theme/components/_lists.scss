@@ -26,75 +26,53 @@
   &:not(.field--widget-text-textarea) {
 
     ul {
-      list-style: none; /* Remove list bullets */
-      padding: 0;
-      margin: 0;
+      padding-left: 0;
+      list-style-type: none;
+      color: $color-text;
+      line-height: $body-text-line-height;
 
       li {
-        position: static;
+        margin-top: map-get($spacers, 3);
+        list-style-type: none;
+        position: relative;
+        padding-left: 40px !important;
+        line-height: $body-text-line-height;
 
-        &:before {
-          position: static;
-
-          left: initial;
-          top: initial;
-
-          padding-right: 20px;
-
-          font-size: 20px;
-
-          color: $color-blue-001;;
+        &::before {
           content: "■";
+          position: absolute;
+          left: 5px;
+          top: -1px;
+          font-size: 20px;
+          color: $color-blue-001;
         }
       }
     }
+  }
+}
 
+.field--type-text-long {
 
-    //ul {
-    //  padding-left: 0;
-    //  list-style-type: none;
-    //  color: $color-text;
-    //  line-height: $body-text-line-height;
-    //
-    //  li {
-    //    margin-top:map-get($spacers, 3);
-    //    list-style-type: none;
-    //    position: relative;
-    //    padding-left: 40px !important;
-    //    line-height: $body-text-line-height;
-    //
-    //    &::before {
-    //      content: "■";
-    //      position: absolute;
-    //      left: 5px;
-    //      top: -1px;
-    //      font-size: 20px;
-    //      color: $color-blue-001;
-    //    }
-    //  }
-    //}
+  a {
+    position: relative;
 
-    a {
-      position: relative;
+    padding-right: 40px;
 
-      padding-right: 40px;
+    font-weight: $font-weight-bold;
+    color: $color-blue-001;
+    text-decoration: underline;
 
-      font-weight: $font-weight-bold;
-      color: $color-blue-001;
-      text-decoration: underline;
+    &:after {
+      position: absolute;
 
-      &:after {
-        position: absolute;
+      right: 5px;
 
-        right: 5px;
+      font-size: 2.2rem;
+      font-family: "Material Icons";
 
-        font-size: 2.2rem;
-        font-family: "Material Icons";
-
-        color: $color-orange-004;
-        content: "keyboard_backspace";
-        transform: rotate(180deg);
-      }
+      color: $color-orange-004;
+      content: "keyboard_backspace";
+      transform: rotate(180deg);
     }
   }
 }

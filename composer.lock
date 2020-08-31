@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "927047eaab42d22290da0c6be6f2ead9",
+    "content-hash": "44b8e7cf0a5e7fbc8404b85ee7d89ca3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "3c248de8680f110bdc3f2637c9024ddac3b8200c"
+                "reference": "e713868d4970596e2f865830c1f971b5d82cde41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/3c248de8680f110bdc3f2637c9024ddac3b8200c",
-                "reference": "3c248de8680f110bdc3f2637c9024ddac3b8200c",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/e713868d4970596e2f865830c1f971b5d82cde41",
+                "reference": "e713868d4970596e2f865830c1f971b5d82cde41",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-08-26T13:34:05+00:00"
+            "time": "2020-08-28T11:49:25+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -5036,6 +5036,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "HTML5 Validation Prevents Submission in Tabs": "https://www.drupal.org/files/issues/2019-10-04/field_group-HTML5_validation_prevents_submission_in_tabs-2969051-9.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6820,76 +6823,6 @@
             }
         },
         {
-            "name": "drupal/swiftmailer",
-            "version": "2.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/swiftmailer.git",
-                "reference": "8.x-2.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/swiftmailer-8.x-2.0-beta1.zip",
-                "reference": "8.x-2.0-beta1",
-                "shasum": "6df4816d0d57a85cfff0860960da64c5ff77680f"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/mailsystem": "^4.1.0",
-                "egulias/email-validator": "^2.0",
-                "html2text/html2text": "^4.0.1",
-                "php": ">=7.0.0",
-                "swiftmailer/swiftmailer": "^6.1.3",
-                "tijsverkoyen/css-to-inline-styles": "^2.2"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.0-beta1",
-                    "datestamp": "1591886969",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "AdamPS",
-                    "homepage": "https://www.drupal.org/user/2650563"
-                },
-                {
-                    "name": "Anybody",
-                    "homepage": "https://www.drupal.org/user/291091"
-                },
-                {
-                    "name": "B-Prod",
-                    "homepage": "https://www.drupal.org/user/407852"
-                },
-                {
-                    "name": "geek-merlin",
-                    "homepage": "https://www.drupal.org/user/229048"
-                },
-                {
-                    "name": "sbrattla",
-                    "homepage": "https://www.drupal.org/user/53422"
-                },
-                {
-                    "name": "webflo",
-                    "homepage": "https://www.drupal.org/user/254778"
-                }
-            ],
-            "description": "Swiftmailer",
-            "homepage": "https://www.drupal.org/project/swiftmailer",
-            "support": {
-                "source": "https://git.drupalcode.org/project/swiftmailer"
-            }
-        },
-        {
             "name": "drupal/tamper",
             "version": "1.0.0-alpha2",
             "source": {
@@ -7779,43 +7712,6 @@
                 "shasum": ""
             },
             "type": "drupal-library"
-        },
-        {
-            "name": "html2text/html2text",
-            "version": "4.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mtibben/html2text.git",
-                "reference": "61ad68e934066a6f8df29a3d23a6460536d0855c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mtibben/html2text/zipball/61ad68e934066a6f8df29a3d23a6460536d0855c",
-                "reference": "61ad68e934066a6f8df29a3d23a6460536d0855c",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4"
-            },
-            "suggest": {
-                "ext-mbstring": "For best performance",
-                "symfony/polyfill-mbstring": "If you can't install ext-mbstring"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Html2Text\\": [
-                        "src/",
-                        "test/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Converts HTML to formatted plain text",
-            "time": "2020-04-16T23:44:31+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
@@ -9010,7 +8906,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
-            "time": "2020-08-19T08:30:02+00:00"
+            "time": "2020-08-27T14:45:08+00:00"
         },
         {
             "name": "os2web/os2web_borgerdk",
@@ -9098,12 +8994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "205d4c84ea97c7aa95f9ee28f4273a1cc62f66c6"
+                "reference": "cb71d43d857e56343a6bd802f7ab146c10ddb846"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/205d4c84ea97c7aa95f9ee28f4273a1cc62f66c6",
-                "reference": "205d4c84ea97c7aa95f9ee28f4273a1cc62f66c6",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/cb71d43d857e56343a6bd802f7ab146c10ddb846",
+                "reference": "cb71d43d857e56343a6bd802f7ab146c10ddb846",
                 "shasum": ""
             },
             "require": {
@@ -9115,7 +9011,7 @@
                 "EUPL-1.2"
             ],
             "description": "Adds Hearing related content types and Hearings search view",
-            "time": "2020-08-26T11:44:25+00:00"
+            "time": "2020-08-31T13:47:09+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
@@ -9275,12 +9171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "fac6db641fd897422dc46249f57386301b432916"
+                "reference": "b1c551e5e1d9535ff58fbda017048dd932074931"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/fac6db641fd897422dc46249f57386301b432916",
-                "reference": "fac6db641fd897422dc46249f57386301b432916",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/b1c551e5e1d9535ff58fbda017048dd932074931",
+                "reference": "b1c551e5e1d9535ff58fbda017048dd932074931",
                 "shasum": ""
             },
             "require": {
@@ -9299,7 +9195,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-08-26T09:49:07+00:00"
+            "time": "2020-08-31T12:30:42+00:00"
         },
         {
             "name": "os2web/os2web_search",
@@ -12124,68 +12020,6 @@
             "time": "2019-11-24T17:03:06+00:00"
         },
         {
-            "name": "swiftmailer/swiftmailer",
-            "version": "v6.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
-                "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
-                "shasum": ""
-            },
-            "require": {
-                "egulias/email-validator": "~2.0",
-                "php": ">=7.0.0",
-                "symfony/polyfill-iconv": "^1.0",
-                "symfony/polyfill-intl-idn": "^1.10",
-                "symfony/polyfill-mbstring": "^1.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9.1",
-                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
-            },
-            "suggest": {
-                "ext-intl": "Needed to support internationalized email addresses",
-                "true/punycode": "Needed to support internationalized email addresses, if ext-intl is not installed"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "6.2-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "lib/swift_required.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Corbyn"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Swiftmailer, free feature-rich PHP mailer",
-            "homepage": "https://swiftmailer.symfony.com",
-            "keywords": [
-                "email",
-                "mail",
-                "mailer"
-            ],
-            "time": "2019-11-12T09:31:26+00:00"
-        },
-        {
             "name": "symfony-cmf/routing",
             "version": "1.4.1",
             "source": {
@@ -14358,55 +14192,6 @@
             "time": "2020-07-23T09:37:51+00:00"
         },
         {
-            "name": "tijsverkoyen/css-to-inline-styles",
-            "version": "2.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
-                "reference": "b43b05cf43c1b6d849478965062b6ef73e223bb5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/b43b05cf43c1b6d849478965062b6ef73e223bb5",
-                "reference": "b43b05cf43c1b6d849478965062b6ef73e223bb5",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-libxml": "*",
-                "php": "^5.5 || ^7.0 || ^8.0",
-                "symfony/css-selector": "^2.7 || ^3.0 || ^4.0 || ^5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0 || ^7.5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TijsVerkoyen\\CssToInlineStyles\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tijs Verkoyen",
-                    "email": "css_to_inline_styles@verkoyen.eu",
-                    "role": "Developer"
-                }
-            ],
-            "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
-            "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
-            "time": "2020-07-13T06:12:54+00:00"
-        },
-        {
             "name": "twig/extensions",
             "version": "v1.5.4",
             "source": {
@@ -15448,6 +15233,76 @@
             }
         },
         {
+            "name": "drupal/swiftmailer",
+            "version": "2.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/swiftmailer.git",
+                "reference": "8.x-2.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/swiftmailer-8.x-2.0-beta1.zip",
+                "reference": "8.x-2.0-beta1",
+                "shasum": "6df4816d0d57a85cfff0860960da64c5ff77680f"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/mailsystem": "^4.1.0",
+                "egulias/email-validator": "^2.0",
+                "html2text/html2text": "^4.0.1",
+                "php": ">=7.0.0",
+                "swiftmailer/swiftmailer": "^6.1.3",
+                "tijsverkoyen/css-to-inline-styles": "^2.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.0-beta1",
+                    "datestamp": "1591886969",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "AdamPS",
+                    "homepage": "https://www.drupal.org/user/2650563"
+                },
+                {
+                    "name": "Anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
+                    "name": "B-Prod",
+                    "homepage": "https://www.drupal.org/user/407852"
+                },
+                {
+                    "name": "geek-merlin",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "sbrattla",
+                    "homepage": "https://www.drupal.org/user/53422"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                }
+            ],
+            "description": "Swiftmailer",
+            "homepage": "https://www.drupal.org/project/swiftmailer",
+            "support": {
+                "source": "https://git.drupalcode.org/project/swiftmailer"
+            }
+        },
+        {
             "name": "drupal/textfield_counter",
             "version": "1.11.0",
             "source": {
@@ -15589,6 +15444,43 @@
                 "scraper"
             ],
             "time": "2018-06-29T15:13:57+00:00"
+        },
+        {
+            "name": "html2text/html2text",
+            "version": "4.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mtibben/html2text.git",
+                "reference": "61ad68e934066a6f8df29a3d23a6460536d0855c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mtibben/html2text/zipball/61ad68e934066a6f8df29a3d23a6460536d0855c",
+                "reference": "61ad68e934066a6f8df29a3d23a6460536d0855c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance",
+                "symfony/polyfill-mbstring": "If you can't install ext-mbstring"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Html2Text\\": [
+                        "src/",
+                        "test/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Converts HTML to formatted plain text",
+            "time": "2020-04-16T23:44:31+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
@@ -17237,6 +17129,68 @@
             "time": "2020-02-14T15:25:33+00:00"
         },
         {
+            "name": "swiftmailer/swiftmailer",
+            "version": "v6.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
+                "reference": "149cfdf118b169f7840bbe3ef0d4bc795d1780c9",
+                "shasum": ""
+            },
+            "require": {
+                "egulias/email-validator": "~2.0",
+                "php": ">=7.0.0",
+                "symfony/polyfill-iconv": "^1.0",
+                "symfony/polyfill-intl-idn": "^1.10",
+                "symfony/polyfill-mbstring": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.1",
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
+            },
+            "suggest": {
+                "ext-intl": "Needed to support internationalized email addresses",
+                "true/punycode": "Needed to support internationalized email addresses, if ext-intl is not installed"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/swift_required.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Corbyn"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Swiftmailer, free feature-rich PHP mailer",
+            "homepage": "https://swiftmailer.symfony.com",
+            "keywords": [
+                "email",
+                "mail",
+                "mailer"
+            ],
+            "time": "2019-11-12T09:31:26+00:00"
+        },
+        {
             "name": "symfony/browser-kit",
             "version": "v3.4.39",
             "source": {
@@ -17459,13 +17413,61 @@
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
             "time": "2019-06-13T22:48:21+00:00"
+        },
+        {
+            "name": "tijsverkoyen/css-to-inline-styles",
+            "version": "2.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
+                "reference": "b43b05cf43c1b6d849478965062b6ef73e223bb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/b43b05cf43c1b6d849478965062b6ef73e223bb5",
+                "reference": "b43b05cf43c1b6d849478965062b6ef73e223bb5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "^5.5 || ^7.0 || ^8.0",
+                "symfony/css-selector": "^2.7 || ^3.0 || ^4.0 || ^5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0 || ^7.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TijsVerkoyen\\CssToInlineStyles\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Tijs Verkoyen",
+                    "email": "css_to_inline_styles@verkoyen.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
+            "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
+            "time": "2020-07-13T06:12:54+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
-        "drupal/swiftmailer": 10,
         "os2web/os2web": 20,
         "os2web/os2web_borgerdk": 20,
         "os2web/os2web_hearings": 20,
@@ -17481,6 +17483,5 @@
     "platform": {
         "php": ">=7.0.8"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
