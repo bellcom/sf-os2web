@@ -8994,12 +8994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "a6a61adf75e011555156fb5449813e44bdac6b12"
+                "reference": "485fb278fba5cc9ad3591f3614d5c7b2f013962e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/a6a61adf75e011555156fb5449813e44bdac6b12",
-                "reference": "a6a61adf75e011555156fb5449813e44bdac6b12",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/485fb278fba5cc9ad3591f3614d5c7b2f013962e",
+                "reference": "485fb278fba5cc9ad3591f3614d5c7b2f013962e",
                 "shasum": ""
             },
             "require": {
@@ -9011,7 +9011,7 @@
                 "EUPL-1.2"
             ],
             "description": "Adds Hearing related content types and Hearings search view",
-            "time": "2020-08-28T09:26:49+00:00"
+            "time": "2020-08-31T12:23:24+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
@@ -9171,12 +9171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "a8239a5641b3c23eba3a4aaafbf7f21ca3f3b452"
+                "reference": "b1c551e5e1d9535ff58fbda017048dd932074931"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/a8239a5641b3c23eba3a4aaafbf7f21ca3f3b452",
-                "reference": "a8239a5641b3c23eba3a4aaafbf7f21ca3f3b452",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/b1c551e5e1d9535ff58fbda017048dd932074931",
+                "reference": "b1c551e5e1d9535ff58fbda017048dd932074931",
                 "shasum": ""
             },
             "require": {
@@ -9195,7 +9195,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-08-28T08:19:28+00:00"
+            "time": "2020-08-31T12:30:42+00:00"
         },
         {
             "name": "os2web/os2web_search",
