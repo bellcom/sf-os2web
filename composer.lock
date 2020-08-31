@@ -9171,12 +9171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "b1c551e5e1d9535ff58fbda017048dd932074931"
+                "reference": "f782811af0ec8f3d52bd9f0b252c6a1d53c49575"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/b1c551e5e1d9535ff58fbda017048dd932074931",
-                "reference": "b1c551e5e1d9535ff58fbda017048dd932074931",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/f782811af0ec8f3d52bd9f0b252c6a1d53c49575",
+                "reference": "f782811af0ec8f3d52bd9f0b252c6a1d53c49575",
                 "shasum": ""
             },
             "require": {
