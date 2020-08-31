@@ -9386,12 +9386,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "c62feeb5fccbca70e1b7c59893267f599dcdff72"
+                "reference": "147d55928a7f494a117d6339c4acdf2a6a93f208"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/c62feeb5fccbca70e1b7c59893267f599dcdff72",
-                "reference": "c62feeb5fccbca70e1b7c59893267f599dcdff72",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/147d55928a7f494a117d6339c4acdf2a6a93f208",
+                "reference": "147d55928a7f494a117d6339c4acdf2a6a93f208",
                 "shasum": ""
             },
             "require": {
