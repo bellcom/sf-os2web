@@ -8994,12 +8994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "c0dcdf4353c6152fd186bdb33f5fd88519b3caf6"
+                "reference": "14431bd13cafe87bbac528adc0115c3bd00cecaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/c0dcdf4353c6152fd186bdb33f5fd88519b3caf6",
-                "reference": "c0dcdf4353c6152fd186bdb33f5fd88519b3caf6",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/14431bd13cafe87bbac528adc0115c3bd00cecaf",
+                "reference": "14431bd13cafe87bbac528adc0115c3bd00cecaf",
                 "shasum": ""
             },
             "require": {
@@ -9011,7 +9011,7 @@
                 "EUPL-1.2"
             ],
             "description": "Adds Hearing related content types and Hearings search view",
-            "time": "2020-09-01T07:18:56+00:00"
+            "time": "2020-09-01T09:51:58+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
