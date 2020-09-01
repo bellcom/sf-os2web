@@ -3,7 +3,7 @@
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .paragraph--type--os2web-twi-paragraph
+// | - .paragraph--type--os2web-cnt-paragraph
 // |
 
 // --------------------------------------------------
@@ -14,15 +14,15 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin paragraph--type--os2web-twi-paragraph-mixin() {}
+@mixin paragraph--type--os2web-cnt-paragraph-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-twi-paragraph {
+.paragraph--type--os2web-cnt-paragraph {
 
-  .field--name-field-os2web-twi-heading {
+  .field--name-field-os2web-cnt-heading {
 
     h1, h2, h3, h4, h5, h6 {
       margin: 0;
@@ -30,23 +30,50 @@
       color: $color-text;
     }
   }
-  .field--name-field-os2web-twi-subheading {}
-  .field--name-field-os2web-twi-body {}
-  .field--name-field-os2web-twi-link {
-    margin-left: -10px;
+  .field--name-field-os2web-cnt-subheading {}
+  .field--name-field-os2web-cnt-body {}
+  .field--name-field-os2web-cnt-link {}
+
+  .field--name-field-os2web-cnt-image {
+
+    img {
+      max-width: 200px;
+    }
   }
-  .field--name-field-os2web-twi-image {}
 
   .field {
 
-    + .field--name-field-os2web-twi-heading,
-    + .field--name-field-os2web-twi-subheading,
-    + .field--name-field-os2web-twi-body {
+    + .field--name-field-os2web-cnt-heading,
+    + .field--name-field-os2web-cnt-subheading,
+    + .field--name-field-os2web-cnt-body {
       margin-top: 10px;
     }
 
-    + .field--name-field-os2web-twi-link {
+    + .field--name-field-os2web-cnt-link {
       margin-top: 20px;
+    }
+  }
+}
+
+.paragraph--type--os2web-cnt-paragraph {
+
+  &.paragraph--image-position--left {
+
+    .field--name-field-os2web-cnt-image {
+      float: left;
+
+      margin-right: $grid-gutter-width / 2;
+      margin-bottom: $grid-gutter-width / 2;
+    }
+  }
+
+  &.paragraph--image-position--right {
+
+    .field--name-field-os2web-cnt-image {
+      float: right;
+
+      margin-left: $grid-gutter-width / 2;
+      margin-bottom: $grid-gutter-width / 2;
     }
   }
 }
@@ -68,7 +95,7 @@
 // Tablet - and up
 @include media-breakpoint-up(sm) {
 
-  .paragraph--type--os2web-twi-paragraph {
+  .paragraph--type--os2web-cnt-paragraph {
 
     .row {
       align-items: center;
