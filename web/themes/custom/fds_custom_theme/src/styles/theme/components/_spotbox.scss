@@ -202,6 +202,8 @@ a.spotbox {
   .spotbox__image {
     display: flex;
 
+    height: 150px;
+
     flex-grow: 1;
     align-items: center;
 
@@ -217,6 +219,13 @@ a.spotbox {
   }
 
   .spotbox__content {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+
+    height: 150px;
+
     padding-right: 3rem;
   }
 
@@ -322,6 +331,7 @@ a.spotbox {
 .paragraph--grid_1 {
 
   .spotbox {
+    height: 200px;
 
     [class*="col-"] {
       flex-basis: 100%;
@@ -333,11 +343,13 @@ a.spotbox {
       padding-left: $grid-gutter-width;
     }
     .spotbox__image {
-      padding-top: 5rem;
+      padding-top: 2rem;
       padding-right: $grid-gutter-width;
       justify-content: left;
     }
     .spotbox__content {
+      height: 90px;
+
       padding-top: 1rem;
       padding-bottom: 4rem;
       padding-right: 4.5rem;
@@ -352,10 +364,10 @@ a.spotbox {
 .paragraph--grid_2 {
 
   .spotbox {
-    min-height: 170px;
+    height: 200px;
 
     .spotbox__image {
-      min-height: 170px;
+      height: 200px;
     }
   }
 
@@ -364,7 +376,7 @@ a.spotbox {
     .spotbox__image {
 
       img {
-        height: 170px;
+        height: 200px;
       }
     }
   }
@@ -396,6 +408,8 @@ a.spotbox {
         .spotbox {
 
           .spotbox__content {
+            height: 180px;
+
             padding: 1.5rem 3rem 5rem 3rem;
           }
 
@@ -410,10 +424,10 @@ a.spotbox {
         .spotbox--image {
 
           .spotbox__image {
-            min-height: 240px;
+            height: 285px;
 
             img {
-              height: 240px;
+              height: 285px;
             }
           }
         }
@@ -432,6 +446,14 @@ a.spotbox {
                 font-size: $h5-font-size;
               }
             }
+          }
+
+          .spotbox__content {
+            height: 75px;
+          }
+
+          .field--name-field-os2web-spotbox-link-text {
+            display: none;
           }
 
           &:after {

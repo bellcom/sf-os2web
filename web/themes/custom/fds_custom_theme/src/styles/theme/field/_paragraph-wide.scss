@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Box
+// | Paragraph wide
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .box
+// | - .field--name-field-os2web-page-paragraph-wide
 // |
 
 // --------------------------------------------------
@@ -14,49 +14,25 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin box-mixin() {}
+@mixin field--name-field-os2web-page-paragraph-wide-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.box {
-  margin-bottom: $grid-gutter-width / 2;
+.field--name-field-os2web-page-paragraph-wide {
 
-  background-color: $color-orange-005;
+  > .field__item {
 
-  table {
-    width: 100%;
-  }
-
-  a {
-    position: initial;
-
-    padding-right: initial;
-
-    &:after {
-      display: none;
+    > .paragraph {
+      padding: 50px 0;
     }
   }
-
-  // Issue fix: on the right sidebar we have a box inside a box.
-  .box {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
-}
-.box__heading {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.box__body {
-  padding: 30px;
 }
 
-// Variants.
-.box--primary {
-  background-color: $color-green-002;
-}
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
 
 // --------------------------------------------------
 // Responsive
@@ -75,7 +51,18 @@
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+
+  .field--name-field-os2web-page-paragraph-wide {
+
+    > .field__item {
+
+      > .paragraph {
+        padding: 70px 0;
+      }
+    }
+  }
+}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}

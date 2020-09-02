@@ -139,12 +139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "e713868d4970596e2f865830c1f971b5d82cde41"
+                "reference": "ef819aa289b2a44783363579df70d31b8f558595"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/e713868d4970596e2f865830c1f971b5d82cde41",
-                "reference": "e713868d4970596e2f865830c1f971b5d82cde41",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/ef819aa289b2a44783363579df70d31b8f558595",
+                "reference": "ef819aa289b2a44783363579df70d31b8f558595",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -156,7 +156,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-08-28T11:49:25+00:00"
+            "time": "2020-09-01T13:28:18+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -9005,12 +9005,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "cb71d43d857e56343a6bd802f7ab146c10ddb846"
+                "reference": "14431bd13cafe87bbac528adc0115c3bd00cecaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/cb71d43d857e56343a6bd802f7ab146c10ddb846",
-                "reference": "cb71d43d857e56343a6bd802f7ab146c10ddb846",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/14431bd13cafe87bbac528adc0115c3bd00cecaf",
+                "reference": "14431bd13cafe87bbac528adc0115c3bd00cecaf",
                 "shasum": ""
             },
             "require": {
@@ -9022,7 +9022,7 @@
                 "EUPL-1.2"
             ],
             "description": "Adds Hearing related content types and Hearings search view",
-            "time": "2020-08-31T13:47:09+00:00"
+            "time": "2020-09-01T09:51:58+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
@@ -9108,12 +9108,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "8102698efe143aba6119dc57eb5401149970c90c"
+                "reference": "90c8207440d9a2168e54b65a0f4b7741af7c752a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/8102698efe143aba6119dc57eb5401149970c90c",
-                "reference": "8102698efe143aba6119dc57eb5401149970c90c",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/90c8207440d9a2168e54b65a0f4b7741af7c752a",
+                "reference": "90c8207440d9a2168e54b65a0f4b7741af7c752a",
                 "shasum": ""
             },
             "require": {
@@ -9126,7 +9126,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-07-20T12:50:39+00:00"
+            "time": "2020-09-02T12:01:50+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",

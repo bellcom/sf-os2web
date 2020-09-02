@@ -9,11 +9,10 @@
 %}
 {% set timestamp = node.field_os2web_m_start_date.value|date('U') %}
 <div {{ attributes.addClass(classes) }}>
-  <h1>{{ label }}</h1>
+  {{ content.field_os2web_hearings_heading }}
+  {{ content.field_os2web_hearings_intro }}
   {{ content.body }}
-
   {{ content.field_os2web_hearings_attac_doc }}
-
   {{ content.field_os2web_hearings_reply }}
 
   <h2>{{ 'Skriv dit høringssvar' | trans }}</h2>
@@ -43,4 +42,6 @@
       {{ 'Tilbage' | trans }}
     </a>
   </div>
+
+  <br><br>
 </div>

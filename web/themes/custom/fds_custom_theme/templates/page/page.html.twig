@@ -169,50 +169,52 @@
 
 {{ page.featured_top }}
 
-<div class="container page-container" id="font-resize-wrapper">
-  {{ page.highlighted }}
+<div class="page-container" id="font-resize-wrapper">
+  <div class="container">
+    {{ page.highlighted }}
 
-  {% if not is_front %}
-  <div class="row d-print-none">
-    <div class="col-12 col-md-3 d-none d-md-block">
-      <a href="{{ url('<front>') }}" class="return-to-home-link">
-        {{ 'Hjem' | trans }}
-      </a>
-    </div>
-    <div class="col-12 col-md-9 col--align-center">
-      <div class="flexy-row">
-        {{ page.breadcrumb }}
+    {% if not is_front %}
+      <div class="row d-print-none">
+        <div class="col-12 col-md-3 d-none d-md-block">
+          <a href="{{ url('<front>') }}" class="return-to-home-link">
+            {{ 'Hjem' | trans }}
+          </a>
+        </div>
+        <div class="col-12 col-md-9 col--align-center">
+          <div class="flexy-row">
+            {{ page.breadcrumb }}
 
-        <div class="flexy-spacer"></div>
+            <div class="flexy-spacer"></div>
 
-        {% include '@fds_custom_theme/includes/action-buttons.html.twig' %}
-      </div>
-    </div>
-  </div>
-  {% endif %}
-  <div class="row">
-    <aside class="col-12 col-md-3 order-md-3 d-print-none">
-      <div class="layout-sidebar-right">
-        <div class="box">
-          <div class="box__body">
-            {{ page.sidebar_second }}
+            {% include '@fds_custom_theme/includes/action-buttons.html.twig' %}
           </div>
         </div>
       </div>
-    </aside>
+    {% endif %}
+    <div class="row">
+      <aside class="col-12 col-md-3 order-md-3 d-print-none">
+        <div class="layout-sidebar-right">
+          <div class="box">
+            <div class="box__body">
+              {{ page.sidebar_second }}
+            </div>
+          </div>
+        </div>
+      </aside>
 
-    <aside class="col-12 col-md-3 order-md-1">
-      <div class="layout-sidebar-left">
-        {{ page.sidebar_first }}
-      </div>
-    </aside>
+      <aside class="col-12 col-md-3 order-md-1">
+        <div class="layout-sidebar-left">
+          {{ page.sidebar_first }}
+        </div>
+      </aside>
 
-    <main {{ content_attributes.addClass('col-12 col-md-6 order-md-2') }}>
-      {{ page.content }}
-    </main>
+      <main {{ content_attributes.addClass('col-12 col-md-6 order-md-2') }}>
+        {{ page.content }}
+      </main>
+    </div>
   </div>
-</div>
 
-{{ page.featured_bottom_first }}
+  {{ page.featured_bottom_first }}
+</div>
 
 {% include '@fds_custom_theme/includes/footer.html.twig' %}
