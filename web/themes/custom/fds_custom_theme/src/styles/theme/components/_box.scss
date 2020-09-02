@@ -38,6 +38,16 @@
       display: none;
     }
   }
+
+  // Issue fix: on the right sidebar we have a box inside a box.
+  .box {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+.box__heading {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .box__body {
   padding: 30px;

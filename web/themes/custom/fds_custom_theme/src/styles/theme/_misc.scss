@@ -90,6 +90,16 @@ body .page-container {
   border-radius: 30px;
 }
 
+.background-color--primary {
+  background-color: $color-green-002 !important;
+}
+.background-color--secondary {
+  background-color: $color-orange-005 !important;
+}
+.background-color--tertiary {
+  background-color: $color-blue-001 !important;
+}
+
 // --------------------------------------------------
 // Responsive
 // --------------------------------------------------
