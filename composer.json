@@ -37,6 +37,19 @@
                     "reference": "8.x-1.x"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/access_latest",
+                "version": "0.0.1",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupalcode.org/sandbox/lynn-2973708.git",
+                    "type": "git",
+                    "reference": "8.x-1.x"
+                }
+            }
         }
     ],
     "require": {
@@ -45,6 +58,7 @@
         "bellcom/fds_base_theme": "dev-stable/drupal-8.x",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
+        "drupal/access_latest": "^0.0.1",
         "drupal/coder": "^8.3",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.0",
