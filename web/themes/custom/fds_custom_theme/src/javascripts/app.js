@@ -129,3 +129,16 @@ document.addEventListener('DOMContentLoaded', function() {
     addToggleToList(list);
   }
 })();
+
+// Responsive restructuring.
+(function() {
+  var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+  var primaryImage = document.querySelector('.field--name-field-os2web-page-primaryimage');
+  var insertInto = document.querySelector('.layout-sidebar-left');
+
+  if (vw <= 768) {
+    if (primaryImage && insertInto) {
+      insertInto.insertAdjacentElement('afterbegin', primaryImage);
+    }
+  }
+})();
