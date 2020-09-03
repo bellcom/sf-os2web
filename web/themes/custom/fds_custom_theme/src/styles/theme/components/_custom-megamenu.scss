@@ -177,11 +177,38 @@
         &:before {
           display: none;
         }
+
+        &:after {
+          position: absolute;
+
+          right: 0;
+
+          font-size: 3rem;
+          font-family: "Material Icons";
+          content: "keyboard_arrow_down";
+
+          color: #fff;
+        }
+      }
+
+      &.open {
+
+        .menu-level-1 {
+          display: block;
+        }
+
+        > a {
+
+          &:after {
+            content: "keyboard_arrow_up";
+          }
+        }
       }
     }
   }
 
   .menu-level-1 {
+    display: none;
 
     > li {
       padding-left: 20px;
@@ -235,42 +262,6 @@
 
     .field--name-field-os2web-icon {
       display: none;
-    }
-  }
-
-  .menu-toggle {
-    .menu-toggle-button {
-      display: block;
-
-      background: none;
-      border: none;
-
-      position: absolute;
-      right: 0;
-      top: 0;
-
-      padding: 0.8rem 0;
-
-      &:after {
-        font-size: 3rem;
-        line-height: 3rem;
-        font-family: "Material Icons";
-
-        color: #fff;
-      }
-
-      &[aria-expanded="true"]:after {
-        content: "keyboard_arrow_up";
-      }
-      &[aria-expanded="false"]:after {
-        content: "keyboard_arrow_down";
-      }
-    }
-
-    .menu-toggle-content {
-      &[aria-hidden="true"] {
-        display: none;
-      }
     }
   }
 }
@@ -356,18 +347,6 @@
         }
       }
     }
-
-    .menu-toggle {
-      .menu-toggle-button {
-        display: none;
-      }
-
-      .menu-toggle-content {
-        &[aria-hidden="true"], &[aria-hidden="false"] {
-          display: initial;
-        }
-      }
-    }
   }
 }
 
@@ -384,7 +363,18 @@
 
       > li {
         flex-basis: 25%;
+
+        > a {
+
+          &:after {
+            display: none;
+          }
+        }
       }
+    }
+
+    .menu-level-1 {
+      display: block;
     }
   }
 }

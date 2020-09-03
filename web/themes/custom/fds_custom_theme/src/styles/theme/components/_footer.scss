@@ -23,6 +23,7 @@
 footer {
 
   .footer {
+    margin-top: 0;
     padding-top: calc(#{map-get($spacers, 905)} - 1px);
     padding-bottom: calc(#{map-get($spacers, 905)} - 1px);
 

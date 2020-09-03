@@ -118,12 +118,13 @@ form#views-exposed-form-os2web-search-os2web-search-page {
 
       z-index: 500;
 
-      padding: 23px 20px;
+      min-width: auto;
+      width: 50px;
+      height: 45px;
 
-      width: 100%;
+      padding: 0 !important;
 
       border: 0;
-      border-radius: 100%;
 
       background-color: transparent;
     }

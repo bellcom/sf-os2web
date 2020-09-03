@@ -91,36 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 })();
 
-// Mobile menu links toggle.
-(function () {
-  function handleToggle(event) {
-    event.stopPropagation();
-    event.preventDefault();
-
-    let button = this;
-    let isExpanded = button.getAttribute('aria-expanded') === 'true';
-
-    button.setAttribute('aria-expanded', !isExpanded);
-    const id = button.getAttribute('aria-controls');
-    const controls = document.getElementById(id);
-    if (!controls) {
-      throw new Error(
-        'No toggle target found with id: "' + id + '"'
-      );
-    }
-
-    controls.setAttribute('aria-hidden', isExpanded);
-  }
-
-  var buttons = document.querySelectorAll('.menu-toggle .menu-toggle-button');
-
-  for (var i = 0; i < buttons.length; i++) {
-    var button = buttons[i];
-
-    button.addEventListener('click', handleToggle);
-  }
-})();
-
 // Max height on sidenav lists.
 (function() {
   function handleToggle(event) {
