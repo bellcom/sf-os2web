@@ -100,14 +100,15 @@
     }
   }
 }
+
 body {
-  padding-top: 132px !important; // Height of .custom-header--fixed (recalculated by JS)
+  padding-top: 74px;
 
   &.toolbar-horizontal {
-    padding-top: 132px + 39px !important;
+    padding-top: 74px + 39px !important;
 
     &.toolbar-tray-open {
-      padding-top: 132px + 79px !important;
+      padding-top: 74px + 79px !important;
     }
   }
 }
@@ -449,6 +450,18 @@ body {
 
 // Desktop - and up
 @include media-breakpoint-up(md) {
+
+  body {
+    padding-top: 132px !important; // Height of .custom-header--fixed (recalculated by JS)
+
+    &.toolbar-horizontal {
+      padding-top: 132px + 39px !important;
+
+      &.toolbar-tray-open {
+        padding-top: 132px + 79px !important;
+      }
+    }
+  }
 
   .custom-header {
 
