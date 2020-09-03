@@ -31,8 +31,12 @@ footer {
     background-color: $color-footer-background;
 
     h1, h2, h3, h4, h5, h6,
-    a, a:hover, a:visited, a:focus,
+    a, a:hover, a:visited, a:focus, a:active,
     .is-active > a,
+    .is-active > a:hover,
+    .is-active > a:focus,
+    .is-active > a:visited,
+    .is-active > a:active,
     &, p {
       color: #fff;
     }
