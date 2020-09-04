@@ -9531,12 +9531,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "afac379c9bd7d2e9bb57cd6a682d5259511f4370"
+                "reference": "e53d3d728ae2677583af3add1feb4c650be994c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/afac379c9bd7d2e9bb57cd6a682d5259511f4370",
-                "reference": "afac379c9bd7d2e9bb57cd6a682d5259511f4370",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/e53d3d728ae2677583af3add1feb4c650be994c1",
+                "reference": "e53d3d728ae2677583af3add1feb4c650be994c1",
                 "shasum": ""
             },
             "require": {
