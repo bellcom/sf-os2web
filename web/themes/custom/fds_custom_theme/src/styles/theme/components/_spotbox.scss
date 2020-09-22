@@ -147,6 +147,73 @@ a.spotbox {
   }
 }
 
+.spotbox--selfservice {
+
+  .spotbox__image {
+    display: flex;
+
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    margin-right: 0 - $grid-gutter-width;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+
+    img,
+    svg {
+      height: 52px;
+    }
+  }
+
+  .spotbox__content {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 80px;
+    padding-left: 0;
+  }
+
+  [class*="col-"] {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &.spotbox--centered-icon {
+
+    &:after {
+      top: 50%;
+      right: 10px;
+      bottom: auto;
+
+      height: 3rem;
+
+      margin-top: -1.5rem;
+    }
+  }
+
+  &:after {
+    display: flex;
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    align-items: center;
+
+    font-size: 3rem;
+    font-family: "Material Icons";
+    content: "keyboard_backspace";
+    transform: rotate(180deg);
+
+    color: $color-orange-004;
+  }
+}
+
 .spotbox--icon {
 
   .spotbox__image {
