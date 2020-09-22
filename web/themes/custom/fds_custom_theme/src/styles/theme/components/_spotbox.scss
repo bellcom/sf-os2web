@@ -106,6 +106,10 @@ a.spotbox {
     }
   }
 
+  p, .body-text, .body-copy-text {
+    color: #fff;
+  }
+
   &:after {
     color: #fff;
   }
@@ -146,31 +150,27 @@ a.spotbox {
 .spotbox--icon {
 
   .spotbox__image {
-    display: flex;
-
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-    margin-right: 0 - $grid-gutter-width;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
 
     img,
     svg {
-      height: 52px;
+      height: 30px;
     }
   }
   .spotbox__content {
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
   }
 
   &.spotbox--centered-icon {
 
     &:after {
       top: 50%;
-      right: 30px;
+      right: 10px;
       bottom: auto;
 
       height: 3rem;
@@ -200,31 +200,15 @@ a.spotbox {
 .spotbox--image {
 
   .spotbox__image {
-    display: flex;
-
-    height: 150px;
-
-    flex-grow: 1;
-    align-items: center;
-
-    overflow: hidden;
 
     img {
-      display: flex;
-
-      width: auto;
-      height: 150px;
-      max-width: initial;
+      width: 100%;
     }
   }
 
   .spotbox__content {
-    display: flex;
-
-    justify-content: center;
-    flex-direction: column;
-
-    height: 150px;
+    padding-top: 10px;
+    padding-left: 20px;
 
     padding-right: 3rem;
   }
@@ -233,8 +217,8 @@ a.spotbox {
     display: flex;
     position: absolute;
 
-    right: 20px;
-    bottom: 20px;
+    right: 10px;
+    bottom: 10px;
 
     align-items: center;
 
@@ -277,10 +261,10 @@ a.spotbox {
   }
 
   .spotbox__content {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 80px;
-    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 20px;
   }
 
   &:after {
@@ -288,7 +272,7 @@ a.spotbox {
     position: absolute;
 
     top: 50%;
-    right: 30px;
+    right: 10px;
 
     height: 3rem;
     margin-top: -1.5rem;
@@ -407,6 +391,11 @@ a.spotbox {
 
         .spotbox {
 
+          > .row {
+            box-sizing: content-box;
+            max-width: 100%;
+          }
+
           .spotbox__content {
             height: 180px;
 
@@ -477,7 +466,121 @@ a.spotbox {
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .spotbox--icon {
+
+    .spotbox__image {
+      display: flex;
+
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+
+      overflow: hidden;
+      margin-right: 0 - $grid-gutter-width;
+
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+
+      img,
+      svg {
+        height: 52px;
+      }
+    }
+
+    .spotbox__content {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-right: 80px;
+      padding-left: 0;
+    }
+
+    [class*="col-"] {
+      display: flex;
+
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &.spotbox--centered-icon {
+
+      &:after {
+        right: 30px;
+      }
+    }
+  }
+
+  .spotbox--button {
+
+    .spotbox__content {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-right: 80px;
+      padding-left: 30px;
+    }
+
+    &:after {
+      right: 30px;
+    }
+  }
+
+  .spotbox--image {
+
+    [class*="col-"] {
+      display: flex;
+
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+
+  .spotbox--image {
+
+    .spotbox__image {
+      display: flex;
+
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+      height: 150px;
+
+      flex-grow: 1;
+      align-items: center;
+
+      overflow: hidden;
+
+      img {
+        display: flex;
+
+        width: auto;
+        height: 150px;
+        max-width: initial;
+      }
+    }
+
+    .spotbox__content {
+      display: flex;
+
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 0;
+
+      justify-content: center;
+      flex-direction: column;
+
+      height: 150px;
+    }
+
+    &:after {
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
