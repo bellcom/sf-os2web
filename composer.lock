@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee8fa190995b98b330d03c9542e6e1f4",
+    "content-hash": "45e5812c84839564b48ffcc6d0de0893",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6380,6 +6380,62 @@
             }
         },
         {
+            "name": "drupal/save_edit",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/save_edit.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/save_edit-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "31ae8cd740a815c8fbd94af6c818a3803dbedec3"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1582834963",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "NitinSP",
+                    "homepage": "https://www.drupal.org/user/2198938"
+                },
+                {
+                    "name": "himerus",
+                    "homepage": "https://www.drupal.org/user/159141"
+                },
+                {
+                    "name": "q__nt_n",
+                    "homepage": "https://www.drupal.org/user/3512064"
+                }
+            ],
+            "description": "Gives a 'Save & Edit' button on node pages.",
+            "homepage": "https://www.drupal.org/project/save_edit",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/save_edit",
+                "issues": "http://drupal.org/project/issues/save_edit"
+            }
+        },
+        {
             "name": "drupal/scheduled_transitions",
             "version": "1.0.0",
             "source": {
@@ -9501,7 +9557,7 @@
                 "EUPL-1.2"
             ],
             "description": "Contact entity",
-            "time": "2020-09-03T09:35:46+00:00"
+            "time": "2020-09-22T07:51:22+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -9559,12 +9615,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "b1b1f3ea284cfa03a22ef1f8f17f9043bed08c4f"
+                "reference": "56881e73e8bb403236496a96bfd94eccb72dd9f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/b1b1f3ea284cfa03a22ef1f8f17f9043bed08c4f",
-                "reference": "b1b1f3ea284cfa03a22ef1f8f17f9043bed08c4f",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/56881e73e8bb403236496a96bfd94eccb72dd9f6",
+                "reference": "56881e73e8bb403236496a96bfd94eccb72dd9f6",
                 "shasum": ""
             },
             "require": {
@@ -17870,6 +17926,5 @@
     "platform": {
         "php": ">=7.0.8"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
