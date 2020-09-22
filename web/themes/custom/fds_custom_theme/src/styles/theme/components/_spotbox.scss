@@ -157,20 +157,20 @@ a.spotbox {
 
     img,
     svg {
-      height: 52px;
+      height: 30px;
     }
   }
   .spotbox__content {
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
   }
 
   &.spotbox--centered-icon {
 
     &:after {
       top: 50%;
-      right: 30px;
+      right: 10px;
       bottom: auto;
 
       height: 3rem;
@@ -407,6 +407,11 @@ a.spotbox {
 
         .spotbox {
 
+          > .row {
+            box-sizing: content-box;
+            max-width: 100%;
+          }
+
           .spotbox__content {
             height: 180px;
 
@@ -477,7 +482,32 @@ a.spotbox {
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .spotbox--icon {
+
+    .spotbox__image {
+
+      img,
+      svg {
+        height: 52px;
+      }
+    }
+
+    .spotbox__content {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-right: 80px;
+    }
+
+    &.spotbox--centered-icon {
+
+      &:after {
+        right: 30px;
+      }
+    }
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
