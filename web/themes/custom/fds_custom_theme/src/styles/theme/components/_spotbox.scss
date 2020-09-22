@@ -407,6 +407,11 @@ a.spotbox {
 
         .spotbox {
 
+          > .row {
+            box-sizing: content-box;
+            max-width: 100%;
+          }
+
           .spotbox__content {
             height: 180px;
 
