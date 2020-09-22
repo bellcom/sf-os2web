@@ -50,6 +50,13 @@
     min-height: 32px;
   }
 
+  .messages {
+    position: absolute;
+
+    z-index: 50;
+    bottom: 100%;
+  }
+
   table {
 
     thead {
