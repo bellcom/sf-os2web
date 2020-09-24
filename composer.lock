@@ -9748,16 +9748,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "56881e73e8bb403236496a96bfd94eccb72dd9f6"
+                "reference": "0209babee039bb6d2e0cdff123780a8d2e0057f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/56881e73e8bb403236496a96bfd94eccb72dd9f6",
-                "reference": "56881e73e8bb403236496a96bfd94eccb72dd9f6",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/0209babee039bb6d2e0cdff123780a8d2e0057f5",
+                "reference": "0209babee039bb6d2e0cdff123780a8d2e0057f5",
                 "shasum": ""
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "*",
+                "drupal/metatag": "*"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -9765,7 +9766,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-09-22T11:41:25+00:00"
+            "time": "2020-09-24T11:03:24+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -9900,12 +9901,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "baf6e8a5a9d17dd8d374838957fb03b96be963a7"
+                "reference": "d4343181a719543f769c6c65927d13ad52bcaf16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/baf6e8a5a9d17dd8d374838957fb03b96be963a7",
-                "reference": "baf6e8a5a9d17dd8d374838957fb03b96be963a7",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/d4343181a719543f769c6c65927d13ad52bcaf16",
+                "reference": "d4343181a719543f769c6c65927d13ad52bcaf16",
                 "shasum": ""
             },
             "require": {
@@ -9924,7 +9925,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-09-23T09:09:51+00:00"
+            "time": "2020-09-24T11:18:40+00:00"
         },
         {
             "name": "os2web/os2web_search",
