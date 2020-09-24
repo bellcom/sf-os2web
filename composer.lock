@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45e5812c84839564b48ffcc6d0de0893",
+    "content-hash": "ee8fa190995b98b330d03c9542e6e1f4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -131,7 +131,7 @@
                 "reference": "8.x-1.x"
             },
             "type": "drupal-module",
-            "time": "2020-09-04T07:58:34+00:00"
+            "time": "2020-09-02T16:17:01+00:00"
         },
         {
             "name": "bellcom/fds_base_theme",
@@ -6380,62 +6380,6 @@
             }
         },
         {
-            "name": "drupal/save_edit",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/save_edit.git",
-                "reference": "8.x-1.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/save_edit-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "31ae8cd740a815c8fbd94af6c818a3803dbedec3"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1582834963",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "NitinSP",
-                    "homepage": "https://www.drupal.org/user/2198938"
-                },
-                {
-                    "name": "himerus",
-                    "homepage": "https://www.drupal.org/user/159141"
-                },
-                {
-                    "name": "q__nt_n",
-                    "homepage": "https://www.drupal.org/user/3512064"
-                }
-            ],
-            "description": "Gives a 'Save & Edit' button on node pages.",
-            "homepage": "https://www.drupal.org/project/save_edit",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/save_edit",
-                "issues": "http://drupal.org/project/issues/save_edit"
-            }
-        },
-        {
             "name": "drupal/scheduled_transitions",
             "version": "1.0.0",
             "source": {
@@ -7160,6 +7104,60 @@
             }
         },
         {
+            "name": "drupal/svg_image",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/svg_image.git",
+                "reference": "8.x-1.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_image-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "3b60ab47802bfaa046da54d7179e47889b41a845"
+            },
+            "require": {
+                "drupal/core": "*",
+                "enshrined/svg-sanitize": ">=0.9 <1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.13",
+                    "datestamp": "1585379082",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Yaroslav Lushnikov",
+                    "homepage": "https://www.drupal.org/user/2870933",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/2887125/committers"
+                }
+            ],
+            "description": "Overrides the standard image formatter and widget to support SVG files.",
+            "homepage": "http://drupal.org/project/svg_image",
+            "support": {
+                "source": "http://cgit.drupalcode.org/svg_image",
+                "issues": "http://drupal.org/project/svg_image"
+            }
+        },
+        {
             "name": "drupal/swiftmailer",
             "version": "2.0.0-beta1",
             "source": {
@@ -7752,6 +7750,47 @@
                 "validator"
             ],
             "time": "2020-06-16T20:11:17+00:00"
+        },
+        {
+            "name": "enshrined/svg-sanitize",
+            "version": "0.13.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+                "reference": "bc66593f255b7d2613d8f22041180036979b6403"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/bc66593f255b7d2613d8f22041180036979b6403",
+                "reference": "bc66593f255b7d2613d8f22041180036979b6403",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "^0.1.2",
+                "phpunit/phpunit": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "enshrined\\svgSanitize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daryll Doyle",
+                    "email": "daryll@enshrined.co.uk"
+                }
+            ],
+            "description": "An SVG sanitizer for PHP",
+            "time": "2020-01-20T01:34:17+00:00"
         },
         {
             "name": "ffwagency/borgerdk-php",
@@ -9632,7 +9671,7 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2020-08-14T09:27:09+00:00"
+            "time": "2020-09-22T11:41:25+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -9693,12 +9732,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "68a449f928fedb947a619d626209ffd480bc11e9"
+                "reference": "a43f54a3e54870dac04e09ea514b9a2ee67d7a6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/68a449f928fedb947a619d626209ffd480bc11e9",
-                "reference": "68a449f928fedb947a619d626209ffd480bc11e9",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/a43f54a3e54870dac04e09ea514b9a2ee67d7a6d",
+                "reference": "a43f54a3e54870dac04e09ea514b9a2ee67d7a6d",
                 "shasum": ""
             },
             "require": {
@@ -9711,7 +9750,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-09-07T12:13:14+00:00"
+            "time": "2020-09-24T08:30:50+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
@@ -9767,12 +9806,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "51e376752bc1ae9cf991129a3a8189adc8bc4168"
+                "reference": "baf6e8a5a9d17dd8d374838957fb03b96be963a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/51e376752bc1ae9cf991129a3a8189adc8bc4168",
-                "reference": "51e376752bc1ae9cf991129a3a8189adc8bc4168",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/baf6e8a5a9d17dd8d374838957fb03b96be963a7",
+                "reference": "baf6e8a5a9d17dd8d374838957fb03b96be963a7",
                 "shasum": ""
             },
             "require": {
@@ -9791,7 +9830,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-09-15T12:18:44+00:00"
+            "time": "2020-09-23T09:09:51+00:00"
         },
         {
             "name": "os2web/os2web_search",
@@ -9878,12 +9917,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "147d55928a7f494a117d6339c4acdf2a6a93f208"
+                "reference": "16c4c92c1815a512150e1f383717fd75b1bcea17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/147d55928a7f494a117d6339c4acdf2a6a93f208",
-                "reference": "147d55928a7f494a117d6339c4acdf2a6a93f208",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/16c4c92c1815a512150e1f383717fd75b1bcea17",
+                "reference": "16c4c92c1815a512150e1f383717fd75b1bcea17",
                 "shasum": ""
             },
             "require": {
@@ -9891,7 +9930,9 @@
                 "drupal/crop": "*",
                 "drupal/image_widget_crop": "*",
                 "drupal/inline_entity_form": "^1.0@RC",
-                "drupal/paragraphs": "*"
+                "drupal/menu_item_extras": "^2.11",
+                "drupal/paragraphs": "*",
+                "drupal/svg_image": "^1.13"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -9899,7 +9940,7 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
-            "time": "2020-08-31T13:45:55+00:00"
+            "time": "2020-09-23T10:09:49+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -15886,31 +15927,27 @@
             "time": "2019-11-05T11:06:10+00:00"
         },
         {
-            "name": "drupal/svg_image",
-            "version": "1.13.0",
+            "name": "drupal/save_edit",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/svg_image.git",
-                "reference": "8.x-1.13"
+                "url": "https://git.drupalcode.org/project/save_edit.git",
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/svg_image-8.x-1.13.zip",
-                "reference": "8.x-1.13",
-                "shasum": "3b60ab47802bfaa046da54d7179e47889b41a845"
+                "url": "https://ftp.drupal.org/files/projects/save_edit-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "31ae8cd740a815c8fbd94af6c818a3803dbedec3"
             },
             "require": {
-                "drupal/core": "*",
-                "enshrined/svg-sanitize": ">=0.9 <1.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.13",
-                    "datestamp": "1585379082",
+                    "version": "8.x-1.3",
+                    "datestamp": "1582834963",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15923,62 +15960,27 @@
             ],
             "authors": [
                 {
-                    "name": "Yaroslav Lushnikov",
-                    "homepage": "https://www.drupal.org/user/2870933",
-                    "role": "Maintainer"
+                    "name": "NitinSP",
+                    "homepage": "https://www.drupal.org/user/2198938"
                 },
                 {
-                    "name": "See contributors",
-                    "homepage": "https://www.drupal.org/node/2887125/committers"
-                }
-            ],
-            "description": "Overrides the standard image formatter and widget to support SVG files.",
-            "homepage": "http://drupal.org/project/svg_image",
-            "support": {
-                "source": "http://cgit.drupalcode.org/svg_image",
-                "issues": "http://drupal.org/project/svg_image"
-            }
-        },
-        {
-            "name": "enshrined/svg-sanitize",
-            "version": "0.13.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "bc66593f255b7d2613d8f22041180036979b6403"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/bc66593f255b7d2613d8f22041180036979b6403",
-                "reference": "bc66593f255b7d2613d8f22041180036979b6403",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "ext-libxml": "*"
-            },
-            "require-dev": {
-                "codeclimate/php-test-reporter": "^0.1.2",
-                "phpunit/phpunit": "^6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "enshrined\\svgSanitize\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
+                    "name": "himerus",
+                    "homepage": "https://www.drupal.org/user/159141"
+                },
                 {
-                    "name": "Daryll Doyle",
-                    "email": "daryll@enshrined.co.uk"
+                    "name": "q__nt_n",
+                    "homepage": "https://www.drupal.org/user/3512064"
                 }
             ],
-            "description": "An SVG sanitizer for PHP",
-            "time": "2020-01-20T01:34:17+00:00"
+            "description": "Gives a 'Save & Edit' button on node pages.",
+            "homepage": "https://www.drupal.org/project/save_edit",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/save_edit",
+                "issues": "http://drupal.org/project/issues/save_edit"
+            }
         },
         {
             "name": "fabpot/goutte",
