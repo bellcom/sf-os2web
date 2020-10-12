@@ -9801,12 +9801,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "b9f05123a0a9b59ab840e9011c21bbf8498923b8"
+                "reference": "0a364bae32f679cc81bde3d8481adf46d2563ded"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/b9f05123a0a9b59ab840e9011c21bbf8498923b8",
-                "reference": "b9f05123a0a9b59ab840e9011c21bbf8498923b8",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/0a364bae32f679cc81bde3d8481adf46d2563ded",
+                "reference": "0a364bae32f679cc81bde3d8481adf46d2563ded",
                 "shasum": ""
             },
             "require": {
@@ -9819,7 +9819,7 @@
                 "EUPL-1.2"
             ],
             "description": "Logs node access for selected content type access",
-            "time": "2020-09-08T08:43:05+00:00"
+            "time": "2020-09-29T12:47:17+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
@@ -9827,12 +9827,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "c7a557e6fe991ae66056a5b4dd6c0b69f0651f3c"
+                "reference": "ba8014a584baed0c32e9d77eb056381f73452518"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/c7a557e6fe991ae66056a5b4dd6c0b69f0651f3c",
-                "reference": "c7a557e6fe991ae66056a5b4dd6c0b69f0651f3c",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/ba8014a584baed0c32e9d77eb056381f73452518",
+                "reference": "ba8014a584baed0c32e9d77eb056381f73452518",
                 "shasum": ""
             },
             "require": {
@@ -9845,7 +9845,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-09-24T09:19:44+00:00"
+            "time": "2020-10-05T09:43:05+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
@@ -9853,12 +9853,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_sbsys.git",
-                "reference": "d2406180dceebaee7762283b43f99dd01c2f6363"
+                "reference": "c9cbe3b89747d45909346abfc07e47b0af7ba6c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_sbsys/zipball/d2406180dceebaee7762283b43f99dd01c2f6363",
-                "reference": "d2406180dceebaee7762283b43f99dd01c2f6363",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_sbsys/zipball/c9cbe3b89747d45909346abfc07e47b0af7ba6c9",
+                "reference": "c9cbe3b89747d45909346abfc07e47b0af7ba6c9",
                 "shasum": ""
             },
             "require": {
@@ -9871,7 +9871,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS ESDH system",
-            "time": "2020-04-23T13:39:43+00:00"
+            "time": "2020-10-05T09:45:14+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
@@ -9901,12 +9901,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "d4343181a719543f769c6c65927d13ad52bcaf16"
+                "reference": "60664142cdbbaec83c14927e1f05eb1b7b3345be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/d4343181a719543f769c6c65927d13ad52bcaf16",
-                "reference": "d4343181a719543f769c6c65927d13ad52bcaf16",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/60664142cdbbaec83c14927e1f05eb1b7b3345be",
+                "reference": "60664142cdbbaec83c14927e1f05eb1b7b3345be",
                 "shasum": ""
             },
             "require": {
@@ -9925,7 +9925,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-09-24T11:18:40+00:00"
+            "time": "2020-10-05T13:40:51+00:00"
         },
         {
             "name": "os2web/os2web_search",
@@ -15395,6 +15395,7 @@
                 "i18n",
                 "text"
             ],
+            "abandoned": true,
             "time": "2018-12-05T18:34:18+00:00"
         },
         {
