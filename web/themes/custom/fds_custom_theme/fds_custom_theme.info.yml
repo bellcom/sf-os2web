@@ -23,6 +23,7 @@ regions:
   sidebar_second: 'Sidebar second'
   featured_bottom_first: 'Featured bottom first'
   footer_first: 'Footer first'
+  embedded_code: 'Embedded code'
 
 libraries:
   - 'fds_custom_theme/fonts'
