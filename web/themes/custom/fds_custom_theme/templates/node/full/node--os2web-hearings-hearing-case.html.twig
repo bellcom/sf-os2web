@@ -15,6 +15,7 @@
   {{ content.field_os2web_hearings_attac_doc }}
   {{ content.field_os2web_hearings_reply }}
 
+{% if not content['#is_decision'] %}
   <h2>{{ 'Skriv dit høringssvar' | trans }}</h2>
   <div class="box">
     <div class="box__body">
@@ -33,7 +34,7 @@
       </div>
     </div>
   </div>
-
+{% endif %}
   <br />
 
   {# Link back to result overview. Hardcoded! #}
