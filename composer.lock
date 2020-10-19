@@ -9723,12 +9723,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "20458eaa88fc394beb3f4dbb51ff30b186af331a"
+                "reference": "6660fc75fd485425d5cc6813740c5d0e20ce456f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/20458eaa88fc394beb3f4dbb51ff30b186af331a",
-                "reference": "20458eaa88fc394beb3f4dbb51ff30b186af331a",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/6660fc75fd485425d5cc6813740c5d0e20ce456f",
+                "reference": "6660fc75fd485425d5cc6813740c5d0e20ce456f",
                 "shasum": ""
             },
             "require": {
@@ -9740,7 +9740,7 @@
                 "EUPL-1.2"
             ],
             "description": "Adds Hearing related content types and Hearings search view",
-            "time": "2020-09-15T09:39:07+00:00"
+            "time": "2020-10-13T20:22:13+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
@@ -9827,12 +9827,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "ba8014a584baed0c32e9d77eb056381f73452518"
+                "reference": "911d1251a589b6b974b94c596591f0ce04c5b82c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/ba8014a584baed0c32e9d77eb056381f73452518",
-                "reference": "ba8014a584baed0c32e9d77eb056381f73452518",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/911d1251a589b6b974b94c596591f0ce04c5b82c",
+                "reference": "911d1251a589b6b974b94c596591f0ce04c5b82c",
                 "shasum": ""
             },
             "require": {
@@ -9845,7 +9845,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-10-05T09:43:05+00:00"
+            "time": "2020-10-12T13:33:34+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
@@ -9853,12 +9853,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_sbsys.git",
-                "reference": "c9cbe3b89747d45909346abfc07e47b0af7ba6c9"
+                "reference": "9509de0f085590cb061077554dcbdf896ec5bb10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_sbsys/zipball/c9cbe3b89747d45909346abfc07e47b0af7ba6c9",
-                "reference": "c9cbe3b89747d45909346abfc07e47b0af7ba6c9",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_sbsys/zipball/9509de0f085590cb061077554dcbdf896ec5bb10",
+                "reference": "9509de0f085590cb061077554dcbdf896ec5bb10",
                 "shasum": ""
             },
             "require": {
@@ -9871,7 +9871,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS ESDH system",
-            "time": "2020-10-05T09:45:14+00:00"
+            "time": "2020-10-12T10:00:53+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
