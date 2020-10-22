@@ -7963,6 +7963,7 @@
                 }
             ],
             "description": "JSONPath implementation for parsing, searching and flattening arrays",
+            "abandoned": "softcreatr/jsonpath",
             "time": "2019-07-15T17:23:22+00:00"
         },
         {
@@ -9827,12 +9828,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "911d1251a589b6b974b94c596591f0ce04c5b82c"
+                "reference": "3b48ad18bb6bcc534a93c61a6b3c20dbd9f21c6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/911d1251a589b6b974b94c596591f0ce04c5b82c",
-                "reference": "911d1251a589b6b974b94c596591f0ce04c5b82c",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/3b48ad18bb6bcc534a93c61a6b3c20dbd9f21c6e",
+                "reference": "3b48ad18bb6bcc534a93c61a6b3c20dbd9f21c6e",
                 "shasum": ""
             },
             "require": {
@@ -9845,7 +9846,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-10-12T13:33:34+00:00"
+            "time": "2020-10-22T13:51:26+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
