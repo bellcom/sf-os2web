@@ -7,15 +7,21 @@
   view_mode ? view_mode|clean_class,
 ]
 %}
+{% if node.field_os2web_m_start_date.value %}
 {% set timestamp = node.field_os2web_m_start_date.value|date('U') %}
+{% endif %}
 
 <a href="{{ url }}" {{ attributes.addClass(classes) }}>
   <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date">
     <span class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date__month">
+    {% if timestamp %}
       {{ timestamp | date('M') }}
+    {% endif %}
     </span>
     <span class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date__date">
+    {% if timestamp %}
       {{ timestamp | date('d') }}
+    {% endif %}
     </span>
   </div>
 
@@ -25,7 +31,9 @@
         {{ content.field_os2web_m_type }}
       </div>
       <div class="col col-sm-7 col--align-center d-none d-sm-flex">
-        {{ timestamp | format_date('long') }}
+        {% if timestamp %}
+          {{ timestamp | format_date('long') }}
+        {% endif %}
         {{ content.field_os2web_m_committee }}
       </div>
     </div>
