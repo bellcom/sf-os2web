@@ -139,12 +139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "87b24b2bc387005410d34a7cae3bad1241000b6e"
+                "reference": "fd578539a16678a009da708aae3db6f594a6449b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/87b24b2bc387005410d34a7cae3bad1241000b6e",
-                "reference": "87b24b2bc387005410d34a7cae3bad1241000b6e",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/fd578539a16678a009da708aae3db6f594a6449b",
+                "reference": "fd578539a16678a009da708aae3db6f594a6449b",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -156,7 +156,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-09-14T07:50:05+00:00"
+            "time": "2020-11-13T12:22:20+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -9783,12 +9783,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "15b9e36026cc66a7ab2a36af4ea3c03edcafb353"
+                "reference": "6bdfda15d9b41bb8f710b37f8ef1b452b358a022"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/15b9e36026cc66a7ab2a36af4ea3c03edcafb353",
-                "reference": "15b9e36026cc66a7ab2a36af4ea3c03edcafb353",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/6bdfda15d9b41bb8f710b37f8ef1b452b358a022",
+                "reference": "6bdfda15d9b41bb8f710b37f8ef1b452b358a022",
                 "shasum": ""
             },
             "require": {
@@ -9801,7 +9801,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-11-10T09:45:36+00:00"
+            "time": "2020-11-13T12:20:25+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
@@ -9889,12 +9889,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_search.git",
-                "reference": "9aeafcc5d18044e701392e02c03582809fbe68a5"
+                "reference": "3ee2739b40bbf7b755cc416fd566682e6996d538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/9aeafcc5d18044e701392e02c03582809fbe68a5",
-                "reference": "9aeafcc5d18044e701392e02c03582809fbe68a5",
+                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/3ee2739b40bbf7b755cc416fd566682e6996d538",
+                "reference": "3ee2739b40bbf7b755cc416fd566682e6996d538",
                 "shasum": ""
             },
             "require": {
@@ -9912,7 +9912,7 @@
                 "EUPL-1.2"
             ],
             "description": "Search functionality powered by SOLR",
-            "time": "2020-11-10T08:14:40+00:00"
+            "time": "2020-11-13T12:30:26+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
