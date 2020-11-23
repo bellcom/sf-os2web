@@ -28,19 +28,6 @@
         {
             "type": "package",
             "package": {
-                "name": "bellcom/anonymous_subscriptions",
-                "version": "8.x-1.x-dev",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://github.com/bellcom/anonymous_subscriptions.git",
-                    "type": "git",
-                    "reference": "8.x-1.x"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "drupal/access_latest",
                 "version": "0.0.1",
                 "type": "drupal-module",
@@ -54,11 +41,11 @@
     ],
     "require": {
         "php": ">=7.0.8",
-        "bellcom/anonymous_subscriptions": "8.x-1.x-dev",
         "bellcom/fds_base_theme": "dev-stable/drupal-8.x",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/access_latest": "^0.0.1",
+        "drupal/anonymous_subscriptions": "1.x-dev@dev",
         "drupal/coder": "^8.3",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.0",
