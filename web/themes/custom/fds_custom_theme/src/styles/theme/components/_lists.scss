@@ -23,7 +23,7 @@
 .accordion-content,
 .field--type-text-long {
 
-  &:not(.field--widget-text-textarea) {
+  &:not(.field--widget-text-textarea):not(.os2web-meetings-bp) {
 
     ul {
       padding-left: 0;

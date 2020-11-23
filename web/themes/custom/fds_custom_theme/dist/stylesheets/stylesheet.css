@@ -12542,21 +12542,21 @@ a.spotbox {
     right: 20px;
     bottom: 20px; } }
 
-.accordion-content:not(.field--widget-text-textarea) ul, .tabnav-panel:not(.field--widget-text-textarea) ul,
-.field--type-text-long:not(.field--widget-text-textarea) ul {
+.accordion-content:not(.field--widget-text-textarea):not(.os2web-meetings-bp) ul, .tabnav-panel:not(.field--widget-text-textarea) ul,
+.field--type-text-long:not(.field--widget-text-textarea):not(.os2web-meetings-bp) ul {
   padding-left: 0;
   list-style-type: none;
   color: #231F20;
   line-height: 2.2rem; }
-  .accordion-content:not(.field--widget-text-textarea) ul li, .tabnav-panel:not(.field--widget-text-textarea) ul li,
-  .field--type-text-long:not(.field--widget-text-textarea) ul li {
+  .accordion-content:not(.field--widget-text-textarea):not(.os2web-meetings-bp) ul li, .tabnav-panel:not(.field--widget-text-textarea) ul li,
+  .field--type-text-long:not(.field--widget-text-textarea):not(.os2web-meetings-bp) ul li {
     margin-top: 8px;
     list-style-type: none;
     position: relative;
     padding-left: 40px !important;
     line-height: 2.2rem; }
-    .accordion-content:not(.field--widget-text-textarea) ul li::before, .tabnav-panel:not(.field--widget-text-textarea) ul li::before,
-    .field--type-text-long:not(.field--widget-text-textarea) ul li::before {
+    .accordion-content:not(.field--widget-text-textarea):not(.os2web-meetings-bp) ul li::before, .tabnav-panel:not(.field--widget-text-textarea) ul li::before,
+    .field--type-text-long:not(.field--widget-text-textarea):not(.os2web-meetings-bp) ul li::before {
       content: "■";
       position: absolute;
       left: 5px;
