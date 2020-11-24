@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87bc51da91378ebbea52d4eabf4ad7a6",
+    "content-hash": "62b885e84a017aaa5a1895299d4ca274",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2407,7 +2407,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1601667290",
+                    "datestamp": "1606134287",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9928,12 +9928,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_search.git",
-                "reference": "3ee2739b40bbf7b755cc416fd566682e6996d538"
+                "reference": "664d402a5e5ba6ee2a1b96cc5e843d4858790b32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/3ee2739b40bbf7b755cc416fd566682e6996d538",
-                "reference": "3ee2739b40bbf7b755cc416fd566682e6996d538",
+                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/664d402a5e5ba6ee2a1b96cc5e843d4858790b32",
+                "reference": "664d402a5e5ba6ee2a1b96cc5e843d4858790b32",
                 "shasum": ""
             },
             "require": {
@@ -9951,7 +9951,7 @@
                 "EUPL-1.2"
             ],
             "description": "Search functionality powered by SOLR",
-            "time": "2020-11-13T12:30:26+00:00"
+            "time": "2020-11-24T11:59:14+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -18021,6 +18021,5 @@
     "platform": {
         "php": ">=7.0.8"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
