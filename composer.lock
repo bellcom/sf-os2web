@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "fd578539a16678a009da708aae3db6f594a6449b"
+                "reference": "69d4cb42b1dc8539f5b49305c188523efa19e303"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/fd578539a16678a009da708aae3db6f594a6449b",
-                "reference": "fd578539a16678a009da708aae3db6f594a6449b",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/69d4cb42b1dc8539f5b49305c188523efa19e303",
+                "reference": "69d4cb42b1dc8539f5b49305c188523efa19e303",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-11-13T12:22:20+00:00"
+            "time": "2020-11-24T14:02:03+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -9638,12 +9638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "82ca5ba49b0eac93f821924f2075279bdea6d29e"
+                "reference": "daa0ca9984288b7141a539a1e1b0f60a4fa1594a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/82ca5ba49b0eac93f821924f2075279bdea6d29e",
-                "reference": "82ca5ba49b0eac93f821924f2075279bdea6d29e",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/daa0ca9984288b7141a539a1e1b0f60a4fa1594a",
+                "reference": "daa0ca9984288b7141a539a1e1b0f60a4fa1594a",
                 "shasum": ""
             },
             "require": {
@@ -9658,7 +9658,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2020-08-24T13:27:23+00:00"
+            "time": "2020-11-24T14:01:07+00:00"
         },
         {
             "name": "os2web/os2web_contact",
