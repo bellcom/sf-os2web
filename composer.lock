@@ -9638,12 +9638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "daa0ca9984288b7141a539a1e1b0f60a4fa1594a"
+                "reference": "ef4b57495d6dbfc1c87a4587a4ab698ae14019cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/daa0ca9984288b7141a539a1e1b0f60a4fa1594a",
-                "reference": "daa0ca9984288b7141a539a1e1b0f60a4fa1594a",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/ef4b57495d6dbfc1c87a4587a4ab698ae14019cc",
+                "reference": "ef4b57495d6dbfc1c87a4587a4ab698ae14019cc",
                 "shasum": ""
             },
             "require": {
@@ -9658,7 +9658,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2020-11-24T14:01:07+00:00"
+            "time": "2020-11-25T08:47:37+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -9928,12 +9928,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_search.git",
-                "reference": "664d402a5e5ba6ee2a1b96cc5e843d4858790b32"
+                "reference": "a76ab8ae612cd0f93e333154caabd71d28341d04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/664d402a5e5ba6ee2a1b96cc5e843d4858790b32",
-                "reference": "664d402a5e5ba6ee2a1b96cc5e843d4858790b32",
+                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/a76ab8ae612cd0f93e333154caabd71d28341d04",
+                "reference": "a76ab8ae612cd0f93e333154caabd71d28341d04",
                 "shasum": ""
             },
             "require": {
@@ -9951,7 +9951,7 @@
                 "EUPL-1.2"
             ],
             "description": "Search functionality powered by SOLR",
-            "time": "2020-11-24T11:59:14+00:00"
+            "time": "2020-11-25T08:35:25+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
