@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87bc51da91378ebbea52d4eabf4ad7a6",
+    "content-hash": "62b885e84a017aaa5a1895299d4ca274",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "fd578539a16678a009da708aae3db6f594a6449b"
+                "reference": "69d4cb42b1dc8539f5b49305c188523efa19e303"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/fd578539a16678a009da708aae3db6f594a6449b",
-                "reference": "fd578539a16678a009da708aae3db6f594a6449b",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/69d4cb42b1dc8539f5b49305c188523efa19e303",
+                "reference": "69d4cb42b1dc8539f5b49305c188523efa19e303",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-11-13T12:22:20+00:00"
+            "time": "2020-11-24T14:02:03+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -2407,7 +2407,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1601667290",
+                    "datestamp": "1606134287",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -9638,12 +9638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "82ca5ba49b0eac93f821924f2075279bdea6d29e"
+                "reference": "ef4b57495d6dbfc1c87a4587a4ab698ae14019cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/82ca5ba49b0eac93f821924f2075279bdea6d29e",
-                "reference": "82ca5ba49b0eac93f821924f2075279bdea6d29e",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/ef4b57495d6dbfc1c87a4587a4ab698ae14019cc",
+                "reference": "ef4b57495d6dbfc1c87a4587a4ab698ae14019cc",
                 "shasum": ""
             },
             "require": {
@@ -9658,7 +9658,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2020-08-24T13:27:23+00:00"
+            "time": "2020-11-25T08:47:37+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -9928,12 +9928,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_search.git",
-                "reference": "3ee2739b40bbf7b755cc416fd566682e6996d538"
+                "reference": "a76ab8ae612cd0f93e333154caabd71d28341d04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/3ee2739b40bbf7b755cc416fd566682e6996d538",
-                "reference": "3ee2739b40bbf7b755cc416fd566682e6996d538",
+                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/a76ab8ae612cd0f93e333154caabd71d28341d04",
+                "reference": "a76ab8ae612cd0f93e333154caabd71d28341d04",
                 "shasum": ""
             },
             "require": {
@@ -9951,7 +9951,7 @@
                 "EUPL-1.2"
             ],
             "description": "Search functionality powered by SOLR",
-            "time": "2020-11-13T12:30:26+00:00"
+            "time": "2020-11-25T08:35:25+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -18021,6 +18021,5 @@
     "platform": {
         "php": ">=7.0.8"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
