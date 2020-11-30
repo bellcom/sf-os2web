@@ -1,6 +1,6 @@
-name: 'Designsystem.dk - theme'
+name: 'Designsystem.dk - ballerup'
 type: theme
-description: 'A beautiful custom theme.'
+description: 'Blueish theme for Ballerup.dk.'
 core: 8.x
 screenshot: screenshot.png
 base theme: fds_base_theme
