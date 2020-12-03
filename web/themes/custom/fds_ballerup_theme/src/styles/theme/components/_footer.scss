@@ -24,26 +24,39 @@ footer {
 
   .footer {
     margin-top: 0;
-    padding-top: calc(#{map-get($spacers, 905)} - 1px);
-    padding-bottom: calc(#{map-get($spacers, 905)} - 1px);
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     border-top: 0;
     background-color: $color-footer-background;
 
-    h1, h2, h3, h4, h5, h6,
     a, a:hover, a:visited, a:focus, a:active,
     .is-active > a,
     .is-active > a:hover,
     .is-active > a:focus,
     .is-active > a:visited,
-    .is-active > a:active,
-    &, p {
+    .is-active > a:active {
+      color: #6dcff6;
+    }
+
+    .block {
+
+      h2 {
+        margin-bottom: 5px;
+
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: $h5-font-size;
+      }
+    }
+
+    &, h1, h2, h3, h4, h5, h6,
+    p {
       color: #fff;
     }
 
     a {
-      font-weight: bold;
-      text-decoration: none;
+      text-decoration: underline;
 
       &:focus {
         outline-color: $color-orange-004;
@@ -53,10 +66,6 @@ footer {
     .social-icon {
       font-size: 2rem;
     }
-  }
-
-  section {
-    max-width: 450px;
   }
 
   .menu {
@@ -119,25 +128,6 @@ footer {
   .footer-col {
     padding-top: 10px;
     padding-bottom: 15px;
-
-    + .footer-col {
-      border-left: 1px solid #fff;
-    }
-
-    &:nth-child(1) {
-
-      section {
-        padding-left: 70px;
-      }
-    }
-
-    &:nth-child(2) {
-
-      section {
-        padding-top: 60px;
-        padding-left: 70px;
-      }
-    }
   }
 }
 
