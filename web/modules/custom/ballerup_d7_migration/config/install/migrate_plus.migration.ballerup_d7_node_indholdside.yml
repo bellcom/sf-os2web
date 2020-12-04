@@ -24,10 +24,10 @@ process:
     source: language
     default_value: 'und'
   title: title
-#  migrate_uid:
-#    - plugin: migration_lookup
-#      migration: ballerup_d7_user
-#      source: node_uid
+  migrate_uid:
+    - plugin: migration_lookup
+      migration: ballerup_d7_user
+      source: node_uid
   uid:
     plugin: default_value
     default_value: 1
@@ -92,6 +92,6 @@ migration_dependencies:
     - ballerup_d7_user
     - ballerup_d7_taxonomy_section
     - ballerup_d7_contact_box
-    #- ballerup_d7_paragraph_accordion
+    - ballerup_d7_paragraph_accordion
     - os2web_borgerdk_articles_import
   optional: {}
