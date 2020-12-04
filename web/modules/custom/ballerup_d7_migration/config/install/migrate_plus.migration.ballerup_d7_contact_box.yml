@@ -1,0 +1,54 @@
+id: ballerup_d7_contact_box
+label: Ballerup D7 Contact Box
+migration_tags:
+  - 'Drupal 7'
+migration_group: ballerup_d7
+deriver: Drupal\node\Plugin\migrate\D7NodeDeriver
+source:
+  plugin: d7_node
+  node_type: contact_box
+process:
+  name:
+    plugin: substr
+    source: title
+    length: 50
+  field_os2web_contact_heading: title
+  field_os2web_contact_body:
+    plugin: sub_process
+    source: field_contact_text
+    process:
+      value: value
+      format:
+        plugin: default_value
+        default_value: 'wysiwyg_tekst'
+  migrate_contact_more/0/value:
+    plugin: concat
+    source:
+      - field_email/0/email
+      - field_email_display/0/value
+      - field_phone_number/0/value
+      - field_nemid/0/value
+    delimiter: '<br/>'
+  field_os2web_contact_more:
+    - plugin: sub_process
+      source: '@migrate_contact_more'
+      process:
+        value: value
+        format:
+          plugin: default_value
+          default_value: 'wysiwyg_tekst'
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: 'da'
+  migrate_uid:
+    - plugin: migration_lookup
+      migration: ballerup_d7_user
+      source: node_uid
+  user_id:
+    plugin: default_value
+    default_value: 1
+    source: '@migrate_uid'
+destination:
+  plugin: 'entity:os2web_contact'
+  default_bundle: os2web_accordion

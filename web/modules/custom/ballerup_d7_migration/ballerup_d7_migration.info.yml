@@ -1,0 +1,8 @@
+name: Balleru.dk D7 Migration
+description: Custom migration module for migrating data from Ballerup.dk Drupal 7 site.
+package: 'Bellcom'
+type: module
+core: 8.x
+dependencies:
+  - migrate
+  - migrate_drupal
