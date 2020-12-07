@@ -42,7 +42,7 @@ footer {
     .block {
 
       h2 {
-        margin-bottom: 5px;
+        margin-bottom: 2.5rem;
 
         text-transform: uppercase;
         font-weight: bold;
@@ -80,12 +80,13 @@ footer {
     }
 
     .menu-item {
-      padding-top: .8em;
+      padding-top: 0;
+      padding-bottom: .8em;
     }
   }
 
   .social-icon-list {
-    margin-top: 35px;
+    margin-top: 5.5rem;
   }
 }
 
