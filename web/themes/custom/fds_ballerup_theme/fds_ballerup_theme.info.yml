@@ -7,10 +7,9 @@ base theme: fds_base_theme
 package: OS2web
 
 regions:
-  header__search: 'Header - search'
-  header__below: 'Header - below'
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
+  header__top_navigation: 'Header - top navigation'
+  header__main_navigation: 'Header - main navigation'
+  small_search: 'Small search'
   highlighted: Highlighted
   featured_top: 'Featured top'
   breadcrumb: Breadcrumb
