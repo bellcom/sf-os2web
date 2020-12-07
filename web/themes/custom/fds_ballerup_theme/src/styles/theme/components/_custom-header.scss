@@ -43,6 +43,41 @@
 }
 .custom-header-row--navigation {
   background-color: $color-data-orange-001;
+
+  .menu {
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+
+    li {
+      float: left;
+
+      padding: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    a {
+      display: block;
+
+      padding: 10px 15px;
+
+      font-size: $h4-font-size;
+      text-transform: uppercase;
+
+      &, &:hover {
+        text-decoration: none;
+      }
+
+      &.is-active {
+        color: $color-data-orange-001;
+        background-color: #fff;
+      }
+    }
+  }
 }
 
 .custom-header__logo {}
