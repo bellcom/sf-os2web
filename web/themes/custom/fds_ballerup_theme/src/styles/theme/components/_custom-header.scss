@@ -72,7 +72,7 @@
         text-decoration: none;
       }
 
-      &.is-active {
+      &:hover, &:focus, &.is-active {
         color: $color-data-orange-001;
         background-color: #fff;
       }
