@@ -59,6 +59,13 @@
       font-size: $small-text;
       font-weight: $font-weight-bold;
       text-decoration: none;
+
+      color: $color-text;
+
+      &:hover, &:focus {
+        color: $color-primary;
+        text-decoration: underline;
+      }
     }
   }
 
