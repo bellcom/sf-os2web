@@ -88,8 +88,6 @@ $distance-from-top: 79px;
   width: 100vw;
 
   z-index: 1050;
-
-  background-color: #fff;
 }
 
 .custom-mobile-navigation-popup__navigation {
@@ -114,6 +112,15 @@ $distance-from-top: 79px;
   }
 }
 .custom-mobile-navigation-popup__navigation--vertical {
+  margin-left: 80px;
+  margin-right: 10px;
+
+  background-color: #fff;
+
+  .custom-mobile-navigation--open & {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   .menu {
     display: flex;
@@ -149,11 +156,17 @@ $distance-from-top: 79px;
       &, &.is-active, &:hover, &:focus {
         color: $color-orange-004;
       }
+
+      .custom-mobile-navigation--open & {
+        padding-right: 90px;
+      }
     }
   }
 }
 .custom-mobile-navigation-popup__navigation--horizontal {
   display: none;
+
+  background-color: #fff;
 
   .custom-mobile-navigation--open & {
     display: block;
