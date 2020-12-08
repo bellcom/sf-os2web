@@ -76,7 +76,7 @@
     }
   }
 }
-.custom-header-row--navigation {
+.custom-header-row--desktop-navigation {
   background-color: $color-data-orange-001;
 
   .menu {
@@ -101,8 +101,18 @@
     }
   }
 }
+.custom-header-row--mobile-navigation {
+  height: 50px;
 
-.custom-header__logo {}
+  background-color: $color-data-orange-001;
+}
+
+.custom-header__logo {
+
+  img {
+    height: 42px;
+  }
+}
 
 // --------------------------------------------------
 // Variants
@@ -125,7 +135,15 @@
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+
+  .custom-header__logo {
+
+    img {
+      height: auto;
+    }
+  }
+}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}
