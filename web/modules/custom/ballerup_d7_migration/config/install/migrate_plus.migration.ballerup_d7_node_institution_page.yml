@@ -24,6 +24,14 @@ process:
     source: language
     default_value: 'und'
   title: title
+  migrate_uid:
+    - plugin: migration_lookup
+      migration: ballerup_d7_user
+      source: node_uid
+  uid:
+    plugin: default_value
+    default_value: 1
+    source: '@migrate_uid'
   field_migration_old_url:
     plugin: callback
     callable:
@@ -61,4 +69,5 @@ migration_dependencies:
     - ballerup_d7_institution_contact_box
     - ballerup_d7_taxonomy_institution
     - ballerup_d7_taxonomy_section
+    - ballerup_d7_user
   optional: {}
