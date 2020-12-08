@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-11-24T14:02:03+00:00"
+            "time": "2020-12-07T10:09:39+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -9896,12 +9896,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "c93da87e85daae058d10353264af62b4145e3487"
+                "reference": "69688a8a2e6e89444798cd3edc071f672e5e3b7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/c93da87e85daae058d10353264af62b4145e3487",
-                "reference": "c93da87e85daae058d10353264af62b4145e3487",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/69688a8a2e6e89444798cd3edc071f672e5e3b7a",
+                "reference": "69688a8a2e6e89444798cd3edc071f672e5e3b7a",
                 "shasum": ""
             },
             "require": {
@@ -9920,7 +9920,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-11-10T08:32:57+00:00"
+            "time": "2020-12-08T13:48:04+00:00"
         },
         {
             "name": "os2web/os2web_search",
@@ -18021,5 +18021,6 @@
     "platform": {
         "php": ">=7.0.8"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
