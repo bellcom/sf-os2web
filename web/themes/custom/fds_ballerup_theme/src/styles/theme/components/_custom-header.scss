@@ -22,28 +22,6 @@
 
 .custom-header {
 
-  button,
-  a {
-
-    &:focus{
-      outline-color: $color-orange-004;
-    }
-
-    &:hover{
-      outline: 2px solid $color-orange-004;
-      outline-offset: 1px;
-    }
-  }
-}
-
-.custom-header-row {}
-.custom-header-row--meta {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-.custom-header-row--navigation {
-  background-color: $color-data-orange-001;
-
   .menu {
     margin: 0;
     padding-left: 0;
@@ -62,25 +40,79 @@
 
     a {
       display: block;
+    }
+  }
+}
 
-      padding: 10px 15px;
+.custom-header-row {}
+.custom-header-row--meta {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  .flexy-row {
+    align-items: initial;
+  }
+
+  .menu {
+
+    a {
+      font-size: $small-text;
+      font-weight: $font-weight-bold;
+      text-decoration: none;
+
+      color: $color-text;
+
+      &:hover, &:focus {
+        color: $color-primary;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .menu-item {
+
+    + .menu-item {
+      margin-left: 30px;
+    }
+  }
+}
+.custom-header-row--desktop-navigation {
+  background-color: $color-data-orange-001;
+
+  .menu {
+
+    a {
+      padding: 18px 15px;
 
       font-size: $h4-font-size;
       text-transform: uppercase;
+
+      color: #fff;
 
       &, &:hover {
         text-decoration: none;
       }
 
       &:hover, &:focus, &.is-active {
+        outline: none;
         color: $color-data-orange-001;
         background-color: #fff;
       }
     }
   }
 }
+.custom-header-row--mobile-navigation {
+  height: 50px;
 
-.custom-header__logo {}
+  background-color: $color-data-orange-001;
+}
+
+.custom-header__logo {
+
+  img {
+    height: 42px;
+  }
+}
 
 // --------------------------------------------------
 // Variants
@@ -103,7 +135,15 @@
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+
+  .custom-header__logo {
+
+    img {
+      height: auto;
+    }
+  }
+}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}

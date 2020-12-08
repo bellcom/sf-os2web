@@ -9,16 +9,43 @@
 
           <div class="flexy-spacer"></div>
 
-          {{ page.header__top_navigation }}
+          <div class="d-none d-md-block">
+            {{ page.header__top_navigation }}
+          </div>
         </div>
       </div>
     </div>
-    <div class="custom-header-row custom-header-row--navigation">
+    <div class="custom-header-row custom-header-row--desktop-navigation d-none d-md-block">
       <div class="container">
         <div class="flexy-row">
           <div class="flexy-spacer"></div>
 
           {{ page.header__main_navigation }}
+        </div>
+      </div>
+    </div>
+    <div class="custom-header-row custom-header-row--mobile-navigation d-md-none">
+      <div class="container">
+        <div class="flexy-row">
+          <div class="flexy-spacer"></div>
+
+          <div class="custom-mobile-navigation">
+            <div class="custom-mobile-navigation__overlay"></div>
+
+            <button class="custom-mobile-navigation-toggle js-custom-mobile-navigation-toggle">
+              <span class="icon fa fa-angle-down"></span>
+              <span class="icon fa fa-angle-up"></span>
+            </button>
+
+            <div class="custom-mobile-navigation-popup">
+              <div class="custom-mobile-navigation-popup__navigation custom-mobile-navigation-popup__navigation--vertical">
+                {{ page.header__main_navigation }}
+              </div>
+              <div class="custom-mobile-navigation-popup__navigation custom-mobile-navigation-popup__navigation--horizontal">
+                {{ page.header__top_navigation }}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

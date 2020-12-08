@@ -28,8 +28,6 @@ a.social-icon-teaser {
 .social-icon-teaser {
   position: relative;
 
-  min-height: 250px;
-
   overflow: hidden;
 
   border-radius: 4px;
@@ -117,13 +115,6 @@ a.social-icon-teaser {
     width: auto;
 
     color: $color-footer-background;
-  }
-}
-.social-icon--image {
-  background-color: initial;
-
-  img {
-    width: 100%;
   }
 }
 
