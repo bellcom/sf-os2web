@@ -22,28 +22,6 @@
 
 .custom-header {
 
-  button,
-  a {
-
-    &:focus{
-      outline-color: $color-orange-004;
-    }
-
-    &:hover{
-      outline: 2px solid $color-orange-004;
-      outline-offset: 1px;
-    }
-  }
-}
-
-.custom-header-row {}
-.custom-header-row--meta {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-.custom-header-row--navigation {
-  background-color: $color-data-orange-001;
-
   .menu {
     margin: 0;
     padding-left: 0;
@@ -62,17 +40,54 @@
 
     a {
       display: block;
+    }
+  }
+}
 
-      padding: 10px 15px;
+.custom-header-row {}
+.custom-header-row--meta {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  .flexy-row {
+    align-items: initial;
+  }
+
+  .menu {
+
+    a {
+      font-size: $small-text;
+      font-weight: $font-weight-bold;
+      text-decoration: none;
+    }
+  }
+
+  .menu-item {
+
+    + .menu-item {
+      margin-left: 30px;
+    }
+  }
+}
+.custom-header-row--navigation {
+  background-color: $color-data-orange-001;
+
+  .menu {
+
+    a {
+      padding: 18px 15px;
 
       font-size: $h4-font-size;
       text-transform: uppercase;
+
+      color: #fff;
 
       &, &:hover {
         text-decoration: none;
       }
 
       &:hover, &:focus, &.is-active {
+        outline: none;
         color: $color-data-orange-001;
         background-color: #fff;
       }
