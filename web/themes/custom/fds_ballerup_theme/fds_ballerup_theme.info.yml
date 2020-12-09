@@ -9,6 +9,7 @@ package: OS2web
 regions:
   header__top_navigation: 'Header - top navigation'
   header__main_navigation: 'Header - main navigation'
+  alert: 'Alert'
   small_search: 'Small search'
   highlighted: Highlighted
   featured_top: 'Featured top'
@@ -19,7 +20,6 @@ regions:
   featured_bottom_first: 'Featured bottom first'
   footer_first: 'Footer first'
   footer_second: 'Footer second'
-  embedded_code: 'Embedded code'
 
 libraries:
   - 'fds_ballerup_theme/fonts'

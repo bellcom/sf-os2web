@@ -1,0 +1,23 @@
+{%
+  set classes = [
+  'alert',
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+  <div class="container">
+    <div class="alert__icon">
+      <img src="{{ base_path ~ directory }}/dist/images/alert.png" alt="Advarsel ikon" />
+    </div>
+    <div class="alert__meta">
+      {{ content.field_heading }}
+
+      {{ content.field_body }}
+    </div>
+    <div class="alert__button">
+      {{ content.field__link }}
+    </div>
+  </div>
+</div>

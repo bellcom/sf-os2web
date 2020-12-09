@@ -27,6 +27,8 @@
   li {
     display: inline-block;
 
+    font-size: $small-font-size;
+
     &:before {
       float: left;
 
@@ -34,11 +36,11 @@
       margin-left: 8px;
       margin-right: 12px;
 
-      font-size: 20px;
+      font-size: 1.4rem;
       font-family: FontAwesome;
-      content: "\f105";
+      content: $fa-var-angle-right;
 
-      color: $color-orange-004;
+      color: #555;
     }
 
     &:first-child {
@@ -54,11 +56,10 @@
   }
 
   a {
+    font-size: $small-font-size;
 
     &, &:hover, &:visited {
       text-decoration: none;
-
-      color: $color-text;
     }
   }
 }

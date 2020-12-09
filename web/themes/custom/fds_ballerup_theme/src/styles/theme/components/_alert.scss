@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Section
+// | Alert
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .section
+// | - .alert
 // |
 
 // --------------------------------------------------
@@ -14,42 +14,37 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin section-mixin() {}
+@mixin alert-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.section-heading {}
-.section-heading__title {
-  margin-top: 0;
+.alert {
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: $h5-font-size;
+  color: #000;
+  background-color: #ff9e18;
+}
+.alert__button {
+
+  a {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 25%;
+
+    background-color: #fff;
+  }
 }
 
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
-
-.section--breadcrumb-bar {
-  padding-top: 3px;
-  padding-bottom: 3px;
-
-  border-bottom: 1px solid #e6e6e6;
-
-  background-color: #fff;
-}
-.section--social-icon-teasers {
-  border-top: 1px solid #e6e6e6;
-
-  background-color: #fff;
-}
 
 // --------------------------------------------------
 // Responsive
@@ -62,13 +57,33 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .alert {
+    display: flex;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    align-items: center;
+  }
+
+  .alert__meta {
+    flex-grow: 1;
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+
+  .alert {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}

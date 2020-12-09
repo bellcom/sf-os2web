@@ -146,7 +146,7 @@ $color-red-001:               #b63433 !default;
 $color-red-002:               #ffe0e0 !default;
 
 //blue
-$color-blue-001:              #0A487E;
+$color-blue-001:              #006b9a;
 $color-blue-002:              #004080 !default;
 $color-blue-003:              #000040 !default;
 $color-blue-004:              #e2f2fb !default;
@@ -214,7 +214,7 @@ $color-text-secondary:        $color-gray-003 !default;
 $color-text-bright:           $color-gray-006 !default;
 
 //Links color
-$color-link:                  $color-orange-004;
+$color-link:                  $color-blue-001;
 $color-link-hover:            $color-link;
 $color-link-focus:            $color-link;
 $color-link-visited:          $color-link;
@@ -369,8 +369,8 @@ $button-border-width:     2px;
 $button-border:           $button-border-width solid $button-primary-border-color;
 
 //Backgrounds
-$background-normal: #FFFFFF;
-$background-alternative: #F5F5F5;
+$background-normal: #f5f3ef;
+$background-alternative: #fff;
 $background-modal: rgba(0, 0, 0, 0.75);
 
 

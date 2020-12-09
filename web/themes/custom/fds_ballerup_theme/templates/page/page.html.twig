@@ -54,29 +54,25 @@
 
 {{ page.featured_top }}
 
+{% if not is_front %}
+  <div class="section section--breadcrumb-bar d-print-none">
+    <div class="container">
+      <div class="flexy-row">
+        {{ page.breadcrumb }}
+
+        <div class="flexy-spacer"></div>
+
+        {% include '@fds_ballerup_theme/includes/action-buttons.html.twig' %}
+        {{ page.small_search }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
 <div class="page-container" id="font-resize-wrapper">
   <div class="container">
     {{ page.highlighted }}
 
-    {% if not is_front %}
-      <div class="row d-print-none">
-        <div class="col-12 col-md-3 d-none d-md-block">
-          <a href="{{ url('<front>') }}" class="return-to-home-link">
-            {{ 'Hjem' | trans }}
-          </a>
-        </div>
-        <div class="col-12 col-md-9 col--align-center">
-          <div class="flexy-row">
-            {{ page.breadcrumb }}
-
-            <div class="flexy-spacer"></div>
-
-            {{ page.small_search }}
-            {% include '@fds_ballerup_theme/includes/action-buttons.html.twig' %}
-          </div>
-        </div>
-      </div>
-    {% endif %}
     <div class="row">
 
       <aside class="col-12 col-md-3">
@@ -105,7 +101,3 @@
 </div>
 
 {% include '@fds_ballerup_theme/includes/footer.html.twig' %}
-
-<div class="d-none">
-  {{ page.embedded_code }}
-</div>

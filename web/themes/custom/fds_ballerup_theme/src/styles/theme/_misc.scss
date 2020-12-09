@@ -13,6 +13,10 @@
 // Styling
 // --------------------------------------------------
 
+body {
+  background-color: #f5f3ef !important;
+}
+
 // Increased specificity to win over base theme.
 body .container-fluid {
   padding-left: $grid-gutter-width;
