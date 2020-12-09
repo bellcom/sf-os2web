@@ -3,7 +3,7 @@
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .alert
+// | - .custom-alert
 // |
 
 // --------------------------------------------------
@@ -20,24 +20,22 @@
 // Styling
 // --------------------------------------------------
 
-.alert {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.custom-alert {}
 
-  color: #000;
-  background-color: #ff9e18;
-}
-.alert__button {
+.custom-alert__button {
+  padding-top: 30px;
 
   a {
     display: inline-block;
 
-    padding: 10px 20px;
+    padding: 10px 35px;
 
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 25%;
+    border-radius: 25px;
 
+    color: $color-text;
     background-color: #fff;
   }
 }
@@ -59,17 +57,25 @@
 // Tablet - and up
 @include media-breakpoint-up(sm) {
 
-  .alert {
+  .custom-alert {
     display: flex;
-
-    padding-top: 30px;
-    padding-bottom: 30px;
 
     align-items: center;
   }
 
-  .alert__meta {
+  .custom-alert__meta {
+    padding-left: $grid-gutter-width;
+
     flex-grow: 1;
+
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+      margin-top: 0;
+
+      color: inherit;
+    }
+  }
+  .custom-alert__button {
+    padding-top: 0;
   }
 }
 
@@ -77,13 +83,7 @@
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {
-
-  .alert {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
+@include media-breakpoint-up(md) {}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}

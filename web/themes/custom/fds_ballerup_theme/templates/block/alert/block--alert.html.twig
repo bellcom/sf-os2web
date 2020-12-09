@@ -1,6 +1,7 @@
 {%
   set classes = [
-  'alert',
+  'section',
+  'section--alert',
   'block',
   'block-' ~ configuration.provider|clean_class,
   'block-' ~ plugin_id|clean_class,
@@ -8,16 +9,18 @@
 %}
 <div{{ attributes.addClass(classes) }}>
   <div class="container">
-    <div class="alert__icon">
-      <img src="{{ base_path ~ directory }}/dist/images/alert.png" alt="Advarsel ikon" />
-    </div>
-    <div class="alert__meta">
-      {{ content.field_heading }}
+    <div class="custom-alert">
+      <div class="custom-alert__icon">
+        <img src="{{ base_path ~ directory }}/dist/images/alert.png" alt="Advarsel ikon" />
+      </div>
+      <div class="custom-alert__meta">
+        {{ content.field_heading }}
 
-      {{ content.field_body }}
-    </div>
-    <div class="alert__button">
-      {{ content.field__link }}
+        {{ content.field_body }}
+      </div>
+      <div class="custom-alert__button">
+        {{ content.field_link }}
+      </div>
     </div>
   </div>
 </div>
