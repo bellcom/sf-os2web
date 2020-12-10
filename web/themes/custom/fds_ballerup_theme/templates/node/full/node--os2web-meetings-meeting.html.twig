@@ -30,10 +30,15 @@
 
   <br>
   {% if (content.field_os2web_m_bps['open']) or (content.field_os2web_m_bps['closed']) %}
-  <h2> Åben dagsorden </h2>
-  {{ content.field_os2web_m_bps['open'] }}
-  <h2> Lukket dagsorden </h2>
-  {{ content.field_os2web_m_bps['closed'] }}
+    {% if (content.field_os2web_m_bps['open']) %}
+       <h2> Åben dagsorden </h2>
+       {{ content.field_os2web_m_bps['open'] }}
+    {% endif %}
+    {% if (content.field_os2web_m_bps['closed']) %}
+      <h2> Lukket dagsorden </h2>
+     {{ content.field_os2web_m_bps['closed'] }}
+    {% endif %}
+
   {% else %}
     {{ content.field_os2web_m_bps }}
  {% endif %}
