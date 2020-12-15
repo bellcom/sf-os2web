@@ -9905,12 +9905,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "c67792df781e4975c7501da5fe95db6631b667b4"
+                "reference": "b3294bbf91a7cecadab089c93c3285ddf1709e3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/c67792df781e4975c7501da5fe95db6631b667b4",
-                "reference": "c67792df781e4975c7501da5fe95db6631b667b4",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/b3294bbf91a7cecadab089c93c3285ddf1709e3a",
+                "reference": "b3294bbf91a7cecadab089c93c3285ddf1709e3a",
                 "shasum": ""
             },
             "require": {
@@ -9923,7 +9923,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-12-15T11:50:23+00:00"
+            "time": "2020-12-15T15:11:32+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
