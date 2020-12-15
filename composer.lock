@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62b885e84a017aaa5a1895299d4ca274",
+    "content-hash": "ffb8c60174dc5f7b53b72950dafccd6e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7591,6 +7591,62 @@
             "time": "2019-08-02T12:02:27+00:00"
         },
         {
+            "name": "drupal/video_embed_field",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/video_embed_field.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "96b14bb93c1bb6a07b84315a4f87367870f8b574"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/colorbox": "^1.0",
+                "drupal/video_embed_media": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1587686337",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "jec006",
+                    "homepage": "https://www.drupal.org/user/855980"
+                },
+                {
+                    "name": "plopesc",
+                    "homepage": "https://www.drupal.org/user/282415"
+                }
+            ],
+            "description": "A pluggable field type for storing videos from external video hosts such as Vimeo and YouTube.",
+            "homepage": "https://www.drupal.org/project/video_embed_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/video_embed_field"
+            }
+        },
+        {
             "name": "drush/drush",
             "version": "10.2.2",
             "source": {
@@ -9713,6 +9769,33 @@
             "time": "2019-12-18T10:35:16+00:00"
         },
         {
+            "name": "os2web/os2web_events",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_events.git",
+                "reference": "ba5ab23e7c7739f5b09afec602ab17e921c1d6bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/ba5ab23e7c7739f5b09afec602ab17e921c1d6bd",
+                "reference": "ba5ab23e7c7739f5b09afec602ab17e921c1d6bd",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/feeds": "*",
+                "drupal/feeds_tamper": "*"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Provide functionality for events import from Kulturnaut",
+            "time": "2020-12-15T11:45:34+00:00"
+        },
+        {
             "name": "os2web/os2web_hearings",
             "version": "dev-master",
             "source": {
@@ -9843,6 +9926,58 @@
             "time": "2020-12-15T08:58:23+00:00"
         },
         {
+            "name": "os2web/os2web_meetings_agman",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_meetings_agman.git",
+                "reference": "98087c0177c9b166b72dd323556daae3ac0d9264"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/98087c0177c9b166b72dd323556daae3ac0d9264",
+                "reference": "98087c0177c9b166b72dd323556daae3ac0d9264",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/migrate_plus": "^4.2",
+                "drupal/migrate_tools": "^4.5"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Import meetings from SBSYS AGMAN ESDH system",
+            "time": "2020-12-10T19:13:21+00:00"
+        },
+        {
+            "name": "os2web/os2web_meetings_edoc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_meetings_edoc.git",
+                "reference": "cd2a6548d2aaa6780ba22bc39da21be2f2e0dd65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc/zipball/cd2a6548d2aaa6780ba22bc39da21be2f2e0dd65",
+                "reference": "cd2a6548d2aaa6780ba22bc39da21be2f2e0dd65",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/migrate_plus": "^4.2",
+                "drupal/migrate_tools": "^4.5"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Import meetings from EDOC ESDH system",
+            "time": "2020-11-25T20:19:28+00:00"
+        },
+        {
             "name": "os2web/os2web_meetings_sbsys",
             "version": "dev-master",
             "source": {
@@ -9889,6 +10024,32 @@
             ],
             "description": "Provide authentication via Nemlogin",
             "time": "2019-12-12T10:30:44+00:00"
+        },
+        {
+            "name": "os2web/os2web_news",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_news.git",
+                "reference": "887d440d3838803cf274b84e932b0cc50136d19e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/887d440d3838803cf274b84e932b0cc50136d19e",
+                "reference": "887d440d3838803cf274b84e932b0cc50136d19e",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/video_embed_field": "*"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "News entity",
+            "time": "2020-12-14T20:48:22+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
@@ -18008,10 +18169,14 @@
         "drupal/anonymous_subscriptions": 20,
         "os2web/os2web": 20,
         "os2web/os2web_borgerdk": 20,
+        "os2web/os2web_events": 20,
         "os2web/os2web_hearings": 20,
         "os2web/os2web_logging": 20,
         "os2web/os2web_meetings": 20,
+        "os2web/os2web_meetings_agman": 20,
+        "os2web/os2web_meetings_edoc": 20,
         "os2web/os2web_meetings_sbsys": 20,
+        "os2web/os2web_news": 20,
         "os2web/os2web_pagebuilder": 20,
         "os2web/os2web_search": 20,
         "os2web/os2web_spotbox": 20
