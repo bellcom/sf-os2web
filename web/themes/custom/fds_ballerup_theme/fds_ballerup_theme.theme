@@ -3,6 +3,7 @@
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
 use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_preprocess_page().
@@ -76,5 +77,34 @@ function fds_ballerup_theme_preprocess_anonymous_subscriptions_message(array &$v
   $subscription = $variables['subscription'];
   if (!empty($subscription->type->value) && $subscription->type->value == 'os2web_hearings_hearing_case') {
     $variables['link'] = Link::fromTextAndUrl(t('Klik her for at gå til høringer og afgørelser'), Url::fromUserInput('/hoeringer-og-afgoerelser'));
+  }
+}
+
+/**
+ * Implements hook_preprocess_term().
+ */
+function fds_ballerup_theme_preprocess_taxonomy_term(array &$variables) {
+  /** @var \Drupal\taxonomy\TermInterface $term */
+  $term = $variables['term'];
+
+  if ($variables['view_mode'] == 'full' && $term->bundle() == 'os2web_sektion') {
+    // Get all pages that are using this section and are promoted.
+    $entity_ids = getSectionPromotedNodes($term->id());
+    if (empty($entity_ids)) {
+      return;
+    }
+
+    $nodes = Node::loadMultiple($entity_ids);
+    $promoted_node_links = [];
+
+    /** @var \Drupal\node\NodeInterface $node */
+    foreach ($nodes as $node) {
+      $promoted_node_links[] = [
+        'title' => $node->label(),
+        'url' => $node->toUrl(),
+      ];
+    }
+
+    $variables['#promoted_node_links'] = $promoted_node_links;
   }
 }
