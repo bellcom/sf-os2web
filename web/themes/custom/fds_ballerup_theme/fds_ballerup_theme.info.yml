@@ -10,6 +10,7 @@ regions:
   header__top_navigation: 'Header - top navigation'
   header__main_navigation: 'Header - main navigation'
   alert: 'Alert'
+  banner_search: 'Banner search'
   small_search: 'Small search'
   highlighted: Highlighted
   featured_top: 'Featured top'

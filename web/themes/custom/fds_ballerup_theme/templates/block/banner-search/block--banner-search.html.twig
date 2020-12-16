@@ -33,9 +33,11 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>
-  <div class="container">
-    {% block content %}
-      {{ content }}
-    {% endblock %}
+  <div class="section section--banner-search">
+    <div class="container">
+      {% block content %}
+        {{ content }}
+      {% endblock %}
+    </div>
   </div>
 </div>
