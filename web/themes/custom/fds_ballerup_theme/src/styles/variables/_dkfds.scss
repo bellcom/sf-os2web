@@ -127,7 +127,7 @@ $color-gray-055:              #DCDCDC !default;
 $color-gray-006:              #F5F5F5 !default;
 
 //Greeen
-$color-green-001:             #006632;
+$color-green-001:             #467c0d;
 $color-green-002:             #C0D6CB;
 $color-green-021:             #233614 !default;
 $color-green-003:             #358000 !default;
@@ -311,7 +311,7 @@ $color-required:              $color-red-001 !default;
 
 // Button colors
 $button-primary-color: $color-white;
-$button-primary-bg: #467c0d ;
+$button-primary-bg: $color-green-001;
 $button-primary-border-color: $color-primary-medium !default;
 $button-primary-hover-bg: $color-primary-medium !default;
 $button-primary-hover-border-color: $color-primary-dark !default;

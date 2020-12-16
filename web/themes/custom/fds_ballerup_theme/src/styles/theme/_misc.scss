@@ -130,13 +130,15 @@ body .page-container {
 }
 
 .background-color--primary {
-  background-color: $color-green-002 !important;
+  color: #fff !important;
+  background-color: $color-green-001 !important;
 }
 .background-color--secondary {
-  background-color: $color-orange-005 !important;
+  background-color: #fff;
 }
 .background-color--tertiary {
-  background-color: $color-blue-001 !important;
+  color: #fff !important;
+  background-color: $color-primary !important;
 }
 
 // --------------------------------------------------

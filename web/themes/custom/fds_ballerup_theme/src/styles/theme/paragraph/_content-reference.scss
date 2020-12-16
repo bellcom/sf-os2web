@@ -23,10 +23,9 @@
 .paragraph--type--os2web-content-reference {
 
   .field--name-field-os2web-content-reference-h {
-    text-align: center;
 
     h1, h2, h3, h4, h5, h6 {
-      margin: 0 auto;
+      text-transform: uppercase;
 
       color: $color-text;
     }
@@ -66,7 +65,7 @@
 
     + .desktop-only,
     + .mobile-only {
-      margin-top: 40px;
+      margin-top: 20px;
     }
   }
 
