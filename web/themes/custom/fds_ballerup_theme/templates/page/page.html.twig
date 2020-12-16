@@ -75,14 +75,24 @@
     {{ page.highlighted }}
 
     <div class="row">
+      {%
+        set content_classes = [
+        page.sidebar_first ? 'col-12 col-md-6',
+        page.sidebar_first is empty ? 'col-12 col-md-9'
+      ]
+      %}
 
-      <aside class="col-12 col-md-3">
-        <div class="layout-sidebar-left">
-          {{ page.sidebar_first }}
-        </div>
-      </aside>
+      {% if page.sidebar_first %}
+        {% block sidebar_first %}
+          <aside class="col-12 col-md-3">
+            <div class="layout-sidebar-left">
+              {{ page.sidebar_first }}
+            </div>
+          </aside>
+        {% endblock %}
+      {% endif %}
 
-      <main {{ content_attributes.addClass('col-12 col-md-6') }}>
+      <main {{ content_attributes.addClass(content_classes) }}>
         {{ page.content }}
       </main>
 
