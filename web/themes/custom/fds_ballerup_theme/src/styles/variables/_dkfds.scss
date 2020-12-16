@@ -310,8 +310,8 @@ $color-alt-table-header:      $color-gray-004 !default;
 $color-required:              $color-red-001 !default;
 
 // Button colors
-$button-primary-color: $color-white !default;
-$button-primary-bg: $color-primary !default;
+$button-primary-color: $color-white;
+$button-primary-bg: #467c0d ;
 $button-primary-border-color: $color-primary-medium !default;
 $button-primary-hover-bg: $color-primary-medium !default;
 $button-primary-hover-border-color: $color-primary-dark !default;
@@ -365,7 +365,7 @@ $alert-text-color: $color-text !default;
 $outer-border:            1px solid #e4e4e4;
 $inner-border:            1px solid #e4e4e4;
 $inner-inner-border:      1px solid #e4e4e4;
-$button-border-width:     2px;
+$button-border-width:     1px;
 $button-border:           $button-border-width solid $button-primary-border-color;
 
 //Backgrounds

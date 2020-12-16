@@ -88,6 +88,12 @@
 
       <aside class="col-12 col-md-3 d-print-none">
         <div class="layout-sidebar-right">
+          {% if not is_front %}
+            <a href="/selvbetjening" class="button button-primary button--selvbetjening">
+              {{ 'Genvej til al Selvbetjening' | trans }} <span class="icon fa fa-angle-right"></span>
+            </a>
+          {% endif %}
+
           <div class="box">
             <div class="box__body">
               {{ page.sidebar_second }}

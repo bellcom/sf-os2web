@@ -32,6 +32,18 @@ body a {
   }
 }
 
+.button {
+  font-weight: bold;
+}
+.button.button--selvbetjening {
+  display: block;
+
+  padding: 15px 30px;
+
+  text-align: left;
+  font-size: 2rem;
+}
+
 //.paragraph a,
 //.region-content a,
 //.breadcrumb a {
