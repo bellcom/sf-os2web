@@ -21,29 +21,6 @@ jQuery(function ($) {
   }
 })();
 
-// Accordion.
-(function () {
-  function handleClose(event) {
-    var element = this;
-    var listItem = element.closest('li');
-    var content = listItem.querySelector('.accordion-content');
-    var button = listItem.querySelector('.accordion-button');
-
-    content.setAttribute('aria-expanded', 'false');
-    content.setAttribute('aria-hidden', 'true');
-
-    button.setAttribute('aria-expanded', 'false');
-  }
-
-  var buttons = document.querySelectorAll('.js-accordion-close-current');
-
-  for (var i = 0; i < buttons.length; i++) {
-    var button = buttons[i];
-
-    button.addEventListener('click', handleClose);
-  }
-})();
-
 // Search.
 document.addEventListener('DOMContentLoaded', function() {
   function toggle(event) {
@@ -146,3 +123,54 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', handleToggle);
   }
 })();
+
+// Accordion.
+(function() {
+  var identifier = window.location.hash;
+
+  if (identifier) {
+    var accordionItem = document.querySelector(identifier);
+
+    debugger
+
+    if (accordionItem) {
+      var listItem = accordionItem.closest('li');
+      var button = listItem.querySelector('.accordion-button');
+
+      // Expand item.
+      listItem.setAttribute('aria-expanded', 'false');
+      listItem.setAttribute('aria-hidden', 'true');
+
+      button.setAttribute('aria-expanded', 'false');
+
+      // Scroll into view.
+      accordionItem.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+})();
+
+
+
+//
+// // Accordion.
+// (function () {
+//   function handleClose(event) {
+//     var element = this;
+//     var listItem = element.closest('li');
+//     var content = listItem.querySelector('.accordion-content');
+//     var button = listItem.querySelector('.accordion-button');
+//
+//     content.setAttribute('aria-expanded', 'false');
+//     content.setAttribute('aria-hidden', 'true');
+//
+//     button.setAttribute('aria-expanded', 'false');
+//   }
+//
+//   var buttons = document.querySelectorAll('.js-accordion-close-current');
+//
+//   for (var i = 0; i < buttons.length; i++) {
+//     var button = buttons[i];
+//
+//     button.addEventListener('click', handleClose);
+//   }
+// })();
