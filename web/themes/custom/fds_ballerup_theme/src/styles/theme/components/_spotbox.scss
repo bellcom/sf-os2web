@@ -303,7 +303,44 @@ a.spotbox {
 
   &.spotbox {
     box-shadow: none;
-    background-color: $color-green-002 !important;
+
+    color: #fff;
+    background-color: $color-green-001 !important;
+
+    h1, h2, h3, h4, h5, h6 {
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+      color: inherit;
+    }
+
+    &:after {
+      display: flex;
+      position: absolute;
+
+      align-items: center;
+      justify-content: center;
+
+      margin-top: -1.75rem;
+
+      top: 50%;
+      right: 2.4rem;
+
+      width: 3.5rem;
+      height: 3.5rem;
+
+      font-size: 2rem;
+      font-family: FontAwesome;
+      content: $fa-var-arrow-right;
+
+      color: #243544;
+      border: 1px solid #243544;
+      background-color: rgba(255, 255, 255, .4);
+
+      transform: rotate(0);
+      border-radius: 25px;
+    }
   }
 
   &.spotbox--background-color-primary {
