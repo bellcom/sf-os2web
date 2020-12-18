@@ -28,12 +28,20 @@ foreach ($terms as $term) {
       $parent_menu_link = $link->getPluginId();
     }
   }
+ if ($parent_term) {
   $paragraph = Paragraph::create([
+      'type' => 'os2web_menu_links_paragraph',
+  ]);
+}
+else {
+$paragraph = Paragraph::create([
       'type' => 'os2web_menu_links_paragraph',
       'field_os2web_menu_links_inc_pr_p' => array(
         "value" => 1,
       ),
   ]);
+
+}
   $paragraph->save();
 
 
