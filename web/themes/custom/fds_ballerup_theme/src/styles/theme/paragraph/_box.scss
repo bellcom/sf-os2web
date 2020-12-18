@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Box
+// | Content reference
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .box
+// | - .paragraph--type--os2web-box-paragraph
 // |
 
 // --------------------------------------------------
@@ -14,113 +14,29 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin box-mixin() {}
+@mixin paragraph--type--os2web-box-paragraph-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.box {
-  margin-bottom: $grid-gutter-width / 2;
+.paragraph--type--os2web-box-paragraph {
 
-  border-radius: 3px;
-  box-shadow: 0 1px 2px 0 rgba(27, 27, 29, .2);
-  background-color: #fff;
-
-  table {
-    width: 100%;
+  h1, h2, h3, h4, h5, h6, p {
+    color: inherit;
   }
 
-  a {
-    position: initial;
+  &.background-color--transparent {
 
-    padding-right: initial;
-
-    &:after {
-      display: none;
+    &.box {
+      background-color: transparent;
     }
   }
-
-  // Issue fix: on the right sidebar we have a box inside a box.
-  .box {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
-}
-.box__heading {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.box__body {
-  padding: 30px;
 }
 
-// Variants.
-.box--primary {
-  color: #fff;
-  background-color: $color-green-002;
-}
-.box--section-link {
-
-  .box__body {
-    min-height: 40px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    > a {
-      position: relative;
-
-      font-weight: bold;
-
-      &:after {
-        display: inline-block;
-        position: absolute;
-
-        top: 50%;
-        right: 0;
-
-        margin-top: -12px;
-
-        font-family: FontAwesome;
-        content: $fa-var-angle-right;
-
-        color: $color-link;
-      }
-    }
-  }
-
-  a {
-    display: block;
-
-    text-decoration: none;
-  }
-
-  ul {
-    margin: 0 0 5px 0;
-
-    li {
-      list-style: none;
-      padding-left: 0;
-
-      &:before {
-        display: none;
-      }
-    }
-
-    a {
-      font-size: $small-text;
-    }
-  }
-
-  hr {
-    margin-left: -30px;
-    margin-right: -30px;
-
-    border-color: #f5f7f8;
-    border-top-width: 2px;
-  }
-}
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
 
 // --------------------------------------------------
 // Responsive

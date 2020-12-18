@@ -21,17 +21,27 @@
 // --------------------------------------------------
 
 .accordion {
+  margin-top: 10px;
+  margin-bottom: $grid-gutter-width / 2;
+
+  border-top: 2px solid $color-primary;
+  border-bottom: 1px solid $color-primary;
 
   > li {
-    box-shadow: $box-shadow;
+    margin-bottom: 0;
+
+    + li {
+      border-top: 1px solid #dadde0;
+    }
   }
 }
 .accordion-button {
   position: relative;
 
-  padding: 1.6rem 2.4rem;
+  padding: 2.4rem 2.4rem;
   padding-right: 6rem;
 
+  text-transform: uppercase;
   font-weight: $font-weight-bold;
 
   border-radius: 0 !important;
@@ -43,17 +53,30 @@
   }
 
   &:after {
+    display: flex;
     position: absolute;
 
-    top: 1.6rem;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 2px;
+
+    top: 1.7rem;
     right: 2.4rem;
 
-    font-size: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    font-size: 2rem;
     font-family: FontAwesome;
 
-    content: $fa-var-angle-down;
+    content: $fa-var-plus;
 
-    color: $color-orange-004;
+    color: #243544;
+    border: 1px solid #243544;
+    background-color: #f5f7f8;
+
+    border-radius: 25px;
   }
 
   &[aria-expanded="true"] {
@@ -63,7 +86,7 @@
     }
 
     &:after {
-      content: $fa-var-angle-up;
+      content: $fa-var-minus;
     }
   }
 }
