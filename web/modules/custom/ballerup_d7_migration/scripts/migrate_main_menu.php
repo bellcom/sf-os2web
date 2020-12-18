@@ -16,6 +16,7 @@ $my_menu = \Drupal::entityTypeManager()->getStorage('menu_link_content')
   ->loadByProperties(['menu_name' => 'main']);
 $section_nodes = [];
 foreach ($terms as $term) {
+  $weight = $term->weight;
   $parent_menu_link = 0;
   $parent_term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadParents($term->tid);
   if ($parent_term) {
@@ -65,6 +66,7 @@ $paragraph = Paragraph::create([
       'menu_name' => 'main',
       'parent' => $parent_menu_link,
       'expanded' => FALSE,
+    'weight' => $weight,
   ]);
   $menu_link->save();
   $nodes[$term->tid] = $node->id();
@@ -101,4 +103,3 @@ foreach ($nodes as $node) {
     }
   }
 }
-
