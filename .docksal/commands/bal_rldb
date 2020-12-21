@@ -23,7 +23,7 @@ echo-yellow "Reload db from server to local environment."
 
 SSH_CRED=devel7
 DB_NAME=ballerup_bellcom_dk
-DRUPAL_ROOT=/var/www/rebild.dk/web/sites/default
+DRUPAL_ROOT=/var/www/ballerup.bellcom.dk/web/sites/default
 DRUSH="drush"
 
 echo-yellow "Copying db dump from server"

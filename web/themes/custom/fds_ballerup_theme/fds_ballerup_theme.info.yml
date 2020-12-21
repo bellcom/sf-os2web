@@ -7,14 +7,11 @@ base theme: fds_base_theme
 package: OS2web
 
 regions:
-  megamenu__navigation: 'Megamenu - navigation'
-  megamenu__search: 'Megamenu - search'
-  megamenu__language_selector: 'Megamenu - language selector'
-  megamenu__selfservice: 'Megamenu - self service'
-  header__search: 'Header - search'
-  header__below: 'Header - below'
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
+  header__top_navigation: 'Header - top navigation'
+  header__main_navigation: 'Header - main navigation'
+  alert: 'Alert'
+  banner_search: 'Banner search'
+  small_search: 'Small search'
   highlighted: Highlighted
   featured_top: 'Featured top'
   breadcrumb: Breadcrumb
@@ -24,7 +21,6 @@ regions:
   featured_bottom_first: 'Featured bottom first'
   footer_first: 'Footer first'
   footer_second: 'Footer second'
-  embedded_code: 'Embedded code'
 
 libraries:
   - 'fds_ballerup_theme/fonts'

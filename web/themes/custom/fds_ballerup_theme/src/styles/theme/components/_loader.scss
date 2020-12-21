@@ -1,7 +1,9 @@
+@import "section/loader";
+
 @import "footer";
 @import "social-icon";
 @import "custom-header";
-@import "custom-megamenu";
+@import "custom-mobile-navigation";
 @import "action-buttons";
 @import "tiny-slider";
 @import "language-selector";
@@ -23,3 +25,5 @@
 @import "hearing-reply";
 @import "return-to-home-link";
 @import "modal";
+@import "alert";
+@import "facets";

@@ -20,11 +20,73 @@
 // Styling
 // --------------------------------------------------
 
-.social-icon-list {
+.social-icon-teasers {}
+
+a.social-icon-teaser {
+  display: block;
+}
+.social-icon-teaser {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  img {
+    display: block;
+
+    width: 100%;
+  }
+}
+.social-icon-teaser__bar {
+  display: flex;
+  position: absolute;
+
+  align-items: center;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 12px 20px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: rgba(180,65,46,0.85);
+}
+.social-icon-teaser__icon {
   display: flex;
 
-  > * {
-    margin-right: 12px;
+  margin-right: 15px;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+  width: 40px;
+
+  border-radius: 100%;
+
+  color: rgba(180,65,46,0.85);
+  background-color: #fff;
+
+  .icon {
+    width: auto;
+    height: auto;
+
+    font-size: 2rem;
+  }
+}
+
+.social-icon-list {
+
+  > div {
+
+    + div {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -53,13 +115,6 @@
     width: auto;
 
     color: $color-footer-background;
-  }
-}
-.social-icon--image {
-  background-color: initial;
-
-  img {
-    width: 100%;
   }
 }
 

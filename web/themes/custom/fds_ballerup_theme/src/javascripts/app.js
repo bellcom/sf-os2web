@@ -21,29 +21,6 @@ jQuery(function ($) {
   }
 })();
 
-// Accordion.
-(function () {
-  function handleClose(event) {
-    var element = this;
-    var listItem = element.closest('li');
-    var content = listItem.querySelector('.accordion-content');
-    var button = listItem.querySelector('.accordion-button');
-
-    content.setAttribute('aria-expanded', 'false');
-    content.setAttribute('aria-hidden', 'true');
-
-    button.setAttribute('aria-expanded', 'false');
-  }
-
-  var buttons = document.querySelectorAll('.js-accordion-close-current');
-
-  for (var i = 0; i < buttons.length; i++) {
-    var button = buttons[i];
-
-    button.addEventListener('click', handleClose);
-  }
-})();
-
 // Search.
 document.addEventListener('DOMContentLoaded', function() {
   function toggle(event) {
@@ -130,15 +107,19 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 })();
 
-// Responsive restructuring.
+// Custom mobile navigation.
 (function() {
-  var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-  var primaryImage = document.querySelector('.field--name-field-os2web-page-primaryimage');
-  var insertInto = document.querySelector('.layout-sidebar-left');
+  function handleToggle(event) {
+    var menu = document.querySelector('.custom-mobile-navigation');
 
-  if (vw <= 768) {
-    if (primaryImage && insertInto) {
-      insertInto.insertAdjacentElement('afterbegin', primaryImage);
-    }
+    menu.classList.toggle('custom-mobile-navigation--open');
+  }
+
+  var buttons = document.querySelectorAll('.js-custom-mobile-navigation-toggle');
+
+  for (var i = 0; i < buttons.length; i += 1) {
+    var button = buttons[i];
+
+    button.addEventListener('click', handleToggle);
   }
 })();

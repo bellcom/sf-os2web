@@ -13,6 +13,10 @@
 // Styling
 // --------------------------------------------------
 
+body {
+  background-color: #f5f3ef !important;
+}
+
 // Increased specificity to win over base theme.
 body .container-fluid {
   padding-left: $grid-gutter-width;
@@ -26,6 +30,19 @@ body a {
   &:focus {
     outline-width: 2px;
   }
+}
+
+.button {
+  font-weight: bold;
+}
+.button.button--selvbetjening {
+  display: block;
+
+  margin-bottom: $grid-gutter-width / 2;
+  padding: 15px 30px;
+
+  text-align: left;
+  font-size: 2rem;
 }
 
 //.paragraph a,
@@ -44,7 +61,7 @@ body a {
   }
 }
 
-.ext {
+svg.ext {
   display: none;
 }
 
@@ -113,13 +130,15 @@ body .page-container {
 }
 
 .background-color--primary {
-  background-color: $color-green-002 !important;
+  color: #fff !important;
+  background-color: $color-green-001 !important;
 }
 .background-color--secondary {
-  background-color: $color-orange-005 !important;
+  background-color: #fff;
 }
 .background-color--tertiary {
-  background-color: $color-blue-001 !important;
+  color: #fff !important;
+  background-color: $color-primary !important;
 }
 
 // --------------------------------------------------

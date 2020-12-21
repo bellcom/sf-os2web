@@ -1,7 +1,7 @@
 fonts:
   css:
     base:
-      'https://fonts.googleapis.com/css?family=Playfair+Display:700|Roboto:400,700&display=swap': { type: external }
+      'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap': { type: external }
 
 styles:
   css:

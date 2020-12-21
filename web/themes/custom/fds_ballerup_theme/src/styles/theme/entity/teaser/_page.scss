@@ -24,14 +24,14 @@
   margin-top: $grid-gutter-width / 2;
   margin-bottom: $grid-gutter-width / 2;
 
-  box-shadow: $box-shadow;
-
   .field--name-field-os2web-page-heading {
 
     h1, h2, h3, h4, h5, h6 {
       margin: 0;
 
-      color: $color-text;
+      font-weight: normal;
+
+      color: $color-link;
     }
   }
 
@@ -47,7 +47,7 @@
   }
 
   .field--type-link {
-    margin-left: -10px;
+    font-weight: bold;
   }
 }
 

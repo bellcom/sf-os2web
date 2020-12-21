@@ -39,7 +39,11 @@
   flex-direction: column;
   flex-grow: 1;
 
-  padding: ($grid-gutter-width / 2) $grid-gutter-width;
+  padding: ($grid-gutter-width / 2) 0;
+
+  .mobile-only & {
+    padding: ($grid-gutter-width / 2) $grid-gutter-width;
+  }
 
   .field--type-body {
     flex-grow: 1;
