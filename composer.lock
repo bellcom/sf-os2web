@@ -9763,12 +9763,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "6660fc75fd485425d5cc6813740c5d0e20ce456f"
+                "reference": "df9294a310d5313c72f5e9ed410cd2f06f14057b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/6660fc75fd485425d5cc6813740c5d0e20ce456f",
-                "reference": "6660fc75fd485425d5cc6813740c5d0e20ce456f",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/df9294a310d5313c72f5e9ed410cd2f06f14057b",
+                "reference": "df9294a310d5313c72f5e9ed410cd2f06f14057b",
                 "shasum": ""
             },
             "require": {
