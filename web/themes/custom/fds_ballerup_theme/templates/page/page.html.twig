@@ -105,7 +105,11 @@
             </a>
           {% endif %}
 
-          {{ page.sidebar_second }}
+          {% if page.sidebar_second %}
+            {% block sidebar_second %}
+              {{ page.sidebar_second }}
+            {% endblock %}
+          {% endif %}
         </div>
       </aside>
     </div>
