@@ -62,7 +62,7 @@ $paragraph = Paragraph::create([
 
   $menu_link = MenuLinkContent::create([
       'title' => $term->name,
-      'link' => ['uri' => 'internal:/node/' . $node->id()],
+      'link' => ['uri' => 'entity:node/' . $node->id()],
       'menu_name' => 'main',
       'parent' => $parent_menu_link,
       'expanded' => FALSE,
@@ -93,7 +93,7 @@ foreach ($nodes as $node) {
           ->loadByProperties(['menu_name' => 'main']);
         $menu_link = MenuLinkContent::create([
             'title' => $node->getTitle(),
-            'link' => ['uri' => 'internal:/node/' . $node->id()],
+            'link' => ['uri' => 'entity:node/' . $node->id()],
             'menu_name' => 'main',
             'parent' => $parent_menu_link,
             'expanded' => FALSE,
