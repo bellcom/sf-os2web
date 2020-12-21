@@ -21,6 +21,24 @@ process:
       format:
         plugin: default_value
         default_value: 'wysiwyg_tekst'
+  migrate_contact_more/0/value:
+    plugin: concat
+    source:
+      - field_email/0/email
+      - field_email_display/0/value
+      - field_phone_number/0/value
+      - field_site/0/value
+      - field_site_display/0/value
+    delimiter: '<br/>'
+  field_os2web_contact_more:
+    - plugin: sub_process
+      source: '@migrate_contact_more'
+      process:
+        value: value
+        format:
+          plugin: default_value
+          default_value: 'wysiwyg_tekst'
+
 
    # ...
 

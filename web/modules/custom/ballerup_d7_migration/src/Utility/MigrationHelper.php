@@ -2,16 +2,20 @@
 
 namespace Drupal\ballerup_d7_migration\Utility;
 
-use Drupal\migrate\MigrateSkipRowException;
+use Drupal\Core\Database\Database;
+use Drupal\file\Entity\File;
 use Drupal\os2web_borgerdk\Entity\BorgerdkArticle;
 use Drupal\os2web_borgerdk\Entity\BorgerdkMicroarticle;
 use Drupal\os2web_borgerdk\Entity\BorgerdkSelfservice;
 use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\taxonomy\Entity\Term;
 
 class MigrationHelper {
 
+  public static $siteUrl = 'https://ballerup.dk';
+
   function createUrlFromNid($nid) {
-    return 'https://ballerup.dk/node/' . $nid;
+    return MigrationHelper::$siteUrl . '/node/' . $nid;
   }
 
   /**
@@ -139,4 +143,140 @@ class MigrationHelper {
       'target_revision_id' => $accordion_item_paragraph->getRevisionId(),
     ];
   }
+
+  /**
+   * Find or create term 'Media' in os2web_keyword vocabulary.
+   *
+   * @param int $nid
+   *   Node Id.
+   *
+   * @return array
+   *   [
+   *     'target_id' => ,
+   *   ]
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+   * @throws \Drupal\Core\Entity\EntityStorageException
+   */
+  function createMediaKeywordTerm($nid) {
+    $name = 'Media';
+    $vid = 'os2web_keyword';
+
+    $properties['name'] = $name;
+    $properties['vid'] = $vid;
+
+    $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadByProperties($properties);
+    $term = reset($terms);
+
+    if (empty($term)) {
+      $term = Term::create([
+        'name' => $name,
+        'vid' => $vid,
+      ]);
+      $term->save();
+    }
+
+    return [
+      'target_id' => $term->id()
+    ];
+  }
+
+  /**
+   * Gets a downloadable file URL.
+   *
+   * @param mix $field
+   *   Array coming from migration source.
+   *
+   * @return string
+   *   File downloadable URL.
+   */
+  function getFileDownloadUrl($field) {
+    $fileUrl = NULL;
+    if ($field) {
+      $fid = $field['fid'];
+
+      // Getting connection to migrate database.
+      $connection = Database::getConnection('default', 'migrate');
+
+      // Getting file url.
+      $fileUrl = $connection->select('file_managed', 'f')
+        ->fields('f', array('uri'))
+        ->condition('f.fid', $fid)
+        ->condition('f.status', 1)
+        ->execute()
+        ->fetchField();
+
+      if ($fileUrl) {
+        //replacing public:// to https://ballerup.dk/sites/default/files/
+        $fileUrl = preg_replace('/(public:\/\/)/', MigrationHelper::$siteUrl . '/sites/default/files/', $fileUrl);
+      }
+    }
+
+    return $fileUrl;
+  }
+
+  /**
+   * Generates file destination URI.
+   *
+   * @param mix $field
+   *   Array coming from migration source.
+   *
+   * @return string
+   *   File destination URL.
+   */
+  function generateFileDestinationPath($field) {
+    $fileUrl = '';
+    if ($field) {
+      $fid = $field['fid'];
+
+      // Getting connection to migrate database.
+      $connection = Database::getConnection('default', 'migrate');
+
+      // Getting file url.
+      $fileUrl = $connection->select('file_managed', 'f')
+        ->fields('f', array('uri'))
+        ->condition('f.fid', $fid)
+        ->condition('f.status', 1)
+        ->execute()
+        ->fetchField();
+    }
+
+    return $fileUrl;
+  }
+
+  /**
+   * Creates the file based on the URI or finds an existing one.
+   *
+   * @param string $uri
+   *   Uri of the file.
+   *
+   * @return int
+   *   File ID.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+   * @throws \Drupal\Core\Entity\EntityStorageException
+   */
+  function createFileManaged($uri) {
+    $properties['uri'] = $uri;
+    $files = \Drupal::entityTypeManager()->getStorage('file')->loadByProperties($properties);
+
+    $file = reset($files);
+
+    if (empty($file)) {
+      $filesystem = \Drupal::service('file_system');
+      // Create file entity.
+      $file = File::create();
+      $file->setFileUri($uri);
+      $file->setOwnerId(\Drupal::currentUser()->id());
+      $file->setMimeType('image/' . pathinfo($uri, PATHINFO_EXTENSION));
+      $file->setFileName($filesystem->basename($uri));
+      $file->setPermanent();
+      $file->save();
+    }
+
+    return $file->id();
+  }
+
 }

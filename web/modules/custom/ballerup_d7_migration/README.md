@@ -56,6 +56,12 @@ Read more about the Drush commands for Migrate API on [Migrate tools](https://ww
     drush migrate:import ballerup_d7_contact_box
     ```
 
+ * Migrate Media (gallery_slide) paragraphs:
+    ```
+    drush migrate:import ballerup_d7_paragraph_iframe
+    drush migrate:import ballerup_d7_node_gallery_slide
+    ```
+
  * Migrate Harmonika paragraphs __NB*__:
     ```
     drush cim --partial --source=modules/contrib/os2web_pagebuilder/modules/os2web_paragraphs/modules/os2web_accordion_paragraph/config/optional
