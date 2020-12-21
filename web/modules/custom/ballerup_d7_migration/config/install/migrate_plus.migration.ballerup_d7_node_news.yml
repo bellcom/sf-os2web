@@ -81,18 +81,41 @@ process:
     migration: ballerup_d7_news_paragraph_accordion
     source: nid
     no_stub: true
-  #migrate_paragraph_borgerdk:
-   # -
-    #  plugin: extract
-     # source: field_borger_dk_article_ref
-      #default: ''
-      #index:
-      #  - 0
-    #-
-     # plugin: callback
-      #callable:
-       # - 'Drupal\ballerup_d7_migration\Utility\MigrationHelper'
-        #- createBorgerdkParagraph
+  migrate_file_url_source:
+    - plugin: extract
+      source: field_newsarticle_image
+      default: ''
+      index:
+        - 0
+    - plugin: callback
+      callable:
+        - 'Drupal\ballerup_d7_migration\Utility\MigrationHelper'
+        - getFileDownloadUrl
+  migrate_file_url_destination:
+    - plugin: extract
+      source: field_newsarticle_image
+      default: ''
+      index:
+        - 0
+    - plugin: callback
+      callable:
+        - 'Drupal\ballerup_d7_migration\Utility\MigrationHelper'
+        - generateFileDestinationPath
+  migrate_file_fid:
+    - plugin: skip_on_empty
+      method: process
+      source: '@migrate_file_url_source'
+      message: 'Image is missing'
+    - plugin: file_copy
+      source:
+        - '@migrate_file_url_source'
+        - '@migrate_file_url_destination'
+    - plugin: callback
+      callable:
+        - 'Drupal\ballerup_d7_migration\Utility\MigrationHelper'
+        - createFileManaged
+  field_os2web_news_image/target_id: '@migrate_file_fid'
+  field_os2web_news_image/alt: title  
   field_os2web_news_accordion:
     plugin: sub_process
     source:
