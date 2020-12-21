@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Search result
+// | Facets.
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .entity-search-result
+// | - .block-facets
 // |
 
 // --------------------------------------------------
@@ -14,20 +14,35 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin entity-search-result-mixin() {}
+@mixin facets-widget-checkbox-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.entity-search-result {
-  padding: 2.4rem;
+.block-facets {
 
-  background-color: #fff;
-  box-shadow: $box-shadow;
-
-  h1, h2, h3, h4, h5, h6 {
+  h2 {
     margin-top: 0;
+  }
+
+  ul {
+
+    li {
+      padding-left: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    ul {
+
+      li {
+        margin-left: 0;
+        padding-left: 25px;
+      }
+    }
   }
 }
 
