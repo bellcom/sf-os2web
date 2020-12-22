@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-12-22T06:37:39+00:00"
+            "time": "2020-12-22T09:06:50+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -10031,12 +10031,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-                "reference": "da00e2704c58fe4887134ddaa270f04c21353192"
+                "reference": "ee7036b689141b535a5f961918c6f4285f64f7fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/da00e2704c58fe4887134ddaa270f04c21353192",
-                "reference": "da00e2704c58fe4887134ddaa270f04c21353192",
+                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/ee7036b689141b535a5f961918c6f4285f64f7fe",
+                "reference": "ee7036b689141b535a5f961918c6f4285f64f7fe",
                 "shasum": ""
             },
             "require": {
@@ -10049,7 +10049,7 @@
                 "EUPL-1.2"
             ],
             "description": "News entity",
-            "time": "2020-12-21T18:07:21+00:00"
+            "time": "2020-12-22T11:25:40+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
