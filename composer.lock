@@ -9722,12 +9722,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "8f9b46d88a90d61ca02f2336a3393e22676ba0a2"
+                "reference": "2af98db4b993059e2a6d77583351712b8f56da8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/8f9b46d88a90d61ca02f2336a3393e22676ba0a2",
-                "reference": "8f9b46d88a90d61ca02f2336a3393e22676ba0a2",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/2af98db4b993059e2a6d77583351712b8f56da8e",
+                "reference": "2af98db4b993059e2a6d77583351712b8f56da8e",
                 "shasum": ""
             },
             "require": {
@@ -9741,7 +9741,7 @@
                 "EUPL-1.2"
             ],
             "description": "Contact entity",
-            "time": "2020-09-22T07:51:22+00:00"
+            "time": "2020-12-22T12:33:20+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
