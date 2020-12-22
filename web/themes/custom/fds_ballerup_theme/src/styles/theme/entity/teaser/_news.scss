@@ -49,12 +49,13 @@
   .field--type-link {
     font-weight: bold;
   }
-}
-.field--name-field-os2web-news-article-date {
-  font-weight: $font-weight-bold;
-  font-size: $small-font-size;
 
-  color: #666666;
+  .field--name-field-os2web-news-article-date {
+    font-weight: $font-weight-bold;
+    font-size: $small-font-size;
+
+    color: #666666;
+  }
 }
 
 a.entity-teaser--os2web-news {

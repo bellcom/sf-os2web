@@ -3,7 +3,7 @@
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .entity-teaser
+// | - .entity-list--os2web-news
 // |
 
 // --------------------------------------------------
@@ -14,40 +14,55 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin entity-teaser-mixin() {}
+@mixin entity-list--os2web-news-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.entity-teaser {
-  display: flex;
+.entity-list--os2web-news {
+  margin-top: $grid-gutter-width / 2;
+  margin-bottom: $grid-gutter-width / 2;
 
-  flex-grow: 1;
-  flex-direction: column;
-}
+  .field--name-field-os2web-news-heading {
 
-.entity-teaser__image {
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
 
-  img {
-    width: 100%;
-  }
-}
+      font-weight: normal;
 
-.entity-teaser__body {
-  display: flex;
-
-  flex-direction: column;
-  flex-grow: 1;
-
-  padding: ($grid-gutter-width / 2) 0;
-
-  .mobile-only & {
-    padding: ($grid-gutter-width / 2) $grid-gutter-width;
+      color: $color-link;
+    }
   }
 
-  .field--type-body {
-    flex-grow: 1;
+  .field {
+
+    + .field {
+      margin-top: 10px;
+    }
+
+    + .field--type-link {
+      margin-top: 15px;
+    }
+  }
+
+  .field--type-link {
+    font-weight: bold;
+  }
+
+  .field--name-field-os2web-news-article-date {
+    font-weight: $font-weight-bold;
+    font-size: $small-font-size;
+
+    color: #666666;
+  }
+
+}
+
+a.entity-list--os2web-news {
+
+  &, &:hover, &:focus, &:active {
+    color: $color-text;
   }
 }
 
@@ -66,7 +81,25 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .entity-list--os2web-news {
+    display: flex;
+
+    .entity-list__image {
+      flex-basis: 200px;
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .entity-list__body {
+      flex-grow: 1;
+    }
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
