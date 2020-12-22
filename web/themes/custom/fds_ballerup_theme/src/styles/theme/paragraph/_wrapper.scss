@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Content reference
+// | Wrapper
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .paragraph--type--os2web-content-reference
+// | - .paragraph--type--os2web-wrapper
 // |
 
 // --------------------------------------------------
@@ -14,81 +14,19 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin paragraph--type--os2web-content-reference-mixin() {}
+@mixin paragraph--type--os2web-wrapper-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-content-reference {
+.paragraph--type--os2web-wrapper {
 
-  .field--name-field-os2web-content-reference-h {
+  &.background-color--primary {
 
-    h1, h2, h3, h4, h5, h6 {
-      text-transform: uppercase;
-
-      color: $color-text;
+    &, h1, h2, h3, h4, h5, h6 {
+      color: #fff;
     }
-  }
-  .field--name-field-os2web-content-ref-subhead {
-    text-align: center;
-
-    p {
-      margin: auto;
-    }
-  }
-  .field--name-field-os2web-content-reference {
-
-    [class*="col-"] {
-      display: flex;
-
-      flex-direction: column;
-
-      > * {
-        display: flex;
-
-        flex-grow: 1;
-      }
-    }
-  }
-
-  .field {
-
-    + .field--name-field-os2web-content-reference-h,
-    + .field--name-field-os2web-content-ref-subhead {
-      margin-top: 10px;
-    }
-
-    + .desktop-only,
-    + .mobile-only {
-      margin-top: 20px;
-    }
-  }
-
-  .mobile-only {
-    margin-left: $grid-gutter-width / 2;
-    margin-right: $grid-gutter-width / 2;
-
-    background-color: #fff;
-    box-shadow: $box-shadow;
-
-    .entity-teaser--os2web-page {
-      margin: 0;
-
-      box-shadow: none;
-    }
-  }
-  .desktop-only {
-
-    + .mobile-only {
-      margin-top: 40px;
-    }
-  }
-
-  // Tiny slider.
-  button[data-action="start"],
-  button[data-action="stop"] {
-    display: none !important;
   }
 }
 

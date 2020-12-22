@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Content reference
+// | Page
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .paragraph--type--os2web-content-reference
+// | - .entity-teaser--os2web-news
 // |
 
 // --------------------------------------------------
@@ -14,81 +14,53 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin paragraph--type--os2web-content-reference-mixin() {}
+@mixin entity-teaser--os2web-news-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-content-reference {
+.entity-teaser--os2web-news {
+  margin-top: $grid-gutter-width / 2;
+  margin-bottom: $grid-gutter-width / 2;
 
-  .field--name-field-os2web-content-reference-h {
+  .field--name-field-os2web-news-heading {
 
     h1, h2, h3, h4, h5, h6 {
-      text-transform: uppercase;
+      margin: 0;
 
-      color: $color-text;
-    }
-  }
-  .field--name-field-os2web-content-ref-subhead {
-    text-align: center;
+      font-weight: normal;
 
-    p {
-      margin: auto;
-    }
-  }
-  .field--name-field-os2web-content-reference {
-
-    [class*="col-"] {
-      display: flex;
-
-      flex-direction: column;
-
-      > * {
-        display: flex;
-
-        flex-grow: 1;
-      }
+      color: $color-link;
     }
   }
 
   .field {
 
-    + .field--name-field-os2web-content-reference-h,
-    + .field--name-field-os2web-content-ref-subhead {
+    + .field {
       margin-top: 10px;
     }
 
-    + .desktop-only,
-    + .mobile-only {
-      margin-top: 20px;
+    + .field--type-link {
+      margin-top: 15px;
     }
   }
 
-  .mobile-only {
-    margin-left: $grid-gutter-width / 2;
-    margin-right: $grid-gutter-width / 2;
-
-    background-color: #fff;
-    box-shadow: $box-shadow;
-
-    .entity-teaser--os2web-page {
-      margin: 0;
-
-      box-shadow: none;
-    }
+  .field--type-link {
+    font-weight: bold;
   }
-  .desktop-only {
+}
+.field--name-field-os2web-news-article-date {
+  font-weight: $font-weight-bold;
+  font-size: $small-font-size;
 
-    + .mobile-only {
-      margin-top: 40px;
-    }
-  }
+  color: #666666;
+}
 
-  // Tiny slider.
-  button[data-action="start"],
-  button[data-action="stop"] {
-    display: none !important;
+a.entity-teaser--os2web-news {
+
+  &, &:hover, &:focus, &:active {
+    color: $color-text;
   }
 }
 
@@ -107,7 +79,15 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+
+  .entity-teaser--os2web-news {
+
+    .row {
+      align-items: center;
+    }
+  }
+}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
