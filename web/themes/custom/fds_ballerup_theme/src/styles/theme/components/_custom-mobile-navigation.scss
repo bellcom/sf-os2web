@@ -10,7 +10,7 @@
 // Variables
 // --------------------------------------------------
 
-$distance-from-top: 79px;
+$distance-from-top: 78px;
 
 // --------------------------------------------------
 // Mixins
@@ -41,6 +41,10 @@ $distance-from-top: 79px;
 
   color: $color-orange-004;
   background-color: #e6e6e6;
+
+  .toolbar-vertical & {
+    top: $distance-from-top + 39px;
+  }
 
   .fa-angle-down {
 
@@ -88,6 +92,10 @@ $distance-from-top: 79px;
   width: 100vw;
 
   z-index: 1050;
+
+  .toolbar-vertical & {
+    top: $distance-from-top + 39px;
+  }
 }
 
 .custom-mobile-navigation-popup__navigation {
