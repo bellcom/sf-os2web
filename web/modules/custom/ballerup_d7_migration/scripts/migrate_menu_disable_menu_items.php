@@ -13,7 +13,7 @@ use Drupal\Core\Database\Database;
  *
  */
 //
-$migrate_tables = ['migrate_map_ballerup_d7_node_institution_page', 'migrate_message_ballerup_d7_node_gallery_slide'];
+$migrate_tables = ['migrate_map_ballerup_d7_node_institution_page', 'migrate_map_ballerup_d7_node_gallery_slide'];
 $nids = [];
 foreach ($migrate_tables as $table) {
   $database = \Drupal::database();
