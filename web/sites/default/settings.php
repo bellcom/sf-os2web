@@ -803,4 +803,41 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_rebuild_dd.inc';
 }
 // </DDSETTINGS>
- $settings["config_sync_directory"] = '../sync';
+
+$settings['config_sync_directory'] = '../config/sync';
+
+
+// Load the initial variables required for the environments.
+include __DIR__ . DIRECTORY_SEPARATOR . '/init.settings.php';
+
+// Load the required env variables.
+include __DIR__ . DIRECTORY_SEPARATOR . '/env.settings.php';
+
+// Check if environment exists.
+if (!isset($settings['project_env']) && !in_array($settings['project_env'], $available_env)) {
+  throw new \Exception('The PHP ENV cannot be found or it is unknown.');
+}
+
+switch ($settings['project_env']) {
+  case PROD_ENV:
+    if (file_exists(__DIR__ . DIRECTORY_SEPARATOR . 'prod.settings.php')) {
+      require_once 'prod.settings.php';
+    }
+    break;
+
+  case DEV_ENV:
+    // This will override settings if needed.
+    if (file_exists(__DIR__ . DIRECTORY_SEPARATOR . 'dev.override.settings.php')) {
+      require_once 'dev.override.settings.php';
+    }
+    else {
+      require_once 'dev.settings.php';
+    }
+    break;
+
+  case STAGE_ENV:
+    if (file_exists(__DIR__ . DIRECTORY_SEPARATOR . 'prod.settings.php')) {
+      require_once 'stage.settings.php';
+    }
+    break;
+}
