@@ -9801,12 +9801,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "df9294a310d5313c72f5e9ed410cd2f06f14057b"
+                "reference": "e5e7796e1973032286bc79c5492cc33d7359421d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/df9294a310d5313c72f5e9ed410cd2f06f14057b",
-                "reference": "df9294a310d5313c72f5e9ed410cd2f06f14057b",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/e5e7796e1973032286bc79c5492cc33d7359421d",
+                "reference": "e5e7796e1973032286bc79c5492cc33d7359421d",
                 "shasum": ""
             },
             "require": {
