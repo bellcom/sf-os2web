@@ -23,11 +23,16 @@
 .entity-search-result {
   padding: 2.4rem;
 
+  color: $color-text;
   background-color: #fff;
   box-shadow: $box-shadow;
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
+  }
+
+  .field--type-link {
+    color: $color-link;
   }
 }
 
