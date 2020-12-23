@@ -10031,12 +10031,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-                "reference": "c09b29063e3dac31f700da7059a01fcbb2758cc5"
+                "reference": "4bf9cfba33fc38b7458c36631c9760da409b9ec1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/c09b29063e3dac31f700da7059a01fcbb2758cc5",
-                "reference": "c09b29063e3dac31f700da7059a01fcbb2758cc5",
+                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/4bf9cfba33fc38b7458c36631c9760da409b9ec1",
+                "reference": "4bf9cfba33fc38b7458c36631c9760da409b9ec1",
                 "shasum": ""
             },
             "require": {
@@ -10049,7 +10049,7 @@
                 "EUPL-1.2"
             ],
             "description": "News entity",
-            "time": "2020-12-23T10:48:21+00:00"
+            "time": "2020-12-23T11:49:17+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
