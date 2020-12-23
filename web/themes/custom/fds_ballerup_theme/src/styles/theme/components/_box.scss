@@ -61,6 +61,7 @@
   background-color: $color-green-002;
 }
 .box--section-link {
+  margin-bottom: $grid-gutter-width;
 
   .box__body {
     min-height: 40px;
@@ -70,6 +71,8 @@
 
     > a {
       position: relative;
+
+      padding-right: 12px;
 
       font-weight: bold;
 

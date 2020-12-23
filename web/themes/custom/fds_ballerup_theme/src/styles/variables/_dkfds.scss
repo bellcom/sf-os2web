@@ -403,7 +403,7 @@ $container-max-widths: (
 ) !default;
 
 $grid-columns:                  12 !default;
-$grid-gutter-width:             32px !default; //16px on each side of the columns
+$grid-gutter-width:             28px;
 
 //----------------
 // Magic Numbers
