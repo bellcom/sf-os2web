@@ -56,6 +56,7 @@ process:
     plugin: migration_lookup
     migration: ballerup_d7_taxonomy_section
     source: field_section
+    no_stub: true
   migrate_paragraph_accordion:
     plugin: migration_lookup
     migration: ballerup_d7_paragraph_accordion
