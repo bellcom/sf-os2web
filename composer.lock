@@ -9818,7 +9818,7 @@
                 "EUPL-1.2"
             ],
             "description": "Adds Hearing related content types and Hearings search view",
-            "time": "2020-12-21T11:09:37+00:00"
+            "time": "2020-12-23T08:13:31+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
@@ -10031,13 +10031,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-
-                "reference": "fbf504e9c424f1c00d76892b3d9a83f9df03d05e"
+                "reference": "c09b29063e3dac31f700da7059a01fcbb2758cc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/fbf504e9c424f1c00d76892b3d9a83f9df03d05e",
-                "reference": "fbf504e9c424f1c00d76892b3d9a83f9df03d05e",
+                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/c09b29063e3dac31f700da7059a01fcbb2758cc5",
+                "reference": "c09b29063e3dac31f700da7059a01fcbb2758cc5",
                 "shasum": ""
             },
             "require": {
@@ -10050,7 +10049,7 @@
                 "EUPL-1.2"
             ],
             "description": "News entity",
-            "time": "2020-12-22T14:31:52+00:00"
+            "time": "2020-12-23T10:48:21+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
