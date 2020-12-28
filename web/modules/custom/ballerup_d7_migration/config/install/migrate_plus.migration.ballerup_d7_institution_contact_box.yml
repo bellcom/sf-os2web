@@ -24,11 +24,8 @@ process:
   migrate_contact_more/0/value:
     plugin: concat
     source:
-      - field_email/0/email
-      - field_email_display/0/value
-      - field_phone_number/0/value
-      - field_site/0/value
       - field_site_display/0/value
+      - field_site/0/value
     delimiter: '<br/>'
   field_os2web_contact_more:
     - plugin: sub_process
@@ -38,10 +35,8 @@ process:
         format:
           plugin: default_value
           default_value: 'wysiwyg_tekst'
-
-
-   # ...
-
+  field_os2web_contact_email: field_email/0/email
+  field_os2web_contact_phone: field_phone_number
 destination:
   plugin: 'entity:os2web_contact'
   default_bundle: os2web_page
