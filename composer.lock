@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-12-22T09:06:50+00:00"
+            "time": "2020-12-23T17:40:25+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -10089,12 +10089,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_search.git",
-                "reference": "a76ab8ae612cd0f93e333154caabd71d28341d04"
+                "reference": "7750357acf9c1c35cd21e98efe12d200060a7544"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/a76ab8ae612cd0f93e333154caabd71d28341d04",
-                "reference": "a76ab8ae612cd0f93e333154caabd71d28341d04",
+                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/7750357acf9c1c35cd21e98efe12d200060a7544",
+                "reference": "7750357acf9c1c35cd21e98efe12d200060a7544",
                 "shasum": ""
             },
             "require": {
@@ -10112,7 +10112,7 @@
                 "EUPL-1.2"
             ],
             "description": "Search functionality powered by SOLR",
-            "time": "2020-11-25T08:35:25+00:00"
+            "time": "2020-12-28T13:57:23+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
