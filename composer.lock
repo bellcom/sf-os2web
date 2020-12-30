@@ -2441,26 +2441,26 @@
         },
         {
             "name": "drupal/better_exposed_filters",
-            "version": "4.0.0-beta1",
+            "version": "4.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
-                "reference": "8.x-4.0-beta1"
+                "reference": "8.x-4.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-4.0-beta1.zip",
-                "reference": "8.x-4.0-beta1",
-                "shasum": "16eccfd4356e8d281d4e54a1358af17e065454a5"
+                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-4.0-beta2.zip",
+                "reference": "8.x-4.0-beta2",
+                "shasum": "f29ad3a8600c415c167506f61ba095ff8df25250"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.0-beta1",
-                    "datestamp": "1587154928",
+                    "version": "8.x-4.0-beta2",
+                    "datestamp": "1594138204",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -2479,6 +2479,10 @@
                 {
                     "name": "Martin Keereman",
                     "homepage": "https://www.drupal.org/u/etroid"
+                },
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
                 },
                 {
                     "name": "jkopel",
@@ -9905,12 +9909,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "b3294bbf91a7cecadab089c93c3285ddf1709e3a"
+                "reference": "7731b8f2741bed5b0c85d413aaf058c14fba76ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/b3294bbf91a7cecadab089c93c3285ddf1709e3a",
-                "reference": "b3294bbf91a7cecadab089c93c3285ddf1709e3a",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/7731b8f2741bed5b0c85d413aaf058c14fba76ee",
+                "reference": "7731b8f2741bed5b0c85d413aaf058c14fba76ee",
                 "shasum": ""
             },
             "require": {
