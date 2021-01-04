@@ -20,10 +20,12 @@
 %}
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
-    <div class="box">
-      <div class="box__body">
-        {{ content }}
+    {% if content|render|striptags|trim|length %}
+      <div class="box">
+        <div class="box__body">
+          {{ content }}
+        </div>
       </div>
-    </div>
+    {% endif %}
   </div>
 {% endif %}
