@@ -54,6 +54,10 @@ body a {
 //  }
 //}
 
+svg.mailto {
+  display: none !important;
+}
+
 .fields-inline {
 
   > .field {
@@ -90,6 +94,14 @@ body .page-container {
   .os2web_contact {
 
     .field {
+
+      + .field {
+        //margin-top: 2.8rem; // Same distance as between <p> <p>
+      }
+    }
+
+    .field--name-field-os2web-contact-heading,
+    .field--name-field-os2web-contact-body {
 
       + .field {
         margin-top: 2.8rem; // Same distance as between <p> <p>
