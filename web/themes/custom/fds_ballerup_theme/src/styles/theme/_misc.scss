@@ -107,6 +107,32 @@ body .page-container {
         margin-top: 2.8rem; // Same distance as between <p> <p>
       }
     }
+
+    .field--name-field-os2web-contact-phone,
+    .field--name-field-os2web-contact-email {
+
+      &:before {
+        display: inline-block;
+
+        margin-right: .5rem;
+        width: 2.2rem;
+
+        font-family: FontAwesome;
+      }
+    }
+
+    .field--name-field-os2web-contact-phone {
+
+      &:before {
+        content: $fa-var-phone;
+      }
+    }
+    .field--name-field-os2web-contact-email {
+
+      &:before {
+        content: $fa-var-envelope-o;
+      }
+    }
   }
 
   > .box {
