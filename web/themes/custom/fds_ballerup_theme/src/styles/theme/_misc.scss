@@ -69,6 +69,13 @@ body .page-container {
   padding-top: 0;
 }
 
+.region-sidebar-second {
+
+  .block + .block {
+    margin-top: $grid-gutter-width;
+  }
+}
+
 .path-frontpage {
 
   .layout-sidebar-left,
