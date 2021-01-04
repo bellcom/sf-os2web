@@ -70,6 +70,10 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+
+    .box & {
+      background-color: #f5f3ef;
+    }
   }
 }
 
