@@ -9,6 +9,7 @@ install:
 
 before_script:
   - fin init
+  - fin exec 'sudo composer self-update'
 
 script:
   - fin rebuild-test
