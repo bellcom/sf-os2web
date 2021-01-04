@@ -12,12 +12,13 @@
 {% endif %}
 {% set timestamp = node.field_os2web_m_start_date.value|date('U') %}
 <div {{ attributes.addClass(classes) }}>
+  <h1>{{ label }}</h1>
   <div class="fields-inline">
     {{ content.field_os2web_m_type }}
     <div class="field">
-    {% if timestamp %}
-      <h4>{{ timestamp | format_date('os2core_date_medium') }}</h4>
-    {% endif %}
+      {% if timestamp %}
+        <h4>{{ timestamp | format_date('os2core_date_medium') }}</h4>
+      {% endif %}
     </div>
   </div>
 
@@ -33,16 +34,15 @@
 
   {% if (content.field_os2web_m_bps['open']) or (content.field_os2web_m_bps['closed']) %}
     {% if (content.field_os2web_m_bps['open']) %}
-       <br>
-       <h2> Åben dagsorden </h2>
-       {{ content.field_os2web_m_bps['open'] }}
+      <h2> Åben dagsorden </h2>
+      {{ content.field_os2web_m_bps['open'] }}
     {% endif %}
     {% if (content.field_os2web_m_bps['closed']) %}
       <h2> Lukket dagsorden </h2>
-     {{ content.field_os2web_m_bps['closed'] }}
+      {{ content.field_os2web_m_bps['closed'] }}
     {% endif %}
 
   {% else %}
     {{ content.field_os2web_m_bps }}
- {% endif %}
+  {% endif %}
 </div>
