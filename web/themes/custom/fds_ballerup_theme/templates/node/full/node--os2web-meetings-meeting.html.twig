@@ -23,14 +23,17 @@
 
   {{ content.field_os2web_m_committee }}
   {{ content.field_os2web_m_location }}
+
+  <br>
+
   {{ content.field_os2web_m_partic }}
   {{ content.field_os2web_m_partic_cancel }}
 
   {{ content.body }}
 
-  <br>
   {% if (content.field_os2web_m_bps['open']) or (content.field_os2web_m_bps['closed']) %}
     {% if (content.field_os2web_m_bps['open']) %}
+       <br>
        <h2> Åben dagsorden </h2>
        {{ content.field_os2web_m_bps['open'] }}
     {% endif %}

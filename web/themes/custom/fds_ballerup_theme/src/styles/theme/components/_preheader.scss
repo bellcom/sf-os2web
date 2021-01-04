@@ -76,10 +76,17 @@
 
   &.background-color--transparent {}
   &.background-color--primary {
-    color: #fff;
+
+    &, p {
+      color: #fff;
+    }
 
     a {
       outline-color: $color-primary;
+
+      &, &:active, &:visited, &:focus {
+        color: #fff;
+      }
     }
   }
   &.background-color--secondary {}
