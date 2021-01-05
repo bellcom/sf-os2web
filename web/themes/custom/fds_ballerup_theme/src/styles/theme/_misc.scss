@@ -93,6 +93,10 @@ body a {
 //  }
 //}
 
+.region-content {
+  padding-bottom: 4rem;
+}
+
 svg.mailto {
   display: none !important;
 }
@@ -110,6 +114,7 @@ svg.ext {
 
 body .page-container {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
 .region-sidebar-second {

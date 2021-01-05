@@ -75,9 +75,10 @@
 .paragraph--type--os2web-wrapper {
 
   &.background-color--transparent {}
-  &.background-color--primary {
+  &.background-color--primary,
+  &.background-color--tertiary {
 
-    &, p {
+    &, p, h1, h2, h3, h4, h5, h6 {
       color: #fff;
     }
 
