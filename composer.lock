@@ -9800,12 +9800,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_events.git",
-                "reference": "ba5ab23e7c7739f5b09afec602ab17e921c1d6bd"
+                "reference": "0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/ba5ab23e7c7739f5b09afec602ab17e921c1d6bd",
-                "reference": "ba5ab23e7c7739f5b09afec602ab17e921c1d6bd",
+                "reference": "0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566",
                 "shasum": ""
             },
             "require": {
