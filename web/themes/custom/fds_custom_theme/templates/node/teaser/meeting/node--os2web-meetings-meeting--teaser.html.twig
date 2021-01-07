@@ -15,7 +15,7 @@
   <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date">
     <span class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date__month">
     {% if timestamp %}
-      {{ timestamp | date('M') }}
+      {{ timestamp | format_date('os2_month') }}
     {% endif %}
     </span>
     <span class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date__date">
