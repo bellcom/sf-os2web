@@ -129,6 +129,9 @@
             },
             "drupal/rules": {
                 "2927132-15-remove-other-conditions-from-ui" : "https://www.drupal.org/files/issues/2020-07-23/2927132-15-remove-other-conditions-from-ui.patch"
+            },
+            "drupal/core": {
+                "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch"
             }
         }
     }
