@@ -178,8 +178,13 @@ body .page-container {
   }
 }
 
-.layout-sidebar-right {
+.layout-sidebar-left,
+.layout-sidebar-right,
+.layout-content {
   padding-top: $grid-gutter-width;
+}
+
+.layout-sidebar-right {
 
   .os2web_contact {
 

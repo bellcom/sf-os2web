@@ -94,7 +94,9 @@
       {% endif %}
 
       <main {{ content_attributes.addClass(content_classes) }}>
-        {{ page.content }}
+        <div class="layout-content">
+          {{ page.content }}
+        </div>
       </main>
 
       <aside class="col-12 col-md-3 d-print-none">
