@@ -281,6 +281,34 @@ body .page-container {
   background-color: $color-primary !important;
 }
 
+// Remove max-width on all text elements.
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6{
+  max-width: unset;
+}
+p,
+ul:not(.accordion):not(.accordion-bordered):not(.nav-primary):not(.inline-list):not(.tabnav):not(.sidenav-list):not(.sidenav-sub_list),
+ol:not(.accordion):not(.accordion-bordered):not(.sidenav-list){
+  max-width: unset;
+}
+.font-lead{
+  max-width: unset;
+}
+
+.form-label, .form-hint, .form-error-message{
+  max-width: unset;
+}
+.form-checkbox+label, .form-radio+label{
+  max-width: unset;
+}
+a:not(.button){
+  max-width: unset;
+}
+
 // --------------------------------------------------
 // Responsive
 // --------------------------------------------------
