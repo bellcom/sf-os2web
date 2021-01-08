@@ -119,19 +119,30 @@ body .page-container {
 
 .region-sidebar-second {
 
-  > .block {
-    margin-top: 0 !important;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+  > .box {
+    margin-bottom: $grid-gutter-width;
 
-    border-radius: 3px;
-    box-shadow: 0 1px 2px 0 rgba(27, 27, 29, .2);
-    background-color: #fff;
+    > .box__body {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      min-height: unset;
+    }
+  }
+
+  .block {
+
+    &:first-child {
+      padding-top: $grid-gutter-width;
+    }
 
     &:last-child {
-      padding-bottom: 30px;
+      padding-bottom: $grid-gutter-width;
     }
+  }
+
+  .block + .block {
+    margin-top: $grid-gutter-width;
   }
 }
 
@@ -145,7 +156,6 @@ body .page-container {
 
 .layout-sidebar-right {
   padding-top: $grid-gutter-width;
-  padding-bottom: $grid-gutter-width;
 
   .os2web_contact {
 
@@ -259,16 +269,7 @@ body .page-container {
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {
-
-  .layout-sidebar-right {
-    padding-top: 0;
-
-    .box {
-      min-height: 217px; // Same height as primary image.
-    }
-  }
-}
+@include media-breakpoint-up(md) {}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}
