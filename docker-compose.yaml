@@ -1,0 +1,64 @@
+version: '3.7'
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+
+volumes:
+  mysql:
+    driver: local
+
+services:
+
+  php:
+    image: os2web
+    container_name: php
+    volumes:
+#      - ./:/opt/drupal
+      - ./.docker/logs:/var/log:delegated
+      - ./files:/opt/drupal/files
+      - ./private:/opt/drupal/private
+    depends_on:
+      - mariadb
+    ports:
+      - "8080:80"
+    networks:
+      - backend
+      - frontend
+    environment:
+      ## Environment sensitive settings. See .env file.
+      - MYSQL_HOSTNAME=${MYSQL_HOSTNAME}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - DRUPAL_HASH_SALT=${DRUPAL_HASH_SALT}
+      - OS2WEB_THEME=${OS2WEB_THEME}
+
+      ## Deployment sensitive settings. See .docker/os2web/entrypoint.sh
+      # This flag is used to set delay for getting MYSQL service ready.
+      - WAIT_ON_MYSQL=true
+      # Runs "drush status" command.
+      - PRINT_STATUS=true
+      # Runs deployment action: drush updb, drush cr etc.
+      - DEPLOYMENT=true
+      # WARNING: It will drop existing database and reinstall Drupal.
+      - INSTALL_OS2WEB=true
+
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    volumes:
+      - ./.docker/mariadb/data:/var/lib/mysql:delegated
+      - ./.docker/mariadb/my.cnf:/etc/mysql/conf.d/my.cnf:ro,delegated
+    environment:
+      ## Environment sensitive settings. See .env file.
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    networks:
+      - backend
