@@ -299,7 +299,20 @@ body .page-container {
 @include media-breakpoint-only(md, $grid-breakpoints) {}
 
 // Large desktop - and up
-@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(lg) {
+
+  #views-exposed-form-os2web-meetings-search-os2web-meetings-embed-search-from-to-dates {
+
+    .form-item-from-date,
+    .form-item-to-date {
+      max-width: 200px;
+    }
+
+    .form-type-select {
+      margin-right: 0;
+    }
+  }
+}
 
 // Large desktop - only
 @include media-breakpoint-only(lg, $grid-breakpoints) {}
