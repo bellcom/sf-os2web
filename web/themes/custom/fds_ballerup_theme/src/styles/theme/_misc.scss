@@ -313,11 +313,19 @@ body {
 }
 
 // Hide all other content, than the wide one on section pages and frontpages.
+.section--social-icon-teasers {
+  display: none;
+}
+
 .path-frontpage,
 .path-node-3235,
 .path-node-3366,
 .path-node-3323,
 .path-node-3347 {
+
+  .section--social-icon-teasers {
+    display: block;
+  }
 
   .layout-content-above {
     display: none !important;
