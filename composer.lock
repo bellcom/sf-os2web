@@ -10057,12 +10057,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-                "reference": "4bf9cfba33fc38b7458c36631c9760da409b9ec1"
+                "reference": "50f36b06d373d5883b41683b65093c5722e08b2c"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/4bf9cfba33fc38b7458c36631c9760da409b9ec1",
-                "reference": "4bf9cfba33fc38b7458c36631c9760da409b9ec1",
+                "reference": "50f36b06d373d5883b41683b65093c5722e08b2c",
                 "shasum": ""
             },
             "require": {
