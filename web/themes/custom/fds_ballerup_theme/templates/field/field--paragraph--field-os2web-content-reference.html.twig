@@ -7,8 +7,7 @@
 ]
 %}
 
-<!-- Begin - desktop -->
-<div class="desktop-only d-none d-sm-block">
+<div>
   <div{{ attributes.addClass(classes, 'field__items') }}>
     <div class="row">
       {% for item in items %}
@@ -19,14 +18,3 @@
     </div>
   </div>
 </div>
-<!-- End - desktop -->
-
-<!-- Begin - mobile -->
-<div class="mobile-only d-sm-none">
-  <div{{ attributes.addClass(classes, 'field__items') }}>
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
-    {% endfor %}
-  </div>
-</div>
-<!-- End - mobile -->
