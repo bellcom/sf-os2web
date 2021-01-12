@@ -15,13 +15,18 @@
     {{ content }}
   </div>
 
-  {{ _context['#section_labels']|join(' > ') }}
-
   <br>
 
-  <div class="field--type-link text-align-right">
-    <strong>
-      {{ 'Read more' | trans }}
-    </strong>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      {{ _context['#section_labels']|join(' > ') }}
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="field--type-link text-align-right">
+        <strong>
+          {{ 'Read more' | trans }}
+        </strong>
+      </div>
+    </div>
   </div>
 </a>
