@@ -19,6 +19,10 @@ else
   echo "Deployment skipped"
 fi;
 
+# Making sure that all files belong apache web server user.
+chown -R www-data:www-data /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync
+chmod g+s /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync
+
 # Starting cron service.
 service cron start
 

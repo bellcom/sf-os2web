@@ -43,7 +43,8 @@ RUN echo '<?php $settings["project_env"] = PROD_ENV; ' > /opt/drupal/web/sites/d
 	# Adding syn directory.
 	mkdir -p config/sync; \
 	# Adjusting ownership
-	chown -R www-data:www-data /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync
+	chown -R www-data:www-data /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync; \
+	chmod g+s -R /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync
 
 COPY settings/prod.settings.php /opt/drupal/web/sites/default/
 COPY entrypoint.sh /
