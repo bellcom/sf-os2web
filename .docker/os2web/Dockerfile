@@ -44,6 +44,7 @@ RUN echo '<?php $settings["project_env"] = PROD_ENV; ' > /opt/drupal/web/sites/d
 
 COPY settings/prod.settings.php /opt/drupal/web/sites/default/
 COPY entrypoint.sh /
+COPY install.sh /
 
 # Adding cron tab
 COPY crontab /etc/cron.d/drupal
