@@ -13,7 +13,7 @@ volumes:
 services:
 
   php:
-    image: dkbellcom/os2web8:0.0.1
+    image: dkbellcom/os2web8:0.0.2
     container_name: php
     volumes:
 #      - ./:/opt/drupal
@@ -45,8 +45,6 @@ services:
       - PRINT_STATUS=true
       # Runs deployment action: drush updb, drush cr etc.
       - DEPLOYMENT=true
-      # WARNING: It will drop existing database and reinstall Drupal.
-      - INSTALL_OS2WEB=true
 
   mariadb:
     image: mariadb:latest

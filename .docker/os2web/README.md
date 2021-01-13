@@ -29,7 +29,6 @@ There are available following environment settings:
 * WAIT_ON_MYSQL - flag is used to set delay for getting MYSQL service ready
 * PRINT_STATUS - Runs "drush status" command
 * DEPLOYMENT - Runs deployment action: drush updb, drush cr etc
-* INSTALL_OS2WEB - Runs installation process. **WARNING:** It will drop existing database and reinstall Drupal.
 
 ## Build image
 
@@ -42,3 +41,27 @@ Example:
 ```
 
 `--push` - when you this option build will be pushed to docker hub.
+
+## Install Drupal
+
+In case you need to install OS2Web through docker image on new environment,
+it should happen as separate deployment procedure with special docker image
+settings.
+
+* Checkout repository to separate branch `[recent-git-tag]-install`
+* Add `source /install.sh` call above deployment section.
+* Commit changes and create additional release tag `[recent-git-tag]-install`. 
+So your tag, for example, will look like `0.0.2-install`
+
+```
+....
+# Drupal installation step
+source /install.sh
+
+if [ "$DEPLOYMENT" = true ]; then
+  echo "Running deployment"
+.....
+
+```
+
+See detailed steps for install procedure `.docker/os2web/install.sh`

@@ -10,8 +10,6 @@ if [ "$PRINT_STATUS" = true ]; then
   $DRUSH status
 fi;
 
-source /install.sh
-
 if [ "$DEPLOYMENT" = true ]; then
   echo "Running deployment"
   export DRUSH="drush --root=/opt/drupal"
