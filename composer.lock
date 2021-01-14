@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "91c09528d9c5d3673d356a218ba4e0b86174c164"
+                "reference": "e97afbdadf863cb098e4495fea251fd075e29a04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/91c09528d9c5d3673d356a218ba4e0b86174c164",
-                "reference": "91c09528d9c5d3673d356a218ba4e0b86174c164",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/e97afbdadf863cb098e4495fea251fd075e29a04",
+                "reference": "e97afbdadf863cb098e4495fea251fd075e29a04",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2021-01-11T11:29:41+00:00"
+            "time": "2021-01-14T13:00:34+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -9986,12 +9986,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "534fed570d54ea64a147d7a2c84555ac3cd34544"
+                "reference": "009b86585b33ba5ea9841d6885a0a891d30d462a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/534fed570d54ea64a147d7a2c84555ac3cd34544",
-                "reference": "534fed570d54ea64a147d7a2c84555ac3cd34544",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/009b86585b33ba5ea9841d6885a0a891d30d462a",
+                "reference": "009b86585b33ba5ea9841d6885a0a891d30d462a",
                 "shasum": ""
             },
             "require": {
@@ -10004,7 +10004,11 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2021-01-13T15:43:07+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_meetings/issues",
+                "source": "https://github.com/OS2web/os2web_meetings/tree/develop"
+            },
+            "time": "2021-01-14T12:51:03+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
