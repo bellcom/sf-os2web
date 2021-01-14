@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffb8c60174dc5f7b53b72950dafccd6e",
+    "content-hash": "2abc2998a81d84a3cc65b8ce96f74d14",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-12-23T17:40:25+00:00"
+            "time": "2021-01-11T11:29:41+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -375,20 +375,6 @@
                 "yawik",
                 "zend",
                 "zikula"
-            ],
-            "support": {
-                "issues": "https://github.com/composer/installers/issues",
-                "source": "https://github.com/composer/installers/tree/v1.9.0"
-            },
-            "funding": [
-                {
-                    "url": "https://packagist.com",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
-                    "type": "tidelift"
-                }
             ],
             "time": "2020-04-07T06:57:05+00:00"
         },
@@ -2425,7 +2411,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1601667290",
+                    "datestamp": "1606134287",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2483,6 +2469,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "allow the date format to be set from the bef interface": "https://www.drupal.org/files/issues/2020-12-21/better_exposed_filters_allow_the_date_format-2858610-23_1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -7078,6 +7067,72 @@
             }
         },
         {
+            "name": "drupal/smart_trim",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smart_trim.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smart_trim-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "5894aa067fba19a3452ed8ce749f33bd9ae91907"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1589766531",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Casias (markie)",
+                    "homepage": "https://www.drupal.org/u/markie",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "chrisjlee",
+                    "homepage": "https://www.drupal.org/user/760600"
+                },
+                {
+                    "name": "drywall",
+                    "homepage": "https://www.drupal.org/user/192591"
+                },
+                {
+                    "name": "jsenich",
+                    "homepage": "https://www.drupal.org/user/58871"
+                },
+                {
+                    "name": "markie",
+                    "homepage": "https://www.drupal.org/user/206687"
+                },
+                {
+                    "name": "newsignature",
+                    "homepage": "https://www.drupal.org/user/765518"
+                }
+            ],
+            "description": "Provides a more robust alternative to 'summary or trimmed' textfield format.",
+            "homepage": "https://drupal.org/project/smart_trim",
+            "support": {
+                "source": "https://cgit.drupalcode.org/smart_trim",
+                "issues": "https://drupal.org/project/issues/smart_trim"
+            }
+        },
+        {
             "name": "drupal/smtp",
             "version": "1.0.0-beta7",
             "source": {
@@ -9804,7 +9859,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/ba5ab23e7c7739f5b09afec602ab17e921c1d6bd",
+                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566",
                 "reference": "0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566",
                 "shasum": ""
             },
@@ -9819,7 +9874,7 @@
                 "EUPL-1.2"
             ],
             "description": "Provide functionality for events import from Kulturnaut",
-            "time": "2020-12-15T11:45:34+00:00"
+            "time": "2021-01-06T10:17:21+00:00"
         },
         {
             "name": "os2web/os2web_hearings",
@@ -9931,12 +9986,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "7731b8f2741bed5b0c85d413aaf058c14fba76ee"
+                "reference": "534fed570d54ea64a147d7a2c84555ac3cd34544"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/7731b8f2741bed5b0c85d413aaf058c14fba76ee",
-                "reference": "7731b8f2741bed5b0c85d413aaf058c14fba76ee",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/534fed570d54ea64a147d7a2c84555ac3cd34544",
+                "reference": "534fed570d54ea64a147d7a2c84555ac3cd34544",
                 "shasum": ""
             },
             "require": {
@@ -9949,7 +10004,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2020-12-15T15:11:32+00:00"
+            "time": "2021-01-13T15:43:07+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
@@ -10057,25 +10112,31 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-                "reference": "50f36b06d373d5883b41683b65093c5722e08b2c"
+                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/4bf9cfba33fc38b7458c36631c9760da409b9ec1",
-                "reference": "50f36b06d373d5883b41683b65093c5722e08b2c",
+                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/8c190b1fd4a918b87417d0c3615e22caa77a33a0",
+                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "*",
+                "drupal/smart_trim": "^1.3",
                 "drupal/video_embed_field": "*"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "News entity",
-            "time": "2020-12-23T11:49:17+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_news/issues",
+                "source": "https://github.com/OS2web/os2web_news/tree/master"
+            },
+            "time": "2021-01-14T09:23:59+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
@@ -18220,5 +18281,5 @@
         "php": ">=7.0.8"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }
