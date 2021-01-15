@@ -57,7 +57,7 @@
 {{ page.featured_top }}
 
 {% if not is_front %}
-  <div class="section section--breadcrumb-bar d-print-none">
+  <div class="section section--breadcrumb-bar d-print-none layout--hidden-on-sections">
     <div class="container">
       <div class="flexy-row">
         {{ page.breadcrumb }}
@@ -75,7 +75,7 @@
   <div class="container">
     {{ page.highlighted }}
 
-    <div class="row layout-content-above">
+    <div class="row layout--hidden-on-sections">
       {%
         set content_classes = [
         page.sidebar_first ? 'col-12 col-md-6',
