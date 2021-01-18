@@ -9986,12 +9986,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "009b86585b33ba5ea9841d6885a0a891d30d462a"
+                "reference": "5685964151fcdba5a6992375d8609fc8a121cdb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/009b86585b33ba5ea9841d6885a0a891d30d462a",
-                "reference": "009b86585b33ba5ea9841d6885a0a891d30d462a",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/5685964151fcdba5a6992375d8609fc8a121cdb3",
+                "reference": "5685964151fcdba5a6992375d8609fc8a121cdb3",
                 "shasum": ""
             },
             "require": {
@@ -10004,11 +10004,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_meetings/issues",
-                "source": "https://github.com/OS2web/os2web_meetings/tree/develop"
-            },
-            "time": "2021-01-14T12:51:03+00:00"
+            "time": "2021-01-18T21:24:18+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
@@ -10016,30 +10012,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_agman.git",
-                "reference": "df2a456886aca48f0c8345436646b0e3f4d6aa44"
+                "reference": "0a3b4b3da36adaea92e695c5a8db59bf4f053f21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/df2a456886aca48f0c8345436646b0e3f4d6aa44",
-                "reference": "df2a456886aca48f0c8345436646b0e3f4d6aa44",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/0a3b4b3da36adaea92e695c5a8db59bf4f053f21",
+                "reference": "0a3b4b3da36adaea92e695c5a8db59bf4f053f21",
                 "shasum": ""
             },
             "require": {
                 "drupal/migrate_plus": "^4.2",
                 "drupal/migrate_tools": "^4.5"
             },
-            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS AGMAN ESDH system",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_meetings_agman/issues",
-                "source": "https://github.com/OS2web/os2web_meetings_agman/tree/master"
-            },
-            "time": "2021-01-14T14:14:59+00:00"
+            "time": "2021-01-18T21:25:40+00:00"
         },
         {
             "name": "os2web/os2web_meetings_edoc",
@@ -10134,7 +10125,6 @@
                 "drupal/smart_trim": "^1.3",
                 "drupal/video_embed_field": "*"
             },
-            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
