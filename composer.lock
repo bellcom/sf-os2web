@@ -9788,12 +9788,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "6dd73e339a1e910a7189473c265767840ee2b2ea"
+                "reference": "4cd8700cb767f0ed5cc60689656d8123ba1b7821"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/6dd73e339a1e910a7189473c265767840ee2b2ea",
-                "reference": "6dd73e339a1e910a7189473c265767840ee2b2ea",
+                "reference": "4cd8700cb767f0ed5cc60689656d8123ba1b7821",
                 "shasum": ""
             },
             "require": {
