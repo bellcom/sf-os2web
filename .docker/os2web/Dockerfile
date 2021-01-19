@@ -47,11 +47,3 @@ RUN echo '<?php $settings["project_env"] = PROD_ENV; ' > /opt/drupal/web/sites/d
 	chmod g+s -R /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync
 
 COPY settings/prod.settings.php /opt/drupal/web/sites/default/
-COPY entrypoint.sh /
-COPY install.sh /
-
-# Adding cron tab
-COPY crontab /etc/cron.d/drupal
-RUN chmod 0644 /etc/cron.d/drupal
-
-ENTRYPOINT ["/entrypoint.sh"]
