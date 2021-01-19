@@ -41,14 +41,6 @@ services:
       - DRUPAL_HASH_SALT=${DRUPAL_HASH_SALT}
       - OS2WEB_THEME=${OS2WEB_THEME}
 
-      ## Deployment sensitive settings. See .docker/os2web/entrypoint.sh
-      # This flag is used to set delay for getting MYSQL service ready.
-      - WAIT_ON_MYSQL=true
-      # Runs "drush status" command.
-      - PRINT_STATUS=true
-      # Runs deployment action: drush updb, drush cr etc.
-      - DEPLOYMENT=true
-
   mariadb:
     image: mariadb:latest
     container_name: mariadb

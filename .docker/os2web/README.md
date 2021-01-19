@@ -24,12 +24,6 @@ There are available following environment settings:
 * DRUPAL_HASH_SALT - define drupal hash salt. Uses in `settings.php` file
 * OS2WEB_THEME - Drupal theme name for OS2Web project
 
-### Deployment sensitive
-
-* WAIT_ON_MYSQL - flag is used to set delay for getting MYSQL service ready
-* PRINT_STATUS - Runs "drush status" command
-* DEPLOYMENT - Runs deployment action: drush updb, drush cr etc
-
 ## Build image
 
 To build image use `build.sh` script with git tag of OS2Web project release as first argument.
@@ -41,27 +35,3 @@ Example:
 ```
 
 `--push` - when you this option build will be pushed to docker hub.
-
-## Install Drupal
-
-In case you need to install OS2Web through docker image on new environment,
-it should happen as separate deployment procedure with special docker image
-settings.
-
-* Checkout repository to separate branch `[recent-git-tag]-install`
-* Add `source /install.sh` call above deployment section.
-* Commit changes and create additional release tag `[recent-git-tag]-install`. 
-So your tag, for example, will look like `0.0.2-install`
-
-```
-....
-# Drupal installation step
-source /install.sh
-
-if [ "$DEPLOYMENT" = true ]; then
-  echo "Running deployment"
-.....
-
-```
-
-See detailed steps for install procedure `.docker/os2web/install.sh`
