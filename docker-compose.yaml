@@ -9,14 +9,18 @@ networks:
 volumes:
   mysql:
     driver: local
+  os2web:
+    driver: local
 
 services:
 
+  # General application container.
+  # Could be run with many replica on demand.
   php:
-    image: dkbellcom/os2web8:0.0.2
+    # Both php and CLI containers should use the same container.
+    image: dkbellcom/os2web8:${OS2WEB_TAG}
     container_name: php
     volumes:
-#      - ./:/opt/drupal
       - ./.docker/logs:/var/log:delegated
       - ./files:/opt/drupal/files
       - ./private:/opt/drupal/private
@@ -30,7 +34,6 @@ services:
     environment:
       ## Environment sensitive settings. See .env file.
       - MYSQL_HOSTNAME=${MYSQL_HOSTNAME}
-      - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=${MYSQL_DATABASE}
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
@@ -54,9 +57,41 @@ services:
       - ./.docker/mariadb/my.cnf:/etc/mysql/conf.d/my.cnf:ro,delegated
     environment:
       ## Environment sensitive settings. See .env file.
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=${MYSQL_DATABASE}
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
     networks:
       - backend
+
+  # Example of CLI container.
+  # It's used separately from php container as standalone CLI container.
+  # Starts on demands and stops right after job has been done.
+  # Use cases for this container:
+  #  - provide CLI for developers
+  #  - run cron job
+  cli:
+    # Both php and CLI containers should use the same container.
+    image: dkbellcom/os2web8:${OS2WEB_TAG}
+    container_name: cli
+    volumes:
+      - ./files:/opt/drupal/files
+      - ./private:/opt/drupal/private
+    depends_on:
+      - mariadb
+    networks:
+      - backend
+    entrypoint:
+      - /bin/bash
+      - -c
+      - "ls -al /opt/drupal && ls -al /opt/drupal/files && ls -al /opt/drupal/private && drush status --root=/opt/drupal"
+    environment:
+      ## Environment sensitive settings. See .env file.
+      - MYSQL_HOSTNAME=${MYSQL_HOSTNAME}
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - DRUPAL_HASH_SALT=${DRUPAL_HASH_SALT}
+      - OS2WEB_THEME=${OS2WEB_THEME}
