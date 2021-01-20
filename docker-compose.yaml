@@ -56,6 +56,22 @@ services:
     networks:
       - backend
 
+  # SOLR Docker service.
+  ## On the first run on local environment you need to create SOLR core
+  ## Run command below to create it.
+  ## docker-compose exec solr bash -c "bin/solr create_core -c os2web-core -d /solr-config"
+  solr:
+    image: solr:8.5.2
+    container_name: solr
+    # Uncomment lines below if you need access to SOLR admin panel.
+    #ports:
+    #  - "8983:8983"
+    volumes:
+      - ./.docker/solr/config/:/solr-config:delegated
+      - ./.docker/solr/solr:/var/solr:delegated
+    networks:
+      - backend
+
   # Example of CLI container.
   # It's used separately from php container as standalone CLI container.
   # Starts on demands and stops right after job has been done.
