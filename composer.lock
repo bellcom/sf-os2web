@@ -9999,12 +9999,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "8719dc1c9d98e645cf9a6b49474ce8e79ce1d953"
+                "reference": "0dfab35021222a63e2abcb80c7e7ff9a60b66f82"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/8719dc1c9d98e645cf9a6b49474ce8e79ce1d953",
-                "reference": "8719dc1c9d98e645cf9a6b49474ce8e79ce1d953",
+                "reference": "0dfab35021222a63e2abcb80c7e7ff9a60b66f82",
                 "shasum": ""
             },
             "require": {
