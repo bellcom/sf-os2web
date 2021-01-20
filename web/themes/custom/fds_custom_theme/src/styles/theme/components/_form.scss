@@ -95,9 +95,12 @@ body {
 
 #views-exposed-form-os2web-meetings-search-os2web-meetings-embed-search-simple {
 
-  .bef-datepicker {
-    min-width: unset;
-    max-width: 130px !important;
+  .form-item-ar {
+
+    .form-select {
+      min-width: unset;
+      max-width: 130px !important;
+    }
   }
 }
 
