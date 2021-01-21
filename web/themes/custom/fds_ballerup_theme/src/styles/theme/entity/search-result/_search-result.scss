@@ -31,6 +31,14 @@
   }
 }
 
+a.entity-search-result {
+  max-width: unset;
+
+  &, &:visited, &:focus {
+    color: $color-text;
+  }
+}
+
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------

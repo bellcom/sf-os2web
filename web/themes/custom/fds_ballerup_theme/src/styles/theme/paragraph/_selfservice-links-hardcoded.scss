@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Wrapper
+// | Selfservice links hardcoded
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .paragraph--type--os2web-wrapper
+// | - .selfservice-links-hardcoded
 // |
 
 // --------------------------------------------------
@@ -14,18 +14,36 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin paragraph--type--os2web-wrapper-mixin() {}
+@mixin selfservice-links-hardcoded-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-wrapper {
+.background-color--primary {
 
-  &.background-color--primary {
+  .selfservice-links-hardcoded {
+    margin-top: 25px;
+    padding-top: 15px;
 
-    &, h1, h2, h3, h4, h5, h6 {
-      color: #fff;
+    border-top: 2px solid rgba(255, 255, 255, .2);
+
+    [class*="col-"] {
+      padding-top: 13px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+
+      font-weight: $font-weight-normal;
+      font-size: $base-font-size;
+    }
+
+    a {
+      display: block;
+
+      font-weight: $font-weight-normal;
+      text-decoration: none;
     }
   }
 }

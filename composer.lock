@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffb8c60174dc5f7b53b72950dafccd6e",
+    "content-hash": "2abc2998a81d84a3cc65b8ce96f74d14",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "928bbbac0924fb31361e31853e3756a5f768f2f1"
+                "reference": "e97afbdadf863cb098e4495fea251fd075e29a04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/928bbbac0924fb31361e31853e3756a5f768f2f1",
-                "reference": "928bbbac0924fb31361e31853e3756a5f768f2f1",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/e97afbdadf863cb098e4495fea251fd075e29a04",
+                "reference": "e97afbdadf863cb098e4495fea251fd075e29a04",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2020-12-22T09:06:50+00:00"
+            "time": "2021-01-14T13:00:34+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -1306,24 +1306,24 @@
         },
         {
             "name": "cweagans/composer-patches",
-            "version": "1.6.7",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "2e6f72a2ad8d59cd7e2b729f218bf42adb14f590"
+                "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/2e6f72a2ad8d59cd7e2b729f218bf42adb14f590",
-                "reference": "2e6f72a2ad8d59cd7e2b729f218bf42adb14f590",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/ae02121445ad75f4eaff800cc532b5e6233e2ddf",
+                "reference": "ae02121445ad75f4eaff800cc532b5e6233e2ddf",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0",
+                "composer-plugin-api": "^1.0 || ^2.0",
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "composer/composer": "~1.0",
+                "composer/composer": "~1.0 || ~2.0",
                 "phpunit/phpunit": "~4.6"
             },
             "type": "composer-plugin",
@@ -1346,7 +1346,11 @@
                 }
             ],
             "description": "Provides a way to patch Composer packages.",
-            "time": "2019-08-29T20:11:49+00:00"
+            "support": {
+                "issues": "https://github.com/cweagans/composer-patches/issues",
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.0"
+            },
+            "time": "2020-09-30T17:56:20+00:00"
         },
         {
             "name": "dflydev/dot-access-configuration",
@@ -2525,30 +2529,33 @@
         },
         {
             "name": "drupal/better_exposed_filters",
-            "version": "4.0.0-beta1",
+            "version": "4.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
-                "reference": "8.x-4.0-beta1"
+                "reference": "8.x-4.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-4.0-beta1.zip",
-                "reference": "8.x-4.0-beta1",
-                "shasum": "16eccfd4356e8d281d4e54a1358af17e065454a5"
+                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-4.0-beta2.zip",
+                "reference": "8.x-4.0-beta2",
+                "shasum": "f29ad3a8600c415c167506f61ba095ff8df25250"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.0-beta1",
-                    "datestamp": "1587154928",
+                    "version": "8.x-4.0-beta2",
+                    "datestamp": "1594138204",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "allow the date format to be set from the bef interface": "https://www.drupal.org/files/issues/2020-12-21/better_exposed_filters_allow_the_date_format-2858610-23_1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2563,6 +2570,10 @@
                 {
                     "name": "Martin Keereman",
                     "homepage": "https://www.drupal.org/u/etroid"
+                },
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
                 },
                 {
                     "name": "jkopel",
@@ -3485,23 +3496,23 @@
         },
         {
             "name": "drupal/console-extend-plugin",
-            "version": "0.9.3",
+            "version": "0.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-extend-plugin.git",
-                "reference": "ad8e52df34b2e78bdacfffecc9fe8edf41843342"
+                "reference": "eff6da99cfb5fe1fc60990672d2667c402eb3585"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-extend-plugin/zipball/ad8e52df34b2e78bdacfffecc9fe8edf41843342",
-                "reference": "ad8e52df34b2e78bdacfffecc9fe8edf41843342",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-extend-plugin/zipball/eff6da99cfb5fe1fc60990672d2667c402eb3585",
+                "reference": "eff6da99cfb5fe1fc60990672d2667c402eb3585",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0",
+                "composer-plugin-api": "^1.0 || ^2.0",
                 "composer/installers": "^1.2",
-                "symfony/finder": "~2.7|~3.0",
-                "symfony/yaml": "~2.7|~3.0"
+                "symfony/finder": "~3.0|^4.4",
+                "symfony/yaml": "~3.0|^4.4"
             },
             "type": "composer-plugin",
             "extra": {
@@ -3523,7 +3534,11 @@
                 }
             ],
             "description": "Drupal Console Extend Plugin",
-            "time": "2019-11-07T20:15:27+00:00"
+            "support": {
+                "issues": "https://github.com/hechoendrupal/drupal-console-extend-plugin/issues",
+                "source": "https://github.com/hechoendrupal/drupal-console-extend-plugin/tree/0.9.5"
+            },
+            "time": "2020-11-18T00:15:28+00:00"
         },
         {
             "name": "drupal/core",
@@ -3758,20 +3773,20 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "8.8.5",
+            "version": "8.9.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "4825cb5234c28dff79ad298db582dfb23ff4ca59"
+                "reference": "c902d07cb49ef73777e2b33a39e54c2861a8c81d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/4825cb5234c28dff79ad298db582dfb23ff4ca59",
-                "reference": "4825cb5234c28dff79ad298db582dfb23ff4ca59",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/c902d07cb49ef73777e2b33a39e54c2861a8c81d",
+                "reference": "c902d07cb49ef73777e2b33a39e54c2861a8c81d",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0.0",
+                "composer-plugin-api": "^1 || ^2",
                 "php": ">=7.0.8"
             },
             "conflict": {
@@ -3801,7 +3816,7 @@
             "keywords": [
                 "drupal"
             ],
-            "time": "2020-03-10T10:15:17+00:00"
+            "time": "2020-08-07T22:30:30+00:00"
         },
         {
             "name": "drupal/crop",
@@ -7136,6 +7151,72 @@
             }
         },
         {
+            "name": "drupal/smart_trim",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smart_trim.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smart_trim-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "5894aa067fba19a3452ed8ce749f33bd9ae91907"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1589766531",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Casias (markie)",
+                    "homepage": "https://www.drupal.org/u/markie",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "chrisjlee",
+                    "homepage": "https://www.drupal.org/user/760600"
+                },
+                {
+                    "name": "drywall",
+                    "homepage": "https://www.drupal.org/user/192591"
+                },
+                {
+                    "name": "jsenich",
+                    "homepage": "https://www.drupal.org/user/58871"
+                },
+                {
+                    "name": "markie",
+                    "homepage": "https://www.drupal.org/user/206687"
+                },
+                {
+                    "name": "newsignature",
+                    "homepage": "https://www.drupal.org/user/765518"
+                }
+            ],
+            "description": "Provides a more robust alternative to 'summary or trimmed' textfield format.",
+            "homepage": "https://drupal.org/project/smart_trim",
+            "support": {
+                "source": "https://cgit.drupalcode.org/smart_trim",
+                "issues": "https://drupal.org/project/issues/smart_trim"
+            }
+        },
+        {
             "name": "drupal/smtp",
             "version": "1.0.0-beta7",
             "source": {
@@ -9816,12 +9897,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "2af98db4b993059e2a6d77583351712b8f56da8e"
+                "reference": "018b1f5d17a8574b8ee0ec01c7950361d5a858a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/2af98db4b993059e2a6d77583351712b8f56da8e",
-                "reference": "2af98db4b993059e2a6d77583351712b8f56da8e",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/018b1f5d17a8574b8ee0ec01c7950361d5a858a4",
+                "reference": "018b1f5d17a8574b8ee0ec01c7950361d5a858a4",
                 "shasum": ""
             },
             "require": {
@@ -9835,7 +9916,7 @@
                 "EUPL-1.2"
             ],
             "description": "Contact entity",
-            "time": "2020-12-22T12:33:20+00:00"
+            "time": "2020-12-28T09:20:55+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -9868,12 +9949,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_events.git",
-                "reference": "ba5ab23e7c7739f5b09afec602ab17e921c1d6bd"
+                "reference": "0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/ba5ab23e7c7739f5b09afec602ab17e921c1d6bd",
-                "reference": "ba5ab23e7c7739f5b09afec602ab17e921c1d6bd",
+                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566",
+                "reference": "0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566",
                 "shasum": ""
             },
             "require": {
@@ -9887,7 +9968,7 @@
                 "EUPL-1.2"
             ],
             "description": "Provide functionality for events import from Kulturnaut",
-            "time": "2020-12-15T11:45:34+00:00"
+            "time": "2021-01-06T10:17:21+00:00"
         },
         {
             "name": "os2web/os2web_hearings",
@@ -10025,12 +10106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_agman.git",
-                "reference": "98087c0177c9b166b72dd323556daae3ac0d9264"
+                "reference": "0a3b4b3da36adaea92e695c5a8db59bf4f053f21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/98087c0177c9b166b72dd323556daae3ac0d9264",
-                "reference": "98087c0177c9b166b72dd323556daae3ac0d9264",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/0a3b4b3da36adaea92e695c5a8db59bf4f053f21",
+                "reference": "0a3b4b3da36adaea92e695c5a8db59bf4f053f21",
                 "shasum": ""
             },
             "require": {
@@ -10043,7 +10124,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS AGMAN ESDH system",
-            "time": "2020-12-10T19:13:21+00:00"
+            "time": "2021-01-18T21:25:40+00:00"
         },
         {
             "name": "os2web/os2web_meetings_edoc",
@@ -10051,12 +10132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_edoc.git",
-                "reference": "cd2a6548d2aaa6780ba22bc39da21be2f2e0dd65"
+                "reference": "44ea06a7f6fb188e14f40da121bd299726a16b91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc/zipball/cd2a6548d2aaa6780ba22bc39da21be2f2e0dd65",
-                "reference": "cd2a6548d2aaa6780ba22bc39da21be2f2e0dd65",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc/zipball/44ea06a7f6fb188e14f40da121bd299726a16b91",
+                "reference": "44ea06a7f6fb188e14f40da121bd299726a16b91",
                 "shasum": ""
             },
             "require": {
@@ -10069,7 +10150,7 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from EDOC ESDH system",
-            "time": "2020-11-25T20:19:28+00:00"
+            "time": "2020-12-23T11:37:23+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
@@ -10125,16 +10206,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-                "reference": "fbf504e9c424f1c00d76892b3d9a83f9df03d05e"
+                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/fbf504e9c424f1c00d76892b3d9a83f9df03d05e",
-                "reference": "fbf504e9c424f1c00d76892b3d9a83f9df03d05e",
+                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/8c190b1fd4a918b87417d0c3615e22caa77a33a0",
+                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "*",
+                "drupal/smart_trim": "^1.3",
                 "drupal/video_embed_field": "*"
             },
             "type": "drupal-module",
@@ -10143,7 +10225,11 @@
                 "EUPL-1.2"
             ],
             "description": "News entity",
-            "time": "2020-12-22T14:31:52+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_news/issues",
+                "source": "https://github.com/OS2web/os2web_news/tree/master"
+            },
+            "time": "2021-01-14T09:23:59+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
@@ -10151,12 +10237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "c9169e6440bf40c38ac82f1fcb1b0fef40bd6615"
+                "reference": "93061b16065008e62206348ad91dc1457a02605a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/c9169e6440bf40c38ac82f1fcb1b0fef40bd6615",
-                "reference": "c9169e6440bf40c38ac82f1fcb1b0fef40bd6615",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/93061b16065008e62206348ad91dc1457a02605a",
+                "reference": "93061b16065008e62206348ad91dc1457a02605a",
                 "shasum": ""
             },
             "require": {
@@ -10175,7 +10261,7 @@
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-12-17T15:06:43+00:00"
+            "time": "2020-12-23T13:51:44+00:00"
         },
         {
             "name": "os2web/os2web_search",
@@ -10183,12 +10269,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_search.git",
-                "reference": "a76ab8ae612cd0f93e333154caabd71d28341d04"
+                "reference": "7750357acf9c1c35cd21e98efe12d200060a7544"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/a76ab8ae612cd0f93e333154caabd71d28341d04",
-                "reference": "a76ab8ae612cd0f93e333154caabd71d28341d04",
+                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/7750357acf9c1c35cd21e98efe12d200060a7544",
+                "reference": "7750357acf9c1c35cd21e98efe12d200060a7544",
                 "shasum": ""
             },
             "require": {
@@ -10206,7 +10292,7 @@
                 "EUPL-1.2"
             ],
             "description": "Search functionality powered by SOLR",
-            "time": "2020-11-25T08:35:25+00:00"
+            "time": "2020-12-28T13:57:23+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -11214,20 +11300,20 @@
         },
         {
             "name": "simplesamlphp/composer-module-installer",
-            "version": "v1.1.6",
+            "version": "v1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/composer-module-installer.git",
-                "reference": "b70414a2112fe49e97a7eddd747657bd8bc38ef0"
+                "reference": "45161b5406f3e9c82459d0f9a5a1dba064953cfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/composer-module-installer/zipball/b70414a2112fe49e97a7eddd747657bd8bc38ef0",
-                "reference": "b70414a2112fe49e97a7eddd747657bd8bc38ef0",
+                "url": "https://api.github.com/repos/simplesamlphp/composer-module-installer/zipball/45161b5406f3e9c82459d0f9a5a1dba064953cfa",
+                "reference": "45161b5406f3e9c82459d0f9a5a1dba064953cfa",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0",
+                "composer-plugin-api": "^1.1|^2.0",
                 "simplesamlphp/simplesamlphp": "*"
             },
             "type": "composer-plugin",
@@ -11240,8 +11326,15 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
             "description": "A Composer plugin that allows installing SimpleSAMLphp modules through Composer.",
-            "time": "2017-04-24T07:12:50+00:00"
+            "support": {
+                "issues": "https://github.com/simplesamlphp/composer-module-installer/issues",
+                "source": "https://github.com/simplesamlphp/composer-module-installer/tree/v1.1.8"
+            },
+            "time": "2020-08-25T19:04:33+00:00"
         },
         {
             "name": "simplesamlphp/saml2",
@@ -16018,20 +16111,20 @@
         },
         {
             "name": "zaporylie/composer-drupal-optimizations",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zaporylie/composer-drupal-optimizations.git",
-                "reference": "fb231d92adc862a2c9276bccbc90f684816dc75d"
+                "reference": "a7f409a765164fd13ac0bd00e19109165c51b369"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zaporylie/composer-drupal-optimizations/zipball/fb231d92adc862a2c9276bccbc90f684816dc75d",
-                "reference": "fb231d92adc862a2c9276bccbc90f684816dc75d",
+                "url": "https://api.github.com/repos/zaporylie/composer-drupal-optimizations/zipball/a7f409a765164fd13ac0bd00e19109165c51b369",
+                "reference": "a7f409a765164fd13ac0bd00e19109165c51b369",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.1"
+                "composer-plugin-api": "^1.1 || ^2.0"
             },
             "require-dev": {
                 "composer/composer": "^1.6",
@@ -16057,7 +16150,7 @@
                 }
             ],
             "description": "Composer plugin to improve composer performance for Drupal projects",
-            "time": "2019-10-02T17:01:11+00:00"
+            "time": "2020-10-22T13:26:00+00:00"
         }
     ],
     "packages-dev": [

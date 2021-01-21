@@ -57,7 +57,7 @@
 {{ page.featured_top }}
 
 {% if not is_front %}
-  <div class="section section--breadcrumb-bar d-print-none">
+  <div class="section section--breadcrumb-bar d-print-none layout--hidden-on-sections">
     <div class="container">
       <div class="flexy-row">
         {{ page.breadcrumb }}
@@ -75,7 +75,7 @@
   <div class="container">
     {{ page.highlighted }}
 
-    <div class="row">
+    <div class="row layout--hidden-on-sections">
       {%
         set content_classes = [
         page.sidebar_first ? 'col-12 col-md-6',
@@ -94,21 +94,23 @@
       {% endif %}
 
       <main {{ content_attributes.addClass(content_classes) }}>
-        {{ page.content }}
+        <div class="layout-content">
+          {{ page.content }}
+        </div>
       </main>
 
       <aside class="col-12 col-md-3 d-print-none">
         <div class="layout-sidebar-right">
-          {% if not is_front %}
-            <br>
-
-            <a href="/selvbetjening" class="button button-primary button--selvbetjening">
-              {{ 'Genvej til al Selvbetjening' | trans }} <span class="icon fa fa-angle-right"></span>
-            </a>
-          {% endif %}
-
           {% if page.sidebar_second %}
             {% block sidebar_second %}
+              {% if not is_front %}
+                <br>
+
+                <a href="/selvbetjening" class="button button-primary button--selvbetjening">
+                  {{ 'Genvej til al Selvbetjening' | trans }} <span class="icon fa fa-angle-right"></span>
+                </a>
+              {% endif %}
+
               {{ page.sidebar_second }}
             {% endblock %}
           {% endif %}

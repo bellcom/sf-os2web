@@ -20,9 +20,19 @@
 // Styling
 // --------------------------------------------------
 
+a.entity-list--os2web-news {
+  max-width: unset;
+}
 .entity-list--os2web-news {
+  display: flex;
+
+  flex-direction: column;
+
   margin-top: $grid-gutter-width / 2;
   margin-bottom: $grid-gutter-width / 2;
+
+  box-shadow: $box-shadow;
+  background-color: #fff;
 
   .field--name-field-os2web-news-heading {
 
@@ -52,7 +62,9 @@
 
     color: #666666;
   }
-
+  .entity-list__body {
+    padding: $grid-gutter-width / 2;
+  }
 }
 
 a.entity-list--os2web-news {
@@ -81,6 +93,8 @@ a.entity-list--os2web-news {
 
   .entity-list--os2web-news {
     display: flex;
+
+    flex-direction: row;
 
     .entity-list__image {
       flex-basis: 200px;

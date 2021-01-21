@@ -50,7 +50,7 @@ a.social-icon-teaser {
 
   padding: 12px 20px;
 
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   text-transform: uppercase;
 
   color: #fff;
@@ -97,10 +97,11 @@ a.social-icon-teaser {
   justify-content: center;
   align-items: center;
 
-  height: 33px;
-  width: 33px;
+  height: 46px;
+  width: 46px;
 
   font-size: 1.7rem;
+  text-decoration: none !important;
 
   background-color: #fff;
   border-radius: 100%;

@@ -34,11 +34,22 @@
   }
 
   a {
+    position: relative;
+
+    padding-left: 32px;
+
     font-weight: $font-weight-bold;
 
     color: inherit;
 
     &:before {
+      position: absolute;
+
+      top: 50%;
+      left: 0;
+
+      margin-top: -11px;
+
       display: inline-flex;
 
       align-items: center;
@@ -64,11 +75,19 @@
 .paragraph--type--os2web-wrapper {
 
   &.background-color--transparent {}
-  &.background-color--primary {
-    color: #fff;
+  &.background-color--primary,
+  &.background-color--tertiary {
+
+    &, p, h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+    }
 
     a {
       outline-color: $color-primary;
+
+      &, &:active, &:visited, &:focus {
+        color: #fff;
+      }
     }
   }
   &.background-color--secondary {}
