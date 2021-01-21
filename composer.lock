@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2abc2998a81d84a3cc65b8ce96f74d14",
+    "content-hash": "f0da69fe0be41d636dddd4d6ad989f4c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -10206,7 +10206,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0
+                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0"
             },
             "dist": {
                 "type": "zip",
@@ -10237,12 +10237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "93061b16065008e62206348ad91dc1457a02605a"
+                "reference": "d309edcba47ba03c6bdbc495a3aceca468345deb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/93061b16065008e62206348ad91dc1457a02605a",
-                "reference": "93061b16065008e62206348ad91dc1457a02605a",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/d309edcba47ba03c6bdbc495a3aceca468345deb",
+                "reference": "d309edcba47ba03c6bdbc495a3aceca468345deb",
                 "shasum": ""
             },
             "require": {
@@ -10255,13 +10255,18 @@
                 "os2web/os2web_hjemmeside": "dev-master",
                 "os2web/os2web_kle": "dev-master"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2020-12-23T13:51:44+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
+                "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
+            },
+            "time": "2021-01-21T11:58:01+00:00"
         },
         {
             "name": "os2web/os2web_search",
