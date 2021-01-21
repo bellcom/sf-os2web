@@ -10206,7 +10206,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0
+                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0"
             },
             "dist": {
                 "type": "zip",
