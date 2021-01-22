@@ -61,16 +61,27 @@ services:
   ## Run command below to create it.
   ## docker-compose exec solr bash -c "bin/solr create_core -c os2web-core -d /solr-config"
   solr:
-    image: solr:8.5.2
+    image: dkbellcom/os2web8-solr:0.0.1
     container_name: solr
     # Uncomment lines below if you need access to SOLR admin panel.
-    #ports:
-    #  - "8983:8983"
+    ports:
+      - "8983:8983"
     volumes:
-      - ./.docker/solr/config/:/solr-config:delegated
       - ./.docker/solr/solr:/var/solr:delegated
     networks:
       - backend
+
+  solr-bootstrap:
+    image: dkbellcom/os2web8-solr:0.0.1
+    container_name: solr-bootstrap
+    volumes:
+      - ./.docker/solr/solr:/var/solr:delegated
+    networks:
+      - backend
+    command:
+      - /bin/bash
+      - -c
+      - "sleep 10 && bin/solr start && bin/solr create_core -c os2web-core -d /solr-config"
 
   # Example of CLI container.
   # It's used separately from php container as standalone CLI container.
@@ -92,7 +103,7 @@ services:
     entrypoint:
       - /bin/bash
       - -c
-      - "ls -al /opt/drupal && ls -al /opt/drupal/files && ls -al /opt/drupal/private && drush status --root=/opt/drupal"
+      - "drush status --root=/opt/drupal"
     environment:
       ## Environment sensitive settings. See .env file.
       - MYSQL_HOSTNAME=${MYSQL_HOSTNAME}
