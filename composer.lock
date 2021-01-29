@@ -9862,12 +9862,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "018b1f5d17a8574b8ee0ec01c7950361d5a858a4"
+                "reference": "bbec292b4bc362d922f71874eb616c8ee69a8b2b"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/018b1f5d17a8574b8ee0ec01c7950361d5a858a4",
-                "reference": "018b1f5d17a8574b8ee0ec01c7950361d5a858a4",
+                "reference": "bbec292b4bc362d922f71874eb616c8ee69a8b2b",
                 "shasum": ""
             },
             "require": {
