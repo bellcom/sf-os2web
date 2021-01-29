@@ -10059,12 +10059,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "0bcd8dd3a98d7045fc6fe12b9cd25ff159e07f9f"
+                "reference": "38f6b2ed914693a8c40c7d6e0adb0b69be9d94de"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/0bcd8dd3a98d7045fc6fe12b9cd25ff159e07f9f",
-                "reference": "0bcd8dd3a98d7045fc6fe12b9cd25ff159e07f9f",
+                "reference": "38f6b2ed914693a8c40c7d6e0adb0b69be9d94de",
                 "shasum": ""
             },
             "require": {
