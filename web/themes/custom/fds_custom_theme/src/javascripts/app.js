@@ -142,13 +142,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 })();
-
-// Add internet explorer class to <body>
-(function() {
-  var ua = window.navigator.userAgent;
-  var isIE = /MSIE|Trident/.test(ua);
-
-  if(isIE) {
-    document.documentElement.classList.add('ie');
-  }
-})();
