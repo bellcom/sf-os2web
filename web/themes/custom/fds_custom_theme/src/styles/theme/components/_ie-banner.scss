@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Hearings search.
+// | IE banner
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .paragraph--type--os2web-hearings-search
+// | - .ie-banner
 // |
 
 // --------------------------------------------------
@@ -14,19 +14,27 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin paragraph--type--os2web-hearings-search-mixin() {}
+@mixin ie-banner-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-hearings-search {
+.ie-banner {
+  display: none;
 
+  padding: 1rem;
+
+  text-align: center;
+
+  font-weight: $font-weight-bold;
+  color: #fff;
+  background-color: $color-orange-004;
 }
 
-// --------------------------------------------------
-// Variants
-// --------------------------------------------------
+html.ie .ie-banner {
+  display: block;
+}
 
 // --------------------------------------------------
 // Responsive
@@ -39,43 +47,13 @@
 @include media-breakpoint-only(xs, $grid-breakpoints) {}
 
 // Tablet - and up
-@include media-breakpoint-up(sm) {
-
-  .paragraph--type--os2web-hearings-search {
-
-    .form-composite {
-      width: 100%;
-
-      .form-radios {
-
-        .form-type-radio {
-          width: 50%;
-          margin-right: 0;
-        }
-      }
-    }
-  }
-}
+@include media-breakpoint-up(sm) {}
 
 // Tablet - only
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {
-
-  .paragraph--type--os2web-hearings-search {
-
-    .form-composite {
-
-      .form-radios {
-
-        .form-type-radio {
-          width: 30%;
-        }
-      }
-    }
-  }
-}
+@include media-breakpoint-up(md) {}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}
