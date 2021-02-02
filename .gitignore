@@ -45,9 +45,10 @@
 *.sql
 *.sql.gz
 
-# docker/docksal
-logs/*.log
+logs/*
 !logs/.gitkeep
+sessions/*
+!sessions/.gitkeep
 
 .docker/logs/*
 !.docker/logs/.gitkeep
