@@ -47,6 +47,8 @@
 
 logs/*
 !logs/.gitkeep
+tmp/*
+!tmp/.gitkeep
 sessions/*
 !sessions/.gitkeep
 
