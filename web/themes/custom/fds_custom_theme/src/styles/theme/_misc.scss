@@ -19,6 +19,10 @@ body .container-fluid {
   padding-right: $grid-gutter-width;
 }
 
+.skip-link {
+  color: $color-text;
+}
+
 // Accessibility overrides.
 button,
 body a {
