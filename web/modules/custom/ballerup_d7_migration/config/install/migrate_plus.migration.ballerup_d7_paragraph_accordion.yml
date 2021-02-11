@@ -10,12 +10,8 @@ source:
 process:
   field_os2web_accordion_heading:
     -
-      plugin: skip_row_if_not_set
-      index: 0
-      source: field_accordion_title
-    -
       plugin: skip_on_empty
-      method: row
+      method: process
       source: field_accordion_title
       message: 'Field field_accordion_title is missing'
   field_os2web_accordion_reference:

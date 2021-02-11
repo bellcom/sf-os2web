@@ -26,6 +26,6 @@ $databases['default']['default'] = [
 
 $settings['hash_salt'] = getenv('DRUPAL_HASH_SALT');
 
-$settings['file_temp_path'] = '/tmp';
+$settings['file_temp_path'] = '../tmp';
 $settings['file_private_path'] = '../private';
 

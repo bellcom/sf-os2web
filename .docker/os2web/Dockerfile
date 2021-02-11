@@ -43,7 +43,11 @@ RUN echo '<?php $settings["project_env"] = PROD_ENV; ' > /opt/drupal/web/sites/d
 	# Adding syn directory.
 	mkdir -p config/sync; \
 	# Adjusting ownership
-	chown -R www-data:www-data /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync; \
+	chown -R www-data:www-data /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync /opt/drupal/tmp; \
 	chmod g+s -R /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync
 
+# Adding custom apache configuration with PHP value and log settings.
+COPY apache/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+
+# Adding Drupal settings.
 COPY settings/prod.settings.php /opt/drupal/web/sites/default/
