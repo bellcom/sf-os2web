@@ -10337,12 +10337,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "4cd8700cb767f0ed5cc60689656d8123ba1b7821"
+                "reference": "455b1fff70d1b361740ab2b7b4bcdd9b2eec3571"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/4cd8700cb767f0ed5cc60689656d8123ba1b7821",
-                "reference": "4cd8700cb767f0ed5cc60689656d8123ba1b7821",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/455b1fff70d1b361740ab2b7b4bcdd9b2eec3571",
+                "reference": "455b1fff70d1b361740ab2b7b4bcdd9b2eec3571",
                 "shasum": ""
             },
             "require": {
@@ -10357,7 +10357,11 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "time": "2021-01-18T11:51:02+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_borgerdk/issues",
+                "source": "https://github.com/OS2web/os2web_borgerdk/tree/8.x"
+            },
+            "time": "2021-02-16T09:32:51+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -10750,12 +10754,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_search.git",
-                "reference": "7750357acf9c1c35cd21e98efe12d200060a7544"
+                "reference": "4f6abf6640d14b3464e6d660f5015a5938c08aca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/7750357acf9c1c35cd21e98efe12d200060a7544",
-                "reference": "7750357acf9c1c35cd21e98efe12d200060a7544",
+                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/4f6abf6640d14b3464e6d660f5015a5938c08aca",
+                "reference": "4f6abf6640d14b3464e6d660f5015a5938c08aca",
                 "shasum": ""
             },
             "require": {
@@ -10767,13 +10771,18 @@
                 "drupal/search_api_spellcheck": "^3.0@alpha",
                 "drupal/search_api_synonym": "^1.2"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Search functionality powered by SOLR",
-            "time": "2020-12-28T13:57:23+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_search/issues",
+                "source": "https://github.com/OS2web/os2web_search/tree/master"
+            },
+            "time": "2021-02-15T14:22:45+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
