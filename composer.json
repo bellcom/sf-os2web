@@ -55,7 +55,7 @@
         "drupal/stage_file_proxy": "^1.0",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "mglaman/drupal-check": "^1.1",
-        "os2web/os2web": "develop-dev",
+        "os2web/os2web": "^1.0",
         "os2web/os2web_borgerdk": "8.x-dev",
         "os2web/os2web_events": "dev-master",
         "os2web/os2web_hearings": "dev-master",

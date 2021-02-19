@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb698dd08babc0443edd1af46e3d3531",
+    "content-hash": "4ac5c977e70781dbfb00a0936ccda954",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -10166,7 +10166,7 @@
         },
         {
             "name": "os2web/os2web",
-            "version": "dev-develop",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
@@ -10198,6 +10198,10 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Web installation profile",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web/issues",
+                "source": "https://github.com/OS2web/os2web/tree/develop"
+            },
             "time": "2020-09-02T15:16:25+00:00"
         },
         {
@@ -19055,7 +19059,6 @@
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
         "drupal/anonymous_subscriptions": 20,
-        "os2web/os2web": 20,
         "os2web/os2web_borgerdk": 20,
         "os2web/os2web_events": 20,
         "os2web/os2web_hearings": 20,
