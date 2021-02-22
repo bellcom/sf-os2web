@@ -56,7 +56,7 @@
         "drupal/upgrade_rector": "^1.0@alpha",
         "drupal/upgrade_status": "^3.4",
         "drush/drush": "^9.7.1 | ^10.0.0",
-        "os2web/os2web": "develop-dev",
+        "os2web/os2web": "dev-drupal9",
         "os2web/os2web_borgerdk": "8.x-dev",
         "os2web/os2web_events": "dev-master",
         "os2web/os2web_hearings": "dev-master",
