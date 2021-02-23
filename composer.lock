@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41c5ba6ce852f1ab21b20fe8e9a11dc3",
+    "content-hash": "d38382fa25317fad1cb2c30597086b56",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5887,27 +5887,25 @@
         },
         {
             "name": "drupal/migrate_plus",
-            "version": "4.2.0",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_plus.git",
-                "reference": "8.x-4.2"
+                "reference": "8.x-5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-4.2.zip",
-                "reference": "8.x-4.2",
-                "shasum": "5736a43e39cc5c091d54ceef2849ea35ba979af3"
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-5.1.zip",
+                "reference": "8.x-5.1",
+                "shasum": "1257427ab0c64459c3c1e42bb2a98d3114b77163"
             },
             "require": {
-                "drupal/core": "^8.3"
+                "drupal/core": "^8.8 || ^9",
+                "php": ">=7.1"
             },
             "require-dev": {
-                "drupal/entity": "*",
                 "drupal/migrate_example_advanced_setup": "*",
-                "drupal/migrate_example_setup": "*",
-                "drupal/migrate_tools": "*",
-                "drupal/profile": "*"
+                "drupal/migrate_example_setup": "*"
             },
             "suggest": {
                 "ext-soap": "*",
@@ -5916,8 +5914,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.2",
-                    "datestamp": "1555683487",
+                    "version": "8.x-5.1",
+                    "datestamp": "1588261060",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5926,7 +5924,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5935,49 +5933,51 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "mikeryan",
-                    "homepage": "https://www.drupal.org/user/4420"
+                    "name": "Lucas Hedding",
+                    "homepage": "https://www.drupal.org/u/heddn",
+                    "role": "Maintainer"
                 }
             ],
             "description": "Enhancements to core migration support.",
             "homepage": "https://www.drupal.org/project/migrate_plus",
             "support": {
-                "source": "https://cgit.drupalcode.org/migrate_plus",
+                "source": "https://git.drupalcode.org/project/migrate_plus",
                 "issues": "https://www.drupal.org/project/issues/migrate_plus",
-                "irc": "irc://irc.freenode.org/drupal-migrate"
+                "slack": "#migrate"
             }
         },
         {
             "name": "drupal/migrate_tools",
-            "version": "4.5.0",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_tools.git",
-                "reference": "8.x-4.5"
+                "reference": "8.x-5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-4.5.zip",
-                "reference": "8.x-4.5",
-                "shasum": "06390b359bf53c50a30f2d6dc4c7542bfb1fe7ca"
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-5.0.zip",
+                "reference": "8.x-5.0",
+                "shasum": "b7c91aa6f7de9d6d548f65f83c8736e47e5926a1"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/migrate_plus": "^4 || ^5"
+                "drupal/core": "^8.8 | ^9",
+                "drupal/migrate_plus": "^5",
+                "php": ">=7.1"
             },
             "require-dev": {
-                "drupal/migrate_plus": "4.x-dev",
-                "drupal/migrate_source_csv": "^2.2",
+                "drupal/migrate_plus": "^5",
+                "drupal/migrate_source_csv": "^3",
                 "drush/drush": "^10"
+            },
+            "suggest": {
+                "drush/drush": "^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-4.5",
-                    "datestamp": "1574693285",
+                    "version": "8.x-5.0",
+                    "datestamp": "1588260531",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5995,24 +5995,22 @@
             ],
             "authors": [
                 {
-                    "name": "heddn",
-                    "homepage": "https://www.drupal.org/user/1463982"
+                    "name": "Mike Ryan",
+                    "homepage": "https://www.drupal.org/u/mikeryan",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "mikeryan",
-                    "homepage": "https://www.drupal.org/user/4420"
-                },
-                {
-                    "name": "moshe weitzman",
-                    "homepage": "https://www.drupal.org/user/23"
+                    "name": "Lucas Hedding",
+                    "homepage": "https://www.drupal.org/u/heddn",
+                    "role": "Maintainer"
                 }
             ],
             "description": "Tools to assist in developing and running migrations.",
             "homepage": "http://drupal.org/project/migrate_tools",
             "support": {
-                "source": "http://cgit.drupalcode.org/migrate_tools",
-                "issues": "http://drupal.org/project/migrate_tools",
-                "irc": "irc://irc.freenode.org/drupal-migrate"
+                "source": "https://git.drupalcode.org/project/migrate_tools",
+                "issues": "https://www.drupal.org/project/issues/migrate_tools",
+                "slack": "#migrate"
             }
         },
         {
@@ -8373,6 +8371,7 @@
             "require-dev": {
                 "phpunit/phpunit": "~6.5 || ~7 || ~8.4"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -8397,6 +8396,10 @@
                 "ffwagency",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/ffwagency/borgerdk-php/issues",
+                "source": "https://github.com/ffwagency/borgerdk-php/tree/develop"
+            },
             "time": "2020-02-20T09:43:27+00:00"
         },
         {
@@ -10297,21 +10300,21 @@
         },
         {
             "name": "os2web/os2web_borgerdk",
-            "version": "8.x-dev",
+            "version": "dev-drupal9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "455b1fff70d1b361740ab2b7b4bcdd9b2eec3571"
+                "reference": "1ec2a5a0325b7024d498a5139f7e5ad89598139c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/455b1fff70d1b361740ab2b7b4bcdd9b2eec3571",
-                "reference": "455b1fff70d1b361740ab2b7b4bcdd9b2eec3571",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/1ec2a5a0325b7024d498a5139f7e5ad89598139c",
+                "reference": "1ec2a5a0325b7024d498a5139f7e5ad89598139c",
                 "shasum": ""
             },
             "require": {
-                "drupal/migrate_plus": "^4.2",
-                "drupal/migrate_tools": "^4.5",
+                "drupal/migrate_plus": "^5.1",
+                "drupal/migrate_tools": "^5.0",
                 "drupal/paragraphs": "^1.11",
                 "ffwagency/borgerdk-php": "dev-develop"
             },
@@ -10323,9 +10326,9 @@
             "description": "Imports content from Borger.dk.",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_borgerdk/issues",
-                "source": "https://github.com/OS2web/os2web_borgerdk/tree/8.x"
+                "source": "https://github.com/OS2web/os2web_borgerdk/tree/drupal9"
             },
-            "time": "2021-02-16T09:32:51+00:00"
+            "time": "2021-02-23T13:41:47+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -10530,21 +10533,21 @@
         },
         {
             "name": "os2web/os2web_meetings",
-            "version": "dev-develop",
+            "version": "dev-drupal9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "0dfab35021222a63e2abcb80c7e7ff9a60b66f82"
+                "reference": "1e1517656fbca95e89d0202d9e0c203d52071055"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/0dfab35021222a63e2abcb80c7e7ff9a60b66f82",
-                "reference": "0dfab35021222a63e2abcb80c7e7ff9a60b66f82",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/1e1517656fbca95e89d0202d9e0c203d52071055",
+                "reference": "1e1517656fbca95e89d0202d9e0c203d52071055",
                 "shasum": ""
             },
             "require": {
-                "drupal/migrate_plus": "^4.2",
-                "drupal/migrate_tools": "^4.5"
+                "drupal/migrate_plus": "^5.1",
+                "drupal/migrate_tools": "^5.0"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -10552,25 +10555,29 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from ESDH systems",
-            "time": "2021-01-19T14:42:17+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_meetings/issues",
+                "source": "https://github.com/OS2web/os2web_meetings/tree/drupal9"
+            },
+            "time": "2021-02-23T11:29:10+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
-            "version": "dev-master",
+            "version": "dev-drupal9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_agman.git",
-                "reference": "0a3b4b3da36adaea92e695c5a8db59bf4f053f21"
+                "reference": "35c0c21de3f05cc69819782e2b22fbcb7107c8e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/0a3b4b3da36adaea92e695c5a8db59bf4f053f21",
-                "reference": "0a3b4b3da36adaea92e695c5a8db59bf4f053f21",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/35c0c21de3f05cc69819782e2b22fbcb7107c8e9",
+                "reference": "35c0c21de3f05cc69819782e2b22fbcb7107c8e9",
                 "shasum": ""
             },
             "require": {
-                "drupal/migrate_plus": "^4.2",
-                "drupal/migrate_tools": "^4.5"
+                "drupal/migrate_plus": "^5.1",
+                "drupal/migrate_tools": "^5.0"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -10578,25 +10585,29 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS AGMAN ESDH system",
-            "time": "2021-01-18T21:25:40+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_meetings_agman/issues",
+                "source": "https://github.com/OS2web/os2web_meetings_agman/tree/drupal9"
+            },
+            "time": "2021-02-23T12:09:36+00:00"
         },
         {
             "name": "os2web/os2web_meetings_edoc",
-            "version": "dev-master",
+            "version": "dev-drupal9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_edoc.git",
-                "reference": "44ea06a7f6fb188e14f40da121bd299726a16b91"
+                "reference": "c1a9b724d6cc6be1823e9a064fbc93809ca27c6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc/zipball/44ea06a7f6fb188e14f40da121bd299726a16b91",
-                "reference": "44ea06a7f6fb188e14f40da121bd299726a16b91",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc/zipball/c1a9b724d6cc6be1823e9a064fbc93809ca27c6b",
+                "reference": "c1a9b724d6cc6be1823e9a064fbc93809ca27c6b",
                 "shasum": ""
             },
             "require": {
-                "drupal/migrate_plus": "^4.2",
-                "drupal/migrate_tools": "^4.5"
+                "drupal/migrate_plus": "^5.1",
+                "drupal/migrate_tools": "^5.0"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -10604,25 +10615,29 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from EDOC ESDH system",
-            "time": "2020-12-23T11:37:23+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_meetings_edoc/issues",
+                "source": "https://github.com/OS2web/os2web_meetings_edoc/tree/drupal9"
+            },
+            "time": "2021-02-23T12:07:48+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
-            "version": "dev-master",
+            "version": "dev-drupal9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_sbsys.git",
-                "reference": "557712735803db4d8b7807fc74cbce6f9ecafb7f"
+                "reference": "28cc6338e4647686eda175333958cf6e0ee31b14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_sbsys/zipball/557712735803db4d8b7807fc74cbce6f9ecafb7f",
-                "reference": "557712735803db4d8b7807fc74cbce6f9ecafb7f",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_sbsys/zipball/28cc6338e4647686eda175333958cf6e0ee31b14",
+                "reference": "28cc6338e4647686eda175333958cf6e0ee31b14",
                 "shasum": ""
             },
             "require": {
-                "drupal/migrate_plus": "^4.2",
-                "drupal/migrate_tools": "^4.5"
+                "drupal/migrate_plus": "^5.1",
+                "drupal/migrate_tools": "^5.0"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -10630,7 +10645,11 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS ESDH system",
-            "time": "2020-12-30T11:59:53+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_meetings_sbsys/issues",
+                "source": "https://github.com/OS2web/os2web_meetings_sbsys/tree/drupal9"
+            },
+            "time": "2021-02-23T12:07:08+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
