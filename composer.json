@@ -85,6 +85,7 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal/access_latest": "^0.0.1",
         "drupal/anonymous_subscriptions": "1.x-dev@dev",
+        "drupal/ckeditor_balloonpanel": "1.x-dev@dev",
         "drupal/coder": "^8.3",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.0",
@@ -180,6 +181,9 @@
             },
             "drupal/search_api_synonym": {
                 "Drupal 9 Readiness" : "https://git.drupalcode.org/project/search_api_synonym/-/merge_requests/1.patch"
+            },
+            "drupal/access_latest": {
+                "Drupal 9 Readiness" : "https://git.drupalcode.org/sandbox/lynn-2973708/-/merge_requests/1.patch"
             }
         }
     }

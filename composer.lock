@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b9aae82b6b29b794fbcaca9697558448",
+    "content-hash": "dab0e9e77e93d4893315b0ccf77ff965",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2870,30 +2870,27 @@
         },
         {
             "name": "drupal/ckeditor_a11ychecker",
-            "version": "1.0.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ckeditor_a11ychecker.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_a11ychecker-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "ca034e8bc3451b19a13a55120263e6e12b76ec2f"
+                "reference": "a2099d09f362d8b005a53e8f2845858424cac3da"
             },
             "require": {
                 "drupal/ckeditor_balloonpanel": "*",
-                "drupal/core": "^8"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1466961539",
+                    "version": "8.x-1.0+10-dev",
+                    "datestamp": "1591740625",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2929,29 +2926,26 @@
         },
         {
             "name": "drupal/ckeditor_balloonpanel",
-            "version": "1.1.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ckeditor_balloonpanel.git",
-                "reference": "8.x-1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_balloonpanel-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "9ef2c9a7e3fefbe108d61593246a57bd2f0761c5"
+                "reference": "8070eaaad1756e4835bcee09c47ecdd3c80f5616"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1466961839",
+                    "version": "8.x-1.1+5-dev",
+                    "datestamp": "1595459576",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -10593,12 +10587,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "359fbe1952b2739b23da6178a6e842eb28ebd9d0"
+                "reference": "edaf30d1d2a9d407f035bfbd0ee9b1d91c8d6255"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/359fbe1952b2739b23da6178a6e842eb28ebd9d0",
-                "reference": "359fbe1952b2739b23da6178a6e842eb28ebd9d0",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/edaf30d1d2a9d407f035bfbd0ee9b1d91c8d6255",
+                "reference": "edaf30d1d2a9d407f035bfbd0ee9b1d91c8d6255",
                 "shasum": ""
             },
             "require": {
@@ -10606,7 +10600,7 @@
                 "drupal/admin_toolbar": "^3.0",
                 "drupal/better_exposed_filters": "^5.0@beta",
                 "drupal/chosen": "^2.9",
-                "drupal/ckeditor_a11ychecker": "^1.0",
+                "drupal/ckeditor_a11ychecker": "1.x-dev@dev",
                 "drupal/ckeditor_entity_link": "^1.0@alpha",
                 "drupal/config_ignore": "^2.1",
                 "drupal/config_split": "^2.0@beta",
@@ -10653,7 +10647,7 @@
                 "issues": "https://github.com/bellcom/os2core/issues",
                 "source": "https://github.com/bellcom/os2core/tree/develop"
             },
-            "time": "2021-03-09T11:12:38+00:00"
+            "time": "2021-03-09T16:10:54+00:00"
         },
         {
             "name": "os2web/os2web",
@@ -20346,6 +20340,7 @@
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
         "drupal/anonymous_subscriptions": 20,
+        "drupal/ckeditor_balloonpanel": 20,
         "drupal/upgrade_rector": 15,
         "os2web/os2web": 20,
         "os2web/os2web_borgerdk": 20,
