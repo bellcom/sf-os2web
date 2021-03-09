@@ -106,7 +106,7 @@
         "os2web/os2web_meetings_sbsys": "dev-drupal9",
         "os2web/os2web_news": "dev-master",
         "os2web/os2web_pagebuilder": "dev-develop",
-        "os2web/os2web_search": "dev-master",
+        "os2web/os2web_search": "dev-drupal9",
         "os2web/os2web_spotbox": "dev-master",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
@@ -177,6 +177,9 @@
             },
             "drupal/user_delete_reassign": {
                 "Drupal 9 Readiness" : "https://www.drupal.org/files/issues/2020-05-27/3143236-2.patch"
+            },
+            "drupal/search_api_synonym": {
+                "Drupal 9 Readiness" : "https://git.drupalcode.org/project/search_api_synonym/-/merge_requests/1.patch"
             }
         }
     }
