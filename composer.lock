@@ -10995,12 +10995,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_search.git",
-                "reference": "c1f9b2e5b7aef807db43e076affe6f4bb92b4813"
+                "reference": "b938b9f51ee18580a369c2777a436d83d8de85fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/c1f9b2e5b7aef807db43e076affe6f4bb92b4813",
-                "reference": "c1f9b2e5b7aef807db43e076affe6f4bb92b4813",
+                "url": "https://api.github.com/repos/OS2web/os2web_search/zipball/b938b9f51ee18580a369c2777a436d83d8de85fa",
+                "reference": "b938b9f51ee18580a369c2777a436d83d8de85fa",
                 "shasum": ""
             },
             "require": {
@@ -11022,7 +11022,7 @@
                 "issues": "https://github.com/OS2web/os2web_search/issues",
                 "source": "https://github.com/OS2web/os2web_search/tree/drupal9"
             },
-            "time": "2021-03-09T13:52:17+00:00"
+            "time": "2021-03-15T10:49:20+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -19769,5 +19769,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
