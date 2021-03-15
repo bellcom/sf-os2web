@@ -21,7 +21,7 @@
 // --------------------------------------------------
 
 .ie-banner {
-  display: none;
+  display: none !important;
 
   padding: 1rem;
 
@@ -33,7 +33,7 @@
 }
 
 html.ie .ie-banner {
-  display: block;
+  display: block !important;
 }
 
 // --------------------------------------------------
