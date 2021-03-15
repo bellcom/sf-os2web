@@ -10760,12 +10760,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "777273f6ec36f63396ee66b115bed6f92845b3d4"
+                "reference": "bb4ec38ba9420ca0d2c18da86bee802b50d5cf91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/777273f6ec36f63396ee66b115bed6f92845b3d4",
-                "reference": "777273f6ec36f63396ee66b115bed6f92845b3d4",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/bb4ec38ba9420ca0d2c18da86bee802b50d5cf91",
+                "reference": "bb4ec38ba9420ca0d2c18da86bee802b50d5cf91",
                 "shasum": ""
             },
             "require": {
@@ -10777,12 +10777,12 @@
             "license": [
                 "EUPL-1.2"
             ],
-            "description": "Logs access selected content type or webform elements",
+            "description": "Logs node access for selected content type access",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_logging/issues",
                 "source": "https://github.com/OS2web/os2web_logging/tree/drupal9"
             },
-            "time": "2021-03-09T20:38:18+00:00"
+            "time": "2021-03-09T09:10:24+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
