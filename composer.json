@@ -50,6 +50,8 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/gin": "^3.0",
+        "drupal/gin_login": "^1.0@RC",
         "drupal/memcache": "^2.2",
         "drupal/monitoring": "^1.9",
         "drupal/redirect_after_login": "^2.7",
