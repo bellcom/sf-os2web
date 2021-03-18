@@ -90,15 +90,18 @@
 }
 
 .path-frontpage {
-  padding-top: 0 !important;
 
-  &:not(.gin--vertical-toolbar) {
+  &, &.toolbar-fixed {
+    padding-top: 0 !important;
 
-    &.toolbar-horizontal {
-      padding-top: 39px !important;
+    &:not(.gin--vertical-toolbar) {
 
-      &.toolbar-tray-open {
-        padding-top: 79px !important;
+      &.toolbar-horizontal {
+        padding-top: 39px !important;
+
+        &.toolbar-tray-open {
+          padding-top: 79px !important;
+        }
       }
     }
   }
@@ -108,15 +111,15 @@ body {
 
   &, &.toolbar-fixed {
     padding-top: 74px !important;
-  }
 
-  &:not(.gin--vertical-toolbar) {
+    &:not(.gin--vertical-toolbar) {
 
-    &.toolbar-horizontal {
-      padding-top: 74px + 39px !important;
+      &.toolbar-horizontal {
+        padding-top: 74px + 39px !important;
 
-      &.toolbar-tray-open {
-        padding-top: 74px + 79px !important;
+        &.toolbar-tray-open {
+          padding-top: 74px + 79px !important;
+        }
       }
     }
   }
@@ -464,15 +467,15 @@ body {
 
     &, &.toolbar-fixed {
       padding-top: 132px !important; // Height of .custom-header--fixed (recalculated by JS)
-    }
 
-    &:not(.gin--vertical-toolbar) {
+      &:not(.gin--vertical-toolbar) {
 
-      &.toolbar-horizontal {
-        padding-top: 132px + 39px !important;
+        &.toolbar-horizontal {
+          padding-top: 132px + 39px !important;
 
-        &.toolbar-tray-open {
-          padding-top: 132px + 79px !important;
+          &.toolbar-tray-open {
+            padding-top: 132px + 79px !important;
+          }
         }
       }
     }
