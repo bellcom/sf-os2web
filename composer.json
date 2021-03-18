@@ -52,6 +52,7 @@
         "drupal/core-composer-scaffold": "^8.8.0",
         "drupal/memcache": "^2.2",
         "drupal/monitoring": "^1.9",
+        "drupal/redirect_after_login": "^2.7",
         "drupal/stage_file_proxy": "^1.0",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "mglaman/drupal-check": "^1.1",
