@@ -46,6 +46,11 @@ Read more about the Drush commands for Migrate API on [Migrate tools](https://ww
     drush migrate:import ballerup_d7_taxonomy_section
     ```
 
+ * Migrate tags terms:
+    ```
+    drush migrate:import ballerup_d7_taxonomy_tags
+    ```
+
  * Migrate Borger.dk articles:
     ```
     drush migrate:import os2web_borgerdk_articles_import

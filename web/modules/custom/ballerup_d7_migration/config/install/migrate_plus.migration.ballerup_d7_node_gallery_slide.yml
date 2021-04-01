@@ -69,11 +69,21 @@ process:
     process:
       target_id: '0'
       target_revision_id: '1'
-  field_os2web_page_keyword:
+  migrate_page_keyword:
+    plugin: migration_lookup
+    migration: ballerup_d7_taxonomy_tags
+    source: field_tags
+    no_stub: true
+  migrate_page_keyword_media_term:
     plugin: callback
     callable:
       - 'Drupal\ballerup_d7_migration\Utility\MigrationHelper'
       - createMediaKeywordTerm
+  field_os2web_page_keyword:
+    plugin: merge
+    source:
+      - '@migrate_page_keyword_media_term'
+      - '@migrate_page_keyword'
   migrate_file_url_source:
     - plugin: extract
       source: field_newsarticle_image
@@ -115,5 +125,6 @@ migration_dependencies:
   required:
     - ballerup_d7_user
     - ballerup_d7_taxonomy_section
+    - ballerup_d7_taxonomy_tags
     - ballerup_d7_paragraph_iframe
   optional: {}
