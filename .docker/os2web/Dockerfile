@@ -7,10 +7,17 @@ RUN set -eux; \
 		libxml2-dev \
 		git \
 		wget \
-		mariadb-client-10.3 \
+		lsb-release \
+		gnupg \
 		cron; \
 	docker-php-ext-install soap; \
-	curl -fsSL "https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar" -o /usr/local/bin/drush && chmod +x /usr/local/bin/drush
+	curl -fsSL "https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar" -o /usr/local/bin/drush && chmod +x /usr/local/bin/drush; \
+	# Addind mysql-client
+	wget https://repo.mysql.com//mysql-apt-config_0.8.13-1_all.deb; \
+	echo 4 | dpkg -i mysql-apt-config_0.8.13-1_all.deb; \
+	apt update; \
+	apt install -qq -y mysql-client; \
+	echo "[client]" >> /etc/mysql/my.cnf; echo "ssl-mode=DISABLED" >> /etc/mysql/my.cnf
 
 # Removing standard Drupal core and loading OS2Web project.
 WORKDIR /opt
