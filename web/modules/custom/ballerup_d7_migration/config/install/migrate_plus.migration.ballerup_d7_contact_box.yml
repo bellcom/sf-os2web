@@ -8,11 +8,16 @@ source:
   plugin: d7_node
   node_type: contact_box
 process:
+  migrate_publish:
+    plugin: skip_on_empty
+    method: row
+    source: status
+    message: 'Skipping unpublished content'
   name:
     plugin: substr
     source: title
     length: 50
-  field_os2web_contact_heading: title
+  field_os2web_contact_heading: ''
   field_os2web_contact_body:
     plugin: sub_process
     source: field_contact_text
