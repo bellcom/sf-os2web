@@ -1,3 +1,9 @@
+<!-- Begin - ie -->
+<div class="ie-banner">
+  Du kan ikke bruge rebild.dk i Internet Explorer. Du skal bruge en anden web-browser. Internet Explorer udgår i slutningen af 2021.
+</div>
+<!-- End - ie -->
+
 <!-- Begin - megamenu -->
 <div class="custom-megamenu d-print-none">
   <div class="container-fluid">
@@ -9,7 +15,7 @@
         <!-- Begin - language selector -->
         <div class="col-12 col-sm-3">
           <button
-            class="custom-megamenu__button custom-megamenu__button--toggle-megamenu js-toggle-megamenu d-sm-none">
+            class="custom-megamenu__button custom-megamenu__button--toggle-megamenu js-toggle-megamenu d-sm-none" aria-label="{{ 'Luk menu' | t }}">
 
             <span class="material-icons icon">close</span>
           </button>
@@ -28,7 +34,7 @@
         <div class="col-12 col-sm-3">
           <div class="text-align-right">
             <button
-              class="custom-megamenu__button custom-megamenu__button--toggle-megamenu js-toggle-megamenu d-none d-sm-inline-block">
+              class="custom-megamenu__button custom-megamenu__button--toggle-megamenu js-toggle-megamenu d-none d-sm-inline-block" aria-label="{{ 'Luk menu' | t }}">
 
               <span class="material-icons icon">close</span>
             </button>
@@ -63,7 +69,7 @@
 
             <!-- Begin - toggle -->
             <button
-              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-sm-none">
+              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-sm-none" aria-label="{{ 'Åbn menu' | t }}">
               <span class="icon fa fa-bars"></span>
             </button>
             <!-- End - toggle -->
@@ -85,7 +91,7 @@
               {{ page.header__search }}
 
               <button
-                class="custom-header__button custom-header__button--toggle-search js-toggle-searchy">
+                class="custom-header__button custom-header__button--toggle-search js-toggle-searchy" aria-label="{{ 'Åbn søgning' | t }}">
                 <span class="icon fa fa-search"></span>
               </button>
             </div>
@@ -93,7 +99,7 @@
 
             <!-- Begin - toggle -->
             <button
-              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-none d-sm-block">
+              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-none d-sm-block" aria-label="{{ 'Åbn menu' | t }}">
               <span class="icon fa fa-bars"></span>
             </button>
             <!-- End - toggle -->
@@ -127,7 +133,7 @@
 
             <!-- Begin - toggle -->
             <button
-              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-sm-none">
+              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-sm-none" aria-label="{{ 'Åbn menu' | t }}">
               <span class="icon fa fa-bars"></span>
             </button>
             <!-- End - toggle -->
@@ -147,7 +153,7 @@
               {{ page.header__search }}
 
               <button
-                class="custom-header__button custom-header__button--toggle-search js-toggle-searchy">
+                class="custom-header__button custom-header__button--toggle-search js-toggle-searchy" aria-label="{{ 'Åbn søgning' | t }}">
                 <span class="icon fa fa-search"></span>
               </button>
             </div>
@@ -155,7 +161,7 @@
 
             <!-- Begin - toggle -->
             <button
-              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-none d-sm-block">
+              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-none d-sm-block" aria-label="{{ 'Åbn menu' | t }}">
               <span class="icon fa fa-bars"></span>
             </button>
             <!-- End - toggle -->
@@ -170,7 +176,7 @@
 {{ page.featured_top }}
 
 <div class="page-container" id="font-resize-wrapper">
-  <div class="container">
+  <div class="container" id="main-content">
     {{ page.highlighted }}
 
     {% if not is_front %}
@@ -223,3 +229,16 @@
 <div class="d-none">
   {{ page.embedded_code }}
 </div>
+
+<script>
+
+  // Add internet explorer class to <body>
+  (function() {
+    var ua = window.navigator.userAgent;
+    var isIE = /MSIE|Trident/.test(ua);
+
+    if(isIE) {
+      document.documentElement.classList.add('ie');
+    }
+  })();
+</script>

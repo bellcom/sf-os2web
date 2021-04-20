@@ -40,11 +40,14 @@
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {
+
   .paragraph--type--os2web-hearings-search {
+
     .form-composite {
       width: 100%;
 
       .form-radios {
+
         .form-type-radio {
           width: 50%;
           margin-right: 0;
@@ -58,7 +61,21 @@
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+
+  .paragraph--type--os2web-hearings-search {
+
+    .form-composite {
+
+      .form-radios {
+
+        .form-type-radio {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}

@@ -7,6 +7,9 @@ if [ $# -eq 0 ]; then
   exit 0
 fi
 
+echo "Updating base image"
+docker image pull drupal:8-apache-buster
+
 docker build ./ --build-arg OS2WEB8_TAG=$1 -t dkbellcom/os2web8:$1
 
 if [ "$2" = "--push" ]; then
