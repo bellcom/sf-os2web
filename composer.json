@@ -50,6 +50,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/fancy_file_delete": "^2.0",
         "drupal/memcache": "^2.2",
         "drupal/monitoring": "^1.9",
         "drupal/stage_file_proxy": "^1.0",
