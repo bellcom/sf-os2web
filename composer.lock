@@ -2663,7 +2663,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1606134287",
+                    "datestamp": "1601667290",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3697,24 +3697,20 @@
                 }
             ],
             "description": "Drupal Console Extend Plugin",
-            "support": {
-                "issues": "https://github.com/hechoendrupal/drupal-console-extend-plugin/issues",
-                "source": "https://github.com/hechoendrupal/drupal-console-extend-plugin/tree/0.9.5"
-            },
             "time": "2020-11-18T00:15:28+00:00"
         },
         {
             "name": "drupal/core",
-            "version": "8.9.13",
+            "version": "8.9.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "a53db77b55a035453d7229e0c3069f8591cb4cb6"
+                "reference": "84796e158cd3bd50af08974dd62931d0cc78dc7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/a53db77b55a035453d7229e0c3069f8591cb4cb6",
-                "reference": "a53db77b55a035453d7229e0c3069f8591cb4cb6",
+                "url": "https://api.github.com/repos/drupal/core/zipball/84796e158cd3bd50af08974dd62931d0cc78dc7e",
+                "reference": "84796e158cd3bd50af08974dd62931d0cc78dc7e",
                 "shasum": ""
             },
             "require": {
@@ -3932,10 +3928,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "support": {
-                "source": "https://github.com/drupal/core/tree/8.9.13"
-            },
-            "time": "2021-01-19T23:11:00+00:00"
+            "time": "2021-04-20T23:05:40+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -8502,6 +8495,10 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "User to assign this user's content to\" required even when method not selected": "https://www.drupal.org/files/issues/2020-11-20/settings_field_always_required-3183626-3.patch",
+                    "Incorrect user lookup on Bulk deleting": "https://git.drupalcode.org/project/user_delete_reassign/-/commit/05076bbedb66f8471d023894a88b980c2ecdf8d5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10921,7 +10918,7 @@
                 "issues": "https://github.com/bellcom/os2core/issues",
                 "source": "https://github.com/bellcom/os2core/tree/1.0.3"
             },
-            "time": "2020-09-14T10:42:37+00:00"
+            "time": "2020-08-19T08:29:32+00:00"
         },
         {
             "name": "os2web/os2web",
@@ -11025,7 +11022,7 @@
                 "issues": "https://github.com/OS2web/os2web_contact/issues",
                 "source": "https://github.com/OS2web/os2web_contact/tree/master"
             },
-            "time": "2021-03-19T13:01:23+00:00"
+            "time": "2021-01-29T11:26:28+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -11156,7 +11153,7 @@
                 "issues": "https://github.com/OS2web/os2web_hjemmeside/issues",
                 "source": "https://github.com/OS2web/os2web_hjemmeside/tree/master"
             },
-            "time": "2021-03-09T20:33:26+00:00"
+            "time": "2021-01-21T15:59:51+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -11188,7 +11185,7 @@
                 "issues": "https://github.com/OS2web/os2web_kle/issues",
                 "source": "https://github.com/OS2web/os2web_kle/tree/master"
             },
-            "time": "2021-03-09T14:11:49+00:00"
+            "time": "2020-08-04T06:57:55+00:00"
         },
         {
             "name": "os2web/os2web_logging",
@@ -11219,7 +11216,7 @@
                 "issues": "https://github.com/OS2web/os2web_logging/issues",
                 "source": "https://github.com/OS2web/os2web_logging/tree/master"
             },
-            "time": "2021-04-06T10:04:19+00:00"
+            "time": "2020-09-29T12:47:17+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
@@ -11569,7 +11566,7 @@
                 "issues": "https://github.com/OS2web/os2web_spotbox/issues",
                 "source": "https://github.com/OS2web/os2web_spotbox/tree/master"
             },
-            "time": "2021-03-19T13:02:19+00:00"
+            "time": "2020-09-23T10:09:49+00:00"
         },
         {
             "name": "pear/archive_tar",
