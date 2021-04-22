@@ -8,6 +8,7 @@ deriver: Drupal\node\Plugin\migrate\D7NodeDeriver
 source:
   plugin: d7_node
   node_type: gallery_slide
+  track_changes: true
 process:
   # If you are using this file to build a custom migration consider removing
   # the nid and vid fields to allow incremental migrations.
@@ -35,7 +36,7 @@ process:
   status: status
   created: created
   changed: changed
-  promote: promote
+  #promote: promote
   sticky: sticky
   path/pathauto:
      plugin: default_value

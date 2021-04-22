@@ -7,6 +7,7 @@ deriver: Drupal\node\Plugin\migrate\D7NodeDeriver
 source:
   plugin: d7_node
   node_type: contact_box
+  track_changes: true
 process:
   migrate_publish:
     plugin: skip_on_empty

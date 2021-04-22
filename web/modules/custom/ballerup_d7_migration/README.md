@@ -30,7 +30,14 @@ $databases['migrate']['default'] = array (
 );
 ```
 
-## Migrate process
+## Migrate quick run
+Run the entire migration process with single command:
+```
+cd web
+sh ./modules/custom/ballerup_d7_migration/scripts/migrate.sh
+```
+
+## Migrate process details for manual run
 
 The recommended usage migrate process is via Drush:
 
