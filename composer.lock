@@ -492,6 +492,11 @@
                 "validation",
                 "versioning"
             ],
+            "support": {
+                "irc": "irc://irc.freenode.org/composer",
+                "issues": "https://github.com/composer/semver/issues",
+                "source": "https://github.com/composer/semver/tree/1.7.2"
+            },
             "funding": [
                 {
                     "url": "https://packagist.com",
@@ -1639,6 +1644,10 @@
                 "docblock",
                 "parser"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/annotations/issues",
+                "source": "https://github.com/doctrine/annotations/tree/1.11.1"
+            },
             "time": "2020-10-26T10:28:16+00:00"
         },
         {
@@ -2247,6 +2256,10 @@
                 "reflection",
                 "static"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/reflection/issues",
+                "source": "https://github.com/doctrine/reflection/tree/1.2.2"
+            },
             "abandoned": "roave/better-reflection",
             "time": "2020-10-27T21:46:55+00:00"
         },
@@ -2427,7 +2440,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1606134287",
+                    "datestamp": "1601667290",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3466,24 +3479,20 @@
                 }
             ],
             "description": "Drupal Console Extend Plugin",
-            "support": {
-                "issues": "https://github.com/hechoendrupal/drupal-console-extend-plugin/issues",
-                "source": "https://github.com/hechoendrupal/drupal-console-extend-plugin/tree/0.9.5"
-            },
             "time": "2020-11-18T00:15:28+00:00"
         },
         {
             "name": "drupal/core",
-            "version": "8.9.13",
+            "version": "8.9.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "a53db77b55a035453d7229e0c3069f8591cb4cb6"
+                "reference": "84796e158cd3bd50af08974dd62931d0cc78dc7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/a53db77b55a035453d7229e0c3069f8591cb4cb6",
-                "reference": "a53db77b55a035453d7229e0c3069f8591cb4cb6",
+                "url": "https://api.github.com/repos/drupal/core/zipball/84796e158cd3bd50af08974dd62931d0cc78dc7e",
+                "reference": "84796e158cd3bd50af08974dd62931d0cc78dc7e",
                 "shasum": ""
             },
             "require": {
@@ -3704,7 +3713,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2021-01-19T23:11:00+00:00"
+            "time": "2021-04-20T23:05:40+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -3751,6 +3760,9 @@
             "keywords": [
                 "drupal"
             ],
+            "support": {
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/8.9.4"
+            },
             "time": "2020-08-07T22:30:30+00:00"
         },
         {
@@ -8239,6 +8251,10 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "User to assign this user's content to\" required even when method not selected": "https://www.drupal.org/files/issues/2020-11-20/settings_field_always_required-3183626-3.patch",
+                    "Incorrect user lookup on Bulk deleting": "https://git.drupalcode.org/project/user_delete_reassign/-/commit/05076bbedb66f8471d023894a88b980c2ecdf8d5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -8633,6 +8649,10 @@
                 "validation",
                 "validator"
             ],
+            "support": {
+                "issues": "https://github.com/egulias/EmailValidator/issues",
+                "source": "https://github.com/egulias/EmailValidator/tree/2.1.25"
+            },
             "funding": [
                 {
                     "url": "https://github.com/egulias",
@@ -8728,6 +8748,10 @@
                 "ffwagency",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/ffwagency/borgerdk-php/issues",
+                "source": "https://github.com/ffwagency/borgerdk-php/tree/develop"
+            },
             "time": "2020-02-20T09:43:27+00:00"
         },
         {
@@ -9106,6 +9130,10 @@
             "keywords": [
                 "promise"
             ],
+            "support": {
+                "issues": "https://github.com/guzzle/promises/issues",
+                "source": "https://github.com/guzzle/promises/tree/1.4.0"
+            },
             "time": "2020-09-30T07:37:28+00:00"
         },
         {
@@ -9177,6 +9205,10 @@
                 "uri",
                 "url"
             ],
+            "support": {
+                "issues": "https://github.com/guzzle/psr7/issues",
+                "source": "https://github.com/guzzle/psr7/tree/1.7.0"
+            },
             "time": "2020-09-30T07:37:11+00:00"
         },
         {
@@ -9186,12 +9218,6 @@
                 "type": "git",
                 "url": "https://github.com/harvesthq/chosen-package.git",
                 "reference": "origin/master"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/harvesthq/chosen-package/zipball/origin/master",
-                "reference": "origin/master",
-                "shasum": ""
             },
             "type": "drupal-library"
         },
@@ -9405,6 +9431,14 @@
                 "escaper",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-escaper/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-escaper/issues",
+                "rss": "https://github.com/laminas/laminas-escaper/releases.atom",
+                "source": "https://github.com/laminas/laminas-escaper"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -9477,6 +9511,14 @@
                 "feed",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-feed/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-feed/issues",
+                "rss": "https://github.com/laminas/laminas-feed/releases.atom",
+                "source": "https://github.com/laminas/laminas-feed"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -9527,6 +9569,14 @@
                 "laminas",
                 "stdlib"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-stdlib/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-stdlib/issues",
+                "rss": "https://github.com/laminas/laminas-stdlib/releases.atom",
+                "source": "https://github.com/laminas/laminas-stdlib"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -9581,6 +9631,12 @@
                 "laminas",
                 "zf"
             ],
+            "support": {
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-zendframework-bridge/issues",
+                "rss": "https://github.com/laminas/laminas-zendframework-bridge/releases.atom",
+                "source": "https://github.com/laminas/laminas-zendframework-bridge"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -9778,6 +9834,10 @@
                 "serializer",
                 "xml"
             ],
+            "support": {
+                "issues": "https://github.com/Masterminds/html5-php/issues",
+                "source": "https://github.com/Masterminds/html5-php/tree/2.7.4"
+            },
             "time": "2020-10-01T13:52:52+00:00"
         },
         {
@@ -10151,6 +10211,10 @@
                 "iterator",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nette/finder/issues",
+                "source": "https://github.com/nette/finder/tree/v2.5.2"
+            },
             "time": "2020-01-03T20:35:40+00:00"
         },
         {
@@ -10407,6 +10471,10 @@
                 "EUPL-1.2"
             ],
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
+            "support": {
+                "issues": "https://github.com/bellcom/os2core/issues",
+                "source": "https://github.com/bellcom/os2core/tree/1.0.3"
+            },
             "time": "2020-08-19T08:29:32+00:00"
         },
         {
@@ -10498,6 +10566,10 @@
                 "EUPL-1.2"
             ],
             "description": "Contact entity",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_contact/issues",
+                "source": "https://github.com/OS2web/os2web_contact/tree/master"
+            },
             "time": "2021-01-29T11:26:28+00:00"
         },
         {
@@ -10550,6 +10622,10 @@
                 "EUPL-1.2"
             ],
             "description": "Provide functionality for events import from Kulturnaut",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_events/issues",
+                "source": "https://github.com/OS2web/os2web_events/tree/master"
+            },
             "time": "2021-01-06T10:17:21+00:00"
         },
         {
@@ -10614,6 +10690,10 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_hjemmeside/issues",
+                "source": "https://github.com/OS2web/os2web_hjemmeside/tree/master"
+            },
             "time": "2021-01-21T15:59:51+00:00"
         },
         {
@@ -10641,6 +10721,10 @@
                 "EUPL-1.2"
             ],
             "description": "KLE terms import functionality",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_kle/issues",
+                "source": "https://github.com/OS2web/os2web_kle/tree/master"
+            },
             "time": "2020-08-04T06:57:55+00:00"
         },
         {
@@ -10666,7 +10750,11 @@
             "license": [
                 "EUPL-1.2"
             ],
-            "description": "Logs node access for selected content type access",
+            "description": "Logs access selected content type or webform elements",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_logging/issues",
+                "source": "https://github.com/OS2web/os2web_logging/tree/master"
+            },
             "time": "2020-09-29T12:47:17+00:00"
         },
         {
@@ -10723,6 +10811,10 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS AGMAN ESDH system",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_meetings_agman/issues",
+                "source": "https://github.com/OS2web/os2web_meetings_agman/tree/master"
+            },
             "time": "2021-01-18T21:25:40+00:00"
         },
         {
@@ -10749,6 +10841,10 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from EDOC ESDH system",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_meetings_edoc/issues",
+                "source": "https://github.com/OS2web/os2web_meetings_edoc/tree/master"
+            },
             "time": "2020-12-23T11:37:23+00:00"
         },
         {
@@ -10775,6 +10871,10 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS ESDH system",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_meetings_sbsys/issues",
+                "source": "https://github.com/OS2web/os2web_meetings_sbsys/tree/master"
+            },
             "time": "2020-12-30T11:59:53+00:00"
         },
         {
@@ -10980,6 +11080,10 @@
                 "EUPL-1.2"
             ],
             "description": "Spotbox entity",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_spotbox/issues",
+                "source": "https://github.com/OS2web/os2web_spotbox/tree/master"
+            },
             "time": "2020-09-23T10:09:49+00:00"
         },
         {
@@ -11046,6 +11150,10 @@
                 "archive",
                 "tar"
             ],
+            "support": {
+                "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Archive_Tar",
+                "source": "https://github.com/pear/Archive_Tar"
+            },
             "funding": [
                 {
                     "url": "https://github.com/mrook",
@@ -11530,6 +11638,9 @@
                 "psr",
                 "psr-6"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/master"
+            },
             "time": "2016-08-06T20:24:11+00:00"
         },
         {
@@ -13927,6 +14038,9 @@
                 "interoperability",
                 "standards"
             ],
+            "support": {
+                "source": "https://github.com/symfony/cache-contracts/tree/v1.1.10"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -13992,6 +14106,9 @@
             ],
             "description": "Symfony ClassLoader Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/class-loader/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -14137,6 +14254,9 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/console/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -14255,6 +14375,9 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/debug/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -14335,6 +14458,9 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/dependency-injection/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -14465,6 +14591,9 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/event-dispatcher/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -14627,6 +14756,9 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/http-foundation/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -14726,6 +14858,9 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/http-kernel/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -14802,6 +14937,9 @@
                 "polyfill",
                 "portable"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -14879,6 +15017,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-iconv/tree/v1.22.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -14963,6 +15104,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.22.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15044,6 +15188,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.22.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15121,6 +15268,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.22.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15186,6 +15336,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php56/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15251,6 +15404,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php70/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15324,6 +15480,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.22.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15404,6 +15563,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15462,6 +15624,9 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/process/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15612,6 +15777,9 @@
                 "uri",
                 "url"
             ],
+            "support": {
+                "source": "https://github.com/symfony/routing/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15700,6 +15868,9 @@
             ],
             "description": "Symfony Serializer Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/serializer/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15776,6 +15947,9 @@
                 "interoperability",
                 "standards"
             ],
+            "support": {
+                "source": "https://github.com/symfony/service-contracts/tree/v1.1.9"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15855,6 +16029,9 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/translation/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -15950,6 +16127,9 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/validator/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -16036,6 +16216,9 @@
                 "debug",
                 "dump"
             ],
+            "support": {
+                "source": "https://github.com/symfony/var-dumper/tree/v4.4.19"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -16164,6 +16347,9 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/yaml/tree/v3.4.47"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -16347,6 +16533,10 @@
             "keywords": [
                 "templating"
             ],
+            "support": {
+                "issues": "https://github.com/twigphp/Twig/issues",
+                "source": "https://github.com/twigphp/Twig/tree/v1.44.2"
+            },
             "funding": [
                 {
                     "url": "https://github.com/fabpot",
@@ -16408,6 +16598,10 @@
                 "security",
                 "stream-wrapper"
             ],
+            "support": {
+                "issues": "https://github.com/TYPO3/phar-stream-wrapper/issues",
+                "source": "https://github.com/TYPO3/phar-stream-wrapper/tree/v3.1.6"
+            },
             "time": "2020-11-07T09:06:16+00:00"
         },
         {
@@ -16561,6 +16755,10 @@
                 "check",
                 "validate"
             ],
+            "support": {
+                "issues": "https://github.com/webmozarts/assert/issues",
+                "source": "https://github.com/webmozarts/assert/tree/1.9.1"
+            },
             "time": "2020-07-08T17:02:28+00:00"
         },
         {
@@ -17228,6 +17426,9 @@
                 "GPL-2.0-or-later"
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
+            "support": {
+                "source": "https://github.com/drupal/core-dev/tree/8.9.5"
+            },
             "time": "2020-05-09T07:53:22+00:00"
         },
         {
@@ -17768,6 +17969,10 @@
                 "reflection",
                 "static analysis"
             ],
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/2.x"
+            },
             "time": "2020-06-27T09:03:43+00:00"
         },
         {
@@ -17820,6 +18025,10 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
+            "support": {
+                "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
+                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/master"
+            },
             "time": "2020-09-03T19:13:55+00:00"
         },
         {
@@ -17865,6 +18074,10 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
+            "support": {
+                "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.4.0"
+            },
             "time": "2020-09-17T18:55:26+00:00"
         },
         {
