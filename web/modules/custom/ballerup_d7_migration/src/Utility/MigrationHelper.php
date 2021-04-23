@@ -152,7 +152,7 @@ class MigrationHelper {
    *
    * @return array
    *   [
-   *     'target_id' => ,
+   *     'tid'
    *   ]
    *
    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
@@ -177,9 +177,7 @@ class MigrationHelper {
       $term->save();
     }
 
-    return [
-      'target_id' => $term->id()
-    ];
+    return [$term->id()];
   }
 
   /**

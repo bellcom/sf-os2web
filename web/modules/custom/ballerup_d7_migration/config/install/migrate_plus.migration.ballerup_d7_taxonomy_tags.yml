@@ -1,17 +1,17 @@
-id: ballerup_d7_taxonomy_section
-label: Ballerup D7 Taxonomy section
+id: ballerup_d7_taxonomy_tags
+label: Ballerup D7 Taxonomy Tags
 migration_group: ballerup_d7
 migration_tags:
   - Drupal 7
 deriver: Drupal\taxonomy\Plugin\migrate\D7TaxonomyTermDeriver
 source:
   plugin: d7_taxonomy_term
-  bundle: section
+  bundle: tags
   track_changes: true
 process:
   vid:
     plugin: default_value
-    default_value: os2web_sektion
+    default_value: os2web_keyword
   name: name
   weight: weight
   # Only attempt to stub real (non-zero) parents.
@@ -22,7 +22,7 @@ process:
       source: parent
     -
       plugin: migration_lookup
-      migration: ballerup_d7_taxonomy_section
+      migration: ballerup_d7_taxonomy_tags
   parent:
     plugin: default_value
     default_value: 0
