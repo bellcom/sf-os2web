@@ -56,6 +56,9 @@ RUN echo '<?php $settings["project_env"] = PROD_ENV; ' > /opt/drupal/web/sites/d
 # Adding custom apache configuration with PHP value and log settings.
 COPY apache/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
+# Additional PHP configuration for both CLI and Apache
+COPY php/os2web-php.ini /usr/local/etc/php/conf.d/os2web-php.ini
+
 # Addjusting output channels for access and error log.
 RUN ln -sf /dev/stderr /var/log/apache2/error.log; \
 	ln -sf /dev/stdout /var/log/apache2/access.log; \
