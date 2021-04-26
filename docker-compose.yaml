@@ -61,18 +61,18 @@ services:
   ## Run command below to create it.
   ## docker-compose exec solr bash -c "bin/solr create_core -c os2web-core -d /solr-config"
   solr:
-    image: dkbellcom/os2web8-solr:0.0.1
+    image: dkbellcom/os2web8-solr:0.0.2
     container_name: solr
     # Uncomment lines below if you need access to SOLR admin panel.
     ports:
       - "8983:8983"
     volumes:
-      - ./.docker/solr/solr:/var/solr:delegated
+      - ./.docker/solr_data:/var/solr:delegated
     networks:
       - backend
 
   solr-bootstrap:
-    image: dkbellcom/os2web8-solr:0.0.1
+    image: dkbellcom/os2web8-solr:0.0.2
     container_name: solr-bootstrap
     volumes:
       - ./.docker/solr/solr:/var/solr:delegated
