@@ -57,5 +57,5 @@ sessions/*
 .docker/php/logs/*.log
 .docker/mariadb/data/*
 !.docker/mariadb/data/.gitkeep
-.docker/solr/solr/*
-!.docker/solr/solr/.gitkeep
+.docker/solr_data/*
+!.docker/solr_data/.gitkeep
