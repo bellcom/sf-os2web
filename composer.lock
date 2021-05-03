@@ -11193,12 +11193,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "0a364bae32f679cc81bde3d8481adf46d2563ded"
+                "reference": "33d26115f6ca5eaeb4f1769d0096548a3134f764"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/0a364bae32f679cc81bde3d8481adf46d2563ded",
-                "reference": "0a364bae32f679cc81bde3d8481adf46d2563ded",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/33d26115f6ca5eaeb4f1769d0096548a3134f764",
+                "reference": "33d26115f6ca5eaeb4f1769d0096548a3134f764",
                 "shasum": ""
             },
             "require": {
@@ -11216,7 +11216,7 @@
                 "issues": "https://github.com/OS2web/os2web_logging/issues",
                 "source": "https://github.com/OS2web/os2web_logging/tree/master"
             },
-            "time": "2020-09-29T12:47:17+00:00"
+            "time": "2021-05-03T12:31:15+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
