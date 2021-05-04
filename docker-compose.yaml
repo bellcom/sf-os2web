@@ -114,3 +114,22 @@ services:
       - MYSQL_PORT=${MYSQL_PORT}
       - DRUPAL_HASH_SALT=${DRUPAL_HASH_SALT}
       - OS2WEB_THEME=${OS2WEB_THEME}
+
+  openssh-server:
+    image: dkbellcom/docker-openssh-server
+    container_name: openssh-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Copenhagen
+      - PASSWORD_ACCESS=true
+      - SUDO_ACCESS=true #optional
+      - USER_PASSWORD=os2web #optional
+      - USER_NAME=os2web
+      - OPENSSH_PORT=443
+    networks:
+      - backend
+    volumes:
+      - ./:/opt/drupal
+      - ./.docker/ssh/config:/config
+    restart: unless-stopped
