@@ -32,6 +32,13 @@ body a {
   }
 }
 
+.row--equal-height-columns {
+
+  > div {
+    display: flex;
+  }
+}
+
 .button {
   font-weight: bold;
 
