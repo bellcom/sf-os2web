@@ -11373,12 +11373,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0"
+                "reference": "2d5767c35cf7d0537302b921a871812618704279"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/8c190b1fd4a918b87417d0c3615e22caa77a33a0",
-                "reference": "8c190b1fd4a918b87417d0c3615e22caa77a33a0",
+                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/2d5767c35cf7d0537302b921a871812618704279",
+                "reference": "2d5767c35cf7d0537302b921a871812618704279",
                 "shasum": ""
             },
             "require": {
@@ -11397,7 +11397,7 @@
                 "issues": "https://github.com/OS2web/os2web_news/issues",
                 "source": "https://github.com/OS2web/os2web_news/tree/master"
             },
-            "time": "2021-03-10T14:12:22+00:00"
+            "time": "2021-05-05T13:40:52+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
