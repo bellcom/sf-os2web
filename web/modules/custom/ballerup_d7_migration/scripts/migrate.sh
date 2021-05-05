@@ -48,9 +48,11 @@ echo "Migration ballerup_d7_node_indholdside - START"
 drush migrate:import ballerup_d7_node_indholdside
 echo "Migration ballerup_d7_node_indholdside - END"
 
-echo "Execuing custom script [1/2] - Fix publish status"
+echo "Execuing custom script [1/3] - Fix publish status"
 drush scr modules/custom/ballerup_d7_migration/scripts/migrate_fix_publish_status.php
-echo "Execuing custom script [2/2] - Remove inline picutres"
+echo "Execuing custom script [2/3] - Remove inline picutres"
 drush scr modules/custom/ballerup_d7_migration/scripts/remove_inline_pictures.php
+echo "Execuing custom script [3/3] - Remove node header duplicates (content pages using Borger.dk article)"
+drush scr modules/custom/ballerup_d7_migration/scripts/BKDK-401-migrate_remove_page_borgerdk_body.php
 
 echo "Migration complete visit URL '/admin/config/system/delete-orphans' to delete the orphaned paragraphs"
