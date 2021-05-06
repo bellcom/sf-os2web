@@ -39,7 +39,7 @@
   position: relative;
 
   padding: 2.4rem 2.4rem;
-  padding-right: 6rem;
+  padding-left: 7rem;
 
   text-transform: uppercase;
   font-weight: $font-weight-bold;
@@ -61,11 +61,13 @@
 
     padding-top: 2px;
 
-    top: 1.7rem;
-    right: 2.4rem;
+    top: 50%;
+    left: 2.4rem;
 
     width: 3.5rem;
     height: 3.5rem;
+
+    margin-top: -1.75rem;
 
     font-size: 2rem;
     font-family: FontAwesome;
@@ -92,7 +94,7 @@
 }
 
 .accordion-content {
-  padding: 0.5rem 2.4rem 2rem 2.4rem;
+  padding: 2rem 2.4rem;
 
   .field {
 
