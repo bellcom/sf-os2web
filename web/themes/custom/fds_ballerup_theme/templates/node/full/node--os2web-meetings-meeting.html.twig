@@ -16,12 +16,11 @@
   <div class="fields-inline">
     <div class="field">
       {% if timestamp %}
-        <h4>{{ timestamp | format_date('os2core_date_medium') }}</h4>
+        <h4>{{ timestamp | format_date('long') }}</h4>
       {% endif %}
     </div>
   </div>
 
-  {{ content.field_os2web_m_committee }}
   {{ content.field_os2web_m_location }}
 
   <br>
