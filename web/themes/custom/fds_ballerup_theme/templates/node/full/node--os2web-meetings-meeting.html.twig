@@ -16,7 +16,7 @@
   <div class="fields-inline">
     <div class="field">
       {% if timestamp %}
-        <h4>{{ timestamp | format_date('long') }}</h4>
+        {{ timestamp | format_date('long') }}
       {% endif %}
     </div>
   </div>
