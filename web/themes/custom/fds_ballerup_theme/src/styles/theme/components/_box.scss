@@ -60,6 +60,7 @@
   color: #fff;
   background-color: $color-green-002;
 }
+
 .box--section-link {
   display: flex;
 
@@ -67,12 +68,12 @@
   flex-direction: column;
   justify-content: center;
 
-  min-height: 50px;
+  min-height: 58px;
   margin-bottom: $grid-gutter-width;
 
   .box__body {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     > a {
       position: relative;
