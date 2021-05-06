@@ -46,6 +46,7 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal/access_latest": "^0.0.1",
         "drupal/anonymous_subscriptions": "1.x-dev@dev",
+        "drupal/ckeditor_iframe": "^2.1",
         "drupal/coder": "^8.3",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.0",
