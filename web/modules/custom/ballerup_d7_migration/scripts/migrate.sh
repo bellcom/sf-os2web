@@ -41,7 +41,7 @@ drush migrate:import ballerup_d7_node_news
 echo "Migration ballerup_d7_node_news - END"
 
 echo "Migration ballerup_d7_paragraph_accordion - START"
-drush migrate:import ballerup_d7_paragraph_accordion
+drush migrate:import ballerup_d7_paragraph_accordion --update
 echo "Migration ballerup_d7_paragraph_accordion - END"
 
 echo "Migration ballerup_d7_node_indholdside - START"
