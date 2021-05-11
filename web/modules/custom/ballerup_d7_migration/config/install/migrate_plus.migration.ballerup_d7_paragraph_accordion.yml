@@ -9,12 +9,14 @@ source:
   node_type: info_page
   track_changes: true
 process:
+  migrate_heading:
+    plugin: skip_on_empty
+    method: process
+    source: field_accordion_title
+    message: 'Field field_accordion_title is missing'
   field_os2web_accordion_heading:
-    -
-      plugin: skip_on_empty
-      method: process
-      source: field_accordion_title
-      message: 'Field field_accordion_title is missing'
+    plugin: default_value
+    value: ''
   field_os2web_accordion_reference:
     plugin: callback
     callable:
