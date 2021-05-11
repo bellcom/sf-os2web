@@ -45,7 +45,7 @@ a.entity-teaser {
 
   padding: ($grid-gutter-width / 2) 0;
 
-  &.entity-teaser--os2web-news {
+  .entity-teaser--os2web-news & {
     padding-top: 0;
   }
 
