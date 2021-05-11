@@ -129,12 +129,29 @@ svg.ext {
 
   .form-item-from-date,
   .form-item-to-date {
-    max-width: 150px;
+    max-width: 130px;
   }
 
-  .form-select {
-    margin-top: 8px;
+  .form-type-select {
+
+    .form-label {
+      display: block;
+    }
+
+    .chosen-single {
+      @extend .form-select;
+
+      b {
+        display: none;
+      }
+    }
+
+    .chosen-container .chosen-drop {
+      border: $outer-border;
+    }
   }
+
+  .form-select {}
 
   .form-actions {
     margin-bottom: 0;
