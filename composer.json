@@ -56,6 +56,7 @@
         "drupal/gin_login": "^1.0@RC",
         "drupal/memcache": "^2.2",
         "drupal/monitoring": "^1.9",
+        "drupal/pdf_api": "^2.0",
         "drupal/quick_node_clone": "^1.14",
         "drupal/redirect_after_login": "^2.7",
         "drupal/siteimprove": "^1.10",
