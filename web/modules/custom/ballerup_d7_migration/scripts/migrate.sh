@@ -5,47 +5,47 @@ drush cim --partial --source=modules/custom/ballerup_d7_migration/config/install
 echo "Configuration imported"
 
 echo "Migration users - START"
-drush migrate:import ballerup_d7_user
+drush migrate:import ballerup_d7_user --update
 echo "Migration users - END"
 
 echo "Migration ballerup_d7_taxonomy_section - START"
-drush migrate:import ballerup_d7_taxonomy_section
+drush migrate:import ballerup_d7_taxonomy_section --update
 echo "Migration ballerup_d7_taxonomy_section - END"
 
 echo "Migration ballerup_d7_taxonomy_tags - START"
-drush migrate:import ballerup_d7_taxonomy_tags
+drush migrate:import ballerup_d7_taxonomy_tags --update
 echo "Migration ballerup_d7_taxonomy_tags - END"
 
 echo "Migration os2web_borgerdk_articles_import - START"
-drush migrate:import os2web_borgerdk_articles_import
+drush migrate:import os2web_borgerdk_articles_import --update
 echo "Migration os2web_borgerdk_articles_import - END"
 
 echo "Migration ballerup_d7_contact_box - START"
-drush migrate:import ballerup_d7_contact_box
+drush migrate:import ballerup_d7_contact_box --update
 echo "Migration ballerup_d7_contact_box - END"
 
 echo "Migration ballerup_d7_paragraph_iframe - START"
-drush migrate:import ballerup_d7_paragraph_iframe
+drush migrate:import ballerup_d7_paragraph_iframe --update
 echo "Migration ballerup_d7_paragraph_iframe - END"
 
 echo "Migration ballerup_d7_node_gallery_slide - START"
-drush migrate:import ballerup_d7_node_gallery_slide
+drush migrate:import ballerup_d7_node_gallery_slide --update
 echo "Migration ballerup_d7_node_gallery_slide - END"
 
 echo "Migration ballerup_d7_node_institution_page - START"
-drush migrate:import ballerup_d7_node_institution_page
+drush migrate:import ballerup_d7_node_institution_page --update
 echo "Migration ballerup_d7_node_institution_page - END"
 
 echo "Migration ballerup_d7_node_news - START"
-drush migrate:import ballerup_d7_node_news
+drush migrate:import ballerup_d7_node_news --update
 echo "Migration ballerup_d7_node_news - END"
 
 echo "Migration ballerup_d7_paragraph_accordion - START"
-drush migrate:import ballerup_d7_paragraph_accordion
+drush migrate:import ballerup_d7_paragraph_accordion --update
 echo "Migration ballerup_d7_paragraph_accordion - END"
 
 echo "Migration ballerup_d7_node_indholdside - START"
-drush migrate:import ballerup_d7_node_indholdside
+drush migrate:import ballerup_d7_node_indholdside --update
 echo "Migration ballerup_d7_node_indholdside - END"
 
 echo "Execuing custom script [1/4] - Fix publish status"
