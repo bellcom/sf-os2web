@@ -11508,12 +11508,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "ae5f19b7ee6034ab81f10fce1697693130bb5f60"
+                "reference": "eb8c8ee7fc69e62d7013b024cb7c283c48d34bd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/ae5f19b7ee6034ab81f10fce1697693130bb5f60",
-                "reference": "ae5f19b7ee6034ab81f10fce1697693130bb5f60",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/eb8c8ee7fc69e62d7013b024cb7c283c48d34bd5",
+                "reference": "eb8c8ee7fc69e62d7013b024cb7c283c48d34bd5",
                 "shasum": ""
             },
             "require": {
@@ -11537,7 +11537,7 @@
                 "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
                 "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
             },
-            "time": "2021-05-12T13:41:11+00:00"
+            "time": "2021-05-13T10:52:29+00:00"
         },
         {
             "name": "os2web/os2web_search",
