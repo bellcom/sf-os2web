@@ -27,22 +27,15 @@ process:
       format:
         plugin: default_value
         default_value: 'wysiwyg_tekst'
-#  migrate_contact_more/0/value:
-#    plugin: concat
-#    source:
-#      - field_email/0/email
-#      - field_email_display/0/value
-#      - field_phone_number/0/value
-#      - field_nemid/0/value
-#    delimiter: '<br/>'
-  field_os2web_contact_more:
-    - plugin: sub_process
-      source: field_nemid
-      process:
-        value: value
-        format:
-          plugin: default_value
-          default_value: 'wysiwyg_tekst'
+  field_os2web_contact_more/value:
+    plugin: callback
+    callable:
+      - 'Drupal\ballerup_d7_migration\Utility\MigrationHelper'
+      - createDigitalPostLink
+    source: field_nemid/0/value
+  field_os2web_contact_more/format:
+    plugin: default_value
+    default_value: 'wysiwyg_tekst'
   field_os2web_contact_email: field_email/0/email
   field_os2web_contact_phone: field_phone_number
   langcode:

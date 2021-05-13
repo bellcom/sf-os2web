@@ -277,4 +277,22 @@ class MigrationHelper {
     return $file->id();
   }
 
+  /**
+   * Generates digital post link.
+   *
+   * @param $field_link
+   *   Raw field text.
+   *
+   * @return string
+   *   HTML for the link.
+   */
+  function createDigitalPostLink($field_link) {
+    $digitalPostLink = '';
+    if (!empty($field_link)) {
+      $digitalPostLink = '<a href="' . $field_link . '" target="_blank">Digital post</a>';
+    }
+
+    return $digitalPostLink;
+  }
+
 }
