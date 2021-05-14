@@ -9,6 +9,7 @@
 
 
 use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
 
 $database = \Drupal::database();
 
@@ -37,7 +38,7 @@ print_r(PHP_EOL);
 $updated_count = 0;
 foreach ($migrate_nids as $nid) {
   $node = Node::load($nid);
-  if (empty($node->field_os2web_page_related_hide->value)) {
+  if ($node instanceof NodeInterface && empty($node->field_os2web_page_related_hide->value)) {
     $node->field_os2web_page_related_hide->value = 1;
     $node->save();
     $updated_count++;
