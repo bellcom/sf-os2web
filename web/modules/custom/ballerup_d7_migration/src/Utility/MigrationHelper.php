@@ -119,7 +119,7 @@ class MigrationHelper {
     // Creating text paragraph.
     $text_paragraph = Paragraph::create([
       'type' => 'os2web_simple_text_paragraph',
-      'field_os2web_simple_text_heading' => $title,
+      'field_os2web_simple_text_heading' => '',
       'field_os2web_simple_text_body' => [
         'value' => $text,
         'format' => 'wysiwyg_tekst'
