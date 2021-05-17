@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Content reference
+// | Page
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .paragraph--type--os2web-content-reference
+// | - .entity-list--os2web-page
 // |
 
 // --------------------------------------------------
@@ -14,65 +14,20 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin paragraph--type--os2web-content-reference-mixin() {}
+@mixin entity-list--os2web-page-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.paragraph--type--os2web-content-reference {
+a.entity-list--os2web-page {
+  max-width: unset;
 
-  .field--name-field-os2web-content-reference-h {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 
-    h1, h2, h3, h4, h5, h6 {
-      text-transform: uppercase;
-
-      color: $color-text;
-
-      .region-sidebar-second & {
-        margin-top: 0;
-      }
-    }
-  }
-  .field--name-field-os2web-content-ref-subhead {
-    text-align: center;
-
-    p {
-      margin: auto;
-    }
-  }
-  .field--name-field-os2web-content-reference {
-
-    [class*="col-"] {
-      display: flex;
-
-      flex-direction: column;
-
-      > * {
-        display: flex;
-
-        flex-grow: 1;
-      }
-    }
-  }
-
-  .field {
-
-    + .field--name-field-os2web-content-reference-h,
-    + .field--name-field-os2web-content-ref-subhead {
-      margin-top: 10px;
-    }
-
-    + .desktop-only,
-    + .mobile-only {
-      margin-top: 20px;
-    }
-  }
-
-  // Tiny slider.
-  button[data-action="start"],
-  button[data-action="stop"] {
-    display: none !important;
+  &, &:hover, &:focus, &:active {
+    //color: $color-text;
   }
 }
 
