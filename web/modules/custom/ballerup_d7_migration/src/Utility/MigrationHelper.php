@@ -119,7 +119,7 @@ class MigrationHelper {
     // Creating text paragraph.
     $text_paragraph = Paragraph::create([
       'type' => 'os2web_simple_text_paragraph',
-      'field_os2web_simple_text_heading' => $title,
+      'field_os2web_simple_text_heading' => '',
       'field_os2web_simple_text_body' => [
         'value' => $text,
         'format' => 'wysiwyg_tekst'
@@ -152,7 +152,7 @@ class MigrationHelper {
    *
    * @return array
    *   [
-   *     'target_id' => ,
+   *     'tid'
    *   ]
    *
    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
@@ -177,9 +177,7 @@ class MigrationHelper {
       $term->save();
     }
 
-    return [
-      'target_id' => $term->id()
-    ];
+    return [$term->id()];
   }
 
   /**
@@ -277,6 +275,24 @@ class MigrationHelper {
     }
 
     return $file->id();
+  }
+
+  /**
+   * Generates digital post link.
+   *
+   * @param $field_link
+   *   Raw field text.
+   *
+   * @return string
+   *   HTML for the link.
+   */
+  function createDigitalPostLink($field_link) {
+    $digitalPostLink = '';
+    if (!empty($field_link)) {
+      $digitalPostLink = '<a href="' . $field_link . '" target="_blank">Digital post</a>';
+    }
+
+    return $digitalPostLink;
   }
 
 }

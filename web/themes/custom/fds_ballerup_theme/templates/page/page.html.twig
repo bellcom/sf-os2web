@@ -103,9 +103,8 @@
         <div class="layout-sidebar-right">
           {% if page.sidebar_second %}
             {% block sidebar_second %}
-              {% if not is_front %}
+              {% if ( not is_front ) and ( not (path('<current>') starts with '/brug-byen/kunst-i-ballerup') ) %}
                 <br>
-
                 <a href="/selvbetjening" class="button button-primary button--selvbetjening">
                   {{ 'Genvej til al Selvbetjening' | trans }} <span class="icon fa fa-angle-right"></span>
                 </a>

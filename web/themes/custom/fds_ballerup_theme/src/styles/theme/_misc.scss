@@ -32,6 +32,13 @@ body a {
   }
 }
 
+.row--equal-height-columns {
+
+  > div {
+    display: flex;
+  }
+}
+
 .button {
   font-weight: bold;
 
@@ -122,12 +129,29 @@ svg.ext {
 
   .form-item-from-date,
   .form-item-to-date {
-    max-width: 150px;
+    max-width: 130px;
   }
 
-  .form-select {
-    margin-top: 8px;
+  .form-type-select {
+
+    .form-label {
+      display: block;
+    }
+
+    .chosen-single {
+      @extend .form-select;
+
+      b {
+        display: none;
+      }
+    }
+
+    .chosen-container .chosen-drop {
+      border: $outer-border;
+    }
   }
+
+  .form-select {}
 
   .form-actions {
     margin-bottom: 0;
@@ -139,6 +163,42 @@ svg.ext {
 body .page-container {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.two-col-list {
+  position: relative;
+  list-style: none;
+  padding: 10px 30px 30px 30px;
+  margin: 15px -30px -30px -30px;
+  column-count: 2;
+  column-gap: 30px;
+  border-top: 1px solid #f5f7f8;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+    background-color: #f5f7f8;
+  }
+
+  li {
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    min-height: 26px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+
+    &:before {
+      display: none;
+    }
+  }
 }
 
 .region-sidebar-second {
