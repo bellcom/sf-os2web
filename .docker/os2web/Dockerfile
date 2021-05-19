@@ -49,9 +49,11 @@ RUN echo '<?php $settings["project_env"] = PROD_ENV; ' > /opt/drupal/web/sites/d
 	mkdir -p private; \
 	# Adding sync directory.
 	mkdir -p config/sync; \
+	# Adding translations directory.
+	mkdir -p translations; \
 	# Adjusting ownership
-	chown -R www-data:www-data /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync /opt/drupal/tmp /opt/drupal/logs; \
-	chmod g+s -R /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync
+	chown -R www-data:www-data /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync /opt/drupal/tmp /opt/drupal/logs /opt/drupal/translations; \
+	chmod g+s -R /opt/drupal/private /opt/drupal/files /opt/drupal/translations /opt/drupal/config/sync
 
 # Adding custom apache configuration with PHP value and log settings.
 COPY apache/000-default.conf /etc/apache2/sites-enabled/000-default.conf

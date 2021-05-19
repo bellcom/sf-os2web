@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "d599ebe1f0009dda9ba5db1384cb659190fcd616"
+                "reference": "f24095392b496690105de8547cd0513ac92d2a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/d599ebe1f0009dda9ba5db1384cb659190fcd616",
-                "reference": "d599ebe1f0009dda9ba5db1384cb659190fcd616",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/f24095392b496690105de8547cd0513ac92d2a38",
+                "reference": "f24095392b496690105de8547cd0513ac92d2a38",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -11342,12 +11342,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "00ed9831462cbf370d5b79e1fdd75ea0b7e955aa"
+                "reference": "dbade7c6f19927c85f8222ce59c6e8a3c1701569"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/00ed9831462cbf370d5b79e1fdd75ea0b7e955aa",
-                "reference": "00ed9831462cbf370d5b79e1fdd75ea0b7e955aa",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/dbade7c6f19927c85f8222ce59c6e8a3c1701569",
+                "reference": "dbade7c6f19927c85f8222ce59c6e8a3c1701569",
                 "shasum": ""
             },
             "require": {
@@ -11365,7 +11365,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings/issues",
                 "source": "https://github.com/OS2web/os2web_meetings/tree/develop"
             },
-            "time": "2021-05-12T11:08:10+00:00"
+            "time": "2021-05-19T09:21:36+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
@@ -11477,12 +11477,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-                "reference": "2d5767c35cf7d0537302b921a871812618704279"
+                "reference": "863aed873868dec67f7017597b15a95d431fffd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/2d5767c35cf7d0537302b921a871812618704279",
-                "reference": "2d5767c35cf7d0537302b921a871812618704279",
+                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/863aed873868dec67f7017597b15a95d431fffd2",
+                "reference": "863aed873868dec67f7017597b15a95d431fffd2",
                 "shasum": ""
             },
             "require": {
@@ -11490,6 +11490,7 @@
                 "drupal/smart_trim": "^1.3",
                 "drupal/video_embed_field": "*"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -11500,7 +11501,7 @@
                 "issues": "https://github.com/OS2web/os2web_news/issues",
                 "source": "https://github.com/OS2web/os2web_news/tree/master"
             },
-            "time": "2021-05-05T13:40:52+00:00"
+            "time": "2021-05-19T07:39:41+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
@@ -11508,12 +11509,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "bcf346208167d8ccfb752557d9f98b265c64b48f"
+                "reference": "19335e00cfa1a8a1419f8efb6df430f377512623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/bcf346208167d8ccfb752557d9f98b265c64b48f",
-                "reference": "bcf346208167d8ccfb752557d9f98b265c64b48f",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/19335e00cfa1a8a1419f8efb6df430f377512623",
+                "reference": "19335e00cfa1a8a1419f8efb6df430f377512623",
                 "shasum": ""
             },
             "require": {
@@ -11537,7 +11538,7 @@
                 "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
                 "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
             },
-            "time": "2021-05-13T12:56:46+00:00"
+            "time": "2021-05-18T08:30:29+00:00"
         },
         {
             "name": "os2web/os2web_search",
