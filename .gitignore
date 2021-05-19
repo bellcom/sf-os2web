@@ -51,11 +51,3 @@ tmp/*
 !tmp/.gitkeep
 sessions/*
 !sessions/.gitkeep
-
-.docker/logs/*
-!.docker/logs/.gitkeep
-.docker/php/logs/*.log
-.docker/mariadb/data/*
-!.docker/mariadb/data/.gitkeep
-.docker/solr_data/*
-!.docker/solr_data/.gitkeep
