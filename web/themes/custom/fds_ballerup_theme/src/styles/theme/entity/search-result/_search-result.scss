@@ -20,7 +20,9 @@
 // Styling
 // --------------------------------------------------
 
+.entity-search-index,
 .entity-search-result {
+  margin-bottom: 1rem;
   padding: 2.4rem;
 
   background-color: #fff;
@@ -31,6 +33,7 @@
   }
 }
 
+a.entity-search-index,
 a.entity-search-result {
   max-width: unset;
 

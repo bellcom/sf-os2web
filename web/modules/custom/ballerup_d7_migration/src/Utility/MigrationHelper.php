@@ -295,4 +295,38 @@ class MigrationHelper {
     return $digitalPostLink;
   }
 
+  /**
+   * Helper function to find local node by remote ID.
+   *
+   * @param $sourceNodeId
+   *   Remote node ID.
+   *
+   * @return int|null
+   *   Int if the local node is found. NULL otherwise.
+   */
+  function findLocalNode($sourceNodeId) {
+    $node_migrate_tables = [
+      'migrate_map_ballerup_d7_node_gallery_slide',
+      'migrate_map_ballerup_d7_node_indholdside',
+      'migrate_map_ballerup_d7_node_institution_page',
+      'migrate_map_ballerup_d7_node_news',
+    ];
+
+    $database = \Drupal::database();
+    foreach ($node_migrate_tables as $table) {
+      $localNid = $database->select($table)->fields($table, [
+        'destid1',
+      ])
+        ->condition('sourceid1', $sourceNodeId)
+        ->execute()
+        ->fetchField();
+
+      if ($localNid) {
+        return $localNid;
+      }
+    }
+
+    return NULL;
+  }
+
 }
