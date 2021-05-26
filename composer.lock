@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c57e36a58b649a8282738ae25fbb4933",
+    "content-hash": "447347dfda444a7e404021d40a7729da",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -11211,17 +11211,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "07808e5ac3ed8ce0dea72a4ffe06c5471091361f"
+                "reference": "eed3bf3a8724c9430a4536a7446c7aae723e8352"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/07808e5ac3ed8ce0dea72a4ffe06c5471091361f",
-                "reference": "07808e5ac3ed8ce0dea72a4ffe06c5471091361f",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/eed3bf3a8724c9430a4536a7446c7aae723e8352",
+                "reference": "eed3bf3a8724c9430a4536a7446c7aae723e8352",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "*"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -11232,7 +11233,7 @@
                 "issues": "https://github.com/OS2web/os2web_hearings/issues",
                 "source": "https://github.com/OS2web/os2web_hearings/tree/master"
             },
-            "time": "2021-01-28T11:53:28+00:00"
+            "time": "2021-05-26T10:54:06+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
