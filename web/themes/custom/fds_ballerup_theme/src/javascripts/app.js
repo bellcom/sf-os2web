@@ -66,9 +66,14 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
   var links = document.querySelectorAll('.field--type-file .file a');
 
+  function generateValue(text) {
+    return 'Hent: ' + text;
+  }
+
   for (var i = 0; i < links.length; i++) {
     var link = links[i];
 
+    link.innerHTML = generateValue(link.innerHTML);
     link.setAttribute('target', '_blank');
   }
 })();
