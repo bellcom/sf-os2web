@@ -11374,18 +11374,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_agman.git",
-                "reference": "98807db5f5358cdb36cc6b41b2bcef0ba96c3cd5"
+                "reference": "51ec2d131b19eb011ca469cbc880d8fef82b19a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/98807db5f5358cdb36cc6b41b2bcef0ba96c3cd5",
-                "reference": "98807db5f5358cdb36cc6b41b2bcef0ba96c3cd5",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/51ec2d131b19eb011ca469cbc880d8fef82b19a5",
+                "reference": "51ec2d131b19eb011ca469cbc880d8fef82b19a5",
                 "shasum": ""
             },
             "require": {
                 "drupal/migrate_plus": "^4.2",
                 "drupal/migrate_tools": "^4.5"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -11396,7 +11397,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings_agman/issues",
                 "source": "https://github.com/OS2web/os2web_meetings_agman/tree/master"
             },
-            "time": "2021-05-04T07:53:16+00:00"
+            "time": "2021-05-27T07:24:06+00:00"
         },
         {
             "name": "os2web/os2web_meetings_edoc",
