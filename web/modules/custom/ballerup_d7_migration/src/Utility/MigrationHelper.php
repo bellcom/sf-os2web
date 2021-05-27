@@ -19,6 +19,22 @@ class MigrationHelper {
   }
 
   /**
+   * Sets the moderation state for the node based on a status.
+   * 
+   * @param $status
+   *
+   * @return string
+   */
+  function setModerationState($status) {
+    if ($status) {
+      return 'published';
+    }
+    else {
+      return 'draft';
+    }
+  }
+
+  /**
    * Creates Borger.dk paragraph with the right article selected.
    *
    * @param $field_borger_dk_article_ref
