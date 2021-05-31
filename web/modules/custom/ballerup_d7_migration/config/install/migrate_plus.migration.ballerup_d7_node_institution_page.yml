@@ -33,6 +33,13 @@ process:
     plugin: default_value
     default_value: 1
     source: '@migrate_uid'
+  status: status
+  moderation_state:
+    plugin: callback
+    callable:
+      - 'Drupal\ballerup_d7_migration\Utility\MigrationHelper'
+      - setModerationState
+    source: status
   field_migration_old_url:
     plugin: callback
     callable:
@@ -46,7 +53,7 @@ process:
         value: value
         format:
           plugin: default_value
-          default_value: 'wysiwyg_tekst'  
+          default_value: 'wysiwyg_tekst'
   # ...
   field_os2web_page_contact:
     plugin: migration_lookup
