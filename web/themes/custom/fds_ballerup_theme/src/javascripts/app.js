@@ -133,3 +133,15 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', handleToggle);
   }
 })();
+
+// Tooltips on mailto: links.
+(function() {
+  var links = document.querySelectorAll('a[href^="mailto:"]');
+
+  for (var i = 0; i < links.length; i += 1) {
+    var link = links[i];
+
+    link.setAttribute('data-tooltip', 'Du er nu ved at sende en almindelig e-mail. Hvis din besked indeholder personoplysninger, bør du i stedet sende den som en <u>sikker besked</u>');
+    link.classList.add('js-tooltip');
+  }
+}());

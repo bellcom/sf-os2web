@@ -392,6 +392,21 @@ body {
   }
 }
 
+body {
+
+  .tooltip{
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: $box-shadow-moderately;
+    color: #fff;
+    background-color: rgba(0,0,0,.9);
+    border: none;
+    border-radius: 4px;
+    padding: .3rem .6rem;
+    max-width: 260px;
+  }
+}
+
 // --------------------------------------------------
 // Responsive
 // --------------------------------------------------
