@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "447347dfda444a7e404021d40a7729da",
+    "content-hash": "78bac53eddd41b4e88d4981341f405ea",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -11595,6 +11595,41 @@
             "time": "2021-05-18T08:30:29+00:00"
         },
         {
+            "name": "os2web/os2web_person_information",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_person_information.git",
+                "reference": "e3bfe6fb01b63b43bc24fad876d291694c23602b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_person_information/zipball/e3bfe6fb01b63b43bc24fad876d291694c23602b",
+                "reference": "e3bfe6fb01b63b43bc24fad876d291694c23602b",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/content_moderation": "*",
+                "drupal/crop": "*",
+                "drupal/image_widget_crop": "*",
+                "drupal/paragraphs": "*",
+                "drupal/scheduler": "*",
+                "drupal/scheduler_content_moderation_integration": "*"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "OS2Web person information",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_person_information/issues",
+                "source": "https://github.com/OS2web/os2web_person_information/tree/master"
+            },
+            "time": "2021-06-04T13:53:46+00:00"
+        },
+        {
             "name": "os2web/os2web_search",
             "version": "dev-master",
             "source": {
@@ -20706,6 +20741,7 @@
         "os2web/os2web_meetings_sbsys": 20,
         "os2web/os2web_news": 20,
         "os2web/os2web_pagebuilder": 20,
+        "os2web/os2web_person_information": 20,
         "os2web/os2web_search": 20,
         "os2web/os2web_spotbox": 20
     },
