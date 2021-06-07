@@ -11564,12 +11564,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "19335e00cfa1a8a1419f8efb6df430f377512623"
+                "reference": "e29127b996721abcdea46170f309fb5e642c4328"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/19335e00cfa1a8a1419f8efb6df430f377512623",
-                "reference": "19335e00cfa1a8a1419f8efb6df430f377512623",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/e29127b996721abcdea46170f309fb5e642c4328",
+                "reference": "e29127b996721abcdea46170f309fb5e642c4328",
                 "shasum": ""
             },
             "require": {
@@ -11582,6 +11582,7 @@
                 "os2web/os2web_hjemmeside": "dev-master",
                 "os2web/os2web_kle": "dev-master"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -11592,7 +11593,7 @@
                 "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
                 "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
             },
-            "time": "2021-05-18T08:30:29+00:00"
+            "time": "2021-06-07T14:25:03+00:00"
         },
         {
             "name": "os2web/os2web_person_information",
