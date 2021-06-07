@@ -11392,12 +11392,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "5d01dfc840cc4764434d569516a0ee09eb383f5c"
+                "reference": "3f076347c1a3edf273d326b27ea118114db5bdaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/5d01dfc840cc4764434d569516a0ee09eb383f5c",
-                "reference": "5d01dfc840cc4764434d569516a0ee09eb383f5c",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/3f076347c1a3edf273d326b27ea118114db5bdaa",
+                "reference": "3f076347c1a3edf273d326b27ea118114db5bdaa",
                 "shasum": ""
             },
             "require": {
@@ -11415,7 +11415,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings/issues",
                 "source": "https://github.com/OS2web/os2web_meetings/tree/develop"
             },
-            "time": "2021-06-04T09:01:59+00:00"
+            "time": "2021-06-07T10:12:46+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
@@ -11454,12 +11454,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_edoc.git",
-                "reference": "4e22d104320ca4eaca5021d2c97cc2f2ea0e6282"
+                "reference": "6dedaf7a187ee35691b0cdc1a4381be2971811ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc/zipball/4e22d104320ca4eaca5021d2c97cc2f2ea0e6282",
-                "reference": "4e22d104320ca4eaca5021d2c97cc2f2ea0e6282",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc/zipball/6dedaf7a187ee35691b0cdc1a4381be2971811ae",
+                "reference": "6dedaf7a187ee35691b0cdc1a4381be2971811ae",
                 "shasum": ""
             },
             "require": {
@@ -11477,7 +11477,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings_edoc/issues",
                 "source": "https://github.com/OS2web/os2web_meetings_edoc/tree/master"
             },
-            "time": "2021-06-04T09:00:31+00:00"
+            "time": "2021-06-07T10:14:31+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
