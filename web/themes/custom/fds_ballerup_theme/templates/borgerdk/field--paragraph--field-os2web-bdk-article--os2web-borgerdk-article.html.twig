@@ -77,14 +77,14 @@
       <div{{ attributes.addClass(classes, 'field__item') }}>
         {{ item.content.pre_text }}
         {{ item.content.article }}
+        <div>
+          {{ item.content.selfservices }}
+        </div>
         <ul class="accordion">
           {{ item.content.microarticles }}
           {{ item.content.legislation }}
           {{ item.content.recommendation }}
         </ul>
-        <div>
-          {{ item.content.selfservices }}
-        </div>
         {{ item.content.byline }}
         {{ item.content.post_text }}
       </div>
