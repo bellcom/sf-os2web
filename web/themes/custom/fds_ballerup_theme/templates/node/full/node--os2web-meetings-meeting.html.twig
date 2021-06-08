@@ -7,10 +7,7 @@
   view_mode ? view_mode|clean_class,
 ]
 %}
-{% if node.field_os2web_m_start_date.value %}
-  {% set timestamp = node.field_os2web_m_start_date.value|date('U', 'Europe/Copenhagen') %}
-{% endif %}
-{% set timestamp = node.field_os2web_m_start_date.value|date('U', 'Europe/Copenhagen') %}
+{% set timestamp = node.field_os2web_m_start_date.date|date('U') %}
 <div {{ attributes.addClass(classes) }}>
   <h1>{{ label }}</h1>
   <div class="fields-inline">
