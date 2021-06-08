@@ -8,19 +8,19 @@
 ]
 %}
 {% if node.field_os2web_m_start_date.value %}
-{% set timestamp = node.field_os2web_m_start_date.value|date('U') %}
+{% set timestamp = node.field_os2web_m_start_date.value|date('U', 'Europe/Copenhagen') %}
 {% endif %}
 
 <a href="{{ url }}" {{ attributes.addClass(classes) }}>
   <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date">
     <span class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date__month">
     {% if timestamp %}
-      {{ timestamp | date('M') | trans }}
+      {{ timestamp | date('M', 'Europe/Copenhagen') | trans }}
     {% endif %}
     </span>
     <span class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date__date">
     {% if timestamp %}
-      {{ timestamp | date('d') }}
+      {{ timestamp | date('d', 'Europe/Copenhagen') }}
     {% endif %}
     </span>
   </div>
