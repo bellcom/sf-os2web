@@ -8,7 +8,7 @@
 ]
 %}
 {% if node.field_os2web_m_start_date.value %}
-{% set timestamp = node.field_os2web_m_start_date.value|date('U') %}
+  {% set timestamp = node.field_os2web_m_start_date.date|date('U') %}
 {% endif %}
 
 <a href="{{ url }}" {{ attributes.addClass(classes) }}>

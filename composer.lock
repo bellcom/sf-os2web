@@ -128,12 +128,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/fds_base_theme.git",
-                "reference": "396408a4e8c66f6bb1c9e366a87e6da11418bbf3"
+                "reference": "a0af497c6c20314de533be4f08b8453b977dd7c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/396408a4e8c66f6bb1c9e366a87e6da11418bbf3",
-                "reference": "396408a4e8c66f6bb1c9e366a87e6da11418bbf3",
+                "url": "https://api.github.com/repos/bellcom/fds_base_theme/zipball/a0af497c6c20314de533be4f08b8453b977dd7c0",
+                "reference": "a0af497c6c20314de533be4f08b8453b977dd7c0",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -11423,12 +11423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_agman.git",
-                "reference": "cfac56a9a9ffadf868f27876394098dcb51dc566"
+                "reference": "e3db11dac9b0420604382ebd6923df5aa14f0ae5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/cfac56a9a9ffadf868f27876394098dcb51dc566",
-                "reference": "cfac56a9a9ffadf868f27876394098dcb51dc566",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/e3db11dac9b0420604382ebd6923df5aa14f0ae5",
+                "reference": "e3db11dac9b0420604382ebd6923df5aa14f0ae5",
                 "shasum": ""
             },
             "require": {
@@ -11446,7 +11446,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings_agman/issues",
                 "source": "https://github.com/OS2web/os2web_meetings_agman/tree/master"
             },
-            "time": "2021-06-08T07:40:22+00:00"
+            "time": "2021-06-08T12:30:19+00:00"
         },
         {
             "name": "os2web/os2web_meetings_edoc",

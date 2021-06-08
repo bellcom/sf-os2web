@@ -7,7 +7,7 @@
   view_mode ? view_mode|clean_class,
 ]
 %}
-{% set timestamp = node.field_os2web_hearings_end_date.value|date('U') %}
+{% set timestamp = node.field_os2web_hearings_end_date.date|date('U') %}
 
 <a href="{{ url }}" {{ attributes.addClass(classes) }}>
   <div class="entity-{{ view_mode|clean_class }}--{{ node.bundle|clean_class }}__date">
