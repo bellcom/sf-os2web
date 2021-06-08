@@ -34,6 +34,28 @@
       border-top: 1px solid #dadde0;
     }
   }
+
+  li.has-selfservice-links {
+    position: relative;
+
+    .selfservice-links {
+      position: absolute;
+
+      top: 0;
+      right: 0;
+
+      z-index: 500;
+
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-right: 14px;
+      padding-left: 20px;
+    }
+
+    .accordion-button {
+      padding-right: 12rem;
+    }
+  }
 }
 .accordion-button {
   position: relative;
