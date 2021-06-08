@@ -11423,12 +11423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_agman.git",
-                "reference": "9b2f6a26b449789c8e61fdd22e4b42e7a01b806e"
+                "reference": "cfac56a9a9ffadf868f27876394098dcb51dc566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/9b2f6a26b449789c8e61fdd22e4b42e7a01b806e",
-                "reference": "9b2f6a26b449789c8e61fdd22e4b42e7a01b806e",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_agman/zipball/cfac56a9a9ffadf868f27876394098dcb51dc566",
+                "reference": "cfac56a9a9ffadf868f27876394098dcb51dc566",
                 "shasum": ""
             },
             "require": {
@@ -11446,7 +11446,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings_agman/issues",
                 "source": "https://github.com/OS2web/os2web_meetings_agman/tree/master"
             },
-            "time": "2021-06-03T12:35:54+00:00"
+            "time": "2021-06-08T07:40:22+00:00"
         },
         {
             "name": "os2web/os2web_meetings_edoc",
