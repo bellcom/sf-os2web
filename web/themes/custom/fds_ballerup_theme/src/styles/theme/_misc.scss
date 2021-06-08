@@ -411,6 +411,14 @@ body {
   display: none !important;
 }
 
+body.page-node-type-os2web-news,
+body.page-node-type-os2web-page {
+
+  h1, .h1 {
+    font-weight: 400;
+  }
+}
+
 // --------------------------------------------------
 // Responsive
 // --------------------------------------------------
