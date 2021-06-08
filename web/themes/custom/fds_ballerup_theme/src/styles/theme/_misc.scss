@@ -119,18 +119,7 @@ svg.ext {
   display: none;
 }
 
-#views-exposed-form-os2web-meetings-search-os2web-meetings-embed-search-from-to-dates {
-  margin-bottom: $grid-gutter-width / 2;
-  padding: 30px;
-
-  border-radius: 3px;
-  box-shadow: 0 1px 2px 0 rgba(27, 27, 29, .2);
-  background-color: #fff;
-
-  .form-item-from-date,
-  .form-item-to-date {
-    max-width: 130px;
-  }
+.view {
 
   .form-type-select {
 
@@ -150,8 +139,20 @@ svg.ext {
       border: $outer-border;
     }
   }
+}
 
-  .form-select {}
+#views-exposed-form-os2web-meetings-search-os2web-meetings-embed-search-from-to-dates {
+  margin-bottom: $grid-gutter-width / 2;
+  padding: 30px;
+
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 rgba(27, 27, 29, .2);
+  background-color: #fff;
+
+  .form-item-from-date,
+  .form-item-to-date {
+    max-width: 130px;
+  }
 
   .form-actions {
     margin-bottom: 0;
