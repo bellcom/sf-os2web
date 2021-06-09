@@ -11151,12 +11151,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "089f5c9d903f5eb304937e30ae1a0af646e33ed6"
+                "reference": "ad7bb1847fbc4c6f2712078297099fc06e897911"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/089f5c9d903f5eb304937e30ae1a0af646e33ed6",
-                "reference": "089f5c9d903f5eb304937e30ae1a0af646e33ed6",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/ad7bb1847fbc4c6f2712078297099fc06e897911",
+                "reference": "ad7bb1847fbc4c6f2712078297099fc06e897911",
                 "shasum": ""
             },
             "require": {
