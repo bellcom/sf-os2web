@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78bac53eddd41b4e88d4981341f405ea",
+    "content-hash": "03ecb1ef0ee081e9ac030f795831bb43",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -145,7 +145,7 @@
                 "source": "https://github.com/bellcom/fds_base_theme/tree/stable/drupal-8.x",
                 "issues": "https://github.com/bellcom/fds_base_theme/issues"
             },
-            "time": "2021-06-01T07:46:26+00:00"
+            "time": "2021-06-08T12:00:18+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -2504,7 +2504,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1606134287",
+                    "datestamp": "1601667290",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3543,10 +3543,6 @@
                 }
             ],
             "description": "Drupal Console Extend Plugin",
-            "support": {
-                "issues": "https://github.com/hechoendrupal/drupal-console-extend-plugin/issues",
-                "source": "https://github.com/hechoendrupal/drupal-console-extend-plugin/tree/0.9.5"
-            },
             "time": "2020-11-18T00:15:28+00:00"
         },
         {
@@ -8530,7 +8526,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1617868325",
+                    "datestamp": "1564747388",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -9105,6 +9101,10 @@
                 "ffwagency",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/ffwagency/borgerdk-php/issues",
+                "source": "https://github.com/ffwagency/borgerdk-php/tree/develop"
+            },
             "time": "2020-02-20T09:43:27+00:00"
         },
         {
@@ -10846,6 +10846,10 @@
                 "iterator",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nette/finder/issues",
+                "source": "https://github.com/nette/finder/tree/v2.5.2"
+            },
             "time": "2020-01-03T20:35:40+00:00"
         },
         {
@@ -11143,16 +11147,16 @@
         },
         {
             "name": "os2web/os2web_borgerdk",
-            "version": "8.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "5601d49256fc2a3c5610126b13d707fe0500ac7f"
+                "reference": "ad7bb1847fbc4c6f2712078297099fc06e897911"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/5601d49256fc2a3c5610126b13d707fe0500ac7f",
-                "reference": "5601d49256fc2a3c5610126b13d707fe0500ac7f",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/ad7bb1847fbc4c6f2712078297099fc06e897911",
+                "reference": "ad7bb1847fbc4c6f2712078297099fc06e897911",
                 "shasum": ""
             },
             "require": {
@@ -11167,11 +11171,7 @@
                 "EUPL-1.2"
             ],
             "description": "Imports content from Borger.dk.",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_borgerdk/issues",
-                "source": "https://github.com/OS2web/os2web_borgerdk/tree/8.x"
-            },
-            "time": "2021-06-07T12:47:09+00:00"
+            "time": "2020-07-03T14:03:47+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -11198,10 +11198,6 @@
                 "EUPL-1.2"
             ],
             "description": "Contact entity",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_contact/issues",
-                "source": "https://github.com/OS2web/os2web_contact/tree/master"
-            },
             "time": "2021-03-19T13:01:23+00:00"
         },
         {
@@ -11279,10 +11275,6 @@
                 "EUPL-1.2"
             ],
             "description": "Adds Hearing related content types and Hearings search view",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_hearings/issues",
-                "source": "https://github.com/OS2web/os2web_hearings/tree/master"
-            },
             "time": "2021-05-26T10:54:06+00:00"
         },
         {
@@ -11318,10 +11310,6 @@
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_hjemmeside/issues",
-                "source": "https://github.com/OS2web/os2web_hjemmeside/tree/master"
-            },
             "time": "2021-03-09T20:33:26+00:00"
         },
         {
@@ -11349,10 +11337,6 @@
                 "EUPL-1.2"
             ],
             "description": "KLE terms import functionality",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_kle/issues",
-                "source": "https://github.com/OS2web/os2web_kle/tree/master"
-            },
             "time": "2021-03-09T14:11:49+00:00"
         },
         {
@@ -11373,17 +11357,12 @@
                 "drupal/date_popup": "^1.1",
                 "drupal/monolog": "^1.3"
             },
-            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Logs access selected content type or webform elements",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_logging/issues",
-                "source": "https://github.com/OS2web/os2web_logging/tree/master"
-            },
             "time": "2021-06-01T11:16:38+00:00"
         },
         {
@@ -11435,17 +11414,12 @@
                 "drupal/migrate_plus": "^4.2",
                 "drupal/migrate_tools": "^4.5"
             },
-            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS AGMAN ESDH system",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_meetings_agman/issues",
-                "source": "https://github.com/OS2web/os2web_meetings_agman/tree/master"
-            },
             "time": "2021-06-08T12:30:19+00:00"
         },
         {
@@ -11466,17 +11440,12 @@
                 "drupal/migrate_plus": "^4.2",
                 "drupal/migrate_tools": "^4.5"
             },
-            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Import meetings from EDOC ESDH system",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_meetings_edoc/issues",
-                "source": "https://github.com/OS2web/os2web_meetings_edoc/tree/master"
-            },
             "time": "2021-06-07T10:14:31+00:00"
         },
         {
@@ -11552,10 +11521,6 @@
                 "EUPL-1.2"
             ],
             "description": "News entity",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_news/issues",
-                "source": "https://github.com/OS2web/os2web_news/tree/master"
-            },
             "time": "2021-05-26T12:35:55+00:00"
         },
         {
@@ -11582,17 +11547,12 @@
                 "os2web/os2web_hjemmeside": "dev-master",
                 "os2web/os2web_kle": "dev-master"
             },
-            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
-                "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
-            },
             "time": "2021-06-08T09:16:44+00:00"
         },
         {
@@ -11617,17 +11577,12 @@
                 "drupal/scheduler": "*",
                 "drupal/scheduler_content_moderation_integration": "*"
             },
-            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "OS2Web person information",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_person_information/issues",
-                "source": "https://github.com/OS2web/os2web_person_information/tree/master"
-            },
             "time": "2021-06-04T13:53:46+00:00"
         },
         {
@@ -11659,10 +11614,6 @@
                 "EUPL-1.2"
             ],
             "description": "Search functionality powered by SOLR",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_search/issues",
-                "source": "https://github.com/OS2web/os2web_search/tree/master"
-            },
             "time": "2021-02-15T14:22:45+00:00"
         },
         {
@@ -12433,6 +12384,9 @@
                 "psr",
                 "psr-6"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/master"
+            },
             "time": "2016-08-06T20:24:11+00:00"
         },
         {
