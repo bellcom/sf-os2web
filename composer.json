@@ -5,6 +5,45 @@
     "license": "EUPL-1.2",
     "repositories": [
         {
+            "type": "package",
+            "package": {
+                "name": "drupal/monolog",
+                "type": "drupal-module",
+                "description": "A Framework for integrating with the Monolog library.",
+                "homepage": "http://drupal.org/project/monolog",
+                "license": "GPL-2.0",
+                "authors": [
+                    {
+                        "name": "Chris Pliakas",
+                        "email": "opensource@chrispliakas.com",
+                        "role": "Project Lead"
+                    },
+                    {
+                        "name": "See contributors",
+                        "homepage": "http://drupal.org/node/1937716/committers",
+                        "role": "Developer"
+                    }
+                ],
+                "support": {
+                    "issues": "http://drupal.org/project/issues/monolog"
+                },
+                "require": {
+                    "monolog/monolog": "^2.0.0"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Drupal\\Monolog": "src/"
+                    }
+                },
+                "version": "2.x-dev",
+                "source": {
+                    "url": "https://git.drupalcode.org/project/monolog.git",
+                    "type": "git",
+                    "reference": "2.x"
+                }
+            }
+        },
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
@@ -40,17 +79,20 @@
         }
     ],
     "require": {
-        "php": ">=7.0.8",
+        "php": ">=7.1",
         "bellcom/fds_base_theme": "dev-stable/drupal-8.x",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/access_latest": "^0.0.1",
         "drupal/anonymous_subscriptions": "1.x-dev@dev",
+        "drupal/ckeditor_balloonpanel": "1.x-dev@dev",
+        "drupal/core-project-message": "^9.0.0",
+        "drupal/core-recommended": "^9.0.0",
         "drupal/ckeditor_iframe": "^2.1",
         "drupal/coder": "^8.3",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.8.0",
-        "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/core": "9.1.5 as 8.9.0",
+        "drupal/core-composer-scaffold": "^9.0.0",
         "drupal/fancy_file_delete": "^2.0",
         "drupal/gin": "^3.0",
         "drupal/gin_login": "^1.0@RC",
@@ -61,29 +103,30 @@
         "drupal/redirect_after_login": "^2.7",
         "drupal/siteimprove": "^1.10",
         "drupal/stage_file_proxy": "^1.0",
+        "drupal/upgrade_rector": "^1.0@alpha",
         "drupal/workbench": "^1.3",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "mglaman/drupal-check": "^1.1",
-        "os2web/os2web": "^1.0",
-        "os2web/os2web_borgerdk": "dev-master",
+        "os2web/os2web": "dev-drupal9",
+        "os2web/os2web_borgerdk": "dev-drupal9",
         "os2web/os2web_events": "dev-master",
         "os2web/os2web_hearings": "dev-master",
-        "os2web/os2web_logging": "dev-master",
-        "os2web/os2web_meetings": "dev-develop",
-        "os2web/os2web_meetings_agman": "dev-master",
-        "os2web/os2web_meetings_edoc": "dev-master",
-        "os2web/os2web_meetings_sbsys": "dev-master",
+        "os2web/os2web_logging": "dev-drupal9",
+        "os2web/os2web_meetings": "dev-drupal9",
+        "os2web/os2web_meetings_agman": "dev-drupal9",
+        "os2web/os2web_meetings_edoc": "dev-drupal9",
+        "os2web/os2web_meetings_sbsys": "dev-drupal9",
         "os2web/os2web_news": "dev-master",
-        "os2web/os2web_pagebuilder": "dev-master",
+        "os2web/os2web_pagebuilder": "dev-develop",
         "os2web/os2web_person_information": "dev-master",
-        "os2web/os2web_search": "dev-master",
+        "os2web/os2web_search": "dev-drupal9",
         "os2web/os2web_spotbox": "dev-master",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "drupal/core-dev": "^8.8.0"
+        "drupal/core-dev": "^9.0.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -139,15 +182,11 @@
             "drupal/field_group": {
                 "HTML5 Validation Prevents Submission in Tabs" : "https://www.drupal.org/files/issues/2019-10-04/field_group-HTML5_validation_prevents_submission_in_tabs-2969051-9.patch"
             },
-            "drupal/rules": {
-                "2927132-15-remove-other-conditions-from-ui" : "https://www.drupal.org/files/issues/2020-07-23/2927132-15-remove-other-conditions-from-ui.patch"
-            },
             "drupal/better_exposed_filters": {
                 "allow the date format to be set from the bef interface": "https://www.drupal.org/files/issues/2020-12-21/better_exposed_filters_allow_the_date_format-2858610-23_1.patch"
             },
             "drupal/user_delete_reassign": {
-                "User to assign this user's content to\" required even when method not selected": "https://www.drupal.org/files/issues/2020-11-20/settings_field_always_required-3183626-3.patch",
-                "Incorrect user lookup on Bulk deleting": "https://git.drupalcode.org/project/user_delete_reassign/-/commit/05076bbedb66f8471d023894a88b980c2ecdf8d5.patch"
+                "Drupal 9 Readiness" : "https://www.drupal.org/files/issues/2020-05-27/3143236-2.patch"
             },
             "drupal/core": {
                 "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch",
@@ -155,6 +194,12 @@
             },
             "drupal/printable": {
                 "3214729 PDF filename is generated with it's location" : "https://git.drupalcode.org/issue/printable-3214729/-/commit/cbc98dbe864f82b4cc1da110d88097d0c4740bb9.patch"
+            },
+            "drupal/search_api_synonym": {
+                "Drupal 9 Readiness" : "https://git.drupalcode.org/project/search_api_synonym/-/merge_requests/1.patch"
+            },
+            "drupal/access_latest": {
+                "Drupal 9 Readiness" : "https://git.drupalcode.org/sandbox/lynn-2973708/-/merge_requests/1.patch"
             }
         }
     }
