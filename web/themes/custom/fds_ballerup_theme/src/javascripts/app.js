@@ -138,10 +138,9 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
   var links = document.querySelectorAll('a[href^="mailto:"]');
 
-  for (var i = 0; i < links.length; i += 1) {
-    var link = links[i];
-
-    link.setAttribute('data-tooltip', 'Du er nu ved at sende en almindelig e-mail. Hvis din besked indeholder personoplysninger, bør du i stedet sende den som en <u>sikker besked</u>');
-    link.classList.add('js-tooltip');
-  }
+  tippy(links, {
+    content: '<div style="text-align: center;">Du er nu ved at sende en almindelig e-mail. <br />Hvis din besked indeholder personoplysninger, bør du i stedet sende den som en <br /><a href="/sikkerbesked" style="color: #fff;">sikker besked</a></div>',
+    allowHTML: true,
+    interactive: true,
+  });
 }());
