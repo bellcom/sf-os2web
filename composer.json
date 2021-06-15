@@ -53,6 +53,7 @@
         "drupal/gin": "^3.0",
         "drupal/gin_login": "^1.0@RC",
         "drupal/memcache": "^2.2",
+        "drupal/modules_weight": "^1.9",
         "drupal/monitoring": "^1.9",
         "drupal/quick_node_clone": "^1.14",
         "drupal/redirect_after_login": "^2.7",
