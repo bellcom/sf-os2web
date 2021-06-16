@@ -55,6 +55,7 @@
         "drupal/gin": "^3.0",
         "drupal/gin_login": "^1.0@RC",
         "drupal/memcache": "^2.2",
+        "drupal/modules_weight": "^1.9",
         "drupal/monitoring": "^1.9",
         "drupal/pdf_api": "^2.0",
         "drupal/quick_node_clone": "^1.14",
@@ -64,7 +65,7 @@
         "drupal/workbench": "^1.3",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "mglaman/drupal-check": "^1.1",
-        "os2web/os2web": "^1.0",
+        "os2web/os2web": "dev-master",
         "os2web/os2web_borgerdk": "dev-master",
         "os2web/os2web_events": "dev-master",
         "os2web/os2web_hearings": "dev-master",
@@ -144,10 +145,6 @@
             },
             "drupal/better_exposed_filters": {
                 "allow the date format to be set from the bef interface": "https://www.drupal.org/files/issues/2020-12-21/better_exposed_filters_allow_the_date_format-2858610-23_1.patch"
-            },
-            "drupal/user_delete_reassign": {
-                "User to assign this user's content to\" required even when method not selected": "https://www.drupal.org/files/issues/2020-11-20/settings_field_always_required-3183626-3.patch",
-                "Incorrect user lookup on Bulk deleting": "https://git.drupalcode.org/project/user_delete_reassign/-/commit/05076bbedb66f8471d023894a88b980c2ecdf8d5.patch"
             },
             "drupal/core": {
                 "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch",
