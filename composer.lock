@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff097b53d2df92e79877290f8bd2ad04",
+    "content-hash": "7c4232d642f608a728e46eebc2de614b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1795,6 +1795,10 @@
                 "iterators",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/collections/issues",
+                "source": "https://github.com/doctrine/collections/tree/1.6.7"
+            },
             "time": "2020-07-27T17:53:49+00:00"
         },
         {
@@ -2093,6 +2097,24 @@
                 "lexer",
                 "parser",
                 "php"
+            ],
+            "support": {
+                "issues": "https://github.com/doctrine/lexer/issues",
+                "source": "https://github.com/doctrine/lexer/tree/1.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-05-25T17:44:05+00:00"
         },
@@ -2424,26 +2446,29 @@
         },
         {
             "name": "drupal/anonymous_subscriptions",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/anonymous_subscriptions.git",
-                "reference": "86637ef7884c56ff8b518157181907c8af1f1d9e"
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/anonymous_subscriptions-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "fbf0a2ee475a1d9fcc2ab99f6bb0a5db335bc3ef"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1601667290",
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1624443881",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2469,8 +2494,7 @@
             "homepage": "https://www.drupal.org/project/anonymous_subscriptions",
             "support": {
                 "source": "https://git.drupalcode.org/project/anonymous_subscriptions"
-            },
-            "time": "2020-11-23T12:24:16+00:00"
+            }
         },
         {
             "name": "drupal/better_exposed_filters",
@@ -9132,6 +9156,10 @@
                 "rest",
                 "web service"
             ],
+            "support": {
+                "issues": "https://github.com/guzzle/guzzle/issues",
+                "source": "https://github.com/guzzle/guzzle/tree/6.5"
+            },
             "time": "2020-06-16T21:01:06+00:00"
         },
         {
@@ -9270,7 +9298,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/harvesthq/chosen-package.git",
-                "reference": "origin/master"
+                "reference": "v1.8.7"
             },
             "type": "drupal-library"
         },
@@ -9309,6 +9337,10 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Converts HTML to formatted plain text",
+            "support": {
+                "issues": "https://github.com/mtibben/html2text/issues",
+                "source": "https://github.com/mtibben/html2text/tree/4.3.1"
+            },
             "time": "2020-04-16T23:44:31+00:00"
         },
         {
@@ -10675,10 +10707,6 @@
                 "EUPL-1.2"
             ],
             "description": "Provide functionality for events import from Kulturnaut",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_events/issues",
-                "source": "https://github.com/OS2web/os2web_events/tree/master"
-            },
             "time": "2021-01-06T10:17:21+00:00"
         },
         {
@@ -10924,10 +10952,6 @@
                 "EUPL-1.2"
             ],
             "description": "Import meetings from SBSYS ESDH system",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_meetings_sbsys/issues",
-                "source": "https://github.com/OS2web/os2web_meetings_sbsys/tree/master"
-            },
             "time": "2020-12-30T11:59:53+00:00"
         },
         {
@@ -11048,10 +11072,6 @@
                 "EUPL-1.2"
             ],
             "description": "Search functionality powered by SOLR",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_search/issues",
-                "source": "https://github.com/OS2web/os2web_search/tree/master"
-            },
             "time": "2021-02-15T14:22:45+00:00"
         },
         {
@@ -13785,6 +13805,10 @@
             "keywords": [
                 "stack"
             ],
+            "support": {
+                "issues": "https://github.com/stackphp/builder/issues",
+                "source": "https://github.com/stackphp/builder/tree/v1.0.6"
+            },
             "time": "2020-01-30T12:17:27+00:00"
         },
         {
@@ -16460,6 +16484,10 @@
             ],
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
+            "support": {
+                "issues": "https://github.com/tijsverkoyen/CssToInlineStyles/issues",
+                "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.3"
+            },
             "time": "2020-07-13T06:12:54+00:00"
         },
         {
@@ -18072,10 +18100,6 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "support": {
-                "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
-                "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/master"
-            },
             "time": "2020-09-03T19:13:55+00:00"
         },
         {
@@ -19415,7 +19439,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
-        "drupal/anonymous_subscriptions": 20,
+        "drupal/anonymous_subscriptions": 15,
         "drupal/gin_login": 5,
         "os2web/os2web_borgerdk": 20,
         "os2web/os2web_events": 20,
