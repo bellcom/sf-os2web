@@ -2561,7 +2561,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/anonymous_subscriptions.git",
-                "reference": "933f005764e70a3a1b94c52e6deae55603827fb3"
+                "reference": "4033a2f637fbcc1cc0c69dcdbd10cd4cd070e245"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
