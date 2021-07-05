@@ -148,6 +148,9 @@
             },
             "drupal/core": {
                 "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch"
+            },
+            "drupal/scheduler_content_moderation_integration" : {
+                "Widget error when field is overridden - undefined offset 0 in $form['publish_state']" : "https://www.drupal.org/files/issues/2020-06-30/3077147-28.patch"
             }
         }
     }
