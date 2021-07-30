@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c4232d642f608a728e46eebc2de614b",
+    "content-hash": "55b5b4aa0243a378f288d0159144a66f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -10814,18 +10814,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "0a364bae32f679cc81bde3d8481adf46d2563ded"
+                "reference": "a53fdaaff9a545d743bf6c3a288948dd7b9557a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/0a364bae32f679cc81bde3d8481adf46d2563ded",
-                "reference": "0a364bae32f679cc81bde3d8481adf46d2563ded",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/a53fdaaff9a545d743bf6c3a288948dd7b9557a3",
+                "reference": "a53fdaaff9a545d743bf6c3a288948dd7b9557a3",
                 "shasum": ""
             },
             "require": {
                 "drupal/date_popup": "^1.1",
                 "drupal/monolog": "^1.3"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -10836,7 +10837,7 @@
                 "issues": "https://github.com/OS2web/os2web_logging/issues",
                 "source": "https://github.com/OS2web/os2web_logging/tree/master"
             },
-            "time": "2020-09-29T12:47:17+00:00"
+            "time": "2021-07-02T11:08:43+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
