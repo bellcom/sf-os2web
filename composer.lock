@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f838685cfe088ac39bd3a4acc8fcd231",
+    "content-hash": "47f69c41b4c3f8e6a15adc8bdd5ae493",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -11393,6 +11393,35 @@
             "time": "2021-03-08T11:35:37+00:00"
         },
         {
+            "name": "os2web/os2web_embedded_code",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_embedded_code.git",
+                "reference": "2e53496c303cbccb4e2075dfb14ad71b05a32c24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_embedded_code/zipball/2e53496c303cbccb4e2075dfb14ad71b05a32c24",
+                "reference": "2e53496c303cbccb4e2075dfb14ad71b05a32c24",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Embedded code block",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_embedded_code/issues",
+                "source": "https://github.com/OS2web/os2web_embedded_code/tree/0.0.1"
+            },
+            "time": "2021-08-04T10:26:51+00:00"
+        },
+        {
             "name": "os2web/os2web_events",
             "version": "dev-master",
             "source": {
@@ -20973,5 +21002,5 @@
         "php": ">=7.0.8"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.1.0"
 }
