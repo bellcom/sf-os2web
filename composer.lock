@@ -11729,12 +11729,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "cebe8b5ed1f1485b76b56a2c6beb0af16f07970d"
+                "reference": "3da60a430d93eaf88e31f3f63582ac9ae2cb652d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/cebe8b5ed1f1485b76b56a2c6beb0af16f07970d",
-                "reference": "cebe8b5ed1f1485b76b56a2c6beb0af16f07970d",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/3da60a430d93eaf88e31f3f63582ac9ae2cb652d",
+                "reference": "3da60a430d93eaf88e31f3f63582ac9ae2cb652d",
                 "shasum": ""
             },
             "require": {
@@ -11747,13 +11747,18 @@
                 "os2web/os2web_hjemmeside": "dev-master",
                 "os2web/os2web_kle": "dev-master"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Page builder set for os2web",
-            "time": "2021-06-08T09:16:44+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
+                "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
+            },
+            "time": "2021-08-12T10:22:57+00:00"
         },
         {
             "name": "os2web/os2web_person_information",
