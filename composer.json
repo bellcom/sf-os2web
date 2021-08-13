@@ -142,9 +142,6 @@
             "drupal/better_exposed_filters": {
                 "allow the date format to be set from the bef interface": "https://www.drupal.org/files/issues/2020-12-21/better_exposed_filters_allow_the_date_format-2858610-23_1.patch"
             },
-            "drupal/user_delete_reassign": {
-                "Incorrect user lookup on Bulk deleting": "https://git.drupalcode.org/project/user_delete_reassign/-/commit/05076bbedb66f8471d023894a88b980c2ecdf8d5.patch"
-            },
             "drupal/core": {
                 "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch"
             },
