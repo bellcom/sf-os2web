@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47f69c41b4c3f8e6a15adc8bdd5ae493",
+    "content-hash": "30526c913ef9f518ec192ee05889d7af",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7243,6 +7243,62 @@
             }
         },
         {
+            "name": "drupal/restui",
+            "version": "1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/restui.git",
+                "reference": "8.x-1.20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/restui-8.x-1.20.zip",
+                "reference": "8.x-1.20",
+                "shasum": "df1d3c486ee0e7b4e9a24e6523a69c9efe73caff"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.20",
+                    "datestamp": "1616839543",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "-enzo-",
+                    "homepage": "https://www.drupal.org/user/294937"
+                },
+                {
+                    "name": "clemens.tolboom",
+                    "homepage": "https://www.drupal.org/user/125814"
+                },
+                {
+                    "name": "juampynr",
+                    "homepage": "https://www.drupal.org/user/682736"
+                },
+                {
+                    "name": "klausi",
+                    "homepage": "https://www.drupal.org/user/262198"
+                }
+            ],
+            "description": "Provides a user interface to manage REST resources.",
+            "homepage": "https://www.drupal.org/project/restui",
+            "support": {
+                "source": "https://git.drupalcode.org/project/restui"
+            }
+        },
+        {
             "name": "drupal/rules",
             "version": "3.0.0-alpha6",
             "source": {
@@ -11787,6 +11843,36 @@
             ],
             "description": "OS2Web person information",
             "time": "2021-06-04T13:53:46+00:00"
+        },
+        {
+            "name": "os2web/os2web_rest_api",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_rest_api.git",
+                "reference": "68f8361d2612fc8ffcaa28abb49bff91ff0eee43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_rest_api/zipball/68f8361d2612fc8ffcaa28abb49bff91ff0eee43",
+                "reference": "68f8361d2612fc8ffcaa28abb49bff91ff0eee43",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/restui": "*"
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "OS2Web Rest API",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_rest_api/issues",
+                "source": "https://github.com/OS2web/os2web_rest_api/tree/0.0.1"
+            },
+            "time": "2021-08-24T12:33:47+00:00"
         },
         {
             "name": "os2web/os2web_search",
