@@ -78,6 +78,7 @@
         "os2web/os2web_news": "dev-master",
         "os2web/os2web_pagebuilder": "dev-master",
         "os2web/os2web_person_information": "dev-master",
+        "os2web/os2web_rest_api": "^0.0.1",
         "os2web/os2web_search": "dev-master",
         "os2web/os2web_spotbox": "dev-master",
         "vlucas/phpdotenv": "^4.0",
