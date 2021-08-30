@@ -11790,16 +11790,16 @@
         },
         {
             "name": "os2web/os2web_rest_api",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_rest_api.git",
-                "reference": "f4e2dabcbd97c75b3d32f3247b824dc706b0d49d"
+                "reference": "2239681b3634e646a8f9e4863142015fcbbf0b5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_rest_api/zipball/f4e2dabcbd97c75b3d32f3247b824dc706b0d49d",
-                "reference": "f4e2dabcbd97c75b3d32f3247b824dc706b0d49d",
+                "url": "https://api.github.com/repos/OS2web/os2web_rest_api/zipball/2239681b3634e646a8f9e4863142015fcbbf0b5f",
+                "reference": "2239681b3634e646a8f9e4863142015fcbbf0b5f",
                 "shasum": ""
             },
             "require": {
@@ -11813,9 +11813,9 @@
             "description": "OS2Web Rest API",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_rest_api/issues",
-                "source": "https://github.com/OS2web/os2web_rest_api/tree/0.0.3"
+                "source": "https://github.com/OS2web/os2web_rest_api/tree/0.0.4"
             },
-            "time": "2021-08-27T15:00:09+00:00"
+            "time": "2021-08-30T11:44:10+00:00"
         },
         {
             "name": "os2web/os2web_search",
