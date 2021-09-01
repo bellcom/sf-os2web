@@ -2557,7 +2557,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/anonymous_subscriptions.git",
-                "reference": "7d657a65a660da1e7005e5f78f22d0949718d8d5"
+                "reference": "970a1fda8dfa69bad7134abd993532283d96848f"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
@@ -2568,8 +2568,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha+5-dev",
-                    "datestamp": "1625218445",
+                    "version": "8.x-1.0-alpha+7-dev",
+                    "datestamp": "1628082826",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
