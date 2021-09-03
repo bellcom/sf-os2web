@@ -52,6 +52,7 @@
         "drupal/core": "^8.8.0",
         "drupal/core-composer-scaffold": "^8.8.0",
         "drupal/fancy_file_delete": "^2.0",
+        "drupal/file_management": "^1.0@alpha",
         "drupal/gin": "^3.0",
         "drupal/gin_login": "^1.0@RC",
         "drupal/memcache": "^2.2",

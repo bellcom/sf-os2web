@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f4517176d6eda4aca7c500fcdde4897",
+    "content-hash": "413e362477b015e71176860985ce0ad8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5470,6 +5470,56 @@
             "homepage": "https://www.drupal.org/project/fieldblock",
             "support": {
                 "source": "https://git.drupalcode.org/project/fieldblock"
+            }
+        },
+        {
+            "name": "drupal/file_management",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/file_management.git",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/file_management-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "90c0ae85f06ecddff5adfbd4ca7fcdd9ad50bdb6"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1553253780",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Pacassi Torrico (dpacassi)",
+                    "homepage": "https://www.drupal.org/u/dpacassi",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mattbloomfield",
+                    "homepage": "https://www.drupal.org/user/3620586"
+                }
+            ],
+            "description": "Allows you to edit existing files or images.",
+            "homepage": "https://www.drupal.org/project/file_management",
+            "support": {
+                "source": "https://cgit.drupalcode.org/file_management",
+                "issues": "https://www.drupal.org/project/issues/file_management"
             }
         },
         {
@@ -21016,6 +21066,7 @@
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
         "drupal/anonymous_subscriptions": 20,
+        "drupal/file_management": 15,
         "drupal/gin_login": 5,
         "os2web/os2web": 20,
         "os2web/os2web_borgerdk": 20,
