@@ -27,19 +27,14 @@ DRUPAL_ROOT=/var/www/ballerup.bellcom.dk/web/sites/default
 DRUSH="drush"
 
 echo-yellow "Copying db dump from server"
-## @TODO This command only for development phase.
-ssh $SSH_CRED "cd ${DRUPAL_ROOT} && drush sql-dump | gzip -9 > ~/${DB_NAME}.sql.gz"
-scp $SSH_CRED:$DB_NAME* ./
-## To use after release.
-#scp $SSH_CRED:/var/lib/mysql_backup/$DB_NAME* ./
+scp $SSH_CRED:/var/lib/mysql_backup/$DB_NAME* ./
 
 echo-yellow "Dropping existing local db"
 fin exec "${DRUSH} sql-drop -y"
 
 echo-yellow "Loading downloaded db dump"
 fin exec "zcat < ${DB_NAME}.sql.gz | ${DRUSH} sqlc"
-## To use after release.
-#fin exec "zcat < ${DB_NAME}-cache-structure.sql.gz | ${DRUSH} sqlc"
+fin exec "zcat < ${DB_NAME}-cache-structure.sql.gz | ${DRUSH} sqlc"
 
 echo-yellow "Removing db dump"
 fin exec "rm ${DB_NAME}.sql.gz"

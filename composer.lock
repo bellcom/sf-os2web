@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30526c913ef9f518ec192ee05889d7af",
+    "content-hash": "413e362477b015e71176860985ce0ad8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2475,17 +2475,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "8.x-2.4"
+                "reference": "8.x-2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "6240047b8d91ac78f98d861ba8282af971fa0b38"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "c71e58051b8d6818272df96d14cb11407d5e5ceb"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0"
@@ -2493,8 +2493,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1601999178",
+                    "version": "8.x-2.5",
+                    "datestamp": "1629907119",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2557,7 +2557,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/anonymous_subscriptions.git",
-                "reference": "7d657a65a660da1e7005e5f78f22d0949718d8d5"
+                "reference": "970a1fda8dfa69bad7134abd993532283d96848f"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
@@ -2568,8 +2568,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha+5-dev",
-                    "datestamp": "1625218445",
+                    "version": "8.x-1.0-alpha+7-dev",
+                    "datestamp": "1628082826",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5473,6 +5473,56 @@
             }
         },
         {
+            "name": "drupal/file_management",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/file_management.git",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/file_management-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "90c0ae85f06ecddff5adfbd4ca7fcdd9ad50bdb6"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1553253780",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Pacassi Torrico (dpacassi)",
+                    "homepage": "https://www.drupal.org/u/dpacassi",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mattbloomfield",
+                    "homepage": "https://www.drupal.org/user/3620586"
+                }
+            ],
+            "description": "Allows you to edit existing files or images.",
+            "homepage": "https://www.drupal.org/project/file_management",
+            "support": {
+                "source": "https://cgit.drupalcode.org/file_management",
+                "issues": "https://www.drupal.org/project/issues/file_management"
+            }
+        },
+        {
             "name": "drupal/gin",
             "version": "3.0.0-alpha35",
             "source": {
@@ -7240,62 +7290,6 @@
             "homepage": "https://drupal.org/project/redirect_after_login",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect_after_login"
-            }
-        },
-        {
-            "name": "drupal/restui",
-            "version": "1.20.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/restui.git",
-                "reference": "8.x-1.20"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/restui-8.x-1.20.zip",
-                "reference": "8.x-1.20",
-                "shasum": "df1d3c486ee0e7b4e9a24e6523a69c9efe73caff"
-            },
-            "require": {
-                "drupal/core": "^8.7.7 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.20",
-                    "datestamp": "1616839543",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "-enzo-",
-                    "homepage": "https://www.drupal.org/user/294937"
-                },
-                {
-                    "name": "clemens.tolboom",
-                    "homepage": "https://www.drupal.org/user/125814"
-                },
-                {
-                    "name": "juampynr",
-                    "homepage": "https://www.drupal.org/user/682736"
-                },
-                {
-                    "name": "klausi",
-                    "homepage": "https://www.drupal.org/user/262198"
-                }
-            ],
-            "description": "Provides a user interface to manage REST resources.",
-            "homepage": "https://www.drupal.org/project/restui",
-            "support": {
-                "source": "https://git.drupalcode.org/project/restui"
             }
         },
         {
@@ -11846,21 +11840,20 @@
         },
         {
             "name": "os2web/os2web_rest_api",
-            "version": "0.0.1",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_rest_api.git",
-                "reference": "68f8361d2612fc8ffcaa28abb49bff91ff0eee43"
+                "reference": "2239681b3634e646a8f9e4863142015fcbbf0b5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_rest_api/zipball/68f8361d2612fc8ffcaa28abb49bff91ff0eee43",
-                "reference": "68f8361d2612fc8ffcaa28abb49bff91ff0eee43",
+                "url": "https://api.github.com/repos/OS2web/os2web_rest_api/zipball/2239681b3634e646a8f9e4863142015fcbbf0b5f",
+                "reference": "2239681b3634e646a8f9e4863142015fcbbf0b5f",
                 "shasum": ""
             },
             "require": {
-                "drupal/core": "*",
-                "drupal/restui": "*"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -11870,9 +11863,9 @@
             "description": "OS2Web Rest API",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_rest_api/issues",
-                "source": "https://github.com/OS2web/os2web_rest_api/tree/0.0.1"
+                "source": "https://github.com/OS2web/os2web_rest_api/tree/0.0.4"
             },
-            "time": "2021-08-24T12:33:47+00:00"
+            "time": "2021-08-30T11:44:10+00:00"
         },
         {
             "name": "os2web/os2web_search",
@@ -21073,6 +21066,7 @@
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
         "drupal/anonymous_subscriptions": 20,
+        "drupal/file_management": 15,
         "drupal/gin_login": 5,
         "os2web/os2web": 20,
         "os2web/os2web_borgerdk": 20,
