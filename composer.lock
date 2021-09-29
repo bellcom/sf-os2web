@@ -11585,12 +11585,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_events.git",
-                "reference": "0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566"
+                "reference": "751419be96f93c4a5b5914c790a6cb28351e9d96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566",
-                "reference": "0d78d8810e2a49b7cd1a6a474f8ff7d2eab56566",
+                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/751419be96f93c4a5b5914c790a6cb28351e9d96",
+                "reference": "751419be96f93c4a5b5914c790a6cb28351e9d96",
                 "shasum": ""
             },
             "require": {
@@ -11598,13 +11598,18 @@
                 "drupal/feeds": "*",
                 "drupal/feeds_tamper": "*"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Provide functionality for events import from Kulturnaut",
-            "time": "2021-01-06T10:17:21+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_events/issues",
+                "source": "https://github.com/OS2web/os2web_events/tree/master"
+            },
+            "time": "2021-09-29T11:28:46+00:00"
         },
         {
             "name": "os2web/os2web_hearings",
@@ -11637,12 +11642,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "aeeceb512da74ab30198ebb0f5fcec09b6bd2f67"
+                "reference": "0b72b1cccd6ed33af48b52f2c3909a7022b33485"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/aeeceb512da74ab30198ebb0f5fcec09b6bd2f67",
-                "reference": "aeeceb512da74ab30198ebb0f5fcec09b6bd2f67",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/0b72b1cccd6ed33af48b52f2c3909a7022b33485",
+                "reference": "0b72b1cccd6ed33af48b52f2c3909a7022b33485",
                 "shasum": ""
             },
             "require": {
@@ -11658,13 +11663,18 @@
                 "drupal/save_edit": "^1.3",
                 "drupal/textfield_counter": "*"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "Main module that brings hjemmeside general configuration.",
-            "time": "2021-03-09T20:33:26+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_hjemmeside/issues",
+                "source": "https://github.com/OS2web/os2web_hjemmeside/tree/master"
+            },
+            "time": "2021-09-29T11:24:51+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -11865,12 +11875,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_news.git",
-                "reference": "6743794f830fa20bd267f7119e0e1e67ef92fe4e"
+                "reference": "04ebbae340e379ddda00875463a9b86eabad74c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/6743794f830fa20bd267f7119e0e1e67ef92fe4e",
-                "reference": "6743794f830fa20bd267f7119e0e1e67ef92fe4e",
+                "url": "https://api.github.com/repos/OS2web/os2web_news/zipball/04ebbae340e379ddda00875463a9b86eabad74c6",
+                "reference": "04ebbae340e379ddda00875463a9b86eabad74c6",
                 "shasum": ""
             },
             "require": {
@@ -11878,13 +11888,18 @@
                 "drupal/smart_trim": "^1.3",
                 "drupal/video_embed_field": "*"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
             "description": "News entity",
-            "time": "2021-05-26T12:35:55+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_news/issues",
+                "source": "https://github.com/OS2web/os2web_news/tree/master"
+            },
+            "time": "2021-09-29T11:25:59+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
@@ -11892,12 +11907,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "574bfed403669e5ab401e425e5d597975dded334"
+                "reference": "35401f9d3567d93f4762bc48ce1de4feb4a661f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/574bfed403669e5ab401e425e5d597975dded334",
-                "reference": "574bfed403669e5ab401e425e5d597975dded334",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/35401f9d3567d93f4762bc48ce1de4feb4a661f9",
+                "reference": "35401f9d3567d93f4762bc48ce1de4feb4a661f9",
                 "shasum": ""
             },
             "require": {
@@ -11921,7 +11936,7 @@
                 "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
                 "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
             },
-            "time": "2021-09-13T12:26:03+00:00"
+            "time": "2021-09-29T11:31:22+00:00"
         },
         {
             "name": "os2web/os2web_person_information",
