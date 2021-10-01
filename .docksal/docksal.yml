@@ -15,14 +15,14 @@ services:
     labels:
       - io.docksal.virtual-host=pma.${VIRTUAL_HOST}
 
-  blackfire:
-    extends:
-      file: ${HOME}/.docksal/stacks/services.yml
-      service: blackfire
-    environment:
-      - BLACKFIRE_LOG_LEVEL=4
-
-  memcached:
-    extends:
-      file: ${HOME}/.docksal/stacks/services.yml
-      service: memcached
+#  blackfire:
+#    extends:
+#      file: ${HOME}/.docksal/stacks/services.yml
+#      service: blackfire
+#    environment:
+#      - BLACKFIRE_LOG_LEVEL=4
+#
+#  memcached:
+#    extends:
+#      file: ${HOME}/.docksal/stacks/services.yml
+#      service: memcached

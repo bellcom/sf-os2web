@@ -90,25 +90,37 @@
 }
 
 .path-frontpage {
-  padding-top: 0 !important;
 
-  &.toolbar-horizontal {
-    padding-top: 39px !important;
+  &, &.toolbar-fixed {
+    padding-top: 0 !important;
 
-    &.toolbar-tray-open {
-      padding-top: 79px !important;
+    &:not(.gin--vertical-toolbar) {
+
+      &.toolbar-horizontal {
+        padding-top: 39px !important;
+
+        &.toolbar-tray-open {
+          padding-top: 79px !important;
+        }
+      }
     }
   }
 }
 
 body {
-  padding-top: 74px;
 
-  &.toolbar-horizontal {
-    padding-top: 74px + 39px !important;
+  &, &.toolbar-fixed {
+    padding-top: 74px !important;
 
-    &.toolbar-tray-open {
-      padding-top: 74px + 79px !important;
+    &:not(.gin--vertical-toolbar) {
+
+      &.toolbar-horizontal {
+        padding-top: 74px + 39px !important;
+
+        &.toolbar-tray-open {
+          padding-top: 74px + 79px !important;
+        }
+      }
     }
   }
 }
@@ -155,11 +167,11 @@ body {
 
   z-index: 300;
 
-  .toolbar-horizontal & {
+  .toolbar-horizontal:not(.gin--vertical-toolbar) {
     top: 39px;
   }
 
-  .toolbar-horizontal.toolbar-tray-open & {
+  .toolbar-horizontal.toolbar-tray-open:not(.gin--vertical-toolbar) & {
     top: 79px; // Height of toolbar tray.
   }
 
@@ -452,13 +464,19 @@ body {
 @include media-breakpoint-up(md) {
 
   body {
-    padding-top: 132px !important; // Height of .custom-header--fixed (recalculated by JS)
 
-    &.toolbar-horizontal {
-      padding-top: 132px + 39px !important;
+    &, &.toolbar-fixed {
+      padding-top: 132px !important; // Height of .custom-header--fixed (recalculated by JS)
 
-      &.toolbar-tray-open {
-        padding-top: 132px + 79px !important;
+      &:not(.gin--vertical-toolbar) {
+
+        &.toolbar-horizontal {
+          padding-top: 132px + 39px !important;
+
+          &.toolbar-tray-open {
+            padding-top: 132px + 79px !important;
+          }
+        }
       }
     }
   }

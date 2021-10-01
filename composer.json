@@ -85,6 +85,7 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal/access_latest": "^0.0.1",
         "drupal/anonymous_subscriptions": "1.x-dev@dev",
+        "drupal/ckeditor_iframe": "^2.1",
         "drupal/ckeditor_balloonpanel": "1.x-dev@dev",
         "drupal/coder": "^8.3",
         "drupal/console": "^1.0.2",
@@ -92,14 +93,26 @@
         "drupal/core-composer-scaffold": "^9.0.0",
         "drupal/core-project-message": "^9.0.0",
         "drupal/core-recommended": "^9.0.0",
+        "drupal/fancy_file_delete": "^2.0",
+        "drupal/file_management": "^1.0@alpha",
+        "drupal/gin": "^3.0",
+        "drupal/gin_login": "^1.0@RC",
         "drupal/memcache": "^2.2",
+        "drupal/modules_weight": "^1.9",
         "drupal/monitoring": "^1.9",
+        "drupal/pdf_api": "^2.0",
+        "drupal/quick_node_clone": "^1.14",
+        "drupal/redirect_after_login": "^2.7",
+        "drupal/siteimprove": "^1.10",
         "drupal/stage_file_proxy": "^1.0",
         "drupal/upgrade_rector": "^1.0@alpha",
         "drupal/upgrade_status": "^3.5",
+        "drupal/workbench": "^1.3",
         "drush/drush": "^9.7.1 | ^10.0.0",
+        "mglaman/drupal-check": "^1.1",
         "os2web/os2web": "dev-drupal9",
         "os2web/os2web_borgerdk": "dev-drupal9",
+        "os2web/os2web_embedded_code": "^0.0.1",
         "os2web/os2web_events": "dev-master",
         "os2web/os2web_hearings": "dev-master",
         "os2web/os2web_logging": "dev-drupal9",
@@ -109,6 +122,8 @@
         "os2web/os2web_meetings_sbsys": "dev-drupal9",
         "os2web/os2web_news": "dev-master",
         "os2web/os2web_pagebuilder": "dev-develop",
+        "os2web/os2web_person_information": "dev-master",
+        "os2web/os2web_rest_api": "0.*",
         "os2web/os2web_search": "dev-drupal9",
         "os2web/os2web_spotbox": "dev-master",
         "vlucas/phpdotenv": "^4.0",
@@ -176,16 +191,17 @@
                 "allow the date format to be set from the bef interface": "https://www.drupal.org/files/issues/2020-12-21/better_exposed_filters_allow_the_date_format-2858610-23_1.patch"
             },
             "drupal/core": {
-                "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch"
-            },
-            "drupal/user_delete_reassign": {
-                "Drupal 9 Readiness" : "https://www.drupal.org/files/issues/2020-05-27/3143236-2.patch"
+                "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch",
+                "Allow edit Media items from Media Library modal dialog in CKEditor" : "https://www.drupal.org/files/issues/2021-04-21/3168868-13_0.patch"
             },
             "drupal/search_api_synonym": {
                 "Drupal 9 Readiness" : "https://git.drupalcode.org/project/search_api_synonym/-/merge_requests/1.patch"
             },
             "drupal/access_latest": {
-                "Drupal 9 Readiness" : "https://git.drupalcode.org/sandbox/lynn-2973708/-/merge_requests/1.patch"
+                "Drupal 9 Readiness": "https://git.drupalcode.org/sandbox/lynn-2973708/-/merge_requests/1.patch"
+            },
+            "drupal/printable": {
+                "3214729 PDF filename is generated with it's location" : "https://git.drupalcode.org/issue/printable-3214729/-/commit/cbc98dbe864f82b4cc1da110d88097d0c4740bb9.patch"
             }
         }
     }
