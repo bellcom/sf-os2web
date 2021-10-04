@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e58b130e5ad7552601fabd1fb1b7dea7",
+    "content-hash": "99813b42c56eff3d3539b50f92f536d1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -12067,16 +12067,16 @@
         },
         {
             "name": "os2web/os2web_pagebuilder",
-            "version": "dev-develop",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "cebe8b5ed1f1485b76b56a2c6beb0af16f07970d"
+                "reference": "35401f9d3567d93f4762bc48ce1de4feb4a661f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/cebe8b5ed1f1485b76b56a2c6beb0af16f07970d",
-                "reference": "cebe8b5ed1f1485b76b56a2c6beb0af16f07970d",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/35401f9d3567d93f4762bc48ce1de4feb4a661f9",
+                "reference": "35401f9d3567d93f4762bc48ce1de4feb4a661f9",
                 "shasum": ""
             },
             "require": {
@@ -12089,6 +12089,7 @@
                 "os2web/os2web_hjemmeside": "dev-master",
                 "os2web/os2web_kle": "dev-master"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -12099,7 +12100,7 @@
                 "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
                 "source": "https://github.com/OS2web/os2web_pagebuilder/tree/develop"
             },
-            "time": "2021-06-08T09:16:44+00:00"
+            "time": "2021-09-29T11:31:22+00:00"
         },
         {
             "name": "os2web/os2web_person_information",

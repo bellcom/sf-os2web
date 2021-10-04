@@ -121,7 +121,7 @@
         "os2web/os2web_meetings_edoc": "dev-master",
         "os2web/os2web_meetings_sbsys": "dev-master",
         "os2web/os2web_news": "dev-master",
-        "os2web/os2web_pagebuilder": "dev-develop",
+        "os2web/os2web_pagebuilder": "dev-master",
         "os2web/os2web_person_information": "dev-master",
         "os2web/os2web_rest_api": "0.*",
         "os2web/os2web_search": "dev-master",
