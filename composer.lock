@@ -11602,12 +11602,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_borgerdk.git",
-                "reference": "79989a655b60fff92474b5871f1757a0e6bde852"
+                "reference": "44433c202a0af459c8d4ba179f52eb7e0d281a5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/79989a655b60fff92474b5871f1757a0e6bde852",
-                "reference": "79989a655b60fff92474b5871f1757a0e6bde852",
+                "url": "https://api.github.com/repos/OS2web/os2web_borgerdk/zipball/44433c202a0af459c8d4ba179f52eb7e0d281a5d",
+                "reference": "44433c202a0af459c8d4ba179f52eb7e0d281a5d",
                 "shasum": ""
             },
             "require": {
@@ -11624,9 +11624,9 @@
             "description": "Imports content from Borger.dk.",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_borgerdk/issues",
-                "source": "https://github.com/OS2web/os2web_borgerdk/tree/drupal9"
+                "source": "https://github.com/OS2web/os2web_borgerdk/tree/master"
             },
-            "time": "2021-06-11T11:15:52+00:00"
+            "time": "2021-10-21T08:37:13+00:00"
         },
         {
             "name": "os2web/os2web_contact",
