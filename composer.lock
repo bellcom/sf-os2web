@@ -11561,12 +11561,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "59c248a437b91fee0a31d2aa778baa183fe2724e"
+                "reference": "0347ff129d35580a50611dffd0922966d5123164"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/59c248a437b91fee0a31d2aa778baa183fe2724e",
-                "reference": "59c248a437b91fee0a31d2aa778baa183fe2724e",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/0347ff129d35580a50611dffd0922966d5123164",
+                "reference": "0347ff129d35580a50611dffd0922966d5123164",
                 "shasum": ""
             },
             "require": {
@@ -11594,7 +11594,7 @@
                 "issues": "https://github.com/OS2web/os2web/issues",
                 "source": "https://github.com/OS2web/os2web/tree/master"
             },
-            "time": "2021-10-01T12:18:41+00:00"
+            "time": "2021-10-27T12:54:41+00:00"
         },
         {
             "name": "os2web/os2web_borgerdk",
@@ -23134,5 +23134,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
