@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99813b42c56eff3d3539b50f92f536d1",
+    "content-hash": "b7273e2bbf356c175f70975fdc2c891a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7798,10 +7798,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/search_api_synonym.git",
-                "reference": "34781c4ee63ee61a20e2432108f0cf86d51b776e"
+                "reference": "6de04908d328407fedf9ab36a3a85f7a33593eff"
             },
             "require": {
-                "drupal/core": "^8.2.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -7809,8 +7809,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2+5-dev",
-                    "datestamp": "1534426084",
+                    "version": "8.x-1.2+6-dev",
+                    "datestamp": "1634741347",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7822,6 +7822,10 @@
                 "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "LaravZ",
+                    "homepage": "https://www.drupal.org/user/3397464"
+                },
                 {
                     "name": "beltofte",
                     "homepage": "https://www.drupal.org/user/151799"
@@ -11561,12 +11565,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "59c248a437b91fee0a31d2aa778baa183fe2724e"
+                "reference": "0347ff129d35580a50611dffd0922966d5123164"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/59c248a437b91fee0a31d2aa778baa183fe2724e",
-                "reference": "59c248a437b91fee0a31d2aa778baa183fe2724e",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/0347ff129d35580a50611dffd0922966d5123164",
+                "reference": "0347ff129d35580a50611dffd0922966d5123164",
                 "shasum": ""
             },
             "require": {
@@ -11594,7 +11598,7 @@
                 "issues": "https://github.com/OS2web/os2web/issues",
                 "source": "https://github.com/OS2web/os2web/tree/master"
             },
-            "time": "2021-10-01T12:18:41+00:00"
+            "time": "2021-10-27T12:54:41+00:00"
         },
         {
             "name": "os2web/os2web_borgerdk",
@@ -23134,5 +23138,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

@@ -194,9 +194,6 @@
                 "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch",
                 "Allow edit Media items from Media Library modal dialog in CKEditor" : "https://www.drupal.org/files/issues/2021-04-21/3168868-13_0.patch"
             },
-            "drupal/search_api_synonym": {
-                "Drupal 9 Readiness" : "https://git.drupalcode.org/project/search_api_synonym/-/merge_requests/1.patch"
-            },
             "drupal/printable": {
                 "3214729 PDF filename is generated with it's location" : "https://git.drupalcode.org/issue/printable-3214729/-/commit/cbc98dbe864f82b4cc1da110d88097d0c4740bb9.patch"
             }
