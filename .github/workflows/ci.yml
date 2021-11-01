@@ -1,0 +1,32 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: 'ubuntu-20.04'
+    container:
+      image: drupal:9-php7.4
+    env:
+      COMPOSER_MEMORY_LIMIT: -1
+
+    steps:
+      - name: Prepare
+        run: apt update; apt install -qq -y git
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Update composer
+        run: composer --verbose self-update --2
+
+      - name: Dump composer verson
+        run: composer --version
+
+      - name: Validate composer.json
+        run: composer --verbose validate
+
+      - name: Install dependencies
+        run: composer --verbose install
+
+      - run: ./vendor/bin/drush site-install os2web --verbose --yes --db-url=sqlite://tmp/site.sqlite --locale=da; ./vendor/bin/drush theme:enable fds_custom_theme --yes; ./vendor/bin/drush en os2web_pagebuilder --yes
