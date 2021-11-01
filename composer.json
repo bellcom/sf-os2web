@@ -120,6 +120,7 @@
         "os2web/os2web_meetings": "dev-develop",
         "os2web/os2web_meetings_agman": "dev-master",
         "os2web/os2web_meetings_edoc": "dev-master",
+        "os2web/os2web_meetings_edoc_fujitsu": "dev-master",
         "os2web/os2web_meetings_sbsys": "dev-master",
         "os2web/os2web_news": "dev-master",
         "os2web/os2web_pagebuilder": "dev-master",

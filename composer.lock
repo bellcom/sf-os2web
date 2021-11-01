@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bde6619d51bb2498796d1a53043242e3",
+    "content-hash": "b01f12e4bca2a0dac697cb404fd6e1fd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -11993,12 +11993,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "a73280fb9744f6ee6c03b7efcdf98ca472edfc05"
+                "reference": "4c71211b52de54de7c474d62f84af4b1cfaab7d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/a73280fb9744f6ee6c03b7efcdf98ca472edfc05",
-                "reference": "a73280fb9744f6ee6c03b7efcdf98ca472edfc05",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/4c71211b52de54de7c474d62f84af4b1cfaab7d3",
+                "reference": "4c71211b52de54de7c474d62f84af4b1cfaab7d3",
                 "shasum": ""
             },
             "require": {
@@ -12016,7 +12016,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings/issues",
                 "source": "https://github.com/OS2web/os2web_meetings/tree/develop"
             },
-            "time": "2021-10-04T07:03:17+00:00"
+            "time": "2021-11-01T13:38:56+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
@@ -12079,6 +12079,37 @@
                 "source": "https://github.com/OS2web/os2web_meetings_edoc/tree/drupal9"
             },
             "time": "2021-06-11T11:20:28+00:00"
+        },
+        {
+            "name": "os2web/os2web_meetings_edoc_fujitsu",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_meetings_edoc_fujitsu.git",
+                "reference": "a49f1b246d629daca722c80c372ac423590b6148"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc_fujitsu/zipball/a49f1b246d629daca722c80c372ac423590b6148",
+                "reference": "a49f1b246d629daca722c80c372ac423590b6148",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/migrate_plus": "^5.1",
+                "drupal/migrate_tools": "^5.0"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Import meetings from EDOC Fujitsu ESDH system",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_meetings_edoc_fujitsu/issues",
+                "source": "https://github.com/OS2web/os2web_meetings_edoc_fujitsu/tree/master"
+            },
+            "time": "2021-11-01T13:45:54+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
@@ -23242,14 +23273,7 @@
             "time": "2021-07-28T10:34:58+00:00"
         }
     ],
-    "aliases": [
-        {
-            "package": "drupal/core",
-            "version": "9.2.6.0",
-            "alias": "8.9.0",
-            "alias_normalized": "8.9.0.0"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
@@ -23266,6 +23290,7 @@
         "os2web/os2web_meetings": 20,
         "os2web/os2web_meetings_agman": 20,
         "os2web/os2web_meetings_edoc": 20,
+        "os2web/os2web_meetings_edoc_fujitsu": 20,
         "os2web/os2web_meetings_sbsys": 20,
         "os2web/os2web_news": 20,
         "os2web/os2web_pagebuilder": 20,
@@ -23279,5 +23304,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
