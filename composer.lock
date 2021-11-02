@@ -11993,12 +11993,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "4c71211b52de54de7c474d62f84af4b1cfaab7d3"
+                "reference": "4052121d85bd3266549a74d794e288bcd9914275"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/4c71211b52de54de7c474d62f84af4b1cfaab7d3",
-                "reference": "4c71211b52de54de7c474d62f84af4b1cfaab7d3",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/4052121d85bd3266549a74d794e288bcd9914275",
+                "reference": "4052121d85bd3266549a74d794e288bcd9914275",
                 "shasum": ""
             },
             "require": {
@@ -12016,7 +12016,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings/issues",
                 "source": "https://github.com/OS2web/os2web_meetings/tree/develop"
             },
-            "time": "2021-11-01T13:38:56+00:00"
+            "time": "2021-11-02T11:48:01+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
@@ -12086,12 +12086,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_edoc_fujitsu.git",
-                "reference": "af1b57e94017a183c5eed7161cb39a72a98966fc"
+                "reference": "fc886ec81b3da54fa6756201af50bd7beeacd0bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc_fujitsu/zipball/af1b57e94017a183c5eed7161cb39a72a98966fc",
-                "reference": "af1b57e94017a183c5eed7161cb39a72a98966fc",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc_fujitsu/zipball/fc886ec81b3da54fa6756201af50bd7beeacd0bb",
+                "reference": "fc886ec81b3da54fa6756201af50bd7beeacd0bb",
                 "shasum": ""
             },
             "require": {
@@ -12109,7 +12109,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings_edoc_fujitsu/issues",
                 "source": "https://github.com/OS2web/os2web_meetings_edoc_fujitsu/tree/master"
             },
-            "time": "2021-11-01T15:03:38+00:00"
+            "time": "2021-11-02T11:47:19+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
