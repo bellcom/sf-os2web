@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b01f12e4bca2a0dac697cb404fd6e1fd",
+    "content-hash": "ceebd1b2ec33caf8b116044df12493a7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -11993,12 +11993,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "4052121d85bd3266549a74d794e288bcd9914275"
+                "reference": "76547b519aaa43a780448a4d6b7358c1680d4e55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/4052121d85bd3266549a74d794e288bcd9914275",
-                "reference": "4052121d85bd3266549a74d794e288bcd9914275",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/76547b519aaa43a780448a4d6b7358c1680d4e55",
+                "reference": "76547b519aaa43a780448a4d6b7358c1680d4e55",
                 "shasum": ""
             },
             "require": {
@@ -12016,7 +12016,38 @@
                 "issues": "https://github.com/OS2web/os2web_meetings/issues",
                 "source": "https://github.com/OS2web/os2web_meetings/tree/develop"
             },
-            "time": "2021-11-02T11:48:01+00:00"
+            "time": "2021-11-05T12:46:52+00:00"
+        },
+        {
+            "name": "os2web/os2web_meetings_acadre",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_meetings_acadre.git",
+                "reference": "c15bde81ba0c3e62dd7520cb7d08715047e0c402"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_acadre/zipball/c15bde81ba0c3e62dd7520cb7d08715047e0c402",
+                "reference": "c15bde81ba0c3e62dd7520cb7d08715047e0c402",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/migrate_plus": "^5.1",
+                "drupal/migrate_tools": "^5.0"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Import meetings from Acadre ESDH system",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_meetings_acadre/issues",
+                "source": "https://github.com/OS2web/os2web_meetings_acadre/tree/master"
+            },
+            "time": "2021-11-05T12:05:42+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
@@ -23288,6 +23319,7 @@
         "os2web/os2web_hearings": 20,
         "os2web/os2web_logging": 20,
         "os2web/os2web_meetings": 20,
+        "os2web/os2web_meetings_acadre": 20,
         "os2web/os2web_meetings_agman": 20,
         "os2web/os2web_meetings_edoc": 20,
         "os2web/os2web_meetings_edoc_fujitsu": 20,

@@ -118,6 +118,7 @@
         "os2web/os2web_hearings": "dev-master",
         "os2web/os2web_logging": "dev-master",
         "os2web/os2web_meetings": "dev-develop",
+        "os2web/os2web_meetings_acadre": "dev-master",
         "os2web/os2web_meetings_agman": "dev-master",
         "os2web/os2web_meetings_edoc": "dev-master",
         "os2web/os2web_meetings_edoc_fujitsu": "dev-master",
