@@ -1,0 +1,13 @@
+.element-wrapper-link {
+  display: block;
+
+  transition: none !important;
+}
+
+.element-wrapper-link,
+.element-wrapper-link:hover,
+.element-wrapper-link:focus,
+.element-wrapper-link:active {
+  text-decoration: none;
+  color: inherit;
+}

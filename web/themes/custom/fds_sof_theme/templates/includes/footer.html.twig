@@ -1,0 +1,49 @@
+<footer>
+  <div class="footer">
+    <div class="container">
+      
+      {% set columncount = 2 %}
+      {% if (page.footer_first and page.footer_second) %}
+        {% set columncount = 4 %}
+      {% elseif (page.footer_first or page.footer_second) %}
+        {% set columncount = 3 %}
+      {% endif %}
+      
+      <div class="grid columns-{{columncount}}">
+        
+        <section class="width-75">
+          <a class="logo footer-logo" href="/" title="Hjem">
+            <img src="{{ base_path ~ directory }}/logo--footer.png" alt="Hjem">
+          </a>
+          
+          {% if theme_settings.contact_information.additional_information %}
+          <div class="contact_information_additional_information">
+            {{ theme_settings.contact_information.additional_information }}
+          </div>
+          {% endif %}
+        </section>
+        
+        <section class="width-25">
+          {% include '@fds_sof_theme/includes/contactinformation.html.twig' %}
+
+          {% include '@fds_sof_theme/includes/workinghours.html.twig' %}
+
+          {% include '@fds_sof_theme/includes/socialmedia.html.twig' %}
+        </section>
+        
+        {% if page.footer_first %}
+        <section class="d-print-none">
+          {{ page.footer_first }}
+        </section>
+        {% endif %}
+        
+        {% if page.footer_second %}
+        <section class="d-print-none">
+          {{ page.footer_second }}
+        </section>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+</footer>

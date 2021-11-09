@@ -1,0 +1,9 @@
+.sliding-popup-bottom {
+  text-align: initial;
+}
+
+@media print {
+  .eu-cookie-compliance-banner {
+    display: none;
+  }
+}

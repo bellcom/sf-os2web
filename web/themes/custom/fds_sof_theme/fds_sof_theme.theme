@@ -1,0 +1,326 @@
+<?php
+include(dirname(__FILE__) . '/include/settings.inc');
+
+use Drupal\Component\Utility\Html;
+use Drupal\image\Entity\ImageStyle;
+
+/**
+ * Preprocess variables for html templates.
+ * @param $variables
+ */
+function fds_sof_theme_preprocess_html(&$variables) {
+  $variables['path_info']['args'] = FALSE;
+  $path = \Drupal::service('path.current')->getPath();
+  $path_args = explode('/', $path);
+
+  if (count($path_args) >= 3) {
+    $variables['path_info']['args'] = Html::cleanCssIdentifier(ltrim($path, '/'));
+  }
+}
+
+/**
+ * Implements hook_preprocess_menu().
+ */
+function fds_sof_theme_preprocess_menu(&$variables, $hook) {
+
+  if ($hook == 'menu') {
+    $current_path = \Drupal::request()->getRequestUri();
+
+    foreach ($variables['items'] as &$item) {
+
+      if ($item['in_active_trail']) {
+
+        if ($item['url']->toString() == $current_path) {
+          $item['is_active'] = TRUE;
+        } elseif (count($item['below'])) {
+          _fds_sof_theme_menu_process_submenu($item['below'], $current_path);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Set active and active-trail class for sub-menus recursively.
+ */
+function _fds_sof_theme_menu_process_submenu(&$submenu, $current_path) {
+  foreach ($submenu as &$item) {
+    if ($item['in_active_trail']) {
+      if ($item['url']->toString() == $current_path) {
+        $item['is_active'] = TRUE;
+      } elseif (count($item['below'])) {
+        _fds_sof_theme_menu_process_submenu($item['below'], $current_path);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function fds_sof_theme_preprocess_page(array &$variables) {
+
+  // Theme settings
+  $variables['theme_settings'] = _fds_sof_theme_collect_theme_settings();
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function fds_sof_theme_preprocess_taxonomy_term(&$variables) {
+  $term = $variables['term'];
+  $view_mode = $variables['view_mode'];
+
+  // Entity variables
+  $variables['attributes']['class'][] = HTML::cleanCssIdentifier('entity-' . $view_mode);
+  $variables['attributes']['class'][] = HTML::cleanCssIdentifier('entity-' . $view_mode . '--' . $term->bundle());
+}
+
+/**
+ * Implements hook_theme_suggestions_field_alter().
+ */
+function fds_sof_theme_theme_suggestions_field_alter(&$suggestions, $variables) {
+  $element = $variables['element'];
+  $view_mode = $element['#view_mode'];
+
+  $suggestions[] = 'field__' . $element['#entity_type'] . '__' . $element['#field_name'] . '__' . $element['#bundle'] . '__' . $view_mode;
+}
+
+/**
+ * Implements hook_theme_suggestions_taxonomy_term_alter().
+ */
+function fds_sof_theme_theme_suggestions_taxonomy_term_alter(
+  &$suggestions,
+  $variables,
+  $hook
+) {
+  $suggestions[] = 'taxonomy_term__' . $variables['elements']['#taxonomy_term']->bundle() . '__' . $variables['elements']['#view_mode'];
+  $suggestions[] = 'taxonomy_term__' . $variables['elements']['#view_mode'];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function fds_sof_theme_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  $view_mode = $variables['view_mode'];
+
+  // Entity variables
+  $variables['attributes']['class'][] = HTML::cleanCssIdentifier('entity-' . $view_mode);
+  $variables['attributes']['class'][] = HTML::cleanCssIdentifier('entity-' . $view_mode . '--' . $node->getType());
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function fds_sof_theme_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $view_mode = $variables['view_mode'];
+
+  // Entity variables
+  $variables['attributes']['class'][] = HTML::cleanCssIdentifier('entity-' . $view_mode);
+  $variables['attributes']['class'][] = HTML::cleanCssIdentifier('entity-' . $view_mode . '--' . $paragraph->getType());
+
+  // Background color
+  if ($paragraph->field_background_color && !$paragraph->field_background_color->isEmpty()) {
+
+    if ($fields_target_ids = $paragraph->get('field_background_color')->getValue()) {
+
+      if (isset($fields_target_ids[0]['target_id']) && $tid = $fields_target_ids[0]['target_id']) {
+        $taxonomy_term = Term::load($tid);
+
+        if ($fields_background_color = $taxonomy_term->get('field_machine_name')->getValue()) {
+          $variables['attributes']['class'][] = 'paragraph--background-color-' . $fields_background_color[0]['value'];
+        }
+      }
+    }
+  }
+
+  // Background image
+  if ($paragraph->field_background_image && !$paragraph->field_background_image->isEmpty()) {
+    $image_uri   = $paragraph->field_background_image->first()->entity->getFileUri();
+    $image_style = ImageStyle::load('paragraph_background_image');
+    $image_url   = $image_style->buildUrl($image_uri);
+
+    $variables['background_image'] = $image_url;
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function fds_sof_theme_preprocess_block(array &$variables) {
+  $variables['content']['#attributes']['block'] = $variables['elements']['#id'];
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function fds_sof_theme_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['attributes']['block'])) {
+    $block = Drupal\block\Entity\Block::load($variables['attributes']['block']);
+
+    $suggestions[] = 'menu__' . $block->getRegion();
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function fds_sof_theme_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  if (!empty($variables['elements']['#id'])) {
+    $block = Drupal\block\Entity\Block::load($variables['elements']['#id']);
+
+    $suggestions[] = 'block__' . $block->getRegion();
+    $suggestions[] = 'block__' . $variables['elements']['#plugin_id'] . '__' . $block->getRegion();
+  }
+}
+
+/**
+ * Implements hook_theme_preprocess_menu_local_task().
+ */
+function fds_sof_theme_preprocess_menu_local_task(&$variables) {
+  $variables['link']['#options']['attributes']['class'][] = 'button';
+
+  // Active link.
+  if ($variables['element']['#active'] === true) {
+    $variables['link']['#options']['attributes']['class'][] = 'button-primary';
+  }
+  // Not active.
+  else {
+    $variables['link']['#options']['attributes']['class'][] = 'button-secondary';
+  }
+}
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function fds_sof_theme_preprocess_paragraph__os2web_banner_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+
+  // Background image.
+  if ($paragraph->hasField('field_os2web_banner_image') && !$paragraph->field_os2web_banner_image->isEmpty()) {
+    $image_uri = $paragraph->field_os2web_banner_image->first()->entity->getFileUri();
+    $image_style = ImageStyle::load('paragraph_background_image');
+
+    if (!empty($image_style)) {
+      $image_url = $image_style->buildUrl($image_uri);
+
+      $variables['background_image'] = file_url_transform_relative($image_url);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_paragraph().
+ */
+function fds_sof_theme_preprocess_paragraph__os2web_wrapper(&$variables) {
+  $paragraph = $variables['paragraph'];
+  if ($paragraph->field_os2web_con_type && $paragraph->field_os2web_con_type->value) {
+    $variables['container_type'] = $paragraph->field_os2web_con_type->value;
+  }
+  if ($paragraph->field_os2web_bg_color && $paragraph->field_os2web_bg_color->value) {
+    $variables['background_color'] = $paragraph->field_os2web_bg_color->value;
+  }
+}
+
+/*
+ * Implements hook_preprocess_paragraph().
+ * For text with image paragraphs.
+ */
+function fds_sof_theme_preprocess_paragraph__os2web_twi_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+
+  if ($fields = $paragraph->get('field_os2web_twi_image_position')->getValue()) {
+
+    if (isset($fields[0]) && $fields[0]['value'] === 'right') {
+      $variables['image_position'] = 'right';
+    } else {
+      $variables['image_position'] = 'left';
+    }
+  }
+}
+
+/*
+ * Implements hook_preprocess_paragraph().
+ * For contactperson paragraphs.
+ */
+function fds_sof_theme_preprocess_paragraph__os2web_cnt_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+
+  if ($fields = $paragraph->get('field_os2web_cnt_image_position')->getValue()) {
+
+    if (isset($fields[0]) && $fields[0]['value'] === 'right') {
+      $variables['image_position'] = 'right';
+    } else {
+      $variables['image_position'] = 'left';
+    }
+  }
+}
+
+/*
+ * Implements template_preprocess_field.
+ */
+function fds_sof_theme_preprocess_field(&$variables, $hook) {
+  $element = $variables['element'];
+
+  if ($element['#field_name'] == 'field_os2web_banner_links') {
+
+    foreach ($variables['items'] as $delta => &$item) {
+      $item['content']['#options']['attributes']['class'][] = 'button button-primary';
+    }
+  }
+}
+
+/**
+ * Prepares variables for OS2Web Spotbox templates.
+ *
+ * Default template: os2web_spotbox.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the user information and any
+ *   - attributes: HTML attributes for the containing element.
+ */
+function fds_sof_theme_preprocess_os2web_spotbox__image(array &$variables) {
+  $spotbox = $variables['elements']['#os2web_spotbox'];
+  $variables['spotbox_url'] = FALSE;
+  if (!empty($variables['content']['field_os2web_spotbox_link'][0]['#url'])) {
+    $variables['spotbox_url'] = $variables['content']['field_os2web_spotbox_link'][0]['#url'];
+  }
+
+  if (!empty($variables['content']['field_os2web_spotbox_link'][0]['#title'])
+    && $variables['spotbox_url']
+    && $variables['content']['field_os2web_spotbox_link'][0]['#title'] != $variables['spotbox_url']->toString()) {
+    $variables['spotbox_text'] = $variables['content']['field_os2web_spotbox_link'][0]['#title'];
+  }
+
+  if (!empty($variables['content']['field_os2web_spotbox_bg_image'][0])) {
+    $variables['spotbox_image'] = $variables['content']['field_os2web_spotbox_bg_image'][0];
+  }
+}
+
+function fds_sof_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'mailchimp_signup_subscribe_block_mailchimp_signup_form') {
+    unset( $form['mergevars']['EMAIL']['#title']);
+    $form['mergevars']['EMAIL']['#attributes'] = array('placeholder'=> t('Your email'),);
+    //$form['mailchimp_lists']['#weight'] = 9999;
+    unset( $form['mailchimp_lists']);
+    
+
+    //$form["description"] = "Tilmeld dig Skole og Forældres nyhedsbrev.";
+    /*
+    echo "<pre>";
+    var_dump(array_keys($form));
+    echo "<br/>";
+    print_r($form["#token"]);
+    //drupal_set_message('<pre>' . print_r($form) . '</pre>');
+    //print_r($form); 
+    //echo "</pre>";
+    echo "<hr>";
+    die($form_id);*/
+  }
+  //if (in_array($form_id, ['search_block_form', 'search_form'])) {
+  //  $form['keys']['#attributes']['placeholder'] = t('Search...');
+  //}
+}

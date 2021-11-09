@@ -1,0 +1,95 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+  
+  <form block="mailchimptilmeldingsformularmailchimpsignup" 
+        action="/" 
+        method="post" 
+        id="mailchimp-signup-subscribe-block-mailchimp-signup-form" 
+        accept-charset="UTF-8">
+  
+        <div id="mailchimp-newsletter-f1d739e8fb" class="mailchimp-newsletter-wrapper">
+          <div class="form-group form-item js-form-item form-type-checkbox 
+          js-form-type-checkbox form-item-mailchimp-lists-mailchimp-f1d739e8fb-subscribe 
+          js-form-item-mailchimp-lists-mailchimp-f1d739e8fb-subscribe">
+  
+
+<label for="edit-mailchimp-lists-mailchimp-f1d739e8fb-subscribe" class="form-label option">Fri- og Privatskoler</label>
+<input data-drupal-selector="edit-mailchimp-lists-mailchimp-f1d739e8fb-subscribe" type="checkbox" id="edit-mailchimp-lists-mailchimp-f1d739e8fb-subscribe" name="mailchimp_lists[mailchimp_f1d739e8fb][subscribe]" value="f1d739e8fb" class="form-checkbox" tabindex="-1">
+  </div>
+
+</div><div id="mailchimp-newsletter-374427d13d" class="mailchimp-newsletter-wrapper">
+
+<div class="form-group form-item js-form-item form-type-checkbox js-form-type-checkbox form-item-mailchimp-lists-mailchimp-374427d13d-subscribe js-form-item-mailchimp-lists-mailchimp-374427d13d-subscribe">
+  
+
+<label for="edit-mailchimp-lists-mailchimp-374427d13d-subscribe" class="form-label option">Ikke-SOF-medlemsskoler</label>
+<input data-drupal-selector="edit-mailchimp-lists-mailchimp-374427d13d-subscribe" type="checkbox" id="edit-mailchimp-lists-mailchimp-374427d13d-subscribe" name="mailchimp_lists[mailchimp_374427d13d][subscribe]" value="374427d13d" class="form-checkbox" tabindex="-1">
+
+  </div>
+
+</div><div id="mailchimp-newsletter-374427d13d-mergefields" class="mailchimp-newsletter-mergefields">
+
+<div class="form-group form-item js-form-item form-type-email js-form-type-email form-item-mergevars-email js-form-item-mergevars-email">
+  
+
+<label for="edit-mergevars-email" class="form-label js-form-required form-required">E-mail-adresse</label>
+<input data-drupal-selector="edit-mergevars-email" type="email" id="edit-mergevars-email" name="mergevars[EMAIL]" value="" size="25" maxlength="254" class="form-email required form-input" required="required" aria-required="true" tabindex="-1">
+
+  </div>
+
+</div>
+
+<input autocomplete="off" data-drupal-selector="form-pa9episgzefzjtwcmouxav8s-dyoeksehbjkkiygz9q" type="hidden" name="form_build_id" value="form-PA9EpIsGzefZjtwcmOUXAV8S_DyOEKSEHBJKKIygZ9Q">
+
+<input data-drupal-selector="edit-mailchimp-signup-subscribe-block-mailchimp-signup-form-form-token" type="hidden" name="form_token" value="TTyTyn73i4enQKpieoOaMJcJ-2a37ltwm3T7mGlRljc">
+
+<input data-drupal-selector="edit-mailchimp-signup-subscribe-block-mailchimp-signup-form" type="hidden" name="form_id" value="mailchimp_signup_subscribe_block_mailchimp_signup_form">
+
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+
+<input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Send" class="button js-form-submit form-submit" tabindex="-1">
+
+</div>
+
+  </form>
+  {% endblock %}
+</div>

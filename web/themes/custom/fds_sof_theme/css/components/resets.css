@@ -1,0 +1,39 @@
+.toolbar ul li::before,
+ul.menu-local-tasks-list li::before ,
+ul.contextual-links li::before {
+  display: none;
+}
+
+.region-secondary-menu .inline-list > li + li {
+  margin-left: 20px;
+}
+
+.body-text:first-child,
+p:first-child {
+  margin-top: 0;
+}
+.body-text:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* Adding body for increased specificity over existing styles. Beats doing !important. */
+body ul li {
+  padding-left: 30px;
+}
+body ul li::before {
+  top: 1px;
+  left: 12px;
+  font-size: 28px;
+}
+
+/* Replace margins set by Classy theme. */
+.button {
+  margin-left: initial;
+  margin-right: initial;
+}
+
+/* After update to DFKDS v. 6.x+ details added a margin to bottom and .details was added to <html>. */
+html.details {
+  margin-bottom: 0;
+}

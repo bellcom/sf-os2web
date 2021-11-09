@@ -1,0 +1,33 @@
+.tns-item img {
+  width: 100%;
+}
+
+/* Navigation. */
+.tns-nav {
+  text-align: center;
+}
+.tns-nav button {
+  display: inline-block;
+
+  height: 14px;
+  width: 14px;
+
+  padding: 0;
+
+  border: 2px solid #000;
+  border-radius: 100%;
+
+  background-color: transparent;
+}
+.tns-nav button + button {
+  margin-left: 15px;
+}
+.tns-nav button.tns-nav-active {
+  background-color: #000;
+}
+
+/* Hide start and stop. */
+.paragraph--type--os2web-slideshow button[data-action="start"],
+.paragraph--type--os2web-slideshow button[data-action="stop"] {
+  display: none;
+}

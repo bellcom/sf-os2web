@@ -1,0 +1,21 @@
+{% set uniqueId = node.label | lower | replace({" ": "-", ".": ""}) | url_encode %}
+{%
+  set classes = [
+  node.bundle|clean_class,
+  node.isPromoted() ? 'is-promoted',
+  node.isSticky() ? 'is-sticky',
+  not node.isPublished() ? 'is-unpublished',
+  view_mode ? view_mode|clean_class,
+  'accordion-content',
+]
+%}
+
+<button class="accordion-button js-accordion-add-link" aria-expanded="false" aria-controls="{{ uniqueId }}">
+  {{ label }}
+</button>
+
+<div id="{{ uniqueId }}" aria-hidden="true" {{ attributes.addClass(classes) }}>
+  {{ content.body }}
+  {{ content.field_os2web_m_bp_enclosures }}
+  {{ content.field_os2web_m_bp_bpas }}
+</div>

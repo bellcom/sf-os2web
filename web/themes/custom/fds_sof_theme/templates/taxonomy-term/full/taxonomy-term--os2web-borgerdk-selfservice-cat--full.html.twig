@@ -1,0 +1,13 @@
+{%
+  set classes = [
+  'taxonomy-term',
+  'spotbox',
+  'spotbox--button',
+  'vocabulary-' ~ term.bundle|clean_class,
+]
+%}
+<h1>{{ name }}</h1>
+
+{% if content.selfservices %}
+  {{ content.selfservices }}
+{% endif %}

@@ -1,0 +1,30 @@
+{% set socialmedia = theme_settings.social %}
+{%
+if  socialmedia.facebook.active or
+    socialmedia.twitter.active or
+    socialmedia.googleplus.active or
+    socialmedia.linkedin.active or
+    socialmedia.pinterest.active or
+    socialmedia.instagram.active or
+    socialmedia.youtube.active or
+    socialmedia.vimeo.active or 
+    socialmedia.github.active
+%}
+
+<ul class="social-media-list flexy-list">
+    {% for name, social in socialmedia %}
+        {% if social.active and social.url|length %}
+        <li class="social-media-list-{{ name }}">
+            <a href="{{ social.url }}"
+                target="_blank"
+                data-toggle="tooltip"
+                data-placement="top"
+                class="social-icon social-icon--{{ name }}"
+                title="{{ social.tooltip }}">
+                <span class="icon fa fa-{{ name }}"></span>
+            </a>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}

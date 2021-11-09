@@ -1,0 +1,24 @@
+{%
+  set classes = [
+  node.bundle|clean_class,
+  node.isPromoted() ? 'is-promoted',
+  node.isSticky() ? 'is-sticky',
+  not node.isPublished() ? 'is-unpublished',
+  view_mode ? view_mode|clean_class,
+]
+%}
+<div {{ attributes.addClass(classes) }}>
+  <h4>{{ label }}</h4>
+
+  <div>
+    {{ content }}
+  </div>
+
+  <br>
+
+  <div class="field--type-link text-align-right">
+    <a href="{{ url }}">
+      {{ 'Read more' | trans }}
+    </a>
+  </div>
+</div>

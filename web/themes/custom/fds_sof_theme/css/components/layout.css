@@ -1,0 +1,27 @@
+/* Spacing between elements inside sidebars. */
+.region-sidebar-first > div + div,
+.region-sidebar-second > div + div {
+  margin-top: 16px;
+}
+.field--name-field-os2web-page-paragraph-left > .field__item + .field__item,
+.field--name-field-os2web-page-paragraph-righ > .field__item + .field__item,
+.field--name-field-os2web-page-paragraph-narr > .field__item + .field__item,
+.field--name-field-os2web-page-description + .field--name-field-os2web-page-paragraph-narr {
+  margin-top: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+  padding-right: 16px;
+  padding-left: 16px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+iframe {
+    width: 100%;
+}

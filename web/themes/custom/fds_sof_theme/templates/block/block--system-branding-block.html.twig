@@ -1,0 +1,11 @@
+<div{{ attributes.addClass(classes) }}>
+  <a class="logo alert-leave" href="{{ path('<front>') }}" title="{{ 'Home'|t }}">
+    {% if site_logo %}
+      <img src="/themes/custom/fds_sof_theme/logo.png" alt="{{ 'Home'|t }}" />
+    {% else %}
+      {% if site_name %}
+        <span class="d-none d-print-block">{{ site_name }}</span>
+      {% endif %}
+    {% endif %}
+  </a>
+</div>

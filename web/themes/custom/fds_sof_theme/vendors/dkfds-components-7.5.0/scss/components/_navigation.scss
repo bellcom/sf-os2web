@@ -1,0 +1,486 @@
+// Header navigation ------------- //
+
+@mixin nav-border {
+  border-bottom: 0.4rem solid $color-primary;
+  padding-bottom: 0.6rem;
+}
+
+@mixin nav-border-thick {
+  border-bottom: 0.7rem solid $color-primary;
+  padding-bottom: 0.9rem;
+}
+
+@mixin nav-current {
+  border-bottom: $navigation-link-default-border-width solid $navigation-link-current-border-color;
+}
+@mixin nav-hover {
+  border-bottom: $navigation-link-default-border-width solid $navigation-link-hover-border-color;
+}
+@mixin nav-focus {
+  border-bottom: $navigation-link-default-border-width solid $navigation-link-focus-border-color;
+}
+@mixin nav-link {
+  border-bottom: $navigation-link-default-border-width solid $navigation-link-default-border-color;
+}
+
+.navbar {
+  width: 100%;
+  //padding-left: map-get($spacers, 4);
+  //padding-right: map-get($spacers, 4);
+  padding-top: map-get($spacers, 5);
+  padding-bottom: map-get($spacers, 5);
+  @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+    border-bottom: $inner-border;
+  }
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+    padding: 0;
+    border: 0;
+    flex-direction: row;
+  }
+}
+.navbar-primary{
+
+  @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+    border-bottom: $outer-border;
+  }
+  padding-top: 0;
+}
+.navbar-context-actions{
+  @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+    padding-top: map-get($spacers, 4);
+  }
+}
+
+// Primary navigation ------------- //
+
+.nav-primary {
+  @include unstyled-list;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+
+  @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-left: -12px;
+  }
+
+  & > li:first-of-type {
+    border-top: $inner-border;
+  }
+
+  @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+    & > li:first-of-type {
+      border-top: none;
+    }
+  }
+
+  > li {
+    border-bottom: $inner-border;
+    @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+      border-bottom: 0;
+    }
+    > a {
+      text-decoration: none;
+      color: $navigation-link-default-color;
+      background-color: $navigation-link-default-background-color;
+      font-size: $base-font-size;
+      line-height: $base-line-height;
+      display: block;
+      padding-top: calc(#{map-get($spacers, 4)} - 1px);
+      padding-bottom: calc(#{map-get($spacers, 4)} - 1px);
+      white-space: nowrap;
+
+      @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+        padding-bottom: 0px;
+      }
+      &:hover {
+        @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+          background-color: $navigation-link-hover-background-color;
+          color: $navigation-link-hover-color;
+          span{
+            @include nav-hover;
+          }
+        }
+      }
+      &:focus{
+        position: relative;
+        z-index: 100;
+        background-color: $navigation-link-focus-background-color;
+        color: $navigation-link-focus-color;
+        span{
+          @include nav-focus;
+        }
+      }
+    }
+    & > a, & > button, & .button-overflow-menu{
+      @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+        padding-left: 12px;
+        padding-right: 12px;
+        span{        
+          @include nav-link;
+        }
+        &:hover span{
+          @include nav-hover;
+        }
+        &:focus span{
+          @include nav-focus;
+        }
+      }
+    }
+  }
+  .nav-link {
+    > &:hover {
+      @media (max-width: $nav-responsive-breakpoint) {
+        background-color: $color-gray-pale;
+      }
+      span {
+        @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+            @include nav-hover;
+        }
+      }
+    }
+    span{
+      @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+        display: block;
+        @include nav-link;
+      }
+      @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+        padding-bottom: 9px;
+      }
+    }
+  }
+
+  .current {
+    @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+      > a, > a:hover, .button-overflow-menu, .button-overflow-menu:hover{
+        background-color: $navigation-link-current-background-color;
+        color: $navigation-link-current-color;
+        span {
+          @include nav-current;
+        }
+      }
+    }
+  }
+
+  .current > a, .current .button-overflow-menu{
+    font-weight: $font-weight-medium;
+    color: $navigation-link-current-color;
+  }
+}
+
+.nav-secondary{
+  @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+    display: flex;
+    align-items: center;
+  }
+  .nav-secondary-heading{
+    margin-bottom: map-get($spacers, 4);
+    font-size: 17px;
+    font-weight: $font-weight-bold;
+    margin-bottom: 0;
+    + ul{
+      @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+        margin-left: map-get($spacers, 4);
+      }
+    }
+  }
+}
+
+.nav{
+  .overflow-menu{
+    display: block; //IE 11 fix
+  }
+  @media (max-width: $nav-responsive-breakpoint) {
+    //overflow menu (the ones not in nav-primary)
+    .overflow-menu{
+      width: 100%;
+      .button-overflow-menu{
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        &:after, &:before{
+          display: none !important;
+        }
+      }
+      .overflow-menu-inner{
+        position: static;
+        border: none;
+        box-shadow:  none;
+        .overflow-list{
+          padding-left: 16px;
+        }
+        a, button{
+          text-align: left;
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 16px;
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Overflow menu(dropdown) in primary navigation.
+.nav-primary{
+  .overflow-menu{
+    .button-overflow-menu{
+      color: $navigation-link-default-color;
+      font-size: $base-font-size;
+      line-height: $base-line-height;
+      display: block;
+      padding-top: calc(#{map-get($spacers, 4)} - 1px);
+      padding-bottom: 0;
+      white-space: nowrap;
+      width: 100%;
+      @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+        width: unset;
+      }
+      span{
+        padding-right: 24px;
+        padding-bottom: 9px;
+        display: block;
+      }
+          
+      &:focus,
+      &:active {
+        outline: $focus-outline;
+        color: $navigation-link-focus-color;
+      }
+      &:hover{
+        text-decoration: none;
+        color: $navigation-link-hover-color;
+      }
+
+
+      &[aria-expanded=false] {
+        @include add-background-svg($navigation-overflow-menu-collapsed-icon);
+        background-position: right 16px center;
+        background-size: 24px;
+
+        @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+          @include add-background-svg($navigation-overflow-menu-collapsed-icon-desktop);
+          background-position: right 1rem center; 
+        }
+      }
+
+      &[aria-expanded=true] {
+        @include add-background-svg($navigation-overflow-menu-expanded-icon);
+        background-position: right 16px center;
+        background-size: 24px;
+        background-color: $navigation-overflow-menu-open-background-color;
+
+        @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+          @include add-background-svg($navigation-overflow-menu-expanded-icon-desktop);
+          background-position: right 1rem center;
+          background-color: $navigation-overflow-menu-open-background-color-desktop;
+          color: $navigation-overflow-menu-open-text-color;
+          position: relative;
+          z-index: 2;
+          &:before, &:after{
+            display: none;
+          }
+         
+        }
+      }
+    }
+
+    .overflow-menu-inner {
+      @include unstyled-list;
+      font-size: $body-text;
+      line-height: $body-text-line-height;
+      color: $color-text;
+      background-color: $navigation-overflow-menu-open-background-color;
+      padding-left: 16px;
+      border-top: $inner-border;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+        width: 30rem;
+        border: $outer-border;
+        border-top: 0;
+        padding-left: 0;
+        position: absolute;
+        z-index: 1;
+        padding-top: map-get($spacers, 3);
+        padding-bottom: map-get($spacers, 3);
+        background-color: $navigation-overflow-menu-open-background-color-desktop;
+        top: 100%;
+      }
+
+      .overflow-list{
+        a{
+          font-size: $small-text;
+          line-height: $small-text-line-height;
+        }
+        .overflow-list {
+          margin-left: map-get($spacers, 4);
+          li {
+            a {
+              border-top: 0;
+              padding: 8px 0 8px 0;
+            }
+            &:first-of-type a {
+              padding: 0px 0 8px 0;
+            }
+            @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+              &:last-of-type a {
+                padding: 8px 0 32px 0;
+              }
+            }
+          }
+        }
+        .sidenav-sub_list{
+          margin-left: map-get($spacers, 4);
+        }
+
+      }
+
+      button{
+          @include button-unstyled;
+      }
+      a{
+          @include body-copy-text;
+          display: block;
+          text-decoration: none;
+          &:hover, &:visited, &:focus{
+            color: $navigation-link-default-color;
+            background-color: transparent;
+            @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+              color: $navigation-overflow-menu-open-text-color;
+              text-decoration: underline;
+            }
+          }
+          @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+            color: $navigation-overflow-menu-open-text-color;
+          }
+      }
+
+      .active > a{
+        font-weight: $font-weight-semibold;
+        color: $navigation-link-default-color;
+        @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+          color: $navigation-overflow-menu-open-text-color;
+        }
+      }
+
+      button, a{
+        padding: 15px 0 15px 0;
+        border-top: $inner-border;
+        width: 100%;
+
+        @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+          padding: 8px 16px;
+          margin: 0;
+          border: none;
+        }
+        &:focus{
+          background-color: transparent;
+        }
+      }
+      li:first-child button, li:first-child a{
+        border-top: 0;
+      }
+    }
+  }
+  @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+    li.current{
+      .overflow-menu{
+        .button-overflow-menu{
+          font-weight: $font-weight-semibold;
+          color: $navigation-link-current-color;
+          background-color: $navigation-link-current-background-color;
+          
+          span{
+            @include nav-current;
+          }
+
+          &:focus,
+          &:active {
+            color: $navigation-link-current-color;
+            background-color: $navigation-link-current-background-color;
+            span {
+              @include nav-current;
+            }
+          }
+          &:hover{
+            color: $navigation-link-current-color;
+            background-color: $navigation-link-current-background-color;
+            span{
+              @include nav-current;
+            }
+          }
+
+          &[aria-expanded=true] {
+            background-color: $navigation-overflow-menu-open-background-color-desktop;
+            color: $navigation-overflow-menu-open-text-color;
+            
+            span{
+              @include nav-current;
+            }
+
+            &:hover, &:focus, &:active {
+              background-color: $navigation-overflow-menu-open-background-color-desktop;
+              color: $navigation-overflow-menu-open-text-color;
+              span{
+                @include nav-current;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile_nav-active {
+  overflow: hidden;
+}
+
+// Navbar inner
+.navbar-inner {
+  display: flex;
+  flex-direction: column;
+  @include media-breakpoint-up(#{$nav-responsive-breakpoint}) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.nav-info-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0;
+    text-align: right;
+
+    &.clear {
+      display: block;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

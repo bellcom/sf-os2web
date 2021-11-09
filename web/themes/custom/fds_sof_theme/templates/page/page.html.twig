@@ -1,0 +1,165 @@
+<header class="header">
+
+  <div class="portal-header">
+    <div class="container portal-header-inner">
+      {{ page.header }}
+
+      <button
+        class="button button-tertiary button-menu-open js-menu-open ml-auto d-print-none"
+        aria-haspopup="menu" title="{{ 'Åben mobil menu' | trans }}">
+        Menu
+      </button>
+
+      <div class="portal-info">
+        {% include '@fds_sof_theme/includes/socialmedia.html.twig' %}
+        {{ page.secondary_menu }}
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <nav class="nav">
+    <button
+      class="button button-secondary button-menu-close js-menu-close"
+      title="Luk mobil menu">
+      <svg class="icon-svg " focusable="false" aria-hidden="true">
+        <use xlink:href="#close"></use>
+      </svg>
+      {{ 'Luk' | trans }}
+    </button>
+    <div class="navbar navbar-primary">
+      <div class="navbar-inner container">
+        {{ page.primary_menu }}
+      </div>
+    </div>
+    <!-- 3: Main navigation end-->
+
+    <div class="portal-info-mobile">
+      {{ page.mobile_menu }}
+    </div>
+  </nav>
+</header>
+
+{{ page.featured_top }}
+
+<div class="page-container">
+  <div class="container">
+    <div class="row">
+      {{ page.breadcrumb }}
+    </div>
+    <div class="row">
+      {#  Wayaround for determining visibility for regions with lazybuilder.
+      @See https://www.drupal.org/project/drupal/issues/953034 for more info. #}
+      
+        {% set has_sidebar_first = page.sidebar_first|render|striptags|trim is not empty %}
+        {% set has_sidebar_second = page.sidebar_second|render|striptags|trim is not empty %}
+        {% if has_sidebar_first %}
+          {% set sidebar_first_classes = [
+            has_sidebar_first and has_sidebar_second ? 'col-12 col-md-3',
+            has_sidebar_first and has_sidebar_second is empty ? 'col-12 col-md-4',
+          ] %}
+          <aside {{ attributes.addClass(sidebar_first_classes) }}>
+            {{ page.sidebar_first }}
+          </aside>
+        {% endif %}
+
+        {% set content_classes = [
+          has_sidebar_first and has_sidebar_second ? 'col-12 col-md-6',
+          has_sidebar_first and has_sidebar_second is empty ? 'col-12 col-md-8',
+          has_sidebar_second and has_sidebar_first is empty ? 'col-12 col-md-8',
+          has_sidebar_first is empty and has_sidebar_second is empty ? 'col-12 col-md-12'
+        ] %}
+        <main {{ content_attributes.addClass(content_classes) }}>
+          {{ page.content }}
+        </main>
+      
+      {% if has_sidebar_second %}
+        {% set sidebar_second_classes = [
+          has_sidebar_first and has_sidebar_second ? 'col-12 col-md-3',
+          has_sidebar_first is empty and has_sidebar_second ? 'col-12 col-md-4',
+        ] %}
+        <aside {{ attributes.addClass(sidebar_second_classes) }}>
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+
+    </div>
+  </div>
+</div>
+
+{{ page.featured_bottom_first }}
+
+{{ page.featured_bottom_second }}
+
+{% include '@fds_sof_theme/includes/footer.html.twig' %}
+
+<script>
+var slideIndex = 1;
+var slidePrevIndex = 1;
+os2webBannerSliderInit('.field.field--name-field-os2web-page-paragraph-wide>.field__item:first-child', 
+  '.field.field--name-field-os2web-page-paragraph-wide.field--type-entity-reference-revisions.field--label-hidden.field__items > div:nth-child(1) > div > div > div > div');
+
+function plusSlides(n) {
+  os2webBannerSliderShow(slideIndex += n);
+}
+
+function currentSlide(n) {
+  os2webBannerSliderShow(slideIndex = n);
+}
+
+function os2webBannerSliderInit(parentSelector, childSelector) {
+  var container = document.querySelector(parentSelector);
+  if (container) {
+    var slides = document.querySelectorAll(childSelector);
+    if (slides && slides.length>1) {
+      var dots = []
+      for (i = 0; i < slides.length; i++) {
+        if (i>0) {
+          slides[i].style.display = "none";
+        };
+        slides[i].classList.add("blogSlides", "fade");
+        dots.push(`<span onclick="currentSlide(${i+1})"></span>`);
+      }
+      slides.length
+      container.classList.add("blog-slider__container");
+      //container.insertAdjacentHTML( 'beforeend', `<div class="blog-slider__numbertext">1 / ${slides.length}</div>`);
+      container.insertAdjacentHTML( 'beforeend', '<a class="blogSlider__prev" onclick="plusSlides(-1)">&#10094;</a>');
+      container.insertAdjacentHTML( 'beforeend', '<a class="blogSlider__next" onclick="plusSlides(1)">&#10095;</a>');
+      container.insertAdjacentHTML( 'beforeend', `<div class="blogSlider__dots">${dots.join("")}</div>`);
+      dots = document.querySelectorAll(".blogSlider__dots>span");
+      os2webBannerSliderShow = os2webBannerSliderShow(slides, dots);
+      //console.log(os2webBannerSliderShow);
+    };
+  };
+};
+
+function os2webBannerSliderShow(slides, dots, initslidenum) {
+  var _slides = slides;
+  var _dots = dots;
+  return function(n) {
+    var i;
+    if (n > _slides.length) {
+      slideIndex = 1
+    };
+    if (n < 1) {
+      slideIndex = _slides.length
+    };
+
+    for (i = 0; i < _dots.length; i++) {
+      _dots[i].className = _dots[i].className.replace(" active", "");
+    };
+    _slides[slidePrevIndex - 1].style.display = "none";
+    _slides[slideIndex - 1].style.display = "block";
+    _dots[slideIndex - 1].className += " active";
+    slidePrevIndex = slideIndex;
+  };
+}
+
+
+function os2webBannerSliderShowX(n) {
+  
+  
+  
+} 
+</script>

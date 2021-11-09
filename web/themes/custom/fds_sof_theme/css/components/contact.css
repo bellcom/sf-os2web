@@ -1,0 +1,9 @@
+/* Contact entity. */
+.field--name-field-os2web-contact-heading h1,
+.field--name-field-os2web-contact-heading h2,
+.field--name-field-os2web-contact-heading h3,
+.field--name-field-os2web-contact-heading h4,
+.field--name-field-os2web-contact-heading h5,
+.field--name-field-os2web-contact-heading h6 {
+  margin-top: 0;
+}

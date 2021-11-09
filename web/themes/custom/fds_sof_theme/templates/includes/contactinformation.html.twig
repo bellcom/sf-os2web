@@ -1,0 +1,25 @@
+<h2>Kontakt</h2>
+{% 
+    if theme_settings.contact_information.business_owner_name or
+        theme_settings.contact_information.address or
+        (theme_settings.contact_information.zipcode and theme_settings.contact_information.city) or
+        theme_settings.contact_information.phone_readable or
+        theme_settings.contact_information.email or
+        theme_settings.contact_information.vat_no or
+        theme_settings.contact_information.giro_no or
+        theme_settings.contact_information.ean_no
+%}
+    <!-- {{ 'Tlf.:' | trans }} -->
+    <ul class="contact_information">
+    {% if theme_settings.contact_information.business_owner_name %}<li class="name">{{ theme_settings.contact_information.business_owner_name }}</li>{% endif %}
+    {% if theme_settings.contact_information.address %}<li class="address">{{ theme_settings.contact_information.address }}</li>{% endif %}
+    {% if (theme_settings.contact_information.zipcode and theme_settings.contact_information.city) %}
+        <li class="zip-city">{{ theme_settings.contact_information.zipcode }} {{ theme_settings.contact_information.city }}</li>
+    {% endif %}
+    {% if theme_settings.contact_information.phone_readable %}<li class="phone">{{ theme_settings.contact_information.phone_readable }}</li>{% endif %}
+    {% if theme_settings.contact_information.email %}<li class="email"><a href="mailto: {{ theme_settings.contact_information.email }}">{{ theme_settings.contact_information.email }}</a></li>{% endif %}
+    {% if theme_settings.contact_information.vat_no %}<li class="vat_no">{{ theme_settings.contact_information.vat_no }}</li>{% endif %}
+    {% if theme_settings.contact_information.giro_no %}<li class="giro_no">{{ theme_settings.contact_information.giro_no }}</li>{% endif %}
+    {% if theme_settings.contact_information.ean_no %}<li class="ean_no">{{ theme_settings.contact_information.ean_no }}</li>{% endif %}
+    </ul>
+{% endif %}

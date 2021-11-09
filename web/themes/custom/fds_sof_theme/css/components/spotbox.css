@@ -1,0 +1,4 @@
+/* Make sure that a spotbox is never wider than the allowed width of the text. */
+.field--name-field-os2web-page-paragraph-narr .paragraph--type--os2web-spotbox {
+  max-width: 66ch;
+}

@@ -1,0 +1,16 @@
+{% spaceless %}
+
+  {% if prefix %}
+    {{ prefix }}
+  {% endif %}
+
+  {% block input %}
+    <input{{ attributes.addClass('form-input') }} />
+  {% endblock %}
+
+  {% if suffix %}
+    {{ suffix }}
+  {% endif %}
+
+  {{ children }}
+{% endspaceless %}

@@ -1,0 +1,8 @@
+.gin--vertical-toolbar .menu-item--expanded .menu-item > a {
+  padding-bottom: 18px !important;
+  padding-left: 24px !important;
+  padding-right: 32px !important;
+  padding-top: 18px !important;
+
+  font-size: 16px !important;
+}

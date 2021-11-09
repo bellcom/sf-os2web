@@ -1,0 +1,44 @@
+styles:
+  css:
+    theme:
+      vendors/dkfds-components-7.5.0/css/dkfds.css: {}
+      css/components/resets.css: {}
+      css/components/menu-local-tasks.css: {}
+      css/components/toolbar-menu.css: {}
+      css/components/box.css: {}
+      css/components/micro-modal.css: {}
+      css/components/tiny-slider.css: {}
+      css/components/layout.css: {}
+      css/components/contact.css: {}
+      css/components/related-links.css: {}
+      css/components/spotbox.css: {}
+      css/components/breadcrumb.css: {}
+      css/components/gis-map.css: {}
+      css/components/banner.css: {}
+      css/components/eu-cookie-compliance.css: {}
+      css/components/form.css: {}
+      css/components/meeting.css: {}
+      css/components/search.css: {}
+      css/components/borgerdk.css: {}
+      css/components/print.css: {}
+      css/utils/flexy-row.css: {}
+      css/utils/flexy-list.css: {}
+      css/utils/grid.css: {}
+      css/utils/element-wrapper-link.css: {}
+      css/admin-toolbar.css: {}
+      'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css': { type: external }
+      'https://fonts.googleapis.com/css2?family=Material+Icons': { type: external }
+      'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css': { type: external }
+      css/compiled.css: {}
+      css/theme.css: {}
+
+javascripts:
+  js:
+    vendors/dkfds-components-7.5.0/js/dkfds.js: {}
+    'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js': { type: external }
+    'https://unpkg.com/micromodal/dist/micromodal.min.js': { type: external }
+    js/init-dkfds.js: {}
+    js/print_page.js: {}
+    js/micro-modal.js: {}
+    js/slideshow.js: {}
+    js/accordion.js: {}

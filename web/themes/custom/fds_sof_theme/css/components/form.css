@@ -1,0 +1,20 @@
+.form--inline .form-group {
+  margin-top: 0;
+}
+
+.form--inline .form-item {
+  margin-right: 1.5em;
+}
+
+/* This is a .chosen inside a select. Remove DFDS styles to the parent. */
+.form-select.chosen-container {
+  border: 0 !important;
+  padding: 0 !important;
+  min-width: auto !important;
+  border-radius: 0;
+  height: auto !important;
+}
+
+.form-select.chosen-container .chosen-drop li::before {
+  display: none !important;
+}

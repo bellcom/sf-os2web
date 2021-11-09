@@ -1,0 +1,29 @@
+@media print {
+
+  .block-local-tasks-block {
+    display: none !important;
+  }
+
+  html,
+  html body {
+    width: 100% !important;
+    height: auto !important;
+    min-height: initial !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  pre,
+  p,
+  .field--name-field-os2web-files-files {
+    page-break-inside: avoid;
+  }
+
+  .container,
+  .container-fluid {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}

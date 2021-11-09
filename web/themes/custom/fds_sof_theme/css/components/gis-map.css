@@ -1,0 +1,11 @@
+.field--name-field-os2web-gis-map-heading {}
+.field--name-field-os2web-gis-map-subheading {}
+
+.field--name-field-os2web-gis-map-heading + iframe,
+.field--name-field-os2web-gis-map-subheading + iframe {
+  margin-top: 10px;
+}
+
+.paragraph--type--os2web-gis-map iframe {
+  border: 0;
+}

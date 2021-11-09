@@ -1,0 +1,11 @@
+#toolbar-administration ul.toolbar-menu {
+  max-width: none;
+}
+
+ul.toolbar-menu a:visited, a.link-visited {
+  color: #565656;
+}
+
+ul.toolbar-menu li {
+  padding-left: 0;
+}

@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * @see field.html.twig
+ * @see template_preprocess_field()
+ */
+#}
+
+{% if not label_hidden %}
+<div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+{% endif %}
+{% for item in items %}
+  <div{{ item.attributes.addClass('icon-wrapper') }}>{{ item.content }}</div>
+{% endfor %}

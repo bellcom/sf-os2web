@@ -1,0 +1,15 @@
+.view-os2web-search .view-header + .view-content {
+  margin-top: 30px;
+}
+
+.view-os2web-search .views-row + .views-row {
+  margin-top: 15px;
+}
+
+.view-os2web-meetings-search-page .view-header + .view-content {
+  margin-top: 30px;
+}
+
+.view-os2web-meetings-search-page .views-row + .views-row {
+  margin-top: 15px;
+}
