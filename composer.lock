@@ -12370,12 +12370,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "35401f9d3567d93f4762bc48ce1de4feb4a661f9"
+                "reference": "e4acab2b0b0fddf9dc68f613193511f307446559"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/35401f9d3567d93f4762bc48ce1de4feb4a661f9",
-                "reference": "35401f9d3567d93f4762bc48ce1de4feb4a661f9",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/e4acab2b0b0fddf9dc68f613193511f307446559",
+                "reference": "e4acab2b0b0fddf9dc68f613193511f307446559",
                 "shasum": ""
             },
             "require": {
@@ -12397,9 +12397,9 @@
             "description": "Page builder set for os2web",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
-                "source": "https://github.com/OS2web/os2web_pagebuilder/tree/develop"
+                "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
             },
-            "time": "2021-09-29T11:31:22+00:00"
+            "time": "2021-11-10T12:11:56+00:00"
         },
         {
             "name": "os2web/os2web_person_information",
@@ -23473,5 +23473,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
