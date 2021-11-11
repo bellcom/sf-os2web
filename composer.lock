@@ -11588,13 +11588,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "b04475b2a072457391a6df630e57a16403218d65"
+                "url": "https://github.com/OS2web/os2web_events.git",
+                "reference": "751419be96f93c4a5b5914c790a6cb28351e9d96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/b04475b2a072457391a6df630e57a16403218d65",
-                "reference": "b04475b2a072457391a6df630e57a16403218d65",
+                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/751419be96f93c4a5b5914c790a6cb28351e9d96",
+                "reference": "751419be96f93c4a5b5914c790a6cb28351e9d96",
                 "shasum": ""
             },
             "require": {
@@ -11610,10 +11610,10 @@
             ],
             "description": "Provide functionality for events import from Kulturnaut",
             "support": {
-                "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
-                "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
+                "issues": "https://github.com/OS2web/os2web_events/issues",
+                "source": "https://github.com/OS2web/os2web_events/tree/master"
             },
-            "time": "2021-11-09T13:18:00+00:00"
+            "time": "2021-09-29T11:28:46+00:00"
         },
         {
             "name": "os2web/os2web_hearings",
