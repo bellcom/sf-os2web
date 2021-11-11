@@ -19,9 +19,9 @@
   <h3>{{ title }}</h3>
 {% endif %}
 
-<div class="row">
+<div class="grid columns-default">
   {% for row in rows %}
-    <div class="col-12 col-sm-6 col-md-4">
+    <div class="column-wrap">
       {{- row.content -}}
     </div>
   {% endfor %}

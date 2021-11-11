@@ -124,8 +124,8 @@ function os2webBannerSliderInit(parentSelector, childSelector) {
       slides.length
       container.classList.add("blog-slider__container");
       //container.insertAdjacentHTML( 'beforeend', `<div class="blog-slider__numbertext">1 / ${slides.length}</div>`);
-      container.insertAdjacentHTML( 'beforeend', '<a class="blogSlider__prev" onclick="plusSlides(-1)">&#10094;</a>');
-      container.insertAdjacentHTML( 'beforeend', '<a class="blogSlider__next" onclick="plusSlides(1)">&#10095;</a>');
+      container.insertAdjacentHTML( 'beforeend', '<a class="blogSlider__prev" onclick="plusSlides(-1)"><img src="/themes/custom/fds_sof_theme/imgs/left-arrow.png"/></a>');
+      container.insertAdjacentHTML( 'beforeend', '<a class="blogSlider__next" onclick="plusSlides(1)"><img src="/themes/custom/fds_sof_theme/imgs/right-arrow.png"/></a>');
       container.insertAdjacentHTML( 'beforeend', `<div class="blogSlider__dots">${dots.join("")}</div>`);
       dots = document.querySelectorAll(".blogSlider__dots>span");
       os2webBannerSliderShow = os2webBannerSliderShow(slides, dots);

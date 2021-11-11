@@ -8,13 +8,7 @@
 %}
 
 <div{{ attributes.addClass(classes, 'field__items') }}>
-  {% set itemsCount = 0 %}
-  {% for item in items %}
-      {% set itemsCount = itemsCount + 1 %}
-  {% endfor %}
-  <div class="grid columns-{{itemsCount}}">
-    {% for item in items %}
-      {{ item.content }}
-    {% endfor %}
-  </div>
+{% for item in items %}
+  {{ item.content }}
+{% endfor %}
 </div>
