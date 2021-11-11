@@ -11911,20 +11911,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "35401f9d3567d93f4762bc48ce1de4feb4a661f9"
+                "reference": "b684d01aa3ccfb1c7892846748f097fbffcc1301"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/35401f9d3567d93f4762bc48ce1de4feb4a661f9",
-                "reference": "35401f9d3567d93f4762bc48ce1de4feb4a661f9",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/b684d01aa3ccfb1c7892846748f097fbffcc1301",
+                "reference": "b684d01aa3ccfb1c7892846748f097fbffcc1301",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "*",
+                "drupal/field_group": "*",
                 "drupal/fieldblock": "*",
+                "drupal/image_widget_crop": "*",
                 "drupal/inline_entity_form": "^1.0@RC",
                 "drupal/paragraphs": "*",
                 "drupal/scheduled_transitions": "^2.0",
+                "drupal/scheduler_content_moderation_integration": "*",
+                "drupal/svg_image": "*",
                 "os2web/os2web_contact": "dev-master",
                 "os2web/os2web_hjemmeside": "dev-master",
                 "os2web/os2web_kle": "dev-master"
@@ -11940,7 +11944,7 @@
                 "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
                 "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
             },
-            "time": "2021-09-29T11:31:22+00:00"
+            "time": "2021-11-10T12:25:04+00:00"
         },
         {
             "name": "os2web/os2web_person_information",
