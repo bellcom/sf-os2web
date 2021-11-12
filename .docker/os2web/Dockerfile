@@ -18,7 +18,8 @@ RUN set -eux; \
 	echo 4 | dpkg -i mysql-apt-config_0.8.13-1_all.deb; \
 	apt update; \
 	apt install -qq -y mysql-client; \
-	echo "[client]" >> /etc/mysql/my.cnf; echo "ssl-mode=DISABLED" >> /etc/mysql/my.cnf
+	echo "[client]" >> /etc/mysql/my.cnf; echo "ssl-mode=DISABLED" >> /etc/mysql/my.cnf; \
+	rm -rf /var/lib/apt/lists/*
 
 # Add non root user as default.
 USER www-data
