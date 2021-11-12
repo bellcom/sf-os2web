@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9a77ae0ca092f04d4bc95d336fc65ce",
+    "content-hash": "aa72212cf86a3e7e86d5136bf26a4b19",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -12438,16 +12438,16 @@
         },
         {
             "name": "os2web/os2web_rest_api",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_rest_api.git",
-                "reference": "2239681b3634e646a8f9e4863142015fcbbf0b5f"
+                "reference": "3d1fc9a3f186d8a5ee334e35d8bb649f6ee94849"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_rest_api/zipball/2239681b3634e646a8f9e4863142015fcbbf0b5f",
-                "reference": "2239681b3634e646a8f9e4863142015fcbbf0b5f",
+                "url": "https://api.github.com/repos/OS2web/os2web_rest_api/zipball/3d1fc9a3f186d8a5ee334e35d8bb649f6ee94849",
+                "reference": "3d1fc9a3f186d8a5ee334e35d8bb649f6ee94849",
                 "shasum": ""
             },
             "require": {
@@ -12461,9 +12461,9 @@
             "description": "OS2Web Rest API",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_rest_api/issues",
-                "source": "https://github.com/OS2web/os2web_rest_api/tree/0.0.4"
+                "source": "https://github.com/OS2web/os2web_rest_api/tree/0.0.5"
             },
-            "time": "2021-08-30T11:44:10+00:00"
+            "time": "2021-10-04T12:09:35+00:00"
         },
         {
             "name": "os2web/os2web_search",

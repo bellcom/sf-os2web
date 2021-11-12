@@ -200,7 +200,8 @@
                 "Allow edit Media items from Media Library modal dialog in CKEditor" : "https://www.drupal.org/files/issues/2021-04-21/3168868-13_0.patch"
             },
             "drupal/printable": {
-                "3214729 PDF filename is generated with it's location" : "https://git.drupalcode.org/issue/printable-3214729/-/commit/cbc98dbe864f82b4cc1da110d88097d0c4740bb9.patch"
+                "3214729 PDF filename is generated with it's location" : "https://git.drupalcode.org/issue/printable-3214729/-/commit/cbc98dbe864f82b4cc1da110d88097d0c4740bb9.patch",
+                "#3193531, Drupal 9 errors from submodule": "https://git.drupalcode.org/issue/printable-3193531/-/commit/9b4d5fa8b6a713da671ab3143c8580fce45ca6fb.diff"
             }
         }
     }
