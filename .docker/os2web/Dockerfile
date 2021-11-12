@@ -21,9 +21,6 @@ RUN set -eux; \
 	echo "[client]" >> /etc/mysql/my.cnf; echo "ssl-mode=DISABLED" >> /etc/mysql/my.cnf; \
 	rm -rf /var/lib/apt/lists/*
 
-# Add non root user as default.
-USER www-data
-
 # Removing standard Drupal core and loading OS2Web project.
 WORKDIR /opt
 # Getting recent state of master branch.
