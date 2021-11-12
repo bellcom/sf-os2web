@@ -8,8 +8,8 @@ install:
   - fin sysinfo
 
 before_script:
-  - fin init
+  - echo 'y' | fin init
   - fin exec 'sudo composer self-update'
 
 script:
-  - fin rebuild-test
+  - echo 'y' |fin rebuild-test
