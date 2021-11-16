@@ -12237,12 +12237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings.git",
-                "reference": "76547b519aaa43a780448a4d6b7358c1680d4e55"
+                "reference": "e8331abf98c22b3222e781ac8366a57fd241a174"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/76547b519aaa43a780448a4d6b7358c1680d4e55",
-                "reference": "76547b519aaa43a780448a4d6b7358c1680d4e55",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings/zipball/e8331abf98c22b3222e781ac8366a57fd241a174",
+                "reference": "e8331abf98c22b3222e781ac8366a57fd241a174",
                 "shasum": ""
             },
             "require": {
@@ -12260,7 +12260,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings/issues",
                 "source": "https://github.com/OS2web/os2web_meetings/tree/develop"
             },
-            "time": "2021-11-05T12:46:52+00:00"
+            "time": "2021-11-16T12:39:58+00:00"
         },
         {
             "name": "os2web/os2web_meetings_acadre",
@@ -12268,12 +12268,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_acadre.git",
-                "reference": "c15bde81ba0c3e62dd7520cb7d08715047e0c402"
+                "reference": "4c283feffb0dc9a129e5bbef5b509db27797b88b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_acadre/zipball/c15bde81ba0c3e62dd7520cb7d08715047e0c402",
-                "reference": "c15bde81ba0c3e62dd7520cb7d08715047e0c402",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_acadre/zipball/4c283feffb0dc9a129e5bbef5b509db27797b88b",
+                "reference": "4c283feffb0dc9a129e5bbef5b509db27797b88b",
                 "shasum": ""
             },
             "require": {
@@ -12291,7 +12291,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings_acadre/issues",
                 "source": "https://github.com/OS2web/os2web_meetings_acadre/tree/master"
             },
-            "time": "2021-11-05T12:05:42+00:00"
+            "time": "2021-11-16T12:43:06+00:00"
         },
         {
             "name": "os2web/os2web_meetings_agman",
@@ -12361,12 +12361,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_meetings_edoc_fujitsu.git",
-                "reference": "fc886ec81b3da54fa6756201af50bd7beeacd0bb"
+                "reference": "1d580882003bf77e8e6533e8949c91c1dd9ee369"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc_fujitsu/zipball/fc886ec81b3da54fa6756201af50bd7beeacd0bb",
-                "reference": "fc886ec81b3da54fa6756201af50bd7beeacd0bb",
+                "url": "https://api.github.com/repos/OS2web/os2web_meetings_edoc_fujitsu/zipball/1d580882003bf77e8e6533e8949c91c1dd9ee369",
+                "reference": "1d580882003bf77e8e6533e8949c91c1dd9ee369",
                 "shasum": ""
             },
             "require": {
@@ -12384,7 +12384,7 @@
                 "issues": "https://github.com/OS2web/os2web_meetings_edoc_fujitsu/issues",
                 "source": "https://github.com/OS2web/os2web_meetings_edoc_fujitsu/tree/master"
             },
-            "time": "2021-11-02T11:47:19+00:00"
+            "time": "2021-11-16T12:43:42+00:00"
         },
         {
             "name": "os2web/os2web_meetings_sbsys",
@@ -23584,5 +23584,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
