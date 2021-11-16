@@ -48,7 +48,7 @@ class SkipRowIfOldNews extends ProcessPluginBase {
    * {@inheritdoc}
    */
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
-    if (strtotime($value[$this->configuration['index']]['value']) < strtotime('-18 months')) {
+    if (strtotime($value[$this->configuration['index']]['value']) < strtotime('2017-01-01')) {
       $message = !empty($this->configuration['message']) ? $this->configuration['message'] : '';
       throw new MigrateSkipRowException($message);
     }
