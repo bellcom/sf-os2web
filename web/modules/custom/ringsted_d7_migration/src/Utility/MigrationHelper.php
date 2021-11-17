@@ -4,6 +4,7 @@ namespace Drupal\ringsted_d7_migration\Utility;
 
 use Drupal\Core\Database\Database;
 use Drupal\file\Entity\File;
+use Drupal\taxonomy\Entity\Term;
 
 class MigrationHelper {
 
@@ -104,6 +105,36 @@ class MigrationHelper {
     }
 
     return $file->id();
+  }
+
+  /**
+   * Finds KLE term for postlister in os2web_kle vocabulary.
+   *
+   * @param int $nid
+   *   Node Id.
+   *
+   * @return array
+   *   [
+   *     'tid'
+   *   ]
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+   * @throws \Drupal\Core\Entity\EntityStorageException
+   */
+  function findPostlisterKleTerm($nid) {
+    $name = '85.02.15 Postlister og sagslister';
+    $vid = 'os2web_kle';
+
+    $properties['name'] = $name;
+    $properties['vid'] = $vid;
+
+    $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadByProperties($properties);
+    $term = reset($terms);
+
+    if ($term) {
+      return $term->id();
+    }
   }
 
 }

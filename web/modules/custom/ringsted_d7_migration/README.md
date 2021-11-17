@@ -51,12 +51,16 @@ Read more about the Drush commands for Migrate API on [Migrate tools](https://ww
     ```
     drush migrate:import ringsted_d7_node_news
     ```
+  * Migrate Postlister:
+    ```
+    drush migrate:import ringsted_d7_node_postlister
+    ```
 
 ## Useful hints
 
 When changing migration definition in **.yml** files, import the changes with:
 ```
-drush cim --partial --source=modules/contrib/ringsted_d7_migration/config/install -y
+drush cim --partial --source=modules/custom/ringsted_d7_migration/config/install -y
 ```
 
 If migration stopped with an error, it might need to be reset, e.g.:

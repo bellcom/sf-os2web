@@ -14,4 +14,8 @@ echo "Migration ringsted_d7_node_news - START"
 drush migrate:import ringsted_d7_node_news
 echo "Migration ringsted_d7_node_news - END"
 
+echo "Migration ringsted_d7_node_postlister - START"
+drush migrate:import ringsted_d7_node_postlister
+echo "Migration ringsted_d7_node_postlister - END"
+
 echo "Migration finished"

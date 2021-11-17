@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cff53d916c25ecfd442f149e20d2a596",
+    "content-hash": "36f62dedf1d577af1e499a9557c77c6a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -12548,6 +12548,33 @@
             "time": "2021-06-04T13:53:46+00:00"
         },
         {
+            "name": "os2web/os2web_postlister",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_postlister.git",
+                "reference": "83c2992c65a9f9ce9361e46050c18019788b5155"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_postlister/zipball/83c2992c65a9f9ce9361e46050c18019788b5155",
+                "reference": "83c2992c65a9f9ce9361e46050c18019788b5155",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Provide functionality for Postlister",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_postlister/issues",
+                "source": "https://github.com/OS2web/os2web_postlister/tree/master"
+            },
+            "time": "2021-11-17T10:41:25+00:00"
+        },
+        {
             "name": "os2web/os2web_rest_api",
             "version": "0.0.5",
             "source": {
@@ -23575,6 +23602,7 @@
         "os2web/os2web_news": 20,
         "os2web/os2web_pagebuilder": 20,
         "os2web/os2web_person_information": 20,
+        "os2web/os2web_postlister": 20,
         "os2web/os2web_search": 20,
         "os2web/os2web_spotbox": 20
     },
