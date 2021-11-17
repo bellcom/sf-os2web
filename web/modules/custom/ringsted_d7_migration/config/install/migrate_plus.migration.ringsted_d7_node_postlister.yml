@@ -27,7 +27,7 @@ process:
   status: status
   created:
     plugin: skip_row_if_old
-    skipOlderThanDate: "2020-01-01"
+    skipOlderThanDate: "2021-01-01"
     source: created
     message: "Skipped old content"
   changed: changed
