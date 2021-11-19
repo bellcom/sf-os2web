@@ -2,3 +2,39 @@
 .field--name-field-os2web-page-paragraph-narr .paragraph--type--os2web-spotbox {
   max-width: 66ch;
 }
+
+.spotbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spotbox-padding);
+  text-align: center;
+}
+.spotbox .icon-wrapper {
+  background: rgba(0,0,0,.2);
+  padding: var(--spotbox-padding);
+  border-radius: 50%;
+}
+.spotbox img {display: block;}
+.spotbox .icon-wrapper svg {width: var(--spotbox-icon-size); height: var(--spotbox-icon-size);}
+.spotbox-wrapper .spotbox .body {width: 100%;}
+
+/* img/icon on the left, text on the right */
+.spotbox-wrapper.layout-default .spotbox,
+.spotbox-wrapper.layout-grid_2 .spotbox {
+  flex-direction: row;
+}
+
+/* img/icon padding */
+.spotbox-wrapper.layout-default .spotbox {}
+/* img/icon no padding */
+.spotbox-wrapper.layout-grid_2 .spotbox {padding:0;}
+.spotbox-wrapper.layout-grid_2 .spotbox .icon-wrapper {border-radius: 0; height: 100%; display: flex; align-items: center;}
+.spotbox-wrapper.layout-grid_2 .spotbox .body { padding: var(--base-padding); }
+
+/* DONE img/icon on the top (padding arround), text on the bottom */
+.spotbox-wrapper.layout-grid_1 .spotbox {}
+/* img/icon on the top (no padding), text on the bottom */
+.spotbox-wrapper.layout-grid_3 .spotbox {padding: 0;}
+.spotbox-wrapper.layout-grid_3 .spotbox .icon-wrapper {border-radius: 0; width: 100%;}
+.spotbox-wrapper.layout-grid_3 .spotbox .body { padding: var(--base-padding); }

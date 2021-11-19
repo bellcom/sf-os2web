@@ -39,7 +39,7 @@
     dom_id ? 'js-view-dom-id-' ~ dom_id,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes).addClass(viewname) }}>
   {{ title_prefix }}
   {% if title %}
     {{ title }}
@@ -62,9 +62,15 @@
   {% endif %}
 
   {% if rows %}
+    {% if viewname == 'sektion_nyheder' %}
+    <div class="view-content grid columns-3">
+      {{ rows }}
+    </div>
+    {% else %}
     <div class="view-content">
       {{ rows }}
     </div>
+    {% endif %}
   {% elseif empty %}
     <div class="view-empty">
       {{ empty }}

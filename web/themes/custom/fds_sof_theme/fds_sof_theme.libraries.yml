@@ -2,6 +2,7 @@ styles:
   css:
     theme:
       vendors/dkfds-components-7.5.0/css/dkfds.css: {}
+      css/components/variables.css: {}
       css/components/resets.css: {}
       css/components/menu-local-tasks.css: {}
       css/components/toolbar-menu.css: {}
@@ -18,19 +19,34 @@ styles:
       css/components/eu-cookie-compliance.css: {}
       css/components/form.css: {}
       css/components/meeting.css: {}
+      css/components/hearing.css: {}
       css/components/search.css: {}
       css/components/borgerdk.css: {}
-      css/components/print.css: {}
+      css/components/easy-mega-menu.css: {}
+      css/components/megamenu.css: {}
+      css/components/os2webBannerSlider.css: {}
+      css/components/accordion.css: {}
+      css/components/alerts.css: {}
+      css/components/pagers.css: {}
+      css/components/icons.css: {}
+      css/components/tags.css: {}
+      css/components/badges.css: {}
+      css/components/cards.css: {}
+      css/components/tooltips.css: {}
+      css/components/commerce.css: {}
       css/utils/flexy-row.css: {}
       css/utils/flexy-list.css: {}
       css/utils/grid.css: {}
+      css/utils/utilityclasses.css: {}
       css/utils/element-wrapper-link.css: {}
       css/admin-toolbar.css: {}
       'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css': { type: external }
       'https://fonts.googleapis.com/css2?family=Material+Icons': { type: external }
       'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css': { type: external }
-      css/compiled.css: {}
+      'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css': { type: external }
+      css/unsort.css: {}
       css/theme.css: {}
+      css/components/print.css: {}
 
 javascripts:
   js:
@@ -42,3 +58,4 @@ javascripts:
     js/micro-modal.js: {}
     js/slideshow.js: {}
     js/accordion.js: {}
+    js/os2webBannerSlider.js: {}

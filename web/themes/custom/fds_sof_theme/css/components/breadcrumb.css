@@ -1,4 +1,25 @@
-.breadcrumb {
-  margin: 0;
-  padding: 0;
+/* dkfds overrides and additions (todo: use more vars for various settings) */
+.breadcrumbs {margin: 0; padding: 0; color: var(--gray-color-800); }
+.breadcrumbs__list-item:before {
+  border-color: var(--border-color); 
 }
+.breadcrumbs__link {color: var(--gray-color-800); }
+.breadcrumbs__link:visited, .breadcrumbs__link:hover, .breadcrumbs__link:active {color: var(--gray-color-800); }
+/*************************************************************************/
+
+
+.breadcrumb {margin-top: 1rem;margin-bottom: 1rem; }
+.breadcrumb li {display: inline-block; }
+.breadcrumb li:before {
+  display: inline-block;
+  margin-top: -1px;
+  margin-left: 8px;
+  margin-right: 12px;
+  font-size: 20px;
+  font-family: FontAwesome;
+  content: "\f105";
+  color: var(--primary-color);
+}
+.breadcrumb li:first-child {display: none; }
+.breadcrumb li:nth-child(2):before {display: none; }
+.breadcrumb a, .breadcrumb a:hover, .breadcrumb a:visited {text-decoration: none;color: var(--primary-txt-color); }

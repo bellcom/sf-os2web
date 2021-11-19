@@ -5,12 +5,14 @@
 /* Navigation. */
 .tns-nav {
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -40px;
 }
 .tns-nav button {
   display: inline-block;
-
-  height: 14px;
-  width: 14px;
 
   padding: 0;
 
@@ -18,16 +20,58 @@
   border-radius: 100%;
 
   background-color: transparent;
+
+  width: 14px;
+  height: 14px;
+  border-width: 1px;
+  border-color: var(--primary-color);
 }
-.tns-nav button + button {
-  margin-left: 15px;
-}
-.tns-nav button.tns-nav-active {
-  background-color: #000;
-}
+.tns-nav button + button {margin-left: 8px;}
+.tns-nav button.tns-nav-active {background-color: var(--primary-color);}
 
 /* Hide start and stop. */
 .paragraph--type--os2web-slideshow button[data-action="start"],
 .paragraph--type--os2web-slideshow button[data-action="stop"] {
   display: none;
+}
+
+.tns-outer {position: relative;margin-bottom: 50px; }
+.tns-controls button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  margin-top: -15px;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0;
+  border: 0;
+  border-radius: 100%;
+  color: var(--gray-color-000);
+  background-color: var(--primary-color);
+}
+.tns-controls button:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 2.2rem;
+}
+.tns-controls button[data-controls="prev"] {left: -15px; }
+.tns-controls button[data-controls="prev"]:before {content: "\f104"; }
+.tns-controls button[data-controls="next"] {right: -15px; }
+.tns-controls button[data-controls="next"]:before {content: "\f105"; }
+
+@media (min-width: 576px) {
+  .tns-controls button {margin-top: -20px;height: 40px;width: 40px; }
+  .tns-controls button:before {font-size: 2.6rem; }
+  .tns-controls button[data-controls="prev"] {left: -20px; }
+  .tns-controls button[data-controls="next"] {right: -20px; }
 }

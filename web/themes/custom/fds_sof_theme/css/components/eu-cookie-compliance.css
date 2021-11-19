@@ -1,9 +1,98 @@
+/** cookie/eu-cookie (dkfds overrides and additions) **********************************************/
+.cookie-container {
+  color: var(--gray-color-800);
+}
+.cookie-container .cookie-message {
+  background-color: var(--gray-color-000);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+/* bellcom custom */
+
 .sliding-popup-bottom {
   text-align: initial;
 }
 
-@media print {
-  .eu-cookie-compliance-banner {
-    display: none;
+/* eu cokkie */
+.eu-cookie-compliance-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 0;
+  color: var(--gray-color-000);
+  background-color: rgba(0, 36, 18, 0.95);
+}
+.eu-cookie-compliance-banner p, .eu-cookie-compliance-banner h1, 
+.eu-cookie-compliance-banner h2, .eu-cookie-compliance-banner h3, 
+.eu-cookie-compliance-banner h4, .eu-cookie-compliance-banner h5, .eu-cookie-compliance-banner h6 {
+  color: inherit;
+}
+.eu-cookie-compliance-banner h1, .eu-cookie-compliance-banner h2, .eu-cookie-compliance-banner h3, 
+.eu-cookie-compliance-banner h4, .eu-cookie-compliance-banner h5, .eu-cookie-compliance-banner h6 {
+  margin-top: 0;
+}
+.eu-cookie-compliance-banner,
+.eu-cookie-compliance-banner p {font-size: 1.6rem; }
+.eu-cookie-compliance-banner .field--type-link a, .eu-cookie-compliance-banner 
+.field--type-link a:hover, .eu-cookie-compliance-banner .field--type-link a:focus, 
+.eu-cookie-compliance-banner .field--type-link a:visited,
+.eu-cookie-compliance-banner a,
+.eu-cookie-compliance-banner a:hover,
+.eu-cookie-compliance-banner a:focus,
+.eu-cookie-compliance-banner a:visited {color: var(--gray-color-000); }
+.eu-cookie-compliance-banner .field--type-link a:after,
+.eu-cookie-compliance-banner a:after {color: var(--gray-color-000); }
+.eu-cookie-compliance-banner .button, .eu-cookie-compliance-banner .node__links a, 
+.node__links .eu-cookie-compliance-banner a {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+  outline-color: var(--gray-color-000);
+  outline-width: 2px;
+}
+.eu-cookie-compliance-banner .button, .eu-cookie-compliance-banner .node__links a, 
+.node__links .eu-cookie-compliance-banner a, .eu-cookie-compliance-banner .button:hover, 
+.eu-cookie-compliance-banner .node__links a:hover, .node__links .eu-cookie-compliance-banner a:hover, 
+.eu-cookie-compliance-banner .button:focus, .eu-cookie-compliance-banner .node__links a:focus, 
+.node__links .eu-cookie-compliance-banner a:focus {
+  font-weight: 700;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-family: "Candara", "Arial", Roboto, "IBMPlexSans", "system";
+  font-size: 1.6rem;
+  text-shadow: none;
+  color: var(--gray-color-000);
+  background-color: var(--primary-color);
+  background-image: none;
+  border: 0;
+}
+.eu-cookie-compliance-banner .inline-list li + li {margin-left: 10px; }
+.eu-cookie-compliance-banner .field--type-link {margin-top: 2rem; }
+@media (min-width: 768px) {
+  .eu-cookie-compliance-banner [class*="col-"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+  .eu-cookie-compliance-banner .field--type-link {
+    margin-left: -1.5rem;
+  }
+}
+/*************************************************************************/
+
+/** cookie/eu-cookie (dkfds overrides and additions) **********************************************/
+@media (min-width: 1300px) {
+  .cookie-container .cookie-message {max-width: calc(1320px + 40px + 40px); } 
 }

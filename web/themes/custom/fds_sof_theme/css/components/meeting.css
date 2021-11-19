@@ -177,3 +177,120 @@
 .month--12 + .month--11 {
   margin-top: 30px;
 }
+
+.entity-teaser--os2web-meetings-meeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.entity-teaser--os2web-meetings-meeting .icon {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+a.entity-teaser--os2web-meetings-meeting {max-width: unset; }
+a.entity-teaser--os2web-meetings-meeting, a.entity-teaser--os2web-meetings-meeting:hover, a.entity-teaser--os2web-meetings-meeting:focus, a.entity-teaser--os2web-meetings-meeting:active, a.entity-teaser--os2web-meetings-meeting:visited {
+  text-decoration: none;
+  color: var(--primary-txt-color);
+}
+a.entity-teaser--os2web-meetings-meeting:focus {outline-color: var(--outline-color-alt); }
+
+.entity-teaser--os2web-meetings-meeting__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem 1rem;
+  -ms-flex-preferred-size: 80px;
+  flex-basis: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: var(--gray-color-000);
+  background-color: var(--tertiary-color);
+}
+.entity-teaser--os2web-meetings-meeting__date__month {
+  display: block;
+  text-transform: uppercase;
+}
+.entity-teaser--os2web-meetings-meeting__date__date {display: block; }
+.entity-teaser--os2web-meetings-meeting__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem 2.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
+.entity-teaser--os2web-meetings-meeting__content .field--name-field-os2web-m-type {
+    font-weight: 700; }
+.entity-teaser--os2web-meetings-meeting__content .field--name-field-os2web-m-type h1, .entity-teaser--os2web-meetings-meeting__content .field--name-field-os2web-m-type h2, .entity-teaser--os2web-meetings-meeting__content .field--name-field-os2web-m-type h3, .entity-teaser--os2web-meetings-meeting__content .field--name-field-os2web-m-type h4, .entity-teaser--os2web-meetings-meeting__content .field--name-field-os2web-m-type h5, .entity-teaser--os2web-meetings-meeting__content .field--name-field-os2web-m-type h6 {
+      margin: 0; }
+.entity-teaser--os2web-meetings-meeting__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; 
+}
+.entity-teaser--os2web-meetings-meeting__actions .icon {font-size: 2.5rem;color: var(--primary-color); }
+.entity-teaser--os2web-meetings-meeting__actions a {padding: 2rem; }
+.entity-teaser--os2web-meetings-bp table {
+  margin: 0;
+  line-height: 2.2rem;
+  border: 1px solid var(--border-color);
+  width: calc(100% - 2px);
+}
+.entity-teaser--os2web-meetings-bp table td, .entity-teaser--os2web-meetings-bp table th {
+  padding: calc(16px - 1px);
+  padding-bottom: 16px;
+  background-color: inherit;
+  border-right: 1px solid var(--gray-color-200);
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-color-200);
+}
+.entity-teaser--os2web-meetings-bp table td:last-child, 
+.entity-teaser--os2web-meetings-bp table th:last-child {border-right: none; }
+.entity-teaser--os2web-meetings-bp table td.break-word, 
+.entity-teaser--os2web-meetings-bp table th.break-word {word-break: break-all; }
+.entity-teaser--os2web-meetings-bp table thead {background-color: var(--gray-color-100); }
+.entity-teaser--os2web-meetings-bp table thead tr {border-bottom: 1px solid var(--gray-color-200); }
+.entity-teaser--os2web-meetings-bp table thead th {
+      font-weight: 600;
+      text-align: left;
+      border-bottom: solid 1px var(--gray-color-200); }
+.entity-teaser--os2web-meetings-bp table tbody th {font-weight: 600; }
+.entity-teaser--os2web-meetings-bp table tbody tr {background-color: transparent; }
+.entity-teaser--os2web-meetings-bp table tbody tr:last-child td, 
+.entity-teaser--os2web-meetings-bp table tbody tr:last-child th {padding-bottom: calc(16px - 1px); }
+.entity-teaser--os2web-meetings-bp table tr:last-child > td, 
+.entity-teaser--os2web-meetings-bp table tr:last-child > th {border-bottom: none; }

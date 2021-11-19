@@ -1,0 +1,58 @@
+/* dkfds overrides and additions (todo: use vars for various settings) */
+.icon, .icon-svg {
+    height: 2.2rem;
+    width: 2.2rem;
+}
+.icon-svg-large {
+    height: 4.8rem;
+    width: 4.8rem;
+}
+
+.icon-add {background-image: url("../images/svg-icons/add.svg"); }
+.icon-alert-outline {background-image: url("../images/svg-icons/alert-outline.svg"); }
+.icon-angle-arrow-down {background-image: url("../images/svg-icons/angle-arrow-down.svg"); }
+.icon-angle-arrow-up {background-image: url("../images/svg-icons/angle-arrow-up.svg"); }
+.icon-arrow-left {background-image: url("../images/svg-icons/arrow-left.svg"); }
+.icon-arrow-right {background-image: url("../images/svg-icons/arrow-right.svg"); }
+.icon-book-open {background-image: url("../images/svg-icons/book-open.svg"); }
+.icon-calendar {background-image: url("../images/svg-icons/calendar.svg"); }
+.icon-cash-multiple {background-image: url("../images/svg-icons/cash-multiple.svg"); }
+.icon-check {background-image: url("../images/svg-icons/check.svg"); }
+.icon-check-circle-outline {background-image: url("../images/svg-icons/check-circle-outline.svg"); }
+.icon-chevron-left {background-image: url("../images/svg-icons/chevron-left.svg"); }
+.icon-chevron-right {background-image: url("../images/svg-icons/chevron-right.svg"); }
+.icon-close {background-image: url("../images/svg-icons/close.svg"); }
+.icon-close-circle {background-image: url("../images/svg-icons/close-circle.svg"); }
+.icon-close-circle-outline {background-image: url("../images/svg-icons/close-circle-outline.svg"); }
+.icon-content-save {background-image: url("../images/svg-icons/content-save.svg"); }
+.icon-delete {background-image: url("../images/svg-icons/delete.svg"); }
+.icon-delete-outline {background-image: url("../images/svg-icons/delete-outline.svg"); }
+.icon-dots-vertical {background-image: url("../images/svg-icons/dots-vertical.svg"); }
+.icon-download {background-image: url("../images/svg-icons/download.svg"); }
+.icon-error {background-image: url("../images/svg-icons/error.svg"); }
+.icon-file {background-image: url("../images/svg-icons/file.svg"); }
+.icon-file-document-box {background-image: url("../images/svg-icons/file-document-box.svg"); }
+.icon-folder-multiple {background-image: url("../images/svg-icons/folder-multiple.svg"); }
+.icon-help {background-image: url("../images/svg-icons/help.svg"); }
+.icon-help-circle-outline {background-image: url("../images/svg-icons/help-circle-outline.svg"); }
+.icon-info {background-image: url("../images/svg-icons/info.svg"); }
+.icon-language {background-image: url("../images/svg-icons/language.svg"); }
+.icon-magnify {background-image: url("../images/svg-icons/magnify.svg"); }
+.icon-menu-down {background-image: url("../images/svg-icons/menu-down.svg"); }
+.icon-menu-left {background-image: url("../images/svg-icons/menu-left.svg"); }
+.icon-menu-right {background-image: url("../images/svg-icons/menu-right.svg"); }
+.icon-menu-up {background-image: url("../images/svg-icons/menu-up.svg"); }
+.icon-message {background-image: url("../images/svg-icons/message.svg"); }
+.icon-minus {background-image: url("../images/svg-icons/minus.svg"); }
+.icon-open-in-new {background-image: url("../images/svg-icons/open-in-new.svg"); }
+.icon-pencil {background-image: url("../images/svg-icons/pencil.svg"); }
+.icon-plus {background-image: url("../images/svg-icons/plus.svg"); }
+.icon-printer {background-image: url("../images/svg-icons/printer.svg"); }
+.icon-refresh {background-image: url("../images/svg-icons/refresh.svg"); }
+.icon-save {background-image: url("../images/svg-icons/save.svg"); }
+.icon-settings {background-image: url("../images/svg-icons/settings.svg"); }
+.icon-sort-acending {background-image: url("../images/svg-icons/sort-acending.svg"); }
+.icon-sort-descending {background-image: url("../images/svg-icons/sort-descending.svg"); }
+.icon-sort-none {background-image: url("../images/svg-icons/sort-none.svg"); }
+.icon-success {background-image: url("../images/svg-icons/success.svg"); }
+.icon-warning {background-image: url("../images/svg-icons/warning.svg"); }

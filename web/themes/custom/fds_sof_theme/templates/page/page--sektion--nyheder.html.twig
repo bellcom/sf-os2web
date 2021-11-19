@@ -1,0 +1,79 @@
+<header class="header">
+
+  <div class="portal-header">
+    <div class="container portal-header-inner">
+      {{ page.header }}
+
+      <button
+        class="button button-tertiary button-menu-open js-menu-open ml-auto d-print-none"
+        aria-haspopup="menu" title="{{ 'Åben mobil menu' | trans }}">
+        Menu
+      </button>
+
+      <div class="portal-info">
+        {{ page.secondary_menu }}
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <nav class="nav">
+    <button
+      class="button button-secondary button-menu-close js-menu-close"
+      title="Luk mobil menu">
+      <svg class="icon-svg " focusable="false" aria-hidden="true">
+        <use xlink:href="#close"></use>
+      </svg>
+      {{ 'Luk' | trans }}
+    </button>
+    <div class="navbar navbar-primary">
+      <div class="navbar-inner container">
+        {{ page.primary_menu }}
+      </div>
+    </div>
+    <!-- 3: Main navigation end-->
+
+    <div class="portal-info-mobile">
+      {{ page.mobile_menu }}
+    </div>
+  </nav>
+</header>
+
+{{ page.featured_top }}
+
+<div class="page-container">
+  <img src="/themes/custom/fds_sof_theme/imgs/banner_sektion--nyheder.jpg" />
+  <div class="container">
+    {#
+    <div class="row">
+      {{ page.breadcrumb }}
+    </div>
+    <div class="row">
+      {% include '@fds_sof_theme/includes/action-buttons.html.twig' %}
+    </div>
+    Notes:
+    this template type does not support sidebars
+    #}
+    <main>
+      <h1>Nyheder</h1>
+      <p>Skole og Forældres nyheder</p>
+      {{ page.content }}
+    </main>
+  </div>
+</div>
+
+{{ page.featured_bottom_first }}
+
+{{ page.featured_bottom_second }}
+
+{% include '@fds_sof_theme/includes/footer.html.twig' %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  os2webBannerSliderInit(
+    '[data-cssname="forside-slider"]', 
+    '[data-cssname="forside-slider"] .field--name-field-os2web-paragraphs > .field__item'
+  );
+});
+</script>

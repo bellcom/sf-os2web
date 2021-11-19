@@ -11,7 +11,18 @@
         item.in_active_trail,
       ] %}
       <li{{ item.attributes.addClass(classes) }}>
-        {{ link(item.title, item.url) }}
+        {% if item.sociallink %}
+          <a href="{{ item.url }}"
+              target="{{ item.target }}"
+              data-toggle="tooltip"
+              data-placement="top"
+              class="{{ item.class }}"
+              title="{{ item.tooltip }}">
+              <span class="icon fa fa-{{ item.title }}"></span>
+          </a>
+        {% else %}
+          {{ link(item.title, item.url) }}
+        {% endif %}
 
         {% if item.below %}
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}

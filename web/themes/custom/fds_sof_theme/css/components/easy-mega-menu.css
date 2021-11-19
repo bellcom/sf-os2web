@@ -1,0 +1,126 @@
+/** easy-mega-menu **************************************/
+ul.simple-mega-menu {margin:0;display:flex; justify-content: end;}
+ul.simple-mega-menu li:before {content:'';}
+ul.simple-mega-menu>li {display: flex; align-items: center; 
+    font-size: 2.41rem;
+    color: var(--primary-color)
+}
+ul.simple-mega-menu>li>:first-child {
+    border-bottom: 5px solid transparent;
+}
+ul.simple-mega-menu>li:hover>:first-child {
+    color: #000;
+    border-bottom: 5px solid #000;
+}
+/* making sure start offset is a zero, not from the actual hover point */
+ul.simple-mega-menu li,
+ul.simple-mega-menu .menu_link_content {position: static;}
+ul.simple-mega-menu li>:first-child {padding: 0.5rem 2.3rem; display: flex;}
+ul.simple-mega-menu li>*:hover {cursor:pointer;}
+ul.simple-mega-menu li svg {
+    width: 2.2rem;
+    height: auto;
+    margin-top: -.5rem;
+}
+ul.simple-mega-menu>li:last-child>a {
+    padding-right: 1rem;
+}
+ul.simple-mega-menu li svg path {fill: currentColor;}
+ul.simple-mega-menu ul[data-level] {
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility 0s, opacity 0.5s linear;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    /*display: flex !important;
+    flex-wrap: wrap;*/
+    z-index: 501; /* contextual buttons has 500, and adminmenu has 502 */
+    height:0;   
+}
+ul.simple-mega-menu ul[data-level="1"] {
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    /*position: relative;*/
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; /* just my preference ;-) */
+}
+ul.simple-mega-menu ul[data-level="1"] > li {
+    flex-basis: 25%;
+    padding: 0 2rem;
+}
+ul.simple-mega-menu ul[data-level="1"] > li:not(:first-of-type){
+    border-left: 1px solid #B2B2B2;
+}
+ul.simple-mega-menu ul[data-level="2"] {
+    position: relative;
+}
+ul.simple-mega-menu>li:focus-within ul,
+nav.nav:not(.is-visible) ul.simple-mega-menu>li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    max-width: none !important; /* sucks to use important, but previous styles too hard to override :-( */
+    height: auto;
+}
+ul.simple-mega-menu ul[data-level] li {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    color: var(--primary-color);
+}
+ul.simple-mega-menu ul[data-level] li>:first-child:hover {
+    color: #000;
+}
+.nav:not(.is-visible) ul.simple-mega-menu ul[data-level] > li a {padding: .5rem 0;}
+
+/* mobile */
+.nav.is-visible .navbar {padding-bottom: 0;}
+.nav.is-visible .container {max-width: 100%;}
+.nav.is-visible .navbar-primary {
+    position: static;
+    bottom: 0rem;
+}
+.nav.is-visible ul.simple-mega-menu {
+    display: block;
+}
+.nav.is-visible ul.simple-mega-menu>li {
+    display: block;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+.nav.is-visible ul.simple-mega-menu>li svg {
+    position: absolute;
+    top: .8rem;
+    right: .5rem;
+    pointer-events: none;
+}
+.nav.is-visible ul.simple-mega-menu>li span:before {
+    content: '\f078';
+    font-family: 'FontAwesome';
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.nav.is-visible ul.simple-mega-menu ul[data-level] {
+    position: static;
+    padding:0;
+    box-shadow: none;
+    background: #eee;
+}
+.nav.is-visible ul.simple-mega-menu ul[data-level] > li {
+    flex-basis: 100%;
+    padding: 0rem;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+.nav.is-visible ul.simple-mega-menu>li>:first-child {
+    border-bottom-width: 0px;
+}
+.nav.is-visible .portal-info-mobile {
+    padding: 0;
+    border-top: 1px solid #BFBFBF;
+}
+.nav.is-visible .portal-info-mobile ul li:before {content:'';}
+/********************************************************/

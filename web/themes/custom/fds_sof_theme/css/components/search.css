@@ -1,15 +1,49 @@
-.view-os2web-search .view-header + .view-content {
-  margin-top: 30px;
+.view-os2web-search .view-header + .view-content {margin-top: 30px;}
+.view-os2web-search .views-row + .views-row {margin-top: 15px;}
+.view-os2web-meetings-search-page .view-header + .view-content {margin-top: 30px;}
+.view-os2web-meetings-search-page .views-row + .views-row {margin-top: 15px;}
+
+.searchy {position: relative; }
+.searchy .region {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  z-index: 100;
+  padding-right: 10px;
+  width: 250px;
+}
+.searchy.searchy--visible-form .region {display: block; }
+.custom-header__button + .searchy,
+.searchy + .custom-header__button {margin-left: 15px; }
+@media (min-width: 768px) {
+  .searchy .region {width: 600px; }
 }
 
-.view-os2web-search .views-row + .views-row {
-  margin-top: 15px;
+.search-api-autocomplete-search {
+  top: 3px;
+  z-index: 500;
+  border: 0 !important;
+}
+.search-api-autocomplete-search .ui-menu-item {padding-left: 0; }
+.search-api-autocomplete-search .ui-menu-item:before {display: none; }
+.search-api-autocomplete-search .ui-menu-item-wrapper .search-api-autocomplete-suggestion {
+  padding: 1rem 2rem;
+  font-family: "Candara", "Arial", Roboto, "IBMPlexSans", "system";
+  font-size: 1.6rem;
+  color: var(--primary-txt-color);
+}
+.search-api-autocomplete-search .ui-menu-item-wrapper.ui-state-active .search-api-autocomplete-suggestion {
+  color: var(--primary-txt-color);
+  background-color: var(--secondary-color);
 }
 
-.view-os2web-meetings-search-page .view-header + .view-content {
-  margin-top: 30px;
-}
-
-.view-os2web-meetings-search-page .views-row + .views-row {
-  margin-top: 15px;
+.entity-search-result {padding: 2.4rem;}
+.entity-search-result h1, 
+.entity-search-result h2, 
+.entity-search-result h3, 
+.entity-search-result h4, 
+.entity-search-result h5, 
+.entity-search-result h6 {
+    margin-top: 0;
 }

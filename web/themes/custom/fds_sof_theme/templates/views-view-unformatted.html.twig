@@ -15,16 +15,29 @@
  * @see template_preprocess_views_view_unformatted()
  */
 #}
+
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-{% for row in rows %}
-  {%
-    set row_classes = [
-      default_row_class ? 'views-row',
-    ]
-  %}
-  <div{{ row.attributes.addClass(row_classes) }}>
-    {{- row.content -}}
-  </div>
-{% endfor %}
+
+{% if viewname == 'sektion_nyheder' %}
+  {% set counter = 0 %}
+  {% for row in rows %}
+    {% set counter = counter + 1 %}
+    <div class="{{ (counter < 4) ? 'column-wrap' : 'column-fullwidth' }}">
+      {{- row.content -}}
+    </div>
+  {% endfor %}
+{% else %}
+  {% for row in rows %}
+    {%
+      set row_classes = [
+        default_row_class ? 'views-row',
+      ]
+    %}
+    <div{{ row.attributes.addClass(row_classes) }}>
+      {{- row.content -}}
+    </div>
+  {% endfor %}
+{% endif %}
+

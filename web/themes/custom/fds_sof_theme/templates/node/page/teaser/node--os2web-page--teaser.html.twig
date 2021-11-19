@@ -13,6 +13,7 @@
   </div>
 
   <div class="entity-{{ view_mode|clean_class }}__body">
+    <div class="field--type-timestamp">{{ node.getChangedTime|date('d.m.Y') }}</div>
     {{ content.field_os2web_page_heading }}
 
     {# Begin - body #}

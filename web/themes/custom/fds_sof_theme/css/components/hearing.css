@@ -1,0 +1,129 @@
+.comment-os2web-hearings-hearing-reply-form #edit-preview {display: none; }
+.comment-os2web-hearings-hearing-reply-form .field--name-field-os2web-hearings-reply-arg {
+  position: relative;
+}
+.comment-os2web-hearings-hearing-reply-form .field--name-field-os2web-hearings-reply-arg .form-label {
+  font-weight: 700; 
+}
+.comment-os2web-hearings-hearing-reply-form .field--name-field-os2web-hearings-reply-arg .form-label.form-required:after {
+  margin: 0;
+  background-image: none; }
+.comment-os2web-hearings-hearing-reply-form .field--name-field-os2web-hearings-reply-arg .form-label,
+.comment-os2web-hearings-hearing-reply-form .field--name-field-os2web-hearings-reply-arg .form-hint {
+  margin-left: 0;
+}
+.comment-os2web-hearings-hearing-reply-form .field--name-field-os2web-hearings-reply-arg .form-hint.align-text-right {
+  text-align: left !important;
+}
+.comment-os2web-hearings-hearing-reply-form .form-actions {
+  text-align: right;
+}
+
+.entity-teaser--os2web-hearings-hearing-case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1rem 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .entity-teaser--os2web-hearings-hearing-case .icon {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .entity-teaser--os2web-hearings-hearing-case .field--name-field-os2web-hearings-heading h1, .entity-teaser--os2web-hearings-hearing-case .field--name-field-os2web-hearings-heading h2, .entity-teaser--os2web-hearings-hearing-case .field--name-field-os2web-hearings-heading h3, .entity-teaser--os2web-hearings-hearing-case .field--name-field-os2web-hearings-heading h4, .entity-teaser--os2web-hearings-hearing-case .field--name-field-os2web-hearings-heading h5, .entity-teaser--os2web-hearings-hearing-case .field--name-field-os2web-hearings-heading h6 {
+    margin: 0;
+  }
+  
+  a.entity-teaser--os2web-hearings-hearing-case, a.entity-teaser--os2web-hearings-hearing-case:hover, a.entity-teaser--os2web-hearings-hearing-case:focus, a.entity-teaser--os2web-hearings-hearing-case:active, a.entity-teaser--os2web-hearings-hearing-case:visited {
+    text-decoration: none;
+    color: var(--primary-txt-color); }
+  
+  a.entity-teaser--os2web-hearings-hearing-case:focus {
+    outline-color: var(--outline-color-alt); }
+  
+  .entity-teaser--os2web-hearings-hearing-case__date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.5rem 1rem;
+    -ms-flex-preferred-size: 80px;
+    flex-basis: 80px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: var(--gray-color-000);
+    background-color: var(--tertiary-color); }
+  
+  .entity-teaser--os2web-hearings-hearing-case__date__title {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.2rem; }
+  
+  .entity-teaser--os2web-hearings-hearing-case__date__month {
+    display: block;
+    text-transform: uppercase; }
+  
+  .entity-teaser--os2web-hearings-hearing-case__date__date {
+    display: block;
+    font-size: 1.6rem; }
+  
+  .entity-teaser--os2web-hearings-hearing-case__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.5rem 2.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+    .entity-teaser--os2web-hearings-hearing-case__content .field--name-field-os2web-m-type {
+      font-weight: 700; }
+      .entity-teaser--os2web-hearings-hearing-case__content .field--name-field-os2web-m-type h1, .entity-teaser--os2web-hearings-hearing-case__content .field--name-field-os2web-m-type h2, .entity-teaser--os2web-hearings-hearing-case__content .field--name-field-os2web-m-type h3, .entity-teaser--os2web-hearings-hearing-case__content .field--name-field-os2web-m-type h4, .entity-teaser--os2web-hearings-hearing-case__content .field--name-field-os2web-m-type h5, .entity-teaser--os2web-hearings-hearing-case__content .field--name-field-os2web-m-type h6 {
+        margin: 0; }
+  
+  .entity-teaser--os2web-hearings-hearing-case__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 16px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+  .entity-teaser--os2web-hearings-hearing-case__actions .icon {font-size: 2.5rem;color: var(--primary-color); }
+  .entity-teaser--os2web-hearings-hearing-case__actions a {padding: 2rem; }
+  
+  @media (min-width: 576px) {
+    .paragraph--type--os2web-hearings-search .form-composite {width: 100%;}
+    .paragraph--type--os2web-hearings-search .form-composite .form-radios .form-type-radio {width: 50%;margin-right: 0;}
+  }
+
+  @media (min-width: 768px) {
+    .paragraph--type--os2web-hearings-search .form-composite .form-radios .form-type-radio {width: 30%; }
+  }

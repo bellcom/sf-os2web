@@ -8,7 +8,7 @@
 ] %}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div {{css_name}} {{ attributes.addClass(classes) }}>
     {% block content %}
       <div {{ content_attributes.addClass([container_class]) }}>
         {{ content.field_os2web_paragraphs }}

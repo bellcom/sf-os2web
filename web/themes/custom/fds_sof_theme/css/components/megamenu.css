@@ -1,0 +1,125 @@
+.custom-megamenu {
+    display: none;
+    position: fixed;
+    overflow: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--gray-color-000);
+    background-color: var(--primary-color); 
+}
+.custom-megamenu button:focus,
+.custom-megamenu a:focus {outline-color: var(--outline-color-alt); }
+.custom-megamenu button:hover,
+.custom-megamenu a:hover {outline: 2px solid var(--outline-color-alt); outline-offset: 1px; }
+.custom-megamenu, .custom-megamenu a, .custom-megamenu p {color: var(--gray-color-000); }
+.custom-megamenu .block-language a {font-size: 1.4rem; }
+.custom-megamenu .region-megamenu__search {display: none;max-width: 570px;margin: auto;}
+.custom-megamenu .region-megamenu__search input:focus {outline-color: var(--outline-color-alt); }
+.custom-megamenu .region-megamenu__selfservice {padding-top: 30px; }
+.custom-megamenu .field--name-field-rebild-selfservice-heading + .field--name-field-rebild-selfservice-body {margin-top: 10px; }
+.custom-megamenu h1, .custom-megamenu h2, .custom-megamenu h3, 
+.custom-megamenu h4, .custom-megamenu h5, .custom-megamenu h6 {color: var(--gray-color-000); }
+.custom-megamenu .field--name-field-rebild-selfservice-body {color: var(--gray-color-000); }
+.custom-megamenu .field--name-field-rebild-selfservice-body + .field--name-field-rebild-selfservice-link {margin-top: 15px; }
+.custom-megamenu .field--name-field-rebild-selfservice-link a, 
+.custom-megamenu .field--name-field-rebild-selfservice-link a:hover, 
+.custom-megamenu .field--name-field-rebild-selfservice-link a:focus, 
+.custom-megamenu .field--name-field-rebild-selfservice-link a:visited {color: var(--gray-color-000); }
+.custom-megamenu .field--name-field-rebild-selfservice-link a:after {color: var(--gray-color-000); }
+  
+.custom-megamenu--visible {overflow: hidden;height: 100vh; }
+.custom-megamenu--visible .custom-megamenu {display: block; }
+.custom-megamenu__button {padding: 10px;background-color: transparent;border: 0; }
+.custom-megamenu__button + .custom-megamenu__button {margin-left: 15px; }
+.custom-megamenu__button .icon {height: auto;width: auto;font-size: 3rem;color: var(--gray-color-000); }
+.custom-megamenu__row + .custom-megamenu__row {margin-top: 20px; }
+.custom-megamenu__row--navigation {position: relative; }
+.custom-megamenu__row--navigation .menu-level-0 > li {padding: 0; }
+.custom-megamenu__row--navigation .menu-level-0 > li:before {display: none; }
+.custom-megamenu__row--navigation .menu-level-0 > li > a {font-size: 2rem;font-weight: 700; }
+.custom-megamenu__row--navigation .menu-level-0 > li > a, 
+.custom-megamenu__row--navigation .menu-level-0 > li > a.is-active {text-decoration: none; }
+.custom-megamenu__row--navigation .menu-level-0 > li > a:before {display: none; }
+.custom-megamenu__row--navigation .menu-level-0 > li > a:after {
+    position: absolute;
+    right: 0;
+    font-size: 3rem;
+    font-family: "Material Icons";
+    content: "keyboard_arrow_down";
+    color: var(--gray-color-000);
+}
+.custom-megamenu__row--navigation .menu-level-0 > li.open .menu-level-1 {display: block; }
+.custom-megamenu__row--navigation .menu-level-0 > li.open > a:after {content: "keyboard_arrow_up"; }
+.custom-megamenu__row--navigation .menu-level-1 {display: none; }
+.custom-megamenu__row--navigation .menu-level-1 > li {padding-left: 20px; }
+.custom-megamenu__row--navigation .menu-level-1 > li + li {margin-top: 8px; }
+.custom-megamenu__row--navigation .menu-level-1 > li:before {
+    top: 3px;
+    left: 0;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+.custom-megamenu__row--navigation .vocabulary-os2web-icons {display: none !important; }
+.custom-megamenu__row--navigation .menu {
+    max-width: none !important;
+    margin: 0;
+    padding: 0;
+}
+.custom-megamenu__row--navigation .menu li {list-style: none; }
+.custom-megamenu__row--navigation .menu a {text-decoration: none; }
+.custom-megamenu__row--navigation .menu a, .custom-megamenu__row--navigation .menu a:focus,
+.custom-megamenu__row--navigation .menu a.is-active,
+.custom-megamenu__row--navigation .menu a.is-active:focus {
+    color: var(--gray-color-000);
+}
+.custom-megamenu__row--navigation .menu a.is-active {
+    font-weight: 700;
+    text-decoration: underline;
+}
+.custom-megamenu__row--navigation .menu .field--name-field-os2web-icon {display: none; }
+  
+@media (max-width: 575px) {
+    .custom-megamenu .region-megamenu__selfservice {border-top: 1px solid rgba(255, 255, 255, 0.5); }
+    .custom-megamenu__row--navigation .menu a {display: block; }
+    .custom-megamenu__row--navigation .menu-level-0 > li > a {
+      position: relative;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    .custom-megamenu__row--navigation .menu-level-0 > li + li {border-top: 1px solid rgba(255, 255, 255, 0.5); }
+    .custom-megamenu__row--navigation .menu-level-1 {padding-bottom: 1.5rem; }
+    .custom-megamenu .region-megamenu__search {
+      display: block; }
+    .custom-megamenu .region-megamenu__selfservice {
+      padding-top: 60px; }
+    .custom-megamenu__row--navigation {
+      position: relative; }
+    .custom-megamenu__row--navigation .menu-level-0 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .custom-megamenu__row--navigation .menu-level-0 > li {
+        margin-bottom: 32px;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+    .custom-megamenu__row--navigation .menu-level-0 > li > .menu-dropdown {padding-top: 10px; } 
+}
+@media (min-width: 768px) {
+    .custom-megamenu__row--navigation .menu-level-0 {
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+    }
+    .custom-megamenu__row--navigation .menu-level-0 > li {-ms-flex-preferred-size: 25%;flex-basis: 25%; }
+    .custom-megamenu__row--navigation .menu-level-0 > li > a:after {display: none; }
+    .custom-megamenu__row--navigation .menu-level-1 {display: block; }
+}

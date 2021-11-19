@@ -1,7 +1,9 @@
 {% block paragraph %}
-  {% block content %}
-    {{ content.field_os2web_spotbox_reference_h }}
-    {{ content.field_os2web_spotbox_ref_subhead }}
-    {{ content.field_os2web_spotbox_reference }}
-  {% endblock %}
+  <div class="spotbox-wrapper {{ 'layout-' ~ grid_type }}">
+    {% block content %}
+      {{ content.field_os2web_spotbox_reference_h }}
+      {{ content.field_os2web_spotbox_ref_subhead }}
+      {{ content.field_os2web_spotbox_reference }}
+    {% endblock %}
+  </div>
 {% endblock paragraph %}

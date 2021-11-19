@@ -1,0 +1,26 @@
+/* dkfds overrides and additions (can use varsfor various settings) */
+.tag {
+  --tag-spacing: .8em; /* org: 8px */
+  width: 100%;
+  padding-left: var(--tag-spacing);
+  padding-right: var(--tag-spacing);
+  margin-right: var(--tag-spacing);
+  margin-bottom: var(--tag-spacing);
+  color: var(--gray-color-000);
+  background-color: var(--gray-color-500);
+  line-height: 2.2rem;
+}
+.tag.tag-icon {padding-left: var(--tag-spacing);}
+.tag + .tag {margin-bottom: var(--tag-spacing); }
+.tag:hover, .tag.tag-hover {background-color: var(--gray-color-300); }
+.tag:active, .tag.tag-active {background-color: var(--gray-color-800); }
+.tag.focus, .tag:focus {background-color: var(--gray-color-500); }
+.tag.focus, .tag:focus {
+  border-color: var(--border-color);
+  outline-color: var(--outline-color);
+}
+@media (min-width: 576px) {
+  .tag {width: auto; } 
+}
+  
+ 

@@ -1,0 +1,39 @@
+/* dkfds overrides and additions (todo: use more vars for various settings) */
+.card {
+    -webkit-box-shadow: 0 2px 4px 0 var(--gray-color-200);
+    box-shadow: 0 2px 4px 0 var(--gray-color-200);
+    border: 1px solid var(--border-color);
+    background: var(--gray-color-000);
+}
+.card-header {
+    background-color: var(--gray-color-000);
+}
+.card-header .header-title {
+  line-height: 2.2rem;
+  color: var(--gray-color-800);
+  letter-spacing:-0.1px;  
+}
+.card-header .header-title.large-text {
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+  color: var(--gray-color-500);
+}
+.card-header .sub-header {
+  line-height: 2.2rem;
+  color: var(--gray-color-300);
+}
+.card-text {
+  background-color: var(--gray-color-000);
+}
+.card-text .text {line-height: 2.2rem;color: var(--gray-color-500);}
+.card-content {line-height: 2.2rem;color: var(--gray-color-500);}
+.card-action {line-height: 2.2rem;color: var(--gray-color-500);}
+
+@media (min-width: 576px) {
+    .card-action .action-buttons .button + .button, .card-action .action-buttons .node__links a + .button, .node__links .card-action .action-buttons a + .button, .card-action .action-buttons .node__links .button + a, .node__links .card-action .action-buttons .button + a, .card-action .action-buttons .node__links a + a, .node__links .card-action .action-buttons a + a {
+      margin-left: 0px;
+    }
+    .card-action .action-buttons .button + .button:first-child, .card-action .action-buttons .node__links a + .button:first-child, .node__links .card-action .action-buttons a + .button:first-child, .card-action .action-buttons .node__links .button + a:first-child, .node__links .card-action .action-buttons .button + a:first-child, .card-action .action-buttons .node__links a + a:first-child, .node__links .card-action .action-buttons a + a:first-child {
+      margin-left: 0;
+    } 
+}

@@ -1,0 +1,167 @@
+/* added root vars for colors etc. */
+:root {
+    /* calculation max width, no need to use media queries
+     it also takes padding into account, no need to specify padding
+     when container width is less than max, margin left/right will be equal to --base-padding
+    */
+    --max-width: calc(100% - (2 * max(calc((100% - (var(--max-container-width))) / 2), var(--base-padding))));
+  
+    --padding-container-sides: 16px;
+    
+    /*--primary-color: #00a2eb;*/
+    --primary-color: hsl(199, 100%, 46%);
+    --primary-color-400: hsl(199, 100%, 60%);
+    --primary-color-200: hsl(199, 100%, 80%);
+    --primary-color-100: hsl(199, 100%, 90%);
+    --primary-color-50: hsl(199, 100%, 95%);
+    
+    --primary-alt-color: #C0D6CB;
+    --secondary-color: #fde571;
+    --tertiary-color: #76ccbc;
+  
+    --dark-bg-color: #002412;
+    
+    --primary-txt-color: #1f2023;
+    --secondary-txt-color: var(--dark-bg-color);
+  
+    --secondary-border-color: var(--dark-bg-color);
+  
+    --ok-bg-color: #eeffe2;
+    --ok-txt-color: #358000;
+    --ok-border-color: var(--ok-txt-color);
+  
+    --error-bg-color: #ffe0e0;
+    --error-txt-color: #b63433;
+    --error-border-color: var(--error-txt-color);
+  
+    /* grays */
+    --gray-color-900: hsl(0, 0%, 0%);
+    --gray-color-800: hsl(0, 0%, 7.5%);
+    --gray-color-600: hsl(0, 0%, 15%);
+    --gray-color-500: hsl(0, 0%, 32.5%);
+    --gray-color-300: hsl(0, 0%, 50%);
+    --gray-color-200: hsl(0, 0%, 67.5%);
+    --gray-color-100: hsl(0, 0%, 85%);
+    --gray-color-000: hsl(0, 0%, 100%);
+  
+    --border-color: var(--gray-color-300);
+    --outline-color: var(--border-color);
+    --outline-color-alt: var(--primary-color);
+    --link-color: var(--primary-color);
+    --link-focus-color: var(--primary-color);
+    --link-visited-color: var(--primary-color);
+    --link-disabled-color: var(--gray-color-500);
+    --darkbg-link-color: var(--gray-color-000);
+    --darkbg-link-disabled-color: var(--gray-color-300);
+    
+    --body-txt-color: var(--primary-txt-color);;
+    --font-lead-txt-color: var(--primary-txt-color);;
+    --function-link-txt-color: var(--primary-txt-color);;
+    --function-link-hover-txt-color: var(--primary-txt-color);;
+    
+    --h1-txt-color: var(--secondary-txt-color);
+    --h2-txt-color: var(--secondary-txt-color);
+    --h3-txt-color: var(--secondary-txt-color);
+    --h4-txt-color: var(--secondary-txt-color);
+    --h5-txt-color: var(--secondary-txt-color);
+    --h6-txt-color: var(--secondary-txt-color);
+    --form-label-txt-color: var(--secondary-txt-color);
+    --back-link-txt-color: var(--secondary-txt-color);
+    --back-link-hover-txt-color: var(--secondary-txt-color);
+  
+    --body-bg-color: var(--gray-color-000);
+    --body-bg-color-frontpage: transparent;
+    --body-txt-color: var(--secondary-txt-color);
+  
+    --base-padding: 1.5rem;
+    --base-padding: 2rem;
+    --base-padding-half: calc(var(--base-padding) / 2);
+    
+    --max-container-width: 1170px;
+  
+    --spotbox-icon-size: 8rem;
+    --spotbox-padding: var(--base-padding);
+  
+    /* box shadows */
+    --box-shadow-style-01: 0 0 5px #00000029;
+  
+    /* bade color vars */
+    --badge-txt-color: var(--gray-color-000);
+    --badge-bg-color: var(--secondary-txt-color);
+  
+    --badge-large-txt-color: var(--badge-txt-color);
+    --badge-large-bg-color: var(--badge-bg-color);
+  
+    --badge-small-txt-color: var(--badge-txt-color);
+    --badge-small-bg-color: var(--badge-bg-color);
+  
+    --badge-info-txt-color: var(--badge-bg-color);
+    --badge-info-bg-color: var(--primary-color-50);
+    
+    --badge-success-txt-color: var(--badge-bg-color);
+    --badge-success-bg-color: var(--ok-bg-color);
+    
+    --badge-warning-txt-color: var(--badge-bg-color);
+    --badge-warning-bg-color: var(--secondary-color);
+    
+    --badge-error-txt-color: var(--badge-bg-color);
+    --badge-error-bg-color: var(--error-bg-color);
+
+    /* fluid font sizes:
+    fluid type, not perfect as of now
+    see: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+    */
+    --fluid-font-size-medium: clamp(1rem, 5vw, 3rem);
+    --fluid-font-size-large: clamp(3rem, -0.875rem + 8.333vw, 10rem);
+    
+  
+    /* SVGs: not used at the moment ..... */
+    --icon-add: "../images/svg-icons/add.svg";
+    --icon-alert-outline: "../images/svg-icons/alert-outline.svg";
+    --icon-angle-arrow-down: "../images/svg-icons/angle-arrow-down.svg";
+    --icon-angle-arrow-up: "../images/svg-icons/angle-arrow-up.svg";
+    --icon-arrow-left: "../images/svg-icons/arrow-left.svg";
+    --icon-arrow-right: "../images/svg-icons/arrow-right.svg";
+    --icon-book-open: "../images/svg-icons/book-open.svg";
+    --icon-calendar: "../images/svg-icons/calendar.svg";
+    --icon-cash-multiple: "../images/svg-icons/cash-multiple.svg";
+    --icon-check: "../images/svg-icons/check.svg";
+    --icon-check-circle-outline: "../images/svg-icons/check-circle-outline.svg";
+    --icon-chevron-left: "../images/svg-icons/chevron-left.svg";
+    --icon-chevron-right: "../images/svg-icons/chevron-right.svg";
+    --icon-close: "../images/svg-icons/close.svg";
+    --icon-close-circle: "../images/svg-icons/close-circle.svg";
+    --icon-close-circle-outline: "../images/svg-icons/close-circle-outline.svg";
+    --icon-content-save: "../images/svg-icons/content-save.svg";
+    --icon-delete: "../images/svg-icons/delete.svg";
+    --icon-delete-outline: "../images/svg-icons/delete-outline.svg";
+    --icon-dots-vertical: "../images/svg-icons/dots-vertical.svg";
+    --icon-download: "../images/svg-icons/download.svg";
+    --icon-error: "../images/svg-icons/error.svg";
+    --icon-file: "../images/svg-icons/file.svg";
+    --icon-file-document-box: "../images/svg-icons/file-document-box.svg";
+    --icon-folder-multiple: "../images/svg-icons/folder-multiple.svg";
+    --icon-help: "../images/svg-icons/help.svg";
+    --icon-help-circle-outline: "../images/svg-icons/help-circle-outline.svg";
+    --icon-info: "../images/svg-icons/info.svg";
+    --icon-language: "../images/svg-icons/language.svg";
+    --icon-magnify: "../images/svg-icons/magnify.svg";
+    --icon-menu-down: "../images/svg-icons/menu-down.svg";
+    --icon-menu-left: "../images/svg-icons/menu-left.svg";
+    --icon-menu-right: "../images/svg-icons/menu-right.svg";
+    --icon-menu-up: "../images/svg-icons/menu-up.svg";
+    --icon-message: "../images/svg-icons/message.svg";
+    --icon-minus: "../images/svg-icons/minus.svg";
+    --icon-open-in-new: "../images/svg-icons/open-in-new.svg";
+    --icon-pencil: "../images/svg-icons/pencil.svg";
+    --icon-plus: "../images/svg-icons/plus.svg";
+    --icon-printer: "../images/svg-icons/printer.svg";
+    --icon-refresh: "../images/svg-icons/refresh.svg";
+    --icon-save: "../images/svg-icons/save.svg";
+    --icon-settings: "../images/svg-icons/settings.svg";
+    --icon-sort-acending: "../images/svg-icons/sort-acending.svg";
+    --icon-sort-descending: "../images/svg-icons/sort-descending.svg";
+    --icon-sort-none: "../images/svg-icons/sort-none.svg";
+    --icon-success: "../images/svg-icons/success.svg";
+    --icon-warning: "../images/svg-icons/warning.svg";
+}

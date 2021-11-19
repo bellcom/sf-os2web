@@ -14,8 +14,14 @@
 
   <div class="entity-{{ view_mode|clean_class }}__body">
     {{ content.field_os2web_news_article_date }}
+    {% if viewname == 'sektion_nyheder' %}
+    <a href="{{ url }}" aria-label="{{ 'Read more about' | trans }} {{ node.field_os2web_news_heading.value }}">
+      {{ content.field_os2web_news_heading }}
+    </a>
+    {% else %}
     {{ content.field_os2web_news_heading }}
-
+    {% endif %}
+    
     {% set text = content.field_os2web_news_description | render %}
     <div class="field field--type-body">
       {{ text | striptags }}

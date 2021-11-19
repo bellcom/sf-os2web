@@ -7,3 +7,22 @@
 .field--name-field-os2web-contact-heading h6 {
   margin-top: 0;
 }
+
+/* Contact form. */
+.paragraph--type--os2web-contact-form .form-input,
+.paragraph--type--os2web-contact-form .form-email,
+.paragraph--type--os2web-contact-form .form-select {max-width: none; }
+.paragraph--type--os2web-contact-form .form-actions {text-align: right; }
+.paragraph--type--os2web-contact-form #edit-preview {display: none; }
+.paragraph--type--os2web-contact-form .form-submit {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 30px;
+}
+.paragraph--type--os2web-contact-form .form-submit, 
+.paragraph--type--os2web-contact-form .form-submit:hover, 
+.paragraph--type--os2web-contact-form .form-submit:focus {
+  font-weight: 700;
+  color: var(--gray-color-000);
+  background-color: var(--primary-color);
+}

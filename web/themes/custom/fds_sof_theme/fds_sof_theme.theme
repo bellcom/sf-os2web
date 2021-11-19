@@ -3,18 +3,61 @@ include(dirname(__FILE__) . '/include/settings.inc');
 
 use Drupal\Component\Utility\Html;
 use Drupal\image\Entity\ImageStyle;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function fds_sof_theme_preprocess_page(array &$variables) {
+
+  // Theme settings
+  $variables['theme_settings'] = _fds_sof_theme_collect_theme_settings();
+}
 
 /**
  * Preprocess variables for html templates.
  * @param $variables
  */
 function fds_sof_theme_preprocess_html(&$variables) {
+  
   $variables['path_info']['args'] = FALSE;
   $path = \Drupal::service('path.current')->getPath();
   $path_args = explode('/', $path);
 
   if (count($path_args) >= 3) {
     $variables['path_info']['args'] = Html::cleanCssIdentifier(ltrim($path, '/'));
+  }
+  
+}
+
+function fds_sof_theme_preprocess(&$variables, $hook) {
+  $path = \Drupal::service('path.current')->getPath();
+  if ($path == '/search/site') {
+    if (\Drupal::request()->query->has('keys')) {
+      $variables['searchedfor'] = \Drupal::request()->query->get('keys');
+    }
+  }
+
+  if ($path == '/search/site') {
+    if (\Drupal::request()->query->has('keys')) {
+      //$keywords = \Drupal::request()->query->get('keys');
+      //echo "... Search Results for " . $keywords;
+      $variables['searchedfor'] = \Drupal::request()->query->get('keys');
+    }
+  }
+
+  $variables['viewname'] = "";
+  if ($path == '/sektion/nyheder') {
+    $variables['viewname'] = 'sektion_nyheder';
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ */
+function fds_sof_theme_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+	  $suggestions[] = 'page__' . $node->bundle();
   }
 }
 
@@ -25,16 +68,31 @@ function fds_sof_theme_preprocess_menu(&$variables, $hook) {
 
   if ($hook == 'menu') {
     $current_path = \Drupal::request()->getRequestUri();
+    $settings = _fds_sof_theme_collect_theme_settings();
 
     foreach ($variables['items'] as &$item) {
-
-      if ($item['in_active_trail']) {
-
-        if ($item['url']->toString() == $current_path) {
-          $item['is_active'] = TRUE;
-        } elseif (count($item['below'])) {
-          _fds_sof_theme_menu_process_submenu($item['below'], $current_path);
+      
+      // pm@bellcom: if menu item exists in social settings, add url from settings
+      if ($item['url']->toString() == '') {
+        if (array_key_exists($item['title'], $settings['social'])) {
+          $sociallnk = $settings['social'][$item['title']];
+          if ($sociallnk['active'] && ($sociallnk['url'] != '')) {
+            $item['url'] = $sociallnk['url'];
+            $item['attributes']['class'] = "social-media-list type-".$item['title'];
+            $item['sociallink'] = true;
+            $item['target'] = "_blank";
+            $item['class'] = "social-icon social-icon--".$item['title'];
+            $item['tooltip'] = $sociallnk['tooltip'];
+          }
         }
+      }
+      
+      if ($item['in_active_trail']) {
+          if ($item['url']->toString() == $current_path) {
+            $item['is_active'] = TRUE;
+          } elseif (count($item['below'])) {
+            _fds_sof_theme_menu_process_submenu($item['below'], $current_path);
+          }
       }
     }
   }
@@ -53,15 +111,6 @@ function _fds_sof_theme_menu_process_submenu(&$submenu, $current_path) {
       }
     }
   }
-}
-
-/**
- * Implements hook_preprocess_page().
- */
-function fds_sof_theme_preprocess_page(array &$variables) {
-
-  // Theme settings
-  $variables['theme_settings'] = _fds_sof_theme_collect_theme_settings();
 }
 
 /**
@@ -108,6 +157,38 @@ function fds_sof_theme_preprocess_node(&$variables) {
   // Entity variables
   $variables['attributes']['class'][] = HTML::cleanCssIdentifier('entity-' . $view_mode);
   $variables['attributes']['class'][] = HTML::cleanCssIdentifier('entity-' . $view_mode . '--' . $node->getType());
+
+  // setting author for newspage
+  // if user is found => renderes a html mailto link with the email of the found user
+  // else a mailto link to the shop email is rendered
+  if ($node->getType() === 'os2web_news') {
+    $newsAuthor = $node->field_os2web_news_article_author->value;
+    if (strlen($newsAuthor)>0) {
+      if ($variables['author_name'] != $newsAuthor) {
+        $user =  user_load_by_name($newsAuthor);
+        if ($user !== false) {
+          $variables['author_name'] = [
+            '#type' => 'inline_template',
+            '#template' => '<a href="mailto:{{ mail }}">{{ name }}</a>',
+            '#context' => [
+              'mail' => $user->mail->value,
+              'name' => $user->name->value,
+            ],
+          ];
+        } else {
+          $themeSettings = _fds_sof_theme_collect_theme_settings();
+          $variables['author_name'] = [
+            '#type' => 'inline_template',
+            '#template' => '<a href="mailto:{{ mail }}">{{ name }}</a>',
+            '#context' => [
+              'mail' => $themeSettings["contact_information"]["email"],
+              'name' => $newsAuthor,
+            ],
+          ];
+        };
+      };
+    };
+  };
 }
 
 /**
@@ -222,6 +303,9 @@ function fds_sof_theme_preprocess_paragraph__os2web_wrapper(&$variables) {
   if ($paragraph->field_os2web_bg_color && $paragraph->field_os2web_bg_color->value) {
     $variables['background_color'] = $paragraph->field_os2web_bg_color->value;
   }
+  //if ($paragraph->field_css_name && $paragraph->field_css_name->value) {
+  //  $variables['css_name'] = 'data-name=' . $paragraph->field_css_name->value;
+  //}
 }
 
 /*
@@ -302,25 +386,49 @@ function fds_sof_theme_preprocess_os2web_spotbox__image(array &$variables) {
 
 function fds_sof_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   if ($form_id == 'mailchimp_signup_subscribe_block_mailchimp_signup_form') {
+    // remove title
     unset( $form['mergevars']['EMAIL']['#title']);
+    // add a placeholder
     $form['mergevars']['EMAIL']['#attributes'] = array('placeholder'=> t('Your email'),);
-    //$form['mailchimp_lists']['#weight'] = 9999;
+    // remove lists
     unset( $form['mailchimp_lists']);
-    
-
-    //$form["description"] = "Tilmeld dig Skole og Forældres nyhedsbrev.";
-    /*
-    echo "<pre>";
-    var_dump(array_keys($form));
-    echo "<br/>";
-    print_r($form["#token"]);
-    //drupal_set_message('<pre>' . print_r($form) . '</pre>');
-    //print_r($form); 
-    //echo "</pre>";
-    echo "<hr>";
-    die($form_id);*/
   }
-  //if (in_array($form_id, ['search_block_form', 'search_form'])) {
-  //  $form['keys']['#attributes']['placeholder'] = t('Search...');
-  //}
+}
+
+/**
+ * Add suggestions by keys
+ * implements hook_theme_suggestions_alter()
+ *
+ * @param array $suggestions
+ *      Existing suggestions
+ * @param array $variables
+ *      Element variables
+ * @param string $hook
+ *      Original hook
+ */
+function fds_sof_theme_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+  if (isset($variables['element']['#form_id'])) {
+    $element = $variables['element'];
+    $formid = str_replace('-', '_', $element['#form_id']);
+    $suggestions[] = $hook . '__' . $formid;
+    $suggestions[] = $hook . '__' . $element['#type'] . '__' . $formid;
+    if (isset($variables['element']['#name'])) {
+      $suggestions[] = $hook . '__' . $element['#name'] . '__' . $formid;
+      if (isset($variables['element']['#type']))
+        $suggestions[] = $hook . '__' . $element['#name'] . '__' . $element['#type'] . '__' . $formid;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for item_list__search_results.
+ */
+function fds_sof_theme_preprocess_item_list__search_results(array &$variables) {
+  // The $pager_total_items variable is a global
+  // array keyed by the pager element increments.
+  global $pager_total_items;
+
+  // Assuming you have one paged list on your page only,
+  // the element's key should be 0.
+  $variables['total_items_count'] = isset($pager_total_items[0]) ? $pager_total_items[0] : 0;
 }

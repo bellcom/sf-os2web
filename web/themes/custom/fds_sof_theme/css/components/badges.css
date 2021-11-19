@@ -1,0 +1,20 @@
+/* dkfds overrides and additions (todo: use more vars for various settings) */
+.badge {
+    color: var(--badge-txt-color);
+    background: var(--badge-bg-color);
+}
+.badge.badge-large {
+    color: var(--badge-large-txt-color);
+    background-color: var(--badge-large-bg-color);
+    line-height: 2.2rem;
+}
+.badge.badge-small {
+    color: var(--badge-small-txt-color);;
+    background-color: var(--badge-small-bg-color);;
+}
+.badge.badge-info {color: var(--badge-info-txt-color); background-color: var(--badge-info-bg-color);}
+.badge.badge-success {color: var(--badge-success-txt-color); background-color: var(--badge-success-bg-color);}
+.badge.badge-warning {color: var(--badge-warning-txt-color); background-color: var(--badge-warning-bg-color);}
+.badge.badge-error {color: var(--badge-error-txt-color); background-color: var(--badge-error-bg-color);}
+
+

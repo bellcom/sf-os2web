@@ -1,0 +1,128 @@
+/* dkfds overrides and additions (todo: use more vars for various settings) */
+.accordion-button, .tabnav > button {
+    background-color: var(--gray-color-100);
+    background-image: url("../images/svg-icons/minus.svg");
+    color: var(--gray-color-800);
+    line-height: 2.2rem;
+}
+.accordion-button:hover, .tabnav > button:hover {background-color: var(--gray-color-100); color: var(--gray-color-900);}
+.accordion-button .accordion-icon .icon-svg, .tabnav > button .accordion-icon .icon-svg {
+  fill: var(--gray-color-800);
+}
+.accordion-button .accordion-icon:hover .icon-svg, .tabnav > button .accordion-icon:hover .icon-svg{
+  fill: var(--gray-color-900);
+}
+.accordion-bordered .accordion-button, .accordion-bordered .tabnav > button {
+  border: 1px solid var(--border-color);
+}
+.accordion, .tabnav,
+.accordion-bordered {
+    color: var(--gray-color-800);
+}
+
+.accordion > ul li ul, .tabnav > ul li ul,
+.accordion-bordered > ul li ul {list-style: disc; }
+.accordion > ul li ul > li > ul, .tabnav > ul li ul > li > ul,
+.accordion-bordered > ul li ul > li > ul {list-style: circle; }
+.accordion > ul li ul > li > ul > li > ul, .tabnav > ul li ul > li > ul > li > ul,
+.accordion-bordered > ul li ul > li > ul > li > ul {list-style: square; }
+
+.accordion > li, .tabnav > li,
+.accordion-bordered > li {
+    background-color: var(--gray-color-100);
+}
+
+.accordion-bordered .accordion-content, .accordion-bordered .tabnav-panel {
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-radius: 0 0 3px 3px; 
+}
+
+  
+.accordion-content, .tabnav-panel {background-color: var(--gray-color-000);overflow: auto;padding: 1.6rem; }
+.accordion-content > *:first-child, .tabnav-panel > *:first-child {margin-top: 0; }
+.accordion-content > *:last-child, .tabnav-panel > *:last-child {margin-bottom: 0; }
+.accordion-content:not([aria-hidden]), .tabnav-panel:not([aria-hidden]) {display: none; }
+.accordion-content[aria-hidden=true], .tabnav-panel[aria-hidden=true] {display: none; }
+.accordion-button[aria-describedby="error-message"], .tabnav > button[aria-describedby="error-message"],
+.accordion-button.accordion-error,
+.tabnav > button.accordion-error {border: solid 2px var(--error-border-color) !important; }
+.accordion-button[aria-expanded=true], .tabnav > button[aria-expanded=true] {
+background-color: var(--gray-color-100);
+}
+.accordion-bordered .accordion-button[aria-expanded=true], .accordion-bordered .tabnav > button[aria-expanded=true] {
+    border-bottom: 1px solid var(--gray-color-200);
+}
+  
+.accordion-button[aria-expanded=false], .tabnav > button[aria-expanded=false] {
+    background-image: url("../images/svg-icons/plus.svg");
+    background-repeat: no-repeat;
+    background-size: 2.4rem;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.accordion-button, .tabnav > button {
+    position: relative;
+    padding: 1.6rem 2.4rem;
+    padding-right: 6rem;
+    font-weight: 700;
+    border-radius: 0 !important;
+    background-image: none !important; }
+    .accordion-button, .tabnav > button, .accordion-button:hover, .tabnav > button:hover, .accordion-button:focus, .tabnav > button:focus {
+      background-color: var(--gray-color-000); }
+    .accordion-button:after, .tabnav > button:after {
+      position: absolute;
+      top: 1.6rem;
+      right: 2.4rem;
+      font-size: 4rem;
+      font-family: FontAwesome;
+      content: "";
+      color: var(--primary-color); }
+    .accordion-button[aria-expanded=true], .tabnav > button[aria-expanded=true], .accordion-button[aria-expanded="true"]:hover, .tabnav > button[aria-expanded="true"]:hover, .accordion-button[aria-expanded="true"]:focus, .tabnav > button[aria-expanded="true"]:focus {
+      background-color: var(--gray-color-000); }
+    .accordion-button[aria-expanded="true"]:after, .tabnav > button[aria-expanded="true"]:after {
+      content: ""; }
+  
+  .accordion-content, .tabnav-panel {
+    padding: 0.5rem 2.4rem 2rem 2.4rem; }
+    .accordion-content .field + .field--name-field-os2web-hearings-reply-docs, .tabnav-panel .field + .field--name-field-os2web-hearings-reply-docs {
+      margin-top: 16px; }
+  
+  .accordion-close-button {
+    display: block;
+    margin-left: -2.4rem;
+    margin-right: -2.4rem;
+    margin-bottom: -2rem;
+    padding: 2rem 0 3rem 0;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    border: 0;
+    color: var(--primary-color);
+    background-color: transparent; }
+    .accordion-close-button:focus {
+      outline: 0; }
+  
+  .accordion .box__body h1, .tabnav .box__body h1, 
+  .accordion .box__body h2, .tabnav .box__body h2, 
+  .accordion .box__body h3, .tabnav .box__body h3, 
+  .accordion .box__body h4, .tabnav .box__body h4, 
+  .accordion .box__body h5, .tabnav .box__body h5, 
+  .accordion .box__body h6, .tabnav .box__body h6 {margin-top: 0; }
+
+.accordion-content:not(.field--widget-text-textarea) ul, .tabnav-panel:not(.field--widget-text-textarea) ul,
+.field--type-text-long:not(.field--widget-text-textarea) ul {
+  padding-left: 0;
+  list-style-type: none;
+  color: var(--primary-txt-color);
+  line-height: 2.2rem;
+}
+.accordion-content:not(.field--widget-text-textarea) ul li, .tabnav-panel:not(.field--widget-text-textarea) ul li,
+.field--type-text-long:not(.field--widget-text-textarea) ul li {
+  margin-top: 8px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 40px !important;
+  line-height: 2.2rem;
+}

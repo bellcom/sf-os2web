@@ -31,6 +31,9 @@
   {%- set wrapper_attributes = wrapper_attributes.addClass('item-list--' ~ context.list_style) %}
   {%- set attributes = attributes.addClass('item-list__' ~ context.list_style) %}
 {% endif %}
+
+<h3>Din søgning på "{{ searchedfor }}" gav {{total_items_count}} resultater.</h3>
+          
 {% if items or empty -%}
   <div{{ wrapper_attributes.addClass('item-list') }}>
     {%- if title is not empty -%}

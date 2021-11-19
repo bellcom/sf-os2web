@@ -1,0 +1,26 @@
+/* dkfds overrides and additions (todo: use vars for various settings) */
+.alert {
+    background-color: var(--gray-color-100);
+    border-left: 8px solid var(--gray-color-300);
+}
+.alert.alert--paragraph{
+    max-width:100%;
+}
+.alert .alert-close {
+    color: var(--gray-color-800);
+}
+.alert .alert-heading {
+    color: var(--primary-txt-color);
+}
+.alert .alert-text {
+    color: var(--primary-txt-color);
+    max-width:100%;
+}
+.alert-success {background-color: var(--ok-bg-color);border-color: var(--ok-border-color); }
+.alert-success.alert--show-icon {background-image: url("../images/svg-icons/success.svg");}
+.alert-warning {background-color: var(--secondary-color); border-color: var(--primary-color); }
+.alert-warning.alert--show-icon {background-image: url("../images/svg-icons/warning.svg");}
+.alert-error {background-color: var(--error-bg-color);border-color: var(--error-border-color); }
+.alert-error.alert--show-icon {background-image: url("../images/svg-icons/error.svg");}
+.alert-info {background-color: var(--primary-color-50); border-color: var(--primary-color); }
+.alert-info.alert--show-icon {background-image: url("../images/svg-icons/info.svg");}

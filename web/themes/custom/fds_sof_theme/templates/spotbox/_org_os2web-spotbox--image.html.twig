@@ -25,9 +25,21 @@
   background_color ? ('spotbox--background-color-' ~ background_color),
 ] %}
 <a href="{{ spotbox_url }}" {{ attributes.addClass(classes) }}>
-  {{ content.field_os2web_spotbox_icon }}
-  <div class="body">
-    <h3 class="h4">{{ spotbox_heading }}</h3>
-    {{ content.field_os2web_spotbox_link_text }}
+  <div class="row">
+    <div class="col-12 col-sm-4 col-md-5 col--align-center">
+      <div class="spotbox__image">
+        {{ content.field_os2web_spotbox_bg_image }}
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-8 col-md-7 col--align-center">
+      <div class="spotbox__content">
+        <div class="field--name-field-os2web-spotbox-heading">
+          <h3 class="h4">{{ spotbox_heading }}</h3>
+        </div>
+
+        {{ content.field_os2web_spotbox_link_text }}
+      </div>
+    </div>
   </div>
 </a>
