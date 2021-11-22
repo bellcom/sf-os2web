@@ -1,5 +1,5 @@
 /** easy-mega-menu **************************************/
-ul.simple-mega-menu {margin:0;display:flex; justify-content: end;}
+ul.simple-mega-menu {z-index:300;margin:0;display:flex; justify-content: flex-end;}
 ul.simple-mega-menu li:before {content:'';}
 ul.simple-mega-menu>li {display: flex; align-items: center; 
     font-size: 2.41rem;

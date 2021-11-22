@@ -30,6 +30,20 @@ function fds_sof_theme_preprocess_html(&$variables) {
   
 }
 
+/**
+ * Preprocess view, Make sure title is available if set.
+ * @param $variables
+ */
+
+function fds_sof_theme_preprocess_views_view(&$variables) {
+  $view = $variables['view'];
+  $title = $view->getTitle();
+  $variables['title'] = [
+    '#markup' => $title,
+  ];
+  //echo $view->getTitle();
+}
+
 function fds_sof_theme_preprocess(&$variables, $hook) {
   $path = \Drupal::service('path.current')->getPath();
   if ($path == '/search/site') {
@@ -40,14 +54,14 @@ function fds_sof_theme_preprocess(&$variables, $hook) {
 
   if ($path == '/search/site') {
     if (\Drupal::request()->query->has('keys')) {
-      //$keywords = \Drupal::request()->query->get('keys');
-      //echo "... Search Results for " . $keywords;
       $variables['searchedfor'] = \Drupal::request()->query->get('keys');
     }
   }
 
+  //echo "x:>" .  $variables['viewname'] . "|";
+
   $variables['viewname'] = "";
-  if ($path == '/sektion/nyheder') {
+  if (($path == '/sektion/nyheder')) {
     $variables['viewname'] = 'sektion_nyheder';
   }
 }
@@ -432,3 +446,10 @@ function fds_sof_theme_preprocess_item_list__search_results(array &$variables) {
   // the element's key should be 0.
   $variables['total_items_count'] = isset($pager_total_items[0]) ? $pager_total_items[0] : 0;
 }
+
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+//function fds_sof_theme_preprocess_page__product(array &$variables) {
+  //$variables['related_products'] = views_embed_view('content_list', 'block_1');
+//}

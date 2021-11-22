@@ -45,6 +45,8 @@
     --gray-color-000: hsl(0, 0%, 100%);
   
     --border-color: var(--gray-color-300);
+    --border-color-form-input: var(--border-color);
+
     --outline-color: var(--border-color);
     --outline-color-alt: var(--primary-color);
     --link-color: var(--primary-color);
@@ -70,7 +72,6 @@
     --back-link-hover-txt-color: var(--secondary-txt-color);
   
     --body-bg-color: var(--gray-color-000);
-    --body-bg-color-frontpage: transparent;
     --body-txt-color: var(--secondary-txt-color);
   
     --base-padding: 1.5rem;
@@ -116,52 +117,52 @@
     
   
     /* SVGs: not used at the moment ..... */
-    --icon-add: "../images/svg-icons/add.svg";
-    --icon-alert-outline: "../images/svg-icons/alert-outline.svg";
-    --icon-angle-arrow-down: "../images/svg-icons/angle-arrow-down.svg";
-    --icon-angle-arrow-up: "../images/svg-icons/angle-arrow-up.svg";
-    --icon-arrow-left: "../images/svg-icons/arrow-left.svg";
-    --icon-arrow-right: "../images/svg-icons/arrow-right.svg";
-    --icon-book-open: "../images/svg-icons/book-open.svg";
-    --icon-calendar: "../images/svg-icons/calendar.svg";
-    --icon-cash-multiple: "../images/svg-icons/cash-multiple.svg";
-    --icon-check: "../images/svg-icons/check.svg";
-    --icon-check-circle-outline: "../images/svg-icons/check-circle-outline.svg";
-    --icon-chevron-left: "../images/svg-icons/chevron-left.svg";
-    --icon-chevron-right: "../images/svg-icons/chevron-right.svg";
-    --icon-close: "../images/svg-icons/close.svg";
-    --icon-close-circle: "../images/svg-icons/close-circle.svg";
-    --icon-close-circle-outline: "../images/svg-icons/close-circle-outline.svg";
-    --icon-content-save: "../images/svg-icons/content-save.svg";
-    --icon-delete: "../images/svg-icons/delete.svg";
-    --icon-delete-outline: "../images/svg-icons/delete-outline.svg";
-    --icon-dots-vertical: "../images/svg-icons/dots-vertical.svg";
-    --icon-download: "../images/svg-icons/download.svg";
-    --icon-error: "../images/svg-icons/error.svg";
-    --icon-file: "../images/svg-icons/file.svg";
-    --icon-file-document-box: "../images/svg-icons/file-document-box.svg";
-    --icon-folder-multiple: "../images/svg-icons/folder-multiple.svg";
-    --icon-help: "../images/svg-icons/help.svg";
-    --icon-help-circle-outline: "../images/svg-icons/help-circle-outline.svg";
-    --icon-info: "../images/svg-icons/info.svg";
-    --icon-language: "../images/svg-icons/language.svg";
-    --icon-magnify: "../images/svg-icons/magnify.svg";
-    --icon-menu-down: "../images/svg-icons/menu-down.svg";
-    --icon-menu-left: "../images/svg-icons/menu-left.svg";
-    --icon-menu-right: "../images/svg-icons/menu-right.svg";
-    --icon-menu-up: "../images/svg-icons/menu-up.svg";
-    --icon-message: "../images/svg-icons/message.svg";
-    --icon-minus: "../images/svg-icons/minus.svg";
-    --icon-open-in-new: "../images/svg-icons/open-in-new.svg";
-    --icon-pencil: "../images/svg-icons/pencil.svg";
-    --icon-plus: "../images/svg-icons/plus.svg";
-    --icon-printer: "../images/svg-icons/printer.svg";
-    --icon-refresh: "../images/svg-icons/refresh.svg";
-    --icon-save: "../images/svg-icons/save.svg";
-    --icon-settings: "../images/svg-icons/settings.svg";
-    --icon-sort-acending: "../images/svg-icons/sort-acending.svg";
-    --icon-sort-descending: "../images/svg-icons/sort-descending.svg";
-    --icon-sort-none: "../images/svg-icons/sort-none.svg";
-    --icon-success: "../images/svg-icons/success.svg";
-    --icon-warning: "../images/svg-icons/warning.svg";
+    --icon-add: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/add.svg");
+    --icon-alert-outline: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/alert-outline.svg");
+    --icon-angle-arrow-down: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/angle-arrow-down.svg");
+    --icon-angle-arrow-up: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/angle-arrow-up.svg");
+    --icon-arrow-left: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/arrow-left.svg");
+    --icon-arrow-right: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/arrow-right.svg");
+    --icon-book-open: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/book-open.svg");
+    --icon-calendar: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/calendar.svg");
+    --icon-cash-multiple: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/cash-multiple.svg");
+    --icon-check: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/check.svg");
+    --icon-check-circle-outline: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/check-circle-outline.svg");
+    --icon-chevron-left: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/chevron-left.svg");
+    --icon-chevron-right: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/chevron-right.svg");
+    --icon-close: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/close.svg");
+    --icon-close-circle: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/close-circle.svg");
+    --icon-close-circle-outline: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/close-circle-outline.svg");
+    --icon-content-save: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/content-save.svg");
+    --icon-delete: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/delete.svg");
+    --icon-delete-outline: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/delete-outline.svg");
+    --icon-dots-vertical: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/dots-vertical.svg");
+    --icon-download: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/download.svg");
+    --icon-error: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/error.svg");
+    --icon-file: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/file.svg");
+    --icon-file-document-box: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/file-document-box.svg");
+    --icon-folder-multiple: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/folder-multiple.svg");
+    --icon-help: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/help.svg");
+    --icon-help-circle-outline: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/help-circle-outline.svg");
+    --icon-info: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/info.svg");
+    --icon-language: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/language.svg");
+    --icon-magnify: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/magnify.svg");
+    --icon-menu-down: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/menu-down.svg");
+    --icon-menu-left: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/menu-left.svg");
+    --icon-menu-right: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/menu-right.svg");
+    --icon-menu-up: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/menu-up.svg");
+    --icon-message: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/message.svg");
+    --icon-minus: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/minus.svg");
+    --icon-open-in-new: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/open-in-new.svg");
+    --icon-pencil: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/pencil.svg");
+    --icon-plus: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/plus.svg");
+    --icon-printer: url(/themes/custom/fds_sof_theme/imgs/print-article.png);
+    --icon-refresh: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/refresh.svg");
+    --icon-save: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/save.svg");
+    --icon-settings: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/settings.svg");
+    --icon-sort-acending: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/sort-acending.svg");
+    --icon-sort-descending: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/sort-descending.svg");
+    --icon-sort-none: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/sort-none.svg");
+    --icon-success: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/success.svg");
+    --icon-warning: url("/themes/custom/fds_sof_theme/vendors/dkfds-components-7.5.0/img/svg-icons/warning.svg");
 }

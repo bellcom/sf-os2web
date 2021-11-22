@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ebcaba9671c79d65fbc43e19b0e38c6",
+    "content-hash": "9c78f3ac1ee8d47dd76ce70d49c526da",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3441,6 +3441,128 @@
             }
         },
         {
+            "name": "drupal/commerce_add_to_cart_confirmation",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/commerce_add_to_cart_confirmation.git",
+                "reference": "1.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/commerce_add_to_cart_confirmation-1.0.0-alpha1.zip",
+                "reference": "1.0.0-alpha1",
+                "shasum": "56f39976e831a6ec207f8ac5f243b97a0d2522c1"
+            },
+            "require": {
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_product": "*",
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-alpha1",
+                    "datestamp": "1600628556",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Haza",
+                    "homepage": "https://www.drupal.org/user/182721"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "deggertsen",
+                    "homepage": "https://www.drupal.org/user/411393"
+                },
+                {
+                    "name": "init90",
+                    "homepage": "https://www.drupal.org/user/1322186"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "niko-",
+                    "homepage": "https://www.drupal.org/user/1409266"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Provides an \"add to cart\" confirmation screen.",
+            "homepage": "https://www.drupal.org/project/commerce_add_to_cart_confirmation",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce_add_to_cart_confirmation"
+            }
+        },
+        {
+            "name": "drupal/commerce_cart",
+            "version": "2.28.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_order": "*",
+                "drupal/commerce_product": "*",
+                "drupal/core": "^8.9 || ^9"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.28",
+                    "datestamp": "1636648407",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Implements the shopping cart system and add to cart features.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
             "name": "drupal/commerce_easy",
             "version": "1.0.0-rc2",
             "source": {
@@ -3746,6 +3868,58 @@
                 }
             ],
             "description": "Defines the Currency entity.",
+            "homepage": "https://www.drupal.org/project/commerce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/commerce"
+            }
+        },
+        {
+            "name": "drupal/commerce_product",
+            "version": "2.28.0",
+            "require": {
+                "drupal/commerce": "*",
+                "drupal/commerce_price": "*",
+                "drupal/commerce_store": "*",
+                "drupal/core": "^8.9 || ^9"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.28",
+                    "datestamp": "1636648407",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Centarro",
+                    "homepage": "https://www.drupal.org/user/3661446"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                }
+            ],
+            "description": "Defines the Product entity and associated features.",
             "homepage": "https://www.drupal.org/project/commerce",
             "support": {
                 "source": "https://git.drupalcode.org/project/commerce"
@@ -22180,6 +22354,7 @@
     "stability-flags": {
         "bellcom/fds_base_theme": 20,
         "drupal/anonymous_subscriptions": 20,
+        "drupal/commerce_add_to_cart_confirmation": 15,
         "drupal/commerce_easy": 5,
         "drupal/file_management": 15,
         "drupal/gin_login": 5,
@@ -22204,5 +22379,5 @@
         "php": ">=7.0.8"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

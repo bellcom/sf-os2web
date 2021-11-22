@@ -184,8 +184,9 @@
   flex-direction: column;
   margin: var(--base-padding-half);
   width: calc( (100% - (var(--base-padding) * var(--grid-column-count))) / var(--grid-column-count) );
+  position: relative;
 }
-.grid>.column-wrap>* {display: flex; flex:1;}
+.grid>.column-wrap>* {display: flex; flex:1; flex-direction: column;}
 .grid>.column-wrap>[class*="layout-"]>* {display: flex; flex:1;}
 	
 @media (min-width: 768px) {
@@ -213,5 +214,8 @@
   flex-basis: calc( calc(attr(data-width) * 1px) - var(--base-padding));
 }
 /* grid elements defaults */
-.grid>.column-wrap .paragraph--type--os2web-simple-text-paragraph {justify-content: center;}
 .grid>.column-wrap .entity-teaser__body {padding: 0;}
+
+.grid>.column-wrap>.entity-default--os2web-simple-text-paragraph {
+  flex-direction: column;
+}

@@ -14,8 +14,14 @@
 
   <div class="entity-{{ view_mode|clean_class }}__body">
     <div class="field--type-timestamp">{{ node.getChangedTime|date('d.m.Y') }}</div>
+    {% if viewname == 'sektion_nyheder' %}
+    <a href="{{ url }}" aria-label="{{ 'Read more about' | trans }} {{ node.field_os2web_page_heading.value }}">
+      {{ content.field_os2web_page_heading }}
+    </a>
+    {% else %}
     {{ content.field_os2web_page_heading }}
-
+    {% endif %}
+    
     {# Begin - body #}
     {% set text = content.field_os2web_page_description | render %}
     <div class="field field--type-body">

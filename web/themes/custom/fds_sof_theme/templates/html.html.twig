@@ -23,6 +23,10 @@
     {{ page }}
     {{ page_bottom }}
 
+    <div class="d-none">
+      {{ page.embedded_code }}
+    </div>
+
     <js-bottom-placeholder token="{{ placeholder_token|raw }}">
   </body>
 </html>

@@ -64,10 +64,10 @@
         {% endif %}
 
         {% set content_classes = [
-          has_sidebar_first and has_sidebar_second ? 'col-12 col-md-6',
-          has_sidebar_first and has_sidebar_second is empty ? 'col-12 col-md-8',
-          has_sidebar_second and has_sidebar_first is empty ? 'col-12 col-md-8',
-          has_sidebar_first is empty and has_sidebar_second is empty ? 'col-12 col-md-12'
+          has_sidebar_first and has_sidebar_second ? 'sidebarBothSides col-12 col-md-6',
+          has_sidebar_first and has_sidebar_second is empty ? 'sidebarOnLeft col-12 col-md-8',
+          has_sidebar_second and has_sidebar_first is empty ? 'sidebarOnRight col-12 col-md-8',
+          has_sidebar_first is empty and has_sidebar_second is empty ? 'noSidebars col-12 col-md-12'
         ] %}
         <main {{ content_attributes.addClass(content_classes) }}>
           {% include '@fds_sof_theme/includes/action-buttons.html.twig' %}
@@ -93,10 +93,6 @@
 {{ page.featured_bottom_second }}
 
 {% include '@fds_sof_theme/includes/footer.html.twig' %}
-
-<div class="d-none">
-  {{ page.embedded_code }}
-</div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {

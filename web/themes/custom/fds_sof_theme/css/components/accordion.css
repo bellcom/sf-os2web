@@ -1,9 +1,9 @@
 /* dkfds overrides and additions (todo: use more vars for various settings) */
 .accordion-button, .tabnav > button {
-    background-color: var(--gray-color-100);
-    background-image: url("../images/svg-icons/minus.svg");
-    color: var(--gray-color-800);
-    line-height: 2.2rem;
+  /* background-image: var(--icon-minus); */  
+  background-color: var(--gray-color-100);
+  color: var(--gray-color-800);
+  line-height: 2.2rem;
 }
 .accordion-button:hover, .tabnav > button:hover {background-color: var(--gray-color-100); color: var(--gray-color-900);}
 .accordion-button .accordion-icon .icon-svg, .tabnav > button .accordion-icon .icon-svg {
@@ -48,68 +48,74 @@
 .accordion-button[aria-describedby="error-message"], .tabnav > button[aria-describedby="error-message"],
 .accordion-button.accordion-error,
 .tabnav > button.accordion-error {border: solid 2px var(--error-border-color) !important; }
-.accordion-button[aria-expanded=true], .tabnav > button[aria-expanded=true] {
-background-color: var(--gray-color-100);
-}
 .accordion-bordered .accordion-button[aria-expanded=true], .accordion-bordered .tabnav > button[aria-expanded=true] {
     border-bottom: 1px solid var(--gray-color-200);
 }
   
 .accordion-button[aria-expanded=false], .tabnav > button[aria-expanded=false] {
-    background-image: url("../images/svg-icons/plus.svg");
+    /* background-image: var(--icon-plus); */
     background-repeat: no-repeat;
     background-size: 2.4rem;
     border-radius: 3px 3px 3px 3px;
 }
 
 .accordion-button, .tabnav > button {
-    position: relative;
-    padding: 1.6rem 2.4rem;
-    padding-right: 6rem;
-    font-weight: 700;
-    border-radius: 0 !important;
-    background-image: none !important; }
-    .accordion-button, .tabnav > button, .accordion-button:hover, .tabnav > button:hover, .accordion-button:focus, .tabnav > button:focus {
-      background-color: var(--gray-color-000); }
-    .accordion-button:after, .tabnav > button:after {
-      position: absolute;
-      top: 1.6rem;
-      right: 2.4rem;
-      font-size: 4rem;
-      font-family: FontAwesome;
-      content: "";
-      color: var(--primary-color); }
-    .accordion-button[aria-expanded=true], .tabnav > button[aria-expanded=true], .accordion-button[aria-expanded="true"]:hover, .tabnav > button[aria-expanded="true"]:hover, .accordion-button[aria-expanded="true"]:focus, .tabnav > button[aria-expanded="true"]:focus {
-      background-color: var(--gray-color-000); }
-    .accordion-button[aria-expanded="true"]:after, .tabnav > button[aria-expanded="true"]:after {
-      content: ""; }
+  position: relative;
+  padding: 1.6rem 2.4rem;
+  padding-right: 6rem;
+  font-weight: 700;
+  border-radius: 0 !important;
+  background-image: none !important;
+}
+.accordion-button, .tabnav > button, .accordion-button:hover, 
+.tabnav > button:hover, .accordion-button:focus, .tabnav > button:focus {
+  background-color: var(--gray-color-000); 
+}
+.accordion-button:after, .tabnav > button:after {
+  position: absolute;
+  top: 1.6rem;
+  right: 2.4rem;
+  font-size: 4rem;
+  font-family: FontAwesome;
+  content: "";
+  color: var(--primary-color);
+}
+.accordion-button[aria-expanded=true], .tabnav > button[aria-expanded=true], 
+.accordion-button[aria-expanded="true"]:hover, .tabnav > button[aria-expanded="true"]:hover, 
+.accordion-button[aria-expanded="true"]:focus, .tabnav > button[aria-expanded="true"]:focus {
+  background-color: var(--gray-color-000);
+}
+.accordion-button[aria-expanded="true"]:after, .tabnav > button[aria-expanded="true"]:after {
+  content: "";
+}
   
-  .accordion-content, .tabnav-panel {
-    padding: 0.5rem 2.4rem 2rem 2.4rem; }
-    .accordion-content .field + .field--name-field-os2web-hearings-reply-docs, .tabnav-panel .field + .field--name-field-os2web-hearings-reply-docs {
-      margin-top: 16px; }
+.accordion-content, .tabnav-panel {padding: 0.5rem 2.4rem 2rem 2.4rem; }
+.accordion-content .field + .field--name-field-os2web-hearings-reply-docs, 
+.tabnav-panel .field + .field--name-field-os2web-hearings-reply-docs {
+  margin-top: 16px;
+}
   
-  .accordion-close-button {
-    display: block;
-    margin-left: -2.4rem;
-    margin-right: -2.4rem;
-    margin-bottom: -2rem;
-    padding: 2rem 0 3rem 0;
-    font-weight: 700;
-    font-size: 4rem;
-    text-align: center;
-    border: 0;
-    color: var(--primary-color);
-    background-color: transparent; }
-    .accordion-close-button:focus {
-      outline: 0; }
+.accordion-close-button {
+  display: block;
+  margin-left: -2.4rem;
+  margin-right: -2.4rem;
+  margin-bottom: -2rem;
+  padding: 2rem 0 3rem 0;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+  border: 0;
+  color: var(--primary-color);
+  background-color: transparent; 
+}
+.accordion-close-button:focus {outline: 0; }
   
-  .accordion .box__body h1, .tabnav .box__body h1, 
-  .accordion .box__body h2, .tabnav .box__body h2, 
-  .accordion .box__body h3, .tabnav .box__body h3, 
-  .accordion .box__body h4, .tabnav .box__body h4, 
-  .accordion .box__body h5, .tabnav .box__body h5, 
-  .accordion .box__body h6, .tabnav .box__body h6 {margin-top: 0; }
+.accordion .box__body h1, .tabnav .box__body h1, 
+.accordion .box__body h2, .tabnav .box__body h2, 
+.accordion .box__body h3, .tabnav .box__body h3, 
+.accordion .box__body h4, .tabnav .box__body h4, 
+.accordion .box__body h5, .tabnav .box__body h5, 
+.accordion .box__body h6, .tabnav .box__body h6 {margin-top: 0; }
 
 .accordion-content:not(.field--widget-text-textarea) ul, .tabnav-panel:not(.field--widget-text-textarea) ul,
 .field--type-text-long:not(.field--widget-text-textarea) ul {

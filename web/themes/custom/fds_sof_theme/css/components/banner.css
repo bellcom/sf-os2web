@@ -49,6 +49,9 @@ article .entity-default--os2web-banner-paragraph {
   /* 16px is the width of the scrollbar */
   margin: 0 calc((((100vw - 16px) - var(--max-width)) / 2) * -1);
   min-height: 500px;
+
+  /*background-position: center;*/
+  background-size: cover;
 }
 
 @media (min-width: 576px) {
