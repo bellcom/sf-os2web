@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36f62dedf1d577af1e499a9557c77c6a",
+    "content-hash": "d3698e49ea22376d0c49518f4381de29",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7206,6 +7206,143 @@
             }
         },
         {
+            "name": "drupal/queue_mail",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/queue_mail.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/queue_mail-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "ccc3603d084017ec4d3aa67fa60da171ef8d63b8"
+            },
+            "require": {
+                "drupal/core": "^8.8.0 || ^9.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1632316348",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Evgenii Nikitin (sinn)",
+                    "homepage": "https://www.drupal.org/u/sinn",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Steven Jones",
+                    "homepage": "https://www.drupal.org/user/99644",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "sinn",
+                    "homepage": "https://www.drupal.org/user/682600"
+                },
+                {
+                    "name": "wafaa",
+                    "homepage": "https://www.drupal.org/user/50133"
+                }
+            ],
+            "description": "Queues all mail sent by your Drupal site so that it is sent via cron using the Drupal Queue API.",
+            "homepage": "http://drupal.org/project/queue_mail",
+            "support": {
+                "source": "https://git.drupalcode.org/project/queue_mail",
+                "issues": "https://www.drupal.org/project/issues/queue_mail"
+            }
+        },
+        {
+            "name": "drupal/queue_ui",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/queue_ui.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/queue_ui-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "a5ef0514c1371e42a71fdcfef01dc391cc7da0c3"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/queue_order": "^2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1601619129",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "floretan",
+                    "homepage": "https://www.drupal.org/user/2743951",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "coltrane",
+                    "homepage": "https://www.drupal.org/user/91990",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "tsphethean",
+                    "homepage": "https://www.drupal.org/user/66163",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "bceyssens",
+                    "homepage": "https://www.drupal.org/user/2811585",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "voleger",
+                    "homepage": "https://www.drupal.org/user/881620",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "voleger",
+                    "homepage": "https://www.drupal.org/user/3260314"
+                }
+            ],
+            "description": "Interface and manager for Drupal queues.",
+            "homepage": "https://www.drupal.org/project/queue_ui",
+            "keywords": [
+                "drupal",
+                "php",
+                "queue"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/queue_ui",
+                "issues": "https://www.drupal.org/project/issues/queue_ui"
+            }
+        },
+        {
             "name": "drupal/quick_node_clone",
             "version": "1.14.0",
             "source": {
@@ -11987,12 +12124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "86ec8c43285cd060c98f876c9d9c976145b88b67"
+                "reference": "0aa6a828182345037818f4ee4d8e103abe34029d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/86ec8c43285cd060c98f876c9d9c976145b88b67",
-                "reference": "86ec8c43285cd060c98f876c9d9c976145b88b67",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/0aa6a828182345037818f4ee4d8e103abe34029d",
+                "reference": "0aa6a828182345037818f4ee4d8e103abe34029d",
                 "shasum": ""
             },
             "require": {
@@ -12011,7 +12148,7 @@
                 "issues": "https://github.com/OS2web/os2web_contact/issues",
                 "source": "https://github.com/OS2web/os2web_contact/tree/master"
             },
-            "time": "2021-08-24T16:34:52+00:00"
+            "time": "2021-11-24T11:30:27+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -12709,12 +12846,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "a3b65b6293905833ef712fd4579dbfef24267bd0"
+                "reference": "0f8e9acaa0df3e423c73e5d54e5775fdaaa0c4c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/a3b65b6293905833ef712fd4579dbfef24267bd0",
-                "reference": "a3b65b6293905833ef712fd4579dbfef24267bd0",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/0f8e9acaa0df3e423c73e5d54e5775fdaaa0c4c9",
+                "reference": "0f8e9acaa0df3e423c73e5d54e5775fdaaa0c4c9",
                 "shasum": ""
             },
             "require": {
@@ -12737,7 +12874,7 @@
                 "issues": "https://github.com/OS2web/os2web_spotbox/issues",
                 "source": "https://github.com/OS2web/os2web_spotbox/tree/master"
             },
-            "time": "2021-08-24T14:24:39+00:00"
+            "time": "2021-11-24T11:27:58+00:00"
         },
         {
             "name": "palantirnet/drupal-rector",
