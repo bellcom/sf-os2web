@@ -24,6 +24,23 @@ $databases['default']['default'] = [
   'username' => getenv('MYSQL_USER'),
 ];
 
+if (!empty(getenv('MIGRATE_MYSQL_DATABASE'))) {
+  $databases['migrate']['default'] = [
+    'database' => getenv('MIGRATE_MYSQL_DATABASE'),
+    'driver' => 'mysql',
+    'host' => getenv('MIGRATE_MYSQL_HOSTNAME'),
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+    'password' => getenv('MIGRATE_MYSQL_PASSWORD'),
+    'port' => getenv('MIGRATE_MYSQL_PORT'),
+    'prefix' => '',
+    'username' => getenv('MIGRATE_MYSQL_USER'),
+  ];
+}
+
+if (!empty(getenv('DRUPAL_TRUSTED_HOST'))) {
+  $settings['trusted_host_patterns'] = ['^'.getenv('DRUPAL_TRUSTED_HOST').'$'];
+}
+
 $settings['hash_salt'] = getenv('DRUPAL_HASH_SALT');
 
 $settings['file_temp_path'] = '../tmp';

@@ -62,7 +62,7 @@
 
   &.node--type-os2web-news {
 
-    .field--name-field-os2web-news-article-date {
+    .news-metadata {
       padding-bottom: 5px;
 
       font-weight: $font-weight-bold;
@@ -70,6 +70,11 @@
 
       color: #666;
       border-bottom: 1px solid #666;
+
+      .date {
+        margin-right: 15px;
+        display: block;
+      }
     }
   }
 }
@@ -95,7 +100,15 @@
 @include media-breakpoint-only(sm, $grid-breakpoints) {}
 
 // Desktop - and up
-@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(md) {
+  .node--view-mode-full.node--type-os2web-news {
+    .news-metadata {
+      .date {
+        display: inline;
+      }
+    }
+  }
+}
 
 // Desktop - only
 @include media-breakpoint-only(md, $grid-breakpoints) {}

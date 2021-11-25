@@ -15,6 +15,9 @@ $autoloader = require_once 'autoload.php';
 // Sending error code by default.
 http_response_code(500);
 
+// Adjust trusted hosts settings to call health-check.php file from any host.
+putenv("DRUPAL_TRUSTED_HOST=" . $_SERVER['SERVER_NAME']);
+
 try {
   // Loading standard Drupal Kernel process.
   $kernel = new DrupalKernel('prod', $autoloader);

@@ -5,6 +5,45 @@
     "license": "EUPL-1.2",
     "repositories": [
         {
+            "type": "package",
+            "package": {
+                "name": "drupal/monolog",
+                "type": "drupal-module",
+                "description": "A Framework for integrating with the Monolog library.",
+                "homepage": "http://drupal.org/project/monolog",
+                "license": "GPL-2.0",
+                "authors": [
+                    {
+                        "name": "Chris Pliakas",
+                        "email": "opensource@chrispliakas.com",
+                        "role": "Project Lead"
+                    },
+                    {
+                        "name": "See contributors",
+                        "homepage": "http://drupal.org/node/1937716/committers",
+                        "role": "Developer"
+                    }
+                ],
+                "support": {
+                    "issues": "http://drupal.org/project/issues/monolog"
+                },
+                "require": {
+                    "monolog/monolog": "^2.0.0"
+                },
+                "autoload": {
+                    "psr-0": {
+                        "Drupal\\Monolog": "src/"
+                    }
+                },
+                "version": "2.x-dev",
+                "source": {
+                    "url": "https://git.drupalcode.org/project/monolog.git",
+                    "type": "git",
+                    "reference": "2.x"
+                }
+            }
+        },
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
@@ -40,41 +79,59 @@
         }
     ],
     "require": {
-        "php": ">=7.0.8",
+        "php": ">=7.1",
         "bellcom/fds_base_theme": "dev-stable/drupal-8.x",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/access_latest": "^0.0.1",
-        "drupal/anonymous_subscriptions": "^1.0@alpha",
+        "drupal/anonymous_subscriptions": "1.x-dev@dev",
+        "drupal/ckeditor_balloonpanel": "1.x-dev@dev",
+        "drupal/ckeditor_iframe": "^2.1",
         "drupal/coder": "^8.3",
+        "drupal/config_delete": "^1.17",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.9",
-        "drupal/core-composer-scaffold": "^8.9",
+        "drupal/core-composer-scaffold": "^9.0.0",
+        "drupal/core-project-message": "^9.0.0",
+        "drupal/core-recommended": "^9.1",
+        "drupal/editor_file": "^1.6",
+        "drupal/entity_clone": "^1.0@beta",
         "drupal/fancy_file_delete": "^2.0",
-        "drupal/file_management": "^1.0@alpha",
+        "drupal/file_management": "1.x-dev@dev",
         "drupal/gin": "^3.0",
         "drupal/gin_login": "^1.0@RC",
+        "drupal/mailchimp": "^2.0",
         "drupal/memcache": "^2.2",
         "drupal/modules_weight": "^1.9",
         "drupal/monitoring": "^1.9",
+        "drupal/pdf_api": "^2.0",
+        "drupal/queue_mail": "^1.4",
+        "drupal/queue_ui": "^2.2",
         "drupal/quick_node_clone": "^1.14",
         "drupal/redirect_after_login": "^2.7",
         "drupal/siteimprove": "^1.10",
         "drupal/stage_file_proxy": "^1.0",
+        "drupal/upgrade_rector": "^1.0@alpha",
+        "drupal/upgrade_status": "^3.5",
         "drupal/workbench": "^1.3",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "mglaman/drupal-check": "^1.1",
-        "os2web/os2web": "^1.0",
-        "os2web/os2web_borgerdk": "8.x-dev",
+        "os2web/os2web": "dev-master",
+        "os2web/os2web_banner": "dev-master",
+        "os2web/os2web_borgerdk": "dev-master",
+        "os2web/os2web_embedded_code": "^0.0.1",
         "os2web/os2web_events": "dev-master",
         "os2web/os2web_hearings": "dev-master",
         "os2web/os2web_logging": "dev-master",
         "os2web/os2web_meetings": "dev-develop",
+        "os2web/os2web_meetings_acadre": "dev-master",
         "os2web/os2web_meetings_agman": "dev-master",
         "os2web/os2web_meetings_edoc": "dev-master",
+        "os2web/os2web_meetings_edoc_fujitsu": "dev-master",
         "os2web/os2web_meetings_sbsys": "dev-master",
         "os2web/os2web_news": "dev-master",
         "os2web/os2web_pagebuilder": "dev-master",
+        "os2web/os2web_person_information": "dev-master",
+        "os2web/os2web_rest_api": "0.*",
         "os2web/os2web_search": "dev-master",
         "os2web/os2web_spotbox": "dev-master",
         "vlucas/phpdotenv": "^4.0",
@@ -82,7 +139,7 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-        "drupal/core-dev": "^8.8.0"
+        "drupal/core-dev": "^9.0.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -138,14 +195,16 @@
             "drupal/field_group": {
                 "HTML5 Validation Prevents Submission in Tabs" : "https://www.drupal.org/files/issues/2019-10-04/field_group-HTML5_validation_prevents_submission_in_tabs-2969051-9.patch"
             },
-            "drupal/rules": {
-                "2927132-15-remove-other-conditions-from-ui" : "https://www.drupal.org/files/issues/2020-07-23/2927132-15-remove-other-conditions-from-ui.patch"
-            },
             "drupal/better_exposed_filters": {
                 "allow the date format to be set from the bef interface": "https://www.drupal.org/files/issues/2020-12-21/better_exposed_filters_allow_the_date_format-2858610-23_1.patch"
             },
             "drupal/core": {
-                "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch"
+                "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch",
+                "Allow edit Media items from Media Library modal dialog in CKEditor" : "https://www.drupal.org/files/issues/2021-04-21/3168868-13_0.patch"
+            },
+            "drupal/printable": {
+                "3214729 PDF filename is generated with it's location" : "https://git.drupalcode.org/issue/printable-3214729/-/commit/cbc98dbe864f82b4cc1da110d88097d0c4740bb9.patch",
+                "#3193531, Drupal 9 errors from submodule": "https://git.drupalcode.org/issue/printable-3193531/-/commit/9b4d5fa8b6a713da671ab3143c8580fce45ca6fb.diff"
             },
             "drupal/scheduler_content_moderation_integration" : {
                 "Widget error when field is overridden - undefined offset 0 in $form['publish_state']" : "https://www.drupal.org/files/issues/2020-06-30/3077147-28.patch"

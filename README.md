@@ -15,12 +15,14 @@ git clone git@github.com:OS2web/os2web8.git
 composer install
 ```
 
-* Follow the regular install process, select ```OS2Web``` as install profile.
+* Follow the regular install process to install drupal using `drush` or UI 
+  * select ```OS2Web``` as install profile
+* Enable and set default drupal theme from available list on `/admin/appearance`
 
-* After installation is done, enable OS2Web Hjemmeside module by:
+* After installation is done, enable OS2Web Basic modules module by:
 
 ```
-drush en os2web_hjemmeside
+drush en os2web_pagebuilder os2web_spotbox
 ```
 
 * Enable other modules from OS2Web category and setup them on demand.
