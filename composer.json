@@ -88,6 +88,7 @@
         "drupal/ckeditor_balloonpanel": "1.x-dev@dev",
         "drupal/ckeditor_iframe": "^2.1",
         "drupal/coder": "^8.3",
+        "drupal/config_delete": "^1.17",
         "drupal/console": "^1.0.2",
         "drupal/core-composer-scaffold": "^9.0.0",
         "drupal/core-project-message": "^9.0.0",
