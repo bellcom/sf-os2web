@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5847ee12bc4d03b7970481462e596ae3",
+    "content-hash": "80199f491ed5a73df9c96bb0b7110592",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -12671,20 +12671,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "e4acab2b0b0fddf9dc68f613193511f307446559"
+                "reference": "334cbae2588586c68ae3a81aa7fd2cde6903eabf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/e4acab2b0b0fddf9dc68f613193511f307446559",
-                "reference": "e4acab2b0b0fddf9dc68f613193511f307446559",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/334cbae2588586c68ae3a81aa7fd2cde6903eabf",
+                "reference": "334cbae2588586c68ae3a81aa7fd2cde6903eabf",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "*",
+                "drupal/field_group": "*",
                 "drupal/fieldblock": "*",
+                "drupal/image_widget_crop": "*",
                 "drupal/inline_entity_form": "^1.0@RC",
                 "drupal/paragraphs": "*",
                 "drupal/scheduled_transitions": "^2.0",
+                "drupal/scheduler_content_moderation_integration": "*",
+                "drupal/svg_image": "*",
                 "os2web/os2web_contact": "dev-master",
                 "os2web/os2web_hjemmeside": "dev-master",
                 "os2web/os2web_kle": "dev-master"
@@ -12700,7 +12704,7 @@
                 "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
                 "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
             },
-            "time": "2021-11-10T12:11:56+00:00"
+            "time": "2021-11-29T12:38:47+00:00"
         },
         {
             "name": "os2web/os2web_person_information",
