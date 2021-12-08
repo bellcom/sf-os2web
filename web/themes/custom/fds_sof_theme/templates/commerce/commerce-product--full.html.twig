@@ -19,6 +19,16 @@
  * @ingroup themeable
  */
 #}
-<article{{ attributes }}>
-  {{- product|without('variation_attributes') -}}
-</article>
+<div class="product-wrapper">
+  <article role="product" class="row" {{ attributes }}>
+    <div class="col-12 col-md-6">
+      {{ product.field_billede }}
+    </div>
+    <div class="col-12 col-md-6">
+      {{ product.title }}
+      {{ product.body }}
+      {{- product|without('field_billede','title','body','variation_attributes','field_teaser','field_category') -}}
+    </div>
+  </article>
+  <a class="back-to-all-products" href="/udgivelser">&nbsp;</a>
+</div>

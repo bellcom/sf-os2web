@@ -19,6 +19,13 @@
  * @ingroup themeable
  */
 #}
-<article{{ attributes }}>
-  {{- product|without('variation_attributes') -}}
+{%
+  set classes = [
+  'product-list'
+]
+%}
+<article onclick="window.location='{{ product_url }}'" {{ attributes.addClass(classes) }}>
+  {{- product.field_billede -}}
+  {{- product.title -}}
+  {{- product.field_teaser -}}
 </article>

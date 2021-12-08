@@ -69,7 +69,7 @@ body.path-checkout .region-content {
 .layout-checkout-form fieldset legend {font-size: 1.6rem; padding: 0.5rem;}
 
 /* override from dkfds */
-form.commerce-checkout-flow .form-checkbox, 
+form.commerce-checkout-flow .form-checkbox,
 form.commerce-checkout-flow .form-radio {
   position: static;
   width: auto;
@@ -139,7 +139,7 @@ form.commerce-checkout-flow .link--previous {
 .view-commerce-cart-form .form-actions {text-align:right; margin:0;}
 
 /* order-total-line */
-div>:first-child.order-total-line {margin-top: .3rem;} 
+div>:first-child.order-total-line {margin-top: .3rem;}
 .order-total-line {padding: 0 !important;}
 .order-total-line span {
   background-color: #f0f0f0;
@@ -149,10 +149,10 @@ div>:first-child.order-total-line {margin-top: .3rem;}
     border-left-width: 0;
     min-width: 100px;
 }
- 
+
 body.path-cart .order-total-line:not(.order-total-line__total) {display:none;}
 body.path-cart .order-total-line span {
-  background-color:transparent; 
+  background-color:transparent;
   font-size: 1.8rem;
   font-weight: normal;
   min-width: none;
@@ -170,6 +170,8 @@ body.path-cart .order-total-line span {
 
 /************************************************************************************/
 
+.product-list {cursor: pointer;}
+.product-list .field--name-title {color: var(--primary-color);}
 .product-wrapper {position: relative;}
 .product-wrapper [role="product"]>:first-child {align-items: center;  /* picture */ }
 .product-wrapper [role="product"] .field--type-text-with-summary {
@@ -178,7 +180,7 @@ body.path-cart .order-total-line span {
 .product-wrapper a.back-to-all-products {
   display:block;
   width: 40px;
-  height: 39px; 
+  height: 39px;
   background-image: var(--icon-close);
   background-size: 40px 39px;
   position: absolute;
@@ -192,7 +194,7 @@ body.path-cart .order-total-line span {
   margin-bottom: 1.5rem;
 }
 [role="product"] .commerce-order-item-add-to-cart-form {
-  
+
 }
 [role="product"] .commerce-order-item-add-to-cart-form .form-actions {
   border-top: 1px solid #ccc;
