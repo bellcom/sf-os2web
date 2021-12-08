@@ -50,6 +50,7 @@
         "drupal/coder": "^8.3",
         "drupal/commerce": "^2.27",
         "drupal/commerce_add_to_cart_confirmation": "^1.0@alpha",
+        "drupal/commerce_checkout_order_fields": "^1.1",
         "drupal/commerce_easy": "^1.0@RC",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.9",
