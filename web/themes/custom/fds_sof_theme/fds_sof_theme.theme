@@ -19,7 +19,7 @@ function fds_sof_theme_preprocess_page(array &$variables) {
  * @param $variables
  */
 function fds_sof_theme_preprocess_html(&$variables) {
-  
+
   $variables['path_info']['args'] = FALSE;
   $path = \Drupal::service('path.current')->getPath();
   $path_args = explode('/', $path);
@@ -27,7 +27,7 @@ function fds_sof_theme_preprocess_html(&$variables) {
   if (count($path_args) >= 3) {
     $variables['path_info']['args'] = Html::cleanCssIdentifier(ltrim($path, '/'));
   }
-  
+
 }
 
 /**
@@ -85,7 +85,7 @@ function fds_sof_theme_preprocess_menu(&$variables, $hook) {
     $settings = _fds_sof_theme_collect_theme_settings();
 
     foreach ($variables['items'] as &$item) {
-      
+
       // pm@bellcom: if menu item exists in social settings, add url from settings
       if ($item['url']->toString() == '') {
         if (array_key_exists($item['title'], $settings['social'])) {
@@ -100,7 +100,7 @@ function fds_sof_theme_preprocess_menu(&$variables, $hook) {
           }
         }
       }
-      
+
       if ($item['in_active_trail']) {
           if ($item['url']->toString() == $current_path) {
             $item['is_active'] = TRUE;
@@ -406,6 +406,17 @@ function fds_sof_theme_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $
     $form['mergevars']['EMAIL']['#attributes'] = array('placeholder'=> t('Your email'),);
     // remove lists
     unset( $form['mailchimp_lists']);
+  }
+
+  // EAN field form state logic.
+  if ($form_id == 'commerce_checkout_flow_multistep_default' && isset($form['order_fields:checkout']['field_order_ean'])) {
+    $form['order_fields:checkout']['field_order_ean']['#states'] = [
+      'visible' => [
+        ':input[name="payment_information[payment_method]"]' => [
+          'value' => 'faktura',
+        ],
+      ],
+    ];
   }
 }
 
