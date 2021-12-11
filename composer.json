@@ -120,6 +120,7 @@
         "os2web/os2web": "dev-master",
         "os2web/os2web_banner": "dev-master",
         "os2web/os2web_borgerdk": "dev-master",
+        "os2web/os2web_citizen_proposals": "dev-master",
         "os2web/os2web_embedded_code": "^0.0.1",
         "os2web/os2web_events": "dev-master",
         "os2web/os2web_hearings": "dev-master",

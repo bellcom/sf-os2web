@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6187b5b8f710aaa95801a4af35ae5f84",
+    "content-hash": "1b035bdc15435d508c66a07f9174c3f2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -12227,6 +12227,36 @@
             "time": "2021-10-21T08:37:13+00:00"
         },
         {
+            "name": "os2web/os2web_citizen_proposals",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_citizen_proposals.git",
+                "reference": "f5e2b698a5f9f97bd1707c4b0de5cc20731e7f5d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_citizen_proposals/zipball/f5e2b698a5f9f97bd1707c4b0de5cc20731e7f5d",
+                "reference": "f5e2b698a5f9f97bd1707c4b0de5cc20731e7f5d",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Adds Citizen proposal functionality",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_citizen_proposals/issues",
+                "source": "https://github.com/OS2web/os2web_citizen_proposals/tree/master"
+            },
+            "time": "2021-12-11T22:12:52+00:00"
+        },
+        {
             "name": "os2web/os2web_contact",
             "version": "dev-master",
             "source": {
@@ -23845,6 +23875,7 @@
         "os2web/os2web": 20,
         "os2web/os2web_banner": 20,
         "os2web/os2web_borgerdk": 20,
+        "os2web/os2web_citizen_proposals": 20,
         "os2web/os2web_events": 20,
         "os2web/os2web_hearings": 20,
         "os2web/os2web_logging": 20,
@@ -23867,5 +23898,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
