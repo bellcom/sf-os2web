@@ -2,7 +2,6 @@
   "javascripts": [
     "node_modules/dkfds/dist/js/dkfds.js",
     "src/javascripts/megamenu.js",
-    "src/javascripts/structure-navigation.js",
     "src/javascripts/font-resizer.js",
     "src/javascripts/a11y.js",
     "src/javascripts/app.js"
