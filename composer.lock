@@ -12232,12 +12232,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_citizen_proposals.git",
-                "reference": "2d0541f9efd4d6d044f567e48568161d16589bee"
+                "reference": "b464586132897b0164eb22e0e89adb8298df0ce3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_citizen_proposals/zipball/2d0541f9efd4d6d044f567e48568161d16589bee",
-                "reference": "2d0541f9efd4d6d044f567e48568161d16589bee",
+                "url": "https://api.github.com/repos/OS2web/os2web_citizen_proposals/zipball/b464586132897b0164eb22e0e89adb8298df0ce3",
+                "reference": "b464586132897b0164eb22e0e89adb8298df0ce3",
                 "shasum": ""
             },
             "require": {
@@ -12254,7 +12254,7 @@
                 "issues": "https://github.com/OS2web/os2web_citizen_proposals/issues",
                 "source": "https://github.com/OS2web/os2web_citizen_proposals/tree/master"
             },
-            "time": "2021-12-11T22:50:47+00:00"
+            "time": "2021-12-13T14:46:55+00:00"
         },
         {
             "name": "os2web/os2web_contact",
