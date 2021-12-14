@@ -12127,12 +12127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "0347ff129d35580a50611dffd0922966d5123164"
+                "reference": "11502c8befa701ff859dd985e18e7f72b2e3505f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/0347ff129d35580a50611dffd0922966d5123164",
-                "reference": "0347ff129d35580a50611dffd0922966d5123164",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/11502c8befa701ff859dd985e18e7f72b2e3505f",
+                "reference": "11502c8befa701ff859dd985e18e7f72b2e3505f",
                 "shasum": ""
             },
             "require": {
@@ -12160,7 +12160,7 @@
                 "issues": "https://github.com/OS2web/os2web/issues",
                 "source": "https://github.com/OS2web/os2web/tree/master"
             },
-            "time": "2021-10-27T12:54:41+00:00"
+            "time": "2021-12-14T13:26:27+00:00"
         },
         {
             "name": "os2web/os2web_banner",
@@ -23898,5 +23898,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
