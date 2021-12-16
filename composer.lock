@@ -12232,12 +12232,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_citizen_proposals.git",
-                "reference": "2d0541f9efd4d6d044f567e48568161d16589bee"
+                "reference": "b464586132897b0164eb22e0e89adb8298df0ce3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_citizen_proposals/zipball/2d0541f9efd4d6d044f567e48568161d16589bee",
-                "reference": "2d0541f9efd4d6d044f567e48568161d16589bee",
+                "url": "https://api.github.com/repos/OS2web/os2web_citizen_proposals/zipball/b464586132897b0164eb22e0e89adb8298df0ce3",
+                "reference": "b464586132897b0164eb22e0e89adb8298df0ce3",
                 "shasum": ""
             },
             "require": {
@@ -12254,7 +12254,7 @@
                 "issues": "https://github.com/OS2web/os2web_citizen_proposals/issues",
                 "source": "https://github.com/OS2web/os2web_citizen_proposals/tree/master"
             },
-            "time": "2021-12-11T22:50:47+00:00"
+            "time": "2021-12-13T14:46:55+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -12414,12 +12414,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hjemmeside.git",
-                "reference": "0b72b1cccd6ed33af48b52f2c3909a7022b33485"
+                "reference": "7dad88c14949b04ca829317ed3ae9713de5f664c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/0b72b1cccd6ed33af48b52f2c3909a7022b33485",
-                "reference": "0b72b1cccd6ed33af48b52f2c3909a7022b33485",
+                "url": "https://api.github.com/repos/OS2web/os2web_hjemmeside/zipball/7dad88c14949b04ca829317ed3ae9713de5f664c",
+                "reference": "7dad88c14949b04ca829317ed3ae9713de5f664c",
                 "shasum": ""
             },
             "require": {
@@ -12432,6 +12432,7 @@
                 "drupal/linkit": "^5.0.0-beta10",
                 "drupal/metatag": "^1.13",
                 "drupal/pathauto": "^1.5",
+                "drupal/redirect": "*",
                 "drupal/save_edit": "^1.3",
                 "drupal/textfield_counter": "*"
             },
@@ -12446,7 +12447,7 @@
                 "issues": "https://github.com/OS2web/os2web_hjemmeside/issues",
                 "source": "https://github.com/OS2web/os2web_hjemmeside/tree/master"
             },
-            "time": "2021-09-29T11:24:51+00:00"
+            "time": "2021-12-13T15:32:17+00:00"
         },
         {
             "name": "os2web/os2web_kle",
@@ -12761,12 +12762,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_pagebuilder.git",
-                "reference": "e0997410f51f2b3764b23965791fa26b09ca5f91"
+                "reference": "1c49028f735cf22d2930fec26c5aad7b8d6a1c2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/e0997410f51f2b3764b23965791fa26b09ca5f91",
-                "reference": "e0997410f51f2b3764b23965791fa26b09ca5f91",
+                "url": "https://api.github.com/repos/OS2web/os2web_pagebuilder/zipball/1c49028f735cf22d2930fec26c5aad7b8d6a1c2c",
+                "reference": "1c49028f735cf22d2930fec26c5aad7b8d6a1c2c",
                 "shasum": ""
             },
             "require": {
@@ -12794,7 +12795,7 @@
                 "issues": "https://github.com/OS2web/os2web_pagebuilder/issues",
                 "source": "https://github.com/OS2web/os2web_pagebuilder/tree/master"
             },
-            "time": "2021-12-07T13:06:10+00:00"
+            "time": "2021-12-13T15:33:26+00:00"
         },
         {
             "name": "os2web/os2web_person_information",
