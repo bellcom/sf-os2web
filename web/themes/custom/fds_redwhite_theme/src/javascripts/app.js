@@ -140,3 +140,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 })();
+
+// Tiny Slider for news slideshow.
+(function() {
+  var selector = '.view-id-os2web_page_content.view-display-id-slider .view-content';
+
+  if (document.querySelector(selector) !== null) {
+
+    // Run tiny slider.
+    tns({
+      container: selector,
+      items: 1,
+      autoplay: false,
+      autoplayHoverPause: true,
+      gutter: 32,
+      rewind: true,
+      responsive: {
+        576: {
+          items: 3,
+        },
+      },
+    });
+  }
+})();
