@@ -12127,12 +12127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web.git",
-                "reference": "0347ff129d35580a50611dffd0922966d5123164"
+                "reference": "11502c8befa701ff859dd985e18e7f72b2e3505f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web/zipball/0347ff129d35580a50611dffd0922966d5123164",
-                "reference": "0347ff129d35580a50611dffd0922966d5123164",
+                "url": "https://api.github.com/repos/OS2web/os2web/zipball/11502c8befa701ff859dd985e18e7f72b2e3505f",
+                "reference": "11502c8befa701ff859dd985e18e7f72b2e3505f",
                 "shasum": ""
             },
             "require": {
@@ -12160,7 +12160,7 @@
                 "issues": "https://github.com/OS2web/os2web/issues",
                 "source": "https://github.com/OS2web/os2web/tree/master"
             },
-            "time": "2021-10-27T12:54:41+00:00"
+            "time": "2021-12-14T13:26:27+00:00"
         },
         {
             "name": "os2web/os2web_banner",
@@ -12384,12 +12384,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "65736204a9f29e77e4241f1af14dbdc2742563d4"
+                "reference": "249e749f957683af767fdddba94cd18f54a4c5dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/65736204a9f29e77e4241f1af14dbdc2742563d4",
-                "reference": "65736204a9f29e77e4241f1af14dbdc2742563d4",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/249e749f957683af767fdddba94cd18f54a4c5dc",
+                "reference": "249e749f957683af767fdddba94cd18f54a4c5dc",
                 "shasum": ""
             },
             "require": {
@@ -12406,7 +12406,7 @@
                 "issues": "https://github.com/OS2web/os2web_hearings/issues",
                 "source": "https://github.com/OS2web/os2web_hearings/tree/master"
             },
-            "time": "2021-12-01T11:42:41+00:00"
+            "time": "2021-12-17T07:04:24+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
