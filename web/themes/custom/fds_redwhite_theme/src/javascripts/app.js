@@ -156,7 +156,30 @@ document.addEventListener('DOMContentLoaded', function() {
       gutter: 32,
       rewind: true,
       responsive: {
-        576: {
+        408: {
+          items: 3,
+        },
+      },
+    });
+  }
+})();
+
+// Tiny Slider for spotboxes slideshow.
+(function() {
+  var selector = '.paragraph--type--os2web-spotbox-reference.paragraph--slider .field__items';
+
+  if (document.querySelector(selector) !== null) {
+
+    // Run tiny slider.
+    tns({
+      container: selector,
+      items: 1,
+      autoplay: false,
+      autoplayHoverPause: true,
+      gutter: 32,
+      rewind: true,
+      responsive: {
+        408: {
           items: 3,
         },
       },
