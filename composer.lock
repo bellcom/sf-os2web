@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b035bdc15435d508c66a07f9174c3f2",
+    "content-hash": "ffff1b5c3e6867f698f718e29b396073",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2092,52 +2092,29 @@
         },
         {
             "name": "drupal/anonymous_subscriptions",
-            "version": "dev-1.x",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/anonymous_subscriptions.git",
-                "reference": "dcd62f1eeec5bb2276525ee19e7fe9825aef4eb2"
+                "url": "https://github.com/bellcom/anonymous_subscriptions.git",
+                "reference": "705565049c2c8bcac2bee5853c05affb697c5b32"
             },
-            "require": {
-                "drupal/core": "^8.7.7 || ^9"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bellcom/anonymous_subscriptions/zipball/705565049c2c8bcac2bee5853c05affb697c5b32",
+                "reference": "705565049c2c8bcac2bee5853c05affb697c5b32",
+                "shasum": ""
             },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha+14-dev",
-                    "datestamp": "1638290221",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "andr1yun",
-                    "homepage": "https://www.drupal.org/user/1277538"
-                },
-                {
-                    "name": "pkil",
-                    "homepage": "https://www.drupal.org/user/2327222"
-                },
-                {
-                    "name": "wiifm",
-                    "homepage": "https://www.drupal.org/user/358731"
-                }
-            ],
-            "description": "Provide Subscription functionality to anonymous users",
-            "homepage": "https://www.drupal.org/project/anonymous_subscriptions",
+            "description": "Provide Subscription functionality to anonymous users.",
             "support": {
-                "source": "https://git.drupalcode.org/project/anonymous_subscriptions"
-            }
+                "source": "https://github.com/bellcom/anonymous_subscriptions/tree/8.x-1.x",
+                "issues": "https://github.com/bellcom/anonymous_subscriptions/issues"
+            },
+            "time": "2021-12-17T20:01:47+00:00"
         },
         {
             "name": "drupal/better_exposed_filters",
@@ -12755,6 +12732,36 @@
                 "source": "https://github.com/OS2web/os2web_news/tree/master"
             },
             "time": "2021-11-05T15:15:35+00:00"
+        },
+        {
+            "name": "os2web/os2web_newsletter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2web/os2web_newsletter.git",
+                "reference": "590b45e0b6c3292bcc589954d69fe5a2cd271f8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2web/os2web_newsletter/zipball/590b45e0b6c3292bcc589954d69fe5a2cd271f8c",
+                "reference": "590b45e0b6c3292bcc589954d69fe5a2cd271f8c",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Newsletter handler",
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_newsletter/issues",
+                "source": "https://github.com/OS2web/os2web_newsletter/tree/master"
+            },
+            "time": "2021-12-17T20:40:53+00:00"
         },
         {
             "name": "os2web/os2web_pagebuilder",
@@ -23887,6 +23894,7 @@
         "os2web/os2web_meetings_edoc_fujitsu": 20,
         "os2web/os2web_meetings_sbsys": 20,
         "os2web/os2web_news": 20,
+        "os2web/os2web_newsletter": 20,
         "os2web/os2web_pagebuilder": 20,
         "os2web/os2web_person_information": 20,
         "os2web/os2web_postlister": 20,
@@ -23899,5 +23907,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
