@@ -12384,12 +12384,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_hearings.git",
-                "reference": "65736204a9f29e77e4241f1af14dbdc2742563d4"
+                "reference": "249e749f957683af767fdddba94cd18f54a4c5dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/65736204a9f29e77e4241f1af14dbdc2742563d4",
-                "reference": "65736204a9f29e77e4241f1af14dbdc2742563d4",
+                "url": "https://api.github.com/repos/OS2web/os2web_hearings/zipball/249e749f957683af767fdddba94cd18f54a4c5dc",
+                "reference": "249e749f957683af767fdddba94cd18f54a4c5dc",
                 "shasum": ""
             },
             "require": {
@@ -12406,7 +12406,7 @@
                 "issues": "https://github.com/OS2web/os2web_hearings/issues",
                 "source": "https://github.com/OS2web/os2web_hearings/tree/master"
             },
-            "time": "2021-12-01T11:42:41+00:00"
+            "time": "2021-12-17T07:04:24+00:00"
         },
         {
             "name": "os2web/os2web_hjemmeside",
