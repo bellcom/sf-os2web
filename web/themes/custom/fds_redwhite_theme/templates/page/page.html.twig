@@ -59,7 +59,6 @@
 
 <header class="d-print-none">
 
-  {% if is_front %}
     <div class="custom-header custom-header--static">
       <div class="custom-header__inner">
         <div class="container">
@@ -78,30 +77,19 @@
 
             <!-- Begin - logo -->
             <a href="{{ url('<front>') }}" class="custom-header__logo">
-              <img src="{{ base_path ~ directory }}/dist/images/logo.png" alt="Logo" />
+              <img src="{{ base_path ~ directory }}/dist/images/logo.png" alt="Ringsted Kommune" />
             </a>
             <!-- End - logo -->
 
-            {% include '@fds_redwhite_theme/includes/action-buttons.html.twig' %}
+            <!--{% include '@fds_redwhite_theme/includes/action-buttons.html.twig' %}-->
 
             <div class="flexy-spacer"></div>
 
-            <!-- Begin - toggle search -->
-            <div class="searchy d-sm-none">
-              {{ page.header__search }}
-
-              <button
-                class="custom-header__button custom-header__button--toggle-search js-toggle-searchy" aria-label="{{ 'Åbn søgning' | t }}">
-                <span class="icon fa fa-search"></span>
-              </button>
-            </div>
-            <!-- End - toggle search -->
-
             <!-- Begin - toggle -->
-            <button
+{#             <button
               class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-none d-sm-block" aria-label="{{ 'Åbn menu' | t }}">
               <span class="icon fa fa-bars"></span>
-            </button>
+            </button> #}
             <!-- End - toggle -->
 
           </div>
@@ -116,61 +104,23 @@
             <!-- End - meta -->
           {% endif %}
 
-          <!-- Begin - below -->
-          {{ page.header__below }}
-          <!-- End - below -->
-
-        </div>
-      </div>
-    </div>
-  {% endif %}
-
-  {% if not is_front %}
-    <div class="custom-header custom-header--fixed">
-      <div class="custom-header__inner">
-        <div class="container">
-          <div class="flexy-row">
-
-            <!-- Begin - toggle -->
-            <button
-              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-sm-none" aria-label="{{ 'Åbn menu' | t }}">
-              <span class="icon fa fa-bars"></span>
+          <div class="menuwrapper">
+            <!-- Begin - below -->
+            {{ page.header__below }}
+            <!-- End - below -->
+            <button class="custom-header__button custom-header__button--toggle-search js-toggle-searchy" aria-label="{{ 'Åbn søgning' | t }}">
+              <span class="icon fa fa-search"></span>
             </button>
-            <!-- End - toggle -->
-
-            <div class="flexy-spacer d-sm-none"></div>
-
-            <!-- Begin - logo -->
-            <a href="{{ url('<front>') }}" class="custom-header__logo">
-              <img src="{{ base_path ~ directory }}/dist/images/logo.png" alt="Logo" />
-            </a>
-            <!-- End - logo -->
-
-            <div class="flexy-spacer"></div>
-
             <!-- Begin - toggle search -->
             <div class="searchy">
               {{ page.header__search }}
-
-              <button
-                class="custom-header__button custom-header__button--toggle-search js-toggle-searchy" aria-label="{{ 'Åbn søgning' | t }}">
-                <span class="icon fa fa-search"></span>
-              </button>
             </div>
             <!-- End - toggle search -->
-
-            <!-- Begin - toggle -->
-            <button
-              class="custom-header__button custom-header__button--toggle-megamenu js-toggle-megamenu d-none d-sm-block" aria-label="{{ 'Åbn menu' | t }}">
-              <span class="icon fa fa-bars"></span>
-            </button>
-            <!-- End - toggle -->
-
           </div>
+
         </div>
       </div>
     </div>
-  {% endif %}
 </header>
 
 {{ page.featured_top }}
@@ -198,26 +148,47 @@
       </div>
     {% endif %}
     <div class="row">
+      {#  Wayaround for determining visibility for regions with lazybuilder.
+      @See https://www.drupal.org/project/drupal/issues/953034 for more info. #}
+      {% set has_sidebar_first = page.sidebar_first|render|striptags|trim is not empty %}
+      {% set has_sidebar_second = page.sidebar_second|render|striptags|trim is not empty %}
+      {% if has_sidebar_first %}
+        {% set sidebar_first_classes = [
+          has_sidebar_first and has_sidebar_second ? 'col-12 col-md-3',
+          has_sidebar_first and has_sidebar_second is empty ? 'col-12 col-md-4',
+        ] %}
+        <aside {{ attributes.addClass(sidebar_first_classes) }}>
+          <div class="layout-sidebar-left">
+            {{ page.sidebar_first }}
+          </div>
+        </aside>
+      {% endif %}
 
-      <aside class="col-12 col-md-3">
-        <div class="layout-sidebar-left">
-          {{ page.sidebar_first }}
-        </div>
-      </aside>
-
-      <main {{ content_attributes.addClass('col-12 col-md-6') }}>
+      {% set content_classes = [
+        has_sidebar_first and has_sidebar_second ? 'col-12 col-md-6',
+        has_sidebar_first and has_sidebar_second is empty ? 'col-12 col-md-8',
+        has_sidebar_second and has_sidebar_first is empty ? 'col-12 col-md-8',
+        has_sidebar_first is empty and has_sidebar_second is empty ? 'col-12 col-md-12'
+      ] %}
+      <main {{ content_attributes.addClass(content_classes) }}>
         {{ page.content }}
       </main>
 
-      <aside class="col-12 col-md-3 d-print-none">
-        <div class="layout-sidebar-right">
-          <div class="box">
-            <div class="box__body">
-              {{ page.sidebar_second }}
+      {% if has_sidebar_second %}
+        {% set sidebar_second_classes = [
+          has_sidebar_first and has_sidebar_second ? 'col-12 col-md-3',
+          has_sidebar_first is empty and has_sidebar_second ? 'col-12 col-md-4',
+        ] %}
+        <aside {{ attributes.addClass(sidebar_second_classes) }}>
+          <div class="layout-sidebar-right">
+            <div class="box">
+              <div class="box__body">
+                {{ page.sidebar_second }}
+              </div>
             </div>
           </div>
-        </div>
-      </aside>
+        </aside>
+      {% endif %}
     </div>
   </div>
 

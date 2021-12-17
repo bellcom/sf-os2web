@@ -47,10 +47,8 @@ jQuery(function ($) {
 // Search.
 document.addEventListener('DOMContentLoaded', function() {
   function toggle(event) {
-    var element = this;
-    var parent = element.closest('.searchy');
-
-    parent.classList.toggle('searchy--visible-form');
+    var parent = document.querySelectorAll('.searchy');
+    parent[0].classList.toggle('searchy--visible-form');
   }
 
   var buttons = document.querySelectorAll('.js-toggle-searchy');
