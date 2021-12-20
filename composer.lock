@@ -2096,12 +2096,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/anonymous_subscriptions.git",
-                "reference": "705565049c2c8bcac2bee5853c05affb697c5b32"
+                "reference": "fd1387ca0963a853881b5df23a8ea593fc32bdba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/anonymous_subscriptions/zipball/705565049c2c8bcac2bee5853c05affb697c5b32",
-                "reference": "705565049c2c8bcac2bee5853c05affb697c5b32",
+                "url": "https://api.github.com/repos/bellcom/anonymous_subscriptions/zipball/fd1387ca0963a853881b5df23a8ea593fc32bdba",
+                "reference": "fd1387ca0963a853881b5df23a8ea593fc32bdba",
                 "shasum": ""
             },
             "default-branch": true,
