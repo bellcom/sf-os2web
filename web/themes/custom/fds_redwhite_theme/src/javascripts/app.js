@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function toggle(event) {
     var parent = document.querySelectorAll('.searchy');
     parent[0].classList.toggle('searchy--visible-form');
+    var main = document.querySelectorAll('#main-content');
+    main[0].classList.toggle('search-active');
   }
 
   var buttons = document.querySelectorAll('.js-toggle-searchy');
