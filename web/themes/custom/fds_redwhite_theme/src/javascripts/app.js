@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function toggle(event) {
     var parent = document.querySelectorAll('.searchy');
     parent[0].classList.toggle('searchy--visible-form');
-    var main = document.querySelectorAll('#main-content');
+    var main = document.querySelectorAll('body');
     main[0].classList.toggle('search-active');
   }
 
@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
       slideBy: 1,
       autoplay: false,
       autoplayHoverPause: true,
+      mouseDrag: true,
       gutter: 32,
       rewind: false,
       responsive: {
@@ -181,6 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
       slideBy: 1,
       autoplay: false,
       autoplayHoverPause: true,
+      mouseDrag: true,
       gutter: 32,
       rewind: false,
       responsive: {
