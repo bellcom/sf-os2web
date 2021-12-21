@@ -151,13 +151,15 @@ document.addEventListener('DOMContentLoaded', function() {
     tns({
       container: selector,
       items: 1,
+      slideBy: 1,
       autoplay: false,
       autoplayHoverPause: true,
       gutter: 32,
-      rewind: true,
+      rewind: false,
       responsive: {
-        408: {
+        768: {
           items: 3,
+          slideBy: 3,
         },
       },
     });
@@ -174,13 +176,15 @@ document.addEventListener('DOMContentLoaded', function() {
     tns({
       container: selector,
       items: 1,
+      slideBy: 1,
       autoplay: false,
       autoplayHoverPause: true,
       gutter: 32,
-      rewind: true,
+      rewind: false,
       responsive: {
-        408: {
+        768: {
           items: 3,
+          slideBy: 3,
         },
       },
     });
