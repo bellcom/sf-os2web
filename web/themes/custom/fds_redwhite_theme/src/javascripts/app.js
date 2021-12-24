@@ -62,6 +62,27 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+// Footer menu dropdowns.
+document.addEventListener('DOMContentLoaded', function() {
+  function toggle(event) {
+    var button = event.target;
+    var parent = button.parentNode;
+    var list = parent.querySelector('.menu');
+    if (list) {
+      list.classList.toggle('show');
+      parent.classList.toggle('active');
+    }
+  }
+
+  var buttons = document.querySelectorAll('.footer .block-menu.navigation .menu-item--expanded');
+
+  for (var i = 0; i < buttons.length; i++) {
+    var button = buttons[i];
+
+    button.addEventListener('click', toggle);
+  }
+});
+
 // Open all file-links in a new window.
 (function() {
   var links = document.querySelectorAll('.field--type-file .file a');
