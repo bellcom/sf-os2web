@@ -83,6 +83,24 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+// Cover arrow adjustments.
+document.addEventListener('DOMContentLoaded', function() {
+  var coverArrow = document.querySelector('.rk_cover_arrow_button_wrapper');
+
+  if (coverArrow) {
+    coverArrow.parentNode.setAttribute('style', 'position: relative;');
+    coverArrow.addEventListener('click', scroll);
+  }
+
+  function scroll(event) {
+    var scroll_to = jQuery(event.target)
+
+    jQuery([document.documentElement, document.body]).animate({
+      scrollTop: scroll_to.offset().top - 200
+    }, 1000);
+  }
+});
+
 // Open all file-links in a new window.
 (function() {
   var links = document.querySelectorAll('.field--type-file .file a');
