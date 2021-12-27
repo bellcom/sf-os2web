@@ -89,39 +89,13 @@
   background: linear-gradient(90deg, rgba(0,102,50,1) 0%, rgba(0,102,50,0.75) 50%, rgba(0,102,50,0) 100%);
 }
 
-.path-frontpage {
-
-  &, &.toolbar-fixed {
-    padding-top: 0 !important;
-
-    &:not(.gin--vertical-toolbar) {
-
-      &.toolbar-horizontal {
-        padding-top: 39px !important;
-
-        &.toolbar-tray-open {
-          padding-top: 79px !important;
-        }
-      }
-    }
-  }
-}
-
 body {
-
   &, &.toolbar-fixed {
     padding-top: 74px !important;
+  }
 
-    &:not(.gin--vertical-toolbar) {
-
-      &.toolbar-horizontal {
-        padding-top: 74px + 39px !important;
-
-        &.toolbar-tray-open {
-          padding-top: 74px + 79px !important;
-        }
-      }
-    }
+  &.toolbar-tray-open {
+    padding-top: 79px !important;
   }
 }
 
@@ -155,28 +129,6 @@ body {
 
   .path-frontpage & {
     display: block;
-  }
-}
-
-.custom-header--fixed {
-  position: fixed;
-
-  top: 0;
-  left: 0;
-  right: 0;
-
-  z-index: 300;
-
-  .toolbar-horizontal:not(.gin--vertical-toolbar) {
-    top: 39px;
-  }
-
-  .toolbar-horizontal.toolbar-tray-open:not(.gin--vertical-toolbar) & {
-    top: 79px; // Height of toolbar tray.
-  }
-
-  .path-frontpage & {
-    display: none;
   }
 }
 
@@ -462,25 +414,6 @@ body {
 
 // Desktop - and up
 @include media-breakpoint-up(md) {
-
-  body {
-
-    &, &.toolbar-fixed {
-      padding-top: 132px !important; // Height of .custom-header--fixed (recalculated by JS)
-
-      &:not(.gin--vertical-toolbar) {
-
-        &.toolbar-horizontal {
-          padding-top: 132px + 39px !important;
-
-          &.toolbar-tray-open {
-            padding-top: 132px + 79px !important;
-          }
-        }
-      }
-    }
-  }
-
   .custom-header {
 
     .views-exposed-form {
