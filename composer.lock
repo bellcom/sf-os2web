@@ -12329,12 +12329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_events.git",
-                "reference": "9af72e98d284d6abb6c66434261403ca2d63b041"
+                "reference": "d5ebe922f04b17ac596b7bc380aa4919c29f15a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/9af72e98d284d6abb6c66434261403ca2d63b041",
-                "reference": "9af72e98d284d6abb6c66434261403ca2d63b041",
+                "url": "https://api.github.com/repos/OS2web/os2web_events/zipball/d5ebe922f04b17ac596b7bc380aa4919c29f15a2",
+                "reference": "d5ebe922f04b17ac596b7bc380aa4919c29f15a2",
                 "shasum": ""
             },
             "require": {
@@ -12353,7 +12353,7 @@
                 "issues": "https://github.com/OS2web/os2web_events/issues",
                 "source": "https://github.com/OS2web/os2web_events/tree/master"
             },
-            "time": "2021-11-09T14:07:09+00:00"
+            "time": "2021-12-27T12:24:47+00:00"
         },
         {
             "name": "os2web/os2web_hearings",
@@ -12464,12 +12464,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "cc022f753a9100036a37a9bbd92b39f2c55d20ee"
+                "reference": "f3843fecb975140328243fb9eaab4a464738cbba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/cc022f753a9100036a37a9bbd92b39f2c55d20ee",
-                "reference": "cc022f753a9100036a37a9bbd92b39f2c55d20ee",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/f3843fecb975140328243fb9eaab4a464738cbba",
+                "reference": "f3843fecb975140328243fb9eaab4a464738cbba",
                 "shasum": ""
             },
             "require": {
@@ -12487,7 +12487,7 @@
                 "issues": "https://github.com/OS2web/os2web_logging/issues",
                 "source": "https://github.com/OS2web/os2web_logging/tree/master"
             },
-            "time": "2021-10-04T07:02:46+00:00"
+            "time": "2021-12-27T15:04:33+00:00"
         },
         {
             "name": "os2web/os2web_meetings",
