@@ -9,9 +9,10 @@
     {% block content %}
 
       {# Begin - links #}
-    <div class="row">
+    <div class="row entrylinks">
       {% for menu_link in _context['#menu_links'] %}
-      <div class="col-12 col-sm-6 col-md-3">
+      <div class="col-12 col-sm-6 col-md-3 entrylinks-col">
+        <div class="entrylinks-wrapper">
           <a href="{{ menu_link.url }}">{{ menu_link.title }}</a>
           <h2>{{ menu_link.title }}</h2>
           {% set rendered_content = menu_link.content.field_os2web_icon|render %}
@@ -29,6 +30,7 @@
               {% endfor %}
             </ul>
           {% endif %}
+          </div>
         </div>
       {% endfor %}
       </div>
