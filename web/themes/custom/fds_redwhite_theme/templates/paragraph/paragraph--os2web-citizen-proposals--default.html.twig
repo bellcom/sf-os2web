@@ -1,5 +1,12 @@
 <div class="os2web-citizen-proposals--wrapper">
-  <div class="new-proposal-form">
+  <div class="os2web-citizen-proposals--create-new-block">
+    <a href="#create-proposal" id="create_proposal_link" class="os2web-citizen-proposals--create-new-link">
+      <strong>
+        + {{ 'Create new proposal' | t }}
+      </strong>
+    </a>
+  </div>
+  <div class="new-proposal-form d-none">
     {{ new_proposal_form.form_build_id }}
     {{ new_proposal_form.form_id }}
     {{ new_proposal_form }}
