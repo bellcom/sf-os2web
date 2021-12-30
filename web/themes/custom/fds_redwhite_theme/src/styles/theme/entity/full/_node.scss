@@ -72,7 +72,18 @@
 @include media-breakpoint-up(xs) {}
 
 // Mobile - only
-@include media-breakpoint-only(xs, $grid-breakpoints) {}
+@include media-breakpoint-only(xs, $grid-breakpoints) {
+  .path-frontpage {
+    .field--name-field-os2web-column-1 {
+      .paragraph--type--os2web-section-paragraph {
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
+    }
+  }
+}
 
 // Tablet - and up
 @include media-breakpoint-up(sm) {}
