@@ -69,10 +69,16 @@
 // --------------------------------------------------
 
 // Mobile - and up
-@include media-breakpoint-up(xs) {}
+@include media-breakpoint-up(xs) {
+
+}
 
 // Mobile - only
 @include media-breakpoint-only(xs, $grid-breakpoints) {
+
+}
+// Tablet - and up
+@include media-breakpoint-down(sm, $grid-breakpoints) {
   .path-frontpage {
     .field--name-field-os2web-column-1 {
       .paragraph--type--os2web-section-paragraph {
@@ -84,12 +90,13 @@
     }
   }
 }
-
 // Tablet - and up
 @include media-breakpoint-up(sm) {}
 
 // Tablet - only
-@include media-breakpoint-only(sm, $grid-breakpoints) {}
+@include media-breakpoint-only(sm, $grid-breakpoints) {
+
+}
 
 // Desktop - and up
 @include media-breakpoint-up(md) {}

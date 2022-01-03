@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffff1b5c3e6867f698f718e29b396073",
+    "content-hash": "a720c8e17b26e0156ad054c8cdd530ee",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -12209,12 +12209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_citizen_proposals.git",
-                "reference": "b464586132897b0164eb22e0e89adb8298df0ce3"
+                "reference": "65d4bdd2f8e404a3ffd7745eeb8415609d6d74b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_citizen_proposals/zipball/b464586132897b0164eb22e0e89adb8298df0ce3",
-                "reference": "b464586132897b0164eb22e0e89adb8298df0ce3",
+                "url": "https://api.github.com/repos/OS2web/os2web_citizen_proposals/zipball/65d4bdd2f8e404a3ffd7745eeb8415609d6d74b6",
+                "reference": "65d4bdd2f8e404a3ffd7745eeb8415609d6d74b6",
                 "shasum": ""
             },
             "require": {
@@ -12231,7 +12231,7 @@
                 "issues": "https://github.com/OS2web/os2web_citizen_proposals/issues",
                 "source": "https://github.com/OS2web/os2web_citizen_proposals/tree/master"
             },
-            "time": "2021-12-13T14:46:55+00:00"
+            "time": "2022-01-03T12:08:19+00:00"
         },
         {
             "name": "os2web/os2web_contact",
@@ -23907,5 +23907,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
