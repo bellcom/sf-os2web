@@ -85,16 +85,18 @@
   {% if label and not page %}
     <div class="row no-gutters">
       <div class="col-2 os2web-event-date">
-        {{ content.field_os2web_event_start_date }}
-        {{ content.field_maaned }}
+        {{ node.field_os2web_event_start_date.value|date('d') }}
+        <br />
+        {{ node.field_os2web_event_start_date.value|date('M') }}
       </div>
       <div class="col-10 os2web-event-title">
         <h2{{ title_attributes }}>
-          <a href="{{ node.field_os2web_event_url.value }}" rel="bookmark">
+          <a target="_blank" href="{{ node.field_os2web_event_url.value }}" rel="bookmark">
             {{ label }}</a>
         </h2>
       </div>
     </div>
+    <a class="fullhref" target="_blank" href="{{ node.field_os2web_event_url.value }}" rel="bookmark">{{ label }}</a>
 
   {% endif %}
   {{ title_suffix }}
@@ -112,5 +114,4 @@
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content | without(['field_os2web_event_start_date', 'field_maaned']) }}
   </div>
-
 </article>

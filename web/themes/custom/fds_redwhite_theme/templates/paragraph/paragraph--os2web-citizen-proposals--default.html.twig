@@ -12,7 +12,6 @@
     {{ new_proposal_form }}
   </div>
 
-  <h1>{{ 'Proposals'|t }}</h1>
   <ul id="proposals-list" class="published-proposal-wrapper accordion">
     {% for proposal_item in published_proposals %}
       {% set proposal = proposal_item['proposal_node']  %}
