@@ -12239,12 +12239,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_contact.git",
-                "reference": "0aa6a828182345037818f4ee4d8e103abe34029d"
+                "reference": "78ca1b7d50abcc1c44089e35f184c66639567399"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/0aa6a828182345037818f4ee4d8e103abe34029d",
-                "reference": "0aa6a828182345037818f4ee4d8e103abe34029d",
+                "url": "https://api.github.com/repos/OS2web/os2web_contact/zipball/78ca1b7d50abcc1c44089e35f184c66639567399",
+                "reference": "78ca1b7d50abcc1c44089e35f184c66639567399",
                 "shasum": ""
             },
             "require": {
@@ -12263,7 +12263,7 @@
                 "issues": "https://github.com/OS2web/os2web_contact/issues",
                 "source": "https://github.com/OS2web/os2web_contact/tree/master"
             },
-            "time": "2021-11-24T11:30:27+00:00"
+            "time": "2022-01-05T12:05:24+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -12996,12 +12996,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_spotbox.git",
-                "reference": "0f8e9acaa0df3e423c73e5d54e5775fdaaa0c4c9"
+                "reference": "081fd7b227258a57be1c33bf0a79a4b7a0c3675b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/0f8e9acaa0df3e423c73e5d54e5775fdaaa0c4c9",
-                "reference": "0f8e9acaa0df3e423c73e5d54e5775fdaaa0c4c9",
+                "url": "https://api.github.com/repos/OS2web/os2web_spotbox/zipball/081fd7b227258a57be1c33bf0a79a4b7a0c3675b",
+                "reference": "081fd7b227258a57be1c33bf0a79a4b7a0c3675b",
                 "shasum": ""
             },
             "require": {
