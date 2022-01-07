@@ -37,6 +37,9 @@ if (!empty(getenv('MIGRATE_MYSQL_DATABASE'))) {
   ];
 }
 
+if (!empty(getenv('DRUPAL_TRUSTED_HOST'))) {
+  $settings['trusted_host_patterns'] = ['^'.getenv('DRUPAL_TRUSTED_HOST').'$'];
+}
 
 $settings['hash_salt'] = getenv('DRUPAL_HASH_SALT');
 

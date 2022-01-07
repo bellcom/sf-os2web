@@ -27,7 +27,7 @@ if [ ! -f "web/sites/default/env.settings.php" ]; then
 fi
 
 echo-yellow "Reinstalling drupal from scratch based in os2web profile."
-## With Danish translation. NORE this operation take much longer time.
+## With Danish translation. NOTE this operation take much longer time.
 # fin drush si os2web --account-pass=admin --locale=da -y -vvv
 
 ## Without translations.

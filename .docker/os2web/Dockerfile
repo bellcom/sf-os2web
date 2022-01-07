@@ -1,4 +1,4 @@
-FROM drupal:8-apache-buster
+FROM drupal:9-php7.4-apache
 
 # Installing additional dependencies.
 RUN set -eux; \
@@ -18,7 +18,8 @@ RUN set -eux; \
 	echo 4 | dpkg -i mysql-apt-config_0.8.13-1_all.deb; \
 	apt update; \
 	apt install -qq -y mysql-client; \
-	echo "[client]" >> /etc/mysql/my.cnf; echo "ssl-mode=DISABLED" >> /etc/mysql/my.cnf
+	echo "[client]" >> /etc/mysql/my.cnf; echo "ssl-mode=DISABLED" >> /etc/mysql/my.cnf; \
+	rm -rf /var/lib/apt/lists/*
 
 # Removing standard Drupal core and loading OS2Web project.
 WORKDIR /opt
@@ -35,7 +36,6 @@ WORKDIR /opt/drupal
 # Loading composer dependencies and configuring project folders.
 RUN set -eux; \
 	export COMPOSER_HOME="$(mktemp -d)"; \
-	composer global require hirak/prestissimo;\
 	COMPOSER_MEMORY_LIMIT=-1 composer install; \
 	chown -R www-data:www-data web/sites web/modules web/themes; \
 	# delete composer cache.
