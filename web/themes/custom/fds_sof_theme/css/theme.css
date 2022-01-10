@@ -242,13 +242,13 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {ri
 .field__item.blog-slider__container+.field__item .container .row .teaser {box-shadow: none;}
 .blogSlides h2 {text-shadow: #000 1px 1px 19px;}
 .blogSlider__dots {display: none;}
-  
+
 /** all articles *********************************************************************/
 [data-cssname="forside-nyheder"] .grid>:first-child {width: 100%;}
 [data-cssname="forside-nyheder"] > div {padding: var(--base-padding) 0;}
 [data-cssname="forside-nyheder"] .views-element-container {
     padding: var(--base-padding);
-    background-color: #fff;    
+    background-color: #fff;
 }
 [data-cssname="forside-nyheder"] .grid {--grid-column-count: 1;}
 [data-cssname="forside-nyheder"] .grid .column-wrap + .column-wrap {border-top: 1px solid rgba(0,0,0,0.09);}
@@ -289,12 +289,12 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {ri
         flex-direction: row;
     }
     [data-cssname="forside-nyheder"] .grid>:first-child [role="article"] .entity-teaser__image {
-        width: 50%; 
+        width: 50%;
         padding-right: var(--base-padding);
         border-right: 1px solid rgba(0,0,0,0.09);
     }
     [data-cssname="forside-nyheder"] .grid>:first-child [role="article"] .entity-teaser__body {
-        width: 50%; 
+        width: 50%;
         padding-left: var(--base-padding);
 
     }
@@ -336,7 +336,7 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {ri
     font-weight: 400;
     margin: 0;
 }
-[data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p 
+[data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p
 a {
     background: var(--primary-color);
     width: 5rem;
@@ -348,29 +348,29 @@ a {
     justify-content: center;
     margin: 0.75rem;
 }
-[data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p 
+[data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p
 a:after {
     position: static;
     color: #fff;
     font-family: 'FontAwesome';
     font-size: 3rem;
 }
-[data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p 
+[data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p
 a[title="mailchimp"]:after {
     content: '\f1ea';
 }
-[data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p 
+[data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p
 a[title="facebook"]:after {
     content: '\f09a';
 }
-[data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p 
+[data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p
 a[title="twitter"]:after {
     content: '\f099';
 }
 @media (min-width: 575px) {
     [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(1) {
         padding-bottom: 0;
-    }    
+    }
     [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field {
         display: flex;
         align-items: center;
@@ -388,7 +388,7 @@ a[title="twitter"]:after {
         list-style-type: none;
         margin: 0;
     }
-    [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p 
+    [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p
     a:last-of-type {
         margin-right:0;
     }
@@ -440,21 +440,21 @@ a[title="twitter"]:after {
 [data-cssname="banner-magasinet-skoleboern"] .inline-list {margin-bottom: 6rem;}
 [data-cssname="banner-magasinet-skoleboern"] .banner__heading {width: 100%;}
 
-/* all but the first 
-body.path-frontpage 
-.paragraph--type--os2web-content-reference 
+/* all but the first
+body.path-frontpage
+.paragraph--type--os2web-content-reference
 .field--name-field-os2web-content-reference [class*="col-"]:not(:first-child)
 div.entity-teaser__image {
     display: none;
 }
-body.path-frontpage 
-.paragraph--type--os2web-content-reference 
+body.path-frontpage
+.paragraph--type--os2web-content-reference
 .field--name-field-os2web-content-reference [class*="col-"]:not(:first-child)
 div.entity-teaser__body {
     padding: 0;
 }
-body.path-frontpage 
-.paragraph--type--os2web-content-reference 
+body.path-frontpage
+.paragraph--type--os2web-content-reference
 .field--name-field-os2web-content-reference [class*="col-"]:not(:first-child)
 .entity-teaser--os2web-page .field--name-field-os2web-page-heading h3.h4 {
     font-size: 30px;
@@ -462,21 +462,21 @@ body.path-frontpage
     line-height: 32px;
     margin-top: 20px;
 }
- generel 
-body.path-frontpage 
-.paragraph--type--os2web-content-reference 
+ generel
+body.path-frontpage
+.paragraph--type--os2web-content-reference
 .field--name-field-os2web-content-reference [class*="col-"]
 div.entity-teaser__body .field--type-body {
     font-family: 'conduit_itclight';
 }
-body.path-frontpage 
-.paragraph--type--os2web-content-reference 
+body.path-frontpage
+.paragraph--type--os2web-content-reference
 .field--name-field-os2web-content-reference [class*="col-"]
 div.entity-teaser__body > div.field--type-link {
     margin: 0;
 }
-body.path-frontpage 
-.paragraph--type--os2web-content-reference 
+body.path-frontpage
+.paragraph--type--os2web-content-reference
 .field--name-field-os2web-content-reference [class*="col-"]
 div.entity-teaser__body > div.field--type-link > a {
     display: inline-block;
@@ -487,8 +487,8 @@ div.entity-teaser__body > div.field--type-link > a {
     font-weight: 100;
     padding-top: 10px
 }
-body.path-frontpage 
-.paragraph--type--os2web-content-reference 
+body.path-frontpage
+.paragraph--type--os2web-content-reference
 .field--name-field-os2web-content-reference [class*="col-"]
 div.entity-teaser__body > div.field--type-link > a::after {
     content:'';
@@ -569,7 +569,7 @@ div.entity-teaser__body > div.field--type-link > a::after {
 [data-cssname="3xArtikelKolonner"] .field--name-field-os2web-news-block-header {margin: 0; padding:0;}
 [data-cssname="3xArtikelKolonner"] .h4 {margin:0;}
 [data-cssname="3xArtikelKolonner"] .grid.columns-default>:first-child .h4 {
-    min-height: 14rem;    
+    min-height: 14rem;
 }
 [data-cssname="3xArtikelKolonner"] .entity-teaser__body {margin: 0; padding:0; position: relative;}
 [data-cssname="3xArtikelKolonner"] .field--type-link {
@@ -670,9 +670,13 @@ body.path-search .region-content .pager {order: 4;}
 
 /* don't show "no results" when entering search page and .no-results-help */
 body.path-search .region-content form.search-form[action="/search/site?keys="] ~ .item-list h3,
-body.path-search .region-content form.search-form[action="/search/site"] ~ .item-list h3, 
+body.path-search .region-content form.search-form[action="/search/site"] ~ .item-list h3,
 body.path-search .region-content form.search-form[action="/search/site?keys="] ~ .item-list .no-results-help,
-body.path-search .region-content form.search-form[action="/search/site"] ~ .item-list .no-results-help {display:none;}
+body.path-search .region-content form.search-form[action="/search/site"] ~ .item-list .no-results-help,
+body.path-s .region-content form#views-exposed-form-content-search-page-1 ~ .item-list h3,
+body.path-s .region-content form#views-exposed-form-content-search-page-1 ~ .item-list h3,
+body.path-s .region-content form#views-exposed-form-content-search-page-1 ~ .item-list .no-results-help,
+body.path-s .region-content form#views-exposed-form-content-search-page-1 ~ .item-list .no-results-help {display:none;}
 
 body.path-search .region-content form.search-form[action="/search/site?keys="] .container-inline .form-group:before,
 body.path-search .region-content form.search-form[action="/search/site"] .container-inline .form-group:before {
@@ -683,14 +687,16 @@ body.path-search .region-content form.search-form[action="/search/site"] .contai
     font-family: sans-serif;
     font-size: 1.4rem;
 }
-form.search-form .form-group:focus-within:before {
+form.search-form .form-group:focus-within:before,
+form#views-exposed-form-content-search-page-1 .form-group:focus-within:before {
     content: '' !important;
 }
 
 .form-group label {color: var(--primary-color);}
 
 /* search form */
-form.search-form .container-inline {
+form.search-form .container-inline,
+form#views-exposed-form-content-search-page-1 .form--inline {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -700,7 +706,9 @@ form.search-form .container-inline {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
 }
-form.search-form .container-inline:after {
+form.search-form .container-inline:after,
+form#views-exposed-form-content-search-page-1 .form--inline:after,
+form#views-exposed-form-products-page-1 .form-item-search-api-fulltext {
     width: 12rem;
     position: absolute;
     right: 0;
@@ -712,33 +720,47 @@ form.search-form .container-inline:after {
     color: var(--primary-color);
     pointer-events: none;
 }
-form.search-form .form-group {
+form.search-form .form-group,
+form#views-exposed-form-content-search-page-1 .form-group {
     flex: 1;
 }
-form.search-form input[type="search"] {
+form.search-form input[type="search"],
+form#views-exposed-form-content-search-page-1 input#edit-search-api-fulltext,
+form#views-exposed-form-products-page-1 input#edit-search-api-fulltext {
     width:100%;
     border: none;
     background: transparent;
+    margin: 0;
 }
-form.search-form input.button {
+form.search-form input.button,
+form#views-exposed-form-content-search-page-1 input.button {
     background: transparent;
     color: transparent;
     width: 12rem;
 }
-form.search-form input.button:hover{
+form.search-form input.button:hover,
+form#views-exposed-form-content-search-page-1 input.button:hover{
     background-color: transparent;
     color: transparent;
-} 
+}
 form.search-form .form-type-search {margin: 0;}
+form#views-exposed-form-content-search-page-1 .form-type-search,
+form#views-exposed-form-content-search-page-1 .form-item{margin: 0;}
 form.search-form .form-type-search input {outline: transparent; padding-left: 1.8rem;}
+form#views-exposed-form-content-search-page-1 .form-type-search input {outline: transparent; padding-left: 1.8rem;}
 form.search-form .form-label {display:none;}
+form#views-exposed-form-content-search-page-1 .form-label {display:none;}
 form.search-form .search-help-link {display:none;}
+form#views-exposed-form-content-search-page-1 .search-help-link {display:none;}
 .no-results-help p {
     font-size: 1.4rem;
     padding-left: 1rem;
 }
 body.path-search .page-container {min-height: 60.5rem;}
+body.path-s .page-container {min-height: 60.5rem;}
+form#views-exposed-form-content-search-page-1 #edit-actions {margin:0}
 form.search-form [type="submit"]:focus {background-color:transparent; outline: 0;}
+form#views-exposed-form-content-search-page-1 [type="submit"]:focus {background-color:transparent; outline: 0;}
 
 /* avanced html boxes */
 [class*="-box"]>[class*="inner-box"]{
@@ -907,7 +929,7 @@ form.search-form [type="submit"]:focus {background-color:transparent; outline: 0
 .form-input, .form-email, .form-input, .form-email, .form-select {border-radius: 0;}
 
 /* banner */
-.region-featured-bottom-first .container-fluid 
+.region-featured-bottom-first .container-fluid
 .paragraph--type--os2web-banner-paragraph {
     min-height: 70vh;
     background-position: 50% 50%;
@@ -944,22 +966,22 @@ body:not(.path-frontpage) [class*="-paragraph-wid"] {
     background-color: var(--body-bg-color-frontpage);
     padding: var(--base-padding) 0;
 }
-body:not(.path-frontpage) [class*="-paragraph-wid"] 
+body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid {
     max-width: var(--max-width);
     margin: 0 auto;
     background-color: var(--gray-color-000);
 }
-body:not(.path-frontpage) [class*="-paragraph-wid"] 
+body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid>.column-wrap {
     padding: var(--base-padding);
 }
-body:not(.path-frontpage) [class*="-paragraph-wid"] 
-.entity-default--os2web-3-columns>.grid>.column-wrap>* { 
+body:not(.path-frontpage) [class*="-paragraph-wid"]
+.entity-default--os2web-3-columns>.grid>.column-wrap>* {
     flex-direction: column;
     text-align: left;
 }
-body:not(.path-frontpage) [class*="-paragraph-wid"] 
+body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid>.column-wrap h2 {
     margin: 0 0 1rem 0;
     text-align: left;
@@ -968,15 +990,15 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
     color: #000;
     font-weight: normal;
 }
-body:not(.path-frontpage) [class*="-paragraph-wid"] 
-.entity-default--os2web-3-columns>.grid>:not(:last-child).column-wrap 
+body:not(.path-frontpage) [class*="-paragraph-wid"]
+.entity-default--os2web-3-columns>.grid>:not(:last-child).column-wrap
 .field--name-field-os2web-content-reference.field__items a {
     color: var(--primary-color);
     font-weight: 100;
     text-transform: uppercase;
 }
-body:not(.path-frontpage) [class*="-paragraph-wid"] 
-.entity-default--os2web-3-columns>.grid>:last-child.column-wrap 
+body:not(.path-frontpage) [class*="-paragraph-wid"]
+.entity-default--os2web-3-columns>.grid>:last-child.column-wrap
 .field--name-field-os2web-content-reference.field__items a {
     display: inline-block;
     margin: 7px 0;
@@ -1060,7 +1082,7 @@ article .article-sumitted-date-by {
 /* no print, search */
 body.path-search-site a.action-button.print {display:none;}
 
-/* 
+/*
 view: path-sektion-nyheder'
 duw to bug: no special view filename suggestion => ergo this messy css
 */
@@ -1087,7 +1109,7 @@ body.path-sektion-nyheder h1+p {
     border: 1px solid #f0f0f0;
     border-top: 0;
     border-bottom: 0;
-    
+
 }
 .view-content.grid .column-wrap .entity-teaser__body .field--type-body {
     flex-grow: 0;
@@ -1124,7 +1146,7 @@ body.path-sektion-nyheder h1+p {
     font-weight: 400;
     line-height: 28px;
     color: var(--primary-color);
-    
+
     font-size: 24px;
     font-weight: 400;
     line-height: 28px;
@@ -1134,7 +1156,7 @@ body.path-sektion-nyheder h1+p {
     display: none;
 }
 .view-content.grid .field--type-link a {
-    color: var(--primary-color); 
+    color: var(--primary-color);
     font-weight: 100;
     font-size: 20px;
     line-height: 30px;
