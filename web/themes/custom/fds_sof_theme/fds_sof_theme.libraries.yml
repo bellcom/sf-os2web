@@ -34,6 +34,7 @@ styles:
       css/components/cards.css: {}
       css/components/tooltips.css: {}
       css/components/commerce.css: {}
+      css/components/files.css: {}
       css/utils/flexy-row.css: {}
       css/utils/flexy-list.css: {}
       css/utils/grid.css: {}

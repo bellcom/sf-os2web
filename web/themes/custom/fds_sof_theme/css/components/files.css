@@ -1,0 +1,9 @@
+.field--type-file.field__items .file{
+  box-shadow: none;
+}
+.field--type-file.field__items a {
+  height: auto;
+}
+.field--type-file.field__items a::after {
+  display:none;
+}
