@@ -4,6 +4,8 @@ include(dirname(__FILE__) . '/include/settings.inc');
 use Drupal\Component\Utility\Html;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\node\Entity\Node;
+use Drupal\views\ViewExecutable;
+use Drupal\facets\Plugin\Block\FacetBlock;
 
 /**
  * Implements hook_preprocess_page().
@@ -464,3 +466,18 @@ function fds_sof_theme_preprocess_item_list__search_results(array &$variables) {
 //function fds_sof_theme_preprocess_page__product(array &$variables) {
   //$variables['related_products'] = views_embed_view('content_list', 'block_1');
 //}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function fds_sof_theme_views_pre_render(ViewExecutable $view) {
+  if ($view->id() != 'products') {
+    return;
+  }
+  $plugin_manager_block = \Drupal::service('plugin.manager.block');
+  $facet_id ='category_ord_i_ordforraad_name';
+  $block = $plugin_manager_block->createInstance("facet_block:$facet_id");
+  if ($block instanceof FacetBlocK) {
+    $view->attachment_before[$facet_id] = $block->build();
+  }
+}

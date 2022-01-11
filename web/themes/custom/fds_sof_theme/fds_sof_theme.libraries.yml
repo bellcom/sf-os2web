@@ -28,6 +28,7 @@ styles:
       css/components/accordion.css: {}
       css/components/alerts.css: {}
       css/components/pagers.css: {}
+      css/components/products.css: {}
       css/components/icons.css: {}
       css/components/tags.css: {}
       css/components/badges.css: {}

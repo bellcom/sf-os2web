@@ -696,7 +696,8 @@ form#views-exposed-form-content-search-page-1 .form-group:focus-within:before {
 
 /* search form */
 form.search-form .container-inline,
-form#views-exposed-form-content-search-page-1 .form--inline {
+form#views-exposed-form-content-search-page-1 .form--inline,
+form#views-exposed-form-products-page-1 .form--inline {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -706,9 +707,13 @@ form#views-exposed-form-content-search-page-1 .form--inline {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
 }
+form#views-exposed-form-products-page-1 .form--inline {
+    float: right;
+    margin: 0;
+}
 form.search-form .container-inline:after,
 form#views-exposed-form-content-search-page-1 .form--inline:after,
-form#views-exposed-form-products-page-1 .form-item-search-api-fulltext {
+form#views-exposed-form-products-page-1 .form--inline:after {
     width: 12rem;
     position: absolute;
     right: 0;
@@ -733,32 +738,38 @@ form#views-exposed-form-products-page-1 input#edit-search-api-fulltext {
     margin: 0;
 }
 form.search-form input.button,
-form#views-exposed-form-content-search-page-1 input.button {
+form#views-exposed-form-content-search-page-1 input.button,
+form#views-exposed-form-products-page-1 input#edit-submit-products {
     background: transparent;
     color: transparent;
     width: 12rem;
 }
 form.search-form input.button:hover,
-form#views-exposed-form-content-search-page-1 input.button:hover{
+form#views-exposed-form-content-search-page-1 input.button:hover
+form#views-exposed-form-products-page-1 input.button:hover{
     background-color: transparent;
     color: transparent;
 }
 form.search-form .form-type-search {margin: 0;}
 form#views-exposed-form-content-search-page-1 .form-type-search,
-form#views-exposed-form-content-search-page-1 .form-item{margin: 0;}
+form#views-exposed-form-content-search-page-1 .form-item,
+form#views-exposed-form-products-page-1 .form-item {margin: 0;}
 form.search-form .form-type-search input {outline: transparent; padding-left: 1.8rem;}
 form#views-exposed-form-content-search-page-1 .form-type-search input {outline: transparent; padding-left: 1.8rem;}
 form.search-form .form-label {display:none;}
 form#views-exposed-form-content-search-page-1 .form-label {display:none;}
 form.search-form .search-help-link {display:none;}
 form#views-exposed-form-content-search-page-1 .search-help-link {display:none;}
+
+form#views-exposed-form-content-search-page-1 #edit-actions,
+form#views-exposed-form-products-page-1 #edit-actions {margin:0}
+
 .no-results-help p {
     font-size: 1.4rem;
     padding-left: 1rem;
 }
 body.path-search .page-container {min-height: 60.5rem;}
 body.path-s .page-container {min-height: 60.5rem;}
-form#views-exposed-form-content-search-page-1 #edit-actions {margin:0}
 form.search-form [type="submit"]:focus {background-color:transparent; outline: 0;}
 form#views-exposed-form-content-search-page-1 [type="submit"]:focus {background-color:transparent; outline: 0;}
 
