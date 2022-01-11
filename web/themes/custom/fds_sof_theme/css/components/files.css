@@ -1,9 +1,17 @@
-.field--type-file.field__items .file{
+.field--type-file.field__items .file,
+.field--type-file > .field__item .file{
   box-shadow: none;
 }
-.field--type-file.field__items a {
+.field--type-file.field__items a,
+.field--type-file > .field__item a {
   height: auto;
 }
-.field--type-file.field__items a::after {
+.field--type-file.field__items a::after,
+.field--type-file > .field__item a::after {
   display:none;
+}
+
+.media .field--type-file > .field__item,
+.field--type-file > .field__item a {
+  padding-left: 0;
 }
