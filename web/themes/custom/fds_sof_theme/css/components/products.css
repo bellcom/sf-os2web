@@ -65,39 +65,39 @@ body .view-sof-checkout-order-summary table th:first-of-type {
   width: auto;
 }
 
-.views-field-purchased-entity {
+table .views-field-purchased-entity {
   max-width: 200px;
 }
 
-.views-field-edit-quantity {
+table .views-field-edit-quantity {
   max-width: 50px;
   text-align: center;
 }
 
-.views-field-remove-button {
+table .views-field-remove-button {
   max-width: 80px;
   text-align: center;
 }
 
-.views-field-field-description,
-.views-field-field-description p,
-.views-field-field-description .body-text{
+table .views-field-field-description,
+table .views-field-field-description p,
+table .views-field-field-description .body-text{
   font-size: 14px;
 }
 
-.views-field-field-description {
+table .views-field-field-description {
   max-width: 300px;
 }
 
-.views-field-total-price__number {
+table .views-field-total-price__number {
   max-width: 100px;
   text-align: right;
 }
 
-.view-sof-checkout-order-summary .views-field-total-price__number {
+table .view-sof-checkout-order-summary .views-field-total-price__number {
   max-width: 50px;
 }
 
-.view-sof-checkout-order-summary .views-field-unit-price__number {
+table .view-sof-checkout-order-summary .views-field-unit-price__number {
   max-width: 50px;
 }
