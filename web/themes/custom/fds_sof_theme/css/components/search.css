@@ -39,11 +39,16 @@
 }
 
 .entity-search-result {padding: 2.4rem;}
-.entity-search-result h1, 
-.entity-search-result h2, 
-.entity-search-result h3, 
-.entity-search-result h4, 
-.entity-search-result h5, 
+.entity-search-result h1,
+.entity-search-result h2,
+.entity-search-result h3,
+.entity-search-result h4,
+.entity-search-result h5,
 .entity-search-result h6 {
     margin-top: 0;
+}
+
+.view-content-search .views-row {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b2b2b2;
 }
