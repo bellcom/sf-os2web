@@ -60,7 +60,8 @@
   clear: both;
 }
 
-body .view-commerce-cart-form table th:first-of-type {
+body .view-commerce-cart-form table th:first-of-type,
+body .view-sof-checkout-order-summary table th:first-of-type {
   width: auto;
 }
 
@@ -68,9 +69,20 @@ body .view-commerce-cart-form table th:first-of-type {
   max-width: 200px;
 }
 
-.views-field-edit-quantity,
-.views-field-remove-button {
+.views-field-edit-quantity {
   max-width: 50px;
+  text-align: center;
+}
+
+.views-field-remove-button {
+  max-width: 80px;
+  text-align: center;
+}
+
+.views-field-field-description,
+.views-field-field-description p,
+.views-field-field-description .body-text{
+  font-size: 14px;
 }
 
 .views-field-field-description {
@@ -79,4 +91,13 @@ body .view-commerce-cart-form table th:first-of-type {
 
 .views-field-total-price__number {
   max-width: 100px;
+  text-align: right;
+}
+
+.view-sof-checkout-order-summary .views-field-total-price__number {
+  max-width: 50px;
+}
+
+.view-sof-checkout-order-summary .views-field-unit-price__number {
+  max-width: 50px;
 }
