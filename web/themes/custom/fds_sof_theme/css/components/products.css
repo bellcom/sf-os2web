@@ -59,3 +59,24 @@
 .view-products .view-content {
   clear: both;
 }
+
+body .view-commerce-cart-form table th:first-of-type {
+  width: auto;
+}
+
+.views-field-purchased-entity {
+  max-width: 200px;
+}
+
+.views-field-edit-quantity,
+.views-field-remove-button {
+  max-width: 50px;
+}
+
+.views-field-field-description {
+  max-width: 300px;
+}
+
+.views-field-total-price__number {
+  max-width: 100px;
+}

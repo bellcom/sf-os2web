@@ -84,6 +84,7 @@ form.commerce-checkout-flow .link--previous {
 /* tables / lengends */
 .layout-checkout-form fieldset legend,
 .checkout-order-summary table,
+.view-sof-checkout-order-summary table,
 .view-commerce-cart-form table {
   width: 100%;
 }
@@ -91,12 +92,15 @@ form.commerce-checkout-flow .link--previous {
 .checkout-order-summary table,
 .checkout-order-summary table,
 .view-commerce-cart-form table,
+.view-sof-checkout-order-summary table,
 .view-commerce-cart-form table {
   border-collapse: inherit;
   border-spacing: 3px;
 }
 .checkout-order-summary table th,
 .checkout-order-summary table td,
+.view-sof-checkout-order-summary table td,
+.view-sof-checkout-order-summary table th,
 .view-commerce-cart-form table th,
 .view-commerce-cart-form table td {
   vertical-align: middle;
@@ -107,6 +111,7 @@ form.commerce-checkout-flow .link--previous {
 }
 .layout-checkout-form fieldset legend,
 .checkout-order-summary table th,
+.view-sof-checkout-order-summary table th,
 .view-commerce-cart-form table th {
   color: #fff;
   text-transform: uppercase;
@@ -116,6 +121,7 @@ form.commerce-checkout-flow .link--previous {
   border-radius: .4rem;
 }
 .checkout-order-summary table th:first-of-type,
+.view-sof-checkout-order-summary table th:first-of-type,
 .view-commerce-cart-form table th:first-of-type {width: 80%;}
 .view-commerce-cart-form table .form-item {margin: 0;}
 .checkout-order-summary table td[class*="_number"],
@@ -124,6 +130,7 @@ form.commerce-checkout-flow .link--previous {
 
 /* should perhaps be moved to theme.css (very SOF specific) */
 .layout-checkout-form input.button,
+.view-sof-checkout-order-summary input.button,
 .view-commerce-cart-form input.button {
   font-family: sans-serif;
   padding: 0.5rem 1rem;
@@ -150,7 +157,6 @@ div>:first-child.order-total-line {margin-top: .3rem;}
     min-width: 100px;
 }
 
-body.path-cart .order-total-line:not(.order-total-line__total) {display:none;}
 body.path-cart .order-total-line span {
   background-color:transparent;
   font-size: 1.8rem;
@@ -212,6 +218,9 @@ body.path-cart .order-total-line span {
 
 /* cart  */
 .cart .views-element-container>.container {--max-width: 100%}
+
+/* summary */
+.checkout-pane-order-summary .views-element-container>.container {--max-width: 100%}
 
 /* overview */
 .checkout-order-summary td[data-title="Produkt"] .field--name-title {display:none;}
