@@ -207,6 +207,9 @@
             "drupal/textfield_counter" : {
                 "Fix scrolltop prevent" :  "./patches/textfield_counter-scrolltop-fix.patch"
             },
+            "drupal/commerce" : {
+                "2893860 - Show subtotal without taxes" :  "https://www.drupal.org/files/issues/2020-07-08/2893860-32-subtotal-without-tax.patch"
+            },
             "drupal/easy_breadcrumb" : {
                 "Fix frontpage page as part of the breadcrumb path" :  "./patches/easy-breadcrumb-include-frontpage.patch"
             },
