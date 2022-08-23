@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79f24ce94d27de7313d89950f2dfde7b",
+    "content-hash": "38dfb11b4d21053d49569a125f30cd86",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7216,6 +7216,52 @@
             "homepage": "https://www.drupal.org/project/mailsystem",
             "support": {
                 "source": "https://git.drupalcode.org/project/mailsystem"
+            }
+        },
+        {
+            "name": "drupal/media_embed_extra",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_embed_extra.git",
+                "reference": "1.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_embed_extra-1.0.0-beta1.zip",
+                "reference": "1.0.0-beta1",
+                "shasum": "acfbfe8b6699e04563ac6a90bdab702c5dcd0437"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/media": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta1",
+                    "datestamp": "1613522478",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ericmaster",
+                    "homepage": "https://www.drupal.org/user/334757"
+                }
+            ],
+            "description": "Extra options for media embed widget.",
+            "homepage": "https://www.drupal.org/project/media_embed_extra",
+            "support": {
+                "source": "http://cgit.drupalcode.org/media_embed_extra",
+                "issues": "https://www.drupal.org/project/issues/media_embed_extra"
             }
         },
         {
@@ -25027,6 +25073,7 @@
         "drupal/entity_clone": 10,
         "drupal/file_management": 20,
         "drupal/gin_login": 5,
+        "drupal/media_embed_extra": 10,
         "drupal/upgrade_rector": 15,
         "os2web/os2web": 20,
         "os2web/os2web_banner": 20,
@@ -25055,5 +25102,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
