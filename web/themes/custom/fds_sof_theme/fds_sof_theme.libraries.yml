@@ -61,3 +61,4 @@ javascripts:
     js/slideshow.js: {}
     js/accordion.js: {}
     js/os2webBannerSlider.js: {}
+    js/theme.js: {}
