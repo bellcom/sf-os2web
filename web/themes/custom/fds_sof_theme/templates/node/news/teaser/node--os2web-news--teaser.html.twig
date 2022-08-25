@@ -7,7 +7,8 @@
   view_mode ? view_mode|clean_class,
 ]
 %}
-<div {{ attributes.addClass(classes) }}>
+<div {{ attributes.addClass(classes) }} data-link-url="{{ url }}">
+
   <div class="entity-{{ view_mode|clean_class }}__image">
     {{ content.field_os2web_news_primaryimage }}
   </div>
