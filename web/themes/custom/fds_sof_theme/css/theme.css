@@ -1001,28 +1001,13 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
     color: #000;
     font-weight: normal;
 }
+
 body:not(.path-frontpage) [class*="-paragraph-wid"]
-.entity-default--os2web-3-columns>.grid>:not(:last-child).column-wrap
+.entity-default--os2web-3-columns>.grid>.column-wrap
 .field--name-field-os2web-content-reference.field__items a {
     color: var(--primary-color);
     font-weight: 100;
     text-transform: uppercase;
-}
-body:not(.path-frontpage) [class*="-paragraph-wid"]
-.entity-default--os2web-3-columns>.grid>:last-child.column-wrap
-.field--name-field-os2web-content-reference.field__items a {
-    display: inline-block;
-    margin: 7px 0;
-    padding: 9px 14px 7px;
-    border-radius: 5%;
-    background-color: var(--primary-color);
-    color: #FFF;
-    font-size: 16px;
-    text-align: left;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: normal;
 }
 
 /* artikel datoer */
