@@ -179,7 +179,7 @@ function fds_sof_theme_preprocess_node(&$variables) {
   // else a mailto link to the shop email is rendered
   if ($node->getType() === 'os2web_news') {
     $newsAuthor = $node->field_os2web_news_article_author->value;
-    if (strlen($newsAuthor)>0) {
+    if (strlen($newsAuthor ?? '') > 0) {
       if ($variables['author_name'] != $newsAuthor) {
         $user =  user_load_by_name($newsAuthor);
         if ($user !== false) {
