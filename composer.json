@@ -111,7 +111,7 @@
         "drupal/gin_login": "^1.0@RC",
         "drupal/mailchimp": "^2.0",
         "drupal/memcache": "^2.2",
-        "drupal/modules_weight": "^1.9",
+        "drupal/modules_weight": "^3.0",
         "drupal/monitoring": "^1.9",
         "drupal/pdf_api": "^2.0",
         "drupal/queue_mail": "^1.4",
@@ -162,7 +162,17 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "simplesamlphp/composer-module-installer": true,
+            "drupal/console-extend-plugin": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
     "autoload": {
         "classmap": [
@@ -210,9 +220,6 @@
             "drupal/commerce" : {
                 "2893860 - Show subtotal without taxes" :  "https://www.drupal.org/files/issues/2020-07-08/2893860-32-subtotal-without-tax.patch"
             },
-            "drupal/easy_breadcrumb" : {
-                "Fix frontpage page as part of the breadcrumb path" :  "./patches/easy-breadcrumb-include-frontpage.patch"
-            },
             "drupal/field_group": {
                 "HTML5 Validation Prevents Submission in Tabs" : "https://www.drupal.org/files/issues/2019-10-04/field_group-HTML5_validation_prevents_submission_in_tabs-2969051-9.patch"
             },
@@ -222,13 +229,6 @@
             "drupal/core": {
                 "Notice: Undefined index: value in Drupal\\views\\Plugin\\views\\filter\\NumericFilter->acceptExposedInput()" : "https://www.drupal.org/files/issues/2020-06-04/2825860-exposed-filter-notice-38.patch",
                 "Allow edit Media items from Media Library modal dialog in CKEditor" : "https://www.drupal.org/files/issues/2021-04-21/3168868-13_0.patch"
-            },
-            "drupal/printable": {
-                "3214729 PDF filename is generated with it's location" : "https://git.drupalcode.org/issue/printable-3214729/-/commit/cbc98dbe864f82b4cc1da110d88097d0c4740bb9.patch",
-                "#3193531, Drupal 9 errors from submodule": "https://git.drupalcode.org/issue/printable-3193531/-/commit/9b4d5fa8b6a713da671ab3143c8580fce45ca6fb.diff"
-            },
-            "drupal/scheduler_content_moderation_integration" : {
-                "Widget error when field is overridden - undefined offset 0 in $form['publish_state']" : "https://www.drupal.org/files/issues/2020-06-30/3077147-28.patch"
             },
             "drupal/csv_importer" : {
                 "Custom patch to get anonymous subscription support on csv_import" : "./patches/anonymous_subscriptions_csv_import.patch"
