@@ -110,6 +110,7 @@
         "drupal/gin": "^3.0",
         "drupal/gin_login": "^1.0@RC",
         "drupal/mailchimp": "^2.0",
+        "drupal/media_embed_extra": "^1.0@beta",
         "drupal/memcache": "^2.2",
         "drupal/modules_weight": "^3.0",
         "drupal/monitoring": "^1.9",
