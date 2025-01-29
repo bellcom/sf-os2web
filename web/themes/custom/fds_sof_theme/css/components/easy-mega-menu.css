@@ -69,7 +69,7 @@ nav.nav:not(.is-visible) ul.simple-mega-menu>li:hover ul {
 ul.simple-mega-menu ul[data-level] li {
     font-size: 2rem;
     line-height: 3.5rem;
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
 }
 ul.simple-mega-menu ul[data-level] li>:first-child:hover {
     color: #000;

@@ -116,7 +116,7 @@
     align-items: center;
     text-align: center;
   }
-  .entity-teaser--os2web-hearings-hearing-case__actions .icon {font-size: 2.5rem;color: var(--primary-color); }
+  .entity-teaser--os2web-hearings-hearing-case__actions .icon {font-size: 2.5rem;color: var(--primary-txt-color); }
   .entity-teaser--os2web-hearings-hearing-case__actions a {padding: 2rem; }
   
   @media (min-width: 576px) {

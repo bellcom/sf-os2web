@@ -657,7 +657,7 @@ hr {border-top: 1px solid var(--gray-color-200);}
   background: var(--gray-color-800);
 }
 
-.nav-primary {color: var(--primary-color);}
+.nav-primary {color: var(--primary-txt-color);}
 .nav-primary ul {color: inherit;}
 .nav-primary .nav-link:hover { cursor: pointer; }
 .nav-primary > li {color: inherit;}
@@ -704,13 +704,13 @@ hr {border-top: 1px solid var(--gray-color-200);}
 .nav-primary .overflow-menu .overflow-menu-inner a:hover, 
 .nav-primary .overflow-menu .overflow-menu-inner a:visited, 
 .nav-primary .overflow-menu .overflow-menu-inner a:focus {color: var(--primary-txt-color);}
-.nav-primary .overflow-menu .overflow-menu-inner .active > a {color: var(--primary-color); }
+.nav-primary .overflow-menu .overflow-menu-inner .active > a {color: var(--primary-txt-color); }
 .nav-primary .overflow-menu .overflow-menu-inner button, 
 .nav-primary .overflow-menu .overflow-menu-inner a {border-top: 1px solid var(--gray-color-200);}
 .nav-primary .current .button-overflow-menu {font-weight: 600; }
 @media (min-width: 992px) {
   .nav-primary .overflow-menu .button-overflow-menu span {padding-bottom: calc(9px + 7px); }
-  .nav-primary .overflow-menu .button-overflow-menu:hover span {border-bottom: 7px solid var(--primary-color);padding-bottom: 9px; }
+  .nav-primary .overflow-menu .button-overflow-menu:hover span {border-bottom: 7px solid var(--primary-txt-color);padding-bottom: 9px; }
   .nav-primary .overflow-menu .button-overflow-menu[aria-expanded=false] {
     background-image: var(--icon-angle-arrow-down);
     border-left: 1px solid transparent;
@@ -774,7 +774,7 @@ hr {border-top: 1px solid var(--gray-color-200);}
 .sidenav-list-locked a:hover {
   background-color: var(--gray-color-000);
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--primary-txt-color);
   cursor: default;
 }
 .sidenav-list-locked a:focus {
@@ -891,7 +891,7 @@ p, .body-text {margin-top: 1.6rem;margin-bottom: 1.6rem; }
 .button.button--primary:focus, .node__links a.button--primary:focus {
   font-weight: 700;
   color: var(--gray-color-000);
-  background-color: var(--primary-color); 
+  background-color: var(--primary-txt-color);
 }
 
 
@@ -1017,7 +1017,7 @@ p, .body-text {margin-top: 1.6rem;margin-bottom: 1.6rem; }
     background: linear-gradient(90deg, var(--primary-color) 0%, rgba(0, 102, 50, 0.75) 30%, rgba(0, 102, 50, 0) 100%); }
   .custom-header__meta {
     padding: 1rem; }
-  .custom-header__button .icon {color: var(--primary-color); }
+  .custom-header__button .icon {color: var(--primary-txt-color); }
   .custom-header__button--toggle-search {
     width: 40px;
     height: 40px;
@@ -1111,7 +1111,7 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {
   font-size: 2rem;
   font-family: FontAwesome;
   content: "\f002";
-  color: var(--primary-color);
+  color: var(--primary-txt-color);
 }
 form#views-exposed-form-os2web-search-os2web-search-page .form-input {
   margin: 0;
@@ -1176,7 +1176,7 @@ form#views-exposed-form-os2web-search-os2web-search-page input.form-autocomplete
   position: absolute;
   right: 5px;
   font-size: 2.2rem;
-  color: var(--primary-color);
+  color: var(--primary-txt-color);
 }
 
 @font-face {
@@ -1217,7 +1217,7 @@ ul.related-links li:before {
     top: -1px;
     left: 0;
     font-size: 2.4rem;
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg); }
@@ -1239,7 +1239,7 @@ ul.related-links a:hover {text-decoration: underline; }
   margin-top: -7px;
   font-family: "Material Icons";
   content: "keyboard_arrow_down";
-  color: var(--primary-color);
+  color: var(--primary-txt-color);
 }
 .limited-height__toggle.limited-height__toggle--hidden {display: none !important; }
 
@@ -1480,7 +1480,7 @@ a.entity-teaser--os2web-page:focus, a.entity-teaser--os2web-page:active {color: 
   position: absolute;
   right: 5px;
   font-size: 2.2rem;
-  color: var(--primary-color);
+  color: var(--primary-txt-color);
 }
 .field--name-field-os2web-page-intro + .field {margin-top: 2.8rem; }
 .field--name-field-os2web-accordion-subheadin + .field,
@@ -1620,7 +1620,7 @@ body ol > li:before {
 .button--primary, .button--primary:hover, .button--primary:focus {
   font-weight: 700;
   color: var(--gray-color-000);
-  background-color: var(--primary-color); 
+  background-color: var(--primary-txt-color);
 }
 
 .button--rounded {

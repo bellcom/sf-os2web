@@ -273,7 +273,7 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {ri
     padding: 0 1rem;
 }
 [data-cssname="forside-nyheder"] .grid [role="article"] .field--type-link a {
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
     font-weight: 100;
     text-transform: uppercase;
     font-size: 2rem;
@@ -436,7 +436,7 @@ a[title="twitter"]:after {
     font-weight: 100;
     text-align: left;
 }
-[data-cssname="banner-magasinet-skoleboern"] .inline-list li a:hover {color: var(--primary-color);}
+[data-cssname="banner-magasinet-skoleboern"] .inline-list li a:hover {color: var(--primary-txt-color);}
 [data-cssname="banner-magasinet-skoleboern"] .inline-list {margin-bottom: 6rem;}
 [data-cssname="banner-magasinet-skoleboern"] .banner__heading {width: 100%;}
 
@@ -631,7 +631,7 @@ body.path-search .search-result__title a {
     padding-top: 20px;
     text-decoration: none;
     display: inline-block;
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
 }
 body.path-search .search-result__snippet {margin: 0 0 1.5em;}
 
@@ -692,7 +692,7 @@ form#views-exposed-form-content-search-page-1 .form-group:focus-within:before {
     content: '' !important;
 }
 
-.form-group label {color: var(--primary-color);}
+.form-group label {color: var(--primary-txt-color);}
 
 /* search form */
 form.search-form .container-inline,
@@ -900,7 +900,7 @@ form#views-exposed-form-content-search-page-1 [type="submit"]:focus {background-
 
 .readmore {
     display: inline-block;
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
     text-transform: uppercase;
     font-size: 2rem;
     line-height: 3.0rem;
@@ -1005,7 +1005,7 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
 body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid>.column-wrap
 .field--name-field-os2web-content-reference.field__items a {
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -1141,7 +1141,7 @@ body.path-sektion-nyheder h1+p {
     font-size: 24px;
     font-weight: 400;
     line-height: 28px;
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
 
     font-size: 24px;
     font-weight: 400;
@@ -1152,7 +1152,7 @@ body.path-sektion-nyheder h1+p {
     display: none;
 }
 .view-content.grid .field--type-link a {
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
     font-weight: 100;
     font-size: 20px;
     line-height: 30px;
@@ -1191,7 +1191,7 @@ body.path-cart .cart-empty-page p {
     line-height: 24px;
     text-align: left;
     text-transform: uppercase;
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
     font-family: 'conduit_itcregular';
 }
 

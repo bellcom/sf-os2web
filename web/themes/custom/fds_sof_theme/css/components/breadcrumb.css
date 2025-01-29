@@ -18,7 +18,7 @@
   font-size: 20px;
   font-family: FontAwesome;
   content: "\f105";
-  color: var(--primary-color);
+  color: var(--primary-txt-color);
 }
 .breadcrumb li:first-child {display: none; }
 .breadcrumb li:nth-child(2):before {display: none; }

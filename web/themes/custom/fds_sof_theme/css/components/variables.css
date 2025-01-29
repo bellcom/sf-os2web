@@ -14,8 +14,6 @@
     --primary-color-200: hsl(227, 94%, 80%);
     --primary-color-100: hsl(227, 94%, 90%);
     --primary-color-50: hsl(227, 94%, 95%);
-
-    --primary-txt-color: hsl(227, 95%, 56%);
     
     --primary-alt-color: #C0D6CB;
     --secondary-color: #fde571;
@@ -23,7 +21,7 @@
   
     --dark-bg-color: #002412;
     
-    --primary-txt-color: #1f2023;
+    --primary-txt-color: hsl(227, 95%, 56%);
     --secondary-txt-color: var(--dark-bg-color);
   
     --secondary-border-color: var(--dark-bg-color);

@@ -195,7 +195,7 @@ iframe {
   left: 25px;
   content: "\2022" !important;
   font-size: 22px;
-  color: var(--primary-color);
+  color: var(--primary-txt-color);
 }
 .region-sidebar-first .sidenav-sub_list > li:hover,
 .region-sidebar-second .sidenav-sub_list > li:hover {background-color: transparent; }
