@@ -1128,7 +1128,7 @@ form#views-exposed-form-os2web-search-os2web-search-page input.form-autocomplete
 }
 
 /* base colors */
-[class*="-background-color-primary"] {background-color: var(--primary-txt-color);}
+[class*="-background-color-primary"] {background-color: var(--primary-color);}
 [class*="-background-color-secondary"] {background-color: var(--secondary-color);}
 [class*="-background-color-tertiary"] {background-color: var(--tertiary-color);}
 [class*="-background-color-"] * {color: var(--gray-color-000); fill:var(--gray-color-000);}
