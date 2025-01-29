@@ -408,7 +408,6 @@ a[title="twitter"]:after {
 [data-cssname="banner-magasinet-skoleboern"] h2 {
     padding: 0 0 30px 0;
     margin: 0;
-    color: #000;
     font-family: 'Georgia';
     font-weight: normal;
     font-size: 75px;
@@ -426,15 +425,15 @@ a[title="twitter"]:after {
 [data-cssname="banner-magasinet-skoleboern"] .inline-list li {
     display: block;
 }
-[data-cssname="banner-magasinet-skoleboern"] .inline-list li a {
-    display: block;
-    background: transparent;
-    color: #000;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 100;
-    text-align: left;
-}
+/*[data-cssname="banner-magasinet-skoleboern"] .inline-list li a {*/
+/*    display: block;*/
+/*    background: transparent;*/
+/*    color: #000;*/
+/*    font-size: 24px;*/
+/*    text-transform: uppercase;*/
+/*    font-weight: 100;*/
+/*    text-align: left;*/
+/*}*/
 [data-cssname="banner-magasinet-skoleboern"] .inline-list li a:hover {color: var(--primary-txt-color);}
 [data-cssname="banner-magasinet-skoleboern"] .inline-list {margin-bottom: 6rem;}
 [data-cssname="banner-magasinet-skoleboern"] .banner__heading {width: 100%;}
