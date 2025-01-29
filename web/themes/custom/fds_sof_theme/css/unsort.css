@@ -1640,7 +1640,7 @@ body ol > li:before {
 
 
 /* main article base styling ********************************************************/
-.page-container article a {color: var(--primary-color)}
+.page-container article a {color: var(--primary-txt-color)}
 /************************************************************************************/
 
 @media (max-width: 768px) {
