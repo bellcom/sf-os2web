@@ -66,7 +66,8 @@
         {% if background_image %} style="background-image: url({{ background_image }})" {% endif %}
         >
     {% endif %}
-    <div class="container">
+    <div class="banner__overlay"></div>
+    <div class="container banner__content-wrapper">
         {% block content %}
             <div class="banner__box">
                 {% if paragraph.field_os2web_banner_heading.value %}
