@@ -68,8 +68,8 @@ function os2webBannerSliderShowX(n) {
 // double banner to slider
 (function($, Drupal, drupalSettings) {
 
-  var bannerSelector = '.field--name-field-os2web-page-paragraph-bann';
-  var bannerCount = document.querySelectorAll('.field--name-field-os2web-page-paragraph-bann > .field__item');
+  var bannerSelector = '.field--name-field-os2web-news-paragraph-bann';
+  var bannerCount = document.querySelectorAll('.field--name-field-os2web-news-paragraph-bann > .field__item');
   if (document.querySelector(bannerSelector) !== null && bannerCount.length > 1) {
     tns({
       container: bannerSelector,
@@ -84,6 +84,7 @@ function os2webBannerSliderShowX(n) {
       controls: true
     });
   }
+
 
 
   var selector = ".field--name-field-os2web-paragraphs.field__items";
