@@ -64,3 +64,48 @@ function os2webBannerSliderShowX(n) {
   
   
 }
+
+// double banner to slider
+(function($, Drupal, drupalSettings) {
+
+  var bannerSelector = '.field--name-field-os2web-page-paragraph-bann';
+  var bannerCount = document.querySelectorAll('.field--name-field-os2web-page-paragraph-bann > .field__item');
+  if (document.querySelector(bannerSelector) !== null && bannerCount.length > 1) {
+    tns({
+      container: bannerSelector,
+      items: 1,
+      autoplay: false,
+      autoplayHoverPause: true,
+      autoplayButtonOutput: false,
+      gutter: 32,
+      rewind: false,
+      nav: true,
+      speed: 600,
+      controls: true
+    });
+  }
+
+
+  var selector = ".field--name-field-os2web-paragraphs.field__items";
+  if (document.querySelectorAll(selector).length > 0) {
+    var searchContainers  = document.querySelectorAll(selector);
+    searchContainers.forEach(function(container, elm) {
+      var items = container.querySelectorAll(selector + " > .field__item");
+      var bannerItems = container.querySelectorAll(selector + " > .field__item .banner__image-outer ");
+      if (bannerItems.length > 1 && items.length == bannerItems.length) {
+        tns({
+          container: container,
+          items: 1,
+          autoplay: false,
+          autoplayHoverPause: true,
+          autoplayButtonOutput: false,
+          gutter: 32,
+          rewind: false,
+          nav: true,
+          speed: 600,
+          controls: true
+        });
+      }
+    });
+  }
+})(jQuery, Drupal, drupalSettings);
