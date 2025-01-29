@@ -9,11 +9,13 @@
     --padding-container-sides: 16px;
     
     /*--primary-color: #00a2eb;*/
-    --primary-color: hsl(199, 100%, 46%);
-    --primary-color-400: hsl(199, 100%, 60%);
-    --primary-color-200: hsl(199, 100%, 80%);
-    --primary-color-100: hsl(199, 100%, 90%);
-    --primary-color-50: hsl(199, 100%, 95%);
+    --primary-color: hsl(227, 94%, 87%);
+    --primary-color-400: hsl(227, 94%, 60%);
+    --primary-color-200: hsl(227, 94%, 80%);
+    --primary-color-100: hsl(227, 94%, 90%);
+    --primary-color-50: hsl(227, 94%, 95%);
+
+    --primary-txt-color: hsl(227, 95%, 56%);
     
     --primary-alt-color: #C0D6CB;
     --secondary-color: #fde571;
@@ -48,10 +50,10 @@
     --border-color-form-input: var(--border-color);
 
     --outline-color: var(--border-color);
-    --outline-color-alt: var(--primary-color);
-    --link-color: var(--primary-color);
-    --link-focus-color: var(--primary-color);
-    --link-visited-color: var(--primary-color);
+    --outline-color-alt: var(--primary-txt-color);
+    --link-color: var(--primary-txt-color);
+    --link-focus-color: var(--primary-txt-color);
+    --link-visited-color: var(--primary-txt-color);
     --link-disabled-color: var(--gray-color-500);
     --darkbg-link-color: var(--gray-color-000);
     --darkbg-link-disabled-color: var(--gray-color-300);
