@@ -20,6 +20,7 @@
 .banner__heading h5,
 .banner__heading h6 {
   margin: 0;
+  text-shadow: #000 1px 1px 19px;
 }
 
 .banner__heading + .banner__body,
@@ -35,6 +36,10 @@
   margin-bottom: 0;
 }
 
+.banner__body p {
+  text-shadow: #000 1px 1px 19px;
+}
+
 .banner__body + .banner__actions {
   margin-top: 15px;
 }
@@ -47,18 +52,12 @@
 article .entity-default--os2web-banner-paragraph {
   max-width: 100vw;
   /* 16px is the width of the scrollbar */
-  margin: 0 calc((((100vw - 16px) - var(--max-width)) / 2) * -1);
   min-height: 500px;
 
   /*background-position: center;*/
   background-size: cover;
 }
 
-@media (min-width: 576px) {
-  .banner {
-    padding: 60px 0;
-  }
-}
 
 @media (min-width: 768px) {
   .banner__box {
