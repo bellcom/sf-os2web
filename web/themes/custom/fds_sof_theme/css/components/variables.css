@@ -113,7 +113,7 @@
     see: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
     */
     --fluid-font-size-medium: clamp(1rem, 5vw, 3rem);
-    --fluid-font-size-large: clamp(3rem, -0.875rem + 8.333vw, 10rem);
+    --fluid-font-size-large: clamp(2.4rem, -0.7rem + 6.666vw, 8rem);
     
   
     /* SVGs: not used at the moment ..... */

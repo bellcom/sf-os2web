@@ -222,7 +222,6 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {ri
 /* fix: not clickable */
 #block-sitebranding {z-index: 501;}
 
-.banner__box {padding: 20px;background-color: transparent;}
 .banner__heading h2 {
     color: #fff;
     font-size: var(--fluid-font-size-large);
