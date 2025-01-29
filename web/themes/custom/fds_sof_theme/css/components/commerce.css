@@ -177,7 +177,7 @@ body.path-cart .order-total-line span {
 /************************************************************************************/
 
 .product-list {cursor: pointer;}
-.product-list .field--name-title {color: var(--primary-color);}
+.product-list .field--name-title {color: var(--primary-txt-color);}
 .product-wrapper {position: relative;}
 .product-wrapper [role="product"]>:first-child {align-items: center;  /* picture */ }
 .product-wrapper [role="product"] .field--type-text-with-summary {
@@ -288,7 +288,7 @@ div.commerce-add-to-cart-confirmation .view-confirm-message-product-display .vie
   text-transform: uppercase;
   display:block;
 }
-.commerce-add-to-cart-confirmation.ui-dialog-content .button-wrapper .button.checkout {background-color: var(--primary-color);}
+.commerce-add-to-cart-confirmation.ui-dialog-content .button-wrapper .button.checkout {background-color: var(--primary-txt-color);}
 .commerce-add-to-cart-confirmation.ui-dialog-content .button-wrapper .button>a {color: inherit}
 .commerce-add-to-cart-confirmation.ui-dialog-content .button-wrapper .button>a:focus {outline:none;}
 .commerce-add-to-cart-confirmation.ui-dialog-content .views-row .views-field-total-price__number {

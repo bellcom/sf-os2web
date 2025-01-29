@@ -35,7 +35,7 @@
 .pager__item:before {display: none; }
 
 .pager__items .pager__item.pager__item--previous,
-.pager__items .pager__item.pager__item--next {background-color: var(--primary-color);}
+.pager__items .pager__item.pager__item--next {background-color: var(--primary-txt-color);}
 
 .pager .txt-previous,
 .pager .txt-next {text-transform: uppercase; padding-left: 1rem; letter-spacing: .1rem;}

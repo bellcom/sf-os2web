@@ -24,5 +24,5 @@
 .paragraph--type--os2web-contact-form .form-submit:focus {
   font-weight: 700;
   color: var(--gray-color-000);
-  background-color: var(--primary-color);
+  background-color: var(--primary-txt-color);
 }

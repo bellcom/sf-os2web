@@ -10,7 +10,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     color: var(--gray-color-000);
-    background-color: var(--primary-color); 
+    background-color: var(--primary-txt-color);
 }
 .custom-megamenu button:focus,
 .custom-megamenu a:focus {outline-color: var(--outline-color-alt); }
@@ -62,7 +62,7 @@
     top: 3px;
     left: 0;
     font-size: 22px;
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
 }
 .custom-megamenu__row--navigation .vocabulary-os2web-icons {display: none !important; }
 .custom-megamenu__row--navigation .menu {

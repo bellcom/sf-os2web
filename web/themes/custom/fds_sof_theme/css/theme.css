@@ -119,7 +119,7 @@ header.header .portal-header {background-color: transparent; }
 }
 .header .button-menu-close:hover,
 .header .button-menu-open:hover {
-    background-color: var(--primary-color); color: #fff;
+    background-color: var(--primary-txt-color); color: #fff;
 }
 .header .button-menu-close::before,
 .header .button-menu-open::before {
@@ -201,7 +201,7 @@ ul.menu-local-tasks-list a.button {
     margin-bottom: 0;
 }
 ul.menu-local-tasks-list a.button.is-active {
-    background-color: var(--primary-color);
+    background-color: var(--primary-txt-color);
 }
 
 .region-primary-menu {display:flex;}
@@ -338,7 +338,7 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {ri
 }
 [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p
 a {
-    background: var(--primary-color);
+    background: var(--primary-txt-color);
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -601,7 +601,7 @@ div.entity-teaser__body > div.field--type-link > a::after {
 /* pager */
 .pager__items .pager__item {background-color: #b2b2b2; border-radius: .3rem; margin: 40px 10px 20px;}
 .pager__items .pager__item a {font-size: 2rem; color: #fff; padding: 1rem 1.4rem; display: inline-block;}
-.pager__items .pager__item.is-active {background-color: var(--primary-color);}
+.pager__items .pager__item.is-active {background-color: var(--primary-txt-color);}
 .pager__items .pager__item span[aria-hidden] {text-transform: uppercase;letter-spacing: 1px;}
 .pager__items .pager__item--first,
 .pager__items .pager__item--last {display:none;}
@@ -722,7 +722,7 @@ form#views-exposed-form-products-page-1 .form--inline:after {
     font-size: 30px;
     text-align: center;
     line-height: 38px;
-    color: var(--primary-color);
+    color: var(--primary-txt-color);
     pointer-events: none;
 }
 form.search-form .form-group,
@@ -797,7 +797,7 @@ form#views-exposed-form-content-search-page-1 [type="submit"]:focus {background-
 .mailchimp-signup-subscribe-form:before {
     font-size: 6rem;
     color: #fff;
-    background-color: var(--primary-color);
+    background-color: var(--primary-txt-color);
     border-radius: 50%;
     width: 8rem;
     height: 8rem;
@@ -833,7 +833,7 @@ form#views-exposed-form-content-search-page-1 [type="submit"]:focus {background-
 .twitter-box .icon:before {
     font-size: 6rem;
     color: #fff;
-    background-color: var(--primary-color);
+    background-color: var(--primary-txt-color);
     border-radius: 50%;
     width: 8rem;
     height: 8rem;
