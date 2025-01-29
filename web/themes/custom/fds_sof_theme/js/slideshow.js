@@ -88,7 +88,7 @@
         rewind: false,
         nav: true,
         speed: 600,
-        controls: false
+        controls: true
       });
     }
     
