@@ -972,14 +972,12 @@ form#views-exposed-form-content-search-page-1 [type="submit"]:focus {background-
 /* læs også sektion på alle sider undtagen forsiden */
 body:not(.path-frontpage) .region-featured-bottom-first {padding-bottom: 0;}
 body:not(.path-frontpage) [class*="-paragraph-wid"] {
-    background-color: var(--body-bg-color-frontpage);
     padding: var(--base-padding) 0;
 }
 body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid {
     max-width: var(--max-width);
     margin: 0 auto;
-    background-color: var(--gray-color-000);
 }
 body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid>.column-wrap {
