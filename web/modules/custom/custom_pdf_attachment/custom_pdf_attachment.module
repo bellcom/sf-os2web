@@ -9,30 +9,39 @@ use Drupal\file\Entity\File;
  * Implements hook_mail_alter().
  */
 function custom_pdf_attachment_mail_alter(&$message) {
-    // Check if this is the order confirmation email.
-    if ($message['key'] === 'receipt') {
-        // Load the order from the email parameters.
+    // Ensure this is the order confirmation email.
+    if ($message['key'] === 'commerce_order_receipt') {
+        // Load the order entity from the email parameters.
         $order = $message['params']['order'];
-        if ($order instanceof OrderInterface) {
-            // Loop through the order items.
-            foreach ($order->getItems() as $order_item) {
-                // Manually load the product variant using target_id.
-                $variant_id = $order_item->get('purchased_entity')->target_id;
-                $purchased_entity = ProductVariation::load($variant_id);
 
-                if ($purchased_entity && $purchased_entity->hasField('field_product_file') && !$purchased_entity->get('field_product_file')->isEmpty()) {
-                    // Get the PDF file from the product variant.
-                    $pdf_file = $purchased_entity->get('field_product_file')->entity;
-                    if ($pdf_file instanceof File) {
+        if ($order instanceof OrderInterface) {
+            $attachments = [];
+
+            // Loop through each order item.
+            foreach ($order->getItems() as $order_item) {
+                // Manually load the purchased product variant.
+                $variant_id = $order_item->get('purchased_entity')->target_id;
+                $product_variant = ProductVariation::load($variant_id);
+
+                // Ensure the product variant exists and has the PDF file field.
+                if ($product_variant && $product_variant->hasField('field_product_file') && !$product_variant->get('field_product_file')->isEmpty()) {
+                    $file = $product_variant->get('field_product_file')->entity;
+
+                    if ($file instanceof File) {
                         // Attach the PDF file to the email.
-                        $file_path = $pdf_file->getFileUri();
-                        $message['params']['attachments'][] = [
+                        $file_path = $file->getFileUri();
+                        $attachments[] = [
                             'filepath' => $file_path,
-                            'filename' => $pdf_file->getFilename(),
-                            'filemime' => $pdf_file->getMimeType(),
+                            'filename' => $file->getFilename(),
+                            'filemime' => $file->getMimeType(),
                         ];
                     }
                 }
+            }
+
+            // Attach files to the email message if any were found.
+            if (!empty($attachments)) {
+                $message['params']['attachments'] = $attachments;
             }
         }
     }
