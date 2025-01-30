@@ -8,6 +8,8 @@ use Drupal\views\ViewExecutable;
 use Drupal\facets\Plugin\Block\FacetBlock;
 use Drupal\commerce_order\Entity\Order;
 use Drupal\file\Entity\File;
+use Drupal\commerce_product\Entity\ProductVariation;
+
 
 /**
  * Implements hook_preprocess_page().
@@ -485,7 +487,7 @@ function fds_sof_theme_views_pre_render(ViewExecutable $view) {
 }
 
 function fds_sof_theme_preprocess_commerce_order_receipt(&$variables) {
-  // Ensure we have a valid order entity.
+  // Ensure the order entity exists.
   if (!isset($variables['order']) || !$variables['order'] instanceof Order) {
     return;
   }
@@ -493,17 +495,15 @@ function fds_sof_theme_preprocess_commerce_order_receipt(&$variables) {
   $order = $variables['order'];
   $download_links = [];
 
-  // Loop through each purchased product variant.
   foreach ($order->getItems() as $order_item) {
-    // Get the product variant (purchased entity).
-    $product_variant = $order_item->getPurchasedEntity();
+    // Load the purchased product variant manually.
+    $variant_id = $order_item->get('purchased_entity')->target_id;
+    $product_variant = ProductVariation::load($variant_id);
 
-    // Ensure the product variant exists and has the digital file field.
     if ($product_variant && $product_variant->hasField('field_product_file')) {
       $file = $product_variant->get('field_product_file')->entity;
 
       if ($file instanceof File) {
-        // Generate a secure download URL.
         $url = file_create_url($file->getFileUri());
         $download_links[] = '<a href="' . $url . '" download>' . $file->getFilename() . '</a>';
       }
