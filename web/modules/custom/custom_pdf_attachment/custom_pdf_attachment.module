@@ -12,7 +12,7 @@ function custom_pdf_attachment_mail_alter(&$message) {
             $attachments = [];
 
             foreach ($order->getItems() as $order_item) {
-                $variant_id = $order_item->get('purchased_entity')->target_id;
+                $variant_id = $order_item->get('commerce_product_variation')->target_id;
                 $product_variant = \Drupal\commerce_product\Entity\ProductVariation::load($variant_id);
 
                 if ($product_variant && $product_variant->hasField('field_product_file') && !$product_variant->get('field_product_file')->isEmpty()) {
