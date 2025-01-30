@@ -6,6 +6,8 @@ use Drupal\image\Entity\ImageStyle;
 use Drupal\node\Entity\Node;
 use Drupal\views\ViewExecutable;
 use Drupal\facets\Plugin\Block\FacetBlock;
+use Drupal\commerce_order\Entity\Order;
+use Drupal\file\Entity\File;
 
 /**
  * Implements hook_preprocess_page().
@@ -479,5 +481,38 @@ function fds_sof_theme_views_pre_render(ViewExecutable $view) {
   $block = $plugin_manager_block->createInstance("facet_block:$facet_id");
   if ($block instanceof FacetBlocK) {
     $view->attachment_before[$facet_id] = $block->build();
+  }
+}
+
+function fds_sof_theme_preprocess_commerce_order_receipt(&$variables) {
+  // Get the order entity from template variables.
+  if (!isset($variables['order']) || !$variables['order'] instanceof Order) {
+    return;
+  }
+
+  $order = $variables['order'];
+  $download_links = [];
+
+  // Loop through each purchased product.
+  foreach ($order->getItems() as $order_item) {
+    $purchased_entity = $order_item->getPurchasedEntity();
+
+    // Ensure the product has the digital file field (field_product_file).
+    if ($purchased_entity && $purchased_entity->hasField('field_product_file')) {
+      $file = $purchased_entity->get('field_product_file')->entity;
+
+      if ($file instanceof File) {
+        // Generate a download URL.
+        $url = file_create_url($file->getFileUri());
+        $download_links[] = '<a href="' . $url . '" download>' . $file->getFilename() . '</a>';
+      }
+    }
+  }
+
+  // Pass download links to the template.
+  if (!empty($download_links)) {
+    $variables['digital_product_links'] = implode('<br>', $download_links);
+  } else {
+    $variables['digital_product_links'] = '';
   }
 }
