@@ -139,6 +139,15 @@
               {{ 'Thank you for your order!'|t }}
             {% endblock %}
 
+            {% if attachments %}
+              <h3>Attached Files:</h3>
+              <ul>
+                {% for attachment in attachments %}
+                  <li>{{ attachment.filename }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+
 
           </td>
         </tr>

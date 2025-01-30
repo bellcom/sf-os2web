@@ -1,0 +1,38 @@
+<?php
+
+use Drupal\commerce_order\Entity\OrderInterface;
+use Drupal\commerce_product\Entity\ProductVariation;
+use Drupal\file\Entity\File;
+
+function custom_pdf_attachment_mail_alter(&$message) {
+    if ($message['key'] === 'commerce_order_receipt') {
+        $order = $message['params']['order'];
+
+        if ($order instanceof \Drupal\commerce_order\Entity\OrderInterface) {
+            $attachments = [];
+
+            foreach ($order->getItems() as $order_item) {
+                $variant_id = $order_item->get('purchased_entity')->target_id;
+                $product_variant = \Drupal\commerce_product\Entity\ProductVariation::load($variant_id);
+
+                if ($product_variant && $product_variant->hasField('field_product_file') && !$product_variant->get('field_product_file')->isEmpty()) {
+                    $file = $product_variant->get('field_product_file')->entity;
+
+                    if ($file instanceof \Drupal\file\Entity\File) {
+                        $file_path = \Drupal::service('file_system')->realpath($file->getFileUri());
+
+                        $attachments[] = [
+                            'filecontent' => file_get_contents($file_path),
+                            'filename' => $file->getFilename(),
+                            'filemime' => $file->getMimeType(),
+                        ];
+                    }
+                }
+            }
+
+            if (!empty($attachments)) {
+                $message['params']['attachments'] = $attachments;
+            }
+        }
+    }
+}

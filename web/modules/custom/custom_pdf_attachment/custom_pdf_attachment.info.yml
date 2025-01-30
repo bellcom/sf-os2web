@@ -1,0 +1,5 @@
+name: Custom PDF Attachment
+type: module
+description: Attaches PDF files to order confirmation emails.
+core_version_requirement: ^9
+package: Custom
