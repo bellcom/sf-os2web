@@ -84,6 +84,9 @@
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
+  <div class="news-date">
+    {{ node.getChangedTime|date('custom', 'd.m.Y')) }}
+  </div>
   {% if label and not page %}
     <h2{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>

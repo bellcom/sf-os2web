@@ -229,3 +229,26 @@ iframe {
   .layout-sidebar-right {padding-top: 0; }
   .layout-sidebar-right .box {min-height: 238px; }
 }
+
+.entity-list--os2web-news h2 {
+  font-weight: normal;
+}
+
+.entity-list--os2web-news h2 a {
+  text-decoration: none;
+}
+
+.entity-list--os2web-news h2 a:hover {
+  text-decoration: underline;
+}
+
+.entity-list--os2web-news .field--name-field-os2web-news-intro {
+  padding: 0;
+}
+
+.entity-list--os2web-news .field--name-field-os2web-news-intro p strong {
+  padding: 0;
+  font-size: 19px;
+  color: #454545;
+}
+
