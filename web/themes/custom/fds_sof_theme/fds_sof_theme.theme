@@ -9,6 +9,8 @@ use Drupal\facets\Plugin\Block\FacetBlock;
 use Drupal\commerce_order\Entity\Order;
 use Drupal\file\Entity\File;
 use Drupal\commerce_product\Entity\ProductVariation;
+use Drupal\commerce_order\Entity\OrderItem;
+
 
 
 /**
@@ -486,35 +488,17 @@ function fds_sof_theme_views_pre_render(ViewExecutable $view) {
   }
 }
 
-function fds_sof_theme_preprocess_commerce_order_receipt(&$variables) {
-  // Ensure the order entity exists.
-  if (!isset($variables['order']) || !$variables['order'] instanceof Order) {
-    return;
-  }
-
-  $order = $variables['order'];
-  $download_links = [];
-
-  foreach ($order->getItems() as $order_item) {
-    // Manually retrieve the product variant ID.
-    $variant_id = $order_item->get('target_id')->getValue();
-
-    // Load the product variant manually.
-    if (!empty($variant_id)) {
-      $product_variant = ProductVariation::load($variant_id[0]['target_id']);
-
-      // Ensure the product variant exists and has the digital file field.
-      if ($product_variant && $product_variant->hasField('field_product_file') && !$product_variant->get('field_product_file')->isEmpty()) {
-        $file = $product_variant->get('field_product_file')->entity;
-
-        if ($file instanceof File) {
-          $url = file_create_url($file->getFileUri());
-          $download_links[] = '<a href="' . $url . '" download>' . $file->getFilename() . '</a>';
-        }
-      }
+function fds_sof_theme_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  // Check if the entity is an order item.
+  if ($entity instanceof OrderItem) {
+    // Get the purchased entity (product variant).
+    $purchased_entity = $entity->getPurchasedEntity();
+    // Check if the product variant has the file field.
+    if ($purchased_entity && $purchased_entity->hasField('field_product_file')) {
+      // Get the file field value from the product variant.
+      $file_value = $purchased_entity->get('field_product_file')->getValue();
+      // Set the file field value on the order item.
+      $entity->set('field_product_file', $file_value);
     }
   }
-
-  // Pass download links to the template.
-  $variables['digital_product_links'] = !empty($download_links) ? implode('<br>', $download_links) : '';
 }
