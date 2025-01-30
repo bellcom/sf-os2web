@@ -1,0 +1,8 @@
+name: 'Commerce File Custom'
+type: module
+description: 'Attaches digital product files to order confirmation emails in Drupal Commerce.'
+package: 'Custom'
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal/commerce
+  - drupal/file
