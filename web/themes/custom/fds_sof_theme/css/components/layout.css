@@ -230,8 +230,13 @@ iframe {
   .layout-sidebar-right .box {min-height: 238px; }
 }
 
+.entity-list--os2web-news {
+  padding: 20px 0;
+}
+
 .entity-list--os2web-news h2 {
   font-weight: normal;
+  margin-top: 0;
 }
 
 .entity-list--os2web-news h2 a {
@@ -250,5 +255,11 @@ iframe {
   padding: 0;
   font-size: 19px;
   color: #454545;
+}
+
+.news-date {
+  font-size: 15px;
+  color: rgba(69, 69, 69, 0.6);
+
 }
 
