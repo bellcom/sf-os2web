@@ -485,7 +485,7 @@ function fds_sof_theme_views_pre_render(ViewExecutable $view) {
 }
 
 function fds_sof_theme_preprocess_commerce_order_receipt(&$variables) {
-  // Get the order entity from template variables.
+  // Ensure we have a valid order entity.
   if (!isset($variables['order']) || !$variables['order'] instanceof Order) {
     return;
   }
@@ -493,16 +493,17 @@ function fds_sof_theme_preprocess_commerce_order_receipt(&$variables) {
   $order = $variables['order'];
   $download_links = [];
 
-  // Loop through each purchased product.
+  // Loop through each purchased product variant.
   foreach ($order->getItems() as $order_item) {
-    $purchased_entity = $order_item->getPurchasedEntity();
+    // Get the product variant (purchased entity).
+    $product_variant = $order_item->getPurchasedEntity();
 
-    // Ensure the product has the digital file field (field_product_file).
-    if ($purchased_entity && $purchased_entity->hasField('field_product_file')) {
-      $file = $purchased_entity->get('field_product_file')->entity;
+    // Ensure the product variant exists and has the digital file field.
+    if ($product_variant && $product_variant->hasField('field_product_file')) {
+      $file = $product_variant->get('field_product_file')->entity;
 
       if ($file instanceof File) {
-        // Generate a download URL.
+        // Generate a secure download URL.
         $url = file_create_url($file->getFileUri());
         $download_links[] = '<a href="' . $url . '" download>' . $file->getFilename() . '</a>';
       }
