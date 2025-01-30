@@ -1,0 +1,35 @@
+<?php
+
+use Drupal\commerce_order\Entity\OrderInterface;
+use Drupal\Core\Render\Markup;
+
+/**
+ * Implements hook_mail_alter().
+ */
+function custom_pdf_attachment_mail_alter(&$message) {
+    // Check if this is the order confirmation email.
+    if ($message['key'] === 'receipt') {
+        // Load the order from the email parameters.
+        $order = $message['params']['order'];
+        if ($order instanceof OrderInterface) {
+            // Loop through the order items.
+            foreach ($order->getItems() as $order_item) {
+                // Get the purchased entity (product variant).
+                $purchased_entity = $order_item->getPurchasedEntity();
+                if ($purchased_entity && $purchased_entity->hasField('field_product_file')) {
+                    // Get the PDF file from the product variant.
+                    $pdf_file = $purchased_entity->get('field_product_file')->entity;
+                    if ($pdf_file) {
+                        // Attach the PDF file to the email.
+                        $file_path = $pdf_file->getFileUri();
+                        $message['params']['attachments'][] = [
+                            'filepath' => $file_path,
+                            'filename' => $pdf_file->getFilename(),
+                            'filemime' => $pdf_file->getMimeType(),
+                        ];
+                    }
+                }
+            }
+        }
+    }
+}

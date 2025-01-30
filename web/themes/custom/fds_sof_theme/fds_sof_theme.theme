@@ -487,18 +487,3 @@ function fds_sof_theme_views_pre_render(ViewExecutable $view) {
     $view->attachment_before[$facet_id] = $block->build();
   }
 }
-
-function fds_sof_theme_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
-  // Check if the entity is an order item.
-  if ($entity instanceof OrderItem) {
-    // Get the purchased entity (product variant).
-    $purchased_entity = $entity->getPurchasedEntity();
-    // Check if the product variant has the file field.
-    if ($purchased_entity && $purchased_entity->hasField('field_product_file')) {
-      // Get the file field value from the product variant.
-      $file_value = $purchased_entity->get('field_product_file')->getValue();
-      // Set the file field value on the order item.
-      $entity->set('field_product_file', $file_value);
-    }
-  }
-}
