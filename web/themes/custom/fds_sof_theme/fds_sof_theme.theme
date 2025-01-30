@@ -496,24 +496,25 @@ function fds_sof_theme_preprocess_commerce_order_receipt(&$variables) {
   $download_links = [];
 
   foreach ($order->getItems() as $order_item) {
-    // Load the purchased product variant manually.
-    $variant_id = $order_item->get('purchased_entity')->target_id;
-    $product_variant = ProductVariation::load($variant_id);
+    // Manually retrieve the product variant ID.
+    $variant_id = $order_item->get('target_id')->getValue();
 
-    if ($product_variant && $product_variant->hasField('field_product_file')) {
-      $file = $product_variant->get('field_product_file')->entity;
+    // Load the product variant manually.
+    if (!empty($variant_id)) {
+      $product_variant = ProductVariation::load($variant_id[0]['target_id']);
 
-      if ($file instanceof File) {
-        $url = file_create_url($file->getFileUri());
-        $download_links[] = '<a href="' . $url . '" download>' . $file->getFilename() . '</a>';
+      // Ensure the product variant exists and has the digital file field.
+      if ($product_variant && $product_variant->hasField('field_product_file') && !$product_variant->get('field_product_file')->isEmpty()) {
+        $file = $product_variant->get('field_product_file')->entity;
+
+        if ($file instanceof File) {
+          $url = file_create_url($file->getFileUri());
+          $download_links[] = '<a href="' . $url . '" download>' . $file->getFilename() . '</a>';
+        }
       }
     }
   }
 
   // Pass download links to the template.
-  if (!empty($download_links)) {
-    $variables['digital_product_links'] = implode('<br>', $download_links);
-  } else {
-    $variables['digital_product_links'] = '';
-  }
+  $variables['digital_product_links'] = !empty($download_links) ? implode('<br>', $download_links) : '';
 }
