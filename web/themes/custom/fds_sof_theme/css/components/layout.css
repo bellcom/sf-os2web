@@ -265,10 +265,10 @@ iframe {
 
 .entity-teaser--os2web-news .field--name-field-os2web-news-article-date {
   display: block !important;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .entity-teaser--os2web-news .field--name-field-os2web-news-heading {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
