@@ -1,0 +1,53 @@
+use Drupal\commerce_order\Entity\Order;
+use Drupal\file\Entity\File;
+
+/**
+* Implements hook_mail_alter().
+*/
+function commerce_file_custom_mail_alter(&$message) {
+// Ensure this is the commerce order confirmation email.
+if ($message['id'] == 'commerce_order_receipt') {
+// Load the order.
+$order = $message['params']['order'];
+
+if ($order instanceof Order) {
+// Get product files from field_product_file.
+$attachments = get_digital_product_files($order);
+
+// Attach files if available.
+foreach ($attachments as $file_path => $mime_type) {
+$message['params']['attachments'][] = [
+'filepath' => $file_path,
+'filename' => basename($file_path),
+'filemime' => $mime_type,
+];
+}
+}
+}
+}
+
+
+/**
+* Retrieves digital product files from the order.
+*/
+function get_digital_product_files(Order $order) {
+$files = [];
+
+// Loop through all order items.
+foreach ($order->getItems() as $order_item) {
+$purchased_entity = $order_item->getPurchasedEntity();
+
+// Ensure the product variation exists and has the correct file field.
+if ($purchased_entity && $purchased_entity->hasField('field_product_file')) {
+$file = $purchased_entity->get('field_product_file')->entity;
+
+if ($file instanceof File) {
+// Get the real file path.
+$file_path = \Drupal::service('file_system')->realpath($file->getFileUri());
+$files[$file_path] = $file->getMimeType();
+}
+}
+}
+
+return $files;
+}
