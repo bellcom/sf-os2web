@@ -97,6 +97,7 @@
         "drupal/commerce_add_to_cart_confirmation": "^1.0@alpha",
         "drupal/commerce_checkout_order_fields": "^1.1",
         "drupal/commerce_easy": "^1.0@RC",
+        "drupal/commerce_email": "^1.6",
         "drupal/config_delete": "^1.17",
         "drupal/console": "^1.0.2",
         "drupal/core-composer-scaffold": "^9.0.0",
