@@ -309,7 +309,7 @@ function fds_sof_theme_preprocess_paragraph__os2web_banner_paragraph(&$variables
     if (!empty($image_style)) {
       $image_url = $image_style->buildUrl($image_uri);
 
-      $variables['background_image'] = file_url_transform_relative($image_url);
+      $variables['background_image'] = \Drupal::service('file_url_generator')->transformRelative($image_url);
     }
   }
 }

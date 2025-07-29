@@ -14,20 +14,23 @@
   {% else %}
     <ul data-level="{{ items|first.menu_level }}">
   {% endif %}
-  {% for key, item in items if key|first != '#' %}
-    {% set menu_item_classes = [
-      item.is_expanded ? 'expanded',
-      item.is_collapsed ? 'collapsed',
-      item.in_active_trail ? 'active-trail',
-    ] %}
+    {% for key, item in items %}
+      {% if key|first != '#' %}
+        {% set menu_item_classes = [
+          'menu-item',
+          item.is_expanded ? 'expanded',
+          item.is_collapsed ? 'collapsed',
+          item.in_active_trail ? 'active-trail',
+        ] %}
 
-    <li tabindex="0" {{ item.attributes.addClass(menu_item_classes) }}>
-      {{ link(item.title, item.url) }}
-      {% set rendered_content = item.content|without('')|render %}
-      {% if rendered_content %}
-        {{ rendered_content }}
+        <li tabindex="0" {{item.attributes.addClass(menu_item_classes)}}>
+          {{ link(item.title, item.url) }}
+          {% set rendered_content = item.content|without('')|render %}
+          {% if rendered_content %}
+            {{ rendered_content }}
+          {% endif %}
+        </li>
       {% endif %}
-    </li>
-  {% endfor %}
+    {% endfor %}
   </ul>
 {% endmacro %}
