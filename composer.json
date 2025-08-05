@@ -102,6 +102,7 @@
         "drupal/commerce_checkout_order_fields": "^1.1",
         "drupal/commerce_easy": "^1.0@RC",
         "drupal/commerce_email": "^1.6",
+        "drupal/commerce_file": "^2.2",
         "drupal/config_delete": "^2.0",
         "drupal/core-composer-scaffold": "~10.4.8",
         "drupal/core-project-message": "~10.4.8",
