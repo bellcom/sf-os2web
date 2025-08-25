@@ -231,6 +231,9 @@
             },
             "drupal/csv_importer" : {
                 "Custom patch to get anonymous subscription support on csv_import" : "./patches/anonymous_subscriptions_csv_import.patch"
+            },
+            "drupal/monolog" : {
+                "3366135 - NullLogger not implements LoggerChannelInterface" : "https://www.drupal.org/files/issues/2025-08-25/monolog_patch-NullLogger.diff"
             }
         }
     }
