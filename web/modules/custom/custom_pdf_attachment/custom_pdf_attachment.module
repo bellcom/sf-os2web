@@ -67,3 +67,9 @@ function custom_pdf_attachment_mail_alter(&$message) {
     }
   }
 }
+
+function custom_pdf_attachment_preprocess_mail(array &$variables) {
+  if ($variables['key'] === 'commerce_order_receipt' && !empty($variables['params']['download_links'])) {
+    $variables['download_links'] = $variables['params']['download_links'];
+  }
+}
