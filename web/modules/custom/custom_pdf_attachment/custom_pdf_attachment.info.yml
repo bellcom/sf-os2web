@@ -1,5 +1,8 @@
 name: Custom PDF Attachment
 type: module
 description: Attaches PDF files to order confirmation emails.
-core_version_requirement: ^9
+core_version_requirement: ^9 || ^10
 package: Custom
+dependencies:
+  - drupal:commerce
+  - drupal:commerce_file
