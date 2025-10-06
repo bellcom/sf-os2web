@@ -1,3 +1,5 @@
+<?php
+
 use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\commerce_product\Entity\ProductVariationInterface;
 use Drupal\file\Entity\File;
