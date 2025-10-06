@@ -3,33 +3,43 @@
 use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\commerce_product\Entity\ProductVariationInterface;
 use Drupal\file\Entity\File;
+use Drupal\Core\File\FileUrlGeneratorInterface;
 
 /**
- * Preprocess the order receipt email template.
+ * Implements hook_commerce_order_receipt_mail_alter().
+ *
+ * Adds download links from product variation files to the order receipt email.
  */
-function custom_pdf_attachment_preprocess_commerce_order_receipt(array &$variables) {
-  $order = $variables['order_entity'];
-  if (!$order instanceof OrderInterface) {
-    return;
-  }
+function custom_pdf_attachment_commerce_order_receipt_mail_alter(array &$message, OrderInterface $order) {
+  // Service to generate absolute file URLs.
+  $file_url_generator = \Drupal::service('file_url_generator');
 
   $download_links = [];
 
+  // Loop through each order item.
   foreach ($order->getItems() as $order_item) {
     /** @var ProductVariationInterface $variation */
     $variation = $order_item->getPurchasedEntity();
+
+    // Check if the variation has a 'commerce_file' field.
     if ($variation->hasField('commerce_file')) {
       foreach ($variation->get('commerce_file') as $field_item) {
         $file = $field_item->entity;
         if ($file instanceof File) {
           $download_links[] = [
             'title' => $file->getFilename(),
-            'url' => file_create_url($file->getFileUri()),
+            'url' => $file_url_generator->generateAbsoluteString($file->getFileUri()),
           ];
         }
       }
     }
   }
 
-  $variables['download_links'] = $download_links;
+  // Add download links directly to the email body for Twig to use.
+  if (!empty($download_links)) {
+    if (!isset($message['body'])) {
+      $message['body'] = [];
+    }
+    $message['body']['#download_links'] = $download_links;
+  }
 }
