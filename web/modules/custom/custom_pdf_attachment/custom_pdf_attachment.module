@@ -71,8 +71,29 @@ function custom_pdf_attachment_mail_alter(&$message) {
   }
 }
 
-function custom_pdf_attachment_preprocess_mail(array &$variables) {
-  if (!empty($variables['params']['download_links'])) {
-    $variables['download_links'] = $variables['params']['download_links'];
+function custom_pdf_attachment_preprocess_commerce_order_receipt(&$variables) {
+  $order = $variables['order_entity'];
+  $download_links = [];
+
+  foreach ($order->getItems() as $order_item) {
+    $licenses = \Drupal::entityTypeManager()
+      ->getStorage('commerce_file_license')
+      ->loadByProperties(['order_item_id' => $order_item->id()]);
+
+    foreach ($licenses as $license) {
+      if ($license instanceof \Drupal\commerce_file\Entity\FileLicense) {
+        $url = \Drupal\Core\Url::fromRoute(
+          'entity.commerce_file_license.download',
+          ['commerce_file_license' => $license->id()],
+          ['absolute' => TRUE]
+        )->toString();
+        $download_links[] = [
+          'title' => $order_item->label(),
+          'url' => $url,
+        ];
+      }
+    }
   }
+
+  $variables['download_links'] = $download_links;
 }
