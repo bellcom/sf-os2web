@@ -1,8 +1,9 @@
 <?php
 
-use Drupal\commerce_order\Entity\OrderInterface;
-use Drupal\commerce_license\Entity\License;
 use Drupal\Core\Url;
+use Drupal\commerce_order\Entity\OrderInterface;
+use Drupal\file\Entity\File;
+use Drupal\commerce_license\Entity\License;
 
 /**
  * Implements hook_mail_alter().
@@ -11,39 +12,40 @@ function custom_pdf_attachment_mail_alter(&$message) {
   // Only alter the order receipt emails.
   if ($message['key'] === 'commerce_order_receipt') {
 
-    /** @var OrderInterface $order */
+    /** @var \Drupal\commerce_order\Entity\OrderInterface $order */
     $order = $message['params']['order'];
 
     if ($order instanceof OrderInterface) {
       $attachments = [];
       $download_links = [];
 
-      // Load all licenses originating from this order.
-      $licenses = \Drupal::entityTypeManager()
-        ->getStorage('commerce_license')
-        ->loadByProperties(['originating_order' => $order->id()]);
+      // Loop through order items.
+      foreach ($order->getItems() as $order_item) {
 
-      foreach ($licenses as $license) {
-        if ($license instanceof License) {
-          $variation = $license->getPurchasedEntity();
+        // Load licenses for this order item.
+        $licenses = \Drupal::entityTypeManager()
+          ->getStorage('commerce_license')
+          ->loadByProperties(['originating_order' => $order->id()]);
 
-          // Get files attached to the product variation (field_license_file is just an example field).
-          if ($variation->hasField('field_license_file') && !$variation->get('field_license_file')->isEmpty()) {
-            foreach ($variation->get('field_license_file') as $file_item) {
-              $file = $file_item->entity;
-              if ($file) {
-                // Attach the file to the email.
+        foreach ($licenses as $license) {
+          if ($license instanceof License) {
+
+            // Loop through files in the "licensed_files" field.
+            foreach ($license->get('licensed_files') as $field_item) {
+              $file = $field_item->entity;
+              if ($file instanceof File) {
+                // Attach the file.
+                $file_path = \Drupal::service('file_system')->realpath($file->getFileUri());
                 $attachments[] = [
-                  'filecontent' => file_get_contents(\Drupal::service('file_system')->realpath($file->getFileUri())),
+                  'filecontent' => file_get_contents($file_path),
                   'filename' => $file->getFilename(),
                   'filemime' => $file->getMimeType(),
                 ];
 
-                // Add a secure download URL for the Twig template.
-                $url = Url::fromUri(file_create_url($file->getFileUri()), ['absolute' => TRUE])->toString();
+                // Add a download link for the template.
                 $download_links[] = [
-                  'title' => $variation->label(),
-                  'url' => $url,
+                  'title' => $file->getFilename(),
+                  'url' => file_create_url($file->getFileUri()),
                 ];
               }
             }
@@ -58,6 +60,20 @@ function custom_pdf_attachment_mail_alter(&$message) {
 
       // Pass download links to Twig template.
       $message['params']['download_links'] = $download_links;
+    }
+  }
+}
+
+/**
+ * Preprocess function for the commerce order receipt Twig template.
+ */
+function custom_pdf_attachment_preprocess_commerce_order_receipt(array &$variables) {
+  if (!empty($variables['order_entity']) && !empty($variables['order_entity'] instanceof OrderInterface)) {
+    if (!empty($variables['params']['download_links'])) {
+      $variables['download_links'] = $variables['params']['download_links'];
+    }
+    else {
+      $variables['download_links'] = [];
     }
   }
 }
