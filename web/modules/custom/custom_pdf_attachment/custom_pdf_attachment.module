@@ -1,9 +1,6 @@
-<?php
-
-use Drupal\Core\Url;
 use Drupal\commerce_order\Entity\OrderInterface;
+use Drupal\commerce_product\Entity\ProductVariationInterface;
 use Drupal\file\Entity\File;
-use Drupal\commerce_license\Entity\License;
 
 /**
  * Implements hook_mail_alter().
@@ -12,7 +9,7 @@ function custom_pdf_attachment_mail_alter(&$message) {
   // Only alter the order receipt emails.
   if ($message['key'] === 'commerce_order_receipt') {
 
-    /** @var \Drupal\commerce_order\Entity\OrderInterface $order */
+    /** @var OrderInterface $order */
     $order = $message['params']['order'];
 
     if ($order instanceof OrderInterface) {
@@ -22,32 +19,27 @@ function custom_pdf_attachment_mail_alter(&$message) {
       // Loop through order items.
       foreach ($order->getItems() as $order_item) {
 
-        // Load licenses for this order item.
-        $licenses = \Drupal::entityTypeManager()
-          ->getStorage('commerce_license')
-          ->loadByProperties(['originating_order' => $order->id()]);
+        /** @var ProductVariationInterface $variation */
+        $variation = $order_item->getPurchasedEntity();
 
-        foreach ($licenses as $license) {
-          if ($license instanceof License) {
+        // Check if the product variation has files.
+        if ($variation->hasField('field_product_file')) {
+          foreach ($variation->get('field_product_file') as $field_item) {
+            $file = $field_item->entity;
+            if ($file instanceof File) {
+              // Attach the file to the email.
+              $file_path = \Drupal::service('file_system')->realpath($file->getFileUri());
+              $attachments[] = [
+                'filecontent' => file_get_contents($file_path),
+                'filename' => $file->getFilename(),
+                'filemime' => $file->getMimeType(),
+              ];
 
-            // Loop through files in the "licensed_files" field.
-            foreach ($license->get('licensed_files') as $field_item) {
-              $file = $field_item->entity;
-              if ($file instanceof File) {
-                // Attach the file.
-                $file_path = \Drupal::service('file_system')->realpath($file->getFileUri());
-                $attachments[] = [
-                  'filecontent' => file_get_contents($file_path),
-                  'filename' => $file->getFilename(),
-                  'filemime' => $file->getMimeType(),
-                ];
-
-                // Add a download link for the template.
-                $download_links[] = [
-                  'title' => $file->getFilename(),
-                  'url' => file_create_url($file->getFileUri()),
-                ];
-              }
+              // Add a download link for the Twig template.
+              $download_links[] = [
+                'title' => $file->getFilename(),
+                'url' => file_create_url($file->getFileUri()),
+              ];
             }
           }
         }
@@ -63,4 +55,3 @@ function custom_pdf_attachment_mail_alter(&$message) {
     }
   }
 }
-
