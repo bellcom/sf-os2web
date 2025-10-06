@@ -5,55 +5,43 @@ use Drupal\commerce_product\Entity\ProductVariationInterface;
 use Drupal\file\Entity\File;
 
 /**
- * Implements hook_mail_alter().
+ * Implements hook_commerce_order_receipt_mail_alter().
  */
-function custom_pdf_attachment_mail_alter(&$message) {
-  // Only alter the order receipt emails.
-  if ($message['key'] === 'commerce_order_receipt') {
+function custom_pdf_attachment_commerce_order_receipt_mail_alter(array &$message, OrderInterface $order) {
+  $attachments = [];
+  $download_links = [];
 
-    /** @var OrderInterface $order */
-    $order = $message['params']['order'];
+  foreach ($order->getItems() as $order_item) {
+    /** @var ProductVariationInterface $variation */
+    $variation = $order_item->getPurchasedEntity();
 
-    if ($order instanceof OrderInterface) {
-      $attachments = [];
-      $download_links = [];
+    if ($variation->hasField('field_product_file')) {
+      foreach ($variation->get('field_product_file') as $field_item) {
+        $file = $field_item->entity;
+        if ($file instanceof File) {
+          // Attach file content.
+          $file_path = \Drupal::service('file_system')->realpath($file->getFileUri());
+          $attachments[] = [
+            'filecontent' => file_get_contents($file_path),
+            'filename' => $file->getFilename(),
+            'filemime' => $file->getMimeType(),
+          ];
 
-      // Loop through order items.
-      foreach ($order->getItems() as $order_item) {
-
-        /** @var ProductVariationInterface $variation */
-        $variation = $order_item->getPurchasedEntity();
-
-        // Check if the product variation has files.
-        if ($variation->hasField('field_product_file')) {
-          foreach ($variation->get('field_product_file') as $field_item) {
-            $file = $field_item->entity;
-            if ($file instanceof File) {
-              // Attach the file to the email.
-              $file_path = \Drupal::service('file_system')->realpath($file->getFileUri());
-              $attachments[] = [
-                'filecontent' => file_get_contents($file_path),
-                'filename' => $file->getFilename(),
-                'filemime' => $file->getMimeType(),
-              ];
-
-              // Add a download link for the Twig template.
-              $download_links[] = [
-                'title' => $file->getFilename(),
-                'url' => file_create_url($file->getFileUri()),
-              ];
-            }
-          }
+          // Add download link for Twig.
+          $download_links[] = [
+            'title' => $file->getFilename(),
+            'url' => file_create_url($file->getFileUri()),
+          ];
         }
       }
-
-      // Pass attachments to the mail backend.
-      if (!empty($attachments)) {
-        $message['params']['attachments'] = $attachments;
-      }
-
-      // Pass download links to Twig template.
-      $message['params']['download_links'] = $download_links;
     }
+  }
+
+  if (!empty($attachments)) {
+    $message['attachments'] = $attachments;
+  }
+
+  if (!empty($download_links)) {
+    $message['download_links'] = $download_links;
   }
 }
