@@ -57,6 +57,9 @@ function custom_pdf_attachment_mail_alter(&$message) {
         }
       }
 
+      \Drupal::logger('custom_pdf_attachment')->notice('<pre>@links</pre>', ['@links' => print_r($download_links, TRUE)]);
+
+
       // Pass attachments to the mail backend.
       if (!empty($attachments)) {
         $message['params']['attachments'] = $attachments;
@@ -69,7 +72,7 @@ function custom_pdf_attachment_mail_alter(&$message) {
 }
 
 function custom_pdf_attachment_preprocess_mail(array &$variables) {
-  if ($variables['key'] === 'commerce_order_receipt' && !empty($variables['params']['download_links'])) {
+  if (!empty($variables['params']['download_links'])) {
     $variables['download_links'] = $variables['params']['download_links'];
   }
 }
