@@ -3,29 +3,50 @@
 use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\commerce_product\Entity\ProductVariationInterface;
 use Drupal\file\Entity\File;
-use Drupal\Core\File\FileUrlGeneratorInterface;
 
 /**
  * Implements hook_commerce_order_receipt_mail_alter().
  *
- * Adds download links from product variation files to the order receipt email.
+ * Adds file attachments and download links to the order receipt email.
  */
 function custom_pdf_attachment_commerce_order_receipt_mail_alter(array &$message, OrderInterface $order) {
-  // Service to generate absolute file URLs.
-  $file_url_generator = \Drupal::service('file_url_generator');
 
+  $attachments = [];
   $download_links = [];
 
-  // Loop through each order item.
+  // Get the services.
+  $renderer = \Drupal::service('renderer');
+  $file_url_generator = \Drupal::service('file_url_generator');
+
+  // Render billing and shipping profiles safely.
+  $body = $message['body'];
+  if ($billing_profile = $order->getBillingProfile()) {
+    $profile_view_builder = \Drupal::entityTypeManager()->getViewBuilder('profile');
+    $body['#billing_information'] = $renderer->render($profile_view_builder->view($billing_profile));
+  }
+  if ($shipping_profile = $order->get('shipping_profile')->entity) {
+    $profile_view_builder = \Drupal::entityTypeManager()->getViewBuilder('profile');
+    $body['#shipping_information'] = $renderer->render($profile_view_builder->view($shipping_profile));
+  }
+
+  // Loop through order items to collect files.
   foreach ($order->getItems() as $order_item) {
     /** @var ProductVariationInterface $variation */
     $variation = $order_item->getPurchasedEntity();
 
-    // Check if the variation has a 'commerce_file' field.
     if ($variation->hasField('commerce_file')) {
       foreach ($variation->get('commerce_file') as $field_item) {
         $file = $field_item->entity;
         if ($file instanceof File) {
+          // Attach the file to the email.
+          $file_path = \Drupal::service('file_system')->realpath($file->getFileUri());
+          $attachments[] = [
+            'filecontent' => file_get_contents($file_path),
+            'filename' => $file->getFilename(),
+            'filemime' => $file->getMimeType(),
+          ];
+
+          // Add a download link for the Twig template.
           $download_links[] = [
             'title' => $file->getFilename(),
             'url' => $file_url_generator->generateAbsoluteString($file->getFileUri()),
@@ -35,11 +56,16 @@ function custom_pdf_attachment_commerce_order_receipt_mail_alter(array &$message
     }
   }
 
-  // Add download links directly to the email body for Twig to use.
-  if (!empty($download_links)) {
-    if (!isset($message['body'])) {
-      $message['body'] = [];
-    }
-    $message['body']['#download_links'] = $download_links;
+  // Add attachments if any.
+  if (!empty($attachments)) {
+    $message['attachments'] = $attachments;
   }
+
+  // Add download links to the email body for Twig.
+  if (!empty($download_links)) {
+    $body['#download_links'] = $download_links;
+  }
+
+  // Save the modified body back.
+  $message['body'] = $body;
 }

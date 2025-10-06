@@ -179,15 +179,15 @@
         </table>
 
         {# Billing info #}
-        {% if billing_information %}
+        {% if body.#billing_information %}
           <h3>{{ 'Billing Information'|t }}</h3>
-          {{ billing_information }}
+          {{ body.#billing_information|raw }}
         {% endif %}
 
         {# Shipping info #}
-        {% if shipping_information %}
+        {% if body.#shipping_information %}
           <h3>{{ 'Shipping Information'|t }}</h3>
-          {{ shipping_information }}
+          {{ body.#shipping_information|raw }}
         {% endif %}
 
         {# Payment method #}
@@ -203,16 +203,19 @@
         {% endfor %}
         <p><strong>{{ 'Order Total: @total'|t({'@total': order_entity.getTotalPrice|commerce_price_format}) }}</strong></p>
 
+        {# Download links #}
         {% if body.#download_links %}
-  <h3>{{ 'Your Downloads:'|t }}</h3>
-  <ul>
-    {% for file in body.#download_links %}
-      <li><a href="{{ file.url }}">{{ file.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endif %}
+          <h3>{{ 'Your Downloads:'|t }}</h3>
+          <ul>
+            {% for file in body.#download_links %}
+              <li><a href="{{ file.url }}">{{ file.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
         <p>{{ 'Thank you for your order!'|t }}</p>
       </td>
     </tr>
   </tbody>
 </table>
+
