@@ -64,16 +64,3 @@ function custom_pdf_attachment_mail_alter(&$message) {
   }
 }
 
-/**
- * Preprocess function for the commerce order receipt Twig template.
- */
-function custom_pdf_attachment_preprocess_commerce_order_receipt(array &$variables) {
-  if (!empty($variables['order_entity']) && !empty($variables['order_entity'] instanceof OrderInterface)) {
-    if (!empty($variables['params']['download_links'])) {
-      $variables['download_links'] = $variables['params']['download_links'];
-    }
-    else {
-      $variables['download_links'] = [];
-    }
-  }
-}
