@@ -8,32 +8,61 @@ use Drupal\commerce_order\Entity\OrderInterface;
  * Implements hook_mail_alter().
  */
 function custom_pdf_attachment_mail_alter(&$message) {
-  // Only alter the Commerce Order receipt email.
+   // Only alter the order receipt emails.
   if ($message['key'] === 'commerce_order_receipt') {
-    if (!empty($message['params']['order']) && $message['params']['order'] instanceof OrderInterface) {
-      $order = $message['params']['order'];
-      $links = [];
 
+    /** @var \Drupal\commerce_order\Entity\OrderInterface $order */
+    $order = $message['params']['order'];
+
+    if ($order instanceof OrderInterface) {
+      $attachments = [];
+      $download_links = [];
+
+      // Loop through order items.
       foreach ($order->getItems() as $order_item) {
-        // Load licenses for this order item.
+
+        // Load licenses for the order item.
         $licenses = \Drupal::entityTypeManager()
           ->getStorage('commerce_file_license')
           ->loadByProperties(['order_item_id' => $order_item->id()]);
 
         foreach ($licenses as $license) {
-          // Build a secure download URL for the license.
-          $url = Url::fromRoute('entity.commerce_file_license.download', [
-            'commerce_file_license' => $license->id(),
-          ], ['absolute' => TRUE])->toString();
 
-          $links[] = $url;
+          if ($license instanceof FileLicense) {
+            // Attach the file to the email.
+            $file = $license->getFile();
+            if ($file) {
+              $file_path = \Drupal::service('file_system')->realpath($file->getFileUri());
+
+              $attachments[] = [
+                'filecontent' => file_get_contents($file_path),
+                'filename' => $file->getFilename(),
+                'filemime' => $file->getMimeType(),
+              ];
+            }
+
+            // Create a secure download URL for the Twig template.
+            $url = \Drupal\Core\Url::fromRoute(
+              'entity.commerce_file_license.download',
+              ['commerce_file_license' => $license->id()],
+              ['absolute' => TRUE]
+            )->toString();
+
+            $download_links[] = [
+              'title' => $order_item->label(),
+              'url' => $url,
+            ];
+          }
         }
       }
 
-      if (!empty($links)) {
-        // Append links to the email body.
-        $message['body'][] = "\nYour download links:\n" . implode("\n", $links);
+      // Pass attachments to the mail backend.
+      if (!empty($attachments)) {
+        $message['params']['attachments'] = $attachments;
       }
+
+      // Pass download links to Twig template.
+      $message['params']['download_links'] = $download_links;
     }
   }
 }

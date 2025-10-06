@@ -20,7 +20,7 @@
  * @ingroup themeable
  */
 #}
-<table style="margin: 15px auto 0 auto; max-width: 768px; font-family: arial,sans-serif">
+{# <table style="margin: 15px auto 0 auto; max-width: 768px; font-family: arial,sans-serif">
   <tbody>
   <tr>
     <td>
@@ -156,5 +156,65 @@
       </table>
     </td>
   </tr>
+  </tbody>
+</table> #}
+
+<table style="margin: 15px auto; max-width: 768px; font-family: arial,sans-serif;">
+  <tbody>
+    <tr>
+      <td>
+        <h2 style="text-align: center;">{{ 'Order Confirmation'|t }}</h2>
+        <p>{{ 'Order #@number details:'|t({'@number': order_entity.getOrderNumber}) }}</p>
+
+        {# Order items #}
+        <table style="width: 100%; border-collapse: collapse;">
+          <tbody>
+          {% for order_item in order_entity.getItems %}
+            <tr>
+              <td>{{ order_item.getQuantity|number_format }} x {{ order_item.label }}</td>
+              <td style="text-align: right;">{{ order_item.getTotalPrice|commerce_price_format }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+
+        {# Billing info #}
+        {% if billing_information %}
+          <h3>{{ 'Billing Information'|t }}</h3>
+          {{ billing_information }}
+        {% endif %}
+
+        {# Shipping info #}
+        {% if shipping_information %}
+          <h3>{{ 'Shipping Information'|t }}</h3>
+          {{ shipping_information }}
+        {% endif %}
+
+        {# Payment method #}
+        {% if payment_method %}
+          <h3>{{ 'Payment Method'|t }}</h3>
+          {{ payment_method }}
+        {% endif %}
+
+        {# Totals #}
+        <p>{{ 'Subtotal: @subtotal'|t({'@subtotal': totals.subtotal|commerce_price_format}) }}</p>
+        {% for adjustment in totals.adjustments %}
+          <p>{{ adjustment.label }}: {{ adjustment.total|commerce_price_format }}</p>
+        {% endfor %}
+        <p><strong>{{ 'Order Total: @total'|t({'@total': order_entity.getTotalPrice|commerce_price_format}) }}</strong></p>
+
+        {# Download links #}
+        {% if download_links %}
+          <h3>{{ 'Your Downloads:'|t }}</h3>
+          <ul>
+            {% for file in download_links %}
+              <li><a href="{{ file.url }}">{{ file.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <p>{{ 'Thank you for your order!'|t }}</p>
+      </td>
+    </tr>
   </tbody>
 </table>
