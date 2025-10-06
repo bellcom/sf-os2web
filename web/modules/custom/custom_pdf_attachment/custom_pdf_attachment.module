@@ -1,22 +1,14 @@
 <?php
 
-/**
- * Implements hook_commerce_order_receipt_mail_alter().
- */
 use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\commerce_product\Entity\ProductVariationInterface;
 use Drupal\file\Entity\File;
 
 /**
- * Add download links to order receipt email.
+ * Preprocess the order receipt email template.
  */
-function custom_pdf_attachment_mail_alter(&$message) {
-  if ($message['key'] !== 'commerce_order_receipt') {
-    return;
-  }
-
-  /** @var OrderInterface $order */
-  $order = $message['params']['order'];
+function custom_pdf_attachment_preprocess_commerce_order_receipt(array &$variables) {
+  $order = $variables['order_entity'];
   if (!$order instanceof OrderInterface) {
     return;
   }
@@ -39,8 +31,5 @@ function custom_pdf_attachment_mail_alter(&$message) {
     }
   }
 
-  if (!empty($download_links)) {
-    // **Add directly to $body** so Twig can access it.
-    $message['body']['#download_links'] = $download_links;
-  }
+  $variables['download_links'] = $download_links;
 }
