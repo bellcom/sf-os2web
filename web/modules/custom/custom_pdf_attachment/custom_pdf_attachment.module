@@ -1,64 +1,55 @@
 <?php
 
-
-use Drupal\Core\Url;
 use Drupal\commerce_order\Entity\OrderInterface;
-use Drupal\commerce_file\Entity\FileLicense;
+use Drupal\commerce_license\Entity\License;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_mail_alter().
  */
 function custom_pdf_attachment_mail_alter(&$message) {
-   // Only alter the order receipt emails.
+  // Only alter the order receipt emails.
   if ($message['key'] === 'commerce_order_receipt') {
 
-    /** @var \Drupal\commerce_order\Entity\OrderInterface $order */
+    /** @var OrderInterface $order */
     $order = $message['params']['order'];
 
     if ($order instanceof OrderInterface) {
       $attachments = [];
       $download_links = [];
 
-      // Loop through order items.
-      foreach ($order->getItems() as $order_item) {
+      // Load all licenses originating from this order.
+      $licenses = \Drupal::entityTypeManager()
+        ->getStorage('commerce_license')
+        ->loadByProperties(['originating_order' => $order->id()]);
 
-        // Load licenses for the order item.
-        $licenses = \Drupal::entityTypeManager()
-          ->getStorage('commerce_file_license')
-          ->loadByProperties(['order_item_id' => $order_item->id()]);
+      foreach ($licenses as $license) {
+        if ($license instanceof License) {
+          $variation = $license->getPurchasedEntity();
 
-        foreach ($licenses as $license) {
+          // Get files attached to the product variation (field_license_file is just an example field).
+          if ($variation->hasField('field_license_file') && !$variation->get('field_license_file')->isEmpty()) {
+            foreach ($variation->get('field_license_file') as $file_item) {
+              $file = $file_item->entity;
+              if ($file) {
+                // Attach the file to the email.
+                $attachments[] = [
+                  'filecontent' => file_get_contents(\Drupal::service('file_system')->realpath($file->getFileUri())),
+                  'filename' => $file->getFilename(),
+                  'filemime' => $file->getMimeType(),
+                ];
 
-          if ($license instanceof FileLicense) {
-            // Attach the file to the email.
-            $file = $license->getFile();
-            if ($file) {
-              $file_path = \Drupal::service('file_system')->realpath($file->getFileUri());
-
-              $attachments[] = [
-                'filecontent' => file_get_contents($file_path),
-                'filename' => $file->getFilename(),
-                'filemime' => $file->getMimeType(),
-              ];
+                // Add a secure download URL for the Twig template.
+                $url = Url::fromUri(file_create_url($file->getFileUri()), ['absolute' => TRUE])->toString();
+                $download_links[] = [
+                  'title' => $variation->label(),
+                  'url' => $url,
+                ];
+              }
             }
-
-            // Create a secure download URL for the Twig template.
-            $url = \Drupal\Core\Url::fromRoute(
-              'entity.commerce_file_license.download',
-              ['commerce_file_license' => $license->id()],
-              ['absolute' => TRUE]
-            )->toString();
-
-            $download_links[] = [
-              'title' => $order_item->label(),
-              'url' => $url,
-            ];
           }
         }
       }
-
-      \Drupal::logger('custom_pdf_attachment')->notice('<pre>@links</pre>', ['@links' => print_r($download_links, TRUE)]);
-
 
       // Pass attachments to the mail backend.
       if (!empty($attachments)) {
@@ -69,31 +60,4 @@ function custom_pdf_attachment_mail_alter(&$message) {
       $message['params']['download_links'] = $download_links;
     }
   }
-}
-
-function custom_pdf_attachment_preprocess_commerce_order_receipt(&$variables) {
-  $order = $variables['order_entity'];
-  $download_links = [];
-
-  foreach ($order->getItems() as $order_item) {
-    $licenses = \Drupal::entityTypeManager()
-      ->getStorage('commerce_file_license')
-      ->loadByProperties(['order_item_id' => $order_item->id()]);
-
-    foreach ($licenses as $license) {
-      if ($license instanceof \Drupal\commerce_file\Entity\FileLicense) {
-        $url = \Drupal\Core\Url::fromRoute(
-          'entity.commerce_file_license.download',
-          ['commerce_file_license' => $license->id()],
-          ['absolute' => TRUE]
-        )->toString();
-        $download_links[] = [
-          'title' => $order_item->label(),
-          'url' => $url,
-        ];
-      }
-    }
-  }
-
-  $variables['download_links'] = $download_links;
 }
