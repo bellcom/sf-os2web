@@ -3,7 +3,6 @@
 use Drupal\commerce_order\Entity\OrderInterface;
 use Drupal\commerce_product\Entity\ProductVariationInterface;
 use Drupal\file\Entity\File;
-use Drupal\Core\Url;
 
 /**
  * Implements hook_preprocess_HOOK() for commerce_order_receipt.
@@ -16,6 +15,8 @@ function custom_pdf_attachment_preprocess_commerce_order_receipt(array &$variabl
   $order = $variables['order_entity'];
   $download_links = [];
 
+  $file_url_generator = \Drupal::service('file_url_generator');
+
   foreach ($order->getItems() as $order_item) {
     /** @var ProductVariationInterface $variation */
     $variation = $order_item->getPurchasedEntity();
@@ -23,7 +24,7 @@ function custom_pdf_attachment_preprocess_commerce_order_receipt(array &$variabl
       foreach ($variation->get('commerce_file') as $field_item) {
         $file = $field_item->entity;
         if ($file instanceof File) {
-          $url = Url::fromUri(file_create_url($file->getFileUri()))->toString(TRUE)->getGeneratedUrl();
+          $url = $file_url_generator->generateAbsoluteString($file->getFileUri());
           $download_links[] = [
             'title' => $file->getFilename(),
             'url' => $url,
