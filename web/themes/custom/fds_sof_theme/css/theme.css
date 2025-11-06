@@ -70,7 +70,9 @@ body, p, .body-text, .body-copy-text {font-size: 1.9rem;}
 a {text-decoration:none;}
 
 .header .portal-info {margin-top: -1rem;}
-.header .portal-header .portal-info > * {/*margin-left: 2rem;*/}
+.header .portal-header .portal-info > * {
+    /* margin-left: 2rem; */
+}
 .region-secondary-menu .inline-list li + li,
 .region-secondary-menu .inline-list li {margin:0;}
 .region-secondary-menu .inline-list > li + li {margin-right: 4.1rem;}
@@ -152,7 +154,7 @@ footer a { font-weight: 100 !important; }
 footer a:hover { color: #000; }
 
 footer .footer {font-family: 'conduit_itclight';}
-footer .footer h2 {font-size: 24px; text-transform: uppercase;}
+footer .footer h2 {font-size: 2.4rem; text-transform: uppercase;}
 footer .footer-logo {max-width: 230px;}
 footer .contact_information_additional_information {margin-top: 7rem; color: #000;}
 footer ul.contact_information {display: flex;flex-direction: column;}
@@ -252,11 +254,11 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {ri
 [data-cssname="forside-nyheder"] .grid {--grid-column-count: 1;}
 [data-cssname="forside-nyheder"] .grid .column-wrap + .column-wrap {border-top: 1px solid rgba(0,0,0,0.09);}
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
     [data-cssname="forside-nyheder"] > div {padding: var(--base-padding) 0;}
     [data-cssname="forside-nyheder"] .container {max-width:100%;}
 }
-@media (min-width: 575px) {
+@media (min-width: 576px) {
     [data-cssname="forside-nyheder"] .grid {--grid-column-count: 2;}
     [data-cssname="forside-nyheder"] .grid .column-wrap + .column-wrap {border-top: none;}
     [data-cssname="forside-nyheder"] .grid>:first-child [role="article"]{
@@ -269,7 +271,7 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {ri
 }
 
 [data-cssname="forside-nyheder"] .grid [role="article"] {
-    padding: 0 1rem;
+    padding: 0 var(--base-padding-half);
 }
 [data-cssname="forside-nyheder"] .grid [role="article"] .field--type-link a {
     color: var(--primary-txt-color);
@@ -279,7 +281,7 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {ri
 }
 [data-cssname="forside-nyheder"] .grid [role="article"] .field--type-body {
     font-family: 'conduit_itclight';
-    line-height: 24px;
+    line-height: 2.4rem;
     padding: 1.4rem 0;
 }
 /* first article */
@@ -314,22 +316,22 @@ form#views-exposed-form-os2web-search-os2web-search-page .form-actions:after {ri
 }
 /* news footer */
 [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field {
-    background-color: #F9F9F9;
-    padding: 1.5rem;
+    background-color: var(--gray-color-100);
+    padding: var(--base-padding);
     font-family: 'conduit_itclight';
     text-align: center;
 }
 [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(1) {
-    padding-bottom: 1.5rem;
+    padding-bottom: var(--base-padding);
 }
 [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(1) a {
-    color: #094974;
-    font-size: 22px;
-    line-height: 30px;
+    color: var(--primary-txt-color);
+    font-size: 2.2rem;
+    line-height: 3rem;
     text-transform: uppercase;
 }
 [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) h3 {
-    color: #b2b2b2;
+    color: var(--gray-color-500);
     font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: 400;
@@ -350,7 +352,7 @@ a {
 [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) p
 a:after {
     position: static;
-    color: #fff;
+    color: var(--gray-color-000);
     font-family: 'FontAwesome';
     font-size: 3rem;
 }
@@ -366,7 +368,7 @@ a[title="facebook"]:after {
 a[title="twitter"]:after {
     content: '\f099';
 }
-@media (min-width: 575px) {
+@media (min-width: 576px) {
     [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(1) {
         padding-bottom: 0;
     }
@@ -383,7 +385,7 @@ a[title="twitter"]:after {
     }
     [data-cssname="forside-nyheder"] .container > div > .field__item:nth-child(2) .field > :nth-child(2) h3 {
         display: inline-block;
-        padding-right: 1.5rem;
+        padding-right: var(--base-padding);
         list-style-type: none;
         margin: 0;
     }
@@ -547,13 +549,13 @@ div.entity-teaser__body > div.field--type-link > a::after {
     font-size: 3rem;
 }
 [data-cssname="3xArtikelKolonner"] .grid.columns-3>:not(:last-child) {
-    border-right: 1px solid #f0f0f0;
+    border-right: 1px solid var(--gray-color-200);
 }
 [data-cssname="3xArtikelKolonner"] .grid.columns-default>:not(:first-child) [role="article"] .h4 {
-    padding: 11px 0 13px 0;
+    padding: 1.1rem 0 1.3rem 0;
     border-top: 1px solid rgba(0,0,0,0.27);
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.8rem;
+    line-height: 2rem;
 }
 [data-cssname="3xArtikelKolonner"] .grid.columns-default>:not(:first-child) img {
     display: none;
@@ -575,11 +577,11 @@ div.entity-teaser__body > div.field--type-link > a::after {
 [data-cssname="3xArtikelKolonner"] .field--type-body {display: none;}
 
 /* fix ?!? */
-.field--name-field-os2web-simple-text-heading h2 {color: #fff;
-    font-size: 36px;
+.field--name-field-os2web-simple-text-heading h2 {color: var(--gray-color-000);
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 36px;
+    line-height: 3.6rem;
     text-align: left;
 }
 
@@ -590,8 +592,8 @@ div.entity-teaser__body > div.field--type-link > a::after {
 .field.field--name-field-os2web-page-paragraph-wide li:before {content:'';}
 
 /* pager */
-.pager__items .pager__item {background-color: #b2b2b2; border-radius: .3rem; margin: 40px 10px 20px;}
-.pager__items .pager__item a {font-size: 2rem; color: #fff; padding: 1rem 1.4rem; display: inline-block;}
+.pager__items .pager__item {background-color: var(--gray-color-500); border-radius: .3rem; margin: 4rem 1rem 2rem;}
+.pager__items .pager__item a {font-size: 2rem; color: var(--gray-color-000); padding: 1rem 1.4rem; display: inline-block;}
 .pager__items .pager__item.is-active {background-color: var(--primary-txt-color);}
 .pager__items .pager__item span[aria-hidden] {text-transform: uppercase;letter-spacing: 1px;}
 .pager__items .pager__item--first,
@@ -612,14 +614,14 @@ body.path-search ol.search-results li {
     list-style: none;
     padding: 0;
     margin: 0;
-    border-bottom: 1px solid #b2b2b2;
+    border-bottom: 1px solid var(--gray-color-500);
 }
 body.path-search .search-result__title a {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 400;
-    line-height: 28px;
-    padding-bottom: 10px;
-    padding-top: 20px;
+    line-height: 2.8rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
     text-decoration: none;
     display: inline-block;
     color: var(--primary-txt-color);
@@ -871,19 +873,19 @@ form#views-exposed-form-content-search-page-1 [type="submit"]:focus {background-
 .field--name-field-os2web-simple-text-heading h2,
 .container>h2 {
     width: 100%;
-    padding: 0 20px 30px 20px;
+    padding: 0 2rem 3rem 2rem;
     box-sizing: border-box;
     text-transform: uppercase;
     text-align: center;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 5rem;
     margin:0;
-    color: #000;
+    color: var(--secondary-txt-color);
 }
 
 .h4 {
-    color: #000;
+    color: var(--secondary-txt-color);
     font-size: 3.2rem;
     font-weight: 200;
     line-height: 3.1rem;
@@ -900,9 +902,9 @@ form#views-exposed-form-content-search-page-1 [type="submit"]:focus {background-
     font-family: "conduit_itcregular", sans-serif;
 }
 
-[data-cssname="3xSpotboxe"] {background-color: #fff;}
+[data-cssname="3xSpotboxe"] {background-color: var(--gray-color-000);}
 [data-cssname="3xSpotboxe"] .spotbox { padding: 3.6rem 2rem;}
-.spotbox * {color: #000 !important;}
+.spotbox * {color: var(--secondary-txt-color) !important;}
 .spotbox .icon-wrapper {padding: 2.4rem;}
 .spotbox .h4 {padding: 1rem 0 4rem 0; margin: 0;}
 .spotbox p {font-size: 1.7rem;}
@@ -940,25 +942,25 @@ form#views-exposed-form-content-search-page-1 [type="submit"]:focus {background-
 /* page title */
 .field--name-field-os2web-news-heading h1,
 .field--name-field-os2web-page-heading h1 {
-    margin: 40px 0 0!important;
-    color: #000;
-    font-size: 46px;
+    margin: 4rem 0 0!important;
+    color: var(--secondary-txt-color);
+    font-size: 4.6rem;
     font-weight: normal;
-    line-height: 44px;
+    line-height: 4.4rem;
 }
 .field--name-field-os2web-news-intro,
 .field--name-field-os2web-page-intro {
-    padding: 20px 0 44px 0;
+    padding: 2rem 0 4.4rem 0;
 }
 .field--name-field-os2web-news-intro p strong,
 .field--name-field-os2web-page-intro p strong {
     margin: 0;
     text-align: left;
     font-family: "conduit_itcregular",sans-serif;
-    color: #000;
+    color: var(--secondary-txt-color);
     font-weight: 200;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 2.6rem;
+    line-height: 3rem;
 }
 
 
@@ -978,7 +980,7 @@ body:not(.path-frontpage) [class*="-paragraph-wid"] {
 .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap,
 .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap,
 .grid.columns-default>.column-wrap {
-    padding: 1.5rem;
+    padding: var(--base-padding);
     box-sizing: border-box;
 }
 
@@ -987,22 +989,22 @@ body:not(.path-frontpage) [class*="-paragraph-wid"] {
     /* Columns with right border get extra padding on right */
     .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:last-child),
     .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:last-child) {
-        border-right: 1px solid #f0f0f0;
-        padding-right: 2.5rem; /* Base 1.5rem + 1rem extra space for border */
+        border-right: 1px solid var(--gray-color-200);
+        padding-right: calc(var(--base-padding) + 1rem); /* Base padding + extra space for border */
     }
     
     /* Columns after first get extra padding on left (for border from previous column) */
     .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:first-child),
     .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:first-child),
     .grid.columns-default>.column-wrap:not(:first-child) {
-        padding-left: 2.5rem; /* Base 1.5rem + 1rem extra space for border */
+        padding-left: calc(var(--base-padding) + 1rem); /* Base padding + extra space for border */
     }
 }
 
 /* Ensure proper spacing on mobile - add extra bottom margin */
 @media (max-width: 767px) {
     .entity-default--os2web-3-columns>.grid>.column-wrap {
-        margin-bottom: 1.5rem;
+        margin-bottom: var(--base-padding);
     }
     
     .entity-default--os2web-3-columns>.grid>.column-wrap:last-child {
@@ -1021,9 +1023,9 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid>.column-wrap h2 {
     margin: 0 0 1rem 0;
     text-align: left;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: var(--secondary-txt-color);
     font-weight: normal;
 }
 
@@ -1125,11 +1127,11 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
 /* artikel datoer */
 article .node__content .field--type-timestamp {display:none;}
 article .article-sumitted-date-by {
-    margin: 20px 0 0 0;
-    padding: 20px 0;
-    border-bottom: 1px solid #b2b2b2;
-    border-top: 1px solid #b2b2b2;
-    color: #454545;
+    margin: 2rem 0 0 0;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--gray-color-500);
+    border-top: 1px solid var(--gray-color-500);
+    color: var(--gray-color-500);
     font-style: normal;
     font-weight: 200;
     font-size: 1.4rem;
@@ -1195,18 +1197,18 @@ view: path-sektion-nyheder'
 duw to bug: no special view filename suggestion => ergo this messy css
 */
 body.path-sektion-nyheder h1 {
-    color: #000;
-    font-size: 46px;
+    color: var(--secondary-txt-color);
+    font-size: 4.6rem;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 5rem;
 }
 body.path-sektion-nyheder h1+p {
     margin: 0;
-    padding: 20px 0 44px 5px;
-    color: #000;
-    font-size: 26px;
+    padding: 2rem 0 4.4rem 0.5rem;
+    color: var(--secondary-txt-color);
+    font-size: 2.6rem;
     font-weight: 200;
-    line-height: 30px;
+    line-height: 3rem;
     text-align: left;
 }
 .view-content.grid .column-wrap {position: relative}
@@ -1214,7 +1216,7 @@ body.path-sektion-nyheder h1+p {
     content: '';
     position: absolute;
     inset: 0 -1rem 0 -1rem;
-    border: 1px solid #f0f0f0;
+    border: 1px solid var(--gray-color-200);
     border-top: 0;
     border-bottom: 0;
 
@@ -1225,39 +1227,35 @@ body.path-sektion-nyheder h1+p {
 }
 .view-content.grid .column-fullwidth {
     width: 100%;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #b2b2b2;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray-color-500);
     margin: var(--base-padding-half)
 }
 .view-content.grid .column-fullwidth .entity-teaser__image {display:none;}
 .view-content.grid .column-fullwidth .entity-teaser__body {padding: 0;}
 .view-content.grid .column-fullwidth .entity-teaser__body .field--type-timestamp {color: rgba(69,69,69,0.6);}
 .view-content.grid .column-fullwidth .entity-teaser__body .field--type-body {
-    margin: 0 0 15px 0;
-    padding: 14px 17px 0 0;
+    margin: 0 0 1.5rem 0;
+    padding: 1.4rem 1.7rem 0 0;
     text-align: left;
     border-radius: 0;
     font-family: 'conduit_itclight';
-    color: #454545;
-    font-size: 19px;
+    color: var(--gray-color-500);
+    font-size: 1.9rem;
     font-weight: 200;
-    line-height: 24px;
+    line-height: 2.4rem;
 }
 .view-content.grid .column-wrap + .column-fullwidth {
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid var(--gray-color-200);
 }
 .view-content.grid .column-fullwidth .field--type-timestamp {
     margin-bottom: 1rem;
 }
 .view-content.grid .column-fullwidth a h3.h4 {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 2.8rem;
     color: var(--primary-txt-color);
-
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
     text-decoration: none;
 }
 .view-content.grid .column-fullwidth .field--type-link {
@@ -1266,8 +1264,8 @@ body.path-sektion-nyheder h1+p {
 .view-content.grid .field--type-link a {
     color: var(--primary-txt-color);
     font-weight: 100;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2rem;
+    line-height: 3rem;
     text-transform: uppercase;
 }
 
