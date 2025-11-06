@@ -3,6 +3,7 @@
   position: relative;
   margin-bottom: 50px;
   padding: 0 50px; /* Add padding to accommodate controls */
+  box-sizing: border-box;
 }
 
 .tns-inner {
@@ -98,7 +99,7 @@
 }
 
 .tns-controls button[data-controls="prev"] {
-  left: 0;
+  left: 10px;
 }
 
 .tns-controls button[data-controls="prev"]:before {
@@ -106,7 +107,7 @@
 }
 
 .tns-controls button[data-controls="next"] {
-  right: 0;
+  right: 10px;
 }
 
 .tns-controls button[data-controls="next"]:before {
@@ -132,6 +133,14 @@
 
   .tns-controls button:before {
     font-size: 2.6rem;
+  }
+
+  .tns-controls button[data-controls="prev"] {
+    left: 10px;
+  }
+
+  .tns-controls button[data-controls="next"] {
+    right: 10px;
   }
 }
 

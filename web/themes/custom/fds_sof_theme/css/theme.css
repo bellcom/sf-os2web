@@ -984,17 +984,25 @@ body:not(.path-frontpage) [class*="-paragraph-wid"] {
 /* Add spacing between columns and padding inside columns */
 .entity-default--os2web-3-columns>.grid>.column-wrap {
     padding: 1.5rem;
+    box-sizing: border-box;
 }
 
 /* Add vertical borders between columns on larger screens - matching existing pattern */
 @media (min-width: 768px) {
-    .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:last-child) {
-        border-right: 1px solid #f0f0f0;
-        padding-right: 2rem;
+    /* All columns have base padding */
+    .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap {
+        padding: 1.5rem;
     }
     
+    /* Columns with right border get extra padding on right */
+    .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:last-child) {
+        border-right: 1px solid #f0f0f0;
+        padding-right: 2.5rem; /* Base 1.5rem + 1rem extra space for border */
+    }
+    
+    /* Columns after first get extra padding on left (for border from previous column) */
     .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:first-child) {
-        padding-left: 2rem;
+        padding-left: 2.5rem; /* Base 1.5rem + 1rem extra space for border */
     }
 }
 
