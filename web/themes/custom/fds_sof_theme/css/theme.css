@@ -914,7 +914,7 @@ form#views-exposed-form-content-search-page-1 [type="submit"]:focus {background-
 .field--name-field-os2web-simple-text-heading p {
     padding: 2rem 0 4.4rem 0;
     font-family: "conduit_itcregular",sans-serif;
-    font-size: 2.6rem;
+    font-size: 1.9rem;
     line-height: 3.0rem;
 }
 .field--name-field-os2web-simple-text-heading p strong {font-weight: inherit;}
@@ -991,8 +991,7 @@ body:not(.path-frontpage) [class*="-paragraph-wid"] {
     
     /* Columns after first get extra padding on left for spacing */
     .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:first-child),
-    .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:first-child),
-    .grid.columns-default>.column-wrap:not(:first-child) {
+    .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:first-child) {
         padding-left: calc(var(--base-padding) + 1rem); /* Base padding + extra space */
     }
 }
