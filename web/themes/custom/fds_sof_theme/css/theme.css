@@ -974,20 +974,48 @@ body:not(.path-frontpage) .region-featured-bottom-first {padding-bottom: 0;}
 body:not(.path-frontpage) [class*="-paragraph-wid"] {
     padding: var(--base-padding) 0;
 }
-body:not(.path-frontpage) [class*="-paragraph-wid"]
+
+/* 3-columns paragraph - general styling */
 .entity-default--os2web-3-columns>.grid {
     max-width: var(--max-width);
     margin: 0 auto;
 }
-body:not(.path-frontpage) [class*="-paragraph-wid"]
+
+/* Add spacing between columns and padding inside columns */
 .entity-default--os2web-3-columns>.grid>.column-wrap {
-    padding: var(--base-padding);
+    padding: 1.5rem;
 }
+
+/* Add vertical borders between columns on larger screens - matching existing pattern */
+@media (min-width: 768px) {
+    .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:last-child) {
+        border-right: 1px solid #f0f0f0;
+        padding-right: 2rem;
+    }
+    
+    .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:first-child) {
+        padding-left: 2rem;
+    }
+}
+
+/* Ensure proper spacing on mobile - add extra bottom margin */
+@media (max-width: 767px) {
+    .entity-default--os2web-3-columns>.grid>.column-wrap {
+        margin-bottom: 1.5rem;
+    }
+    
+    .entity-default--os2web-3-columns>.grid>.column-wrap:last-child {
+        margin-bottom: var(--base-padding-half);
+    }
+}
+
+/* Content styling */
 body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid>.column-wrap>* {
     flex-direction: column;
     text-align: left;
 }
+
 body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid>.column-wrap h2 {
     margin: 0 0 1rem 0;
@@ -1004,6 +1032,78 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
     color: var(--primary-txt-color);
     font-weight: 100;
     text-transform: uppercase;
+}
+
+/* News teaser styling within 3-columns */
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .entity-teaser__image {
+    margin-bottom: 1rem;
+}
+
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .entity-teaser__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .entity-teaser__body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-article-date {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h1,
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h2,
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h3,
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h4 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-body {
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-link {
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-link a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--primary-txt-color);
+    transition: opacity 0.2s ease;
+}
+
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-link a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 /* artikel datoer */

@@ -8,6 +8,7 @@
 .tns-inner {
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 /* Slider items */
@@ -53,9 +54,15 @@
   background-color: var(--primary-txt-color);
 }
 
-/* Controls (prev/next buttons) */
+/* Controls (prev/next buttons) - positioned relative to tns-outer */
 .tns-controls {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 10;
 }
 
 .tns-controls button {
@@ -75,6 +82,7 @@
   color: var(--gray-color-000);
   background-color: var(--primary-txt-color);
   cursor: pointer;
+  pointer-events: all;
   transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
@@ -130,8 +138,23 @@
 /* Ensure proper display for field items when slider is active */
 .field--name-field-os2web-slideshow-image .field__items.tns-slider {
   display: block;
+  width: 100%;
 }
 
 .field--name-field-os2web-slideshow-image .field__items.tns-slider .tns-item {
   display: block;
+}
+
+/* Fix white space issue - ensure slider doesn't add extra width */
+.field--name-field-os2web-slideshow-image .tns-outer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.field--name-field-os2web-slideshow-image .tns-outer .tns-inner {
+  width: 100%;
+}
+
+.field--name-field-os2web-slideshow-image .tns-outer .tns-inner .tns-slider {
+  width: 100% !important;
 }

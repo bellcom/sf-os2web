@@ -60,7 +60,7 @@
       items: 1,
       autoplay: true,
       autoplayHoverPause: true,
-      gutter: 32,
+      gutter: 0,
       rewind: true,
       nav: true,
       controls: true,
@@ -68,6 +68,7 @@
       responsive: {
         576: {
           items: 2,
+          gutter: 32,
         },
       },
     });
