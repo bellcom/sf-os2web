@@ -548,9 +548,6 @@ div.entity-teaser__body > div.field--type-link > a::after {
     color: rgba(69,69,69,0.8);
     font-size: 3rem;
 }
-[data-cssname="3xArtikelKolonner"] .grid.columns-3>:not(:last-child) {
-    border-right: 1px solid var(--gray-color-200);
-}
 [data-cssname="3xArtikelKolonner"] .grid.columns-default>:not(:first-child) [role="article"] .h4 {
     padding: 1.1rem 0 1.3rem 0;
     border-top: 1px solid rgba(0,0,0,0.27);
@@ -984,20 +981,19 @@ body:not(.path-frontpage) [class*="-paragraph-wid"] {
     box-sizing: border-box;
 }
 
-/* Add vertical borders between columns on larger screens - matching existing pattern */
+/* Add spacing between columns on larger screens */
 @media (min-width: 768px) {
-    /* Columns with right border get extra padding on right */
+    /* Columns get extra padding on right for spacing */
     .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:last-child),
     .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:last-child) {
-        border-right: 1px solid var(--gray-color-200);
-        padding-right: calc(var(--base-padding) + 1rem); /* Base padding + extra space for border */
+        padding-right: calc(var(--base-padding) + 1rem); /* Base padding + extra space */
     }
     
-    /* Columns after first get extra padding on left (for border from previous column) */
+    /* Columns after first get extra padding on left for spacing */
     .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:first-child),
     .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:first-child),
     .grid.columns-default>.column-wrap:not(:first-child) {
-        padding-left: calc(var(--base-padding) + 1rem); /* Base padding + extra space for border */
+        padding-left: calc(var(--base-padding) + 1rem); /* Base padding + extra space */
     }
 }
 
