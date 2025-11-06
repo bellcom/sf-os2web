@@ -570,13 +570,6 @@ div.entity-teaser__body > div.field--type-link > a::after {
     min-height: 14rem;
 }
 [data-cssname="3xArtikelKolonner"] .entity-teaser__body {margin: 0; padding:0; position: relative;}
-[data-cssname="3xArtikelKolonner"] .field--type-link {
-    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-}
-[data-cssname="3xArtikelKolonner"] .field--type-link a {
-    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-    color: transparent;
-}
 [data-cssname="3xArtikelKolonner"] .column-wrap>div {flex-direction: column;}
 [data-cssname="3xArtikelKolonner"] .field--type-timestamp {display: none;}
 [data-cssname="3xArtikelKolonner"] .field--type-body {display: none;}
@@ -712,12 +705,12 @@ form#views-exposed-form-products-page-1 .form--inline {
 form.search-form .container-inline:after,
 form#views-exposed-form-content-search-page-1 .form--inline:after,
 form#views-exposed-form-products-page-1 .form--inline:after {
-    width: 12rem;
+    width: auto;
     position: absolute;
-    right: 0;
+    right: 10px;
     content: "\e801";
     font-family: "fontello";
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     line-height: 38px;
     color: var(--primary-txt-color);
@@ -730,7 +723,7 @@ form#views-exposed-form-content-search-page-1 .form-group {
 form.search-form input[type="search"],
 form#views-exposed-form-content-search-page-1 input#edit-search-api-fulltext,
 form#views-exposed-form-products-page-1 input#edit-search-api-fulltext {
-    width:100%;
+    width:90%;
     border: none;
     background: transparent;
     margin: 0;
@@ -991,18 +984,11 @@ body:not(.path-frontpage) [class*="-paragraph-wid"] {
 
 /* Add vertical borders between columns on larger screens - matching existing pattern */
 @media (min-width: 768px) {
-    /* Columns with right border get extra padding on right - exclude 3xArtikelKolonner to avoid duplicates */
+    /* Columns with right border get extra padding on right */
     .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:last-child),
-    .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:last-child),
-    .grid.columns-default>.column-wrap:not(:last-child) {
+    .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:last-child) {
         border-right: 1px solid #f0f0f0;
         padding-right: 2.5rem; /* Base 1.5rem + 1rem extra space for border */
-    }
-    
-    /* Remove duplicate border - 3xArtikelKolonner already has its own border rule */
-    [data-cssname="3xArtikelKolonner"] .grid.columns-default>.column-wrap:not(:last-child),
-    [data-cssname="3xArtikelKolonner"] .grid.columns-3>.column-wrap:not(:last-child) {
-        border-right: none;
     }
     
     /* Columns after first get extra padding on left (for border from previous column) */
