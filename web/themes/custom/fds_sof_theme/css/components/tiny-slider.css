@@ -15,6 +15,7 @@
 /* Slider items */
 .tns-item {
   box-sizing: border-box;
+  padding-right: 0 !important; /* Remove any padding-right that causes white space */
 }
 
 .tns-item img {
@@ -98,7 +99,7 @@
 }
 
 .tns-controls button[data-controls="prev"] {
-  left: 50px;
+  left: 0;
   transform: translate(-50%, -50%);
 }
 
@@ -107,7 +108,7 @@
 }
 
 .tns-controls button[data-controls="next"] {
-  right: 50px;
+  right: 0;
   transform: translate(50%, -50%);
 }
 
@@ -137,12 +138,12 @@
   }
 
   .tns-controls button[data-controls="prev"] {
-    left: 60px;
+    left: 0;
     transform: translate(-50%, -50%);
   }
 
   .tns-controls button[data-controls="next"] {
-    right: 60px;
+    right: 0;
     transform: translate(50%, -50%);
   }
 }

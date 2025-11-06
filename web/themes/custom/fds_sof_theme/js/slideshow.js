@@ -88,7 +88,7 @@
         autoplay: true,
         autoplayHoverPause: true,
         autoplayButtonOutput: false,
-        gutter: 32,
+        gutter: 0,
         rewind: false,
         nav: true,
         speed: 600,

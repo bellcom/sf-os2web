@@ -991,12 +991,18 @@ body:not(.path-frontpage) [class*="-paragraph-wid"] {
 
 /* Add vertical borders between columns on larger screens - matching existing pattern */
 @media (min-width: 768px) {
-    /* Columns with right border get extra padding on right */
+    /* Columns with right border get extra padding on right - exclude 3xArtikelKolonner to avoid duplicates */
     .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:last-child),
     .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:last-child),
     .grid.columns-default>.column-wrap:not(:last-child) {
         border-right: 1px solid #f0f0f0;
         padding-right: 2.5rem; /* Base 1.5rem + 1rem extra space for border */
+    }
+    
+    /* Remove duplicate border - 3xArtikelKolonner already has its own border rule */
+    [data-cssname="3xArtikelKolonner"] .grid.columns-default>.column-wrap:not(:last-child),
+    [data-cssname="3xArtikelKolonner"] .grid.columns-3>.column-wrap:not(:last-child) {
+        border-right: none;
     }
     
     /* Columns after first get extra padding on left (for border from previous column) */
@@ -1076,7 +1082,8 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-article-date,
 .grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-article-date {
     margin-bottom: 0.5rem !important; /* Override layout.css margin-bottom: 0 !important */
-    font-size: 0.875rem;
+    font-size: 1.9rem;
+    line-height: normal;
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -1095,8 +1102,8 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
 .grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h3,
 .grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h4 {
     margin: 0 0 0.75rem 0;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 3.2rem;
+    line-height: normal;
     font-weight: 500;
 }
 
@@ -1104,8 +1111,8 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
 .grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--type-body {
     margin-bottom: 1rem;
     flex-grow: 1;
-    font-size: 0.9375rem;
-    line-height: 1.5rem;
+    font-size: 1.9rem;
+    line-height: normal;
     color: rgba(0, 0, 0, 0.8);
 }
 
