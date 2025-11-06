@@ -981,27 +981,28 @@ body:not(.path-frontpage) [class*="-paragraph-wid"] {
     margin: 0 auto;
 }
 
-/* Add spacing between columns and padding inside columns */
-.entity-default--os2web-3-columns>.grid>.column-wrap {
+/* Add spacing between columns and padding inside columns - target both columns-3 and columns-default */
+.entity-default--os2web-3-columns>.grid.columns-3>.column-wrap,
+.entity-default--os2web-3-columns>.grid.columns-default>.column-wrap,
+.grid.columns-default>.column-wrap {
     padding: 1.5rem;
     box-sizing: border-box;
 }
 
 /* Add vertical borders between columns on larger screens - matching existing pattern */
 @media (min-width: 768px) {
-    /* All columns have base padding */
-    .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap {
-        padding: 1.5rem;
-    }
-    
     /* Columns with right border get extra padding on right */
-    .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:last-child) {
+    .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:last-child),
+    .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:last-child),
+    .grid.columns-default>.column-wrap:not(:last-child) {
         border-right: 1px solid #f0f0f0;
         padding-right: 2.5rem; /* Base 1.5rem + 1rem extra space for border */
     }
     
     /* Columns after first get extra padding on left (for border from previous column) */
-    .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:first-child) {
+    .entity-default--os2web-3-columns>.grid.columns-3>.column-wrap:not(:first-child),
+    .entity-default--os2web-3-columns>.grid.columns-default>.column-wrap:not(:first-child),
+    .grid.columns-default>.column-wrap:not(:first-child) {
         padding-left: 2.5rem; /* Base 1.5rem + 1rem extra space for border */
     }
 }
@@ -1042,39 +1043,45 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
     text-transform: uppercase;
 }
 
-/* News teaser styling within 3-columns */
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news {
+/* News teaser styling within 3-columns - target both columns-3 and columns-default */
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news {
     margin: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .entity-teaser__image {
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .entity-teaser__image,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .entity-teaser__image {
     margin-bottom: 1rem;
 }
 
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .entity-teaser__image img {
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .entity-teaser__image img,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .entity-teaser__image img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 4px;
 }
 
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .entity-teaser__body {
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .entity-teaser__body,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .entity-teaser__body {
     padding: 0;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-article-date {
-    margin-bottom: 0.5rem;
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-article-date,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-article-date {
+    margin-bottom: 0.5rem !important; /* Override layout.css margin-bottom: 0 !important */
     font-size: 0.875rem;
     color: rgba(0, 0, 0, 0.6);
 }
 
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading {
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading {
     margin-top: 0;
     margin-bottom: 0.75rem;
 }
@@ -1082,14 +1089,19 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
 .entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h1,
 .entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h2,
 .entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h3,
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h4 {
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h4,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h1,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h2,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h3,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--name-field-os2web-news-heading h4 {
     margin: 0 0 0.75rem 0;
     font-size: 1.25rem;
     line-height: 1.5rem;
     font-weight: 500;
 }
 
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-body {
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-body,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--type-body {
     margin-bottom: 1rem;
     flex-grow: 1;
     font-size: 0.9375rem;
@@ -1097,19 +1109,22 @@ body:not(.path-frontpage) [class*="-paragraph-wid"]
     color: rgba(0, 0, 0, 0.8);
 }
 
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-link {
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-link,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--type-link {
     margin-top: auto;
     padding-top: 0.5rem;
 }
 
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-link a {
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-link a,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--type-link a {
     font-weight: 500;
     text-decoration: none;
     color: var(--primary-txt-color);
     transition: opacity 0.2s ease;
 }
 
-.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-link a:hover {
+.entity-default--os2web-3-columns>.grid>.column-wrap .entity-teaser--os2web-news .field--type-link a:hover,
+.grid.columns-default>.column-wrap .entity-teaser--os2web-news .field--type-link a:hover {
     opacity: 0.8;
     text-decoration: underline;
 }
